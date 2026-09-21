@@ -131,6 +131,13 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   @container (min-width: 40rem) { .detalle-cuerpo { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
 }
 
+/* La página de la guía deja holgura abajo, para que un retoque del texto no la saque de la pantalla */
+@media (min-width: 62rem) {
+  .pagina-lista .pie { margin-top: 0.5rem; padding: 0.5rem 0 0.6rem; }
+  .pagina-lista .pie .ancho { display: flex; flex-wrap: wrap; gap: 0 1.2rem; }
+  .pagina-lista .panel .detalle-caja { padding-bottom: 0.9rem; }
+}
+
 /* Pantallas bajas de portátil: la portada se compacta para caber sin desplazamiento */
 @media (min-width: 62rem) and (max-height: 760px) {
   html { font-size: 96%; }
