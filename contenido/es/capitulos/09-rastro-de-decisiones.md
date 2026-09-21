@@ -21,7 +21,7 @@ Una decisión que deja de valer no se borra, sino que se marca como sustituida p
 
 El registro no supone una tarea añadida para el docente, ya que lo escribe la IA a partir de lo que se decide en la conversación, y la persona comprueba que lo anotado corresponde a lo decidido. La ponencia lo resume en que la IA propone y la persona dispone.
 
-El registro tampoco se reconstruye al final, ya que un material suele salir de muchas sesiones de trabajo repartidas en días distintos, y recomponer después esas conversaciones resulta inviable. El registro se escribe en el momento en que se decide, y por eso resiste el paso de las sesiones. A los agentes de programación se les indica una vez en su archivo de instrucciones, y lo mantienen en todas. En la web de un chatbot, lo mínimo es pedir al terminar cada sesión que la IA anote las decisiones de ese día en un documento que se va guardando.
+El registro tampoco se reconstruye al final, ya que un material suele salir de muchas sesiones de trabajo repartidas en días distintos, y recomponer después esas conversaciones resulta inviable. El registro se escribe en el momento en que se decide, y por eso resiste el paso de las sesiones. A los agentes de programación se les indica una vez en su archivo de instrucciones, y lo mantienen en todas. Conviene pedirlo por su nombre, por ejemplo «lleva un registro de decisiones con ADR», ya que la IA conoce el formato y lo aplica sin más explicaciones. En la web de un chatbot, lo mínimo es pedir al terminar cada sesión que la IA anote las decisiones de ese día en un documento que se va guardando.
 
 ## Un ejemplo de la comunidad
 

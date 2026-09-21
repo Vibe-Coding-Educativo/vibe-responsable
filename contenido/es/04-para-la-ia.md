@@ -94,7 +94,7 @@ Cuando el material se publica en un repositorio o en un sitio propio, pueden añ
   para el código y una Creative Commons libre para los contenidos.
 - Añade un documento que explique cómo está organizado el proyecto y para qué
   sirve cada archivo.
-- Lleva un registro de decisiones dentro del proyecto, con un archivo por
+- Lleva un registro de decisiones (ADR) dentro del proyecto, con un archivo por
   decisión que recoja el contexto, las alternativas descartadas y las
   consecuencias. Anota en él cada decisión que tomemos, sin esperar a que te lo
   pida.

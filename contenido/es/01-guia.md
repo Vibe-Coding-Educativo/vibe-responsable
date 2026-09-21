@@ -60,7 +60,7 @@ Las imágenes, los textos, los sonidos y las piezas de software que se incorpora
 Con la IA se avanza muy deprisa, y a las pocas semanas nadie recuerda por qué se tomó cada decisión. Conservar ese rastro permite retomar el trabajo, explicarlo a otra persona y no deshacer por error lo que tenía un motivo.
 
 - **Lo mínimo.** Mantener un documento con las decisiones importantes y su porqué. Lo redacta la propia IA cuando se le pide al terminar cada sesión de trabajo, y solo queda revisarlo y guardarlo.
-- **Lo recomendado.** Pedir a la IA que lleve un registro de decisiones dentro del proyecto. Es la IA la que lo escribe, a partir de lo que se decide en la conversación, con un archivo por decisión que recoge el contexto, las alternativas descartadas y las consecuencias. A los agentes de programación basta con indicárselo una vez en sus instrucciones, y después solo queda revisar que lo anotado corresponde a lo decidido. El control de versiones conserva, además, la historia de los cambios.
+- **Lo recomendado.** Pedir a la IA que lleve dentro del proyecto un registro de decisiones, conocido como ADR por sus siglas en inglés, que es el nombre con el que la IA lo reconoce. Es la IA la que lo escribe, a partir de lo que se decide en la conversación, con un archivo por decisión que recoge el contexto, las alternativas descartadas y las consecuencias. A los agentes de programación basta con indicárselo una vez en sus instrucciones, y después solo queda revisar que lo anotado corresponde a lo decidido. El control de versiones conserva, además, la historia de los cambios.
 
 ## 10\. Otra persona puede descargarlo, modificarlo y mejorarlo
 
