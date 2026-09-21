@@ -56,7 +56,7 @@ UI = {
         "alejar": "Ajustar a la pantalla",
         "niveles": {"Lo mínimo.": "minimo", "Lo recomendado.": "recomendado", "En todos los casos.": "todos"},
         "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Código bajo <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL v3</a> y contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>.',
-        "pie_2": '<a href="creditos.html">Créditos y licencias</a>',
+        "pie_2": '<a href="creditos.html">Créditos y licencias</a>.',
     },
 }
 PAGINAS = [("index.html", "00-presentacion.md"), ("guia.html", "01-guia.md"), ("herramientas.html", "02-herramientas.md")]
@@ -134,8 +134,7 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 </main>
 <footer class="pie">
 <div class="ancho">
-<p>{T["pie_1"]}</p>
-<p>{T["pie_2"]}</p>
+<p>{T["pie_1"]} {T["pie_2"]}</p>
 </div>
 </footer>
 </body>
