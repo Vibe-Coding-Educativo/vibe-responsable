@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conserva el rastro de cómo se hizo | Guía para publicar materiales educativos creados con vibe coding</title>
+<meta name="description" content="Guía para publicar materiales educativos creados con vibe coding. Conserva el rastro de cómo se hizo.">
+<meta name="author" content="Juan José de Haro">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<meta property="og:title" content="Antes de publicar: diez recomendaciones">
+<meta property="og:description" content="Guía para publicar materiales educativos creados con vibe coding">
+<meta property="og:image" content="https://vibe-coding-educativo.github.io/vibe-responsable/infografia/lista-iconos.es.png">
+<meta property="og:type" content="article">
+<link rel="preload" href="../recursos/fuentes/atkinson-hyperlegible-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../recursos/estilos.css">
+<script src="../recursos/guia.js" defer></script>
+</head>
+<body class="pagina-texto pagina-capitulo">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="pizarra">
+<div class="ancho pizarra-int">
+<p class="sitio"><a class="sitio-comunidad" href="https://vibe-coding-educativo.github.io/">Vibe Coding Educativo</a>
+<a class="sitio-guia" href="./">Guía para publicar materiales educativos creados con vibe coding</a>
+<span class="estado" tabindex="0">Borrador<span class="globo">La guía está en elaboración. Los capítulos que desarrollan cada recomendación se publicarán en esta misma web.</span></span></p>
+<nav aria-label="Secciones de la guía"><ul><li><a href="./">Presentación</a></li><li><a href="guia.html" aria-current="page">Guía</a></li><li><a href="herramientas.html">Herramientas y niveles</a></li><li><a href="para-la-ia.html">Instrucciones para la IA</a></li></ul></nav>
+</div>
+</header>
+<main id="contenido" class="ancho">
+<p class="migas"><a href="guia.html">Volver a la guía</a></p><h1><span class="cifra-cap" aria-hidden="true">9</span>Conserva el rastro de cómo se hizo</h1><p class="oculto">Capítulo 9 de 10</p><section class="apartado" id="el-motivo-de-cada-decision" aria-labelledby="h-el-motivo-de-cada-decision"><h2 id="h-el-motivo-de-cada-decision">El motivo de cada decisión</h2><div class="texto"><p>Con la IA se programa muy deprisa, y a las pocas semanas nadie recuerda por qué se tomó cada decisión. Ernesto Serrano, del equipo de eXeLearning, lo describe en su ponencia <a href="https://erseco.github.io/talks/charlas/2026-07-06-selia-ia-programar-documentar/unit/index.html" target="_blank" rel="noopener">«Inteligencia artificial: programar, documentar y no acabar en un berenjenal»</a>: el código está, pero el porqué no, y nadie recuerda qué alternativas se descartaron ni con qué argumentos. La IA no causa ese desorden, aunque hace que llegue antes.</p>
+<p>Conservar el rastro sirve para tres cosas. Permite retomar el trabajo después de un tiempo sin tener que reconstruirlo, permite explicarlo a otra persona que quiera continuarlo, y evita deshacer de buena fe una decisión que tenía un motivo. En un material educativo abierto tiene una cuarta utilidad, ya que muestra a las personas que lo reutilizan cómo se hizo, que es lo que completa la declaración de la recomendación 4.</p></div></section>
+<section class="apartado" id="el-registro-de-decisiones" aria-labelledby="h-el-registro-de-decisiones"><h2 id="h-el-registro-de-decisiones">El registro de decisiones</h2><div class="texto"><p>La forma habitual de conservarlo en el desarrollo de software es el registro de decisiones de arquitectura, conocido por sus siglas en inglés, ADR. Cada decisión importante se anota en un documento breve que recoge cuatro cosas:</p>
+<ul>
+<li><strong>El contexto.</strong> La situación que obliga a decidir.</li>
+<li><strong>La decisión.</strong> Lo que se hace, con el detalle suficiente para aplicarlo.</li>
+<li><strong>Las alternativas descartadas.</strong> Cada una con el motivo por el que no se eligió, que es la parte que evita repetir el debate más adelante.</li>
+<li><strong>Las consecuencias.</strong> Lo que mejora y lo que empeora.</li>
+</ul>
+<p>Una decisión que deja de valer no se borra, sino que se marca como sustituida por la nueva, de modo que el rastro se conserva. En el proyecto que presenta la ponencia, cada registro anota además con qué herramienta de IA y con qué modelo se tomó la decisión, lo que permite cambiar de herramienta sin perder la historia.</p></div></section>
+<section class="apartado" id="el-trabajo-de-la-ia-y-el-de-la-persona" aria-labelledby="h-el-trabajo-de-la-ia-y-el-de-la-persona"><h2 id="h-el-trabajo-de-la-ia-y-el-de-la-persona">El trabajo de la IA y el de la persona</h2><div class="texto"><p>El registro no supone una tarea añadida para el docente, ya que lo escribe la IA a partir de lo que se decide en la conversación, y la persona comprueba que lo anotado corresponde a lo decidido. La ponencia lo resume en que la IA propone y la persona dispone.</p>
+<p>El registro tampoco se reconstruye al final, ya que un material suele salir de muchas sesiones de trabajo repartidas en días distintos, y recomponer después esas conversaciones resulta inviable. El registro se escribe en el momento en que se decide, y por eso resiste el paso de las sesiones. A los agentes de programación se les indica una vez en su archivo de instrucciones, y lo mantienen en todas. En la web de un chatbot, lo mínimo es pedir al terminar cada sesión que la IA anote las decisiones de ese día en un documento que se va guardando.</p></div></section>
+<section class="apartado" id="un-ejemplo-de-la-comunidad" aria-labelledby="h-un-ejemplo-de-la-comunidad"><h2 id="h-un-ejemplo-de-la-comunidad">Un ejemplo de la comunidad</h2><div class="texto"><p>La guía interactiva <a href="https://explikarlos.github.io/elige-ia/" target="_blank" rel="noopener">«Elige tu IA»</a>, publicada como expliCarlos, lleva en su repositorio un <a href="https://github.com/explikarlos/elige-ia/blob/main/docs/decisions/ADR-001-static-pages.md" target="_blank" rel="noopener">registro de decisiones</a>. El primero explica por qué la aplicación es estática y no tiene servidor. Entre las alternativas descartadas figura una base de datos, que habría permitido sincronizar las respuestas, pero que se descartó porque aumentaba los riesgos de privacidad, el coste y el mantenimiento. Cualquier persona que retome ese proyecto sabe así que la ausencia de servidor responde a una decisión meditada.</p>
+<p>Esta guía lleva también su propio registro, enlazado desde la página de <a href="../creditos.html">créditos y licencias</a>, con las decisiones sobre sus fuentes, su web y sus ejemplos.</p></div></section><nav class="entre-capitulos" aria-label="Secciones de la guía"><a class="paso" href="capitulo-8.html">Anterior</a><a href="guia.html">Volver a la guía</a><span></span></nav>
+</main>
+<footer class="pie">
+<div class="ancho">
+<p>© 2026 <a href="https://bilateria.org" target="_blank" rel="noopener">Juan José de Haro</a>. Código bajo <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener">AGPL v3</a> y contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank" rel="noopener">CC BY-SA 4.0</a>. <a href="creditos.html">Créditos y licencias</a>.</p>
+</div>
+</footer>
+</body>
+</html>
