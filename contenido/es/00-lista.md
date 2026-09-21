@@ -4,7 +4,7 @@ Esta guía nace de dos motivos, uno ético y otro legal. El motivo ético es que
 
 El motivo legal es que publicar un material convierte a su autor en responsable de lo que ese material hace, y algunas decisiones que parecen técnicas tienen consecuencias jurídicas. Recoger datos del alumnado sin que el centro lo haya autorizado puede vulnerar la normativa de protección de datos, que es especialmente estricta cuando se trata de menores. Incorporar imágenes, textos o piezas de software sin respetar su licencia vulnera los derechos de sus autores. En ambos casos la responsabilidad recae en la persona que publica, y no en la IA que generó el material.
 
-La lista que sigue reúne las diez recomendaciones de la guía, de forma que también sirve para revisar un material que ya está hecho. Cada una enlaza con el capítulo donde se explica con más detalle. Las que tienen consecuencias legales son, sobre todo, la 2, la 3 y la 8, mientras que las demás responden al compromiso con el alumnado y con la comunidad docente. Las tres primeras son las esenciales, por lo que conviene empezar por ellas.
+La lista que sigue reúne las diez recomendaciones de la guía, de forma que también sirve para revisar un material que ya está hecho. Cada una enlaza con el capítulo donde se explica con más detalle. Las que tienen consecuencias legales son, sobre todo, la 2, la 3 y la 8, mientras que las demás responden al compromiso con el alumnado y con la comunidad docente.
 
 No todas las personas trabajan con los mismos medios, y las herramientas para crear programas con IA son muy variadas. A grandes rasgos pueden agruparse en cuatro familias, que se presentan a continuación con algunos ejemplos de las disponibles en 2026.
 
