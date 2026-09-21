@@ -18,8 +18,8 @@
 <rect x="186" y="504" width="80" height="80" rx="18" fill="#0f766e"/>
 <g transform="translate(198 516) scale(2.3333)" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
   <path d="m9 12 2 2 4-4" /></g>
-<text x="296" y="536" font-size="33" font-weight="400" fill="#16232b">No recoge datos personales, o los datos</text>
-<text x="296" y="578" font-size="33" font-weight="400" fill="#16232b">no salen del dispositivo</text>
+<text x="296" y="536" font-size="33" font-weight="400" fill="#16232b">No envía datos personales a servicios</text>
+<text x="296" y="578" font-size="33" font-weight="400" fill="#16232b">ajenos al centro</text>
 <rect x="70" y="616" width="940" height="112" rx="20" fill="#ffffff" stroke="#dde3df" stroke-width="2"/>
 <text x="128" y="692" font-size="58" font-weight="700" fill="#0f766e" text-anchor="middle">3</text>
 <rect x="186" y="632" width="80" height="80" rx="18" fill="#0f766e"/>

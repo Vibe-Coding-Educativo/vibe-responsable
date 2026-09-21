@@ -1,4 +1,4 @@
-# No recoge datos personales, o los datos no salen del dispositivo
+# No envía datos personales a servicios ajenos al centro
 
 ## Los datos personales en un material educativo
 
@@ -34,6 +34,12 @@ Algunos materiales necesitan identificar al alumnado para cumplir su función, c
 La guía de la Agencia Española de Protección de Datos admite que el profesorado utilice aplicaciones en sus dispositivos personales, siempre que respeten la política de privacidad definida por el centro o por la administración educativa. Considera de especial importancia que ese uso no implique una transmisión de los datos del alumnado al prestador del servicio, para que los utilice con sus propios fines o los almacene de forma permanente.
 
 En una herramienta creada con vibe coding, esta condición se cumple cuando los datos se guardan únicamente en el dispositivo del docente, ya sea en el navegador o en un archivo que se descarga y se vuelve a cargar. La aplicación publicada no contiene ningún dato, porque cada docente introduce los suyos y no salen de su equipo, de modo que el autor de la herramienta no trata datos de nadie. Conviene, además, que la herramienta permita compartir o imprimir la información sin los nombres, y que cada docente la utilice conforme a las normas de su centro, igual que haría con un cuaderno en papel o con una hoja de cálculo.
+
+## Programas que el centro pone a disposición del profesorado
+
+Un centro o una administración educativa puede decidir que un programa gestione datos del alumnado en sus propios sistemas, por ejemplo unas hojas de cálculo compartidas con las calificaciones. En ese caso los datos salen del navegador, y es legítimo, porque la decisión la toma el responsable de esos datos. La guía de la Agencia Española de Protección de Datos indica que los centros deben conocer las aplicaciones que vayan a utilizar, su política de privacidad y sus condiciones de uso antes de utilizarlas. Cuando interviene un proveedor externo, actúa como encargado del tratamiento y solo puede tratar los datos conforme a las instrucciones del centro.
+
+Un programa creado con vibe coding puede cumplir esta función con tres cautelas. La primera es que los datos se guarden en la plataforma que el centro ya utiliza, sin añadir servicios nuevos. La segunda es que la decisión pase por el equipo directivo y por el delegado de protección de datos, y no por un docente a título individual. La tercera es la seguridad: el código de estos programas lo ha escrito la IA y lo habitual es que nadie lo haya revisado, de modo que un programa que maneja datos reales merece la revisión de una persona con conocimientos técnicos antes de ponerse en uso.
 
 ## Los envíos de datos a otros servidores
 

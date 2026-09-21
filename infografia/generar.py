@@ -19,7 +19,7 @@ TEXTOS = {
         "subtitulo": "Materiales educativos creados con vibe coding",
         "puntos": [
             ("book-check", "El contenido es correcto y lo ha revisado una persona"),
-            ("shield-check", "No recoge datos personales, o los datos no salen del dispositivo"),
+            ("shield-check", "No envía datos personales a servicios ajenos al centro"),
             ("creative-commons", "Lleva una licencia libre a la vista"),
             ("bot", "Indica que se ha hecho con IA y qué ha comprobado la persona"),
             ("messages-square", "Se puede explicar qué hace en dos frases"),

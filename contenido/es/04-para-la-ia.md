@@ -22,10 +22,11 @@ CÓMO DEBE CONSTRUIRSE
 - Un único archivo HTML, con los estilos y el código dentro, sin bibliotecas,
   tipografías ni servicios externos, de forma que funcione sin conexión y pueda
   incrustarse en otra página.
-- Sin datos personales: no pidas el nombre ni ningún dato que identifique a una
-  persona. Si hay que conservar algo, como las respuestas o el progreso, que se
-  quede en el navegador y no se envíe a ningún servidor. Sin analítica ni
-  contadores de visitas.
+- Datos personales: no pidas el nombre ni ningún dato que identifique a una
+  persona, salvo que la herramienta lo necesite para su función, como un
+  cuaderno de notas. En ese caso guárdalo solo en el dispositivo y ofrece la
+  opción de exportar o imprimir sin los nombres. No envíes nada a ningún
+  servidor ni añadas analítica o contadores de visitas.
 - Accesible: manejable solo con el teclado, con un orden de tabulación lógico,
   etiquetas en los controles, textos alternativos en las imágenes, contraste
   suficiente, sin depender del color para entender nada y legible en la pantalla
@@ -58,8 +59,9 @@ que dependa de ti y dime qué queda pendiente para mí.
    datos, las definiciones y las respuestas que conviene que yo compruebe, y
    avisa de aquello de lo que no estés seguro.
 2. DATOS PERSONALES. Comprueba si el material pide datos que identifiquen a una
-   persona y si envía algo fuera del navegador. Enumera todas las direcciones
-   externas que aparezcan en el código.
+   persona, si los necesita para su función y dónde los guarda. Comprueba si
+   envía algo fuera del navegador y enumera todas las direcciones externas que
+   aparezcan en el código.
 3. LICENCIA. Comprueba que el material indica su autoría y su licencia en un
    lugar visible.
 4. USO DE IA. Comprueba que el material indica que se ha creado con IA y qué ha
@@ -95,4 +97,7 @@ Quien publique el material en un repositorio o en un sitio propio puede añadir 
   pida.
 - Revisa la accesibilidad con una herramienta automática y corrige lo que
   detecte.
+- Si el programa va a guardar datos del alumnado en los sistemas del centro,
+  indícame qué debe revisar una persona con conocimientos técnicos antes de
+  ponerlo en uso.
 ```

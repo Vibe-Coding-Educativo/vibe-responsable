@@ -136,10 +136,10 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   .pagina-lista { --fila: 2.45rem; }
   .pagina-lista .abrir { padding-block: 0.12rem; }
   .pagina-lista .rotulo { font-size: 0.92rem; line-height: 1.17; }
-  .pagina-lista   .pagina-lista .panel .detalle-caja { padding: 1.1rem 1.5rem 0.8rem; }
-  .pagina-lista .cifra { font-size: 3.4rem; }
+  .pagina-lista   .pagina-lista .panel .detalle-caja { padding: 0.9rem 1.4rem 0.6rem; }
+  .pagina-lista .cifra { font-size: 3rem; }
   .pagina-lista .detalle-cab { margin-bottom: 0.7rem; }
-  .pagina-lista .explicacion p, .pagina-lista .nivel { margin-bottom: 0.55rem; line-height: 1.42; font-size: 0.96rem; }
+  .pagina-lista .explicacion p, .pagina-lista .nivel { margin-bottom: 0.45rem; line-height: 1.38; font-size: 0.92rem; }
   .pagina-lista .detalle-pie { margin-top: 0.2rem; padding-top: 0.4rem; }
   .pagina-lista .pie { margin-top: 0.6rem; padding: 0.35rem 0 0.4rem; font-size: 0.76rem; }
   .pagina-lista .pie .ancho { display: flex; flex-wrap: wrap; gap: 0 1.2rem; }
