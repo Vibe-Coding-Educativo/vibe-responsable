@@ -1,5 +1,14 @@
 # No envía datos personales a servicios ajenos al centro
 
+Lo que hay que hacer depende del tipo de material. La tabla resume los cuatro casos que se explican en este capítulo, y cada uno enlaza con su apartado.
+
+| Si el material… | Entonces… |
+| --- | --- |
+| está pensado para el alumnado o para publicarse en abierto | [no necesita datos](#materiales-que-no-necesitan-datos), y no debe pedirlos |
+| es una herramienta del docente con su alumnado identificado | [los datos se quedan en su dispositivo](#herramientas-que-necesitan-identificar-al-alumnado), conforme a las normas del centro |
+| recoge las respuestas del alumnado | [los resultados llegan al docente sin pasar por servicios ajenos al centro](#programas-que-recogen-las-respuestas-del-alumnado) |
+| lo pone el centro a disposición del profesorado | [los datos van a los sistemas del centro](#programas-que-el-centro-pone-a-disposicion-del-profesorado), y la decisión es del centro |
+
 ## Los datos personales en un material educativo
 
 Un dato personal es cualquier información que permite identificar a una persona. En un material educativo lo son el nombre, el correo electrónico, las notas, la voz o la imagen del alumnado, y también las respuestas de una actividad cuando se guardan asociadas a un nombre. Un cuestionario que pide el nombre y lo envía a un servidor junto con las respuestas está tratando datos personales.

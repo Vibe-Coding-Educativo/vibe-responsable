@@ -44,13 +44,13 @@ h1 { font-size: clamp(1.55rem, 1.05rem + 1.5vw, 2.3rem); line-height: 1.12; lett
 .sitio a { color: var(--tiza); text-decoration: none; }
 .sitio a:hover { text-decoration: underline; }
 .sitio { align-items: center; }
-.sitio .sitio-guia { display: inline-flex; align-items: center; gap: 0.6rem; font-weight: 700; }
+.sitio .sitio-guia { display: inline-flex; align-items: center; gap: 0.6rem; }
 .marca { display: block; width: 1.75rem; height: 1.75rem; border-radius: 6px; box-shadow: 0 0 0 1px rgba(243, 241, 231, 0.35); }
 .sitio .sitio-comunidad { color: var(--tiza-suave); font-weight: 400; }
 .estado { font-size: 0.78rem; border: 1px solid var(--tiza-suave); color: var(--tiza); border-radius: 999px; padding: 0.02rem 0.55rem; cursor: help; }
 .globo { position: absolute; z-index: 15; top: calc(100% + 0.5rem); left: 0; width: min(22rem, calc(100vw - 2.5rem)); padding: 0.7rem 0.85rem; border-radius: 6px; background: var(--hoja); color: var(--tinta); border: 1px solid var(--raya); box-shadow: var(--sombra); font-size: 0.92rem; line-height: 1.4; opacity: 0; visibility: hidden; transform: translateY(-0.25rem); transition: opacity 0.16s ease, transform 0.16s ease, visibility 0s linear 0.16s; }
 .estado:hover .globo, .estado:focus .globo, .estado:focus-within .globo { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
-.pizarra nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.1rem 1.4rem; }
+.pizarra nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.1rem 1.25rem; }
 .pizarra nav a { display: block; color: var(--tiza); text-decoration: none; padding: 0.25rem 0; border-bottom: 2px solid transparent; font-size: 0.95rem; }
 .pizarra nav a:hover { border-bottom-color: var(--tiza-suave); }
 .pizarra nav a[aria-current="page"] { border-bottom-color: var(--tiza); font-weight: 700; }
@@ -208,6 +208,20 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 .entre-capitulos { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.4rem 1rem; margin-top: 1.4rem; padding-top: 0.8rem; border-top: 1px solid var(--raya); font-size: 0.92rem; }
 .entre-capitulos .paso { padding: 0; }
 .leer-capitulo { font-weight: 700; }
+
+/* Recuadro «Qué hay que hacer» de cada capítulo y tabla de casos */
+.que-hacer { background: var(--hoja); border: 1px solid var(--raya); border-left: 4px solid var(--verde); border-radius: 6px; box-shadow: var(--sombra); padding: 1rem 1.3rem 0.4rem; margin: 0.4rem 0 1.4rem; max-width: 58rem; }
+.que-hacer h2 { margin: 0 0 0.7rem; font-size: 1.15rem; }
+.que-hacer .niveles { display: grid; gap: 0 2rem; }
+@media (min-width: 62rem) { .que-hacer .niveles:has(> li + li) { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.previo { max-width: 58rem; margin: 0 0 1.4rem; }
+.previo p { margin: 0 0 0.8rem; }
+.previo table { width: 100%; border-collapse: collapse; font-size: 0.97rem; }
+.previo th { text-align: left; font-weight: 700; padding: 0.45rem 0.8rem; border-bottom: 2px solid var(--verde); }
+.previo td { padding: 0.55rem 0.8rem; border-bottom: 1px solid var(--raya); vertical-align: top; }
+.previo td:first-child { width: 42%; }
+.apartado:target h2 { color: var(--verde); }
+.apartado { scroll-margin-top: 1rem; }
 
 /* Textos para copiar y dar a la IA */
 .copiable { min-width: 0; margin: 0 0 1rem; }

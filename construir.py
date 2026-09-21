@@ -45,8 +45,8 @@ UI = {
         "siguiente": "Siguiente",
         "niveles_ayuda": "Qué significan «Lo mínimo» y «Lo recomendado»",
         "leer_capitulo": "Leer el capítulo",
+        "que_hacer": "Qué hay que hacer",
         "volver_guia": "Volver a la guía",
-        "capitulo_de": "Capítulo {n} de {total}",
         "cerrar": "Cerrar",
         "copiar": "Copiar el texto",
         "copiado": "Texto copiado",
@@ -145,6 +145,22 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
     return enlaces_externos(pag)
 
 
+def puntos_de_la_guia(idioma):
+    """Las recomendaciones de 01-guia.md: [(número, título, explicación en HTML, niveles en HTML)]."""
+    T = UI[idioma]
+    md = (RAIZ / "contenido" / idioma / "01-guia.md").read_text(encoding="utf-8")
+    puntos = []
+    for b in re.split(r"^## ", md.split("\n", 1)[1], flags=re.M)[1:]:
+        cab, resto = b.split("\n", 1)
+        m = re.match(r"(\d+)\\?\.\s+(.*)", cab.strip())
+        h = pandoc(resto.strip())
+        for etiqueta, clase in T["niveles"].items():
+            h = h.replace(f"<li><strong>{etiqueta}</strong>", f'<li class="nivel {clase}"><strong>{etiqueta}</strong>')
+        corte = h.find("<ul>")
+        puntos.append((int(m.group(1)), m.group(2).strip(), h[:corte], h[corte:].replace("<ul>", '<ul class="niveles">', 1)))
+    return puntos
+
+
 def capitulos(idioma):
     """Capítulos escritos, por número de recomendación: {1: (archivo, título)}."""
     carpeta = RAIZ / "contenido" / idioma / "capitulos"
@@ -206,22 +222,12 @@ def pagina_lista(idioma):
     T = UI[idioma]
     md = (RAIZ / "contenido" / idioma / "01-guia.md").read_text(encoding="utf-8")
     titulo = titulo_de(md)
-    brutas = re.split(r"^## ", md.split("\n", 1)[1], flags=re.M)[1:]
-    puntos = []
-    for b in brutas:
-        cab, resto = b.split("\n", 1)
-        m = re.match(r"(\d+)\\?\.\s+(.*)", cab.strip())
-        puntos.append((int(m.group(1)), m.group(2).strip(), resto.strip()))
+    puntos = puntos_de_la_guia(idioma)
     total = len(puntos)
 
     caps = capitulos(idioma)
     filas = []
-    for (n, t, cuerpo), ic in zip(puntos, ICONOS):
-        h = pandoc(cuerpo)
-        for etiqueta, clase in T["niveles"].items():
-            h = h.replace(f"<li><strong>{etiqueta}</strong>", f'<li class="nivel {clase}"><strong>{etiqueta}</strong>')
-        corte = h.find("<ul>")
-        explicacion, niveles = h[:corte], h[corte:].replace("<ul>", '<ul class="niveles">', 1)
+    for (n, t, explicacion, niveles), ic in zip(puntos, ICONOS):
         ayuda = (f'<a class="leer-capitulo" href="{caps[n][0]}">{html.escape(T["leer_capitulo"])}</a>' if n in caps
                  else f'<a class="ayuda-niveles" href="herramientas.html#{ancla("Lo mínimo y lo recomendado")}">{html.escape(T["niveles_ayuda"])}</a>')
         ant = f'<button type="button" class="paso" data-ir="{n-1}">{html.escape(T["anterior"])}</button>' if n > 1 else "<span></span>"
@@ -275,10 +281,15 @@ def pagina_capitulo(idioma, n, archivo, md):
     """Un capítulo: texto seguido, con vuelta a la guía y paso al anterior y al siguiente."""
     T = UI[idioma]
     caps = capitulos(idioma)
-    total = len(re.findall(r"^## ", (RAIZ / "contenido" / idioma / "01-guia.md").read_text(encoding="utf-8"), flags=re.M))
     texto = md.read_text(encoding="utf-8")
     titulo = titulo_de(texto)
     cuerpo_md = texto.split("\n", 1)[1]
+    # El recuadro repite lo mínimo y lo recomendado de la lista: hay una sola fuente, 01-guia.md
+    niveles = next(p[3] for p in puntos_de_la_guia(idioma) if p[0] == n)
+    recuadro = (f'<aside class="que-hacer" aria-labelledby="h-que-hacer"><h2 id="h-que-hacer">{html.escape(T["que_hacer"])}</h2>'
+                f'{niveles}</aside>')
+    previo = re.split(r"^## ", cuerpo_md, flags=re.M)[0].strip()
+    previo = f'<div class="previo">{pandoc(previo)}</div>' if previo else ""
     secciones = []
     for a in re.split(r"^## ", cuerpo_md, flags=re.M)[1:]:
         cab, resto = a.split("\n", 1)
@@ -289,8 +300,7 @@ def pagina_capitulo(idioma, n, archivo, md):
     sig = (f'<a class="paso" href="{caps[n+1][0]}">{html.escape(T["siguiente"])}</a>' if n + 1 in caps else "<span></span>")
     cuerpo = (f'<p class="migas"><a href="guia.html">{html.escape(T["volver_guia"])}</a></p>'
               f'<h1><span class="cifra-cap" aria-hidden="true">{n}</span>{html.escape(titulo)}</h1>'
-              f'<p class="oculto">{html.escape(T["capitulo_de"].format(n=n, total=total))}</p>'
-              + "\n".join(secciones)
+              + recuadro + previo + "\n".join(secciones)
               + f'<nav class="entre-capitulos" aria-label="{html.escape(T["nav"])}">{ant}'
                 f'<a href="guia.html">{html.escape(T["volver_guia"])}</a>{sig}</nav>')
     return marco(idioma, "guia.html", titulo, cuerpo, "pagina-texto pagina-capitulo")
