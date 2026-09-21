@@ -27,4 +27,4 @@ El registro tampoco se reconstruye al final, ya que un material suele salir de m
 
 La guía interactiva [«Elige tu IA»](https://explikarlos.github.io/elige-ia/), publicada como expliCarlos, lleva en su repositorio un [registro de decisiones](https://github.com/explikarlos/elige-ia/blob/main/docs/decisions/ADR-001-static-pages.md). El primero explica por qué la aplicación es estática y no tiene servidor. Entre las alternativas descartadas figura una base de datos, que habría permitido sincronizar las respuestas, pero que se descartó porque aumentaba los riesgos de privacidad, el coste y el mantenimiento. Cualquier persona que retome ese proyecto sabe así que la ausencia de servidor responde a una decisión meditada.
 
-Esta guía lleva también su propio registro, enlazado desde la página de [créditos y licencias](creditos.html), con las decisiones sobre sus fuentes, su web y sus ejemplos.
+Esta guía lleva también su propio [registro](https://github.com/Vibe-Coding-Educativo/vibe-responsable/tree/main/docs/adr), que recoge las decisiones sobre sus fuentes, su web y sus ejemplos.
