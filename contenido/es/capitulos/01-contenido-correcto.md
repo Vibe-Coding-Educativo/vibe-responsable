@@ -21,7 +21,7 @@ La forma de hacerlo es recorrer el material como lo haría el alumnado, también
 
 La IA acelera la producción, pero la responsabilidad pedagógica sigue siendo de la persona que publica el material. Así lo recoge también la [«Guía sobre el uso de la inteligencia artificial en el ámbito educativo»](https://code.intef.es/wp-content/uploads/2026/09/ACTUALIZACI%C3%93N-GU%C3%8DA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5.pdf) del INTEF, en su versión 2.0 de septiembre de 2026, que entre sus principios éticos sitúa la supervisión humana y la responsabilidad: el profesorado debe mantener el control sobre el uso de la IA, y las decisiones educativas no pueden depender de sistemas automatizados.
 
-Esto tiene una consecuencia práctica para el resto de la guía. La IA puede encargarse de casi todas las recomendaciones, desde la licencia hasta la accesibilidad, pero no de esta. Puede señalar qué conviene comprobar, e incluso advertir de aquello de lo que no está segura, aunque no puede certificar que lo que enseña el material sea correcto. Por eso el texto de revisión de las [instrucciones para la IA](../para-la-ia.html) le pide exactamente eso, señalar lo que debe revisar la persona.
+Esto tiene una consecuencia práctica para el resto de la guía. La IA puede encargarse de casi todas las recomendaciones, desde la licencia hasta la accesibilidad, pero no de esta. Puede señalar qué conviene comprobar, e incluso advertir de aquello de lo que no está segura, aunque no puede certificar que lo que enseña el material sea correcto. Por eso el texto de revisión de las [instrucciones para la IA](para-la-ia.html) le pide exactamente eso, señalar lo que debe revisar la persona.
 
 ## El valor didáctico del material
 

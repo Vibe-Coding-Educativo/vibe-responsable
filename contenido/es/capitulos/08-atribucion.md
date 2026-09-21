@@ -19,11 +19,11 @@ Cuando el elemento se ha modificado, conviene indicarlo. Una atribución complet
 
 ## El lugar de la atribución
 
-La atribución debe ir dentro del propio material, y no en la página que lo enlaza ni en un mensaje aparte. Un material educativo se descarga, se incrusta en otra página o se sube a la plataforma de un centro, y si la atribución no viaja con él, se pierde en el primer paso. Lo mínimo es una sección de créditos al pie o en una pantalla propia, con los cuatro datos de cada elemento. Esta guía lo hace en su página de [créditos y licencias](../creditos.html), que recoge los iconos y la tipografía que utiliza, con sus autores y sus licencias.
+La atribución debe ir dentro del propio material, y no en la página que lo enlaza ni en un mensaje aparte. Un material educativo se descarga, se incrusta en otra página o se sube a la plataforma de un centro, y si la atribución no viaja con él, se pierde en el primer paso. Lo mínimo es una sección de créditos al pie o en una pantalla propia, con los cuatro datos de cada elemento. Esta guía lo hace en su página de [créditos y licencias](creditos.html), que recoge los iconos y la tipografía que utiliza, con sus autores y sus licencias.
 
 ## Lo que la IA añade por su cuenta
 
-Conviene preguntar a la IA qué elementos ajenos ha incorporado y con qué licencia, ya que no siempre lo indica. Es lo que pide el punto 8 del texto de revisión de las [instrucciones para la IA](../para-la-ia.html). Hay tres casos que merecen atención:
+Conviene preguntar a la IA qué elementos ajenos ha incorporado y con qué licencia, ya que no siempre lo indica. Es lo que pide el punto 8 del texto de revisión de las [instrucciones para la IA](para-la-ia.html). Hay tres casos que merecen atención:
 
 - **Las imágenes enlazadas desde otra web.** La IA puede colocar una imagen mediante su dirección en otro sitio, sin que conste su licencia. Conviene sustituirla por una con licencia conocida y guardarla dentro del material.
 - **Las imágenes generadas por IA.** No tienen un autor al que acreditar, pero conviene indicar que son generadas y con qué herramienta, como pide la recomendación 4.

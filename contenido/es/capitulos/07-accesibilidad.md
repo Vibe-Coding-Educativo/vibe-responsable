@@ -23,7 +23,7 @@ Hay cuatro pruebas que no requieren herramientas ni conocimientos técnicos:
 
 ## La revisión con ayuda de la IA
 
-Gran parte de este trabajo puede encargarse a la IA. Lo mínimo es pedirle desde el principio que el material siga las [Pautas de Accesibilidad para el Contenido Web](https://www.w3.org/WAI/standards-guidelines/wcag/es), el estándar internacional, que se organiza en cuatro principios: el contenido debe ser perceptible, operable, comprensible y robusto. Así lo hace el primer texto de las [instrucciones para la IA](../para-la-ia.html).
+Gran parte de este trabajo puede encargarse a la IA. Lo mínimo es pedirle desde el principio que el material siga las [Pautas de Accesibilidad para el Contenido Web](https://www.w3.org/WAI/standards-guidelines/wcag/es), el estándar internacional, que se organiza en cuatro principios: el contenido debe ser perceptible, operable, comprensible y robusto. Así lo hace el primer texto de las [instrucciones para la IA](para-la-ia.html).
 
 Lo recomendado es pedirle además que revise el resultado con una herramienta automática y corrija lo que detecte. Los agentes de programación pueden hacerlo sin ayuda, ya que instalan la herramienta, la ejecutan y aplican las correcciones. El W3C advierte, sin embargo, de que [ninguna herramienta puede determinar por sí sola si un sitio cumple los estándares de accesibilidad](https://www.w3.org/WAI/test-evaluate/es), de modo que las pruebas manuales siguen siendo necesarias.
 

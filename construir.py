@@ -328,6 +328,23 @@ var e=n.filter(function(x){{return d.indexOf(x)>-1;}})[0]||"es";location.replace
 """
 
 
+def comprobar_enlaces_internos(idioma):
+    """Revisa que cada enlace interno de las páginas generadas lleve a un archivo y a un ancla que existen."""
+    base, rotos = RAIZ / idioma, []
+    ids = {p.name: set(re.findall(r'id="([^"]+)"', p.read_text(encoding="utf-8"))) for p in base.glob("*.html")}
+    for p in sorted(base.glob("*.html")):
+        for href in re.findall(r'href="([^"]+)"', p.read_text(encoding="utf-8")):
+            if re.match(r"(https?:|mailto:)", href):
+                continue
+            ruta, _, fragmento = href.partition("#")
+            destino = p if not ruta else (base / ruta / "index.html" if ruta.endswith("/") or ruta == "./" else base / ruta)
+            if not destino.resolve().exists():
+                rotos.append(f"{p.name}: {href} (no existe)")
+            elif fragmento and destino.suffix == ".html" and fragmento not in ids.get(destino.name, set()):
+                rotos.append(f"{p.name}: {href} (ancla inexistente)")
+    return rotos
+
+
 if __name__ == "__main__":
     for idioma in IDIOMAS:
         destino = RAIZ / idioma
@@ -343,5 +360,11 @@ if __name__ == "__main__":
         if viejo.exists():
             viejo.unlink()
         print("generado", idioma, [a for a, _ in PAGINAS])
+        rotos = comprobar_enlaces_internos(idioma)
+        if rotos:
+            print("ENLACES INTERNOS ROTOS:")
+            for r in rotos:
+                print("  ", r)
+            raise SystemExit(1)
     (RAIZ / "index.html").write_text(portada(), encoding="utf-8")
     (RAIZ / ".nojekyll").write_text("", encoding="utf-8")

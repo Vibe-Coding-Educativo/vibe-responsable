@@ -21,7 +21,7 @@ Esta guía utiliza la primera combinación.
 
 La licencia debe estar a la vista para cumplir su función. Lo mínimo es que el propio material indique, en un lugar visible como el pie, la autoría, el nombre de la licencia y el enlace a su texto oficial. Así la licencia acompaña al material cuando se descarga o se incrusta en otra página.
 
-Cuando el material es un proyecto con varios archivos, conviene añadir además el archivo con el texto completo de la licencia del código y mencionar ambas licencias en la documentación. Todo ello puede pedirse a la IA desde el principio, como hace el primer texto de las [instrucciones para la IA](../para-la-ia.html), de forma que el material se genera ya con su licencia.
+Cuando el material es un proyecto con varios archivos, conviene añadir además el archivo con el texto completo de la licencia del código y mencionar ambas licencias en la documentación. Todo ello puede pedirse a la IA desde el principio, como hace el primer texto de las [instrucciones para la IA](para-la-ia.html), de forma que el material se genera ya con su licencia.
 
 ## La autoría de lo generado por la IA
 
