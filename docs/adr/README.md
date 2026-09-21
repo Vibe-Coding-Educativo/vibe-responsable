@@ -11,6 +11,7 @@ deshaga después de buena fe, ni siquiera nosotros dentro de un año.
 | [3](0003-el-material-de-consulta-no-se-publica.md) | El material de consulta se descarga entero y se queda fuera del repositorio | aceptado |
 | [4](0004-web-estatica-generada-desde-markdown.md) | La web es estática y se genera desde Markdown, sin dependencias en el navegador | aceptado |
 | [5](0005-portada-en-una-pantalla-y-varias-paginas.md) | La portada cabe en una pantalla y la guía se reparte en varias páginas | aceptado |
+| [6](0006-los-ejemplos-salen-del-catalogo-de-la-comunidad.md) | Los ejemplos de los capítulos salen del catálogo de la comunidad | aceptado |
 
 Para añadir una, se copia [la plantilla](0000-plantilla.md) con el número
 siguiente y se anota aquí. Una decisión que deje de valer no se borra: se marca
