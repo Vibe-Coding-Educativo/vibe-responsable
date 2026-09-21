@@ -37,11 +37,15 @@ En una herramienta creada con vibe coding, esta condición se cumple cuando los 
 
 ## Programas que recogen las respuestas del alumnado
 
-Otro caso es el programa que un docente crea para comprobar los conocimientos de su alumnado, detectar errores de concepto o seguir su progreso. La iniciativa es individual, pero los datos los genera el alumnado en sus propios dispositivos y tienen que llegar al docente. Evaluar forma parte de la función educativa, de modo que el programa es legítimo, y lo que hay que cuidar es el camino que siguen los resultados. Hay tres formas de resolverlo sin enviar datos a servicios ajenos al centro:
+Otro caso es el programa que un docente crea para comprobar los conocimientos de su alumnado, detectar errores de concepto o seguir su progreso. La iniciativa es individual, pero los datos los genera el alumnado en sus propios dispositivos y tienen que llegar al docente. Evaluar forma parte de la función educativa, de modo que el programa es legítimo, y lo que hay que cuidar es el camino que siguen los resultados. Hay varias formas de resolverlo sin enviar datos a servicios ajenos al centro, que pueden combinarse:
 
 - **El resultado se entrega por los medios del centro.** El programa muestra el resultado al terminar, o lo guarda en un archivo, y el alumnado lo entrega por la plataforma del centro, como cualquier otra tarea.
 - **El alumnado se identifica con un código.** El programa no pide el nombre, sino un código que solo el docente sabe a qué persona corresponde. El Reglamento europeo llama a esta técnica seudonimización, y exige que esa correspondencia se guarde por separado.
 - **Los resultados se recogen en una hoja de cálculo del centro.** Cuando hace falta una recogida automática, los datos deben ir a la cuenta que el centro proporciona al docente, y no a una cuenta personal, y conviene que el centro lo conozca.
+- **La entrega viaja cifrada.** El programa cifra el resultado con una clave del docente, de forma que el alumnado puede cifrar pero no descifrar, y solo el docente lo lee con su contraseña. Aunque el archivo se envíe por un canal poco seguro, su contenido resulta ilegible.
+- **La nota la gestiona la plataforma del centro.** El programa se exporta en un formato estándar, como SCORM, y se sube a la plataforma que el centro ya utiliza, que es la que registra los resultados.
+
+Un ejemplo en funcionamiento es [OpenWorksheets](https://openworksheets.github.io/), una aplicación libre de fichas interactivas que no tiene servidor ni cuentas: el alumnado descarga un archivo de entrega, que puede ir cifrado, y la aplicación avisa si ha sido manipulado.
 
 Estos programas son deterministas, es decir, aplican siempre las mismas reglas a las respuestas, y el análisis se hace en el propio dispositivo. La situación cambia si el programa envía las respuestas a un servicio de IA para que las valore. En ese caso los datos llegan a un tercero y, además, el [Reglamento europeo de IA](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/spa) clasifica como de alto riesgo los sistemas de IA destinados a evaluar los resultados del aprendizaje, lo que conlleva obligaciones importantes para su proveedor y para el centro que lo utiliza.
 
