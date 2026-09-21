@@ -44,13 +44,17 @@ material de consulta con su enlace oficial, aunque los archivos no estén.
 
 ## Cómo se consulta cada cosa
 
-Las quince fuentes suman cerca de medio millón de palabras: no caben en la
-ventana de contexto de un agente, y leerlas enteras no es una opción. El reparto
+El material de consulta son veintitrés documentos: los quince del cuaderno de
+Gemini Notebook y otros ocho de alcance mundial, añadidos después tras una
+búsqueda en internet, que están solo en la copia local. Los del cuaderno suman
+cerca de medio millón de palabras: no caben en la ventana de contexto de un
+agente, y leerlos enteros no es una opción. El reparto
 es este:
 
 - **Pregunta que cruza varias fuentes** («¿qué base legitima este tratamiento y
   qué obligaciones tiene el centro?»): se pregunta al cuaderno, que responde con
-  las citas de los documentos que la sostienen.
+  las citas de los documentos que la sostienen. Solo alcanza a sus quince
+  documentos, no a los ocho añadidos después.
 - **Pasaje concreto ya localizado**: se busca en la copia de `fuentes/consulta/`
   con las herramientas del repositorio y se lee solo ese fragmento.
 - **Cita que va a la guía**: se comprueba contra la versión oficial en línea,
@@ -60,7 +64,7 @@ es este:
 
 El material de consulta no viaja con el repositorio: quien lo clone no lo tiene
 y ha de descargarlo de nuevo desde los enlaces oficiales del índice o desde el
-cuaderno. A cambio, se trabaja sobre el texto completo de las quince fuentes sin
+cuaderno. A cambio, se trabaja sobre el texto completo de todos los documentos sin
 publicar nada que no deba publicarse. Como los textos legales consolidados
 cambian, la copia local sirve para leer y localizar, pero la cita se comprueba
 siempre contra la versión oficial en línea.

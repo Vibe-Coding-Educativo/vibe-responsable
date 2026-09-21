@@ -56,6 +56,6 @@ carpeta de contenido.
 Después de cambiar el contenido hay que ejecutar `python3 construir.py` y
 subir también el HTML generado; si se olvida, la web queda desfasada respecto
 al Markdown. Quien quiera regenerarla necesita pandoc. A cambio, la web es
-ligera (las quince páginas de un idioma, con los estilos y el script, no llegan
-a 250 KB, más 72 KB de tipografía), no depende de nadie y cumple las
+ligera (el 21-09-2026, las quince páginas de un idioma con los estilos y el
+script sumaban 189 KB, más 53 KB de tipografía), no depende de nadie y cumple las
 recomendaciones que ella misma da.

@@ -12,11 +12,17 @@ resumen hecho de memoria.
 
 ## Decisión
 
-Cada documento consultado se guarda en `fuentes/`, transcrito a Markdown, con
-una cabecera que recoge título, autoría, fecha de publicación, URL, fecha de
-descarga y licencia. Los artículos propios del blog van en `fuentes/blog/`. Las
+Cada documento que sostiene directamente la guía se guarda en `fuentes/`,
+transcrito a Markdown, con una cabecera que recoge título, autoría, fecha de
+publicación, URL, fecha de descarga y licencia. La guía del INTEF es la
+excepción: se guarda el PDF original, con su texto extraído al lado para poder
+buscar en él. Los artículos propios del blog van en `fuentes/blog/`. Las
 imágenes que aportan información, en `fuentes/imagenes/`. El índice
 `fuentes/README.md` lista todo con su autoría y su licencia.
+
+El material que solo se consulta para trabajar (normas, guías de organismos,
+artículos de contexto) no se guarda aquí: lo regula el
+[ADR 3](0003-el-material-de-consulta-no-se-publica.md).
 
 Solo se guarda material con licencia que permita la copia y la redistribución
 (CC BY, CC BY-SA o equivalente). Si una fuente necesaria no la tuviera, se
