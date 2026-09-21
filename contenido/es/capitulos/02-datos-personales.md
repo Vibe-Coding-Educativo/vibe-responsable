@@ -6,6 +6,8 @@ Un dato personal es cualquier información que permite identificar a una persona
 
 La mayor parte del alumnado es menor de edad, y las normas de protección de datos son más exigentes en ese caso. En la Unión Europea, el [Reglamento General de Protección de Datos](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32016R0679) fija en 16 años la edad para consentir el tratamiento de los propios datos en los servicios en línea, y permite a cada país rebajarla hasta los 13. En España, la [Ley Orgánica 3/2018](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673) la establece en 14 años. Por debajo de esa edad, el consentimiento corresponde a las familias.
 
+Aunque el alumnado pueda dar su consentimiento a partir de esa edad, las buenas prácticas aconsejan que las familias reciban una información precisa sobre lo que hacen sus hijos y sobre las herramientas que utilizan. Conviene que esa información indique qué materiales se emplean, si recogen algún dato y con qué finalidad, de forma que la familia conozca el material antes de que se utilice en el aula.
+
 ## La decisión sobre los datos del alumnado
 
 Publicar un material que recoge datos del alumnado no es una decisión que pueda tomar cada docente por su cuenta. En España, la [guía para centros educativos](https://www.aepd.es/documento/guia-centros-educativos.pdf) de la Agencia Española de Protección de Datos indica que las administraciones y los centros deben disponer de instrucciones para el uso de las tecnologías por el profesorado, que deberá utilizar las que la administración o el centro hayan dispuesto. La misma guía señala que, de lo que un profesor publica al margen de su función docente en el centro, el responsable es el propio profesor.
