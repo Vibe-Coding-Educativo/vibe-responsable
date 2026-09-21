@@ -2,3 +2,6 @@
 # trabajar y se cita por su enlace oficial, pero no se publica ni se
 # redistribuye (ver docs/adr/0003-el-material-de-consulta-no-se-publica.md).
 fuentes/consulta/
+
+# Registro de la ejecución de Codex al generar las ilustraciones
+infografia/codex/codex-salida.log
