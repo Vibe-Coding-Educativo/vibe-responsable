@@ -26,8 +26,7 @@ analítica. El aspecto claro u oscuro sigue la preferencia del dispositivo. Las
 marcas de la lista se guardan en `localStorage` y no salen del navegador. Sin
 JavaScript la página se lee entera; solo desaparecen las casillas y la
 infografía se abre como enlace en lugar de ampliarse. Los enlaces a otras
-webs se abren en una pestaña nueva, para no sacar al lector de la guía, y se
-avisa de ello a los lectores de pantalla.
+webs se abren en una pestaña nueva, para no sacar al lector de la guía.
 
 La forma de evitar el desplazamiento largo que se describía aquí (dos columnas y
 acordeones en una sola página) quedó sustituida por el [ADR 5](0005-portada-en-una-pantalla-y-varias-paginas.md).

@@ -6,10 +6,11 @@ Necesita pandoc. No hay dependencias en el lado del navegador: el resultado es
 HTML, una hoja de estilos, un script pequeño y la tipografía, todo dentro del
 repositorio. Decisiones registradas en docs/adr/0004 y 0005.
 
-Páginas por idioma:
-  index.html          la lista de diez recomendaciones (00-lista.md)
-  presentacion.html   qué es, por qué y cómo se utiliza (01-presentacion.md)
+Páginas por idioma, en el orden en que se leen:
+  index.html          presentación: qué es, por qué y cómo se utiliza (00-presentacion.md)
+  guia.html           la guía: las diez recomendaciones (01-guia.md)
   herramientas.html   familias de herramientas y los dos niveles (02-herramientas.md)
+  creditos.html       créditos y licencias, enlazada desde el pie (03-creditos.md)
 """
 import html, re, subprocess, unicodedata
 from pathlib import Path
@@ -28,14 +29,14 @@ UI = {
         "comunidad": "Vibe Coding Educativo",
         "saltar": "Saltar al contenido",
         "nav": "Secciones de la guía",
-        "nav_lista": "Recomendaciones",
+        "nav_guia": "Guía",
         "borrador": "Borrador",
         "borrador_ayuda": "La guía está en elaboración. Los capítulos que desarrollan cada recomendación y la lista preparada para la IA se publicarán en esta misma web.",
         "col_recomendacion": "Recomendación",
         "cumple": "Se cumple",
         "cumple_punto": "Se cumple la recomendación {n}",
         "infografia_titulo": "Resumen gráfico",
-        "infografia_texto": "La infografía reúne las diez recomendaciones en una sola imagen, pensada para compartirla.",
+        "infografia_texto": "La infografía reúne las diez recomendaciones en una sola imagen, pensada para compartirla. Se amplía al pulsarla.",
         "infografia_pista": "Al seleccionar una recomendación de la lista, su explicación se muestra en este espacio.",
         "infografia_alt": "Infografía con las diez recomendaciones, las mismas que aparecen en la lista.",
         "ampliar": "Ampliar la infografía",
@@ -53,17 +54,16 @@ UI = {
         "cerrar": "Cerrar",
         "acercar": "Ver a tamaño de lectura",
         "alejar": "Ajustar a la pantalla",
-        "nueva_pestana": "(se abre en una pestaña nueva)",
         "niveles": {"Lo mínimo.": "minimo", "Lo recomendado.": "recomendado", "En todos los casos.": "todos"},
         "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Código bajo <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL v3</a> y contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>.',
-        "pie_2": 'Iconos de <a href="https://lucide.dev/">Lucide</a> (licencia ISC). Tipografía <a href="https://www.brailleinstitute.org/freefont/">Atkinson Hyperlegible</a> (licencia OFL). <a href="{repo}">Código fuente y registro de decisiones</a>.',
+        "pie_2": '<a href="creditos.html">Créditos y licencias</a>',
     },
 }
-PAGINAS = [("index.html", "00-lista.md"), ("presentacion.html", "01-presentacion.md"), ("herramientas.html", "02-herramientas.md")]
+PAGINAS = [("index.html", "00-presentacion.md"), ("guia.html", "01-guia.md"), ("herramientas.html", "02-herramientas.md")]
 
 
 def pandoc(md):
-    r = subprocess.run(["pandoc", "-f", "markdown-auto_identifiers", "-t", "html5", "--wrap=none"],
+    r = subprocess.run(["pandoc", "-f", "markdown-auto_identifiers+link_attributes", "-t", "html5", "--wrap=none"],
                        input=md, capture_output=True, text=True, check=True)
     return r.stdout.strip()
 
@@ -74,11 +74,9 @@ def ancla(texto):
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
 
 
-def enlaces_externos(h, aviso):
-    """Los enlaces a otras webs se abren en una pestaña nueva, y se avisa de ello a los lectores de pantalla."""
-    h = re.sub(r'<a href="(https?://(?!vibe-coding-educativo\.github\.io/)[^"]+)"', r'<a href="\1" target="_blank" rel="noopener"', h)
-    return re.sub(r'(<a href="https?://[^"]+" target="_blank" rel="noopener"[^>]*>)(.*?)</a>',
-                  lambda m: f'{m.group(1)}{m.group(2)}<span class="oculto"> {aviso}</span></a>', h, flags=re.S)
+def enlaces_externos(h):
+    """Los enlaces a otras webs se abren en una pestaña nueva."""
+    return re.sub(r'<a href="(https?://(?!vibe-coding-educativo\.github\.io/)[^"]+)"', r'<a href="\1" target="_blank" rel="noopener"', h)
 
 
 def icono(nombre):
@@ -100,7 +98,7 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
     titulos = {a: titulo_de((RAIZ / "contenido" / idioma / m).read_text(encoding="utf-8")) for a, m in PAGINAS}
     nav = []
     for a, _ in PAGINAS:
-        rotulo = T["nav_lista"] if a == "index.html" else titulos[a]
+        rotulo = T["nav_guia"] if a == "guia.html" else titulos[a]
         destino = "./" if a == "index.html" else a
         actual = ' aria-current="page"' if a == archivo else ""
         nav.append(f'<li><a href="{destino}"{actual}>{html.escape(rotulo)}</a></li>')
@@ -113,7 +111,7 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 <meta name="description" content="{html.escape(T["guia"])}. {html.escape(titulo)}.">
 <meta name="author" content="Juan José de Haro">
 <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
-<meta property="og:title" content="{html.escape(titulos["index.html"])}">
+<meta property="og:title" content="{html.escape(titulos["guia.html"])}">
 <meta property="og:description" content="{html.escape(T["guia"])}">
 <meta property="og:image" content="{URL_SITIO}infografia/lista-iconos.{idioma}.png">
 <meta property="og:type" content="article">
@@ -137,18 +135,64 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 <footer class="pie">
 <div class="ancho">
 <p>{T["pie_1"]}</p>
-<p>{T["pie_2"].format(repo=REPO)}</p>
+<p>{T["pie_2"]}</p>
 </div>
 </footer>
 </body>
 </html>
 """
-    return enlaces_externos(pag, T["nueva_pestana"])
+    return enlaces_externos(pag)
+
+
+def infografia(idioma):
+    """Ruta y medidas de la infografía. Las medidas salen del SVG original, no de un número escrito a mano."""
+    svg = (RAIZ / "infografia" / f"lista-iconos.{idioma}.svg").read_text(encoding="utf-8")
+    an, al = re.search(r'viewBox="0 0 (\d+) (\d+)"', svg).groups()
+    return f"../infografia/lista-iconos.{idioma}.png", an, al, f'style="--ig-an:{an};--ig-al:{al}"'
+
+
+def visor(idioma):
+    T = UI[idioma]
+    _, an, al, medidas = infografia(idioma)
+    return f"""<dialog class="visor" {medidas} aria-label="{html.escape(T["infografia_titulo"])}">
+<div class="visor-barra"><button type="button" class="visor-zoom" data-acercar="{html.escape(T["acercar"])}" data-alejar="{html.escape(T["alejar"])}">{html.escape(T["acercar"])}</button>
+<button type="button" class="visor-cerrar">{html.escape(T["cerrar"])}</button></div>
+<div class="visor-lienzo"><img alt="{html.escape(T["infografia_alt"])}" width="{an}" height="{al}"></div>
+</dialog>"""
+
+
+def pagina_presentacion(idioma):
+    """Portada: dos columnas de texto y, al lado, el resumen gráfico con el paso a la guía."""
+    T = UI[idioma]
+    md = (RAIZ / "contenido" / idioma / "00-presentacion.md").read_text(encoding="utf-8")
+    titulo = titulo_de(md)
+    apartados = []
+    for a in re.split(r"^## ", md.split("\n", 1)[1], flags=re.M)[1:]:
+        cab, resto = a.split("\n", 1)
+        apartados.append((cab.strip(), pandoc(resto.strip())))
+    img, an, al, medidas = infografia(idioma)
+
+    def bloque(i, clase):
+        cab, h = apartados[i]
+        return f'<section class="{clase}" aria-labelledby="h-{ancla(cab)}"><h2 id="h-{ancla(cab)}">{html.escape(cab)}</h2>{h}</section>'
+
+    miniatura = (f'<a class="miniatura ampliar" href="{img}" aria-label="{html.escape(T["ampliar"])}" title="{html.escape(T["ampliar"])}">'
+                 f'<img src="{img}" width="{an}" height="{al}" alt="{html.escape(T["infografia_alt"])}"></a>')
+    notas = "".join(bloque(i, "nota") for i in range(3, len(apartados)))
+    cuerpo = f"""<h1>{html.escape(titulo)}</h1>
+<div class="entrada" {medidas}>
+{bloque(0, "columna")}
+{bloque(1, "columna")}
+<aside class="paso-guia">{miniatura}{bloque(2, "utiliza")}</aside>
+{notas}
+</div>
+{visor(idioma)}"""
+    return marco(idioma, "index.html", titulo, cuerpo, "pagina-presentacion")
 
 
 def pagina_lista(idioma):
     T = UI[idioma]
-    md = (RAIZ / "contenido" / idioma / "00-lista.md").read_text(encoding="utf-8")
+    md = (RAIZ / "contenido" / idioma / "01-guia.md").read_text(encoding="utf-8")
     titulo = titulo_de(md)
     brutas = re.split(r"^## ", md.split("\n", 1)[1], flags=re.M)[1:]
     puntos = []
@@ -182,11 +226,7 @@ def pagina_lista(idioma):
             f'<footer class="detalle-pie solo-js">{ant}<a class="ayuda-niveles" href="herramientas.html#{ancla("Lo mínimo y lo recomendado")}">{html.escape(T["niveles_ayuda"])}</a>{sig}</footer>'
             f'</div></div></article></li>')
 
-    img = f"../infografia/lista-iconos.{idioma}.png"
-    # Las medidas salen del SVG original, para que el visor no dependa de un número escrito a mano
-    svg = (RAIZ / "infografia" / f"lista-iconos.{idioma}.svg").read_text(encoding="utf-8")
-    an, al = re.search(r'viewBox="0 0 (\d+) (\d+)"', svg).groups()
-    medidas = f'style="--ig-an:{an};--ig-al:{al}"'
+    img, an, al, medidas = infografia(idioma)
     cuerpo = f"""<h1>{html.escape(titulo)}</h1>
 <div class="tablero">
 <section class="hoja" aria-label="{html.escape(titulo)}">
@@ -200,23 +240,18 @@ def pagina_lista(idioma):
 </section>
 <div class="panel" {medidas}>
 <section class="resumen" aria-labelledby="t-resumen">
-<a class="miniatura ampliar" href="{img}" aria-label="{html.escape(T["ampliar"])}"><img src="{img}" width="{an}" height="{al}" alt="{html.escape(T["infografia_alt"])}"></a>
+<a class="miniatura ampliar" href="{img}" aria-label="{html.escape(T["ampliar"])}" title="{html.escape(T["ampliar"])}"><img src="{img}" width="{an}" height="{al}" alt="{html.escape(T["infografia_alt"])}"></a>
 <div class="resumen-texto">
 <h2 id="t-resumen">{html.escape(T["infografia_titulo"])}</h2>
 <p>{html.escape(T["infografia_texto"])}</p>
-<p class="acciones"><a class="boton ampliar" href="{img}">{html.escape(T["ampliar"])}</a>
-<a class="boton discreto" href="{img}" download>{html.escape(T["descargar"])}</a></p>
+<p class="acciones"><a class="boton discreto" href="{img}" download>{html.escape(T["descargar"])}</a></p>
 <p class="pista solo-js">{html.escape(T["infografia_pista"])}</p>
 </div>
 </section>
 </div>
 </div>
-<dialog class="visor" {medidas} aria-label="{html.escape(T["infografia_titulo"])}">
-<div class="visor-barra"><button type="button" class="visor-zoom" data-acercar="{html.escape(T["acercar"])}" data-alejar="{html.escape(T["alejar"])}">{html.escape(T["acercar"])}</button>
-<button type="button" class="visor-cerrar">{html.escape(T["cerrar"])}</button></div>
-<div class="visor-lienzo"><img alt="{html.escape(T["infografia_alt"])}" width="{an}" height="{al}"></div>
-</dialog>"""
-    return marco(idioma, "index.html", titulo, cuerpo, "pagina-lista")
+{visor(idioma)}"""
+    return marco(idioma, "guia.html", titulo, cuerpo, "pagina-lista")
 
 
 def pagina_texto(idioma, archivo, fuente):
@@ -260,9 +295,13 @@ if __name__ == "__main__":
     for idioma in IDIOMAS:
         destino = RAIZ / idioma
         destino.mkdir(exist_ok=True)
-        (destino / "index.html").write_text(pagina_lista(idioma), encoding="utf-8")
-        for archivo, fuente in PAGINAS[1:]:
-            (destino / archivo).write_text(pagina_texto(idioma, archivo, fuente), encoding="utf-8")
+        (destino / "index.html").write_text(pagina_presentacion(idioma), encoding="utf-8")
+        (destino / "guia.html").write_text(pagina_lista(idioma), encoding="utf-8")
+        (destino / "herramientas.html").write_text(pagina_texto(idioma, "herramientas.html", "02-herramientas.md"), encoding="utf-8")
+        (destino / "creditos.html").write_text(pagina_texto(idioma, "creditos.html", "03-creditos.md"), encoding="utf-8")
+        viejo = destino / "presentacion.html"
+        if viejo.exists():
+            viejo.unlink()
         print("generado", idioma, [a for a, _ in PAGINAS])
     (RAIZ / "index.html").write_text(portada(), encoding="utf-8")
     (RAIZ / ".nojekyll").write_text("", encoding="utf-8")

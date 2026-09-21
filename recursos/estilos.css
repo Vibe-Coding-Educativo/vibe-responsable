@@ -194,6 +194,36 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   height: min(calc(100dvh - 4.7rem), calc((100vw - 2rem) * var(--ig-al) / var(--ig-an))); transition: height 0.34s cubic-bezier(0.2, 0.7, 0.2, 1); }
 .visor.acercado .visor-lienzo img { height: min(calc(var(--ig-al) * 1px), calc((100vw - 2rem) * var(--ig-al) / var(--ig-an))); cursor: zoom-out; }
 
+/* Presentación: dos columnas de texto y, al lado, el resumen gráfico con el paso a la guía */
+.entrada { display: grid; gap: 1.4rem; align-items: start; }
+.entrada h2, .nota h2 { margin: 0 0 0.5rem; font-size: 1.18rem; line-height: 1.22; text-wrap: balance; }
+.columna, .utiliza { border-top: 2px solid var(--verde); padding-top: 0.6rem; }
+.entrada p { margin: 0 0 0.8rem; }
+.paso-guia { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 1rem; align-items: start; background: var(--hoja); border: 1px solid var(--raya); border-radius: 6px; box-shadow: var(--sombra); padding: 1rem; }
+.paso-guia .utiliza { border-top: 0; padding-top: 0; }
+.continuar { display: inline-block; margin-top: 0.1rem; padding: 0.55rem 1.05rem; border-radius: 4px; background: var(--verde); color: var(--hoja); font-weight: 700; text-decoration: none; transition: background 0.15s ease; }
+.continuar:hover { background: color-mix(in srgb, var(--verde) 86%, var(--tinta)); }
+.entrada p:has(> .continuar) { margin-bottom: 0; }
+.nota { margin-top: 1.3rem; padding-top: 0.7rem; border-top: 1px solid var(--raya); color: var(--tinta-suave); font-size: 0.88rem; max-width: 62rem; }
+.nota h2 { font-size: 0.92rem; margin-bottom: 0.2rem; color: var(--tinta); }
+.nota p { margin: 0; }
+@media (min-width: 62rem) {
+  .entrada { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(15rem, 19rem); gap: 1.2rem 2.4rem; }
+  .entrada > .paso-guia { grid-column: 3; grid-row: 1 / span 2; }
+  .entrada > .nota { grid-column: 1 / 3; grid-row: 2; align-self: end; margin-top: 0; }
+  .paso-guia { --mini-al: min(19rem, 36vh); grid-template-columns: minmax(0, 1fr); gap: 0.9rem; padding: 1.1rem; }
+  .paso-guia .miniatura { width: calc(var(--mini-al) * var(--ig-an) / var(--ig-al)); }
+}
+@media (min-width: 62rem) and (max-height: 760px) {
+  .pagina-presentacion h1 { font-size: 1.6rem; margin: 0.6rem 0 0.6rem; }
+  .pagina-presentacion .entrada { gap: 0.8rem 2rem; }
+  .pagina-presentacion .entrada p { margin-bottom: 0.6rem; line-height: 1.45; font-size: 0.97rem; }
+  .pagina-presentacion .paso-guia { --mini-al: min(15rem, 30vh); padding: 0.9rem; }
+  .pagina-presentacion .nota { padding-top: 0.45rem; font-size: 0.82rem; }
+  .pagina-presentacion .pie { margin-top: 0.6rem; padding: 0.35rem 0 0.4rem; font-size: 0.76rem; }
+  .pagina-presentacion .pie .ancho { display: flex; flex-wrap: wrap; gap: 0 1.2rem; }
+}
+
 /* Páginas de texto: los títulos de apartado van al margen */
 .apartado { display: grid; gap: 0.3rem 3rem; padding: 1.3rem 0 0.6rem; border-top: 1px solid var(--raya); }
 .apartado h2 { margin: 0; font-size: 1.2rem; line-height: 1.22; text-wrap: balance; }
@@ -209,6 +239,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   .texto p { break-inside: avoid; }
   .texto:has(> p:only-child) { columns: auto; max-width: 46rem; }
   .texto:has(.familias) { columns: auto; }
+  .pagina-texto .texto:not(:has(> p + p + p)) { columns: auto; max-width: 46rem; }
   .texto:has(.familias) > p { max-width: 44rem; }
   .familias { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 }
@@ -225,7 +256,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   :root { --papel: #fff; --hoja: #fff; --tinta: #000; --tinta-suave: #333; --raya: #bbb; --verde: #0f5f59; --azul: #1d3f73; --sombra: none; }
   html { font-size: 10.5pt; }
   .pizarra { background: none; color: #000; border-bottom: 2px solid #000; }
-  .pizarra nav, .estado, .saltar, .casilla, .hoja-cab, .resultado, .acciones, .pista, .detalle-pie, .cerrar-detalle, .visor { display: none !important; }
+  .pizarra nav, .estado, .saltar, .continuar, .casilla, .hoja-cab, .resultado, .acciones, .pista, .detalle-pie, .cerrar-detalle, .visor { display: none !important; }
   .sitio a { color: #000; }
   .tablero, .panel { display: block; }
   .panel > *, .punto > .detalle { opacity: 1 !important; visibility: visible !important; transform: none !important; display: block !important; }

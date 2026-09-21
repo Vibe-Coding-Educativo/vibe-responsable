@@ -39,6 +39,26 @@ el propio repositorio con su licencia OFL. La infografía usa la misma paleta y
 la misma tipografía. Las páginas de texto llevan los títulos de apartado al
 margen y el cuerpo en dos columnas cuando el apartado tiene varios párrafos.
 
+## Orden de las páginas (revisión del mismo día)
+
+La primera versión de esta decisión ponía la lista como portada. El autor la
+encontró incoherente: antes de las recomendaciones hay que decir qué es el vibe
+coding educativo y por qué existe la guía. El orden queda así, y es también el
+de los archivos de `contenido/`:
+
+1. **Presentación** (`00-presentacion.md`, portada): texto breve en dos
+   columnas y, al lado, el resumen gráfico con el botón que lleva a la guía.
+   También cabe en una pantalla.
+2. **Guía** (`01-guia.md`, `guia.html`): la hoja de revisión con las diez
+   recomendaciones descrita arriba.
+3. **Herramientas y niveles** (`02-herramientas.md`).
+
+Los créditos de iconos y tipografía salen del pie y van a una página propia,
+**Créditos y licencias** (`03-creditos.md`), enlazada desde él. El pie conserva
+la autoría y las dos licencias. Los enlaces externos se abren en una pestaña
+nueva sin texto de aviso añadido, y la miniatura de la infografía es el único
+control para ampliarla.
+
 ## Alternativas descartadas
 
 - **Una sola página con acordeones y dos columnas**: reducía el alto a menos de

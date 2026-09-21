@@ -10,7 +10,7 @@ Nace en el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca) y se 
 
 | Carpeta o archivo | Contenido |
 | --- | --- |
-| `contenido/<idioma>/` | El texto de la guía en Markdown, un archivo por página: `00-lista.md`, `01-presentacion.md` y `02-herramientas.md`. Es lo único que hay que editar para cambiar el contenido. |
+| `contenido/<idioma>/` | El texto de la guía en Markdown, un archivo por página, en el orden en que se leen: `00-presentacion.md`, `01-guia.md`, `02-herramientas.md` y `03-creditos.md`. Es lo único que hay que editar para cambiar el contenido. |
 | `construir.py` | Genera la web a partir del Markdown. Necesita [pandoc](https://pandoc.org/). |
 | `es/`, `index.html` | La web generada. No se editan a mano. |
 | `recursos/` | Hoja de estilos, script y tipografía de la web. |
