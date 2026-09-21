@@ -1,28 +1,5 @@
 # Antes de publicar: diez recomendaciones
 
-El vibe coding, [nombre propuesto por Andrej Karpathy en febrero de 2025](https://x.com/karpathy/status/1886192184808149383), consiste en crear programas informáticos explicando a un modelo de inteligencia artificial lo que se quiere obtener, sin necesidad de escribir el código. 
-
-El **vibe coding educativo** es la **creación de recursos y aplicaciones para enseñar y aprender conversando en lenguaje natural con una inteligencia artificial, que escribe el código, mientras que la persona aporta la intención pedagógica y comprueba el resultado**. 
-
-El profesorado describe lo que necesita, prueba lo que obtiene y pide los cambios hasta conseguir lo que busca. La intención pedagógica dirige todo el proceso, ya que es la persona la que conoce la materia y al alumnado, y la que decide si el resultado sirve para enseñar. Permite así disponer de simuladores, cuestionarios, juegos o herramientas para la gestión del aula hechos a la medida de cada situación, sin depender de que exista un producto que la cubra. Es una práctica cada vez más extendida, que cuenta con comunidades docentes como el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca), donde se comparten ejemplos, dudas y soluciones.
-
-Esta guía nace de dos motivos, uno ético y otro legal. El motivo ético es que todo material creado con ayuda de la inteligencia artificial se beneficia del conocimiento que otras personas han compartido antes, desde el software libre hasta los recursos educativos abiertos. Publicar un material que nadie más puede reutilizar, que deja fuera a parte del alumnado o que oculta cómo se ha hecho es una actitud poco solidaria con esa comunidad. Lo habitual es que ocurra por desconocimiento.
-
-El motivo legal es que publicar un material convierte a su autor en responsable de lo que ese material hace, y algunas decisiones que parecen técnicas tienen consecuencias jurídicas. Recoger datos del alumnado sin que el centro lo haya autorizado puede vulnerar la normativa de protección de datos, que es especialmente estricta cuando se trata de menores. Incorporar imágenes, textos o piezas de software sin respetar su licencia vulnera los derechos de sus autores. En ambos casos la responsabilidad recae en la persona que publica el material, aunque lo haya generado la IA.
-
-La lista reúne las diez recomendaciones de la guía, de forma que también sirve para revisar un material que ya está hecho. Cada una enlaza con el capítulo donde se explica con más detalle. Las que pueden tener consecuencias legales son, sobre todo, la 2 y la 8, mientras que las demás responden al compromiso con el alumnado y con la comunidad docente.
-
-No todas las personas trabajan con los mismos medios, y las herramientas para crear programas con IA son muy variadas. A grandes rasgos pueden agruparse en cuatro familias, que se presentan a continuación con algunos ejemplos de las disponibles en 2026.
-
-- **La web de un chatbot.** Asistentes generales como [ChatGPT](https://chatgpt.com/), [Gemini](https://gemini.google.com/) o [Claude](https://claude.ai/), que crean la aplicación dentro de la propia conversación. El material queda alojado en la plataforma y se comparte mediante un enlace.
-- **Plataformas para crear aplicaciones.** Servicios como [Lovable](https://lovable.dev/), [Bolt](https://bolt.new/), [Replit](https://replit.com/), [Google AI Studio](https://aistudio.google.com/) o [Canva](https://www.canva.com/), que generan, alojan y publican la aplicación desde el navegador.
-- **Editores de código con IA.** Programas como [Visual Studio Code](https://code.visualstudio.com/) o [Cursor](https://cursor.com/), que se instalan en el ordenador e incorporan un asistente que escribe y modifica los archivos del proyecto.
-- **Agentes de programación.** Programas como [Codex CLI](https://developers.openai.com/codex/cli), [Antigravity (agy)](https://antigravity.google/) o [Claude Code](https://claude.com/product/claude-code), que reciben las instrucciones en lenguaje natural y trabajan directamente con los archivos del ordenador.
-
-Para seguir esta guía, lo importante es la forma de trabajar que permite cada herramienta. En las dos primeras familias el material vive en los servidores de una empresa, que es la que decide cuánto tiempo se mantiene. En la web de un chatbot es, además, una pieza única. Se suele poder ver el código, e incluso modificarlo, pero no es posible acompañarlo de otros archivos, como la licencia o la documentación, ni llevar un control cómodo de los cambios. En las dos últimas el material es una carpeta de archivos en el propio ordenador, que puede publicarse en un sitio propio o en un repositorio como [GitHub](https://github.com/), donde cada cambio queda registrado. En el artículo [«Consolas de IA: qué son y cómo se instalan»](https://educacion.bilateria.org/consolas-de-ia-en-2026-que-son-como-se-instalan-y-que-cuestan-ahora/) se explica cómo empezar a trabajar con los agentes de programación.
-
-Por este motivo, cada recomendación se concreta en dos indicaciones. **Lo mínimo** es lo que puede cumplirse con cualquier herramienta, incluso cuando el material se ha creado y se comparte dentro de la web de un chatbot, y es suficiente para publicar de forma responsable. **Lo recomendado** es lo que conviene hacer además, y requiere que el material sea un proyecto con sus propios archivos, publicado en un repositorio o en un sitio propio. Las plataformas para crear aplicaciones suelen trabajar también con proyectos de varios archivos, y algunas permiten enviarlos a un repositorio externo, por lo que en ese caso pueden seguirse estas indicaciones. Cuando no hay diferencia entre una forma de trabajar y otra, se da una sola indicación.
-
 ## 1\. El contenido es correcto y lo ha revisado una persona
 
 La IA puede equivocarse con total naturalidad, y un error en una simulación o en un cuestionario acaba siendo un aprendizaje equivocado. Antes de publicar hay que usar el material como lo haría el alumnado y comprobar los conceptos, los datos y las respuestas que da por buenas. Esta revisión no se puede delegar, ya que la responsabilidad de lo que se enseña es de la persona que lo publica.
@@ -91,7 +68,3 @@ La licencia da el permiso, pero el material debe poder obtenerse, además, en un
 
 - **Lo mínimo.** Ofrecer el código para copiarlo o descargarlo, acompañado de la nota de decisiones del punto 9, de forma que otra persona pueda continuarlo.
 - **Lo recomendado.** Publicarlo en un repositorio abierto, con una explicación de cómo usarlo y cómo modificarlo.
-
-Al final de la guía se incluye esta misma lista preparada para dársela a la IA, tanto al empezar un material, para que lo genere cumpliéndola, como al terminarlo, para que ayude a revisarlo.
-
-Esta página se ha elaborado en el nivel 4 del [Marco para la integración de la IA generativa en las tareas educativas (MIAE)](https://educacion.bilateria.org/marco-para-la-integracion-de-la-ia-generativa-en-las-tareas-educativas-miae-v-2-1), que corresponde a la colaboración avanzada entre la persona y la IA. El texto se ha escrito en diálogo con Claude Code, y el autor ha dirigido y corregido el contenido, ha contrastado las afirmaciones con sus fuentes y ha revisado el resultado.
