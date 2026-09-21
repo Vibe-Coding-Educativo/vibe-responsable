@@ -6,16 +6,18 @@ Esta guía nace de dos motivos, uno ético y otro legal. El motivo ético es que
 
 El motivo legal es que publicar un material convierte a su autor en responsable de lo que ese material hace, y algunas decisiones que parecen técnicas tienen consecuencias jurídicas. Recoger datos del alumnado sin que el centro lo haya autorizado puede vulnerar la normativa de protección de datos, que es especialmente estricta cuando se trata de menores. Incorporar imágenes, textos o piezas de software sin respetar su licencia vulnera los derechos de sus autores. En ambos casos la responsabilidad recae en la persona que publica, y no en la IA que generó el material.
 
-La lista que sigue reúne las diez recomendaciones de la guía, de forma que también sirve para revisar un material que ya está hecho. Cada una enlaza con el capítulo donde se explica con más detalle. Las que tienen consecuencias legales son, sobre todo, la 2, la 3 y la 8, mientras que las demás responden al compromiso con el alumnado y con la comunidad docente.
+La lista que sigue reúne las diez recomendaciones de la guía, de forma que también sirve para revisar un material que ya está hecho. Cada una enlaza con el capítulo donde se explica con más detalle. Las que pueden tener consecuencias legales son, sobre todo, la 2 y la 8, mientras que las demás responden al compromiso con el alumnado y con la comunidad docente.
 
 No todas las personas trabajan con los mismos medios, y las herramientas para crear programas con IA son muy variadas. A grandes rasgos pueden agruparse en cuatro familias, que se presentan a continuación con algunos ejemplos de las disponibles en 2026.
 
 - **La web de un chatbot.** Asistentes generales como [ChatGPT](https://chatgpt.com/), [Gemini](https://gemini.google.com/) o [Claude](https://claude.ai/), que crean la aplicación dentro de la propia conversación. El material queda alojado en la plataforma y se comparte mediante un enlace.
-- **Plataformas para crear aplicaciones.** Servicios como [Lovable](https://lovable.dev/), [Bolt](https://bolt.new/), [Replit](https://replit.com/), [Google AI Studio](https://aistudio.google.com/) o [Canva](https://www.canva.com/), que generan, alojan y publican la aplicación desde el navegador. Algunas permiten enviar el proyecto a un repositorio externo.
+- **Plataformas para crear aplicaciones.** Servicios como [Lovable](https://lovable.dev/), [Bolt](https://bolt.new/), [Replit](https://replit.com/), [Google AI Studio](https://aistudio.google.com/) o [Canva](https://www.canva.com/), que generan, alojan y publican la aplicación desde el navegador.
 - **Editores de código con IA.** Programas como [Visual Studio Code](https://code.visualstudio.com/) o [Cursor](https://cursor.com/), que se instalan en el ordenador e incorporan un asistente que escribe y modifica los archivos del proyecto.
 - **Agentes de programación.** Programas como [Codex CLI](https://developers.openai.com/codex/cli), [Antigravity (agy)](https://antigravity.google/) o [Claude Code](https://claude.com/product/claude-code), que reciben las instrucciones en lenguaje natural y trabajan directamente con los archivos del ordenador.
 
-A efectos de esta guía no importa tanto la herramienta como la forma de trabajar que permite. En las dos primeras familias se suele poder ver el código, e incluso modificarlo, pero el material es una pieza única que vive en los servidores de una empresa. No es posible acompañarlo de otros archivos, como la licencia o la documentación, ni llevar un control cómodo de los cambios, y es la empresa la que decide cuánto tiempo se mantiene. En las dos últimas el material es una carpeta de archivos en el propio ordenador, que puede publicarse en un sitio propio o en un repositorio como [GitHub](https://github.com/), donde cada cambio queda registrado. Por este motivo, cada recomendación se concreta en dos indicaciones. **Lo mínimo** es lo que puede cumplirse con cualquier herramienta, incluso cuando el material se ha creado y se comparte dentro de la web de un chatbot, y es suficiente para publicar de forma responsable. **Lo recomendado** es lo que conviene hacer además, y requiere que el material sea un proyecto con sus propios archivos, publicado en un repositorio o en un sitio propio. Algunas plataformas permiten enviar el proyecto a un repositorio externo, y en ese caso pueden seguirse también estas indicaciones. Cuando no hay diferencia entre una forma de trabajar y otra, se da una sola indicación. En el artículo [«Consolas de IA: qué son y cómo se instalan»](https://educacion.bilateria.org/consolas-de-ia-en-2026-que-son-como-se-instalan-y-que-cuestan-ahora/) se explica cómo empezar a trabajar con los agentes de programación.
+A efectos de esta guía no importa tanto la herramienta como la forma de trabajar que permite. En las dos primeras familias el material vive en los servidores de una empresa, que es la que decide cuánto tiempo se mantiene. En la web de un chatbot es, además, una pieza única. Se suele poder ver el código, e incluso modificarlo, pero no es posible acompañarlo de otros archivos, como la licencia o la documentación, ni llevar un control cómodo de los cambios. En las dos últimas el material es una carpeta de archivos en el propio ordenador, que puede publicarse en un sitio propio o en un repositorio como [GitHub](https://github.com/), donde cada cambio queda registrado. En el artículo [«Consolas de IA: qué son y cómo se instalan»](https://educacion.bilateria.org/consolas-de-ia-en-2026-que-son-como-se-instalan-y-que-cuestan-ahora/) se explica cómo empezar a trabajar con los agentes de programación.
+
+Por este motivo, cada recomendación se concreta en dos indicaciones. **Lo mínimo** es lo que puede cumplirse con cualquier herramienta, incluso cuando el material se ha creado y se comparte dentro de la web de un chatbot, y es suficiente para publicar de forma responsable. **Lo recomendado** es lo que conviene hacer además, y requiere que el material sea un proyecto con sus propios archivos, publicado en un repositorio o en un sitio propio. Las plataformas para crear aplicaciones suelen trabajar también con proyectos de varios archivos, y algunas permiten enviarlos a un repositorio externo, por lo que en ese caso pueden seguirse estas indicaciones. Cuando no hay diferencia entre una forma de trabajar y otra, se da una sola indicación.
 
 ## 1\. El contenido es correcto y lo ha revisado una persona
 
@@ -25,17 +27,17 @@ La IA puede equivocarse con total naturalidad, y un error en una simulación o e
 
 ## 2\. No recoge datos personales, o los datos no salen del dispositivo
 
-El nombre, las notas, la voz o la imagen del alumnado son datos personales. En la Unión Europea, decidir cómo se tratan corresponde al centro o a la administración educativa, y no a cada docente por su cuenta. Otros países tienen normas distintas, pero la precaución es la misma. La forma más sencilla de cumplir es que el material no pida datos, o que todo lo que se escriba en él se quede en el navegador donde se usa. Hay que tener especial cuidado con las plataformas que añaden con facilidad cuentas de usuario y bases de datos, ya que entonces los datos se guardan en servidores ajenos.
+El nombre, las notas, la voz o la imagen del alumnado son datos personales. En España, la Agencia Española de Protección de Datos indica en su [guía para centros educativos](https://www.aepd.es/documento/guia-centros-educativos.pdf) que el profesorado debe utilizar las herramientas que el centro o la administración hayan dispuesto, y que el contenido que un docente publica por su cuenta, al margen del centro, es responsabilidad suya. Otros países tienen normas distintas, pero la precaución es la misma. La forma más sencilla de cumplir es que el material no pida datos, o que todo lo que se escriba en él se quede en el navegador donde se usa. Hay que tener especial cuidado con las plataformas que añaden con facilidad cuentas de usuario y bases de datos, ya que entonces los datos se guardan en servidores ajenos.
 
 - **Lo mínimo.** No pedir nombres reales ni nada que identifique a una persona, y preguntar a la IA si la aplicación envía información a algún servidor. Si el material se abre dentro de una plataforma, hay que comprobar si exige registro o una edad mínima antes de enviar el enlace al alumnado, ya que se le está llevando al servicio de un tercero.
 - **Lo recomendado.** Publicar el material en un sitio que el alumnado pueda abrir sin registrarse, y comprobar que el código no contiene direcciones web de servicios que no se reconozcan.
 
 ## 3\. Lleva una licencia libre a la vista
 
-Todo lo que se crea queda protegido por derechos de autor de forma automática, de modo que un material sin licencia no puede reutilizarse legalmente aunque esté publicado. Una licencia libre indica a las demás personas que pueden usarlo, adaptarlo y compartirlo, y con qué condiciones. El código y los contenidos necesitan licencias distintas, y lo generado por la IA plantea dudas de autoría que se tratan en su capítulo.
+Las obras quedan protegidas por derechos de autor de forma automática, de modo que un material sin licencia no puede reutilizarse con seguridad aunque esté publicado. Una licencia libre indica a las demás personas que pueden usarlo, adaptarlo y compartirlo, y con qué condiciones. El código y los contenidos necesitan licencias distintas, y lo generado por la IA plantea dudas de autoría que se tratan en su capítulo.
 
 - **Lo mínimo.** Escribir la autoría y la licencia dentro del propio material, en un lugar visible, por ejemplo al pie.
-- **Lo recomendado.** Añadir el archivo de licencia al proyecto, con una licencia de software libre para el código y una Creative Commons para los contenidos.
+- **Lo recomendado.** Añadir el archivo de licencia al proyecto, con una licencia de software libre para el código y una Creative Commons libre, como CC BY o CC BY-SA, para los contenidos.
 
 ## 4\. Indica que se ha hecho con IA y qué ha comprobado la persona
 
@@ -48,14 +50,14 @@ En un material creado con vibe coding el código es obra de la IA, y lo habitual
 
 Un material cuyo funcionamiento no entiende ni su autor deja de ser abierto en la práctica, ya que nadie podrá corregirlo cuando falle. No hace falta saber programar para cumplir este punto. Basta con poder resumir en dos frases qué hace la aplicación, qué guarda y si se comunica con algún servicio externo.
 
-- **Lo mínimo.** Pedir a la IA que explique en lenguaje llano qué hace la aplicación y si guarda o envía algo, y comprobar que la explicación coincide con lo que se observa al usarla. Pedir también que el código esté comentado y sea legible, ya que el código comprimido en líneas interminables es motivo suficiente para no publicar.
+- **Lo mínimo.** Pedir a la IA que explique en lenguaje llano qué hace la aplicación y si guarda o envía algo, y comprobar que la explicación coincide con lo que se observa al usarla. Pedir también que el código propio del material esté comentado y sea legible, ya que el código comprimido en líneas interminables es motivo suficiente para no publicar. Las bibliotecas conocidas que se incluyan son la excepción, puesto que suelen distribuirse así.
 - **Lo recomendado.** Añadir un documento que explique cómo está organizado el proyecto y para qué sirve cada archivo.
 
 ## 6\. No depende de servicios que pueden desaparecer
 
-Un recurso que incrusta contenido de otra web, o que carga piezas desde servidores ajenos, deja de funcionar cuando esos servicios cambian o cierran. Lo mismo ocurre con la propia plataforma del chatbot, puesto que el enlace compartido dura lo que la empresa decida.
+Un recurso que incrusta contenido de otra web, o que carga piezas desde servidores ajenos, deja de funcionar cuando esos servicios cambian o cierran. Lo mismo ocurre con la plataforma donde se ha creado el material, puesto que el enlace compartido dura lo que la empresa decida.
 
-- **Lo mínimo.** Guardar en el propio ordenador una copia de la conversación con la que se creó el material y otra del código resultante.
+- **Lo mínimo.** Guardar en el propio ordenador una copia del código del material, y actualizarla cuando cambie.
 - **Lo recomendado.** Incluir dentro del proyecto todo lo que necesita para funcionar, de forma que pueda usarse incluso sin conexión.
 
 ## 7\. Puede usarse con teclado, con lector de pantalla y en un móvil
@@ -81,7 +83,7 @@ Con la IA se avanza muy deprisa, y a las pocas semanas nadie recuerda por qué s
 
 ## 10\. Otra persona puede descargarlo, modificarlo y mejorarlo
 
-La licencia da el permiso, pero no basta si el material no puede obtenerse en una forma que permita trabajar con él. Un recurso educativo es abierto de verdad cuando otro docente puede adaptarlo a su aula sin pedir nada a nadie.
+La licencia da el permiso, pero no basta si el material no puede obtenerse en una forma que permita trabajar con él. Un recurso educativo es abierto de verdad cuando otra persona puede adaptarlo a su aula sin pedir nada a nadie.
 
 - **Lo mínimo.** Ofrecer el código para copiarlo o descargarlo, acompañado de la nota de decisiones del punto 9, de forma que otra persona pueda continuarlo.
 - **Lo recomendado.** Publicarlo en un repositorio abierto, con una explicación de cómo usarlo y cómo modificarlo.
