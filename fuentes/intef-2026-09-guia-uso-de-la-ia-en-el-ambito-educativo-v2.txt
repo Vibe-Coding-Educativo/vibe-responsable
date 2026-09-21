@@ -5,6 +5,8 @@ version: 2.0
 fecha: 2026-09
 nipo: 164-26-007-9
 licencia: CC BY-SA 4.0
+url: https://code.intef.es/wp-content/uploads/2026/09/ACTUALIZACI%C3%93N-GU%C3%8DA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5.pdf
+nota_version: el PDF oficial publicado (v5) tiene 105 páginas y el archivo de partida 117; ambos son la versión 2.0 de septiembre de 2026, con el mismo NIPO y los mismos apartados
 descargado: 2026-09-21
 nota: texto extraído del PDF (intef-2026-09-guia-uso-de-la-ia-en-el-ambito-educativo-v2.pdf) con pdftotext; se conserva la maquetación en columnas de las tablas
 ---
