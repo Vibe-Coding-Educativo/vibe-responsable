@@ -8,18 +8,18 @@ El reconocimiento de la autoría es una cuestión de respeto hacia el trabajo de
 
 ## Los datos de una atribución
 
-Creative Commons recomienda en sus [buenas prácticas de atribución](https://creativecommons.org/use-remix/attribution/), publicadas en inglés, que cada elemento ajeno vaya acompañado de cuatro datos:
+Creative Commons recomienda en sus [buenas prácticas de atribución](https://creativecommons.org/use-remix/attribution/) que cada elemento ajeno vaya acompañado de cuatro datos:
 
 - **El título** de la obra, si lo tiene.
 - **La autoría**, con el nombre o el nombre de usuario de su autor.
 - **La procedencia**, con el enlace al lugar de donde se ha tomado.
 - **La licencia**, con su nombre y el enlace a su texto.
 
-Cuando el elemento se ha modificado, conviene indicarlo. Una atribución completa sería «Fotografía de un volcán, de Ana Pérez, tomada de Wikimedia Commons, con licencia CC BY-SA 4.0».
+Cuando el elemento se ha modificado, conviene indicarlo. Una atribución completa tendría esta forma: «Título de la imagen, de Nombre de su autor, tomada de Wikimedia Commons, con licencia CC BY-SA 4.0», con los enlaces a la imagen original y a la licencia.
 
 ## El lugar de la atribución
 
-La atribución debe ir dentro del propio material, y no en la página que lo enlaza ni en un mensaje aparte. Un material educativo circula: se descarga, se incrusta en otra página, se sube a la plataforma de un centro. Si la atribución no viaja con él, se pierde en el primer paso. Lo mínimo es una sección de créditos al pie o en una pantalla propia, con los cuatro datos de cada elemento. Esta guía lo hace en su página de [créditos y licencias](../creditos.html), que recoge los iconos y la tipografía que utiliza, con sus autores y sus licencias.
+La atribución debe ir dentro del propio material, y no en la página que lo enlaza ni en un mensaje aparte. Un material educativo se descarga, se incrusta en otra página o se sube a la plataforma de un centro, y si la atribución no viaja con él, se pierde en el primer paso. Lo mínimo es una sección de créditos al pie o en una pantalla propia, con los cuatro datos de cada elemento. Esta guía lo hace en su página de [créditos y licencias](../creditos.html), que recoge los iconos y la tipografía que utiliza, con sus autores y sus licencias.
 
 ## Lo que la IA añade por su cuenta
 
