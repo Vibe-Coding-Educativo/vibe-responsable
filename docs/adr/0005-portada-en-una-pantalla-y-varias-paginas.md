@@ -36,7 +36,10 @@ El aspecto sale del aula: cabecera en verde pizarra, papel neutro y dos tintas,
 verde para «Lo mínimo» y azul para «Lo recomendado». La tipografía es Atkinson
 Hyperlegible, diseñada por el Braille Institute para la legibilidad, alojada en
 el propio repositorio con su licencia OFL. La infografía usa la misma paleta y
-la misma tipografía. Las páginas de texto llevan los títulos de apartado al
+la misma tipografía. El logotipo son unos corchetes de código con una marca de
+verificación dentro, sobre el verde pizarra: toma los corchetes del logotipo de la
+comunidad Vibe Coding Educativo y el amarillo de su fondo, para que se reconozca
+como parte de ella, y sus trazos son los de dos iconos de Lucide. Las páginas de texto llevan los títulos de apartado al
 margen y el cuerpo en dos columnas cuando el apartado tiene varios párrafos.
 
 ## Orden de las páginas (revisión del mismo día)

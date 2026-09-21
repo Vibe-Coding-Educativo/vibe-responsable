@@ -8,7 +8,7 @@ El código de la web se publica con la licencia [GNU AGPL v3](https://www.gnu.or
 
 ## Materiales de otras personas
 
-Los iconos proceden de [Lucide](https://lucide.dev/), que se distribuye con la licencia ISC.
+Los iconos proceden de [Lucide](https://lucide.dev/), que se distribuye con la licencia ISC. El logotipo de la guía combina dos iconos de esa misma colección, los corchetes de código y la marca de verificación.
 
 La tipografía es [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/), diseñada por el Braille Institute para facilitar la lectura, y se distribuye con la licencia SIL Open Font License 1.1.
 

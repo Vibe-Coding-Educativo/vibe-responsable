@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t">
+  <title id="t">Guía para publicar materiales educativos creados con vibe coding</title>
+  <!-- Corchetes de código con una marca de verificación: código que ha pasado la revisión.
+       Los trazos proceden de los iconos «code» y «check» de Lucide (licencia ISC). -->
+  <rect width="64" height="64" rx="14" fill="#17453b"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#f3f1e7" stroke-width="5">
+      <polyline points="20 19 7.5 32 20 45"/>
+      <polyline points="44 19 56.5 32 44 45"/>
+    </g>
+    <path d="M24.5 33 30 38.5 40 26.5" stroke="#f5c542" stroke-width="5.5"/>
+  </g>
+</svg>

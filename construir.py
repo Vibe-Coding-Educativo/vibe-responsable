@@ -114,6 +114,9 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 <meta property="og:description" content="{html.escape(T["guia"])}">
 <meta property="og:image" content="{URL_SITIO}infografia/lista-iconos.{idioma}.png">
 <meta property="og:type" content="article">
+<link rel="icon" href="../recursos/logo/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../recursos/logo/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="../recursos/logo/apple-touch-icon.png">
 <link rel="preload" href="../recursos/fuentes/atkinson-hyperlegible-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../recursos/estilos.css">
 <script src="../recursos/guia.js" defer></script>
@@ -122,8 +125,8 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 <a class="saltar" href="#contenido">{html.escape(T["saltar"])}</a>
 <header class="pizarra">
 <div class="ancho pizarra-int">
-<p class="sitio"><a class="sitio-comunidad" href="{COMUNIDAD}">{html.escape(T["comunidad"])}</a>
-<a class="sitio-guia" href="./">{html.escape(T["guia"])}</a>
+<p class="sitio"><a class="sitio-guia" href="./" aria-label="{html.escape(T["guia"])}"><img class="marca" src="../recursos/logo/logo.svg" alt="" width="30" height="30"><span>{html.escape(T["guia"])}</span></a>
+<a class="sitio-comunidad" href="{COMUNIDAD}">{html.escape(T["comunidad"])}</a>
 <span class="estado" tabindex="0">{html.escape(T["borrador"])}<span class="globo">{html.escape(T["borrador_ayuda"])}</span></span></p>
 <nav aria-label="{html.escape(T["nav"])}"><ul>{"".join(nav)}</ul></nav>
 </div>
@@ -302,6 +305,7 @@ def portada():
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(UI["es"]["guia"])}</title>
+<link rel="icon" href="recursos/logo/favicon.svg" type="image/svg+xml">
 <meta http-equiv="refresh" content="0; url=es/">
 <link rel="canonical" href="{URL_SITIO}es/">
 <script>

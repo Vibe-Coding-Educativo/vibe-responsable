@@ -43,8 +43,10 @@ h1 { font-size: clamp(1.55rem, 1.05rem + 1.5vw, 2.3rem); line-height: 1.12; lett
 .sitio { position: relative; margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.15rem 0.9rem; font-size: 0.92rem; }
 .sitio a { color: var(--tiza); text-decoration: none; }
 .sitio a:hover { text-decoration: underline; }
-.sitio-comunidad { font-weight: 700; }
-.sitio .sitio-guia { color: var(--tiza-suave); }
+.sitio { align-items: center; }
+.sitio .sitio-guia { display: inline-flex; align-items: center; gap: 0.6rem; font-weight: 700; }
+.marca { display: block; width: 1.75rem; height: 1.75rem; border-radius: 6px; box-shadow: 0 0 0 1px rgba(243, 241, 231, 0.35); }
+.sitio .sitio-comunidad { color: var(--tiza-suave); font-weight: 400; }
 .estado { font-size: 0.78rem; border: 1px solid var(--tiza-suave); color: var(--tiza); border-radius: 999px; padding: 0.02rem 0.55rem; cursor: help; }
 .globo { position: absolute; z-index: 15; top: calc(100% + 0.5rem); left: 0; width: min(22rem, calc(100vw - 2.5rem)); padding: 0.7rem 0.85rem; border-radius: 6px; background: var(--hoja); color: var(--tinta); border: 1px solid var(--raya); box-shadow: var(--sombra); font-size: 0.92rem; line-height: 1.4; opacity: 0; visibility: hidden; transform: translateY(-0.25rem); transition: opacity 0.16s ease, transform 0.16s ease, visibility 0s linear 0.16s; }
 .estado:hover .globo, .estado:focus .globo, .estado:focus-within .globo { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
@@ -103,7 +105,8 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 
 @media (max-width: 61.99rem) {
   .pizarra-int { padding-block: 0.5rem 0.35rem; gap: 0.1rem 1.2rem; }
-  .sitio .sitio-guia { display: none; }
+  .sitio .sitio-guia span { display: none; }
+  .sitio .sitio-comunidad { color: var(--tiza); font-weight: 700; }
   .pizarra nav ul { gap: 0 1.1rem; }
   .pizarra nav a { font-size: 0.9rem; padding: 0.2rem 0; }
   h1 { font-size: 1.5rem; margin: 0.8rem 0 0.7rem; }
