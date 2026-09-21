@@ -93,3 +93,5 @@ La licencia da el permiso, pero el material debe poder obtenerse, además, en un
 - **Lo recomendado.** Publicarlo en un repositorio abierto, con una explicación de cómo usarlo y cómo modificarlo.
 
 Al final de la guía se incluye esta misma lista preparada para dársela a la IA, tanto al empezar un material, para que lo genere cumpliéndola, como al terminarlo, para que ayude a revisarlo.
+
+Esta página se ha elaborado en el nivel 4 del [Marco para la integración de la IA generativa en las tareas educativas (MIAE)](https://educacion.bilateria.org/marco-para-la-integracion-de-la-ia-generativa-en-las-tareas-educativas-miae-v-2-1), que corresponde a la colaboración avanzada entre la persona y la IA. El texto se ha escrito en diálogo con Claude Code, y el autor ha dirigido y corregido el contenido, ha contrastado las afirmaciones con sus fuentes y ha revisado el resultado.
