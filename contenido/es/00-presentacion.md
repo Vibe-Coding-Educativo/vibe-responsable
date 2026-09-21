@@ -2,7 +2,7 @@
 
 ## Qué es el vibe coding educativo
 
-El vibe coding, [nombre propuesto por Andrej Karpathy en febrero de 2025](https://x.com/karpathy/status/1886192184808149383), consiste en crear programas informáticos explicando a un modelo de inteligencia artificial lo que se quiere obtener, sin necesidad de escribir el código. 
+El vibe coding, [nombre propuesto por Andrej Karpathy en febrero de 2025](https://x.com/karpathy/status/1886192184808149383), consiste en crear programas informáticos explicando a un modelo de inteligencia artificial (IA) lo que se quiere obtener, sin necesidad de escribir el código. 
 
 El **vibe coding educativo** es la **creación de recursos y aplicaciones para enseñar y aprender conversando en lenguaje natural con una inteligencia artificial, que escribe el código, mientras que la persona aporta la intención pedagógica y comprueba el resultado**. 
 

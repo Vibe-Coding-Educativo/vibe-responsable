@@ -2,7 +2,7 @@
 
 ## Para qué sirven estos textos
 
-Las diez recomendaciones de la guía pueden darse directamente a la inteligencia artificial, de modo que el trabajo de cumplirlas no recaiga sobre la persona. El primer texto se entrega al empezar, para que el material se genere ya conforme a la guía. El segundo se entrega al terminar, para revisar lo que se ha obtenido.
+Las diez recomendaciones de la guía pueden darse directamente a la inteligencia artificial (IA), de modo que el trabajo de cumplirlas no recaiga sobre la persona. El primer texto se entrega al empezar, para que el material se genere ya conforme a la guía. El segundo se entrega al terminar, para revisar lo que se ha obtenido.
 
 Ambos textos sirven en cualquier herramienta, desde la web de un chatbot hasta un agente de programación. Conviene tener presente que la revisión de la IA no sustituye a la de la persona, ya que el modelo también se equivoca al revisar su propio trabajo.
 

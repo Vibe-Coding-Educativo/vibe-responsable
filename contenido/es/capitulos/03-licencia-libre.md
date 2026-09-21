@@ -4,15 +4,15 @@
 
 Las obras quedan protegidas por derechos de autor desde el momento en que se crean, sin necesidad de registrarlas ni de indicarlo. La consecuencia es que un material publicado sin licencia tiene todos los derechos reservados, de modo que otras personas pueden verlo, pero no pueden copiarlo, adaptarlo ni difundirlo con seguridad, aunque su autor no tenga inconveniente en ello.
 
-La licencia es lo que convierte un material publicado en un recurso compartido. La [Recomendación de la UNESCO sobre los Recursos Educativos Abiertos](https://www.unesco.org/es/legal-affairs/recommendation-open-educational-resources-oer), adoptada en 2019, los define como materiales de dominio público o publicados con una licencia abierta que permite el acceso a ellos, así como su reutilización, reconversión, adaptación y redistribución sin costo alguno por parte de terceros. Por tanto, un material sin licencia abierta no es un recurso educativo abierto, aunque pueda consultarse libremente.
+La licencia es lo que convierte un material publicado en un recurso compartido. La [Recomendación sobre los Recursos Educativos Abiertos (REA)](https://www.unesco.org/es/legal-affairs/recommendation-open-educational-resources-oer) de la Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura (UNESCO), adoptada en 2019, los define como materiales de dominio público o publicados con una licencia abierta que permite el acceso a ellos, así como su reutilización, reconversión, adaptación y redistribución sin costo alguno por parte de terceros. Por tanto, un material sin licencia abierta no es un recurso educativo abierto, aunque pueda consultarse libremente.
 
 ## Licencias para los contenidos y para el código
 
-Un material creado con vibe coding reúne dos tipos de obra, que utilizan licencias distintas. Los contenidos son los textos, las preguntas, las imágenes y las explicaciones, y suelen publicarse con una licencia Creative Commons. El código es lo que hace funcionar el material, y utiliza licencias pensadas para los programas informáticos.
+Un material creado con vibe coding reúne dos tipos de obra, que utilizan licencias distintas. Los contenidos son los textos, las preguntas, las imágenes y las explicaciones, y suelen publicarse con una licencia Creative Commons (CC). El código es lo que hace funcionar el material, y utiliza licencias pensadas para los programas informáticos.
 
-No todas las licencias Creative Commons son libres. Las que incluyen la condición NC, que prohíbe los usos comerciales, o la condición ND, que prohíbe las adaptaciones, limitan justamente lo que se quiere permitir. El artículo [«Licencias libres para docentes»](https://educacion.bilateria.org/licencias-libres-para-docentes-apps-educativas-y-materiales-didacticos/) recomienda evitar la condición NC para no limitar usos educativos legítimos, y propone dos combinaciones según el objetivo:
+No todas las licencias Creative Commons son libres. Cada condición se indica con dos letras. BY, del inglés *by* («por»), obliga a reconocer la autoría, y SA (*ShareAlike*, compartir igual) obliga a mantener la misma licencia en las adaptaciones. Las que incluyen la condición NC (*NonCommercial*, no comercial), que prohíbe los usos comerciales, o la condición ND (*NoDerivatives*, sin obra derivada), que prohíbe las adaptaciones, limitan justamente lo que se quiere permitir. El artículo [«Licencias libres para docentes»](https://educacion.bilateria.org/licencias-libres-para-docentes-apps-educativas-y-materiales-didacticos/) recomienda evitar la condición NC para no limitar usos educativos legítimos, y propone dos combinaciones según el objetivo:
 
-- **Para garantizar la reciprocidad.** CC BY-SA para los contenidos y AGPL v3 para el código. Las mejoras que otras personas hagan deben compartirse con la misma licencia, de forma que vuelven a la comunidad educativa. La AGPL está recomendada para las aplicaciones que se ofrecen como páginas web.
+- **Para garantizar la reciprocidad.** CC BY-SA para los contenidos y AGPL v3, siglas en inglés de *Affero General Public License* (licencia pública general de Affero), para el código. Las mejoras que otras personas hagan deben compartirse con la misma licencia, de forma que vuelven a la comunidad educativa. La AGPL está recomendada para las aplicaciones que se ofrecen como páginas web.
 - **Para facilitar la máxima adopción.** CC BY para los contenidos y Apache 2.0 para el código. El material puede utilizarse con menos condiciones, aunque las mejoras no tienen por qué regresar.
 
 Esta guía utiliza la primera combinación.
@@ -21,7 +21,7 @@ Esta guía utiliza la primera combinación.
 
 La licencia debe estar a la vista para cumplir su función. Lo mínimo es que el propio material indique, en un lugar visible como el pie, la autoría, el nombre de la licencia y el enlace a su texto oficial. Así la licencia acompaña al material cuando se descarga o se incrusta en otra página.
 
-Cuando el material es un proyecto con varios archivos, conviene añadir además el archivo con el texto completo de la licencia del código y mencionar ambas licencias en la documentación. Todo ello puede pedirse a la IA desde el principio, como hace el primer texto de las [instrucciones para la IA](para-la-ia.html), de forma que el material se genera ya con su licencia.
+Cuando el material es un proyecto con varios archivos, conviene añadir además el archivo con el texto completo de la licencia del código y mencionar ambas licencias en la documentación. Todo ello puede pedirse a la inteligencia artificial (IA) desde el principio, como hace el primer texto de las [instrucciones para la IA](para-la-ia.html), de forma que el material se genera ya con su licencia.
 
 ## La autoría de lo generado por la IA
 

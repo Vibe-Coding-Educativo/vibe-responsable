@@ -2,9 +2,9 @@
 
 ## La apertura en la práctica
 
-La licencia libre da el permiso para reutilizar un material, pero el permiso resulta insuficiente si el material no puede obtenerse en una forma que permita trabajar con él. La [Recomendación de la UNESCO sobre los Recursos Educativos Abiertos](https://www.unesco.org/es/legal-affairs/recommendation-open-educational-resources-oer) no habla solo de acceso, sino de reutilización, reconversión, adaptación y redistribución. El software libre lo plantea de forma parecida con sus [cuatro libertades](https://www.gnu.org/philosophy/free-sw.es.html), entre las que están la de estudiar cómo funciona el programa y cambiarlo, y la de distribuir copias de las versiones modificadas, para las que el acceso al código es una condición necesaria.
+La licencia libre da el permiso para reutilizar un material, pero el permiso resulta insuficiente si el material no puede obtenerse en una forma que permita trabajar con él. La [Recomendación sobre los Recursos Educativos Abiertos (REA)](https://www.unesco.org/es/legal-affairs/recommendation-open-educational-resources-oer) de la Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura (UNESCO) no habla solo de acceso, sino de reutilización, reconversión, adaptación y redistribución. El software libre lo plantea de forma parecida con sus [cuatro libertades](https://www.gnu.org/philosophy/free-sw.es.html), entre las que están la de estudiar cómo funciona el programa y cambiarlo, y la de distribuir copias de las versiones modificadas, para las que el acceso al código es una condición necesaria.
 
-El artículo del CEDEC [«Mantener la "A" de abierto en los REA en tiempos de IA»](https://cedec.intef.es/mantener-la-a-de-abierto-en-los-rea-en-tiempos-de-ia/) lo concreta en un principio de simplicidad adaptable, según el cual conviene preferir lo funcional y sencillo a lo complejo y cerrado, y el criterio de calidad de un recurso es que pueda reutilizarse.
+El artículo [«Mantener la "A" de abierto en los REA en tiempos de IA»](https://cedec.intef.es/mantener-la-a-de-abierto-en-los-rea-en-tiempos-de-ia/), del Centro Nacional de Desarrollo Curricular en Sistemas no Propietarios (CEDEC), lo concreta en un principio de simplicidad adaptable, según el cual conviene preferir lo funcional y sencillo a lo complejo y cerrado, y el criterio de calidad de un recurso es que pueda reutilizarse.
 
 ## La obtención del material
 
@@ -14,7 +14,7 @@ Lo recomendado es publicar el proyecto en un repositorio abierto, con una explic
 
 ## Un material fácil de adaptar
 
-Un material es más reutilizable cuando el contenido está separado del funcionamiento. Un cuestionario cuyas preguntas están en una lista al principio del código, o en un archivo aparte, puede adaptarse a otra materia cambiando esa lista, sin tocar el resto. Conviene pedirlo a la IA desde el principio, junto con el código comentado de la recomendación 5 y la ausencia de dependencias de la recomendación 6, que son las otras dos condiciones que facilitan la adaptación.
+Un material es más reutilizable cuando el contenido está separado del funcionamiento. Un cuestionario cuyas preguntas están en una lista al principio del código, o en un archivo aparte, puede adaptarse a otra materia cambiando esa lista, sin tocar el resto. Conviene pedirlo a la inteligencia artificial (IA) desde el principio, junto con el código comentado de la recomendación 5 y la ausencia de dependencias de la recomendación 6, que son las otras dos condiciones que facilitan la adaptación.
 
 También ayuda indicar en la documentación qué partes están pensadas para cambiarse, como los textos, los colores o el idioma. Una persona que quiera traducir el material, o ajustarlo a otro nivel educativo, encuentra así por dónde empezar.
 

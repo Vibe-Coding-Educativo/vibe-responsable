@@ -2,7 +2,7 @@
 
 ## Cuatro familias de herramientas
 
-No todas las personas trabajan con los mismos medios, y las herramientas para crear programas con IA son muy variadas. A grandes rasgos pueden agruparse en cuatro familias, que se presentan a continuación con algunos ejemplos de las disponibles en 2026.
+No todas las personas trabajan con los mismos medios, y las herramientas para crear programas con inteligencia artificial (IA) son muy variadas. A grandes rasgos pueden agruparse en cuatro familias, que se presentan a continuación con algunos ejemplos de las disponibles en 2026.
 
 - **La web de un chatbot.** Asistentes generales como [ChatGPT](https://chatgpt.com/), [Gemini](https://gemini.google.com/) o [Claude](https://claude.ai/), que crean la aplicación dentro de la propia conversación. El material queda alojado en la plataforma y se comparte mediante un enlace.
 - **Plataformas para crear aplicaciones.** Servicios como [Lovable](https://lovable.dev/), [Bolt](https://bolt.new/), [Replit](https://replit.com/), [Google AI Studio](https://aistudio.google.com/) o [Canva](https://www.canva.com/), que generan, alojan y publican la aplicación desde el navegador.

@@ -2,7 +2,7 @@
 
 ## La comprensión del código
 
-Un recurso educativo es abierto cuando otra persona puede descargarlo, comprenderlo, modificarlo y mejorarlo. El artículo del CEDEC [«Mantener la "A" de abierto en los REA en tiempos de IA»](https://cedec.intef.es/mantener-la-a-de-abierto-en-los-rea-en-tiempos-de-ia/) advierte de que un recurso con cientos de líneas de código que nadie entiende, ni siquiera la persona que las insertó, ha dejado de ser abierto en lo esencial, aunque su licencia diga lo contrario. La ponencia [«Crear REA con eXeLearning en tiempos de IA»](https://descargas.intef.es/cedec/formacion/SL_REA_IA_julio26/html/la-ia-y-el-codigo.html) lo expresa así: «Tenemos el código fuente. Pero no la comprensión».
+Un recurso educativo es abierto cuando otra persona puede descargarlo, comprenderlo, modificarlo y mejorarlo. El artículo [«Mantener la "A" de abierto en los REA en tiempos de IA»](https://cedec.intef.es/mantener-la-a-de-abierto-en-los-rea-en-tiempos-de-ia/), que el Centro Nacional de Desarrollo Curricular en Sistemas no Propietarios (CEDEC) dedica a los recursos educativos abiertos (REA), advierte de que un recurso con cientos de líneas de código que nadie entiende, ni siquiera la persona que las insertó, ha dejado de ser abierto en lo esencial, aunque su licencia diga lo contrario. La ponencia [«Crear REA con eXeLearning en tiempos de IA»](https://descargas.intef.es/cedec/formacion/SL_REA_IA_julio26/html/la-ia-y-el-codigo.html) lo expresa así: «Tenemos el código fuente. Pero no la comprensión».
 
 El problema es práctico, ya que un material que funciona hoy puede dejar de hacerlo tras una actualización del navegador, y si nadie entiende cómo está hecho, tampoco podrá corregirse. El mismo artículo propone una regla sencilla: si no se puede explicar en dos frases qué hace el código, el recurso todavía no está listo para publicarse.
 
@@ -10,7 +10,7 @@ El problema es práctico, ya que un material que funciona hoy puede dejar de hac
 
 Cumplir esta recomendación no exige saber programar, ya que es suficiente con poder decir con palabras corrientes tres cosas del material: qué hace, qué guarda y si se comunica con algún servicio externo. Una explicación de este tipo sería la siguiente: «El simulador calcula la aceleración de un cuerpo en un plano inclinado a partir del ángulo y del material elegidos, y dibuja las fuerzas. No guarda ningún dato ni se conecta con ningún servicio».
 
-La forma de obtenerla es pedírsela a la propia IA, en lenguaje llano, y comprobar después que coincide con lo que se observa al usar el material. Si la IA afirma que no se guarda nada y el material recuerda las respuestas del día anterior, la explicación no es correcta y hay que aclararlo antes de publicar. El texto de revisión de las [instrucciones para la IA](para-la-ia.html) incluye esta petición en su punto 5.
+La forma de obtenerla es pedírsela a la propia IA, en lenguaje llano, y comprobar después que coincide con lo que se observa al usar el material. Si la inteligencia artificial (IA) afirma que no se guarda nada y el material recuerda las respuestas del día anterior, la explicación no es correcta y hay que aclararlo antes de publicar. El texto de revisión de las [instrucciones para la IA](para-la-ia.html) incluye esta petición en su punto 5.
 
 ## Cuatro comprobaciones sin saber programar
 

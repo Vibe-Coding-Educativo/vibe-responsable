@@ -2,7 +2,7 @@
 
 ## 1\. El contenido es correcto y lo ha revisado una persona
 
-La IA puede equivocarse con total naturalidad, y un error en una simulación o en un cuestionario acaba siendo un aprendizaje equivocado. Antes de publicar hay que usar el material como lo haría el alumnado y comprobar los conceptos, los datos y las respuestas que da por buenas. Esta revisión no se puede delegar, ya que la responsabilidad de lo que se enseña es de la persona que lo publica.
+La inteligencia artificial (IA) puede equivocarse con total naturalidad, y un error en una simulación o en un cuestionario acaba siendo un aprendizaje equivocado. Antes de publicar hay que usar el material como lo haría el alumnado y comprobar los conceptos, los datos y las respuestas que da por buenas. Esta revisión no se puede delegar, ya que la responsabilidad de lo que se enseña es de la persona que lo publica.
 
 - **En todos los casos.** Recorrer el material de principio a fin, también con respuestas equivocadas, y revisar cada resultado con el criterio de la materia.
 
@@ -18,7 +18,7 @@ El nombre, las notas, la voz o la imagen del alumnado son datos personales. En E
 Las obras quedan protegidas por derechos de autor de forma automática, de modo que un material sin licencia no puede reutilizarse con seguridad aunque esté publicado. Una licencia libre indica a las demás personas que pueden usarlo, adaptarlo y compartirlo, y con qué condiciones. El código y los contenidos necesitan licencias distintas, y lo generado por la IA plantea dudas de autoría que se tratan en su capítulo.
 
 - **Lo mínimo.** Escribir la autoría y la licencia dentro del propio material, en un lugar visible, por ejemplo al pie.
-- **Lo recomendado.** Añadir el archivo de licencia al proyecto, con una licencia de software libre para el código y una Creative Commons libre, como CC BY o CC BY-SA, para los contenidos.
+- **Lo recomendado.** Añadir el archivo de licencia al proyecto, con una licencia de software libre para el código y una Creative Commons (CC) libre, como CC BY o CC BY-SA, para los contenidos.
 
 ## 4\. Indica que se ha hecho con IA y qué ha comprobado la persona
 
