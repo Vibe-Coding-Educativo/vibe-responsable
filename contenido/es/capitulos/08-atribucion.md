@@ -1,0 +1,32 @@
+# Acredita lo que toma de otras personas
+
+## El material ajeno dentro de un material propio
+
+Un material creado con IA rara vez es enteramente nuevo. Suele incorporar imágenes, iconos, sonidos, tipografías, textos o bibliotecas de programación que tienen sus propios autores. La IA los añade con naturalidad cuando se le pide un resultado, y no siempre avisa de dónde proceden ni de las condiciones con que pueden utilizarse.
+
+El reconocimiento de la autoría es una cuestión de respeto hacia el trabajo de otras personas, y también un derecho. En España, la [Ley de Propiedad Intelectual](https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930) incluye entre los derechos morales del autor, en su artículo 14, el de exigir que se reconozca su condición de autor de la obra. Las licencias libres mantienen esa condición. La licencia [Creative Commons BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.es), por ejemplo, permite copiar y adaptar la obra siempre que se dé crédito de manera adecuada, se enlace la licencia y se indique si se han hecho cambios.
+
+## Los datos de una atribución
+
+Creative Commons recomienda en sus [buenas prácticas de atribución](https://creativecommons.org/use-remix/attribution/), publicadas en inglés, que cada elemento ajeno vaya acompañado de cuatro datos:
+
+- **El título** de la obra, si lo tiene.
+- **La autoría**, con el nombre o el nombre de usuario de su autor.
+- **La procedencia**, con el enlace al lugar de donde se ha tomado.
+- **La licencia**, con su nombre y el enlace a su texto.
+
+Cuando el elemento se ha modificado, conviene indicarlo. Una atribución completa sería «Fotografía de un volcán, de Ana Pérez, tomada de Wikimedia Commons, con licencia CC BY-SA 4.0».
+
+## El lugar de la atribución
+
+La atribución debe ir dentro del propio material, y no en la página que lo enlaza ni en un mensaje aparte. Un material educativo circula: se descarga, se incrusta en otra página, se sube a la plataforma de un centro. Si la atribución no viaja con él, se pierde en el primer paso. Lo mínimo es una sección de créditos al pie o en una pantalla propia, con los cuatro datos de cada elemento. Esta guía lo hace en su página de [créditos y licencias](../creditos.html), que recoge los iconos y la tipografía que utiliza, con sus autores y sus licencias.
+
+## Lo que la IA añade por su cuenta
+
+Conviene preguntar a la IA qué elementos ajenos ha incorporado y con qué licencia, ya que no siempre lo indica. Es lo que pide el punto 8 del texto de revisión de las [instrucciones para la IA](../para-la-ia.html). Hay tres casos que merecen atención:
+
+- **Las imágenes enlazadas desde otra web.** La IA puede colocar una imagen mediante su dirección en otro sitio, sin que conste su licencia. Conviene sustituirla por una con licencia conocida y guardarla dentro del material.
+- **Las imágenes generadas por IA.** No tienen un autor al que acreditar, pero conviene indicar que son generadas y con qué herramienta, como pide la recomendación 4.
+- **Las bibliotecas de programación.** Cada una tiene su licencia, y algunas condicionan la del conjunto. Las licencias con copyleft, como la GPL, exigen que el programa que las incorpora se distribuya con la misma licencia, y otras, como la MIT, piden conservar el aviso de autoría.
+
+Cuando un elemento no permite la reutilización, o no es posible averiguar su licencia, lo prudente es sustituirlo. La IA puede proponer alternativas con licencia libre, y conviene comprobar en la fuente original que la licencia es la que dice.
