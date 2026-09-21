@@ -14,7 +14,7 @@ La consecuencia es que un material creado por iniciativa propia, que guarde dato
 
 ## Materiales que no necesitan datos
 
-La forma más sencilla de cumplir es que el material no recoja datos. El Reglamento europeo establece el principio de minimización, según el cual los datos deben limitarse a lo necesario para su finalidad, y obliga a aplicar la protección de datos desde el diseño. La [guía de UNICEF sobre la IA y la infancia](https://www.unicef.org/innocenti/reports/policy-guidance-ai-children), de alcance mundial y publicada en inglés, recomienda lo mismo: reducir al mínimo la recogida de datos y adoptar un enfoque de privacidad desde el diseño.
+La forma más sencilla de cumplir es que el material no recoja datos. El Reglamento europeo establece el principio de minimización, según el cual los datos deben limitarse a lo necesario para su finalidad, y obliga a aplicar la protección de datos desde el diseño. La [guía de UNICEF sobre la IA y la infancia](https://www.unicef.org/innocenti/reports/policy-guidance-ai-children), de alcance mundial, recomienda lo mismo: reducir al mínimo la recogida de datos y adoptar un enfoque de privacidad desde el diseño.
 
 En un material creado con vibe coding, esto se traduce en unas pocas decisiones que pueden pedirse a la IA desde el principio:
 
