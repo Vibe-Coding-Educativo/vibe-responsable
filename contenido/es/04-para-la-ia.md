@@ -87,7 +87,7 @@ que dependa de ti y dime qué queda pendiente para mí.
 
 ## Si se trabaja con un repositorio
 
-Quien publique el material en un repositorio o en un sitio propio puede añadir estas condiciones al primer texto, que corresponden a lo recomendado en cada punto de la guía.
+Cuando el material se publica en un repositorio o en un sitio propio, pueden añadirse estas condiciones al primer texto, que corresponden a lo recomendado en cada punto de la guía.
 
 ```
 - Añade al proyecto un archivo de licencia, con una licencia de software libre

@@ -36,7 +36,7 @@ UI = {
         "nav": "Secciones de la guía",
         "nav_guia": "Guía",
         "borrador": "Borrador",
-        "borrador_ayuda": "La guía está en elaboración. Los capítulos que desarrollan cada recomendación se publicarán en esta misma web.",
+        "borrador_ayuda": "La guía está completa, pero su autor la está revisando y el texto puede cambiar.",
         "infografia_titulo": "Resumen gráfico",
         "infografia_alt": "Infografía con las diez recomendaciones, las mismas que aparecen en la lista.",
         "ampliar": "Ampliar la infografía",

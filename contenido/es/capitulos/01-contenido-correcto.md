@@ -29,4 +29,4 @@ Que los datos sean exactos es el mínimo, no el objetivo. Un material puede no c
 
 El primero es la claridad del objetivo de aprendizaje, de forma que el alumnado sepa en todo momento qué se espera que aprenda y por qué. El segundo es la retroalimentación formativa, que no consiste solo en indicar si una respuesta es correcta, sino en explicar el motivo, ofrecer una pista e invitar a intentarlo de nuevo. El tercero es la coherencia metodológica, es decir, que cada actividad responda a una decisión didáctica y no a lo que la IA propuso por defecto.
 
-La pregunta que conviene hacerse al revisar no es si el material ha quedado vistoso, sino si ayuda a aprender mejor. Esa valoración corresponde a quien conoce la materia y al alumnado, y es la aportación que la persona hace al vibe coding educativo.
+La pregunta que conviene hacerse al revisar no es si el material ha quedado vistoso, sino si ayuda a aprender mejor. Esa valoración corresponde a la persona que conoce la materia y al alumnado, y es su aportación al vibe coding educativo.

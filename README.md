@@ -4,13 +4,13 @@ Guía ética y de responsabilidad, no técnica, para la comunidad educativa: lic
 
 **Web de la guía:** <https://vibe-coding-educativo.github.io/vibe-responsable/>
 
-Nace en el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca) y se dirige a docentes de cualquier país. Está en elaboración: de momento contiene la lista inicial, «Antes de publicar: diez recomendaciones», y su infografía.
+Nace en el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca) y se dirige a docentes de cualquier país. Contiene una presentación, la lista «Antes de publicar: diez recomendaciones» con su infografía, un capítulo que desarrolla cada recomendación, los textos para dar a la IA y una página sobre las herramientas. Está en revisión por su autor.
 
 ## Cómo está organizado el repositorio
 
 | Carpeta o archivo | Contenido |
 | --- | --- |
-| `contenido/<idioma>/` | El texto de la guía en Markdown, un archivo por página, en el orden en que se leen: `00-presentacion.md`, `01-guia.md`, `02-herramientas.md` y `03-creditos.md`. Es lo único que hay que editar para cambiar el contenido. |
+| `contenido/<idioma>/` | El texto de la guía en Markdown, un archivo por página, en el orden en que se leen: `00-presentacion.md`, `01-guia.md`, `02-herramientas.md`, `04-para-la-ia.md` y `03-creditos.md`, más un archivo por capítulo en `capitulos/`. Es lo único que hay que editar para cambiar el contenido. |
 | `construir.py` | Genera la web a partir del Markdown. Necesita [pandoc](https://pandoc.org/). |
 | `es/`, `index.html` | La web generada. No se editan a mano. |
 | `recursos/` | Hoja de estilos, script y tipografía de la web. |

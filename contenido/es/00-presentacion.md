@@ -16,7 +16,7 @@ El motivo legal es que la persona que publica un material es responsable de lo q
 
 ## Cómo se utiliza
 
-La guía reúne diez recomendaciones, de forma que también sirve para revisar un material que ya está hecho. Las que pueden tener consecuencias legales son, sobre todo, la 2 y la 8.
+La guía reúne diez recomendaciones, de forma que también sirve para revisar un material que ya está hecho. Cada una enlaza con el capítulo donde se explica con más detalle. Las que pueden tener consecuencias legales son, sobre todo, la 2 y la 8.
 
 [Continuar con la guía](guia.html){.continuar}
 
