@@ -35,6 +35,16 @@ La guía de la Agencia Española de Protección de Datos admite que el profesora
 
 En una herramienta creada con vibe coding, esta condición se cumple cuando los datos se guardan únicamente en el dispositivo del docente, ya sea en el navegador o en un archivo que se descarga y se vuelve a cargar. La aplicación publicada no contiene ningún dato, porque cada docente introduce los suyos y no salen de su equipo, de modo que el autor de la herramienta no trata datos de nadie. Conviene, además, que la herramienta permita compartir o imprimir la información sin los nombres, y que cada docente la utilice conforme a las normas de su centro, igual que haría con un cuaderno en papel o con una hoja de cálculo.
 
+## Programas que recogen las respuestas del alumnado
+
+Otro caso es el programa que un docente crea para comprobar los conocimientos de su alumnado, detectar errores de concepto o seguir su progreso. La iniciativa es individual, pero los datos los genera el alumnado en sus propios dispositivos y tienen que llegar al docente. Evaluar forma parte de la función educativa, de modo que el programa es legítimo, y lo que hay que cuidar es el camino que siguen los resultados. Hay tres formas de resolverlo sin enviar datos a servicios ajenos al centro:
+
+- **El resultado se entrega por los medios del centro.** El programa muestra el resultado al terminar, o lo guarda en un archivo, y el alumnado lo entrega por la plataforma del centro, como cualquier otra tarea.
+- **El alumnado se identifica con un código.** El programa no pide el nombre, sino un código que solo el docente sabe a qué persona corresponde. El Reglamento europeo llama a esta técnica seudonimización, y exige que esa correspondencia se guarde por separado.
+- **Los resultados se recogen en una hoja de cálculo del centro.** Cuando hace falta una recogida automática, los datos deben ir a la cuenta que el centro proporciona al docente, y no a una cuenta personal, y conviene que el centro lo conozca.
+
+Estos programas son deterministas, es decir, aplican siempre las mismas reglas a las respuestas, y el análisis se hace en el propio dispositivo. La situación cambia si el programa envía las respuestas a un servicio de IA para que las valore. En ese caso los datos llegan a un tercero y, además, el [Reglamento europeo de IA](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/spa) clasifica como de alto riesgo los sistemas de IA destinados a evaluar los resultados del aprendizaje, lo que conlleva obligaciones importantes para su proveedor y para el centro que lo utiliza.
+
 ## Programas que el centro pone a disposición del profesorado
 
 Un centro o una administración educativa puede decidir que un programa gestione datos del alumnado en sus propios sistemas, por ejemplo unas hojas de cálculo compartidas con las calificaciones. En ese caso los datos salen del navegador, y es legítimo, porque la decisión la toma el responsable de esos datos. La guía de la Agencia Española de Protección de Datos indica que los centros deben conocer las aplicaciones que vayan a utilizar, su política de privacidad y sus condiciones de uso antes de utilizarlas. Cuando interviene un proveedor externo, actúa como encargado del tratamiento y solo puede tratar los datos conforme a las instrucciones del centro.

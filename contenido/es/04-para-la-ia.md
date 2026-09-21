@@ -25,8 +25,11 @@ CÓMO DEBE CONSTRUIRSE
 - Datos personales: no pidas el nombre ni ningún dato que identifique a una
   persona, salvo que la herramienta lo necesite para su función, como un
   cuaderno de notas. En ese caso guárdalo solo en el dispositivo y ofrece la
-  opción de exportar o imprimir sin los nombres. No envíes nada a ningún
-  servidor ni añadas analítica o contadores de visitas.
+  opción de exportar o imprimir sin los nombres. Si el programa recoge
+  respuestas del alumnado, muestra el resultado al terminar o permite
+  descargarlo para entregarlo, e identifica a cada persona con un código en
+  lugar de su nombre. No envíes nada a ningún servidor ni añadas analítica o
+  contadores de visitas.
 - Accesible: manejable solo con el teclado, con un orden de tabulación lógico,
   etiquetas en los controles, textos alternativos en las imágenes, contraste
   suficiente, sin depender del color para entender nada y legible en la pantalla
