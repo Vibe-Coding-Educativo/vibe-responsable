@@ -35,11 +35,11 @@ Todo lo que se crea queda protegido por derechos de autor de forma automática, 
 - **Lo mínimo.** Escribir la autoría y la licencia dentro del propio material, en un lugar visible, por ejemplo al pie.
 - **Con repositorio o sitio propio.** Añadir el archivo de licencia al proyecto, con una licencia de software libre para el código y una Creative Commons para los contenidos.
 
-## 4\. Explica qué ha hecho la IA y qué ha hecho la persona
+## 4\. Indica que se ha hecho con IA y qué ha comprobado la persona
 
-Quien reutiliza un material necesita saber cómo se ha creado para decidir cuánto puede fiarse de él. Una declaración breve indica qué herramientas se han usado, qué partes se han generado de forma automática y qué se ha revisado a mano.
+En un material creado con vibe coding el código es obra de la IA, y lo habitual es que nadie lo haya revisado línea a línea. Quien lo reutiliza debe saberlo para decidir cuánto puede fiarse de él. Por ello conviene indicar con qué herramienta se ha creado y, sobre todo, qué ha comprobado la persona que lo publica, como la corrección de los contenidos, el funcionamiento o el tratamiento de los datos.
 
-- **Lo mínimo.** Una o dos frases dentro del material, junto a la licencia.
+- **Lo mínimo.** Una o dos frases dentro del material, junto a la licencia, con la herramienta utilizada y lo que se ha comprobado.
 - **Con repositorio o sitio propio.** Una sección en la documentación del proyecto que incluya, además, las instrucciones principales que se dieron a la IA.
 
 ## 5\. Quien lo publica sabe explicar qué hace
