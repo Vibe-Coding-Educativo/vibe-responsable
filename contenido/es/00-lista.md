@@ -61,7 +61,7 @@ Un recurso que incrusta contenido de otra web, o que carga piezas desde servidor
 Los materiales generados con IA tienden a lo vistoso, y los efectos decorativos suelen ser un obstáculo para parte del alumnado. Un material accesible se maneja sin ratón, se entiende sin depender del color y se lee bien en una pantalla pequeña.
 
 - **Lo mínimo.** Pedir a la IA desde el principio que siga las pautas de accesibilidad, y probar el resultado solo con el teclado, con el texto ampliado y en un teléfono.
-- **Lo recomendado.** Pasar, además, una herramienta automática de revisión de accesibilidad y corregir lo que detecte.
+- **Lo recomendado.** Pedir a la IA que revise la accesibilidad con una herramienta automática y corrija lo que detecte. Los agentes de programación pueden hacerlo sin ayuda, ya que instalan la herramienta, la ejecutan y aplican las correcciones.
 
 ## 8\. Acredita lo que toma de otras personas
 
