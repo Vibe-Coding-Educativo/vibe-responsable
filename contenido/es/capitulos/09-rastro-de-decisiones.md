@@ -8,7 +8,7 @@ Conservar el rastro sirve para tres cosas. Permite retomar el trabajo después d
 
 ## El registro de decisiones
 
-La forma habitual de conservarlo en el desarrollo de software es el registro de decisiones de arquitectura, conocido por sus siglas en inglés, ADR. Cada decisión importante se anota en un documento breve que recoge cuatro cosas:
+La forma habitual de conservarlo en el desarrollo de software es el registro de decisiones de arquitectura, o ADR, por las siglas de su nombre en inglés, *Architecture Decision Record*. Cada decisión importante se anota en un documento breve que recoge cuatro cosas:
 
 - **El contexto.** La situación que obliga a decidir.
 - **La decisión.** Lo que se hace, con el detalle suficiente para aplicarlo.
