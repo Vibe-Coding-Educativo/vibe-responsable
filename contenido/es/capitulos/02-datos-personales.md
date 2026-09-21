@@ -10,7 +10,7 @@ Aunque el alumnado pueda dar su consentimiento a partir de esa edad, las buenas 
 
 ## La decisión sobre los datos del alumnado
 
-Publicar un material que recoge datos del alumnado no es una decisión que pueda tomar cada docente por su cuenta. En España, la [guía para centros educativos](https://www.aepd.es/documento/guia-centros-educativos.pdf) de la Agencia Española de Protección de Datos indica que las administraciones y los centros deben disponer de instrucciones para el uso de las tecnologías por el profesorado, que deberá utilizar las que la administración o el centro hayan dispuesto. La misma guía señala que, de lo que un profesor publica al margen de su función docente en el centro, el responsable es el propio profesor.
+Publicar un material que envía datos del alumnado a un servidor no es una decisión que pueda tomar cada docente por su cuenta. En España, la [guía para centros educativos](https://www.aepd.es/documento/guia-centros-educativos.pdf) de la Agencia Española de Protección de Datos indica que las administraciones y los centros deben disponer de instrucciones para el uso de las tecnologías por el profesorado, que deberá utilizar las que la administración o el centro hayan dispuesto. La misma guía señala que, de lo que un profesor publica al margen de su función docente en el centro, el responsable es el propio profesor.
 
 La consecuencia es que un material creado por iniciativa propia, que guarde datos del alumnado en un servicio ajeno al centro, convierte a su autor en responsable de ese tratamiento. Otros países tienen normas distintas, pero la precaución es la misma: antes de recoger datos del alumnado hay que contar con el centro.
 
@@ -26,6 +26,14 @@ En un material creado con vibe coding, esto se traduce en unas pocas decisiones 
 - **Sin analítica.** El material no incluye contadores de visitas ni herramientas de seguimiento.
 
 Un material construido así puede publicarse sin tratar ningún dato personal, de modo que las obligaciones anteriores no llegan a plantearse.
+
+## Herramientas que necesitan identificar al alumnado
+
+Algunos materiales necesitan identificar al alumnado para cumplir su función, como un cuaderno de calificaciones, un plano de clase o un generador de grupos. Estas herramientas pueden crearse y publicarse, ya que el seguimiento del alumnado forma parte de la función educativa. La condición es que los datos permanezcan bajo el control del docente y de su centro.
+
+La guía de la Agencia Española de Protección de Datos admite que el profesorado utilice aplicaciones en sus dispositivos personales, siempre que respeten la política de privacidad definida por el centro o por la administración educativa. Considera de especial importancia que ese uso no implique una transmisión de los datos del alumnado al prestador del servicio, para que los utilice con sus propios fines o los almacene de forma permanente.
+
+En una herramienta creada con vibe coding, esta condición se cumple cuando los datos se guardan únicamente en el dispositivo del docente, ya sea en el navegador o en un archivo que se descarga y se vuelve a cargar. La aplicación publicada no contiene ningún dato, porque cada docente introduce los suyos y no salen de su equipo, de modo que el autor de la herramienta no trata datos de nadie. Conviene, además, que la herramienta permita compartir o imprimir la información sin los nombres, y que cada docente la utilice conforme a las normas de su centro, igual que haría con un cuaderno en papel o con una hoja de cálculo.
 
 ## Los envíos de datos a otros servidores
 
