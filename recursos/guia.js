@@ -1,6 +1,5 @@
-// Comportamiento de la guía. Todo ocurre en el navegador: las marcas se guardan
-// en localStorage y no se envía nada a ningún servidor. Sin este script la página
-// se lee entera, con cada recomendación desplegada bajo su título.
+// Comportamiento de la guía. No guarda ni envía ningún dato. Sin este script la
+// página se lee entera, con cada recomendación desplegada bajo su título.
 (function () {
   "use strict";
   document.documentElement.classList.add("js");
@@ -9,7 +8,6 @@
 
   /* ---------- Lista y panel ---------- */
   var panel = document.querySelector(".panel");
-  var resumen = document.querySelector(".resumen");
   var puntos = Array.prototype.slice.call(document.querySelectorAll(".punto"));
   var detalles = {};
   var activo = 0;
@@ -26,6 +24,8 @@
       if (ESCRITORIO.matches) { if (d.parentNode !== panel) { panel.appendChild(d); } }
       else if (d.parentNode !== li) { li.appendChild(d); }
     });
+    // En escritorio el panel muestra siempre una recomendación; en móvil empiezan todas plegadas
+    if (ESCRITORIO.matches && !activo) { activo = 1; }
     pintar();
   }
 
@@ -36,13 +36,12 @@
       li.querySelector(".abrir").setAttribute("aria-expanded", es ? "true" : "false");
       detalles[n].classList.toggle("visible", es);
     });
-    if (resumen) { resumen.classList.toggle("visible", !activo); }
   }
 
   function seleccionar(n, opciones) {
     opciones = opciones || {};
     n = +n || 0;
-    if (n === activo && opciones.alternar) { n = 0; }
+    if (n === activo && opciones.alternar && !ESCRITORIO.matches) { n = 0; }
     activo = n;
     pintar();
     var destino = n ? "#recomendacion-" + n : location.pathname + location.search;
@@ -71,12 +70,6 @@
     document.querySelectorAll(".paso").forEach(function (b) {
       b.addEventListener("click", function () { seleccionar(b.dataset.ir, { foco: true }); });
     });
-    document.querySelectorAll(".cerrar-detalle").forEach(function (b) {
-      b.addEventListener("click", function () {
-        var n = activo; seleccionar(0);
-        if (n) { puntos[n - 1].querySelector(".abrir").focus(); }
-      });
-    });
     var desdeHash = function () {
       var m = /^#(?:recomendacion|detalle)-(\d+)$/.exec(location.hash);
       if (m && detalles[m[1]]) { seleccionar(m[1], { historial: false }); }
@@ -87,58 +80,6 @@
     desdeHash();
     window.addEventListener("beforeprint", function () { document.documentElement.classList.remove("js"); });
     window.addEventListener("afterprint", function () { document.documentElement.classList.add("js"); });
-  }
-
-  /* ---------- Casillas ---------- */
-  var CLAVE = "vibe-responsable:lista";
-  var casillas = Array.prototype.slice.call(document.querySelectorAll(".casilla input"));
-  var cuenta = document.querySelector(".cuenta");
-
-  function leer() { try { return JSON.parse(localStorage.getItem(CLAVE)) || {}; } catch (e) { return {}; } }
-  function guardar() {
-    var estado = {};
-    casillas.forEach(function (c) { if (c.checked) { estado[c.dataset.punto] = true; } });
-    try { localStorage.setItem(CLAVE, JSON.stringify(estado)); } catch (e) { /* sin almacenamiento */ }
-  }
-  function contar() {
-    if (!cuenta) { return; }
-    var n = casillas.filter(function (c) { return c.checked; }).length;
-    cuenta.textContent = cuenta.dataset.plantilla.replace("{n}", n).replace("{total}", cuenta.dataset.total);
-  }
-  function respaldo(texto) {
-    var a = document.createElement("textarea");
-    a.value = texto; a.setAttribute("readonly", ""); a.style.position = "fixed"; a.style.opacity = "0";
-    document.body.appendChild(a); a.select();
-    try { document.execCommand("copy"); } catch (e) { /* nada que hacer */ }
-    document.body.removeChild(a);
-  }
-
-  if (cuenta && casillas.length) {
-    var estado = leer();
-    casillas.forEach(function (c) {
-      c.checked = !!estado[c.dataset.punto];
-      c.addEventListener("change", function () { guardar(); contar(); });
-    });
-    contar();
-    var copiar = document.getElementById("copiar");
-    copiar.addEventListener("click", function () {
-      var lineas = [copiar.dataset.cabecera, copiar.dataset.url, ""];
-      casillas.forEach(function (c) { lineas.push((c.checked ? "[x] " : "[ ] ") + c.dataset.punto + ". " + c.dataset.texto); });
-      lineas.push("", cuenta.textContent);
-      var texto = lineas.join("\n");
-      var hecho = function () {
-        var antes = copiar.textContent;
-        copiar.textContent = copiar.dataset.hecho;
-        setTimeout(function () { copiar.textContent = antes; }, 1800);
-      };
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(texto).then(hecho, function () { respaldo(texto); hecho(); });
-      } else { respaldo(texto); hecho(); }
-    });
-    document.getElementById("borrar").addEventListener("click", function () {
-      casillas.forEach(function (c) { c.checked = false; });
-      guardar(); contar();
-    });
   }
 
   /* ---------- Visor de la infografía ---------- */

@@ -22,10 +22,9 @@ sirve GitHub Pages tal cual (`.nojekyll`).
 
 En el navegador solo hay HTML, una hoja de estilos y un script de unas cien
 líneas, todo dentro del repositorio: sin bibliotecas, sin fuentes externas, sin
-analítica. El aspecto claro u oscuro sigue la preferencia del dispositivo. Las
-marcas de la lista se guardan en `localStorage` y no salen del navegador. Sin
-JavaScript la página se lee entera; solo desaparecen las casillas y la
-infografía se abre como enlace en lugar de ampliarse. Los enlaces a otras
+analítica. El aspecto claro u oscuro sigue la preferencia del dispositivo. Sin
+JavaScript la página se lee entera; la infografía se abre como enlace en lugar de
+ampliarse. Los enlaces a otras
 webs se abren en una pestaña nueva, para no sacar al lector de la guía.
 
 La forma de evitar el desplazamiento largo que se describía aquí (dos columnas y

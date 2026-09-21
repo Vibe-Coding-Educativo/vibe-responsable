@@ -32,25 +32,13 @@ UI = {
         "nav_guia": "Guía",
         "borrador": "Borrador",
         "borrador_ayuda": "La guía está en elaboración. Los capítulos que desarrollan cada recomendación y la lista preparada para la IA se publicarán en esta misma web.",
-        "col_recomendacion": "Recomendación",
-        "cumple": "Se cumple",
-        "cumple_punto": "Se cumple la recomendación {n}",
         "infografia_titulo": "Resumen gráfico",
-        "infografia_texto": "La infografía reúne las diez recomendaciones en una sola imagen, pensada para compartirla. Se amplía al pulsarla.",
-        "infografia_pista": "Al seleccionar una recomendación de la lista, su explicación se muestra en este espacio.",
         "infografia_alt": "Infografía con las diez recomendaciones, las mismas que aparecen en la lista.",
         "ampliar": "Ampliar la infografía",
         "descargar": "Descargar la imagen",
-        "volver": "Volver al resumen gráfico",
         "anterior": "Anterior",
         "siguiente": "Siguiente",
         "niveles_ayuda": "Qué significan «Lo mínimo» y «Lo recomendado»",
-        "resultado_de": "{n} de {total} cumplidas",
-        "resultado_ayuda": "Las marcas se guardan solo en este navegador. No se envía nada a ningún servidor.",
-        "copiar": "Copiar el resultado",
-        "copiado": "Resultado copiado",
-        "borrar": "Borrar las marcas",
-        "copia_cabecera": "Revisión con la lista «Antes de publicar: diez recomendaciones»",
         "cerrar": "Cerrar",
         "acercar": "Ver a tamaño de lectura",
         "alejar": "Ajustar a la pantalla",
@@ -152,9 +140,10 @@ def infografia(idioma):
 
 def visor(idioma):
     T = UI[idioma]
-    _, an, al, medidas = infografia(idioma)
+    img, an, al, medidas = infografia(idioma)
     return f"""<dialog class="visor" {medidas} aria-label="{html.escape(T["infografia_titulo"])}">
-<div class="visor-barra"><button type="button" class="visor-zoom" data-acercar="{html.escape(T["acercar"])}" data-alejar="{html.escape(T["alejar"])}">{html.escape(T["acercar"])}</button>
+<div class="visor-barra"><a class="visor-descarga" href="{img}" download>{html.escape(T["descargar"])}</a>
+<button type="button" class="visor-zoom" data-acercar="{html.escape(T["acercar"])}" data-alejar="{html.escape(T["alejar"])}">{html.escape(T["acercar"])}</button>
 <button type="button" class="visor-cerrar">{html.escape(T["cerrar"])}</button></div>
 <div class="visor-lienzo"><img alt="{html.escape(T["infografia_alt"])}" width="{an}" height="{al}"></div>
 </dialog>"""
@@ -214,42 +203,22 @@ def pagina_lista(idioma):
             f'<li class="punto" id="recomendacion-{n}">'
             f'<div class="fila"><a class="abrir" href="#detalle-{n}" aria-controls="detalle-{n}">'
             f'<span class="numero" aria-hidden="true">{n}</span>{icono(ic)}'
-            f'<span class="rotulo"><span class="oculto">{n}. </span>{html.escape(t)}</span></a>'
-            f'<label class="casilla" title="{html.escape(T["cumple"])}"><input type="checkbox" data-punto="{n}" data-texto="{html.escape(t)}">'
-            f'<span class="oculto">{html.escape(T["cumple_punto"].format(n=n))}</span></label></div>'
+            f'<span class="rotulo"><span class="oculto">{n}. </span>{html.escape(t)}</span></a></div>'
             f'<article class="detalle" id="detalle-{n}" data-punto="{n}" aria-labelledby="t-{n}"><div class="detalle-int"><div class="detalle-caja">'
             f'<header class="detalle-cab"><span class="cifra" aria-hidden="true">{n}</span>'
             f'<h2 id="t-{n}" tabindex="-1"><span class="oculto">{n}. </span>{html.escape(t)}</h2>'
-            f'<button type="button" class="cerrar-detalle solo-js" aria-label="{html.escape(T["volver"])}" title="{html.escape(T["volver"])}"><span aria-hidden="true">×</span></button></header>'
+            f'</header>'
             f'<div class="detalle-cuerpo"><div class="explicacion">{explicacion}</div>{niveles}</div>'
             f'<footer class="detalle-pie solo-js">{ant}<a class="ayuda-niveles" href="herramientas.html#{ancla("Lo mínimo y lo recomendado")}">{html.escape(T["niveles_ayuda"])}</a>{sig}</footer>'
             f'</div></div></article></li>')
 
-    img, an, al, medidas = infografia(idioma)
     cuerpo = f"""<h1>{html.escape(titulo)}</h1>
 <div class="tablero">
 <section class="hoja" aria-label="{html.escape(titulo)}">
-<div class="hoja-cab" aria-hidden="true"><span>{html.escape(T["col_recomendacion"])}</span><span>{html.escape(T["cumple"])}</span></div>
 <ol class="diez">{"".join(filas)}</ol>
-<div class="resultado solo-js">
-<p class="cuenta" aria-live="polite" data-plantilla="{html.escape(T["resultado_de"])}" data-total="{total}" title="{html.escape(T["resultado_ayuda"])}"></p>
-<button type="button" id="copiar" data-hecho="{html.escape(T["copiado"])}" data-cabecera="{html.escape(T["copia_cabecera"])}" data-url="{URL_SITIO}">{html.escape(T["copiar"])}</button>
-<button type="button" id="borrar" class="discreto">{html.escape(T["borrar"])}</button>
-</div>
 </section>
-<div class="panel" {medidas}>
-<section class="resumen" aria-labelledby="t-resumen">
-<a class="miniatura ampliar" href="{img}" aria-label="{html.escape(T["ampliar"])}" title="{html.escape(T["ampliar"])}"><img src="{img}" width="{an}" height="{al}" alt="{html.escape(T["infografia_alt"])}"></a>
-<div class="resumen-texto">
-<h2 id="t-resumen">{html.escape(T["infografia_titulo"])}</h2>
-<p>{html.escape(T["infografia_texto"])}</p>
-<p class="acciones"><a class="boton discreto" href="{img}" download>{html.escape(T["descargar"])}</a></p>
-<p class="pista solo-js">{html.escape(T["infografia_pista"])}</p>
-</div>
-</section>
-</div>
-</div>
-{visor(idioma)}"""
+<div class="panel"></div>
+</div>"""
     return marco(idioma, "guia.html", titulo, cuerpo, "pagina-lista")
 
 

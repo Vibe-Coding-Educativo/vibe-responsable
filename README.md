@@ -25,7 +25,7 @@ python3 construir.py
 python3 infografia/generar.py     # solo si cambian los títulos de la lista
 ```
 
-La web no usa bibliotecas ni servicios externos, y no recoge ningún dato. La tipografía va dentro del propio repositorio. Las marcas de la lista se guardan solo en el navegador de cada persona.
+La web no usa bibliotecas ni servicios externos, y no recoge ni guarda ningún dato. La tipografía va dentro del propio repositorio.
 
 ## Cómo se ha hecho
 

@@ -59,6 +59,17 @@ la autoría y las dos licencias. Los enlaces externos se abren en una pestaña
 nueva sin texto de aviso añadido, y la miniatura de la infografía es el único
 control para ampliarla.
 
+## Lo que se retiró de la página de la guía (revisión del mismo día)
+
+La hoja de revisión llevaba una casilla «Se cumple» por recomendación, un
+recuento y botones para copiar el resultado y borrar las marcas, guardadas en
+el navegador. También repetía en su panel el resumen gráfico de la portada. El
+autor mandó quitar las dos cosas: el resumen ya está en la presentación, y la
+página queda como lista y explicación, sin controles añadidos. En escritorio el
+panel muestra siempre una recomendación, la primera al cargar; en el móvil
+empiezan todas plegadas. La web ya no guarda nada en el navegador. La descarga
+de la infografía está en su visor.
+
 ## Alternativas descartadas
 
 - **Una sola página con acordeones y dos columnas**: reducía el alto a menos de
