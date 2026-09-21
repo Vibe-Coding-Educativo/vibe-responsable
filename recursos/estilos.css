@@ -196,9 +196,26 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   .pagina-presentacion .pie .ancho { display: flex; flex-wrap: wrap; gap: 0 1.2rem; }
 }
 
+/* Capítulos */
+.migas { margin: 0.9rem 0 0; font-size: 0.9rem; }
+.pagina-capitulo h1 { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.9rem; align-items: center; margin-top: 0.4rem; }
+.cifra-cap { font-size: 0.85em; font-weight: 700; color: var(--hoja); background: var(--verde); border-radius: 8px; min-width: 1.9em; padding: 0.06em 0.2em; text-align: center; line-height: 1.25; }
+.pagina-capitulo .texto { max-width: 42rem; columns: auto; }
+.pagina-capitulo .familias { grid-template-columns: minmax(0, 1fr); max-width: 42rem; }
+.entre-capitulos { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.4rem 1rem; margin-top: 1.4rem; padding-top: 0.8rem; border-top: 1px solid var(--raya); font-size: 0.92rem; }
+.entre-capitulos .paso { padding: 0; }
+.leer-capitulo { font-weight: 700; }
+
+/* Textos para copiar y dar a la IA */
+.copiable { min-width: 0; margin: 0 0 1rem; }
+.copiable pre { margin: 0; padding: 0.9rem 1rem; background: var(--hoja); border: 1px solid var(--raya); border-left: 3px solid var(--verde); border-radius: 4px; white-space: pre-wrap; overflow-wrap: break-word; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.82rem; line-height: 1.5; tab-size: 2; }
+.copiable-cab { display: flex; justify-content: flex-end; margin: 0 0 0.3rem; }
+.copiable .copiar { font-size: 0.83rem; padding: 0.2rem 0.5rem; }
+
 /* Páginas de texto: los títulos de apartado van al margen */
-.apartado { display: grid; gap: 0.3rem 3rem; padding: 1.3rem 0 0.6rem; border-top: 1px solid var(--raya); }
+.apartado { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.3rem 3rem; padding: 1.3rem 0 0.6rem; border-top: 1px solid var(--raya); }
 .apartado h2 { margin: 0; font-size: 1.2rem; line-height: 1.22; text-wrap: balance; }
+.texto { min-width: 0; }
 .texto p { margin: 0 0 0.9rem; }
 .texto > :last-child { margin-bottom: 0; }
 .familias { list-style: none; margin: 0.2rem 0 0.4rem; padding: 0; display: grid; gap: 0.2rem 2.4rem; }
@@ -208,9 +225,10 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   .apartado { grid-template-columns: 14rem minmax(0, 1fr); padding-top: 1.5rem; }
   .apartado h2 { position: sticky; top: 1rem; align-self: start; }
   .texto { columns: 2 23rem; column-gap: 2.6rem; max-width: 64rem; }
+  .pagina-capitulo .apartado { grid-template-columns: 13rem minmax(0, 1fr); }
   .texto p { break-inside: avoid; }
   .texto:has(> p:only-child) { columns: auto; max-width: 46rem; }
-  .texto:has(.familias) { columns: auto; }
+  .texto:has(.familias), .texto:has(.copiable) { columns: auto; }
   .pagina-texto .texto:not(:has(> p + p + p)) { columns: auto; max-width: 46rem; }
   .texto:has(.familias) > p { max-width: 44rem; }
   .familias { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
@@ -228,7 +246,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   :root { --papel: #fff; --hoja: #fff; --tinta: #000; --tinta-suave: #333; --raya: #bbb; --verde: #0f5f59; --azul: #1d3f73; --sombra: none; }
   html { font-size: 10.5pt; }
   .pizarra { background: none; color: #000; border-bottom: 2px solid #000; }
-  .pizarra nav, .estado, .saltar, .continuar, .detalle-pie, .visor { display: none !important; }
+  .pizarra nav, .estado, .saltar, .continuar, .copiable-cab, .detalle-pie, .visor { display: none !important; }
   .sitio a { color: #000; }
   .tablero, .panel { display: block; }
   .panel > *, .punto > .detalle { opacity: 1 !important; visibility: visible !important; transform: none !important; display: block !important; }

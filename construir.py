@@ -10,7 +10,12 @@ Páginas por idioma, en el orden en que se leen:
   index.html          presentación: qué es, por qué y cómo se utiliza (00-presentacion.md)
   guia.html           la guía: las diez recomendaciones (01-guia.md)
   herramientas.html   familias de herramientas y los dos niveles (02-herramientas.md)
+  para-la-ia.html     los textos para dar a la IA (04-para-la-ia.md)
   creditos.html       créditos y licencias, enlazada desde el pie (03-creditos.md)
+
+Los capítulos que desarrollan cada recomendación están en contenido/<idioma>/capitulos/
+y se publican como capitulo-N.html. Se enlazan desde su recomendación en la guía; los
+que aún no están escritos no muestran enlace.
 """
 import html, re, subprocess, unicodedata
 from pathlib import Path
@@ -31,7 +36,7 @@ UI = {
         "nav": "Secciones de la guía",
         "nav_guia": "Guía",
         "borrador": "Borrador",
-        "borrador_ayuda": "La guía está en elaboración. Los capítulos que desarrollan cada recomendación y la lista preparada para la IA se publicarán en esta misma web.",
+        "borrador_ayuda": "La guía está en elaboración. Los capítulos que desarrollan cada recomendación se publicarán en esta misma web.",
         "infografia_titulo": "Resumen gráfico",
         "infografia_alt": "Infografía con las diez recomendaciones, las mismas que aparecen en la lista.",
         "ampliar": "Ampliar la infografía",
@@ -39,7 +44,12 @@ UI = {
         "anterior": "Anterior",
         "siguiente": "Siguiente",
         "niveles_ayuda": "Qué significan «Lo mínimo» y «Lo recomendado»",
+        "leer_capitulo": "Leer el capítulo",
+        "volver_guia": "Volver a la guía",
+        "capitulo_de": "Capítulo {n} de {total}",
         "cerrar": "Cerrar",
+        "copiar": "Copiar el texto",
+        "copiado": "Texto copiado",
         "acercar": "Ver a tamaño de lectura",
         "alejar": "Ajustar a la pantalla",
         "niveles": {"Lo mínimo.": "minimo", "Lo recomendado.": "recomendado", "En todos los casos.": "todos"},
@@ -47,7 +57,8 @@ UI = {
         "pie_2": '<a href="creditos.html">Créditos y licencias</a>.',
     },
 }
-PAGINAS = [("index.html", "00-presentacion.md"), ("guia.html", "01-guia.md"), ("herramientas.html", "02-herramientas.md")]
+PAGINAS = [("index.html", "00-presentacion.md"), ("guia.html", "01-guia.md"),
+           ("herramientas.html", "02-herramientas.md"), ("para-la-ia.html", "04-para-la-ia.md")]
 
 
 def pandoc(md):
@@ -131,6 +142,16 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
     return enlaces_externos(pag)
 
 
+def capitulos(idioma):
+    """Capítulos escritos, por número de recomendación: {1: (archivo, título)}."""
+    carpeta = RAIZ / "contenido" / idioma / "capitulos"
+    encontrados = {}
+    for md in sorted(carpeta.glob("*.md")) if carpeta.is_dir() else []:
+        n = int(md.name.split("-")[0])
+        encontrados[n] = (f"capitulo-{n}.html", titulo_de(md.read_text(encoding="utf-8")), md)
+    return encontrados
+
+
 def infografia(idioma):
     """Ruta y medidas de la infografía. Las medidas salen del SVG original, no de un número escrito a mano."""
     svg = (RAIZ / "infografia" / f"lista-iconos.{idioma}.svg").read_text(encoding="utf-8")
@@ -190,6 +211,7 @@ def pagina_lista(idioma):
         puntos.append((int(m.group(1)), m.group(2).strip(), resto.strip()))
     total = len(puntos)
 
+    caps = capitulos(idioma)
     filas = []
     for (n, t, cuerpo), ic in zip(puntos, ICONOS):
         h = pandoc(cuerpo)
@@ -197,6 +219,8 @@ def pagina_lista(idioma):
             h = h.replace(f"<li><strong>{etiqueta}</strong>", f'<li class="nivel {clase}"><strong>{etiqueta}</strong>')
         corte = h.find("<ul>")
         explicacion, niveles = h[:corte], h[corte:].replace("<ul>", '<ul class="niveles">', 1)
+        ayuda = (f'<a class="leer-capitulo" href="{caps[n][0]}">{html.escape(T["leer_capitulo"])}</a>' if n in caps
+                 else f'<a class="ayuda-niveles" href="herramientas.html#{ancla("Lo mínimo y lo recomendado")}">{html.escape(T["niveles_ayuda"])}</a>')
         ant = f'<button type="button" class="paso" data-ir="{n-1}">{html.escape(T["anterior"])}</button>' if n > 1 else "<span></span>"
         sig = f'<button type="button" class="paso" data-ir="{n+1}">{html.escape(T["siguiente"])}</button>' if n < total else "<span></span>"
         filas.append(
@@ -209,7 +233,7 @@ def pagina_lista(idioma):
             f'<h2 id="t-{n}" tabindex="-1"><span class="oculto">{n}. </span>{html.escape(t)}</h2>'
             f'</header>'
             f'<div class="detalle-cuerpo"><div class="explicacion">{explicacion}</div>{niveles}</div>'
-            f'<footer class="detalle-pie solo-js">{ant}<a class="ayuda-niveles" href="herramientas.html#{ancla("Lo mínimo y lo recomendado")}">{html.escape(T["niveles_ayuda"])}</a>{sig}</footer>'
+            f'<footer class="detalle-pie solo-js">{ant}{ayuda}{sig}</footer>'
             f'</div></div></article></li>')
 
     cuerpo = f"""<h1>{html.escape(titulo)}</h1>
@@ -223,6 +247,7 @@ def pagina_lista(idioma):
 
 
 def pagina_texto(idioma, archivo, fuente):
+    T = UI[idioma]
     md = (RAIZ / "contenido" / idioma / fuente).read_text(encoding="utf-8")
     titulo = titulo_de(md)
     apartados = re.split(r"^## ", md.split("\n", 1)[1], flags=re.M)[1:]
@@ -232,10 +257,40 @@ def pagina_texto(idioma, archivo, fuente):
         cab = cab.strip()
         h = pandoc(resto.strip())
         h = h.replace("<ul>", '<ul class="familias">', 1)
+        h = re.sub(r"<pre[^>]*>",
+                   f'<div class="copiable"><p class="copiable-cab solo-js">'
+                   f'<button type="button" class="copiar discreto" data-hecho="{html.escape(T["copiado"])}">{html.escape(T["copiar"])}</button></p><pre>',
+                   h)
+        h = h.replace("</pre>", "</pre></div>")
         secciones.append(f'<section class="apartado" id="{ancla(cab)}" aria-labelledby="h-{ancla(cab)}">'
                          f'<h2 id="h-{ancla(cab)}">{html.escape(cab)}</h2><div class="texto">{h}</div></section>')
     cuerpo = f'<h1>{html.escape(titulo)}</h1>\n' + "\n".join(secciones)
     return marco(idioma, archivo, titulo, cuerpo, "pagina-texto")
+
+
+def pagina_capitulo(idioma, n, archivo, md):
+    """Un capítulo: texto seguido, con vuelta a la guía y paso al anterior y al siguiente."""
+    T = UI[idioma]
+    caps = capitulos(idioma)
+    total = len(re.findall(r"^## ", (RAIZ / "contenido" / idioma / "01-guia.md").read_text(encoding="utf-8"), flags=re.M))
+    texto = md.read_text(encoding="utf-8")
+    titulo = titulo_de(texto)
+    cuerpo_md = texto.split("\n", 1)[1]
+    secciones = []
+    for a in re.split(r"^## ", cuerpo_md, flags=re.M)[1:]:
+        cab, resto = a.split("\n", 1)
+        secciones.append(f'<section class="apartado" id="{ancla(cab.strip())}" aria-labelledby="h-{ancla(cab.strip())}">'
+                         f'<h2 id="h-{ancla(cab.strip())}">{html.escape(cab.strip())}</h2>'
+                         f'<div class="texto">{pandoc(resto.strip())}</div></section>')
+    ant = (f'<a class="paso" href="{caps[n-1][0]}">{html.escape(T["anterior"])}</a>' if n - 1 in caps else "<span></span>")
+    sig = (f'<a class="paso" href="{caps[n+1][0]}">{html.escape(T["siguiente"])}</a>' if n + 1 in caps else "<span></span>")
+    cuerpo = (f'<p class="migas"><a href="guia.html">{html.escape(T["volver_guia"])}</a></p>'
+              f'<h1><span class="cifra-cap" aria-hidden="true">{n}</span>{html.escape(titulo)}</h1>'
+              f'<p class="oculto">{html.escape(T["capitulo_de"].format(n=n, total=total))}</p>'
+              + "\n".join(secciones)
+              + f'<nav class="entre-capitulos" aria-label="{html.escape(T["nav"])}">{ant}'
+                f'<a href="guia.html">{html.escape(T["volver_guia"])}</a>{sig}</nav>')
+    return marco(idioma, "guia.html", titulo, cuerpo, "pagina-texto pagina-capitulo")
 
 
 def portada():
@@ -265,7 +320,10 @@ if __name__ == "__main__":
         destino.mkdir(exist_ok=True)
         (destino / "index.html").write_text(pagina_presentacion(idioma), encoding="utf-8")
         (destino / "guia.html").write_text(pagina_lista(idioma), encoding="utf-8")
-        (destino / "herramientas.html").write_text(pagina_texto(idioma, "herramientas.html", "02-herramientas.md"), encoding="utf-8")
+        for archivo, fuente in PAGINAS[2:]:
+            (destino / archivo).write_text(pagina_texto(idioma, archivo, fuente), encoding="utf-8")
+        for n, (archivo, _, md) in capitulos(idioma).items():
+            (destino / archivo).write_text(pagina_capitulo(idioma, n, archivo, md), encoding="utf-8")
         (destino / "creditos.html").write_text(pagina_texto(idioma, "creditos.html", "03-creditos.md"), encoding="utf-8")
         viejo = destino / "presentacion.html"
         if viejo.exists():

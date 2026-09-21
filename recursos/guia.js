@@ -82,6 +82,28 @@
     window.addEventListener("afterprint", function () { document.documentElement.classList.add("js"); });
   }
 
+  /* ---------- Copiar los textos para la IA ---------- */
+  document.querySelectorAll(".copiar").forEach(function (boton) {
+    boton.addEventListener("click", function () {
+      var texto = boton.closest(".copiable").querySelector("pre").textContent;
+      var hecho = function () {
+        var antes = boton.textContent;
+        boton.textContent = boton.dataset.hecho;
+        setTimeout(function () { boton.textContent = antes; }, 1800);
+      };
+      var respaldo = function () {
+        var a = document.createElement("textarea");
+        a.value = texto; a.setAttribute("readonly", ""); a.style.position = "fixed"; a.style.opacity = "0";
+        document.body.appendChild(a); a.select();
+        try { document.execCommand("copy"); } catch (e) { /* nada que hacer */ }
+        document.body.removeChild(a);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(texto).then(hecho, function () { respaldo(); hecho(); });
+      } else { respaldo(); hecho(); }
+    });
+  });
+
   /* ---------- Visor de la infografía ---------- */
   var visor = document.querySelector("dialog.visor");
   if (visor && typeof visor.showModal === "function") {
