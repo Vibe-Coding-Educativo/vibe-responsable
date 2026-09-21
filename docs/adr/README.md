@@ -7,7 +7,8 @@ deshaga después de buena fe, ni siquiera nosotros dentro de un año.
 | Nº | Decisión | Estado |
 |---|---|---|
 | [1](0001-las-fuentes-se-guardan-en-el-repositorio.md) | Las fuentes consultadas se guardan en el repositorio | aceptado |
-| [2](0002-lo-normativo-se-consulta-no-se-copia.md) | El material normativo se consulta en el cuaderno, no se copia | aceptado |
+| [2](0002-lo-normativo-se-consulta-no-se-copia.md) | El material normativo se consulta en el cuaderno, no se copia | sustituido por el 3 |
+| [3](0003-el-material-de-consulta-no-se-publica.md) | El material de consulta se descarga entero y se queda fuera del repositorio | aceptado |
 
 Para añadir una, se copia [la plantilla](0000-plantilla.md) con el número
 siguiente y se anota aquí. Una decisión que deje de valer no se borra: se marca

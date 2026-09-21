@@ -1,6 +1,6 @@
 # 2. El material normativo se consulta en el cuaderno, no se copia al repositorio
 
-Fecha: 2026-09-21 · Estado: aceptado
+Fecha: 2026-09-21 · Estado: sustituido por el [ADR 3](0003-el-material-de-consulta-no-se-publica.md)
 
 ## Contexto
 
