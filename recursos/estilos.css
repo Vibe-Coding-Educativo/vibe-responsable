@@ -23,7 +23,7 @@ body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6; overflow-wrap: break-word;
 }
-.ancho { max-width: 46rem; margin: 0 auto; padding: 0 1.1rem; }
+.ancho { max-width: 74rem; margin: 0 auto; padding: 0 1.3rem; }
 a { color: var(--acento); text-underline-offset: 0.15em; }
 a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 3px solid var(--acento); outline-offset: 3px; border-radius: 4px; }
@@ -33,6 +33,11 @@ a:hover { text-decoration-thickness: 2px; }
 
 .cabecera { background: var(--cabecera); color: var(--cabecera-texto); padding: 2.2rem 0 2rem; }
 .cabecera .guia { margin: 0 0 0.6rem; color: var(--cabecera-suave); font-size: 0.95rem; }
+.cabecera .guia a { color: var(--cabecera-texto); font-weight: 700; }
+.atajo { margin: 1rem 0 0; }
+.atajo a { display: inline-block; color: var(--cabecera-texto); border: 2px solid var(--cabecera-suave); border-radius: 10px; padding: 0.4rem 0.95rem; font-weight: 600; font-size: 0.95rem; text-decoration: none; }
+.atajo a:hover { background: rgba(255, 255, 255, 0.12); }
+.cabecera :focus-visible { outline-color: #ffffff; }
 .cabecera h1 { margin: 0; font-size: clamp(1.7rem, 5vw, 2.6rem); line-height: 1.15; font-weight: 800; text-wrap: balance; }
 
 main.ancho { padding-top: 1.8rem; padding-bottom: 2.5rem; }
@@ -42,8 +47,13 @@ main.ancho { padding-top: 1.8rem; padding-bottom: 2.5rem; }
 .intro ul { padding-left: 1.2rem; margin: 0 0 1.05rem; }
 .intro li { margin-bottom: 0.55rem; }
 
-.vista-rapida { display: grid; gap: 1.4rem; margin: 1.8rem 0; align-items: start; }
-@media (min-width: 44rem) { .vista-rapida { grid-template-columns: 15rem 1fr; } }
+.bloque { display: grid; gap: 1.6rem 2.6rem; margin: 0 0 1.4rem; align-items: start; }
+@media (min-width: 62rem) {
+  .bloque { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
+  .bloque.parejo { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+.vista-rapida { display: grid; gap: 1.2rem; align-items: start; }
+@media (min-width: 40rem) { .vista-rapida { grid-template-columns: 12rem minmax(0, 1fr); } }
 .infografia { margin: 0; }
 .infografia img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--borde); }
 .infografia a { display: block; cursor: zoom-in; }
@@ -53,12 +63,27 @@ main.ancho { padding-top: 1.8rem; padding-bottom: 2.5rem; }
 .indice ol { margin: 0; padding-left: 1.4rem; }
 .indice li { margin-bottom: 0.35rem; line-height: 1.4; }
 
-.recomendacion { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 14px; padding: 1.2rem 1.3rem 1.1rem; margin: 0 0 1.3rem; scroll-margin-top: 1rem; }
-.recomendacion > header { display: grid; grid-template-columns: auto auto 1fr; gap: 0.8rem; align-items: center; margin-bottom: 0.9rem; }
-.numero { font-size: 2rem; font-weight: 800; color: var(--acento); min-width: 1.4ch; text-align: center; line-height: 1; }
-.insignia { display: grid; place-items: center; width: 3rem; height: 3rem; border-radius: 12px; background: var(--acento); color: var(--acento-texto); }
-.icono { width: 1.7rem; height: 1.7rem; }
-.recomendacion h2 { margin: 0; font-size: 1.22rem; line-height: 1.3; text-wrap: balance; }
+.lista { margin: 2.2rem 0 0; }
+#t-lista { scroll-margin-top: 1rem; }
+.lista-cabecera { display: flex; flex-wrap: wrap; gap: 0.8rem 1.5rem; align-items: end; justify-content: space-between; margin-bottom: 1.1rem; }
+.lista-cabecera h2 { margin: 0; font-size: 1.45rem; }
+.lista-cabecera .ayuda { margin: 0.2rem 0 0; }
+.solo-js { display: none; }
+.js .solo-js { display: flex; }
+.rejilla { display: grid; gap: 0.9rem 1.3rem; align-items: start; }
+@media (min-width: 62rem) { .rejilla { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+
+.recomendacion { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 14px; padding: 0.5rem 1.1rem 0.6rem; scroll-margin-top: 1rem; }
+.recomendacion summary { display: grid; grid-template-columns: auto auto 1fr auto; gap: 0.8rem; align-items: center; cursor: pointer; list-style: none; padding: 0.45rem 0; border-radius: 8px; }
+.recomendacion summary::-webkit-details-marker { display: none; }
+.numero { font-size: 1.8rem; font-weight: 800; color: var(--acento); min-width: 2ch; text-align: center; line-height: 1; }
+.insignia { display: grid; place-items: center; width: 2.7rem; height: 2.7rem; border-radius: 11px; background: var(--acento); color: var(--acento-texto); }
+.icono { width: 1.55rem; height: 1.55rem; }
+.recomendacion h3 { margin: 0; font-size: 1.12rem; line-height: 1.3; text-wrap: balance; }
+.flecha { width: 0.7rem; height: 0.7rem; border-right: 3px solid var(--acento); border-bottom: 3px solid var(--acento); transform: rotate(45deg); margin: 0 0.3rem 0.3rem; transition: transform 0.15s; }
+details[open] .flecha { transform: rotate(-135deg); margin-bottom: -0.2rem; }
+@media (prefers-reduced-motion: reduce) { .flecha { transition: none; } }
+.cuerpo { padding: 0.6rem 0 0.2rem; border-top: 1px solid var(--borde); margin-top: 0.4rem; }
 .recomendacion p { margin: 0 0 0.9rem; }
 .niveles { list-style: none; margin: 0 0 0.9rem; padding: 0; display: grid; gap: 0.6rem; }
 .nivel { border-left: 4px solid var(--minimo); padding: 0.1rem 0 0.1rem 0.85rem; }
@@ -66,19 +91,19 @@ main.ancho { padding-top: 1.8rem; padding-bottom: 2.5rem; }
 .nivel.recomendado { border-left-color: var(--recomendado); }
 .nivel.recomendado strong:first-child { color: var(--recomendado); }
 
-.cumple { display: none; align-items: center; gap: 0.55rem; font-weight: 600; cursor: pointer; padding: 0.35rem 0; width: fit-content; }
+.cumple { display: none; align-items: center; gap: 0.55rem; font-weight: 600; font-size: 0.95rem; cursor: pointer; padding: 0.2rem 0 0.2rem 0.2rem; width: fit-content; color: var(--suave); }
 .js .cumple { display: inline-flex; }
 .cumple input { width: 1.35rem; height: 1.35rem; accent-color: var(--acento); cursor: pointer; }
 
-.resultado { background: var(--tarjeta); border: 2px solid var(--acento); border-radius: 14px; padding: 1.2rem 1.3rem; margin: 2rem 0; }
+.resultado { max-width: 40rem; background: var(--tarjeta); border: 2px solid var(--acento); border-radius: 14px; padding: 1.2rem 1.3rem; margin: 2rem 0; }
 .resultado h2 { margin: 0 0 0.4rem; font-size: 1.2rem; }
 .cuenta { font-size: 1.15rem; font-weight: 700; margin: 0 0 0.3rem; }
 .ayuda { color: var(--suave); font-size: 0.9rem; margin: 0 0 1rem; }
 .botones { display: flex; flex-wrap: wrap; gap: 0.7rem; }
-button { font: inherit; font-weight: 600; padding: 0.6rem 1.1rem; border-radius: 10px; border: 2px solid var(--acento); background: var(--acento); color: var(--acento-texto); cursor: pointer; }
+button { font: inherit; font-weight: 600; font-size: 0.95rem; padding: 0.5rem 1rem; border-radius: 10px; border: 2px solid var(--acento); background: var(--acento); color: var(--acento-texto); cursor: pointer; }
 button.secundario { background: transparent; color: var(--acento); }
 
-.cierre { margin-top: 2rem; padding-top: 1.2rem; border-top: 1px solid var(--borde); color: var(--suave); font-size: 0.95rem; }
+.cierre { max-width: 52rem; margin-top: 2rem; padding-top: 1.2rem; border-top: 1px solid var(--borde); color: var(--suave); font-size: 0.95rem; }
 
 .pie { border-top: 1px solid var(--borde); padding: 1.4rem 0 2rem; font-size: 0.85rem; color: var(--suave); }
 .pie p { margin: 0 0 0.35rem; }
@@ -91,10 +116,11 @@ button.secundario { background: transparent; color: var(--acento); }
 @media print {
   :root { --fondo: #fff; --tarjeta: #fff; --texto: #000; --suave: #333; --acento: #0f766e; --borde: #bbb; --cabecera: #fff; --cabecera-texto: #000; --cabecera-suave: #333; }
   html { font-size: 10.5pt; }
-  .saltar, .cumple, .resultado, .borrador, .lightbox, .infografia figcaption { display: none !important; }
+  .saltar, .atajo, .cumple, .resultado, .borrador, .lightbox, .infografia figcaption { display: none !important; }
   .cabecera { padding: 0 0 0.6rem; border-bottom: 2px solid #000; }
   .recomendacion { break-inside: avoid; border-color: #bbb; }
-  .vista-rapida { grid-template-columns: 1fr; }
+  .bloque, .rejilla { grid-template-columns: 1fr !important; }
+  .solo-js, .flecha { display: none !important; }
   .infografia { display: none; }
   a { color: inherit; text-decoration: none; }
   .intro a[href^="http"]::after, .recomendacion a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; word-break: break-all; }

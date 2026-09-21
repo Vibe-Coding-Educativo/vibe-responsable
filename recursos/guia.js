@@ -62,6 +62,25 @@
     document.body.removeChild(a);
   }
 
+  // Tarjetas plegables: botones para todas, apertura al llegar desde el índice y al imprimir.
+  var tarjetas = Array.prototype.slice.call(document.querySelectorAll(".recomendacion details"));
+  function todas(abrir) { tarjetas.forEach(function (d) { d.open = abrir; }); }
+  var bd = document.getElementById("desplegar"), bp = document.getElementById("plegar");
+  if (bd) { bd.addEventListener("click", function () { todas(true); }); }
+  if (bp) { bp.addEventListener("click", function () { todas(false); }); }
+  function abrirDestino() {
+    var id = decodeURIComponent(location.hash.slice(1));
+    var s = id && document.getElementById(id);
+    var d = s && s.querySelector("details");
+    if (d) { d.open = true; s.scrollIntoView(); }
+  }
+  window.addEventListener("hashchange", abrirDestino);
+  document.querySelectorAll('.indice a[href^="#"]').forEach(function (a) {
+    a.addEventListener("click", function () { setTimeout(abrirDestino, 0); });
+  });
+  abrirDestino();
+  window.addEventListener("beforeprint", function () { todas(true); });
+
   // Infografía ampliable. Sin script, el enlace abre la imagen sin más.
   var caja = document.querySelector("dialog.lightbox");
   if (caja && typeof caja.showModal === "function") {

@@ -29,6 +29,18 @@ infografía se abre como enlace en lugar de ampliarse. Los enlaces a otras
 webs se abren en una pestaña nueva, para no sacar al lector de la guía, y se
 avisa de ello a los lectores de pantalla.
 
+Para que la página no obligue a un desplazamiento largo, el ancho útil es
+amplio y la introducción se reparte en dos columnas en pantallas grandes, con
+el resumen gráfico y el índice al lado del texto. Las diez recomendaciones son
+acordeones nativos (`details`), plegados al cargar, de modo que se ven todas a
+la vez como en la infografía y cada una se despliega al pulsarla. La casilla
+«Se cumple» queda fuera del acordeón, para poder marcar sin desplegar. Hay
+botones para desplegarlas o plegarlas todas, se abren solas al llegar desde el
+índice y al imprimir, y un enlace en la cabecera lleva directamente a ellas.
+Se descartó repartir la lista en varias páginas o en pestañas, porque la lista
+debe poder leerse e imprimirse entera y las pestañas ocultan contenido sin que
+se note que existe.
+
 Los textos de la interfaz están en un diccionario por idioma dentro de
 `construir.py`, y los de la infografía en otro dentro de
 `infografia/generar.py`, de modo que añadir un idioma es añadir su bloque y su

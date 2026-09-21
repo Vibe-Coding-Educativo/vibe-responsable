@@ -13,6 +13,7 @@ RAIZ = Path(__file__).parent
 IDIOMAS = ["es"]                      # se amplía al añadir contenido/<idioma>/
 URL_SITIO = "https://vibe-coding-educativo.github.io/vibe-responsable/"
 REPO = "https://github.com/Vibe-Coding-Educativo/vibe-responsable"
+COMUNIDAD = "https://vibe-coding-educativo.github.io/"   # mismo dominio: se abre en la misma pestaña
 ICONOS = ["book-check", "shield-check", "creative-commons", "bot", "messages-square",
           "unplug", "accessibility", "quote", "notebook-pen", "download"]
 
@@ -20,11 +21,17 @@ UI = {
     "es": {
         "guia": "Guía para publicar materiales educativos creados con vibe coding",
         "saltar": "Saltar al contenido",
+        "comunidad": "Vibe Coding Educativo",
+        "ir_lista": "Ir a las recomendaciones",
         "borrador": "Borrador. La guía está en elaboración: los capítulos que desarrollan cada recomendación y la lista preparada para la IA se publicarán en esta misma web.",
         "infografia_alt": "Infografía con las diez recomendaciones. Su contenido es el de la lista que aparece a continuación.",
         "infografia_pie": "Resumen gráfico de las diez recomendaciones. La imagen se amplía al pulsarla.",
         "indice": "Las diez recomendaciones",
         "cumple": "Se cumple",
+        "desplegar": "Desplegar todas",
+        "plegar": "Plegar todas",
+        "lista_titulo": "Las recomendaciones, una a una",
+        "lista_ayuda": "Cada recomendación se despliega al pulsar su título.",
         "resultado_titulo": "Resultado de la revisión",
         "resultado_ayuda": "Las marcas se guardan solo en este navegador. No se envía nada a ningún servidor.",
         "resultado_de": "{n} de {total} recomendaciones cumplidas",
@@ -50,7 +57,7 @@ def pandoc(md):
 
 def enlaces_externos(h, aviso):
     """Los enlaces externos se abren en una pestaña nueva, y se avisa de ello a los lectores de pantalla."""
-    h = re.sub(r'<a href="(https?://[^"]+)"', r'<a href="\1" target="_blank" rel="noopener"', h)
+    h = re.sub(r'<a href="(https?://(?!vibe-coding-educativo\.github\.io/)[^"]+)"', r'<a href="\1" target="_blank" rel="noopener"', h)
     return re.sub(r'(<a href="https?://[^"]+" target="_blank" rel="noopener"[^>]*>)(.*?)</a>',
                   lambda m: f'{m.group(1)}{m.group(2)}<span class="oculto"> {aviso}</span></a>', h, flags=re.S)
 
@@ -95,14 +102,18 @@ def pagina(idioma):
     indice = (f'<nav class="indice" aria-labelledby="t-indice"><h2 id="t-indice">{html.escape(T["indice"])}</h2><ol>'
               + "".join(f'<li><a href="#recomendacion-{n}">{html.escape(t)}</a></li>' for n, t, _ in secciones)
               + "</ol></nav>")
-    vista = f'<div class="vista-rapida">{figura}{indice}</div>'
+    vista = f'<aside class="vista-rapida">{figura}{indice}</aside>'
     parrafos = h_intro.split("\n")
     pos = next((i for i, p in enumerate(parrafos) if "diez recomendaciones de la guía" in p), None)
     if pos is None:
-        h_intro = h_intro + vista
+        h_intro = f'<div class="bloque"><div>{h_intro}</div>{vista}</div>'
     else:
-        parrafos.insert(pos + 1, vista)
-        h_intro = "\n".join(parrafos)
+        antes, despues = "\n".join(parrafos[:pos + 1]), "\n".join(parrafos[pos + 1:])
+        corte = despues.find("</ul>")
+        if corte > -1:                                   # familias a la izquierda, niveles a la derecha
+            izq, der = despues[:corte + 5], despues[corte + 5:]
+            despues = f'<div class="bloque parejo"><div>{izq}</div><div>{der}</div></div>'
+        h_intro = f'<div class="bloque"><div>{antes}</div>{vista}</div>\n{despues}'
 
     # Recomendaciones
     h_secs = []
@@ -112,12 +123,18 @@ def pagina(idioma):
             h = h.replace(f"<li><strong>{etiqueta}</strong>", f'<li class="nivel {clase}"><strong>{etiqueta}</strong>')
         h = h.replace("<ul>", '<ul class="niveles">', 1)
         h_secs.append(
-            f'<section class="recomendacion" id="recomendacion-{n}" aria-labelledby="t-{n}">'
-            f'<header><span class="numero" aria-hidden="true">{n}</span><span class="insignia">{icono(ic)}</span>'
-            f'<h2 id="t-{n}"><span class="oculto">{n}. </span>{html.escape(t)}</h2></header>'
-            f'{h}'
+            f'<section class="recomendacion" id="recomendacion-{n}">'
+            f'<details><summary><span class="numero" aria-hidden="true">{n}</span><span class="insignia">{icono(ic)}</span>'
+            f'<h3 id="t-{n}"><span class="oculto">{n}. </span>{html.escape(t)}</h3><span class="flecha" aria-hidden="true"></span></summary>'
+            f'<div class="cuerpo">{h}</div></details>'
             f'<label class="cumple"><input type="checkbox" data-punto="{n}" data-texto="{html.escape(t)}"> {html.escape(T["cumple"])}</label>'
             f'</section>')
+
+    lista = (f'<section class="lista" aria-labelledby="t-lista"><div class="lista-cabecera"><div><h2 id="t-lista">{html.escape(T["lista_titulo"])}</h2>'
+             f'<p class="ayuda">{html.escape(T["lista_ayuda"])}</p></div>'
+             f'<div class="botones solo-js"><button type="button" id="desplegar" class="secundario">{html.escape(T["desplegar"])}</button>'
+             f'<button type="button" id="plegar" class="secundario">{html.escape(T["plegar"])}</button></div></div>'
+             f'<div class="rejilla">{"".join(h_secs)}</div></section>')
 
     resultado = (f'<section class="resultado" aria-labelledby="t-res" hidden>'
                  f'<h2 id="t-res">{html.escape(T["resultado_titulo"])}</h2>'
@@ -149,8 +166,9 @@ def pagina(idioma):
 <a class="saltar" href="#contenido">{html.escape(T["saltar"])}</a>
 <header class="cabecera">
 <div class="ancho">
-<p class="guia">{html.escape(T["guia"])}</p>
+<p class="guia"><a href="{COMUNIDAD}">{html.escape(T["comunidad"])}</a> · {html.escape(T["guia"])}</p>
 <h1>{html.escape(titulo)}</h1>
+<p class="atajo"><a href="#t-lista">{html.escape(T["ir_lista"])}</a></p>
 </div>
 </header>
 <main id="contenido" class="ancho">
@@ -158,7 +176,7 @@ def pagina(idioma):
 <div class="intro">
 {h_intro}
 </div>
-{"".join(h_secs)}
+{lista}
 {resultado}
 <div class="cierre">
 {h_cierre}
@@ -167,7 +185,7 @@ def pagina(idioma):
 <footer class="pie">
 <div class="ancho">
 <p>© 2026 <a href="https://bilateria.org">Juan José de Haro</a> · {T["pie_licencias"]}</p>
-<p>{T["pie_iconos"]} · <a href="{REPO}">{html.escape(T["pie_codigo"])}</a></p>
+<p>{T["pie_iconos"]} · <a href="{REPO}">{html.escape(T["pie_codigo"])}</a> · <a href="{COMUNIDAD}">{html.escape(T["comunidad"])}</a></p>
 </div>
 </footer>
 <dialog class="lightbox" aria-label="{html.escape(T["infografia_alt"])}">
