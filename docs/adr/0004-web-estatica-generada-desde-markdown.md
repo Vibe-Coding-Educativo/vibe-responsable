@@ -25,7 +25,9 @@ líneas, todo dentro del repositorio: sin bibliotecas, sin fuentes externas, sin
 analítica. El aspecto claro u oscuro sigue la preferencia del dispositivo. Las
 marcas de la lista se guardan en `localStorage` y no salen del navegador. Sin
 JavaScript la página se lee entera; solo desaparecen las casillas y la
-infografía se abre como enlace en lugar de ampliarse.
+infografía se abre como enlace en lugar de ampliarse. Los enlaces a otras
+webs se abren en una pestaña nueva, para no sacar al lector de la guía, y se
+avisa de ello a los lectores de pantalla.
 
 Los textos de la interfaz están en un diccionario por idioma dentro de
 `construir.py`, y los de la infografía en otro dentro de

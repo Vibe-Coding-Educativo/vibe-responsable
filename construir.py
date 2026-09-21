@@ -33,6 +33,7 @@ UI = {
         "borrar": "Borrar las marcas",
         "copia_cabecera": "Revisión con la lista «Antes de publicar: diez recomendaciones»",
         "cerrar": "Cerrar la imagen ampliada",
+        "nueva_pestana": "(se abre en una pestaña nueva)",
         "niveles": {"Lo mínimo.": "minimo", "Lo recomendado.": "recomendado", "En todos los casos.": "todos"},
         "pie_licencias": 'Código bajo <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL v3</a> · Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>',
         "pie_iconos": 'Iconos de <a href="https://lucide.dev/">Lucide</a> (licencia ISC)',
@@ -47,9 +48,11 @@ def pandoc(md):
     return r.stdout.strip()
 
 
-def enlaces_externos(h):
-    """Los enlaces externos no cambian de pestaña; solo se marcan para los estilos."""
-    return re.sub(r'<a href="(https?://[^"]+)"', r'<a href="\1" rel="noopener"', h)
+def enlaces_externos(h, aviso):
+    """Los enlaces externos se abren en una pestaña nueva, y se avisa de ello a los lectores de pantalla."""
+    h = re.sub(r'<a href="(https?://[^"]+)"', r'<a href="\1" target="_blank" rel="noopener"', h)
+    return re.sub(r'(<a href="https?://[^"]+" target="_blank" rel="noopener"[^>]*>)(.*?)</a>',
+                  lambda m: f'{m.group(1)}{m.group(2)}<span class="oculto"> {aviso}</span></a>', h, flags=re.S)
 
 
 def icono(nombre):
@@ -85,7 +88,7 @@ def pagina(idioma):
     total = len(secciones)
 
     # Introducción, con la infografía y el índice tras el párrafo que presenta la lista
-    h_intro = enlaces_externos(pandoc(intro))
+    h_intro = pandoc(intro)
     figura = (f'<figure class="infografia"><a class="ampliar" href="../infografia/lista-iconos.{idioma}.png">'
               f'<img src="../infografia/lista-iconos.{idioma}.png" width="1080" height="1820" loading="lazy" alt="{html.escape(T["infografia_alt"])}"></a>'
               f'<figcaption>{html.escape(T["infografia_pie"])}</figcaption></figure>')
@@ -104,7 +107,7 @@ def pagina(idioma):
     # Recomendaciones
     h_secs = []
     for (n, t, cuerpo), ic in zip(secciones, ICONOS):
-        h = enlaces_externos(pandoc(cuerpo))
+        h = pandoc(cuerpo)
         for etiqueta, clase in T["niveles"].items():
             h = h.replace(f"<li><strong>{etiqueta}</strong>", f'<li class="nivel {clase}"><strong>{etiqueta}</strong>')
         h = h.replace("<ul>", '<ul class="niveles">', 1)
@@ -124,9 +127,9 @@ def pagina(idioma):
                  f'data-cabecera="{html.escape(T["copia_cabecera"])}" data-url="{URL_SITIO}">{html.escape(T["copiar"])}</button>'
                  f'<button type="button" id="borrar" class="secundario">{html.escape(T["borrar"])}</button></div></section>')
 
-    h_cierre = enlaces_externos(pandoc(cierre)) if cierre else ""
+    h_cierre = pandoc(cierre) if cierre else ""
 
-    return f"""<!DOCTYPE html>
+    return enlaces_externos(f"""<!DOCTYPE html>
 <html lang="{idioma}">
 <head>
 <meta charset="utf-8">
@@ -173,7 +176,7 @@ def pagina(idioma):
 </dialog>
 </body>
 </html>
-"""
+""", T["nueva_pestana"])
 
 
 def portada():
