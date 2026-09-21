@@ -22,7 +22,7 @@ UI = {
         "saltar": "Saltar al contenido",
         "borrador": "Borrador. La guía está en elaboración: los capítulos que desarrollan cada recomendación y la lista preparada para la IA se publicarán en esta misma web.",
         "infografia_alt": "Infografía con las diez recomendaciones. Su contenido es el de la lista que aparece a continuación.",
-        "infografia_pie": "Las diez recomendaciones, de un vistazo. La imagen se amplía al pulsarla.",
+        "infografia_pie": "Resumen gráfico de las diez recomendaciones. La imagen se amplía al pulsarla.",
         "indice": "Las diez recomendaciones",
         "cumple": "Se cumple",
         "resultado_titulo": "Resultado de la revisión",
