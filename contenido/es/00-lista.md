@@ -40,7 +40,7 @@ Todo lo que se crea queda protegido por derechos de autor de forma automática, 
 En un material creado con vibe coding el código es obra de la IA, y lo habitual es que nadie lo haya revisado línea a línea. Quien lo reutiliza debe saberlo para decidir cuánto puede fiarse de él. Por ello conviene indicar con qué herramienta se ha creado y, sobre todo, qué ha comprobado la persona que lo publica, como la corrección de los contenidos, el funcionamiento o el tratamiento de los datos.
 
 - **Lo mínimo.** Una o dos frases dentro del material, junto a la licencia, con la herramienta utilizada y lo que se ha comprobado.
-- **Con repositorio o sitio propio.** Una sección en la documentación del proyecto que incluya, además, las instrucciones principales que se dieron a la IA.
+- **Con repositorio o sitio propio.** La misma declaración en la documentación del proyecto, con un enlace al registro de decisiones del punto 9, que es el que explica cómo se hizo el material.
 
 ## 5\. Quien lo publica sabe explicar qué hace
 
@@ -74,14 +74,14 @@ Las imágenes, los textos, los sonidos y las piezas de software que se incorpora
 
 Con la IA se avanza muy deprisa, y a las pocas semanas nadie recuerda por qué se tomó cada decisión. Conservar ese rastro permite retomar el trabajo, explicarlo a otra persona y no deshacer por error lo que tenía un motivo.
 
-- **Lo mínimo.** Guardar la conversación y una nota breve con las decisiones importantes y su porqué.
+- **Lo mínimo.** Mantener un documento con las decisiones importantes y su porqué, y actualizarlo al terminar cada sesión de trabajo. Puede pedirse a la propia IA que anote las decisiones de esa sesión.
 - **Con repositorio o sitio propio.** Llevar un registro de decisiones dentro del proyecto, una por archivo, con el contexto, las alternativas descartadas y las consecuencias. El control de versiones conserva, además, la historia de los cambios.
 
 ## 10\. Otra persona puede descargarlo, modificarlo y mejorarlo
 
 La licencia da el permiso, pero no basta si el material no puede obtenerse en una forma que permita trabajar con él. Un recurso educativo es abierto de verdad cuando otro docente puede adaptarlo a su aula sin pedir nada a nadie.
 
-- **Lo mínimo.** Ofrecer el código para copiarlo o descargarlo, y compartir las instrucciones con las que se creó, de forma que otra persona pueda rehacerlo o continuarlo.
+- **Lo mínimo.** Ofrecer el código para copiarlo o descargarlo, acompañado de la nota de decisiones del punto 9, de forma que otra persona pueda continuarlo.
 - **Con repositorio o sitio propio.** Publicarlo en un repositorio abierto, con una explicación de cómo usarlo y cómo modificarlo.
 
 Al final de la guía se incluye esta misma lista preparada para dársela a la IA, tanto al empezar un material, para que lo genere cumpliéndola, como al terminarlo, para que ayude a revisarlo.
