@@ -52,3 +52,18 @@ Los quince documentos del cuaderno de Gemini Notebook «Guía sobre el uso de la
 | La intel·ligència artificial en l'educació | Generalitat de Catalunya | CC BY 4.0 | En el portal de Educació de la Generalitat (enlace por comprobar) |
 | Guía sobre el uso de la IA en el ámbito educativo (2024) | INTEF | CC BY-SA 4.0 | Sustituida por la versión 2.0, ya en el repositorio |
 | prompt.md | Juan José de Haro | — | Documento propio del cuaderno |
+
+### Añadido tras la búsqueda en internet (21-09-2026)
+
+Material de alcance mundial, también en `fuentes/consulta/`. La guía se dirige a la comunidad educativa de cualquier país, así que la parte normativa europea se acompaña de instrumentos internacionales.
+
+| Documento | Autoría | Fecha | Licencia | Enlace |
+| --- | --- | --- | --- | --- |
+| Recomendación sobre los Recursos Educativos Abiertos (REA) | UNESCO | 25-11-2019 | Instrumento normativo | https://www.unesco.org/es/legal-affairs/recommendation-open-educational-resources-oer |
+| Guidance for generative AI in education and research | Miao y Holmes (UNESCO) | 2023 | CC BY-SA 3.0 IGO | https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research |
+| Guidance on AI and Children 3.0 | UNICEF Innocenti | 12-2025 | CC BY 4.0 | https://www.unicef.org/innocenti/reports/policy-guidance-ai-children |
+| The Open Source AI Definition 1.0 | Open Source Initiative | 2024 | — | https://opensource.org/ai/open-source-ai-definition |
+| A Guiding Framework for K-12 Teachers in Creating AI-powered Learning Technologies through Vibe Coding (GAIDE) | Song, Choi, Kim y otros | 2026 | Preprint en arXiv | https://arxiv.org/abs/2607.05406 |
+| Vibecoding: concepto, aplicabilidad educativa y herramientas prácticas | Boris Sánchez Molano (Eduteka, ICESI, Colombia) | 17-02-2026 | Sin licencia expresa | https://eduteka.icesi.edu.co/articulos/vibecoding |
+| Vibe coding en educación: crear aplicaciones con lenguaje natural y pensamiento crítico | Code INTEF | 04-08-2026 | Sin licencia expresa | https://code.intef.es/noticias/vibe-coding-en-educacion-crear-aplicaciones-con-lenguaje-natural-y-pensamiento-critico/ |
+| Inteligencia Artificial en Educación. Guía práctica para docentes (páginas de vibe coding, ética, licencias y software libre) | Juan José de Haro para CEDEC (INTEF) | — | CC BY-SA 4.0 | https://descargas.intef.es/cedec/proyectoedia/guias/contenidos/inteligencia_artificial/index.html |
