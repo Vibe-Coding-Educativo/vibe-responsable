@@ -37,7 +37,7 @@ Todo lo que se crea queda protegido por derechos de autor de forma automática, 
 
 ## 4\. Indica que se ha hecho con IA y qué ha comprobado la persona
 
-En un material creado con vibe coding el código es obra de la IA, y lo habitual es que nadie lo haya revisado línea a línea. Quien lo reutiliza debe saberlo para decidir cuánto puede fiarse de él. Por ello conviene indicar con qué herramienta se ha creado y, sobre todo, qué ha comprobado la persona que lo publica, como la corrección de los contenidos, el funcionamiento o el tratamiento de los datos.
+En un material creado con vibe coding el código es obra de la IA, y lo habitual es que nadie lo haya revisado línea a línea. Quien lo reutiliza debe saberlo para decidir cuánto puede fiarse de él. Por ello conviene indicar con qué herramienta se ha creado y, sobre todo, qué ha comprobado la persona que lo publica, como la corrección de los contenidos, el funcionamiento o el tratamiento de los datos. En los contenidos didácticos del material, como los textos, las preguntas o las explicaciones, la intervención de la IA sí varía de un caso a otro, y para indicarla puede utilizarse el [MIAE](https://jjdeharo.github.io/miae/), que la gradúa en seis niveles.
 
 - **Lo mínimo.** Una o dos frases dentro del material, junto a la licencia, con la herramienta utilizada y lo que se ha comprobado.
 - **Con repositorio o sitio propio.** Una sección en la documentación del proyecto que incluya, además, las instrucciones principales que se dieron a la IA.
