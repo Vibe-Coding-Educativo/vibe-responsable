@@ -1,4 +1,4 @@
-# 4. La web es estática y se genera desde Markdown, sin dependencias en el navegador
+# 4. La web se publica como HTML estático, generado a partir de textos escritos en Markdown, sin dependencias en el navegador
 
 Fecha: 2026-09-21 · Estado: aceptado
 
@@ -14,15 +14,17 @@ traducirá al inglés, al catalán, al gallego y al euskera.
 
 ## Decisión
 
-El contenido vive en `contenido/<idioma>/` en Markdown. El script
-`construir.py` lo convierte en HTML con pandoc y lo monta en una plantilla:
-una página por idioma en `/<idioma>/` y una portada en la raíz que envía al
-idioma del navegador si existe. El resultado se guarda en el repositorio y lo
-sirve GitHub Pages tal cual (`.nojekyll`).
+La web que se publica y que recibe el navegador es HTML. El Markdown es solo
+el formato en que se escriben los textos, en `contenido/<idioma>/`, y no llega
+a quien lee la guía. El script `construir.py` convierte esos textos en HTML con
+pandoc y los monta en una plantilla: las páginas de cada idioma en `/<idioma>/`
+y una portada en la raíz que envía al idioma del navegador si existe. El HTML
+generado se guarda en el repositorio y lo sirve GitHub Pages tal cual
+(`.nojekyll`).
 
-En el navegador solo hay HTML, una hoja de estilos y un script de unas cien
-líneas, todo dentro del repositorio: sin bibliotecas, sin fuentes externas, sin
-analítica. El aspecto claro u oscuro sigue la preferencia del dispositivo. Sin
+En el navegador solo hay HTML, una hoja de estilos, un script de unas ciento
+cincuenta líneas y la tipografía, todo servido desde el propio repositorio: sin
+bibliotecas, sin recursos cargados de otros servidores, sin analítica. El aspecto claro u oscuro sigue la preferencia del dispositivo. Sin
 JavaScript la página se lee entera; la infografía se abre como enlace en lugar de
 ampliarse. Los enlaces a otras
 webs se abren en una pestaña nueva, para no sacar al lector de la guía.
@@ -53,6 +55,7 @@ carpeta de contenido.
 
 Después de cambiar el contenido hay que ejecutar `python3 construir.py` y
 subir también el HTML generado; si se olvida, la web queda desfasada respecto
-al Markdown. Quien quiera regenerarla necesita pandoc. A cambio, la web pesa
-unas decenas de kilobytes, no depende de nadie y cumple las recomendaciones que
-ella misma da.
+al Markdown. Quien quiera regenerarla necesita pandoc. A cambio, la web es
+ligera (las quince páginas de un idioma, con los estilos y el script, no llegan
+a 250 KB, más 72 KB de tipografía), no depende de nadie y cumple las
+recomendaciones que ella misma da.
