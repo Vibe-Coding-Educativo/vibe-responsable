@@ -6,9 +6,9 @@ El **vibe coding educativo** es la **creación de recursos y aplicaciones para e
 
 El profesorado describe lo que necesita, prueba lo que obtiene y pide los cambios hasta conseguir lo que busca. La intención pedagógica dirige todo el proceso, ya que es la persona la que conoce la materia y al alumnado, y la que decide si el resultado sirve para enseñar. Permite así disponer de simuladores, cuestionarios, juegos o herramientas para la gestión del aula hechos a la medida de cada situación, sin depender de que exista un producto que la cubra. Es una práctica cada vez más extendida, que cuenta con comunidades docentes como el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca), donde se comparten ejemplos, dudas y soluciones.
 
-Esta guía nace de dos motivos, uno ético y otro legal. El motivo ético es que todo material creado con ayuda de la inteligencia artificial se beneficia del conocimiento que otras personas han compartido antes, desde el software libre hasta los recursos educativos abiertos. Publicar un material que nadie más puede reutilizar, que deja fuera a parte del alumnado o que oculta cómo se ha hecho es una actitud poco solidaria con esa comunidad. Lo habitual es que ocurra por desconocimiento y no por mala intención.
+Esta guía nace de dos motivos, uno ético y otro legal. El motivo ético es que todo material creado con ayuda de la inteligencia artificial se beneficia del conocimiento que otras personas han compartido antes, desde el software libre hasta los recursos educativos abiertos. Publicar un material que nadie más puede reutilizar, que deja fuera a parte del alumnado o que oculta cómo se ha hecho es una actitud poco solidaria con esa comunidad. Lo habitual es que ocurra por desconocimiento.
 
-El motivo legal es que publicar un material convierte a su autor en responsable de lo que ese material hace, y algunas decisiones que parecen técnicas tienen consecuencias jurídicas. Recoger datos del alumnado sin que el centro lo haya autorizado puede vulnerar la normativa de protección de datos, que es especialmente estricta cuando se trata de menores. Incorporar imágenes, textos o piezas de software sin respetar su licencia vulnera los derechos de sus autores. En ambos casos la responsabilidad recae en la persona que publica, y no en la IA que generó el material.
+El motivo legal es que publicar un material convierte a su autor en responsable de lo que ese material hace, y algunas decisiones que parecen técnicas tienen consecuencias jurídicas. Recoger datos del alumnado sin que el centro lo haya autorizado puede vulnerar la normativa de protección de datos, que es especialmente estricta cuando se trata de menores. Incorporar imágenes, textos o piezas de software sin respetar su licencia vulnera los derechos de sus autores. En ambos casos la responsabilidad recae en la persona que publica el material, aunque lo haya generado la IA.
 
 La lista reúne las diez recomendaciones de la guía, de forma que también sirve para revisar un material que ya está hecho. Cada una enlaza con el capítulo donde se explica con más detalle. Las que pueden tener consecuencias legales son, sobre todo, la 2 y la 8, mientras que las demás responden al compromiso con el alumnado y con la comunidad docente.
 
@@ -52,7 +52,7 @@ En un material creado con vibe coding el código es obra de la IA, y lo habitual
 
 ## 5\. Se puede explicar qué hace en dos frases
 
-Un material cuyo funcionamiento no entiende ni su autor deja de ser abierto en la práctica, ya que nadie podrá corregirlo cuando falle. No hace falta saber programar para cumplir este punto. Basta con poder resumir en dos frases qué hace la aplicación, qué guarda y si se comunica con algún servicio externo.
+Si nadie entiende cómo funciona un material, no podrá corregirse cuando falle, por lo que en la práctica deja de ser abierto. Para cumplir este punto no hace falta saber programar, ya que es suficiente con poder resumir en dos frases qué hace la aplicación, qué guarda y si se comunica con algún servicio externo.
 
 - **Lo mínimo.** Pedir a la IA que explique en lenguaje llano qué hace la aplicación y si guarda o envía algo, y comprobar que la explicación coincide con lo que se observa al usarla. Pedir también que el código propio del material esté comentado y sea legible, ya que el código comprimido en líneas interminables es motivo suficiente para no publicar. Las bibliotecas conocidas que se incluyan son la excepción, puesto que suelen distribuirse así.
 - **Lo recomendado.** Añadir un documento que explique cómo está organizado el proyecto y para qué sirve cada archivo.
@@ -87,7 +87,7 @@ Con la IA se avanza muy deprisa, y a las pocas semanas nadie recuerda por qué s
 
 ## 10\. Otra persona puede descargarlo, modificarlo y mejorarlo
 
-La licencia da el permiso, pero no basta si el material no puede obtenerse en una forma que permita trabajar con él. Un recurso educativo es abierto de verdad cuando otra persona puede adaptarlo a su aula sin pedir nada a nadie.
+La licencia da el permiso, pero el material debe poder obtenerse, además, en una forma que permita trabajar con él. De este modo otra persona puede adaptarlo a su aula sin pedir nada a nadie.
 
 - **Lo mínimo.** Ofrecer el código para copiarlo o descargarlo, acompañado de la nota de decisiones del punto 9, de forma que otra persona pueda continuarlo.
 - **Lo recomendado.** Publicarlo en un repositorio abierto, con una explicación de cómo usarlo y cómo modificarlo.
