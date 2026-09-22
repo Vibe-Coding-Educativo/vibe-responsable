@@ -2,12 +2,12 @@
 
 ## Normativa
 
-- España. (1996). Real Decreto Legislativo 1/1996, de 12 de abril, por el que se aprueba el texto refundido de la Ley de Propiedad Intelectual. *Boletín Oficial del Estado*. Texto consolidado: <https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930>
-- España. (2018). Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. *Boletín Oficial del Estado*. Texto consolidado: <https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673>
-- Reino Unido. (1988). *Copyright, Designs and Patents Act 1988*, sección 9, «Authorship of work». legislation.gov.uk. <https://www.legislation.gov.uk/ukpga/1988/48/section/9>
-- Unión Europea. (2016). Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos (Reglamento General de Protección de Datos). *Diario Oficial de la Unión Europea*. <https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32016R0679>
-- Unión Europea. (2016). Directiva (UE) 2016/2102 del Parlamento Europeo y del Consejo, de 26 de octubre de 2016, sobre la accesibilidad de los sitios web y aplicaciones para dispositivos móviles de los organismos del sector público. *Diario Oficial de la Unión Europea*. <https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32016L2102>
-- Unión Europea. (2024). Reglamento (UE) 2024/1689 del Parlamento Europeo y del Consejo, de 13 de junio de 2024, por el que se establecen normas armonizadas en materia de inteligencia artificial (Reglamento de Inteligencia Artificial). *Diario Oficial de la Unión Europea*. <https://eur-lex.europa.eu/eli/reg/2024/1689/oj/spa>
+- Real Decreto Legislativo 1/1996, de 12 de abril, por el que se aprueba el texto refundido de la Ley de Propiedad Intelectual. *Boletín Oficial del Estado*, 97, de 22 de abril de 1996. Texto consolidado: <https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930>
+- Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. *Boletín Oficial del Estado*, 294, de 6 de diciembre de 2018. Texto consolidado: <https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673>
+- *Copyright, Designs and Patents Act 1988*, sección 9, «Authorship of work». legislation.gov.uk. <https://www.legislation.gov.uk/ukpga/1988/48/section/9>
+- Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos (Reglamento General de Protección de Datos). *Diario Oficial de la Unión Europea*, L 119, de 4 de mayo de 2016. <https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32016R0679>
+- Directiva (UE) 2016/2102 del Parlamento Europeo y del Consejo, de 26 de octubre de 2016, sobre la accesibilidad de los sitios web y aplicaciones para dispositivos móviles de los organismos del sector público. *Diario Oficial de la Unión Europea*, L 327, de 2 de diciembre de 2016. <https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32016L2102>
+- Reglamento (UE) 2024/1689 del Parlamento Europeo y del Consejo, de 13 de junio de 2024, por el que se establecen normas armonizadas en materia de inteligencia artificial (Reglamento de Inteligencia Artificial). *Diario Oficial de la Unión Europea*, de 12 de julio de 2024. <https://eur-lex.europa.eu/eli/reg/2024/1689/oj/spa>
 - UNESCO. (2019). *Recomendación sobre los Recursos Educativos Abiertos (REA)*. <https://www.unesco.org/es/legal-affairs/recommendation-open-educational-resources-oer>
 
 ## Guías, informes y recomendaciones
