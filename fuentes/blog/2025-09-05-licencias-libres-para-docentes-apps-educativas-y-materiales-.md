@@ -5,12 +5,15 @@ blog: educacion.bilateria.org
 fecha: 2025-09-05
 url: https://educacion.bilateria.org/licencias-libres-para-docentes-apps-educativas-y-materiales-didacticos
 descargado: 2026-09-21
+actualizado: 2026-09-22
 licencia: CC BY-SA 4.0
 ---
 
-Como docente que crea materiales digitales, todo lo que produces está automáticamente protegido por derechos de autor. Sin una licencia clara, nadie puede usar legalmente tus creaciones, ni siquiera otros profesores de tu centro.
+Como docente que crea materiales digitales, todo lo que produces está automáticamente protegido por derechos de autor. Sin una licencia, los demás solo pueden usar tus creaciones dentro de los límites que marca la ley, como la cita o el uso de pequeños fragmentos en clase (en España, el [artículo 32 de la Ley de Propiedad Intelectual](https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930#a32)). Para todo lo demás necesitan tu permiso, incluso otros profesores de tu centro.
 
 Las licencias libres son tu manera de decir: «Puedes usar esto, pero bajo estas condiciones».
+
+_Actualizado el 22 de septiembre de 2026: se han corregido varias explicaciones de las licencias, la respuesta sobre GitHub y las fuentes de imágenes recomendadas._
 
 - [Dos tipos de creaciones, dos tipos de licencias](https://educacion.bilateria.org/licencias-libres-para-docentes-apps-educativas-y-materiales-didacticos/#Dos_tipos_de_creaciones_dos_tipos_de_licencias)
 - [Licencias para contenidos educativos (lo más importante para ti)](https://educacion.bilateria.org/licencias-libres-para-docentes-apps-educativas-y-materiales-didacticos/#Licencias_para_contenidos_educativos_lo_mas_importante_para_ti)
@@ -38,7 +41,7 @@ Todo lo que hace que funcione tu creación digital:
 
 ### Contenidos (la parte educativa) 
 
-El material didáctico que creates:
+El material didáctico que creas:
 
 - Los textos explicativos de la aplicación.
 - Las actividades y ejercicios.
@@ -53,15 +56,15 @@ El material didáctico que creates:
 
 **Qué significa:** «Úsalo libremente, menciona mi autoría, y si lo modificas, compártelo con la misma licencia».
 
-**Ejemplo práctico:** Tu infografía del sistema solar puede ser mejorada por otros, pero deben compartir esa versión mejorada con la misma libertad.
+**Ejemplo práctico:** Tu infografía del sistema solar puede ser mejorada por otros, pero, si difunden esa versión mejorada, tienen que hacerlo con la misma licencia.
 
-**Ventaja:** Garantiza que las mejoras vuelvan a la comunidad docente. **Alineación:** Coherente con los principios de participación activa y colaboración.
+**Ventaja:** Las versiones mejoradas que se difundan siguen siendo libres para toda la comunidad docente. **Alineación:** Coherente con los principios de participación activa y colaboración.
 
 ### CC BY -- Atribución simple 
 
 **Qué significa:** «Úsalo libremente, solo menciona que soy el autor».
 
-**Ejemplo práctico:** Creas una infografía sobre el sistema solar. Cualquier profesor puede usarla, modificarla o incluirla en un libro, solo debe poner tu nombre.
+**Ejemplo práctico:** Creas una infografía sobre el sistema solar. Cualquier profesor puede usarla, modificarla o incluirla en un libro, solo debe citarte, enlazar la licencia e indicar si la ha modificado.
 
 **Ventaja:** Máxima difusión de tu trabajo. **Inconveniente:** Alguien podría cerrar las mejoras sin compartirlas.
 
@@ -69,32 +72,32 @@ El material didáctico que creates:
 
 **Qué significa:** Lo mismo que BY-SA, pero prohíbe usos comerciales.
 
-**Problema:** «Comercial» genera dudas. ¿Puede usarlo un centro privado? ¿En una plataforma con publicidad? ¿En un curso que cobra matrícula? Por eso muchas instituciones la evitan.
+**Problema:** «Comercial» genera dudas. ¿Puede usarlo un centro privado? ¿En una plataforma con publicidad? ¿En un curso que cobra matrícula? Además, el material con NC no puede mezclarse con material CC BY-SA ni subirse a Wikipedia o Wikimedia Commons.
 
 **Recomendación:** Mejor evitar «NC» para no limitar usos educativos legítimos.
 
 ## Licencias para código (si creas aplicaciones o herramientas)
-### AGPL v3 -- Garantiza reciprocidad también en la web 
+### AGPL v3 -- Reciprocidad también en la web 
 
-**Qué significa**: «Si usas mi código para ofrecer un servicio a través de una red (por ejemplo, una aplicación educativa en un servidor web), debes compartir también las modificaciones con la misma licencia».
+**Qué significa**: «Si modificas mi código y lo usas para ofrecer un servicio a través de una red (por ejemplo, una aplicación educativa en un servidor web), debes ofrecer a quienes lo usan el código de tu versión, con la misma licencia».
 
-**Ejemplo práctico**: Creas una aplicación web para practicar matemáticas. Si alguien la mejora y la ofrece a sus alumnos desde su propio servidor, debe publicar esas mejoras.
+**Ejemplo práctico**: Creas una aplicación web para practicar matemáticas. Si alguien la mejora y la ofrece a sus alumnos desde su propio servidor, debe ofrecer el código de su versión a quienes la usan.
 
-**Ventaja**: Asegura que las mejoras vuelvan a la comunidad incluso cuando el código no se redistribuye directamente, sino que se usa como servicio online.
+**Ventaja**: Mantiene la obligación de compartir el código incluso cuando no se redistribuye, sino que se usa como servicio en línea. La diferencia con la GPL se nota sobre todo cuando el programa se ejecuta en el servidor. Si la aplicación funciona entera en el navegador, quien la abre ya recibe el código.
 
 Alineación: Refuerza la filosofía de conocimiento abierto en el contexto actual, donde muchas aplicaciones educativas se ofrecen como páginas web.
 
 ### MPL 2.0 -- Copyleft moderado 
 
-**Qué significa:** «Si modificas estos archivos específicos, debes compartir esas modificaciones, pero puedes combinar con código cerrado».
+**Qué significa:** «Si distribuyes estos archivos modificados, debes compartir su código con la misma licencia, pero puedes combinarlos con código cerrado».
 
-**Ejemplo práctico:** Si mejoras tu calculadora web, solo debes compartir los archivos que modificaste, no todo el proyecto.
+**Ejemplo práctico:** Si alguien distribuye una versión mejorada de tu calculadora web, debe compartir el código de los archivos con licencia MPL, no el de todo el proyecto. Si solo la ejecuta en su servidor, no está obligado a compartirla.
 
 **Ventaja:** Equilibrio entre reciprocidad y flexibilidad de integración. **Alineación:** Copyleft parcial, menos restrictivo que AGPL v3.
 
 ### Apache 2.0 -- Máxima adopción, sin reciprocidad 
 
-**Qué significa:** «Usa este código como quieras, pero si contribuyes, no podrás demandarme por patentes después».
+**Qué significa:** «Usa este código como quieras. Mantén el aviso de autoría y de licencia e indica qué has cambiado». Quienes aportan código te dan permiso para usar sus patentes, y ese permiso se pierde si demandas alegando que el programa infringe una patente.
 
 **Importante:** NO obliga a compartir mejoras. Permite que otros cierren las modificaciones.
 
@@ -121,7 +124,7 @@ Alineación: Refuerza la filosofía de conocimiento abierto en el contexto actua
 <thead>
 <tr>
 <th style="text-align: left; white-space: normal; word-break: break-word; hyphens: auto; padding: .6rem;">Licencia</th>
-<th style="text-align: left; white-space: normal; word-break: break-word; hyphens: auto; padding: .6rem;">Garantiza retorno a la comunidad</th>
+<th style="text-align: left; white-space: normal; word-break: break-word; hyphens: auto; padding: .6rem;">Las versiones difundidas siguen libres</th>
 <th style="text-align: left; white-space: normal; word-break: break-word; hyphens: auto; padding: .6rem;">Filosofía</th>
 <th style="text-align: left; white-space: normal; word-break: break-word; hyphens: auto; padding: .6rem;">Apreciación educativa</th>
 </tr>
@@ -129,9 +132,9 @@ Alineación: Refuerza la filosofía de conocimiento abierto en el contexto actua
 <tbody>
 <tr style="border-top:1px solid #e5e7eb;">
 <td style="padding: .6rem"><strong>AGPL v3</strong></td>
-<td style="padding: .6rem">✅ <strong>Sí, total (incluye uso en red)</strong></td>
+<td style="padding: .6rem">✅ <strong>Sí, también las usadas en red</strong></td>
 <td style="padding: .6rem">Conocimiento abierto en la web</td>
-<td style="padding: .6rem">Recomendada para apps educativas ofrecidas como páginas web, asegura que las mejoras se compartan aunque no haya redistribución del código</td>
+<td style="padding: .6rem">Recomendada para apps educativas ofrecidas como páginas web, obliga a ofrecer el código a quienes usan la aplicación aunque no se redistribuya</td>
 </tr>
 <tr style="border-top:1px solid #e5e7eb;">
 <td style="padding: .6rem"><strong>MPL 2.0</strong></td>
@@ -149,7 +152,7 @@ Alineación: Refuerza la filosofía de conocimiento abierto en el contexto actua
 <td style="padding: .6rem"><strong>MIT</strong></td>
 <td style="padding: .6rem">❌ <strong>No</strong></td>
 <td style="padding: .6rem">Simplicidad máxima</td>
-<td style="padding: .6rem">Muy práctica para docentes que desean difundir recursos sin condiciones</td>
+<td style="padding: .6rem">Muy práctica para docentes que desean difundir recursos con la única condición de mantener el aviso de autoría</td>
 </tr>
 </tbody>
 </table>
@@ -171,7 +174,7 @@ Alineación: Refuerza la filosofía de conocimiento abierto en el contexto actua
 <thead>
 <tr>
 <th style="text-align: left; white-space: normal; word-break: break-word; hyphens: auto; padding: .6rem;">Licencia</th>
-<th style="text-align: left; white-space: normal; word-break: break-word; hyphens: auto; padding: .6rem;">Garantiza retorno</th>
+<th style="text-align: left; white-space: normal; word-break: break-word; hyphens: auto; padding: .6rem;">Las versiones difundidas siguen libres</th>
 <th style="text-align: left; white-space: normal; word-break: break-word; hyphens: auto; padding: .6rem;">Uso comercial permitido</th>
 <th style="text-align: left; white-space: normal; word-break: break-word; hyphens: auto; padding: .6rem;">Modificación permitida</th>
 <th style="text-align: left; white-space: normal; word-break: break-word; hyphens: auto; padding: .6rem;">Recomendación para docentes</th>
@@ -215,15 +218,15 @@ Alineación: Refuerza la filosofía de conocimiento abierto en el contexto actua
 <tbody>
 <tr>
 <td>CC BY-SA 4.0</td>
-<td><a href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a></td>
+<td><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">https://creativecommons.org/licenses/by-sa/4.0/deed.es</a></td>
 </tr>
 <tr>
 <td>CC BY 4.0</td>
-<td><a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></td>
+<td><a href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></td>
 </tr>
 <tr>
 <td>CC BY-NC-SA 4.0</td>
-<td><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">https://creativecommons.org/licenses/by-nc-sa/4.0/</a></td>
+<td><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es</a></td>
 </tr>
 <tr>
 <td>AGPL v3</td>
@@ -251,7 +254,7 @@ Alineación: Refuerza la filosofía de conocimiento abierto en el contexto actua
 - **Contenidos:** CC BY-SA
 - **Código:** AGPL v3
 
-**Para:** Proyectos alineados con el conocimiento abierto y la participación activa. Asegura que las mejoras vuelvan a la comunidad educativa.
+**Para:** Proyectos alineados con el conocimiento abierto y la participación activa. Las mejoras que se difundan, o que se ofrezcan como servicio web, siguen siendo libres para la comunidad educativa.
 
 ### Para máxima adopción institucional 
 
@@ -265,7 +268,7 @@ Alineación: Refuerza la filosofía de conocimiento abierto en el contexto actua
 - **Contenidos:** CC BY-SA
 - **Código:** MPL 2.0
 
-**Para:** Copyleft moderado en código (solo archivos modificados deben compartirse) con reciprocidad total en contenidos. Más flexible para integraciones institucionales que AGPL v3.
+**Para:** Copyleft moderado en código (solo se comparten los archivos con licencia MPL) y compartir igual en los contenidos. Más flexible para integraciones institucionales que AGPL v3.
 
 ## Casos prácticos para docentes
 ### Caso 1: App de ejercicios de matemáticas 
@@ -289,15 +292,15 @@ Alineación: Refuerza la filosofía de conocimiento abierto en el contexto actua
 ## Preguntas frecuentes de docentes
 **P: ¿Puedo ganar dinero vendiendo material con CC BY-SA?** R: Sí, puedes vender tu trabajo. CC BY-SA no prohíbe ganar dinero, solo obliga a mantener la misma licencia en las modificaciones.
 
-**P: ¿Qué pasa si uso imágenes de Internet en mis materiales?** R: Debes respetar la licencia de cada imagen. Usa bancos de imágenes con licencias claras como Unsplash (tipo CC BY) o Pixabay.
+**P: ¿Qué pasa si uso imágenes de Internet en mis materiales?** R: Debes respetar la licencia de cada imagen e indicarla junto a ella, aunque el resto del material tenga otra. Busca en repositorios de imágenes con licencias libres, como [Wikimedia Commons](https://commons.wikimedia.org/wiki/Portada?uselang=es) u [Openverse](https://openverse.org/es). Unsplash y Pixabay permiten usar sus fotos gratis, pero con licencias propias que no son Creative Commons. En ese caso indica que esas imágenes quedan fuera de tu licencia.
 
-**P: ¿Es obligatorio poner licencias?** R: No es obligatorio, pero sin licencia nadie puede usar legalmente tu trabajo. Si quieres que se comparta, pon licencia.
+**P: ¿Es obligatorio poner licencias?** R: No es obligatorio, pero sin licencia los demás solo pueden usar tu trabajo dentro de los límites que marca la ley, como la cita. Si quieres que se comparta, pon licencia.
 
-**P: ¿AGPL v3 limita la adopción de mi código?** R: Puede limitarla en entornos que prefieren cerrar sus modificaciones, pero garantiza que las mejoras vuelvan a la comunidad educativa. Es una decisión de valores: ¿prefieres máxima adopción o reciprocidad?
+**P: ¿AGPL v3 limita la adopción de mi código?** R: Puede limitarla en entornos que prefieren cerrar sus modificaciones, pero obliga a que las versiones mejoradas que se difundan o se ofrezcan en red sigan siendo libres. Es una decisión de valores: ¿prefieres máxima adopción o reciprocidad?
 
-**P: ¿Puedo cambiar la licencia de un material que he creado o adaptado?** **R:** Depende del origen del material. Si es tu trabajo original, puedes cambiar la licencia para versiones futuras, pero las ya publicadas mantienen su licencia. Si has adaptado trabajo de otros, debes respetar la licencia original: adaptar material CC BY-SA obliga a que tu versión sea CC BY-SA también.
+**P: ¿Puedo cambiar la licencia de un material que he creado o adaptado?** **R:** Depende del origen del material. Si es tu trabajo original, puedes cambiar la licencia para versiones futuras, pero las ya publicadas mantienen su licencia. Si has adaptado trabajo de otros, debes respetar la licencia original: adaptar material CC BY-SA obliga a que tu versión lleve CC BY-SA de esa versión o de una posterior, o una licencia declarada compatible.
 
-**P: ¿Qué licencia debo elegir en GitHub si mi repositorio incluye código y materiales educativos?** **R:** Lo más claro es no seleccionar ninguna licencia en el asistente de GitHub. Después, en tu repositorio:
+**P: ¿Qué licencia debo elegir en GitHub si mi repositorio incluye código y materiales educativos?** **R:** Lo más claro es no elegir ninguna licencia en el asistente de GitHub y añadirlas después a mano. El archivo `LICENSE` lleva la licencia del código y otro archivo, por ejemplo `LICENSE-CONTENIDOS`, la de los materiales. El `README` explica qué parte va con cada licencia. Los pasos están en el apartado siguiente.
 
 ## Cómo aplicar las licencias
 **Para contenidos educativos (Creative Commons u otras):**
@@ -310,7 +313,7 @@ Alineación: Refuerza la filosofía de conocimiento abierto en el contexto actua
 
 1.  Añade en la misma página principal o en un lugar destacado de tu proyecto una mención clara a la licencia elegida para el código, junto con el enlace oficial.
 2.  Incluye el archivo `LICENSE.txt` con el texto completo de la licencia.
-3.  Añade una nota breve al inicio de cada archivo de código indicando la licencia.
+3.  Añade una nota breve al inicio de cada archivo de código indicando la licencia. La forma habitual es una línea como `SPDX-License-Identifier: AGPL-3.0-or-later`.
 4.  Menciona la licencia también en la documentación del proyecto.
 
 ## Recomendación final
@@ -319,7 +322,7 @@ Para docentes comprometidos con el conocimiento abierto y la reciprocidad:
 - **Contenidos educativos:** CC BY-SA 4.0
 - **Código:** AGPL v3
 
-Esta combinación garantiza que tu trabajo y las mejoras que otros hagan permanezcan abiertas para toda la comunidad educativa, fomentando la participación activa y la colaboración.
+Esta combinación garantiza que tu trabajo y las mejoras que otros difundan permanezcan abiertas para toda la comunidad educativa, fomentando la participación activa y la colaboración.
 
 ## Generador de licencias para recursos educativos abiertos (REA)
 Aquí tienes una utilidad con la que puedes elegir las licencias que quieres. Obtendrás un texto que puede ser pegado en un documento de texto, un prompt que puedes usar para que la IA cree automáticamente las licencias de uso y un bloque HTML que puedes pegar directamente en una página web.
@@ -412,7 +415,7 @@ No se puede ejecutar JavaScript.
 </div>
 </figure>
 
-**Nota**: Este artículo tiene nivel 4 en el [Marco para la integración de la IA generativa](https://educacion.bilateria.org/marco-para-la-integracion-etica-de-la-ia-generativa-en-las-tareas-educativas).
+**Nota**: Este artículo tiene nivel 4 en el [Marco para la integración de la IA generativa](https://jjdeharo.github.io/miae/es/?nivel=4).
 
 - [](https://twitter.com/share?url=https%3A%2F%2Feducacion.bilateria.org%2Flicencias-libres-para-docentes-apps-educativas-y-materiales-didacticos&text=Licencias%20libres%20para%20docentes%3A%20apps%20educativas%20y%20materiales%20did%C3%A1cticos "Compartir en X")
 - [](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Feducacion.bilateria.org%2Flicencias-libres-para-docentes-apps-educativas-y-materiales-didacticos "Compartir en LinkedIn")
