@@ -60,14 +60,14 @@ Aplicaciones y materiales citados como ejemplo, la mayoría del catálogo de la 
 - Guízar, P. G. (s. f.). *Buzzer WebRTC*. <https://pablogguizar.github.io/buzzer-webrtc/>
 - Lostalé, I. (s. f.). *Cuaderno del Profesorado* (versión 1.0). <https://github.com/imanlost/CuadernoProfesorado-v1.0>
 - Miralles Bono, J. L. (s. f.). *ScoreSpacer*. <https://jlmirallesb.github.io/ScoreSpacer/>
-- OpenWorksheets. (s. f.). *OpenWorksheets* [fichas interactivas]. <https://openworksheets.github.io/>
+- De Haro, J. J. (s. f.). *OpenWorksheets: fichas interactivas autocorregibles*. <https://openworksheets.github.io/>
 - Sarroca, F. (s. f.). *MCD y mcm* [guía interactiva]. <https://felipsarroca.github.io/edu-apps/MCD-mcm/>
 - Sarroca, F. (s. f.). *Tantrix* [juego]. <https://felipsarroca.github.io/jocs/Tantrix/>
 - Vibe Coding Educativo. (2026). *Registro de decisiones de esta guía*. <https://github.com/Vibe-Coding-Educativo/vibe-responsable/tree/main/docs/adr>
 
 ## Herramientas mencionadas
 
-Ejemplos de las cuatro familias de herramientas que describe la página «Herramientas y niveles», tal como estaban disponibles en 2026.
+Ejemplos citados de las cuatro familias de herramientas que describe la página «Herramientas y niveles», tal como estaban disponibles en 2026.
 
 - Anthropic. *Claude*: <https://claude.ai/>. *Claude Code*: <https://claude.com/product/claude-code>
 - Bolt: <https://bolt.new/>
