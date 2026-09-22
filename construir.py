@@ -240,7 +240,10 @@ def pagina_presentacion(idioma):
     tarjeta = (f'<div class="tarjeta"><a class="miniatura ampliar" href="{img}" aria-label="{html.escape(T["ampliar"])}" title="{html.escape(T["ampliar"])}">'
                f'<img src="{img}" width="{an}" height="{al}" alt="{html.escape(T["infografia_alt"])}"></a>'
                f'<a class="descarga" href="{img}" download>{icono("download")}{html.escape(T["descargar"])}</a></div>')
-    notas = "".join(bloque(i, "nota") for i in range(3, len(apartados)))
+    # Las notas del pie de la portada: «Cómo citar» (misma cita que la portada del PDF; el DOI
+    # se añadirá con la versión definitiva) y las del Markdown, como «Cómo se ha elaborado».
+    notas = ('<div class="notas">' + "".join(bloque(i, "nota") for i in range(3, len(apartados)))
+             + f'<p class="nota cita"><strong>{html.escape(T["citar"])}.</strong> {T["cita"]}</p></div>')
     # La tarjeta y «Cómo se utiliza» van juntas en el HTML; en pantalla, el CSS las
     # separa (pantalla alta) o las apila en la misma columna (portátil bajo).
     cuerpo = f"""<h1>{html.escape(titulo)}</h1>
@@ -310,10 +313,6 @@ def pagina_texto(idioma, archivo, fuente):
         h = h.replace("</pre>", "</pre></div>")
         secciones.append(f'<section class="apartado" id="{ancla(cab)}" aria-labelledby="h-{ancla(cab)}">'
                          f'<h2 id="h-{ancla(cab)}">{html.escape(cab)}</h2><div class="texto">{h}</div></section>')
-    if archivo == "creditos.html":
-        # La cita, la misma que lleva la portada del PDF; el DOI se añadirá con la versión definitiva.
-        secciones.append(f'<section class="apartado" id="{ancla(T["citar"])}" aria-labelledby="h-{ancla(T["citar"])}">'
-                         f'<h2 id="h-{ancla(T["citar"])}">{html.escape(T["citar"])}</h2><div class="texto"><p>{T["cita"]}</p></div></section>')
     cuerpo = f'<h1>{html.escape(titulo)}</h1>\n' + "\n".join(secciones)
     clase = "pagina-texto pagina-referencias" if archivo == "referencias.html" else "pagina-texto"
     return marco(idioma, archivo, titulo, cuerpo, clase)
@@ -401,7 +400,7 @@ def pagina_completa(idioma, paginas):
 .pdf .paso-guia {{ display: contents; }}
 .pdf .tarjeta {{ border: 0; box-shadow: none; padding: 0; margin: 1rem 0; break-before: page; }}
 .pdf .tarjeta .miniatura {{ width: 12cm !important; height: auto !important; margin: 0 auto; border: 1px solid #bbb; }}
-.pdf .descarga, .pdf #{ancla(T["citar"])} {{ display: none; }} /* la cita ya va en la portada */
+.pdf .descarga, .pdf .nota.cita {{ display: none; }} /* la cita ya va en la portada */
 .pdf a {{ color: inherit; text-decoration: none; }}
 .pdf .pdf-indice a, .pdf .texto a[href^="http"], .pdf .explicacion a[href^="http"] {{ color: var(--verde); }}
 </style>

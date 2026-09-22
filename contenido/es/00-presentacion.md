@@ -22,5 +22,5 @@ La guía reúne diez recomendaciones, de forma que también sirve para revisar u
 
 ## Cómo se ha elaborado
 
-Esta página se ha elaborado en el nivel 4 del [Marco para la integración de la IA generativa en las tareas educativas (MIAE)](https://educacion.bilateria.org/marco-para-la-integracion-de-la-ia-generativa-en-las-tareas-educativas-miae-v-2-1), que corresponde a la colaboración avanzada entre la persona y la IA. El texto se ha escrito en diálogo con Claude Code, y el autor ha dirigido y corregido el contenido, ha contrastado las afirmaciones con sus fuentes y ha revisado el resultado.
+Esta página se ha elaborado en el nivel 4 del [Marco para la integración de la IA generativa en las tareas educativas (MIAE)](https://jjdeharo.github.io/miae/es/), que corresponde a la colaboración avanzada entre la persona y la IA. El texto se ha escrito en diálogo con Claude Code, y el autor ha dirigido y corregido el contenido, ha contrastado las afirmaciones con sus fuentes y ha revisado el resultado.
 

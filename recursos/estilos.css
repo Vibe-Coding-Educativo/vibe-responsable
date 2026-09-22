@@ -176,7 +176,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 }
 
 /* Pantallas bajas de portátil: la portada se compacta para caber sin desplazamiento */
-@media (min-width: 62rem) and (max-height: 800px) {
+@media (min-width: 62rem) and (max-height: 940px) {
   html { font-size: 96%; }
   .pagina-lista .pizarra-int { padding-block: 0.4rem; }
   .pagina-lista h1 { font-size: 1.6rem; margin: 0.6rem 0 0.55rem; }
@@ -229,35 +229,41 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 .nota { margin-top: 1.3rem; padding-top: 0.7rem; border-top: 1px solid var(--raya); color: var(--tinta-suave); font-size: 0.88rem; max-width: 62rem; }
 .nota h2 { font-size: 0.92rem; margin-bottom: 0.2rem; color: var(--tinta); }
 .nota p { margin: 0; }
-.nota .cita { margin-top: 0.45rem; }
-.nota .cita a { color: inherit; }
+/* Las notas del pie de la portada: «Cómo se ha elaborado» arriba y «Cómo citar» al final. */
+.notas { display: flex; flex-direction: column; justify-content: space-between; gap: 0.5rem; }
+.notas .nota { margin-top: 0; }
+.cita a { color: inherit; }
 @media (min-width: 62rem) {
   /* Pantalla alta: la infografía ocupa todo el alto que deja la pantalla, en su propia columna,
      y «Cómo se utiliza» pasa bajo el texto. El aside se disuelve (display: contents) para que
      sus dos piezas se coloquen por separado en la rejilla. */
-  .entrada { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; gap: 1rem 2.4rem; }
+  .entrada { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; grid-template-rows: auto auto minmax(0, 1fr); gap: 1rem 2.4rem; }
   .paso-guia { display: contents; }
-  .entrada .tarjeta { grid-column: 3; grid-row: 1 / span 2; --mini-al: clamp(14rem, calc(100dvh - 19.4rem), 50rem); }
-  .entrada .utiliza { grid-column: 1; grid-row: 2; align-self: end; }
-  .entrada > .nota { grid-column: 2; grid-row: 2; align-self: end; margin-top: 0; }
+  .entrada .tarjeta { grid-column: 3; grid-row: 1 / span 3; --mini-al: clamp(14rem, calc(100dvh - 19.5rem), 50rem); }
+  .entrada .utiliza { grid-column: 1; grid-row: 2 / span 2; align-self: end; }
+  .entrada > .notas { grid-column: 2; grid-row: 2 / span 2; }
   .tarjeta .miniatura { width: calc(var(--mini-al) * var(--ig-an) / var(--ig-al)); height: var(--mini-al); }
   .tarjeta .miniatura img { height: 100%; object-fit: contain; }
 }
 /* Portátil bajo: el texto no cabe en dos columnas, así que «Cómo se utiliza» va bajo la imagen. */
-@media (min-width: 62rem) and (max-height: 700px) {
-  .entrada { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(15rem, 19rem); }
+@media (min-width: 62rem) and (max-height: 740px) {
+  .entrada { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(18rem, 22rem); }
+  .entrada { grid-template-rows: auto auto; }
   .paso-guia { display: grid; grid-column: 3; grid-row: 1 / span 2; gap: 0.5rem; }
-  .entrada .tarjeta { grid-column: auto; grid-row: auto; justify-self: stretch; padding: 0.6rem; --mini-al: clamp(8rem, calc(100dvh - 31.4rem), 50rem); }
+  .entrada .tarjeta { grid-column: auto; grid-row: auto; justify-self: stretch; padding: 0.6rem; --mini-al: clamp(6rem, calc(100dvh - 34.3rem), 50rem); }
   .entrada .utiliza { grid-column: auto; grid-row: auto; align-self: start; }
-  .entrada > .nota { grid-column: 1 / 3; grid-row: 2; }
+  /* Las dos notas, una junto a otra, para no añadir alto. */
+  .entrada > .notas { grid-column: 1 / 3; grid-row: 2; display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 0 1.5rem; }
+  .pagina-presentacion .nota { font-size: 0.76rem; }
   .tarjeta .miniatura { max-width: 100%; }
 }
-@media (min-width: 62rem) and (max-height: 800px) {
-  .pagina-presentacion h1 { font-size: 1.6rem; margin: 0.6rem 0 0.6rem; }
-  .pagina-presentacion .entrada { gap: 0.8rem 2rem; }
+@media (min-width: 62rem) and (max-height: 940px) {
+  .pagina-presentacion h1 { font-size: 1.6rem; margin: 0.45rem 0 0.5rem; }
+  .pagina-presentacion .entrada { gap: 0.2rem 2rem; }
   .pagina-presentacion .entrada p { margin-bottom: 0.6rem; line-height: 1.45; font-size: 0.97rem; }
-  .pagina-presentacion .nota { padding-top: 0.45rem; font-size: 0.82rem; }
-  .pagina-presentacion .pie { margin-top: 0.6rem; padding: 0.35rem 0 0.4rem; font-size: 0.76rem; }
+  .pagina-presentacion .nota { padding-top: 0.4rem; font-size: 0.79rem; }
+  .pagina-presentacion .notas { gap: 0.2rem; }
+  .pagina-presentacion .pie { margin-top: 0.3rem; padding: 0.35rem 0 0.4rem; font-size: 0.76rem; }
   .pagina-presentacion .pie .ancho { display: flex; flex-wrap: wrap; gap: 0 1.2rem; }
 }
 

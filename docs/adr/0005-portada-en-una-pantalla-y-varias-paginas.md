@@ -22,10 +22,14 @@ de los archivos de `contenido/<idioma>/` y el del menú:
    texto va en dos columnas y, al lado, la infografía en una columna propia, con
    un enlace para descargarla debajo. Su alto es el que deja la pantalla, y de
    él sale la anchura de su columna, así que en un monitor grande se lee sin
-   ampliarla y en un portátil queda como miniatura. En pantallas de 700 píxeles
-   de alto o menos, el texto no cabe en dos columnas, y «Cómo se utiliza», con
-   el enlace que lleva a la guía, pasa bajo la infografía; en las demás va bajo
-   el texto.
+   ampliarla y en un portátil queda como miniatura. Bajo «Por qué esta guía»
+   van dos notas en letra pequeña: «Cómo se ha elaborado», justo debajo del
+   texto, y «Cómo citar», pegada al pie de la columna, con la misma cita que la
+   portada del PDF y el DOI pendiente de la versión definitiva. En pantallas de
+   740 píxeles de alto o menos, el texto no cabe en dos columnas: «Cómo se
+   utiliza», con el enlace que lleva a la guía, pasa bajo la infografía, y las
+   dos notas van una junto a otra a lo ancho; en las demás pantallas «Cómo se
+   utiliza» va bajo el texto.
 2. **Guía** (`01-guia.md`, `guia.html`): las diez recomendaciones.
 3. **Herramientas y niveles** (`02-herramientas.md`).
 4. **Instrucciones para la IA** (`04-para-la-ia.md`): los textos para copiar.
