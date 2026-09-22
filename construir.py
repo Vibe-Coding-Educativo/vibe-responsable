@@ -13,7 +13,7 @@ Páginas por idioma, en el orden en que se leen:
   guia.html           la guía: las diez recomendaciones (01-guia.md)
   herramientas.html   familias de herramientas y los dos niveles (02-herramientas.md)
   para-la-ia.html     los textos para dar a la IA (04-para-la-ia.md)
-  referencias.html    todo lo citado en el texto, enlazada desde el pie (05-referencias.md)
+  referencias.html    todo lo citado en el texto (05-referencias.md)
   creditos.html       créditos y licencias, enlazada desde el pie (03-creditos.md)
 
 Los capítulos que desarrollan cada recomendación están en contenido/<idioma>/capitulos/
@@ -75,11 +75,12 @@ UI = {
         "alejar": "Ajustar a la pantalla",
         "niveles": {"Lo mínimo.": "minimo", "Lo recomendado.": "recomendado", "En todos los casos.": "todos"},
         "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Código bajo <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL v3</a> y contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>.',
-        "pie_2": '<a href="referencias.html">Referencias</a> · <a href="creditos.html">Créditos y licencias</a>.',
+        "pie_2": '<a href="creditos.html">Créditos y licencias</a>.',
     },
 }
 PAGINAS = [("index.html", "00-presentacion.md"), ("guia.html", "01-guia.md"),
-           ("herramientas.html", "02-herramientas.md"), ("para-la-ia.html", "04-para-la-ia.md")]
+           ("herramientas.html", "02-herramientas.md"), ("para-la-ia.html", "04-para-la-ia.md"),
+           ("referencias.html", "05-referencias.md")]
 
 
 def pandoc(md):
@@ -491,7 +492,6 @@ if __name__ == "__main__":
             paginas[archivo] = pagina_texto(idioma, archivo, fuente)
         for n, (archivo, _, md) in capitulos(idioma).items():
             paginas[archivo] = pagina_capitulo(idioma, n, archivo, md)
-        paginas["referencias.html"] = pagina_texto(idioma, "referencias.html", "05-referencias.md")
         paginas["creditos.html"] = pagina_texto(idioma, "creditos.html", "03-creditos.md")
         for archivo, contenido in paginas.items():
             (destino / archivo).write_text(contenido, encoding="utf-8")
