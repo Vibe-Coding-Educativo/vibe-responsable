@@ -55,6 +55,11 @@ h1 { font-size: clamp(1.55rem, 1.05rem + 1.5vw, 2.3rem); line-height: 1.12; lett
 .pizarra nav a:hover { border-bottom-color: var(--tiza-suave); }
 .pizarra nav a[aria-current="page"] { border-bottom-color: var(--tiza); font-weight: 700; }
 .pizarra :focus-visible { outline-color: var(--tiza); }
+/* El botón de imprimir solo sirve con JS: sin él no se muestra. */
+.imprimir { display: none; }
+.js .imprimir { display: inline-flex; align-items: center; justify-content: center; margin-left: auto; padding: 0.3rem; border-radius: 4px; border: 1px solid var(--tiza-suave); background: none; color: var(--tiza); cursor: pointer; transition: background 0.15s ease; }
+.js .imprimir:hover { background: rgba(243, 241, 231, 0.15); }
+.imprimir .icono { width: 1.15rem; height: 1.15rem; }
 
 /* Portada: hoja de revisión y panel */
 .tablero { display: grid; gap: 1.2rem; align-items: start; }
@@ -104,7 +109,9 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 .tablero > .panel { display: none; }
 
 @media (max-width: 61.99rem) {
-  .pizarra-int { padding-block: 0.5rem 0.35rem; gap: 0.1rem 1.2rem; }
+  .pizarra-int { position: relative; padding-block: 0.5rem 0.35rem; gap: 0.1rem 1.2rem; }
+  /* Sin fila propia: en la esquina, a la altura del nombre del sitio. */
+  .js .imprimir { position: absolute; top: 0.45rem; right: 0; }
   .sitio .sitio-guia span { display: none; }
   .sitio .sitio-comunidad { color: var(--tiza); font-weight: 700; }
   .pizarra nav ul { gap: 0 1.1rem; }
@@ -270,8 +277,8 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   :root { --papel: #fff; --hoja: #fff; --tinta: #000; --tinta-suave: #333; --raya: #bbb; --verde: #0f5f59; --azul: #1d3f73; --sombra: none; }
   html { font-size: 10.5pt; }
   .pizarra { background: none; color: #000; border-bottom: 2px solid #000; }
-  .pizarra nav, .estado, .saltar, .continuar, .copiable-cab, .detalle-pie, .visor { display: none !important; }
-  .sitio a { color: #000; }
+  .pizarra nav, .estado, .saltar, .continuar, .copiable-cab, .detalle-pie, .visor, .imprimir { display: none !important; }
+  .sitio a, .sitio .sitio-comunidad { color: #000; }
   .tablero, .panel { display: block; }
   .panel > *, .punto > .detalle { opacity: 1 !important; visibility: visible !important; transform: none !important; display: block !important; }
   .detalle .detalle-cab { display: grid !important; }

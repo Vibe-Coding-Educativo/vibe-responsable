@@ -6,6 +6,12 @@
   var ESCRITORIO = window.matchMedia("(min-width: 62rem)");
   var REDUCIDO = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+  /* ---------- Imprimir ---------- */
+  var imprimir = document.querySelector(".imprimir");
+  if (imprimir) {
+    imprimir.addEventListener("click", function () { window.print(); });
+  }
+
   /* ---------- Lista y panel ---------- */
   var panel = document.querySelector(".panel");
   var puntos = Array.prototype.slice.call(document.querySelectorAll(".punto"));

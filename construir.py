@@ -37,6 +37,7 @@ UI = {
         "nav_guia": "Guía",
         "borrador": "Borrador",
         "borrador_ayuda": "La guía está completa, pero su autor la está revisando y el texto puede cambiar.",
+        "imprimir": "Imprimir esta página",
         "infografia_titulo": "Resumen gráfico",
         "infografia_alt": "Infografía con las diez recomendaciones, las mismas que aparecen en la lista.",
         "ampliar": "Ampliar la infografía",
@@ -129,6 +130,7 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 <a class="sitio-comunidad" href="{COMUNIDAD}">{html.escape(T["comunidad"])}</a>
 <span class="estado" tabindex="0">{html.escape(T["borrador"])}<span class="globo">{html.escape(T["borrador_ayuda"])}</span></span></p>
 <nav aria-label="{html.escape(T["nav"])}"><ul>{"".join(nav)}</ul></nav>
+<button type="button" class="imprimir" title="{html.escape(T["imprimir"])}" aria-label="{html.escape(T["imprimir"])}">{icono("printer")}</button>
 </div>
 </header>
 <main id="contenido" class="ancho">
