@@ -19,8 +19,13 @@ de los archivos de `contenido/<idioma>/` y el del menú:
 
 1. **Presentación** (`00-presentacion.md`, portada): qué es el vibe coding
    educativo, por qué existe la guía, cómo se utiliza y cómo se ha elaborado. El
-   texto va en dos columnas y, al lado, la miniatura de la infografía con el
-   enlace que lleva a la guía.
+   texto va en dos columnas y, al lado, la infografía en una columna propia, con
+   un enlace para descargarla debajo. Su alto es el que deja la pantalla, y de
+   él sale la anchura de su columna, así que en un monitor grande se lee sin
+   ampliarla y en un portátil queda como miniatura. En pantallas de 700 píxeles
+   de alto o menos, el texto no cabe en dos columnas, y «Cómo se utiliza», con
+   el enlace que lleva a la guía, pasa bajo la infografía; en las demás va bajo
+   el texto.
 2. **Guía** (`01-guia.md`, `guia.html`): las diez recomendaciones.
 3. **Herramientas y niveles** (`02-herramientas.md`).
 4. **Instrucciones para la IA** (`04-para-la-ia.md`): los textos para copiar.
@@ -43,11 +48,12 @@ el móvil empiezan todas plegadas y la explicación se despliega bajo su fila. S
 JavaScript, todo el contenido queda visible, una recomendación tras otra. La
 página no tiene casillas ni recuento, y la web no guarda nada en el navegador.
 
-La infografía está solo en la presentación. Su miniatura es el único control
-para ampliarla: abre un visor que la ajusta siempre a la pantalla, con una
-entrada y una salida suaves, un botón para verla a tamaño de lectura y otro
-para descargarla. Sus medidas salen del SVG original, no de un número escrito a
-mano. El movimiento responde solo a acciones de la persona y se anula si el
+La infografía está solo en la presentación. La propia imagen es el único
+control para ampliarla: abre un visor que la ajusta siempre a la pantalla, con
+una entrada y una salida suaves, un botón para verla a tamaño de lectura y otro
+para descargarla; bajo la imagen hay además un enlace de descarga, para quien no
+quiera abrir el visor. Sus medidas salen del SVG original, no de un número
+escrito a mano. El movimiento responde solo a acciones de la persona y se anula si el
 dispositivo pide reducirlo.
 
 El aspecto sale del aula: cabecera en verde pizarra, papel neutro y dos tintas,

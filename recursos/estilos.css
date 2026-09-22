@@ -132,8 +132,6 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   .panel > * { grid-area: 1 / 1; min-width: 0; }
   .js .panel > * { opacity: 0; visibility: hidden; transform: translateY(0.6rem); transition: opacity 0.26s ease, transform 0.26s cubic-bezier(0.2, 0.7, 0.2, 1), visibility 0s linear 0.26s; }
   .js .panel > .visible { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
-  .paso-guia .miniatura { height: var(--mini-al); }
-  .paso-guia .miniatura img { width: 100%; height: 100%; object-fit: cover; }
   .panel .detalle-caja { padding: 1.7rem 1.9rem 1.2rem; }
   @container (min-width: 40rem) { .detalle-cuerpo { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
 }
@@ -146,7 +144,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 }
 
 /* Pantallas bajas de portátil: la portada se compacta para caber sin desplazamiento */
-@media (min-width: 62rem) and (max-height: 760px) {
+@media (min-width: 62rem) and (max-height: 800px) {
   html { font-size: 96%; }
   .pagina-lista .pizarra-int { padding-block: 0.4rem; }
   .pagina-lista h1 { font-size: 1.6rem; margin: 0.6rem 0 0.55rem; }
@@ -188,8 +186,11 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 .entrada h2, .nota h2 { margin: 0 0 0.5rem; font-size: 1.18rem; line-height: 1.22; text-wrap: balance; }
 .columna, .utiliza { border-top: 2px solid var(--verde); padding-top: 0.6rem; }
 .entrada p { margin: 0 0 0.8rem; }
-.paso-guia { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 1rem; align-items: start; background: var(--hoja); border: 1px solid var(--raya); border-radius: 6px; box-shadow: var(--sombra); padding: 1rem; }
-.paso-guia .utiliza { border-top: 0; padding-top: 0; }
+.paso-guia { display: grid; gap: 1rem; }
+.tarjeta { display: grid; justify-items: center; justify-self: start; gap: 0.5rem; background: var(--hoja); border: 1px solid var(--raya); border-radius: 6px; box-shadow: var(--sombra); padding: 0.9rem; }
+.tarjeta .miniatura { width: min(100%, 22rem); }
+.descarga { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; }
+.descarga .icono { width: 1.1rem; height: 1.1rem; }
 .continuar { display: inline-block; margin-top: 0.1rem; padding: 0.55rem 1.05rem; border-radius: 4px; background: var(--verde); color: var(--hoja); font-weight: 700; text-decoration: none; transition: background 0.15s ease; }
 .continuar:hover { background: color-mix(in srgb, var(--verde) 86%, var(--tinta)); }
 .entrada p:has(> .continuar) { margin-bottom: 0; }
@@ -197,17 +198,30 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 .nota h2 { font-size: 0.92rem; margin-bottom: 0.2rem; color: var(--tinta); }
 .nota p { margin: 0; }
 @media (min-width: 62rem) {
-  .entrada { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(15rem, 19rem); gap: 1.2rem 2.4rem; }
-  .entrada > .paso-guia { grid-column: 3; grid-row: 1 / span 2; }
-  .entrada > .nota { grid-column: 1 / 3; grid-row: 2; align-self: end; margin-top: 0; }
-  .paso-guia { --mini-al: min(19rem, 36vh); grid-template-columns: minmax(0, 1fr); gap: 0.9rem; padding: 1.1rem; }
-  .paso-guia .miniatura { width: calc(var(--mini-al) * var(--ig-an) / var(--ig-al)); }
+  /* Pantalla alta: la infografía ocupa todo el alto que deja la pantalla, en su propia columna,
+     y «Cómo se utiliza» pasa bajo el texto. El aside se disuelve (display: contents) para que
+     sus dos piezas se coloquen por separado en la rejilla. */
+  .entrada { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; gap: 1rem 2.4rem; }
+  .paso-guia { display: contents; }
+  .entrada .tarjeta { grid-column: 3; grid-row: 1 / span 2; --mini-al: clamp(14rem, calc(100dvh - 18.6rem), 50rem); }
+  .entrada .utiliza { grid-column: 1; grid-row: 2; align-self: end; }
+  .entrada > .nota { grid-column: 2; grid-row: 2; align-self: end; margin-top: 0; }
+  .tarjeta .miniatura { width: calc(var(--mini-al) * var(--ig-an) / var(--ig-al)); height: var(--mini-al); }
+  .tarjeta .miniatura img { height: 100%; object-fit: contain; }
 }
-@media (min-width: 62rem) and (max-height: 760px) {
+/* Portátil bajo: el texto no cabe en dos columnas, así que «Cómo se utiliza» va bajo la imagen. */
+@media (min-width: 62rem) and (max-height: 700px) {
+  .entrada { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(15rem, 19rem); }
+  .paso-guia { display: grid; grid-column: 3; grid-row: 1 / span 2; gap: 0.5rem; }
+  .entrada .tarjeta { grid-column: auto; grid-row: auto; justify-self: stretch; padding: 0.6rem; --mini-al: clamp(8rem, calc(100dvh - 31.4rem), 50rem); }
+  .entrada .utiliza { grid-column: auto; grid-row: auto; align-self: start; }
+  .entrada > .nota { grid-column: 1 / 3; grid-row: 2; }
+  .tarjeta .miniatura { max-width: 100%; }
+}
+@media (min-width: 62rem) and (max-height: 800px) {
   .pagina-presentacion h1 { font-size: 1.6rem; margin: 0.6rem 0 0.6rem; }
   .pagina-presentacion .entrada { gap: 0.8rem 2rem; }
   .pagina-presentacion .entrada p { margin-bottom: 0.6rem; line-height: 1.45; font-size: 0.97rem; }
-  .pagina-presentacion .paso-guia { --mini-al: min(15rem, 30vh); padding: 0.9rem; }
   .pagina-presentacion .nota { padding-top: 0.45rem; font-size: 0.82rem; }
   .pagina-presentacion .pie { margin-top: 0.6rem; padding: 0.35rem 0 0.4rem; font-size: 0.76rem; }
   .pagina-presentacion .pie .ancho { display: flex; flex-wrap: wrap; gap: 0 1.2rem; }

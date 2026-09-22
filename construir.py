@@ -206,14 +206,17 @@ def pagina_presentacion(idioma):
         cab, h = apartados[i]
         return f'<section class="{clase}" aria-labelledby="h-{ancla(cab)}"><h2 id="h-{ancla(cab)}">{html.escape(cab)}</h2>{h}</section>'
 
-    miniatura = (f'<a class="miniatura ampliar" href="{img}" aria-label="{html.escape(T["ampliar"])}" title="{html.escape(T["ampliar"])}">'
-                 f'<img src="{img}" width="{an}" height="{al}" alt="{html.escape(T["infografia_alt"])}"></a>')
+    tarjeta = (f'<div class="tarjeta"><a class="miniatura ampliar" href="{img}" aria-label="{html.escape(T["ampliar"])}" title="{html.escape(T["ampliar"])}">'
+               f'<img src="{img}" width="{an}" height="{al}" alt="{html.escape(T["infografia_alt"])}"></a>'
+               f'<a class="descarga" href="{img}" download>{icono("download")}{html.escape(T["descargar"])}</a></div>')
     notas = "".join(bloque(i, "nota") for i in range(3, len(apartados)))
+    # La tarjeta y «Cómo se utiliza» van juntas en el HTML; en pantalla, el CSS las
+    # separa (pantalla alta) o las apila en la misma columna (portátil bajo).
     cuerpo = f"""<h1>{html.escape(titulo)}</h1>
 <div class="entrada" {medidas}>
 {bloque(0, "columna")}
 {bloque(1, "columna")}
-<aside class="paso-guia">{miniatura}{bloque(2, "utiliza")}</aside>
+<aside class="paso-guia">{tarjeta}{bloque(2, "utiliza")}</aside>
 {notas}
 </div>
 {visor(idioma)}"""
