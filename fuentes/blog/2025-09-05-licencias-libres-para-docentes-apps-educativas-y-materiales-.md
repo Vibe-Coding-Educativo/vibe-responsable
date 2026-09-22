@@ -13,7 +13,7 @@ Como docente que crea materiales digitales, todo lo que produces está automáti
 
 Las licencias libres son tu manera de decir: «Puedes usar esto, pero bajo estas condiciones».
 
-_Actualizado el 22 de septiembre de 2026: se han corregido varias explicaciones de las licencias, la respuesta sobre GitHub y las fuentes de imágenes recomendadas._
+_Actualizado el 22 de septiembre de 2026: se han corregido varias explicaciones de las licencias, la respuesta sobre GitHub, las fuentes de imágenes recomendadas y el generador de licencias._
 
 - [Dos tipos de creaciones, dos tipos de licencias](https://educacion.bilateria.org/licencias-libres-para-docentes-apps-educativas-y-materiales-didacticos/#Dos_tipos_de_creaciones_dos_tipos_de_licencias)
 - [Licencias para contenidos educativos (lo más importante para ti)](https://educacion.bilateria.org/licencias-libres-para-docentes-apps-educativas-y-materiales-didacticos/#Licencias_para_contenidos_educativos_lo_mas_importante_para_ti)
@@ -325,7 +325,7 @@ Para docentes comprometidos con el conocimiento abierto y la reciprocidad:
 Esta combinación garantiza que tu trabajo y las mejoras que otros difundan permanezcan abiertas para toda la comunidad educativa, fomentando la participación activa y la colaboración.
 
 ## Generador de licencias para recursos educativos abiertos (REA)
-Aquí tienes una utilidad con la que puedes elegir las licencias que quieres. Obtendrás un texto que puede ser pegado en un documento de texto, un prompt que puedes usar para que la IA cree automáticamente las licencias de uso y un bloque HTML que puedes pegar directamente en una página web.
+Aquí tienes una utilidad con la que puedes elegir las licencias que quieres. Obtendrás un texto que puede ser pegado en un documento de texto y un bloque HTML, con los enlaces y el icono de la licencia, que puedes pegar directamente en una página web.
 
 # Generador de licencias para recursos educativos abiertos (REA) 
 
