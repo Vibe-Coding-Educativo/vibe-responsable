@@ -277,8 +277,10 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   :root { --papel: #fff; --hoja: #fff; --tinta: #000; --tinta-suave: #333; --raya: #bbb; --verde: #0f5f59; --azul: #1d3f73; --sombra: none; }
   html { font-size: 10.5pt; }
   .pizarra { background: none; color: #000; border-bottom: 2px solid #000; }
-  .pizarra nav, .estado, .saltar, .continuar, .copiable-cab, .detalle-pie, .visor, .imprimir { display: none !important; }
+  .pizarra nav, .globo, .saltar, .continuar, .copiable-cab, .detalle-pie, .visor, .imprimir { display: none !important; }
   .sitio a, .sitio .sitio-comunidad { color: #000; }
+  /* El aviso de borrador también en papel: solo con borde, por si no se imprimen los fondos. */
+  .estado { background: none; color: #000; border: 1.5px solid #000; }
   .tablero, .panel { display: block; }
   .panel > *, .punto > .detalle { opacity: 1 !important; visibility: visible !important; transform: none !important; display: block !important; }
   .detalle .detalle-cab { display: grid !important; }
