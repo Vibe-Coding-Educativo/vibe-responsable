@@ -396,7 +396,7 @@ def pagina_completa(idioma, paginas):
 .pdf .paso-guia {{ display: contents; }}
 .pdf .tarjeta {{ border: 0; box-shadow: none; padding: 0; margin: 1rem 0; break-before: page; }}
 .pdf .tarjeta .miniatura {{ width: 12cm !important; height: auto !important; margin: 0 auto; border: 1px solid #bbb; }}
-.pdf .descarga, .pdf .cita {{ display: none; }}
+.pdf .descarga, .pdf #{ancla(T["citar"])} {{ display: none; }} /* la cita ya va en la portada */
 .pdf a {{ color: inherit; text-decoration: none; }}
 .pdf .pdf-indice a, .pdf .texto a[href^="http"], .pdf .explicacion a[href^="http"] {{ color: var(--verde); }}
 </style>
