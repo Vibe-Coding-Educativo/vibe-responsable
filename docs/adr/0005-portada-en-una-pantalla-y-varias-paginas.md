@@ -46,7 +46,11 @@ enlace a su capítulo y botones para pasar a la anterior o a la siguiente. En
 escritorio el panel muestra siempre una recomendación, la primera al cargar. En
 el móvil empiezan todas plegadas y la explicación se despliega bajo su fila. Sin
 JavaScript, todo el contenido queda visible, una recomendación tras otra. La
-página no tiene casillas ni recuento, y la web no guarda nada en el navegador.
+página no tiene casillas ni recuento. Lo único que la web guarda en el navegador
+es el tema claro u oscuro, y solo cuando se elige uno distinto al del
+dispositivo con el botón de la cabecera; junto a él hay otro para imprimir la
+página, que en papel sale sin navegación y con el aviso de borrador mientras lo
+sea.
 
 La infografía está solo en la presentación. La propia imagen es el único
 control para ampliarla: abre un visor que la ajusta siempre a la pantalla, con

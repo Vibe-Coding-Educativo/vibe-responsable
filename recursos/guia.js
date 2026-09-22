@@ -1,10 +1,32 @@
-// Comportamiento de la guía. No guarda ni envía ningún dato. Sin este script la
-// página se lee entera, con cada recomendación desplegada bajo su título.
+// Comportamiento de la guía. No envía ningún dato; lo único que guarda en el
+// navegador es el tema claro u oscuro, y solo si se elige uno distinto al del
+// dispositivo. Sin este script la página se lee entera, con cada recomendación
+// desplegada bajo su título.
 (function () {
   "use strict";
   document.documentElement.classList.add("js");
   var ESCRITORIO = window.matchMedia("(min-width: 62rem)");
   var REDUCIDO = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  /* ---------- Tema claro u oscuro ---------- */
+  // El aspecto sigue al del dispositivo mientras no se elija otra cosa. Si se
+  // elige justo el que ya trae el dispositivo, se vuelve a seguirlo. La clave
+  // es la misma que usa el arranque en <head> (CLAVE_TEMA en construir.py).
+  var CLAVE_TEMA = "vibe-responsable:tema";
+  var sistemaOscuro = window.matchMedia("(prefers-color-scheme: dark)");
+  var guardar = function (valor) {
+    try { if (valor === null) { localStorage.removeItem(CLAVE_TEMA); } else { localStorage.setItem(CLAVE_TEMA, valor); } } catch (e) {}
+  };
+  var leer = function () { try { return localStorage.getItem(CLAVE_TEMA); } catch (e) { return null; } };
+  var aplicarTema = function (oscuro, manual) {
+    document.documentElement.dataset.theme = oscuro ? "dark" : "light";
+    if (manual) { guardar(oscuro === sistemaOscuro.matches ? null : (oscuro ? "dark" : "light")); }
+  };
+  var tema = document.querySelector(".tema");
+  if (tema) {
+    tema.addEventListener("click", function () { aplicarTema(document.documentElement.dataset.theme !== "dark", true); });
+  }
+  sistemaOscuro.addEventListener("change", function (ev) { if (leer() === null) { aplicarTema(ev.matches); } });
 
   /* ---------- Imprimir ---------- */
   var imprimir = document.querySelector(".imprimir");

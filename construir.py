@@ -25,6 +25,7 @@ IDIOMAS = ["es"]                      # se amplía al añadir contenido/<idioma>
 URL_SITIO = "https://vibe-coding-educativo.github.io/vibe-responsable/"
 REPO = "https://github.com/Vibe-Coding-Educativo/vibe-responsable"
 COMUNIDAD = "https://vibe-coding-educativo.github.io/"   # mismo dominio: se abre en la misma pestaña
+CLAVE_TEMA = "vibe-responsable:tema"   # única entrada en localStorage; la misma en recursos/guia.js
 ICONOS = ["book-check", "shield-check", "creative-commons", "bot", "messages-square",
           "unplug", "accessibility", "quote", "notebook-pen", "download"]
 
@@ -38,6 +39,7 @@ UI = {
         "borrador": "Borrador",
         "borrador_ayuda": "La guía está completa, pero su autor la está revisando y el texto puede cambiar.",
         "imprimir": "Imprimir esta página",
+        "tema": "Modo claro u oscuro",
         "infografia_titulo": "Resumen gráfico",
         "infografia_alt": "Infografía con las diez recomendaciones, las mismas que aparecen en la lista.",
         "ampliar": "Ampliar la infografía",
@@ -120,6 +122,7 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 <link rel="apple-touch-icon" href="../recursos/logo/apple-touch-icon.png">
 <link rel="preload" href="../recursos/fuentes/atkinson-hyperlegible-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../recursos/estilos.css">
+<script>(function(){{try{{var t=localStorage.getItem("{CLAVE_TEMA}");if(t!=="light"&&t!=="dark"){{t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}}document.documentElement.dataset.theme=t;}}catch(e){{}}}})();</script>
 <script src="../recursos/guia.js" defer></script>
 </head>
 <body class="{clase}">
@@ -130,7 +133,10 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 <a class="sitio-comunidad" href="{COMUNIDAD}">{html.escape(T["comunidad"])}</a>
 <span class="estado" tabindex="0">{html.escape(T["borrador"])}<span class="globo">{html.escape(T["borrador_ayuda"])}</span></span></p>
 <nav aria-label="{html.escape(T["nav"])}"><ul>{"".join(nav)}</ul></nav>
+<div class="utiles">
+<button type="button" class="tema" title="{html.escape(T["tema"])}" aria-label="{html.escape(T["tema"])}"><span class="luna">{icono("moon")}</span><span class="sol">{icono("sun")}</span></button>
 <button type="button" class="imprimir" title="{html.escape(T["imprimir"])}" aria-label="{html.escape(T["imprimir"])}">{icono("printer")}</button>
+</div>
 </div>
 </header>
 <main id="contenido" class="ancho">

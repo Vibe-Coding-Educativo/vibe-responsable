@@ -16,6 +16,7 @@
 <link rel="apple-touch-icon" href="../recursos/logo/apple-touch-icon.png">
 <link rel="preload" href="../recursos/fuentes/atkinson-hyperlegible-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../recursos/estilos.css">
+<script>(function(){try{var t=localStorage.getItem("vibe-responsable:tema");if(t!=="light"&&t!=="dark"){t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.dataset.theme=t;}catch(e){}})();</script>
 <script src="../recursos/guia.js" defer></script>
 </head>
 <body class="pagina-presentacion">
@@ -26,9 +27,20 @@
 <a class="sitio-comunidad" href="https://vibe-coding-educativo.github.io/">Vibe Coding Educativo</a>
 <span class="estado" tabindex="0">Borrador<span class="globo">La guía está completa, pero su autor la está revisando y el texto puede cambiar.</span></span></p>
 <nav aria-label="Secciones de la guía"><ul><li><a href="./" aria-current="page">Presentación</a></li><li><a href="guia.html">Guía</a></li><li><a href="herramientas.html">Herramientas y niveles</a></li><li><a href="para-la-ia.html">Instrucciones para la IA</a></li></ul></nav>
+<div class="utiles">
+<button type="button" class="tema" title="Modo claro u oscuro" aria-label="Modo claro u oscuro"><span class="luna"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><span class="sol"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" />
+  <path d="M12 2v2" />
+  <path d="M12 20v2" />
+  <path d="m4.93 4.93 1.41 1.41" />
+  <path d="m17.66 17.66 1.41 1.41" />
+  <path d="M2 12h2" />
+  <path d="M20 12h2" />
+  <path d="m6.34 17.66-1.41 1.41" />
+  <path d="m19.07 4.93-1.41 1.41" /></svg></span></button>
 <button type="button" class="imprimir" title="Imprimir esta página" aria-label="Imprimir esta página"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
   <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
   <rect x="6" y="14" width="12" height="8" rx="1" /></svg></button>
+</div>
 </div>
 </header>
 <main id="contenido" class="ancho">

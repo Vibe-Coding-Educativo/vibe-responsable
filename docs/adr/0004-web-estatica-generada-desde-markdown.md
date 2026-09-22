@@ -22,11 +22,14 @@ y una portada en la raíz que envía al idioma del navegador si existe. El HTML
 generado se guarda en el repositorio y lo sirve GitHub Pages tal cual
 (`.nojekyll`).
 
-En el navegador solo hay HTML, una hoja de estilos, un script de unas ciento
-cincuenta líneas y la tipografía, todo servido desde el propio repositorio: sin
-bibliotecas, sin recursos cargados de otros servidores, sin analítica. El aspecto claro u oscuro sigue la preferencia del dispositivo. Sin
-JavaScript la página se lee entera; la infografía se abre como enlace en lugar de
-ampliarse. Los enlaces a otras
+En el navegador solo hay HTML, una hoja de estilos, un script de menos de
+doscientas líneas y la tipografía, todo servido desde el propio repositorio: sin
+bibliotecas, sin recursos cargados de otros servidores, sin analítica. El aspecto
+claro u oscuro sigue la preferencia del dispositivo, salvo que se elija otro con
+el botón de la cabecera; esa elección es lo único que se guarda en el navegador,
+y unas líneas en `<head>` la aplican antes de pintar la página para que no
+parpadee. Sin JavaScript la página se lee entera, con el aspecto del
+dispositivo; la infografía se abre como enlace en lugar de ampliarse. Los enlaces a otras
 webs se abren en una pestaña nueva, para no sacar al lector de la guía.
 
 La forma de evitar el desplazamiento largo que se describía aquí (dos columnas y
