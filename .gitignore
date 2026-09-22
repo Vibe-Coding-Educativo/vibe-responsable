@@ -3,3 +3,6 @@
 # redistribuye (ver docs/adr/0003-el-material-de-consulta-no-se-publica.md).
 fuentes/consulta/
 
+
+# La guía completa en una sola página, que construir.py --pdf genera solo para imprimirla a PDF
+*/completo.html

@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Genera la web estática de la guía a partir del Markdown de contenido/.
 
-Uso: python3 construir.py
+Uso: python3 construir.py          genera la web
+     python3 construir.py --pdf    además, la guía completa en PDF (necesita node y Playwright
+                                   instalado de forma global, ver generar-pdf.js)
 Necesita pandoc. No hay dependencias en el lado del navegador: el resultado es
 HTML, una hoja de estilos, un script pequeño y la tipografía, todo dentro del
 repositorio. Decisiones registradas en docs/adr/0004 y 0005.
@@ -17,7 +19,8 @@ Los capítulos que desarrollan cada recomendación están en contenido/<idioma>/
 y se publican como capitulo-N.html. Se enlazan desde su recomendación en la guía; los
 que aún no están escritos no muestran enlace.
 """
-import html, re, subprocess, unicodedata
+import html, re, subprocess, sys, unicodedata
+from datetime import date
 from pathlib import Path
 
 RAIZ = Path(__file__).parent
@@ -26,6 +29,7 @@ URL_SITIO = "https://vibe-coding-educativo.github.io/vibe-responsable/"
 REPO = "https://github.com/Vibe-Coding-Educativo/vibe-responsable"
 COMUNIDAD = "https://vibe-coding-educativo.github.io/"   # mismo dominio: se abre en la misma pestaña
 CLAVE_TEMA = "vibe-responsable:tema"   # única entrada en localStorage; la misma en recursos/guia.js
+PDF = "vibe-responsable-{idioma}.pdf"  # la guía completa, generada con --pdf y publicada junto a las páginas
 ICONOS = ["book-check", "shield-check", "creative-commons", "bot", "messages-square",
           "unplug", "accessibility", "quote", "notebook-pen", "download"]
 
@@ -39,7 +43,20 @@ UI = {
         "borrador": "Borrador",
         "borrador_ayuda": "La guía está completa, pero su autor la está revisando y el texto puede cambiar.",
         "imprimir": "Imprimir esta página",
+        "imprimir_desc": "Solo lo que se ve en esta página",
+        "imprimir_menu": "Imprimir o descargar",
+        "pdf": "Descargar la guía completa en PDF",
+        "pdf_desc": "Todas las páginas en un solo documento",
         "tema": "Modo claro u oscuro",
+        "citar": "Cómo citar",
+        "cita": 'De Haro, J. J. (2026). <i>Guía para publicar materiales educativos creados con vibe coding</i> (borrador). Vibe Coding Educativo. <a href="https://vibe-coding-educativo.github.io/vibe-responsable/">https://vibe-coding-educativo.github.io/vibe-responsable/</a>',
+        "subtitulo": "Guía ética y de responsabilidad, no técnica, para la comunidad educativa",
+        "autor": "Juan José de Haro",
+        "borrador_pdf": "Borrador del {fecha}. La guía está completa, pero su autor la está revisando y el texto puede cambiar. La versión al día está en {url}.",
+        "contenido": "Contenido",
+        "capitulo": "Capítulo {n}",
+        "pie_pdf": "Guía para publicar materiales educativos creados con vibe coding · Juan José de Haro · CC BY-SA 4.0 · Borrador, {fecha}",
+        "meses": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
         "infografia_titulo": "Resumen gráfico",
         "infografia_alt": "Infografía con las diez recomendaciones, las mismas que aparecen en la lista.",
         "ampliar": "Ampliar la infografía",
@@ -135,7 +152,13 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 <nav aria-label="{html.escape(T["nav"])}"><ul>{"".join(nav)}</ul></nav>
 <div class="utiles">
 <button type="button" class="tema" title="{html.escape(T["tema"])}" aria-label="{html.escape(T["tema"])}"><span class="luna">{icono("moon")}</span><span class="sol">{icono("sun")}</span></button>
-<button type="button" class="imprimir" title="{html.escape(T["imprimir"])}" aria-label="{html.escape(T["imprimir"])}">{icono("printer")}</button>
+<div class="desplegable">
+<button type="button" class="imprimir" title="{html.escape(T["imprimir_menu"])}" aria-label="{html.escape(T["imprimir_menu"])}" aria-haspopup="menu" aria-expanded="false">{icono("printer")}</button>
+<div class="menu" role="menu" hidden>
+<button type="button" role="menuitem" class="menu-imprimir">{icono("printer")}<span><b>{html.escape(T["imprimir"])}</b><small>{html.escape(T["imprimir_desc"])}</small></span></button>
+<a role="menuitem" href="{PDF.format(idioma=idioma)}" download>{icono("download")}<span><b>{html.escape(T["pdf"])}</b><small>{html.escape(T["pdf_desc"])}</small></span></a>
+</div>
+</div>
 </div>
 </div>
 </header>
@@ -284,6 +307,10 @@ def pagina_texto(idioma, archivo, fuente):
         h = h.replace("</pre>", "</pre></div>")
         secciones.append(f'<section class="apartado" id="{ancla(cab)}" aria-labelledby="h-{ancla(cab)}">'
                          f'<h2 id="h-{ancla(cab)}">{html.escape(cab)}</h2><div class="texto">{h}</div></section>')
+    if archivo == "creditos.html":
+        # La cita, la misma que lleva la portada del PDF; el DOI se añadirá con la versión definitiva.
+        secciones.append(f'<section class="apartado" id="{ancla(T["citar"])}" aria-labelledby="h-{ancla(T["citar"])}">'
+                         f'<h2 id="h-{ancla(T["citar"])}">{html.escape(T["citar"])}</h2><div class="texto"><p>{T["cita"]}</p></div></section>')
     cuerpo = f'<h1>{html.escape(titulo)}</h1>\n' + "\n".join(secciones)
     return marco(idioma, archivo, titulo, cuerpo, "pagina-texto")
 
@@ -315,6 +342,81 @@ def pagina_capitulo(idioma, n, archivo, md):
               + f'<nav class="entre-capitulos" aria-label="{html.escape(T["nav"])}">{ant}'
                 f'<a href="guia.html">{html.escape(T["volver_guia"])}</a>{sig}</nav>')
     return marco(idioma, "guia.html", titulo, cuerpo, "pagina-texto pagina-capitulo")
+
+
+def pagina_completa(idioma, paginas):
+    """Todas las páginas seguidas, con portada e índice, para imprimirlas a PDF (generar-pdf.js).
+
+    Orden de lectura: presentación, guía, los capítulos que la desarrollan, herramientas,
+    instrucciones para la IA y créditos. Los enlaces entre páginas pasan a ser anclas."""
+    T = UI[idioma]
+    hoy = date.today()
+    fecha = f"{hoy.day} de {T['meses'][hoy.month - 1]} de {hoy.year}"
+    caps = capitulos(idioma)
+    titulos = {a: titulo_de((RAIZ / "contenido" / idioma / m).read_text(encoding="utf-8")) for a, m in PAGINAS}
+    titulos["creditos.html"] = titulo_de((RAIZ / "contenido" / idioma / "03-creditos.md").read_text(encoding="utf-8"))
+    orden = [("index.html", titulos["index.html"]), ("guia.html", titulos["guia.html"])]
+    orden += [(a, f"{T['capitulo'].format(n=n)}. {t}") for n, (a, t, _) in sorted(caps.items())]
+    orden += [(a, titulos[a]) for a in ("herramientas.html", "para-la-ia.html", "creditos.html")]
+    partes, indice = [], []
+    for archivo, titulo in orden:
+        clave = archivo[:-5]
+        cuerpo = re.search(r'<main id="contenido" class="ancho">(.*)</main>', paginas[archivo], flags=re.S).group(1)
+        cuerpo = re.sub(r'href="[a-z0-9-]+\.html#', 'href="#', cuerpo)
+        cuerpo = re.sub(r'href="([a-z0-9-]+)\.html"', r'href="#pagina-\1"', cuerpo)
+        cuerpo = cuerpo.replace('href="./"', 'href="#pagina-index"')
+        partes.append(f'<section class="pdf-pagina" id="pagina-{clave}">{cuerpo}</section>')
+        indice.append(f'<li><a href="#pagina-{clave}">{html.escape(titulo)}</a></li>')
+    return f"""<!DOCTYPE html>
+<html lang="{idioma}" data-theme="light">
+<head>
+<meta charset="utf-8">
+<title>{html.escape(T["guia"])}</title>
+<link rel="stylesheet" href="../recursos/estilos.css">
+<style>
+/* Solo para la impresión a PDF de la guía completa */
+.pdf {{ background: #fff; color: #000; }}
+.pdf .ancho {{ max-width: none; padding: 0; }}
+.pdf-portada {{ break-after: page; min-height: 240mm; display: flex; flex-direction: column; }}
+.pdf-portada .marca {{ width: 3.2rem; height: 3.2rem; margin-bottom: 1.2rem; }}
+.pdf-portada .pdf-comunidad {{ margin: 0; font-weight: 700; color: var(--verde); }}
+.pdf-portada h1 {{ font-size: 2.4rem; margin: 0.4rem 0 0.6rem; }}
+.pdf-portada .pdf-sub {{ font-size: 1.15rem; margin: 0 0 1.6rem; color: #333; }}
+.pdf-portada .pdf-autor {{ font-size: 1.15rem; font-weight: 700; margin: 0 0 3rem; }}
+.pdf-portada .pdf-borrador {{ border: 1.5px solid #000; border-radius: 6px; padding: 0.7rem 0.9rem; margin: 0 0 2rem; }}
+.pdf-portada .pdf-cita {{ margin-top: auto; }}
+.pdf-portada .pdf-cita h2 {{ font-size: 1.05rem; margin: 0 0 0.3rem; }}
+.pdf-portada .pdf-cita p {{ margin: 0 0 1.2rem; }}
+.pdf-portada .pdf-licencia {{ margin: 0; font-size: 0.9rem; color: #333; }}
+.pdf-indice {{ break-after: page; }}
+.pdf-indice h2 {{ font-size: 1.4rem; }}
+.pdf-indice ol {{ padding-left: 1.4rem; line-height: 1.9; }}
+.pdf-pagina {{ break-before: page; }}
+.pdf-pagina h1 {{ margin-top: 0; }}
+.pdf .paso-guia {{ display: contents; }}
+.pdf .tarjeta {{ border: 0; box-shadow: none; padding: 0; margin: 1rem 0; break-before: page; }}
+.pdf .tarjeta .miniatura {{ width: 12cm !important; height: auto !important; margin: 0 auto; border: 1px solid #bbb; }}
+.pdf .descarga, .pdf .cita {{ display: none; }}
+.pdf a {{ color: inherit; text-decoration: none; }}
+.pdf .pdf-indice a, .pdf .texto a[href^="http"], .pdf .explicacion a[href^="http"] {{ color: var(--verde); }}
+</style>
+</head>
+<body class="pdf" data-pie="{html.escape(T["pie_pdf"].format(fecha=fecha))}">
+<section class="pdf-portada">
+<img class="marca" src="../recursos/logo/logo.svg" alt="" width="54" height="54">
+<p class="pdf-comunidad">{html.escape(T["comunidad"])}</p>
+<h1>{html.escape(T["guia"])}</h1>
+<p class="pdf-sub">{html.escape(T["subtitulo"])}</p>
+<p class="pdf-autor">{html.escape(T["autor"])}</p>
+<p class="pdf-borrador">{html.escape(T["borrador_pdf"].format(fecha=fecha, url=URL_SITIO))}</p>
+<div class="pdf-cita"><h2>{html.escape(T["citar"])}</h2><p>{T["cita"]}</p>
+<p class="pdf-licencia">{T["pie_1"]}</p></div>
+</section>
+<nav class="pdf-indice" aria-label="{html.escape(T["contenido"])}"><h2>{html.escape(T["contenido"])}</h2><ol>{"".join(indice)}</ol></nav>
+{"".join(partes)}
+</body>
+</html>
+"""
 
 
 def portada():
@@ -357,20 +459,28 @@ def comprobar_enlaces_internos(idioma):
 
 
 if __name__ == "__main__":
+    con_pdf = "--pdf" in sys.argv
     for idioma in IDIOMAS:
         destino = RAIZ / idioma
         destino.mkdir(exist_ok=True)
-        (destino / "index.html").write_text(pagina_presentacion(idioma), encoding="utf-8")
-        (destino / "guia.html").write_text(pagina_lista(idioma), encoding="utf-8")
+        paginas = {"index.html": pagina_presentacion(idioma), "guia.html": pagina_lista(idioma)}
         for archivo, fuente in PAGINAS[2:]:
-            (destino / archivo).write_text(pagina_texto(idioma, archivo, fuente), encoding="utf-8")
+            paginas[archivo] = pagina_texto(idioma, archivo, fuente)
         for n, (archivo, _, md) in capitulos(idioma).items():
-            (destino / archivo).write_text(pagina_capitulo(idioma, n, archivo, md), encoding="utf-8")
-        (destino / "creditos.html").write_text(pagina_texto(idioma, "creditos.html", "03-creditos.md"), encoding="utf-8")
+            paginas[archivo] = pagina_capitulo(idioma, n, archivo, md)
+        paginas["creditos.html"] = pagina_texto(idioma, "creditos.html", "03-creditos.md")
+        for archivo, contenido in paginas.items():
+            (destino / archivo).write_text(contenido, encoding="utf-8")
         viejo = destino / "presentacion.html"
         if viejo.exists():
             viejo.unlink()
         print("generado", idioma, [a for a, _ in PAGINAS])
+        if con_pdf:
+            # La guía completa: una página sin publicar (completo.html, en .gitignore) que
+            # generar-pdf.js imprime con Chromium. Se publica solo el PDF resultante.
+            (destino / "completo.html").write_text(pagina_completa(idioma, paginas), encoding="utf-8")
+            subprocess.run(["node", str(RAIZ / "generar-pdf.js"), f"{idioma}/completo.html",
+                            f"{idioma}/{PDF.format(idioma=idioma)}"], cwd=RAIZ, check=True)
         rotos = comprobar_enlaces_internos(idioma)
         if rotos:
             print("ENLACES INTERNOS ROTOS:")

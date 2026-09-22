@@ -28,10 +28,27 @@
   }
   sistemaOscuro.addEventListener("change", function (ev) { if (leer() === null) { aplicarTema(ev.matches); } });
 
-  /* ---------- Imprimir ---------- */
+  /* ---------- Imprimir o descargar ---------- */
+  // El botón de la impresora despliega un menú con dos opciones: imprimir la
+  // página o descargar la guía completa en PDF. Se cierra al elegir, al pulsar
+  // fuera o con Escape.
   var imprimir = document.querySelector(".imprimir");
-  if (imprimir) {
-    imprimir.addEventListener("click", function () { window.print(); });
+  var menu = document.querySelector(".menu");
+  if (imprimir && menu) {
+    var abrirMenu = function (abierto) {
+      menu.hidden = !abierto;
+      imprimir.setAttribute("aria-expanded", abierto ? "true" : "false");
+      if (abierto) { menu.querySelector("[role=menuitem]").focus(); }
+    };
+    imprimir.addEventListener("click", function () { abrirMenu(menu.hidden); });
+    menu.querySelector(".menu-imprimir").addEventListener("click", function () { abrirMenu(false); window.print(); });
+    menu.querySelector("a").addEventListener("click", function () { abrirMenu(false); });
+    document.addEventListener("click", function (ev) {
+      if (!menu.hidden && !imprimir.contains(ev.target) && !menu.contains(ev.target)) { abrirMenu(false); }
+    });
+    document.addEventListener("keydown", function (ev) {
+      if (ev.key === "Escape" && !menu.hidden) { abrirMenu(false); imprimir.focus(); }
+    });
   }
 
   /* ---------- Lista y panel ---------- */

@@ -14,6 +14,7 @@ deshaga después de buena fe, ni siquiera nosotros dentro de un año.
 | [6](0006-los-ejemplos-salen-del-catalogo-de-la-comunidad.md) | Los ejemplos de los capítulos salen del catálogo de la comunidad | aceptado |
 | [7](0007-capitulos-en-paginas-propias-con-una-sola-fuente.md) | Cada capítulo tiene su página, y lo que hay que hacer sale de una sola fuente | aceptado |
 | [8](0008-infografia-generada-con-un-script.md) | La infografía es un SVG generado con un script, con iconos de Lucide | aceptado |
+| [9](0009-la-guia-completa-se-publica-en-pdf-generado-desde-la-propia-web.md) | La guía completa se publica en PDF, generado desde la propia web | aceptado |
 
 Para añadir una, se copia [la plantilla](0000-plantilla.md) con el número
 siguiente y se anota aquí. Una decisión que deje de valer no se borra: se marca
