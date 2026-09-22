@@ -10,7 +10,7 @@ Nace en el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca) y se 
 
 | Carpeta o archivo | Contenido |
 | --- | --- |
-| `contenido/<idioma>/` | El texto de la guía en Markdown, un archivo por página, en el orden en que se leen: `00-presentacion.md`, `01-guia.md`, `02-herramientas.md`, `04-para-la-ia.md` y `03-creditos.md`, más un archivo por capítulo en `capitulos/`. Es lo único que hay que editar para cambiar el contenido. |
+| `contenido/<idioma>/` | El texto de la guía en Markdown, un archivo por página, en el orden en que se leen: `00-presentacion.md`, `01-guia.md`, `02-herramientas.md`, `04-para-la-ia.md`, `05-referencias.md` y `03-creditos.md`, más un archivo por capítulo en `capitulos/`. Cada enlace externo del texto debe tener su entrada en las referencias: `construir.py` lo comprueba. Es lo único que hay que editar para cambiar el contenido. |
 | `construir.py` | Genera la web a partir del Markdown. Necesita [pandoc](https://pandoc.org/). Con `--pdf` genera además la guía completa en PDF. |
 | `generar-pdf.js` | Imprime a PDF la guía completa con el Chromium de [Playwright](https://playwright.dev/), instalado de forma global (`npm i -g playwright`). Lo llama `construir.py --pdf`. |
 | `es/`, `index.html` | La web generada, y en `es/vibe-responsable-es.pdf` la guía completa. No se editan a mano. |

@@ -260,6 +260,10 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 }
 
 /* Capítulos */
+/* Referencias: una sola columna, una entrada por párrafo y direcciones que se parten donde haga falta. */
+.pagina-referencias .texto, #pagina-referencias .texto { columns: auto !important; max-width: 46rem; }
+.pagina-referencias .texto li, #pagina-referencias .texto li { margin-bottom: 0.55rem; }
+.pagina-referencias .texto a, #pagina-referencias .texto a { overflow-wrap: anywhere; }
 /* Páginas de texto: una columna de lectura centrada bajo la cabecera, que sigue a todo el ancho. */
 .pagina-texto main.ancho { max-width: 70rem; }
 .pagina-capitulo main.ancho { max-width: 64rem; }
@@ -339,4 +343,6 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   .miniatura { height: auto; width: 9rem; }
   a { color: inherit; text-decoration: none; }
   .texto a[href^="http"]::after, .explicacion a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; word-break: break-all; }
+  /* En las referencias el enlace ya es la dirección: no se repite. */
+  .pagina-referencias .texto a::after, #pagina-referencias .texto a::after { content: none; }
 }

@@ -13,6 +13,7 @@ Páginas por idioma, en el orden en que se leen:
   guia.html           la guía: las diez recomendaciones (01-guia.md)
   herramientas.html   familias de herramientas y los dos niveles (02-herramientas.md)
   para-la-ia.html     los textos para dar a la IA (04-para-la-ia.md)
+  referencias.html    todo lo citado en el texto, enlazada desde el pie (05-referencias.md)
   creditos.html       créditos y licencias, enlazada desde el pie (03-creditos.md)
 
 Los capítulos que desarrollan cada recomendación están en contenido/<idioma>/capitulos/
@@ -74,7 +75,7 @@ UI = {
         "alejar": "Ajustar a la pantalla",
         "niveles": {"Lo mínimo.": "minimo", "Lo recomendado.": "recomendado", "En todos los casos.": "todos"},
         "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Código bajo <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL v3</a> y contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>.',
-        "pie_2": '<a href="creditos.html">Créditos y licencias</a>.',
+        "pie_2": '<a href="referencias.html">Referencias</a> · <a href="creditos.html">Créditos y licencias</a>.',
     },
 }
 PAGINAS = [("index.html", "00-presentacion.md"), ("guia.html", "01-guia.md"),
@@ -299,7 +300,8 @@ def pagina_texto(idioma, archivo, fuente):
         cab, resto = a.split("\n", 1)
         cab = cab.strip()
         h = pandoc(resto.strip())
-        h = h.replace("<ul>", '<ul class="familias">', 1)
+        if archivo == "herramientas.html":
+            h = h.replace("<ul>", '<ul class="familias">', 1)
         h = re.sub(r"<pre[^>]*>",
                    f'<div class="copiable"><p class="copiable-cab solo-js">'
                    f'<button type="button" class="copiar discreto" data-hecho="{html.escape(T["copiado"])}">{html.escape(T["copiar"])}</button></p><pre>',
@@ -312,7 +314,8 @@ def pagina_texto(idioma, archivo, fuente):
         secciones.append(f'<section class="apartado" id="{ancla(T["citar"])}" aria-labelledby="h-{ancla(T["citar"])}">'
                          f'<h2 id="h-{ancla(T["citar"])}">{html.escape(T["citar"])}</h2><div class="texto"><p>{T["cita"]}</p></div></section>')
     cuerpo = f'<h1>{html.escape(titulo)}</h1>\n' + "\n".join(secciones)
-    return marco(idioma, archivo, titulo, cuerpo, "pagina-texto")
+    clase = "pagina-texto pagina-referencias" if archivo == "referencias.html" else "pagina-texto"
+    return marco(idioma, archivo, titulo, cuerpo, clase)
 
 
 def pagina_capitulo(idioma, n, archivo, md):
@@ -355,9 +358,10 @@ def pagina_completa(idioma, paginas):
     caps = capitulos(idioma)
     titulos = {a: titulo_de((RAIZ / "contenido" / idioma / m).read_text(encoding="utf-8")) for a, m in PAGINAS}
     titulos["creditos.html"] = titulo_de((RAIZ / "contenido" / idioma / "03-creditos.md").read_text(encoding="utf-8"))
+    titulos["referencias.html"] = titulo_de((RAIZ / "contenido" / idioma / "05-referencias.md").read_text(encoding="utf-8"))
     orden = [("index.html", titulos["index.html"]), ("guia.html", titulos["guia.html"])]
     orden += [(a, f"{T['capitulo'].format(n=n)}. {t}") for n, (a, t, _) in sorted(caps.items())]
-    orden += [(a, titulos[a]) for a in ("herramientas.html", "para-la-ia.html", "creditos.html")]
+    orden += [(a, titulos[a]) for a in ("herramientas.html", "para-la-ia.html", "referencias.html", "creditos.html")]
     partes, indice = [], []
     for archivo, titulo in orden:
         clave = archivo[:-5]
@@ -441,6 +445,25 @@ var e=n.filter(function(x){{return d.indexOf(x)>-1;}})[0]||"es";location.replace
 """
 
 
+def comprobar_referencias(idioma):
+    """Cada enlace externo del texto debe estar en 05-referencias.md, y al revés.
+
+    Quedan fuera los créditos, que hablan de la propia guía. Devuelve dos listas: las
+    direcciones citadas que faltan en las referencias y las referencias que ya no se citan."""
+    carpeta = RAIZ / "contenido" / idioma
+    patron = r'\]\((https?://[^)\s]+)\)'
+    citados = {}
+    for md in sorted(carpeta.glob("*.md")) + sorted((carpeta / "capitulos").glob("*.md")):
+        if md.name in ("03-creditos.md", "05-referencias.md"):
+            continue
+        for url in re.findall(patron, md.read_text(encoding="utf-8")):
+            citados.setdefault(url, md.name)
+    referencias = set(re.findall(r"https?://[^\s)>\]]+", (carpeta / "05-referencias.md").read_text(encoding="utf-8")))
+    faltan = [f"{url} ({md})" for url, md in citados.items() if url not in referencias]
+    sobran = [url for url in referencias if url not in citados and url != URL_SITIO.rstrip("/") and not url.startswith(URL_SITIO)]
+    return faltan, sobran
+
+
 def comprobar_enlaces_internos(idioma):
     """Revisa que cada enlace interno de las páginas generadas lleve a un archivo y a un ancla que existen."""
     base, rotos = RAIZ / idioma, []
@@ -468,6 +491,7 @@ if __name__ == "__main__":
             paginas[archivo] = pagina_texto(idioma, archivo, fuente)
         for n, (archivo, _, md) in capitulos(idioma).items():
             paginas[archivo] = pagina_capitulo(idioma, n, archivo, md)
+        paginas["referencias.html"] = pagina_texto(idioma, "referencias.html", "05-referencias.md")
         paginas["creditos.html"] = pagina_texto(idioma, "creditos.html", "03-creditos.md")
         for archivo, contenido in paginas.items():
             (destino / archivo).write_text(contenido, encoding="utf-8")
@@ -486,6 +510,14 @@ if __name__ == "__main__":
             print("ENLACES INTERNOS ROTOS:")
             for r in rotos:
                 print("  ", r)
+            raise SystemExit(1)
+        faltan, sobran = comprobar_referencias(idioma)
+        if faltan or sobran:
+            print("REFERENCIAS (05-referencias.md):")
+            for r in faltan:
+                print("   falta la referencia de", r)
+            for r in sobran:
+                print("   ya no se cita en el texto:", r)
             raise SystemExit(1)
     (RAIZ / "index.html").write_text(portada(), encoding="utf-8")
     (RAIZ / ".nojekyll").write_text("", encoding="utf-8")

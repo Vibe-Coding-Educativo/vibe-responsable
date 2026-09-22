@@ -30,8 +30,10 @@ de los archivos de `contenido/<idioma>/` y el del menú:
 3. **Herramientas y niveles** (`02-herramientas.md`).
 4. **Instrucciones para la IA** (`04-para-la-ia.md`): los textos para copiar.
 
-Fuera del menú quedan **Créditos y licencias** (`03-creditos.md`), enlazada
-desde el pie, y los diez capítulos, que regula el
+Fuera del menú quedan **Referencias** (`05-referencias.md`), con todo lo que
+el texto cita y una comprobación en `construir.py` de que no falta ni sobra
+ninguna, **Créditos y licencias** (`03-creditos.md`), las dos enlazadas desde el
+pie, y los diez capítulos, que regula el
 [ADR 7](0007-capitulos-en-paginas-propias-con-una-sola-fuente.md). El pie ocupa
 una línea, con la autoría, las dos licencias y el enlace a los créditos.
 

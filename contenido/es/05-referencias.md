@@ -1,0 +1,81 @@
+# Referencias
+
+## Normativa
+
+- España. (1996). Real Decreto Legislativo 1/1996, de 12 de abril, por el que se aprueba el texto refundido de la Ley de Propiedad Intelectual. *Boletín Oficial del Estado*. Texto consolidado: <https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930>
+- España. (2018). Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. *Boletín Oficial del Estado*. Texto consolidado: <https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673>
+- Reino Unido. (1988). *Copyright, Designs and Patents Act 1988*, sección 9, «Authorship of work». legislation.gov.uk. <https://www.legislation.gov.uk/ukpga/1988/48/section/9>
+- Unión Europea. (2016). Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos (Reglamento General de Protección de Datos). *Diario Oficial de la Unión Europea*. <https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32016R0679>
+- Unión Europea. (2016). Directiva (UE) 2016/2102 del Parlamento Europeo y del Consejo, de 26 de octubre de 2016, sobre la accesibilidad de los sitios web y aplicaciones para dispositivos móviles de los organismos del sector público. *Diario Oficial de la Unión Europea*. <https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32016L2102>
+- Unión Europea. (2024). Reglamento (UE) 2024/1689 del Parlamento Europeo y del Consejo, de 13 de junio de 2024, por el que se establecen normas armonizadas en materia de inteligencia artificial (Reglamento de Inteligencia Artificial). *Diario Oficial de la Unión Europea*. <https://eur-lex.europa.eu/eli/reg/2024/1689/oj/spa>
+- UNESCO. (2019). *Recomendación sobre los Recursos Educativos Abiertos (REA)*. <https://www.unesco.org/es/legal-affairs/recommendation-open-educational-resources-oer>
+
+## Guías, informes y recomendaciones
+
+- Agencia Española de Protección de Datos. (2018). *Guía para centros educativos*. <https://www.aepd.es/documento/guia-centros-educativos.pdf>
+- Creative Commons. (2024). *Recommended practices for attribution*. Creative Commons Wiki. <https://wiki.creativecommons.org/wiki/Recommended_practices_for_attribution>
+- Creative Commons. (s. f.). *Licencia Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)*. <https://creativecommons.org/licenses/by-sa/4.0/deed.es>
+- Free Software Foundation. (s. f.). *¿Qué es el software libre?* Proyecto GNU. <https://www.gnu.org/philosophy/free-sw.es.html>
+- Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado. (2026). *Guía sobre el uso de la inteligencia artificial en el ámbito educativo* (versión 2.0). Ministerio de Educación, Formación Profesional y Deportes. <https://code.intef.es/wp-content/uploads/2026/09/ACTUALIZACI%C3%93N-GU%C3%8DA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5.pdf>
+- UNICEF Innocenti. (2025). *Guidance on AI and children* (versión 3.0). UNICEF Office of Strategy and Evidence – Innocenti. <https://www.unicef.org/innocenti/reports/policy-guidance-ai-children>
+- United States Copyright Office. (2025, 29 de enero). Copyright Office releases part 2 of artificial intelligence report. *NewsNet*, 1060. <https://www.copyright.gov/newsnet/2025/1060.html>
+- W3C Web Accessibility Initiative. (2025). *Introducción a la accesibilidad web* (traducción de la versión de 2024). <https://www.w3.org/WAI/fundamentals/accessibility-intro/es>
+- W3C Web Accessibility Initiative. (2025). *Sumario de WCAG 2* (traducción de la versión de 2025). <https://www.w3.org/WAI/standards-guidelines/wcag/es>
+- W3C Web Accessibility Initiative. (2025). *Visión general sobre la evaluación de la accesibilidad web* (traducción de la versión de 2023). <https://www.w3.org/WAI/test-evaluate/es>
+
+## Artículos y ponencias
+
+- CEDEC. (2026, 28 de mayo). Mantener la «A» de abierto en los REA en tiempos de IA. *Cedec*, INTEF. <https://cedec.intef.es/mantener-la-a-de-abierto-en-los-rea-en-tiempos-de-ia/>
+- CEDEC. (2026, 6 de julio). *Crear REA con eXeLearning en tiempos de IA* [ponencia en la Jornada sobre Software Libre e Inteligencia Artificial Abierta, seLIA]. INTEF. <https://descargas.intef.es/cedec/formacion/SL_REA_IA_julio26/index.html>. Apartado «La IA y el código»: <https://descargas.intef.es/cedec/formacion/SL_REA_IA_julio26/html/la-ia-y-el-codigo.html>
+- CEDEC. (2026, 17 de septiembre). Cedec en seLIA: dos miradas sobre IA, software libre y recursos educativos abiertos. *Cedec*, INTEF. <https://cedec.intef.es/cedec-en-selia-dos-miradas-sobre-ia-software-libre-y-recursos-educativos-abiertos/>
+- De Haro, J. J. (2025, 5 de septiembre). Licencias libres para docentes: apps educativas y materiales didácticos. *Bilateria*. <https://educacion.bilateria.org/licencias-libres-para-docentes-apps-educativas-y-materiales-didacticos/>
+- De Haro, J. J. (2026, 6 de septiembre). Marco para la integración de la IA generativa en las tareas educativas (MIAE), versión 2.1. *Bilateria*. <https://educacion.bilateria.org/marco-para-la-integracion-de-la-ia-generativa-en-las-tareas-educativas-miae-v-2-1>. Versión interactiva: <https://jjdeharo.github.io/miae/>
+- De Haro, J. J. (2026, 10 de septiembre). Consolas de IA: qué son y cómo se instalan. *Bilateria*. <https://educacion.bilateria.org/consolas-de-ia-en-2026-que-son-como-se-instalan-y-que-cuestan-ahora/>
+- Karpathy, A. (2025, 2 de febrero). There's a new kind of coding I call «vibe coding» [publicación en X]. <https://x.com/karpathy/status/1886192184808149383>
+- Sansec. (2024, 25 de junio). Polyfill supply chain attack hits 100K+ sites. *Sansec Research*. <https://sansec.io/research/polyfill-supply-chain-attack>
+- Serrano, E. (2026, 6 de julio). *Inteligencia artificial: programar, documentar y no acabar en un berenjenal* [ponencia en la Jornada sobre Software Libre e Inteligencia Artificial Abierta, seLIA]. <https://erseco.github.io/talks/charlas/2026-07-06-selia-ia-programar-documentar/unit/index.html>
+- Wang, Y., y Zhang, J. (2024, 2 de febrero). Beijing Internet Court grants copyright to AI-generated image for the first time. *Kluwer Copyright Blog*. <https://legalblogs.wolterskluwer.com/copyright-blog/beijing-internet-court-grants-copyright-to-ai-generated-image-for-the-first-time/>
+
+## Condiciones de uso de los servicios de IA
+
+Consultadas en septiembre de 2026.
+
+- Anthropic. (s. f.). *Consumer Terms of Service*. <https://www.anthropic.com/legal/consumer-terms>
+- Google. (s. f.). *Términos del Servicio de Google*. <https://policies.google.com/terms?hl=es>
+- OpenAI. (s. f.). *EU Terms of Use*. <https://openai.com/policies/eu-terms-of-use/>
+
+## Ejemplos de la comunidad educativa
+
+Aplicaciones y materiales citados como ejemplo, la mayoría del catálogo de la comunidad [Vibe Coding Educativo](https://t.me/vceduca).
+
+- Boixader, E. (s. f.). *Magnitudes y unidades* [juego]. <https://eboixader.github.io/magnitunid/>
+- De Haro, J. J. (s. f.). *Plantilla correctora digital (PCD)*. <https://jjdeharo.github.io/pcd/>
+- El profe de la bata. (s. f.). *IAGuar* [aplicación de gestión de guardias]. <https://elprofedelabata.es/iaguar/>
+- Emmarin04. (s. f.). *¿Quién quiere ser millonario? La función lineal* [juego]. <https://emmarin04.github.io/Juego_Millonario/>
+- expliCarlos. (s. f.). *Elige tu IA* [guía interactiva]. <https://explikarlos.github.io/elige-ia/>. Registro de decisiones: <https://github.com/explikarlos/elige-ia/blob/main/docs/decisions/ADR-001-static-pages.md>
+- González García, A. (s. f.). *Simulador del plano inclinado con rozamiento*. IES Majuelo. <https://onio72.github.io/iesmajuelo/bach/fq1/planoincroz/>
+- Guízar, P. G. (s. f.). *Quiz del Sistema Solar*. <https://pablogguizar.github.io/quiz/>. Repositorio: <https://github.com/PabloGGuizar/quiz>
+- Guízar, P. G. (s. f.). *Guía de seguridad para aplicaciones con Google Sheets*. <https://pablogguizar.github.io/apps-with-google-sheets/>
+- Guízar, P. G. (s. f.). *Generador SCORM de certificado de finalización*. <https://github.com/PabloGGuizar/generador-scorm-de-certificado-de-finalizacion>
+- Guízar, P. G. (s. f.). *Buzzer WebRTC*. <https://pablogguizar.github.io/buzzer-webrtc/>
+- Lostalé, I. (s. f.). *Cuaderno del Profesorado* (versión 1.0). <https://github.com/imanlost/CuadernoProfesorado-v1.0>
+- Miralles Bono, J. L. (s. f.). *ScoreSpacer*. <https://jlmirallesb.github.io/ScoreSpacer/>
+- OpenWorksheets. (s. f.). *OpenWorksheets* [fichas interactivas]. <https://openworksheets.github.io/>
+- Sarroca, F. (s. f.). *MCD y mcm* [guía interactiva]. <https://felipsarroca.github.io/edu-apps/MCD-mcm/>
+- Sarroca, F. (s. f.). *Tantrix* [juego]. <https://felipsarroca.github.io/jocs/Tantrix/>
+- Vibe Coding Educativo. (2026). *Registro de decisiones de esta guía*. <https://github.com/Vibe-Coding-Educativo/vibe-responsable/tree/main/docs/adr>
+
+## Herramientas mencionadas
+
+Ejemplos de las cuatro familias de herramientas que describe la página «Herramientas y niveles», tal como estaban disponibles en 2026.
+
+- Anthropic. *Claude*: <https://claude.ai/>. *Claude Code*: <https://claude.com/product/claude-code>
+- Bolt: <https://bolt.new/>
+- Canva: <https://www.canva.com/>
+- Cursor: <https://cursor.com/>
+- GitHub: <https://github.com/>
+- Google. *Gemini*: <https://gemini.google.com/>. *Google AI Studio*: <https://aistudio.google.com/>. *Antigravity*: <https://antigravity.google/>
+- Lovable: <https://lovable.dev/>
+- Microsoft. *Visual Studio Code*: <https://code.visualstudio.com/>
+- OpenAI. *ChatGPT*: <https://chatgpt.com/>. *Codex CLI*: <https://developers.openai.com/codex/cli>
+- Replit: <https://replit.com/>

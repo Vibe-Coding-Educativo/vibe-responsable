@@ -8,7 +8,7 @@ El reconocimiento de la autoría es una cuestión de respeto hacia el trabajo de
 
 ## Los datos de una atribución
 
-Creative Commons recomienda en sus [buenas prácticas de atribución](https://creativecommons.org/use-remix/attribution/) que cada elemento ajeno vaya acompañado de cuatro datos:
+Creative Commons recomienda en sus [prácticas recomendadas de atribución](https://wiki.creativecommons.org/wiki/Recommended_practices_for_attribution) que cada elemento ajeno vaya acompañado de cuatro datos:
 
 - **El título** de la obra, si lo tiene.
 - **La autoría**, con el nombre o el nombre de usuario de su autor.

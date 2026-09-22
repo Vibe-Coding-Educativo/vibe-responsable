@@ -23,7 +23,7 @@ El PDF sale de las mismas páginas que la web: `construir.py` junta el contenido
 de todas en una sola página intermedia (`es/completo.html`, que no se publica y
 está en `.gitignore`), con una portada, un índice enlazado y las páginas en el
 orden de lectura: presentación, lista, los diez capítulos, herramientas,
-instrucciones y créditos. Los enlaces entre páginas pasan a ser anclas dentro
+instrucciones, referencias y créditos. Los enlaces entre páginas pasan a ser anclas dentro
 del documento. La portada lleva el título, el autor, la fecha, el aviso de
 borrador mientras lo sea, la licencia y el apartado «Cómo citar», con la misma
 cita que la página de créditos de la web; cuando exista el DOI, se añadirá en
