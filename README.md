@@ -30,7 +30,7 @@ La web no usa bibliotecas ni servicios externos, y no recoge ningún dato; lo ú
 
 ## Cómo se ha hecho
 
-La guía se elabora en el nivel 4 del [MIAE](https://jjdeharo.github.io/miae/es/), la colaboración avanzada entre la persona y la IA. El texto y el código se han escrito en diálogo con Claude Code. El autor ha dirigido y corregido el contenido, ha contrastado las afirmaciones con sus fuentes y ha revisado el resultado. La web se ha probado en Chromium, Firefox y WebKit, en escritorio, tableta y móvil, con tema claro y oscuro. Las decisiones tomadas durante la elaboración están en [`docs/adr`](docs/adr/README.md).
+La guía se elabora en el nivel 4 del [MIAE](https://jjdeharo.github.io/miae/es/?nivel=4), la colaboración avanzada entre la persona y la IA. El texto y el código se han escrito en diálogo con Claude Code. El autor ha dirigido y corregido el contenido, ha contrastado las afirmaciones con sus fuentes y ha revisado el resultado. La web se ha probado en Chromium, Firefox y WebKit, en escritorio, tableta y móvil, con tema claro y oscuro. Las decisiones tomadas durante la elaboración están en [`docs/adr`](docs/adr/README.md).
 
 ## Licencias
 

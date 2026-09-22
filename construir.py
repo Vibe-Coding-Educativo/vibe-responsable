@@ -459,7 +459,9 @@ def comprobar_referencias(idioma):
         for url in re.findall(patron, md.read_text(encoding="utf-8")):
             citados.setdefault(url, md.name)
     referencias = set(re.findall(r"https?://[^\s)>\]]+", (carpeta / "05-referencias.md").read_text(encoding="utf-8")))
-    faltan = [f"{url} ({md})" for url, md in citados.items() if url not in referencias]
+    # Una dirección con parámetros (…/miae/es/?nivel=4) cuenta como citada si la referencia
+    # es la misma página sin ellos; una referencia con parámetros propios no vale para otra.
+    faltan = [f"{url} ({md})" for url, md in citados.items() if url not in referencias and url.split("?")[0] not in referencias]
     sobran = [url for url in referencias if url not in citados and url != URL_SITIO.rstrip("/") and not url.startswith(URL_SITIO)]
     return faltan, sobran
 
