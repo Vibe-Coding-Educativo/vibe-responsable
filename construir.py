@@ -459,10 +459,19 @@ def comprobar_referencias(idioma):
         for url in re.findall(patron, md.read_text(encoding="utf-8")):
             citados.setdefault(url, md.name)
     referencias = set(re.findall(r"https?://[^\s)>\]]+", (carpeta / "05-referencias.md").read_text(encoding="utf-8")))
-    # Una dirección con parámetros (…/miae/es/?nivel=4) cuenta como citada si la referencia
-    # es la misma página sin ellos; una referencia con parámetros propios no vale para otra.
-    faltan = [f"{url} ({md})" for url, md in citados.items() if url not in referencias and url.split("?")[0] not in referencias]
-    sobran = [url for url in referencias if url not in citados and url != URL_SITIO.rstrip("/") and not url.startswith(URL_SITIO)]
+    # Una dirección cuenta como citada si la referencia es la misma página sin sus parámetros
+    # (…/miae/?nivel=4) o la portada de esa web citada en un idioma (…/miae/es/ → …/miae/);
+    # una referencia con parámetros propios no vale para otra.
+    def variantes(url):
+        base = url.split("?")[0]
+        v = {url, base}
+        idioma_final = re.match(r"(.*/)(es|ca|gl|eu|en)/$", base)
+        if idioma_final:
+            v.add(idioma_final.group(1))
+        return v
+    faltan = [f"{url} ({md})" for url, md in citados.items() if not (variantes(url) & referencias)]
+    citadas = set().union(*(variantes(u) for u in citados)) if citados else set()
+    sobran = [url for url in referencias if url not in citadas and not url.startswith(URL_SITIO.rstrip("/"))]
     return faltan, sobran
 
 
