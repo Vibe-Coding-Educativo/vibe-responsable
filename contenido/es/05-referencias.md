@@ -46,23 +46,23 @@ Consultadas en septiembre de 2026.
 
 ## Ejemplos de la comunidad educativa
 
-Aplicaciones y materiales citados como ejemplo, la mayoría del catálogo de la comunidad [Vibe Coding Educativo](https://t.me/vceduca).
+Aplicaciones y materiales citados como ejemplo, la mayoría del [catálogo](https://vibe-coding-educativo.github.io/app_edu/) de la comunidad [Vibe Coding Educativo](https://t.me/vceduca). El año es el de su alta en el catálogo o, para los que no están en él, el de la creación de su repositorio.
 
-- Boixader, E. (s. f.). *Magnitudes y unidades* [juego]. <https://eboixader.github.io/magnitunid/>
-- De Haro, J. J. (s. f.). *Plantilla correctora digital (PCD)*. <https://jjdeharo.github.io/pcd/>
-- El profe de la bata. (s. f.). *IAGuar* [aplicación de gestión de guardias]. <https://elprofedelabata.es/iaguar/>
-- Emmarin04. (s. f.). *¿Quién quiere ser millonario? La función lineal* [juego]. <https://emmarin04.github.io/Juego_Millonario/>
-- expliCarlos. (s. f.). *Elige tu IA* [guía interactiva]. <https://explikarlos.github.io/elige-ia/>. Registro de decisiones: <https://github.com/explikarlos/elige-ia/blob/main/docs/decisions/ADR-001-static-pages.md>
-- González García, A. (s. f.). *Simulador del plano inclinado con rozamiento*. IES Majuelo. <https://onio72.github.io/iesmajuelo/bach/fq1/planoincroz/>
-- Guízar, P. G. (s. f.). *Quiz del Sistema Solar*. <https://pablogguizar.github.io/quiz/>. Repositorio: <https://github.com/PabloGGuizar/quiz>
-- Guízar, P. G. (s. f.). *Guía de seguridad para aplicaciones con Google Sheets*. <https://pablogguizar.github.io/apps-with-google-sheets/>
-- Guízar, P. G. (s. f.). *Generador SCORM de certificado de finalización*. <https://github.com/PabloGGuizar/generador-scorm-de-certificado-de-finalizacion>
-- Guízar, P. G. (s. f.). *Buzzer WebRTC*. <https://pablogguizar.github.io/buzzer-webrtc/>
-- Lostalé, I. (s. f.). *Cuaderno del Profesorado* (versión 1.0). <https://github.com/imanlost/CuadernoProfesorado-v1.0>
-- Miralles Bono, J. L. (s. f.). *ScoreSpacer*. <https://jlmirallesb.github.io/ScoreSpacer/>
-- De Haro, J. J. (s. f.). *OpenWorksheets: fichas interactivas autocorregibles*. <https://openworksheets.github.io/>
-- Sarroca, F. (s. f.). *MCD y mcm* [guía interactiva]. <https://felipsarroca.github.io/edu-apps/MCD-mcm/>
-- Sarroca, F. (s. f.). *Tantrix* [juego]. <https://felipsarroca.github.io/jocs/Tantrix/>
+- Boixader, E. (2025). *¿Quién quiere ser millonario? Magnitudes y unidades* [juego]. <https://eboixader.github.io/magnitunid/>
+- De Haro, J. J. (2025). *Plantilla correctora digital para exámenes tipo test (PCD)*. <https://jjdeharo.github.io/pcd/>
+- De Haro, J. J. (2026). *OpenWorksheets: creación de fichas interactivas y autocorregibles*. <https://openworksheets.github.io/>
+- El profe de la bata. (2026). *IAGuar: implementación automatizada de guardias*. <https://elprofedelabata.es/iaguar/>
+- Emmarin04. (2025). *¿Quién quiere ser millonario? Función lineal* [juego]. <https://emmarin04.github.io/Juego_Millonario/>
+- expliCarlos. (2026). *Elige tu IA: guía interactiva para docentes*. <https://explikarlos.github.io/elige-ia/>. Registro de decisiones: <https://github.com/explikarlos/elige-ia/blob/main/docs/decisions/ADR-001-static-pages.md>
+- González García, A. (2025). *Simulador interactivo: plano inclinado con rozamiento*. IES Majuelo. <https://onio72.github.io/iesmajuelo/bach/fq1/planoincroz/>
+- Guízar, P. G. (2025). *Generador SCORM de certificado de finalización*. <https://github.com/PabloGGuizar/generador-scorm-de-certificado-de-finalizacion>
+- Guízar, P. G. (2025). *Buzzer WebRTC*. <https://pablogguizar.github.io/buzzer-webrtc/>
+- Guízar, P. G. (2026). *Quiz interactivo: exploradores del Sistema Solar*. <https://pablogguizar.github.io/quiz/>. Repositorio: <https://github.com/PabloGGuizar/quiz>
+- Guízar, P. G. (2026). *Guía de seguridad para aplicaciones con Google Sheets*. <https://pablogguizar.github.io/apps-with-google-sheets/>
+- Lostalé, I. (2026). *Cuaderno del Profesorado: gestor académico local* (versión 1.0). <https://github.com/imanlost/CuadernoProfesorado-v1.0>
+- Miralles Bono, J. L. (2026). *ScoreSpacer: añade espacio entre pentagramas*. <https://jlmirallesb.github.io/ScoreSpacer/>
+- Sarroca, F. (2025). *MCD y mcm: guía interactiva de aprendizaje*. <https://felipsarroca.github.io/edu-apps/MCD-mcm/>
+- Sarroca, F. (2026). *Tantrix Discovery* [juego]. <https://felipsarroca.github.io/jocs/Tantrix/>
 - Vibe Coding Educativo. (2026). *Registro de decisiones de esta guía*. <https://github.com/Vibe-Coding-Educativo/vibe-responsable/tree/main/docs/adr>
 
 ## Herramientas mencionadas
