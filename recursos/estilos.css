@@ -1,4 +1,4 @@
-/* Guía para publicar materiales educativos creados con vibe coding.
+/* Vibe coding responsable: guía para publicar materiales educativos creados con vibe coding.
    Sin bibliotecas: la tipografía está en recursos/fuentes y el aspecto claro u
    oscuro sigue la preferencia del dispositivo. Colores: pizarra del aula,
    papel, tinta verde para «Lo mínimo» y tinta azul para «Lo recomendado». */
@@ -61,7 +61,8 @@ h1 { font-size: clamp(1.55rem, 1.05rem + 1.5vw, 2.3rem); line-height: 1.12; lett
 .sitio { align-items: center; }
 .sitio .sitio-guia { display: inline-flex; align-items: center; gap: 0.6rem; }
 .marca { display: block; width: 1.75rem; height: 1.75rem; border-radius: 6px; box-shadow: 0 0 0 1px rgba(243, 241, 231, 0.35); }
-.sitio .sitio-comunidad { color: var(--tiza-suave); font-weight: 400; }
+.sitio .sitio-guia span { font-weight: 700; }
+.sitio .sitio-desc { color: var(--tiza-suave); }
 .estado { font-size: 0.78rem; font-weight: 700; border: 1px solid #b8860b; color: #1a1400; background: #f2b705; border-radius: 999px; padding: 0.1rem 0.65rem; cursor: help; }
 .globo { position: absolute; z-index: 15; top: calc(100% + 0.5rem); left: 0; width: min(22rem, calc(100vw - 2.5rem)); padding: 0.7rem 0.85rem; border-radius: 6px; background: var(--hoja); color: var(--tinta); border: 1px solid var(--raya); box-shadow: var(--sombra); font-size: 0.92rem; line-height: 1.4; opacity: 0; visibility: hidden; transform: translateY(-0.25rem); transition: opacity 0.16s ease, transform 0.16s ease, visibility 0s linear 0.16s; }
 .estado:hover .globo, .estado:focus .globo, .estado:focus-within .globo { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
@@ -144,8 +145,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   .sitio { gap: 0.15rem 0.6rem; }
   .js .utiles { gap: 0.3rem; }
   .utiles > button, .desplegable > button { padding: 0.25rem; }
-  .sitio .sitio-guia span { display: none; }
-  .sitio .sitio-comunidad { color: var(--tiza); font-weight: 700; }
+  .sitio .sitio-desc { display: none; }
   .pizarra nav ul { gap: 0 1.1rem; }
   .pizarra nav a { font-size: 0.9rem; padding: 0.2rem 0; }
   h1 { font-size: 1.5rem; margin: 0.8rem 0 0.7rem; }
@@ -367,7 +367,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   .pizarra { background: none; color: #000; border-bottom: 2px solid #000; }
   /* En papel no hay navegación: ni el menú, ni volver, continuar, anterior o siguiente. */
   .pizarra nav, .globo, .saltar, .migas, .entre-capitulos, .continuar, .copiable-cab, .detalle-pie, .visor, .utiles, .archivo-ia summary { display: none !important; }
-  .sitio a, .sitio .sitio-comunidad { color: #000; }
+  .sitio a, .sitio .sitio-desc { color: #000; }
   /* El aviso de borrador también en papel: solo con borde, por si no se imprimen los fondos. */
   .estado { background: none; color: #000; border: 1.5px solid #000; }
   .tablero, .panel { display: block; }

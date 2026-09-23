@@ -29,7 +29,6 @@ RAIZ = Path(__file__).parent
 IDIOMAS = ["es"]                      # se amplía al añadir contenido/<idioma>/
 URL_SITIO = "https://vibe-coding-educativo.github.io/vibe-responsable/"
 REPO = "https://github.com/Vibe-Coding-Educativo/vibe-responsable"
-COMUNIDAD = "https://vibe-coding-educativo.github.io/"   # mismo dominio: se abre en la misma pestaña
 CLAVE_TEMA = "vibe-responsable:tema"   # única entrada en localStorage; la misma en recursos/guia.js
 PDF = "vibe-responsable-{idioma}.pdf"  # la guía completa, generada con --pdf y publicada junto a las páginas
 # Los archivos para la IA: cada uno está en contenido/<idioma>/ y se publica con otro nombre para
@@ -41,6 +40,7 @@ ICONOS = ["book-check", "shield-check", "creative-commons", "bot", "messages-squ
 
 UI = {
     "es": {
+        "nombre": "Vibe coding responsable",   # nombre corto: cabecera, pestaña, portada del PDF y cita
         "guia": "Guía para publicar materiales educativos creados con vibe coding",
         "comunidad": "Vibe Coding Educativo",
         "saltar": "Saltar al contenido",
@@ -55,13 +55,12 @@ UI = {
         "pdf_desc": "Todas las páginas en un solo documento",
         "tema": "Modo claro u oscuro",
         "citar": "Cómo citar",
-        "cita": 'De Haro, J. J. (2026). <i>Guía para publicar materiales educativos creados con vibe coding</i> (borrador). Vibe Coding Educativo. <a href="https://vibe-coding-educativo.github.io/vibe-responsable/">https://vibe-coding-educativo.github.io/vibe-responsable/</a>',
-        "subtitulo": "Guía ética y de responsabilidad, no técnica, para la comunidad educativa",
-        "autor": "Juan José de Haro",
+        "cita": 'De Haro, J. J. (2026). <i>Vibe coding responsable: guía para publicar materiales educativos creados con vibe coding</i> (borrador). Vibe Coding Educativo. <a href="https://vibe-coding-educativo.github.io/vibe-responsable/">https://vibe-coding-educativo.github.io/vibe-responsable/</a>',
+                "autor": "Juan José de Haro",
         "borrador_pdf": "Borrador del {fecha}. La guía está completa, pero su autor la está revisando y el texto puede cambiar. La versión al día está en {url}.",
         "contenido": "Contenido",
         "capitulo": "Capítulo {n}",
-        "pie_pdf": "Guía para publicar materiales educativos creados con vibe coding · Juan José de Haro · CC BY-SA 4.0 · Borrador, {fecha}",
+        "pie_pdf": "Vibe coding responsable · Juan José de Haro · CC BY-SA 4.0 · Borrador, {fecha}",
         "meses": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
         "infografia_titulo": "Resumen gráfico",
         "infografia_alt": "Infografía con las diez recomendaciones, las mismas que aparecen en la lista.",
@@ -78,7 +77,7 @@ UI = {
         "copiado": "Texto copiado",
         "descargar_archivo": "Descargar el archivo",
         "ver_archivo": {"instrucciones": "Ver las instrucciones para crear", "evaluacion": "Ver las instrucciones para evaluar"},
-        "rubrica": "Rúbrica de evaluación: 2, se cumple; 1, en parte; 0, no se cumple",
+        "rubrica": "Rúbrica del vibe coding responsable: 2, se cumple; 1, en parte; 0, no se cumple",
         "punto": "Recomendación",
         "acercar": "Ver a tamaño de lectura",
         "alejar": "Ajustar a la pantalla",
@@ -149,8 +148,8 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{html.escape(titulo)} | {html.escape(T["guia"])}</title>
-<meta name="description" content="{html.escape(T["guia"])}. {html.escape(titulo)}.">
+<title>{html.escape(titulo)} | {html.escape(T["nombre"])}</title>
+<meta name="description" content="{html.escape(T["nombre"])}: {html.escape(T["guia"][0].lower() + T["guia"][1:])}. {html.escape(titulo)}.">
 <meta name="author" content="Juan José de Haro">
 <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
 <meta property="og:title" content="{html.escape(titulos["guia.html"])}">
@@ -169,8 +168,8 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 <a class="saltar" href="#contenido">{html.escape(T["saltar"])}</a>
 <header class="pizarra">
 <div class="ancho pizarra-int">
-<p class="sitio"><a class="sitio-guia" href="./" aria-label="{html.escape(T["guia"])}"><img class="marca" src="../recursos/logo/logo.svg" alt="" width="30" height="30"><span>{html.escape(T["guia"])}</span></a>
-<a class="sitio-comunidad" href="{COMUNIDAD}">{html.escape(T["comunidad"])}</a>
+<p class="sitio"><a class="sitio-guia" href="./"><img class="marca" src="../recursos/logo/logo.svg" alt="" width="30" height="30"><span>{html.escape(T["nombre"])}</span></a>
+<span class="sitio-desc">{html.escape(T["guia"])}</span>
 <span class="estado" tabindex="0">{html.escape(T["borrador"])}<span class="globo">{html.escape(T["borrador_ayuda"])}</span></span></p>
 <nav aria-label="{html.escape(T["nav"])}"><ul>{"".join(nav)}</ul></nav>
 <div class="utiles">
@@ -442,7 +441,7 @@ def pagina_completa(idioma, paginas):
 <html lang="{idioma}" data-theme="light">
 <head>
 <meta charset="utf-8">
-<title>{html.escape(T["guia"])}</title>
+<title>{html.escape(T["nombre"])}</title>
 <link rel="stylesheet" href="../recursos/estilos.css?v={version("recursos/estilos.css")}">
 <style>
 /* Solo para la impresión a PDF de la guía completa */
@@ -476,8 +475,8 @@ def pagina_completa(idioma, paginas):
 <section class="pdf-portada">
 <img class="marca" src="../recursos/logo/logo.svg" alt="" width="54" height="54">
 <p class="pdf-comunidad">{html.escape(T["comunidad"])}</p>
-<h1>{html.escape(T["guia"])}</h1>
-<p class="pdf-sub">{html.escape(T["subtitulo"])}</p>
+<h1>{html.escape(T["nombre"])}</h1>
+<p class="pdf-sub">{html.escape(T["guia"])}</p>
 <p class="pdf-autor">{html.escape(T["autor"])}</p>
 <p class="pdf-borrador">{html.escape(T["borrador_pdf"].format(fecha=fecha, url=URL_SITIO))}</p>
 <div class="pdf-cita"><h2>{html.escape(T["citar"])}</h2><p>{T["cita"]}</p>
@@ -498,7 +497,7 @@ def portada():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{html.escape(UI["es"]["guia"])}</title>
+<title>{html.escape(UI["es"]["nombre"])}</title>
 <link rel="icon" href="recursos/logo/favicon.svg" type="image/svg+xml">
 <meta http-equiv="refresh" content="0; url=es/">
 <link rel="canonical" href="{URL_SITIO}es/">
@@ -507,7 +506,7 @@ var d=[{disponibles}],n=(navigator.languages||[navigator.language||"es"]).map(fu
 var e=n.filter(function(x){{return d.indexOf(x)>-1;}})[0]||"es";location.replace(e+"/");
 </script>
 </head>
-<body><p><a href="es/">{html.escape(UI["es"]["guia"])}</a></p></body>
+<body><p><a href="es/">{html.escape(UI["es"]["nombre"])}</a></p></body>
 </html>
 """
 

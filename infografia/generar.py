@@ -16,7 +16,7 @@ PAPEL, PIZARRA, TINTA, VERDE, BLANCO, GRIS, RAYA = "#fbfbf8", "#17453b", "#16232
 TEXTOS = {
     "es": {
         "titulo": ["Antes de publicar:", "diez recomendaciones"],
-        "subtitulo": "Materiales educativos creados con vibe coding",
+        "subtitulo": "Vibe coding responsable · Materiales educativos",
         "puntos": [
             ("book-check", "Revisar el contenido sin delegarlo en la IA"),
             ("shield-check", "No enviar datos personales a servicios ajenos al centro"),

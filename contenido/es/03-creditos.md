@@ -1,6 +1,8 @@
 # Créditos y licencias
 
-## Licencias de la guía
+## Publicación y licencias
+
+La guía se publica en la web de la comunidad [Vibe Coding Educativo](https://vibe-coding-educativo.github.io/).
 
 Los textos de la guía y la infografía se publican con la licencia [Creative Commons Reconocimiento-CompartirIgual 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.es), de forma que pueden copiarse, adaptarse y difundirse siempre que se cite la autoría y se mantenga la misma licencia.
 

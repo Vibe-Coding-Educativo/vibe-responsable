@@ -17,6 +17,7 @@ deshaga después de buena fe, ni siquiera nosotros dentro de un año.
 | [9](0009-la-guia-completa-se-publica-en-pdf-generado-desde-la-propia-web.md) | La guía completa se publica en PDF, generado desde la propia web | aceptado |
 | [10](0010-las-instrucciones-para-la-ia-son-un-archivo-que-se-descarga.md) | Las instrucciones para la IA son archivos que se descargan: uno para crear, con la lista de revisión, y otro para evaluar, con una rúbrica | aceptado |
 | [11](0011-el-pie-muestra-solo-la-licencia-del-contenido.md) | El pie muestra solo la licencia del contenido; la del código queda en el repositorio y en los créditos | aceptado |
+| [12](0012-la-guia-se-llama-vibe-coding-responsable.md) | La guía se llama «Vibe coding responsable»; el título largo pasa a ser su descripción | aceptado |
 
 Para añadir una, se copia [la plantilla](0000-plantilla.md) con el número
 siguiente y se anota aquí. Una decisión que deje de valer no se borra: se marca

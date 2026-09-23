@@ -1,6 +1,6 @@
-# Guía para publicar materiales educativos creados con vibe coding
+# Vibe coding responsable
 
-Guía ética y de responsabilidad, no técnica, para la comunidad educativa: licencias libres, protección de los datos del alumnado y del profesorado, código comprensible, transparencia sobre el uso de la IA y registro de las decisiones.
+Guía para publicar materiales educativos creados con vibe coding. Es una guía ética y de responsabilidad, no técnica, para la comunidad educativa: licencias libres, protección de los datos del alumnado y del profesorado, código comprensible, transparencia sobre el uso de la IA y registro de las decisiones.
 
 **Web de la guía:** <https://vibe-coding-educativo.github.io/vibe-responsable/>
 

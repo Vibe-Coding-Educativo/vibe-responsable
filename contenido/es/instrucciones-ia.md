@@ -1,7 +1,8 @@
 # Instrucciones para crear un material educativo abierto
 
-Estas instrucciones proceden de la «Guía para publicar materiales educativos
-creados con vibe coding» (https://vibe-coding-educativo.github.io/vibe-responsable/).
+Estas instrucciones proceden de la guía «Vibe coding responsable», para
+publicar materiales educativos creados con vibe coding
+(https://vibe-coding-educativo.github.io/vibe-responsable/).
 Síguelas en todo el trabajo, junto con lo que te pida sobre el material que
 quiero crear. El material se publicará en abierto, para que otras personas
 puedan utilizarlo y adaptarlo.
