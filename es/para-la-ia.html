@@ -62,7 +62,8 @@
 <li><strong>En las plataformas para crear aplicaciones</strong>, se pega en las instrucciones permanentes del proyecto, que muchas ofrecen en sus ajustes o como un archivo del propio proyecto.</li>
 </ul>
 <p>Si la IA no conoce la autoría o el lugar donde se publicará el material, las propias instrucciones le piden que lo pregunte antes de empezar. Al terminar, basta con pedir «revisa el material según las instrucciones», y la IA comprueba cada recomendación y corrige lo que dependa de ella. Esa revisión no sustituye a la de la persona, ya que el modelo también se equivoca al revisar su propio trabajo.</p>
-<p>Para revisar un material que ya estaba hecho, se adjunta el archivo de instrucciones junto con el código del material, o el archivo HTML guardado desde el navegador, y se pide «revisa este material ya hecho según las instrucciones». Antes de aplicar las correcciones conviene guardar una copia.</p></div></section>
+<p>Para revisar un material que ya estaba hecho, se adjunta el archivo de instrucciones junto con el código del material, o el archivo HTML guardado desde el navegador, y se pide «revisa este material ya hecho según las instrucciones». Antes de aplicar las correcciones conviene guardar una copia.</p>
+<p>Para evaluar un recurso ya publicado, propio o ajeno, se adjunta el archivo de instrucciones con su código y se pide «evalúa este recurso según las instrucciones». La IA puntúa cada recomendación con una rúbrica y da un porcentaje final. La puntuación orienta, pero no sustituye a la revisión de la persona, sobre todo en la corrección del contenido, donde la IA solo detecta los errores que ve.</p></div></section>
 <section class="apartado" id="el-archivo-de-instrucciones" aria-labelledby="h-el-archivo-de-instrucciones"><h2 id="h-el-archivo-de-instrucciones">El archivo de instrucciones</h2><div class="texto"><div class="copiable"><p class="copiable-cab solo-js"><a class="descarga" href="instrucciones-vibe-responsable.md" download><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
   <path d="m7 10 5 5 5-5" /></svg>Descargar el archivo</a><button type="button" class="copiar discreto" data-hecho="Texto copiado">Copiar el texto</button></p><pre><code># Instrucciones para crear un material educativo abierto
@@ -187,7 +188,97 @@ Si te pido revisar un material que no se creó con estas instrucciones:
 - En el punto 9, si no hay nota de decisiones, escribe una que describa cómo
   funciona el material ahora, e indica que se ha redactado después.
 - Si falta la licencia o la indicación de uso de IA, prepárame el texto para
-  añadirlo.</code></pre></div></div></section>
+  añadirlo.
+
+## Cuando te pida evaluar un recurso
+
+Si te pido evaluar un recurso, sea mío o de otra persona, no lo corrijas: solo
+evalúalo. Trabaja sobre el código que te doy; si no lo tienes, pídemelo.
+
+Puntúa cada punto de la lista de revisión con 2, 1 o 0 según esta rúbrica, y
+justifica cada puntuación con una frase sobre lo que has visto en el material.
+Si un punto no puede comprobarse con lo que te he dado, déjalo sin puntuar y
+di qué haría falta para comprobarlo.
+
+1. CONTENIDO
+   2: No has detectado errores en los datos, las definiciones ni las
+      respuestas que se dan por correctas.
+   1: Hay algún error menor o alguna imprecisión en un dato secundario.
+   0: Hay errores evidentes en conceptos, datos o respuestas.
+   Esta puntuación solo refleja los errores que has detectado: enumera cada
+   uno y señala lo que conviene que compruebe una persona.
+
+2. DATOS PERSONALES (eliminatorio)
+   2: No pide datos que identifiquen a nadie, o los guarda solo en el
+      dispositivo y permite exportar sin nombres. No envía nada a servidores
+      ni lleva analítica.
+   1: No envía datos del alumnado, pero carga recursos de otros servidores
+      que reciben la visita (tipografías, bibliotecas), o guarda nombres sin
+      opción de exportar sin ellos.
+   0: Envía datos del alumnado a un servidor ajeno al centro, o lleva
+      analítica o seguimiento.
+
+3. LICENCIA
+   2: Autoría y licencia libre visibles en el material, con enlace. Si es un
+      proyecto de varios archivos, incluye el archivo de licencia.
+   1: Falta la autoría o la licencia, la licencia no es libre (NC o ND) o no
+      enlaza a su texto.
+   0: No indica ni autoría ni licencia.
+
+4. USO DE IA
+   2: Indica que se ha hecho con IA y qué ha comprobado la persona.
+   1: Indica que se ha hecho con IA, sin decir qué se ha comprobado.
+   0: No lo indica. Si consta que no se usó IA, no se puntúa.
+
+5. ENTENDER QUÉ HACE
+   2: Se puede explicar en dos frases qué hace, qué guarda y con qué se
+      comunica, y lo que declara el material coincide con el código.
+   1: Se entiende su funcionamiento, pero hay partes de propósito poco claro
+      o no explica qué guarda.
+   0: Hay funciones o comunicaciones cuyo propósito no puede explicarse, o lo
+      que declara no coincide con el código.
+
+6. DEPENDENCIAS
+   2: Lo que carga de fuera procede de servicios conocidos y está anotado, y
+      los textos, imágenes y datos propios están dentro del material.
+   1: Carga recursos externos sin anotarlos, o parte del contenido propio
+      solo está incrustado desde otra plataforma.
+   0: El contenido principal depende de un servicio externo, o carga código
+      de direcciones desconocidas.
+
+7. ACCESIBILIDAD
+   2: Se maneja entero con el teclado, los controles tienen etiqueta, las
+      imágenes texto alternativo, el contraste es suficiente, no depende del
+      color y se adapta a una pantalla estrecha.
+   1: Falla en uno o dos de esos aspectos, sin impedir su uso.
+   0: Falla en tres o más, o no puede usarse con el teclado.
+
+8. MATERIAL AJENO
+   2: Cada elemento ajeno indica autoría, procedencia y licencia, y la
+      licencia permite reutilizarlo; o no hay material ajeno.
+   1: Hay material ajeno con licencia válida, pero sin acreditar del todo.
+   0: Hay material ajeno sin licencia que permita reutilizarlo o sin ninguna
+      atribución.
+
+9. RASTRO
+   2: Hay un registro o una nota con las decisiones importantes y su motivo.
+   1: Hay documentación que explica cómo está hecho, pero no por qué.
+   0: No hay nada.
+
+10. REUTILIZACIÓN
+   2: El código puede obtenerse completo, es legible, está comentado y hay
+      indicaciones para modificarlo.
+   1: Puede obtenerse, pero está poco comentado, en parte comprimido o sin
+      indicaciones.
+   0: No puede obtenerse, o está ofuscado o comprimido.
+
+Al final:
+- Calcula el porcentaje: la suma de las puntuaciones dividida entre el máximo
+  posible de los puntos puntuados.
+- Da un resultado: «No recomendable» si el punto 2 tiene 0, sea cual sea el
+  porcentaje; «Mejorable» por debajo del 70 %; «Recomendable» a partir del
+  70 %.
+- Termina con las tres mejoras que más subirían la puntuación.</code></pre></div></div></section>
 </main>
 <footer class="pie">
 <div class="ancho">

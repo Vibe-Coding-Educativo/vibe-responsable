@@ -33,6 +33,18 @@ con dos botones: descargar y copiar. El archivo:
   internet. El capítulo 6 sigue el mismo criterio;
 - incluye la lista de revisión, que se activa con «revisa el material según las
   instrucciones».
+- incluye un apartado para revisar un material que no se hizo con el archivo:
+  la IA pide el código, propone los cambios antes de hacerlos y, si no hay nota
+  de decisiones, describe el material tal como está, indicando que se ha
+  redactado después;
+- incluye una rúbrica para evaluar un recurso, propio o ajeno, sin corregirlo:
+  2, 1 o 0 en cada uno de los diez puntos, con un nivel descrito para cada
+  valor y una frase que lo justifique; lo que no puede comprobarse queda sin
+  puntuar. El resultado es un porcentaje sobre los puntos puntuados, con
+  «No recomendable» si el punto 2 (datos personales) tiene 0, «Mejorable» por
+  debajo del 70 % y «Recomendable» desde el 70 %. El punto 1 se puntúa con los
+  errores que la IA detecta por su cuenta, que bastan para ver un recurso sin
+  revisar, aunque no certifican que el contenido sea correcto.
 
 La página explica cómo usarlo en cada familia de herramientas: adjunto al primer
 mensaje en un chatbot, como archivo de instrucciones del proyecto en un agente o
@@ -47,6 +59,9 @@ editor, y en las instrucciones permanentes del proyecto en las plataformas.
 - **Exigir un material sin recursos externos**: obliga a programar desde cero lo
   que ya resuelven bibliotecas conocidas, y la web de un chatbot las carga por su
   cuenta.
+- **Una sola cifra sin rúbrica ni punto eliminatorio**: la nota variaría de una
+  evaluación a otra, y un recurso que envía datos del alumnado podría sacar
+  una puntuación alta gracias al resto de puntos.
 - **Solo descarga, sin mostrar el contenido**: impide leerlo antes de usarlo y
   deja sin opción a quien trabaja en una plataforma que no admite adjuntos.
 

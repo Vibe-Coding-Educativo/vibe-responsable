@@ -12,6 +12,8 @@ Si la IA no conoce la autoría o el lugar donde se publicará el material, las p
 
 Para revisar un material que ya estaba hecho, se adjunta el archivo de instrucciones junto con el código del material, o el archivo HTML guardado desde el navegador, y se pide «revisa este material ya hecho según las instrucciones». Antes de aplicar las correcciones conviene guardar una copia.
 
+Para evaluar un recurso ya publicado, propio o ajeno, se adjunta el archivo de instrucciones con su código y se pide «evalúa este recurso según las instrucciones». La IA puntúa cada recomendación con una rúbrica y da un porcentaje final. La puntuación orienta, pero no sustituye a la revisión de la persona, sobre todo en la corrección del contenido, donde la IA solo detecta los errores que ve.
+
 ## El archivo de instrucciones
 
 <!-- instrucciones -->
