@@ -1,4 +1,4 @@
-# Puede usarse con teclado, con lector de pantalla y en un móvil
+# Hacerlo accesible a cualquier persona
 
 ## La accesibilidad de un material educativo
 

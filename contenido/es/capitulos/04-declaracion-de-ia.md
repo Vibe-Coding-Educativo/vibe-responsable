@@ -1,4 +1,4 @@
-# Indica que se ha hecho con IA y qué ha comprobado la persona
+# Declarar el uso de IA y lo que se ha comprobado
 
 ## La utilidad de la declaración
 

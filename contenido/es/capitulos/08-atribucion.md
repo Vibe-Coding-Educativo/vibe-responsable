@@ -1,4 +1,4 @@
-# Acredita lo que toma de otras personas
+# Citar la autoría de lo que se toma de otras personas
 
 ## El material ajeno dentro de un material propio
 

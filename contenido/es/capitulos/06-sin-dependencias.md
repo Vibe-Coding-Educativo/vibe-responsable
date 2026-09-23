@@ -1,4 +1,4 @@
-# No depende de servicios que pueden desaparecer
+# No depender de servicios que pueden desaparecer
 
 ## Las dependencias de un material
 

@@ -1,4 +1,4 @@
-# El contenido es correcto y lo ha revisado una persona
+# Revisar el contenido sin delegarlo en la IA
 
 ## Cómo se equivoca la inteligencia artificial
 

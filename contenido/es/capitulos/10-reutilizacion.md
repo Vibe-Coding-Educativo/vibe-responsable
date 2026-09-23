@@ -1,4 +1,4 @@
-# Otra persona puede descargarlo, modificarlo y mejorarlo
+# Permitir que otras personas lo descarguen, modifiquen y mejoren
 
 ## La apertura en la práctica
 

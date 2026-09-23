@@ -1,4 +1,4 @@
-# No envía datos personales a servicios ajenos al centro
+# No enviar datos personales a servicios ajenos al centro
 
 Lo que hay que hacer depende del tipo de material. La tabla resume los cuatro casos que se explican en este capítulo, y cada uno enlaza con su apartado.
 

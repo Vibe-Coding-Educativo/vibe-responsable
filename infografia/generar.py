@@ -5,7 +5,7 @@ Uso: python3 generar.py [idioma]      -> lista-iconos.<idioma>.svg
 Los textos están en TEXTOS; para otro idioma basta con añadir su bloque.
 Los iconos son de Lucide (licencia ISC) y están en iconos/.
 """
-import re, sys, textwrap, html
+import re, sys, html
 from pathlib import Path
 
 AQUI = Path(__file__).parent
@@ -18,16 +18,16 @@ TEXTOS = {
         "titulo": ["Antes de publicar:", "diez recomendaciones"],
         "subtitulo": "Materiales educativos creados con vibe coding",
         "puntos": [
-            ("book-check", "El contenido es correcto y lo ha revisado una persona"),
-            ("shield-check", "No envía datos personales a servicios ajenos al centro"),
-            ("creative-commons", "Lleva una licencia libre a la vista"),
-            ("bot", "Indica que se ha hecho con IA y qué ha comprobado la persona"),
-            ("messages-square", "Se puede explicar qué hace en dos frases"),
-            ("unplug", "No depende de servicios que pueden desaparecer"),
-            ("accessibility", "Puede usarse con teclado, con lector de pantalla y en un móvil"),
-            ("quote", "Acredita lo que toma de otras personas"),
-            ("notebook-pen", "Conserva el rastro de cómo se hizo"),
-            ("download", "Otra persona puede descargarlo, modificarlo y mejorarlo"),
+            ("book-check", "Revisar el contenido sin delegarlo en la IA"),
+            ("shield-check", "No enviar datos personales a servicios ajenos al centro"),
+            ("creative-commons", "Publicar con una licencia libre a la vista"),
+            ("bot", "Declarar el uso de IA y lo que se ha comprobado"),
+            ("messages-square", "Entender qué hace el material"),
+            ("unplug", "No depender de servicios que pueden desaparecer"),
+            ("accessibility", "Hacerlo accesible a cualquier persona"),
+            ("quote", "Citar la autoría de lo que se toma de otras personas"),
+            ("notebook-pen", "Guardar el rastro de cómo se hizo"),
+            ("download", "Permitir que otras personas lo descarguen, modifiquen y mejoren"),
         ],
         "pie1": "jjdeharo, CC BY-SA 4.0",
         "pie2": "vibe-coding-educativo.github.io/vibe-responsable",
@@ -35,6 +35,23 @@ TEXTOS = {
         "desc": "Infografía con las diez recomendaciones para publicar de forma responsable materiales educativos creados con vibe coding.",
     },
 }
+
+
+ATONAS = {"a", "al", "con", "de", "del", "el", "en", "la", "las", "lo", "los", "o", "para", "por",
+          "que", "se", "sin", "su", "un", "una", "y"}
+
+
+def partir(texto, cabe=45):
+    """Una línea si cabe; si no, dos líneas lo más parecidas posible, para no dejar
+    una palabra sola en la segunda (caben unos 45 caracteres a 33 px entre el icono y el borde)."""
+    if len(texto) <= cabe:
+        return [texto]
+    palabras = texto.split()
+    cortes = [(" ".join(palabras[:i]), " ".join(palabras[i:])) for i in range(1, len(palabras))]
+    validos = [c for c in cortes if len(c[0]) <= cabe and len(c[1]) <= cabe]
+    # Una línea no termina en una palabra átona (artículo, preposición, conjunción, pronombre)
+    buenos = [c for c in validos if c[0].split()[-1].lower() not in ATONAS] or validos
+    return list(min(buenos, key=lambda c: abs(len(c[0]) - len(c[1]))))
 
 def icono(nombre):
     """Devuelve los trazos interiores del SVG de Lucide."""
@@ -65,7 +82,7 @@ def generar(idioma="es"):
         out.append(f'<rect x="186" y="{y+16}" width="80" height="80" rx="18" fill="{color}"/>')
         out.append(f'<g transform="translate(198 {y+28}) scale(2.3333)" fill="none" stroke="{BLANCO}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{icono(ic)}</g>')
         # texto (una o dos líneas)
-        lineas = textwrap.wrap(texto, width=41)
+        lineas = partir(texto)
         if len(lineas) == 1:
             out.append(f'<text x="296" y="{y+68}" font-size="33" font-weight="400" fill="{TINTA}">{html.escape(lineas[0])}</text>')
         else:

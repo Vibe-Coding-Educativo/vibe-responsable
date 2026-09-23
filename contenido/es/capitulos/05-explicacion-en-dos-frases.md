@@ -1,4 +1,4 @@
-# Se puede explicar qué hace en dos frases
+# Entender qué hace el material
 
 ## La comprensión del código
 

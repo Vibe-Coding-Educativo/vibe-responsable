@@ -1,4 +1,4 @@
-# Lleva una licencia libre a la vista
+# Publicar con una licencia libre a la vista
 
 ## Los materiales sin licencia
 

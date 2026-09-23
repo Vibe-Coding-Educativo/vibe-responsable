@@ -1,4 +1,4 @@
-# Conserva el rastro de cómo se hizo
+# Guardar el rastro de cómo se hizo
 
 ## El motivo de cada decisión
 
