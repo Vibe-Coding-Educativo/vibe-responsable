@@ -16,7 +16,7 @@ El riesgo no es solo que el servicio desaparezca. En 2024, el dominio polyfill.i
 
 Cuando el material se ha creado en la web de un chatbot o en una plataforma para crear aplicaciones, el enlace compartido dura lo que la empresa decida. Un cambio en el servicio, en sus condiciones o en la cuenta del docente puede dejar ese enlace sin efecto, y con él todas las páginas que lo hayan incrustado.
 
-Lo mínimo es guardar en el propio ordenador una copia del código del material y actualizarla cuando cambie. Con esa copia el material puede recuperarse, publicarse en otro sitio o seguir trabajándose con otra herramienta.
+Lo mínimo es guardar en el propio ordenador una copia del código del material y actualizarla cuando cambie. Con esa copia el material puede recuperarse, publicarse en otro sitio o seguir trabajándose con otra herramienta. Para que sirva, el material tiene que ser una página que se abra por sí sola en el navegador. Algunos chatbots generan la aplicación como un componente que solo funciona dentro de su propia web, y por eso el [archivo de instrucciones para la IA](para-la-ia.html) les pide una página HTML.
 
 ## Lo que se carga de fuera
 
