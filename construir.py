@@ -527,14 +527,18 @@ def comprobar_referencias(idioma):
             citados.setdefault(url, md.name)
     referencias = set(re.findall(r"https?://[^\s)>\]]+", (carpeta / "05-referencias.md").read_text(encoding="utf-8")))
     # Una dirección cuenta como citada si la referencia es la misma página sin sus parámetros
-    # (…/miae/?nivel=4) o la portada de esa web citada en un idioma (…/miae/es/ → …/miae/);
+    # (…/miae/?nivel=4), la portada de esa web citada en un idioma (…/miae/es/ → …/miae/)
+    # o la portada de la obra a la que pertenece la página (…/html/apartado.html →
+    # …/index.html), porque la referencia recoge la obra y el enlace del texto, el apartado;
     # una referencia con parámetros propios no vale para otra.
+    portadas = {r for r in referencias if r.endswith("/index.html")}
     def variantes(url):
         base = url.split("?")[0]
         v = {url, base}
         idioma_final = re.match(r"(.*/)(es|ca|gl|eu|en)/$", base)
         if idioma_final:
             v.add(idioma_final.group(1))
+        v.update(p for p in portadas if base.startswith(p[:-len("index.html")]))
         return v
     faltan = [f"{url} ({md})" for url, md in citados.items() if not (variantes(url) & referencias)]
     citadas = set().union(*(variantes(u) for u in citados)) if citados else set()
