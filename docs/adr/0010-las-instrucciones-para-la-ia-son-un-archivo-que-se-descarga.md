@@ -49,6 +49,12 @@ guía, y no corrige nada:
 - si después se pide corregir, la IA propone los cambios antes de hacerlos y,
   si no hay nota de decisiones, describe el recurso tal como está.
 
+La página muestra además la rúbrica en una tabla (marca `<!-- rubrica -->`), que
+`construir.py` genera a partir del propio `evaluacion-ia.md`, para que la tabla y
+lo que lee la IA no puedan separarse. Por eso la rúbrica mantiene su formato:
+`N. TÍTULO`, y debajo `2:`, `1:` y `0:` con su descripción, redactada en forma
+impersonal para que sirva igual a la IA y a quien lee la tabla.
+
 La página explica cómo usarlo en cada familia de herramientas: adjunto al primer
 mensaje en un chatbot, como archivo de instrucciones del proyecto en un agente o
 editor, y en las instrucciones permanentes del proyecto en las plataformas.

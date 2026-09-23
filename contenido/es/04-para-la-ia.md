@@ -22,4 +22,8 @@ El archivo de evaluación sirve para cualquier recurso ya publicado, propio o aj
 
 La puntuación orienta, pero no sustituye a la revisión de la persona, sobre todo en la corrección del contenido, donde la IA solo detecta los errores que ve.
 
+<!-- rubrica -->
+
+El porcentaje final es la suma de las puntuaciones dividida entre el máximo posible de los puntos que la IA ha podido comprobar. El resultado es «No recomendable» si el punto 2 tiene un 0, sea cual sea el porcentaje, «Mejorable» por debajo del 70 % y «Recomendable» a partir del 70 %.
+
 <!-- evaluacion -->

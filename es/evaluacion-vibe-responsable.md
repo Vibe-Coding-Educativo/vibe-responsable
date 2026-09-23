@@ -18,7 +18,7 @@ creado o no siguiendo la guía.
 ## Rúbrica
 
 1. CONTENIDO
-   2: No has detectado errores en los datos, las definiciones ni las
+   2: No se detectan errores en los datos, las definiciones ni las
       respuestas que se dan por correctas.
    1: Hay algún error menor o alguna imprecisión en un dato secundario.
    0: Hay errores evidentes en conceptos, datos o respuestas.

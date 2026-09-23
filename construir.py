@@ -78,6 +78,8 @@ UI = {
         "copiado": "Texto copiado",
         "descargar_archivo": "Descargar el archivo",
         "ver_archivo": "Ver el contenido del archivo",
+        "rubrica": "Rúbrica de evaluación: 2, se cumple; 1, en parte; 0, no se cumple",
+        "punto": "Recomendación",
         "acercar": "Ver a tamaño de lectura",
         "alejar": "Ajustar a la pantalla",
         "niveles": {"Lo mínimo.": "minimo", "Lo recomendado.": "recomendado", "En todos los casos.": "todos"},
@@ -305,6 +307,27 @@ def archivo_ia(idioma, clave):
     return (RAIZ / "contenido" / idioma / ARCHIVOS_IA[clave][0]).read_text(encoding="utf-8")
 
 
+def tabla_rubrica(idioma):
+    """La rúbrica del archivo de evaluación, en una tabla: una fila por punto y una columna por
+    puntuación. Sale del propio archivo, para que la tabla y lo que lee la IA no se separen."""
+    T = UI[idioma]
+    texto = archivo_ia(idioma, "evaluacion")
+    bloque = texto[texto.index("\n1. ") + 1:texto.index("\n## ", texto.index("\n1. "))]
+    filas = []
+    for punto in re.split(r"\n\s*\n", bloque.strip()):
+        cab = re.match(r"(\d+)\.\s+([^\n]+)", punto)
+        niveles = {n: " ".join(t.split()) for n, t in re.findall(r"^\s+([012]):\s+(.*?)(?=^\s+[012]:|^\s{3}\S|\Z)", punto, flags=re.S | re.M)}
+        nombre = cab.group(2).strip()
+        nota = re.search(r"\((.*?)\)", nombre)
+        nombre = re.sub(r"\s*\(.*?\)", "", nombre).capitalize()
+        nombre = re.sub(r"\bia\b", "IA", nombre)   # las siglas vuelven a mayúsculas
+        celda = f'<th scope="row"><span class="rub-n">{cab.group(1)}</span> {html.escape(nombre)}' + (f' <small>({html.escape(nota.group(1))})</small>' if nota else "") + "</th>"
+        filas.append("<tr>" + celda + "".join(f'<td data-nota="{n}">{html.escape(niveles.get(n, ""))}</td>' for n in "210") + "</tr>")
+    cabecera = "".join(f'<th scope="col">{n}</th>' for n in "210")
+    return (f'<div class="rubrica"><table><caption>{html.escape(T["rubrica"])}</caption><thead><tr><th scope="col">{html.escape(T["punto"])}</th>{cabecera}</tr></thead>'
+            f'<tbody>{"".join(filas)}</tbody></table></div>')
+
+
 def pagina_texto(idioma, archivo, fuente):
     T = UI[idioma]
     md = (RAIZ / "contenido" / idioma / fuente).read_text(encoding="utf-8")
@@ -314,6 +337,7 @@ def pagina_texto(idioma, archivo, fuente):
     for a in apartados:
         cab, resto = a.split("\n", 1)
         cab = cab.strip()
+        resto = resto.replace("<!-- rubrica -->", "ARCHIVO-IA-RUBRICA")
         for clave in ARCHIVOS_IA:
             resto = resto.replace(f"<!-- {clave} -->", f"ARCHIVO-IA-{clave}\n\n~~~~\n" + archivo_ia(idioma, clave) + "~~~~")
         h = pandoc(resto.strip())
@@ -323,6 +347,7 @@ def pagina_texto(idioma, archivo, fuente):
         copiar = f'<button type="button" class="copiar discreto" data-hecho="{html.escape(T["copiado"])}">{html.escape(T["copiar"])}</button></p>'
         # Un archivo para la IA lleva además su enlace de descarga, y su texto va plegado para no
         # ocupar la página; cualquier otro bloque lleva solo el botón de copiar
+        h = h.replace("<p>ARCHIVO-IA-RUBRICA</p>", tabla_rubrica(idioma))
         h = re.sub(r"<p>ARCHIVO-IA-(\w+)</p>\s*<pre[^>]*>(.*?)</pre>",
                    lambda m: botones + f'<a class="descarga" href="{ARCHIVOS_IA[m.group(1)][1]}" download>'
                              f'{icono("download")}{html.escape(T["descargar_archivo"])}</a>' + copiar +
