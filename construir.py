@@ -77,7 +77,7 @@ UI = {
         "copiado": "Texto copiado",
         "descargar_archivo": "Descargar el archivo",
         "ver_archivo": {"instrucciones": "Ver las instrucciones para crear", "evaluacion": "Ver las instrucciones para evaluar"},
-        "rubrica": "Rúbrica del vibe coding responsable: 2, se cumple; 1, en parte; 0, no se cumple",
+        "rubrica": "Rúbrica VCER: 2, se cumple; 1, en parte; 0, no se cumple",
         "punto": "Recomendación",
         "acercar": "Ver a tamaño de lectura",
         "alejar": "Ajustar a la pantalla",

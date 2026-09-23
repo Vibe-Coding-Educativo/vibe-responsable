@@ -28,9 +28,9 @@ El archivo de evaluación sirve para cualquier recurso ya publicado, propio o aj
 
 <!-- evaluacion -->
 
-La IA puntúa cada recomendación con la rúbrica, da un porcentaje final y propone las tres mejoras que más subirían la puntuación. Si después se le pide corregirlo, primero propone los cambios y espera a que se aprueben; antes conviene guardar una copia. La puntuación orienta, pero no sustituye a la revisión de la persona, sobre todo en la corrección del contenido, donde la IA solo detecta los errores que ve.
+La IA puntúa cada recomendación con la rúbrica VCER (vibe coding educativo responsable), da un porcentaje final y propone las tres mejoras que más subirían la puntuación. Si después se le pide corregirlo, primero propone los cambios y espera a que se aprueben; antes conviene guardar una copia. La puntuación orienta, pero no sustituye a la revisión de la persona, sobre todo en la corrección del contenido, donde la IA solo detecta los errores que ve.
 
-Esta es la rúbrica del vibe coding responsable, la que utiliza el archivo de evaluación anterior:
+Esta es la rúbrica VCER, la que utiliza el archivo de evaluación anterior:
 
 <!-- rubrica -->
 

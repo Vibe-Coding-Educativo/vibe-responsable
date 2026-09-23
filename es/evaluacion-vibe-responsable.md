@@ -11,12 +11,13 @@ creado o no siguiendo la guía.
 - Trabaja sobre el código del recurso que te doy. Si no lo tienes, pídemelo
   antes de empezar.
 - No lo corrijas: solo evalúalo.
-- Puntúa cada uno de los diez puntos con 2, 1 o 0 según la rúbrica, y
-  justifica cada puntuación con una frase sobre lo que has visto en el recurso.
+- Puntúa cada uno de los diez puntos con 2, 1 o 0 según la rúbrica VCER
+  (vibe coding educativo responsable), y justifica cada puntuación con una
+  frase sobre lo que has visto en el recurso.
 - Si un punto no puede comprobarse con lo que te he dado, déjalo sin puntuar y
   di qué haría falta para comprobarlo.
 
-## Rúbrica del vibe coding responsable
+## Rúbrica VCER
 
 1. CONTENIDO (eliminatorio)
    2: No se detectan errores en lo que enseña: los datos, las definiciones
@@ -103,8 +104,8 @@ creado o no siguiendo la guía.
   del 70 %, siempre que los puntos 1 y 2 se hayan podido puntuar. Si alguno de
   los dos ha quedado sin puntuar, el resultado es «Mejorable» e indica qué
   falta por comprobar.
-- Empieza el informe con una línea como «Rúbrica del vibe coding
-  responsable: Recomendable (85 %)».
+- Empieza el informe con una línea como «Rúbrica VCER: Recomendable
+  (85 %)».
 - Termina con las tres mejoras que más subirían la puntuación.
 
 ## Si después te pido corregirlo

@@ -28,9 +28,11 @@ pasa a ser su descripción. Se aplica en todos los sitios donde aparece el nombr
   Educativo.
 - La infografía lleva el nombre en su subtítulo, para que se identifique si
   circula fuera de la web.
-- La evaluación de los archivos para la IA se llama «Rúbrica del vibe coding
-  responsable», y su informe empieza con una línea con ese nombre, el resultado
-  y el porcentaje.
+- La evaluación de los archivos para la IA se llama «rúbrica VCER», siglas de
+  vibe coding educativo responsable, que se explican la primera vez que aparecen
+  en cada archivo. Su informe empieza con una línea con ese nombre, el
+  resultado y el porcentaje, como «Rúbrica VCER: Recomendable (85 %)». La sigla
+  incluye «educativo», que el nombre de la guía omite para no alargarlo.
 
 El nombre se escribe en minúsculas salvo la inicial, porque «vibe coding» es un
 nombre común.
