@@ -10,7 +10,7 @@ El problema es práctico, ya que un material que funciona hoy puede dejar de hac
 
 Cumplir esta recomendación no exige saber programar, ya que es suficiente con poder decir con palabras corrientes tres cosas del material: qué hace, qué guarda y si se comunica con algún servicio externo. Una explicación de este tipo sería la siguiente: «El simulador calcula la aceleración de un cuerpo en un plano inclinado a partir del ángulo y del material elegidos, y dibuja las fuerzas. No guarda ningún dato ni se conecta con ningún servicio».
 
-La forma de obtenerla es pedírsela a la propia IA, en lenguaje llano, y comprobar después que coincide con lo que se observa al usar el material. Si la inteligencia artificial (IA) afirma que no se guarda nada y el material recuerda las respuestas del día anterior, la explicación no es correcta y hay que aclararlo antes de publicar. El texto de revisión de las [instrucciones para la IA](para-la-ia.html) incluye esta petición en su punto 5.
+La forma de obtenerla es pedírsela a la propia IA, en lenguaje llano, y comprobar después que coincide con lo que se observa al usar el material. Si la inteligencia artificial (IA) afirma que no se guarda nada y el material recuerda las respuestas del día anterior, la explicación no es correcta y hay que aclararlo antes de publicar. El apartado de revisión del [archivo de instrucciones para la IA](para-la-ia.html) incluye esta petición en su punto 5.
 
 ## Cuatro comprobaciones sin saber programar
 

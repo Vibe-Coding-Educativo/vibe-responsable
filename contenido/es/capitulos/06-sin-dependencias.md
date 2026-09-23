@@ -4,7 +4,7 @@
 
 Un material depende de un servicio externo cuando necesita algo que no está dentro de él para funcionar. Las formas más corrientes son el contenido incrustado desde otra web, las bibliotecas de programación y las tipografías que se cargan desde servidores ajenos, y las conexiones con servicios en línea. También es una dependencia la plataforma donde se ha creado el material, cuando este solo existe dentro de ella.
 
-Estas dependencias no se ven al usar el material. Se descubren al leer el código o al pedir a la inteligencia artificial (IA) que las enumere, que es lo que hace el punto 6 del texto de revisión de las [instrucciones para la IA](para-la-ia.html).
+Estas dependencias no se ven al usar el material. Se descubren al leer el código o al pedir a la inteligencia artificial (IA) que las enumere, que es lo que hace el punto 6 del apartado de revisión del [archivo de instrucciones para la IA](para-la-ia.html).
 
 ## Los cambios en los servicios externos
 

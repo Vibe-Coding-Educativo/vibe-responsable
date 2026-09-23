@@ -301,7 +301,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 /* Textos para copiar y dar a la IA */
 .copiable { min-width: 0; margin: 0 0 1rem; }
 .copiable pre { margin: 0; padding: 0.9rem 1rem; background: var(--hoja); border: 1px solid var(--raya); border-left: 3px solid var(--verde); border-radius: 4px; white-space: pre-wrap; overflow-wrap: break-word; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.82rem; line-height: 1.5; tab-size: 2; }
-.copiable-cab { display: flex; justify-content: flex-end; margin: 0 0 0.3rem; }
+.copiable-cab { display: flex; justify-content: flex-end; align-items: center; flex-wrap: wrap; gap: 0.4rem 1rem; margin: 0 0 0.3rem; }
 .copiable .copiar { font-size: 0.83rem; padding: 0.2rem 0.5rem; }
 
 /* Páginas de texto: los títulos de apartado van al margen */

@@ -1,0 +1,49 @@
+# 10. Las instrucciones para la IA son un archivo que se descarga
+
+Fecha: 2026-09-23 · Estado: aceptado
+
+## Contexto
+
+La página «Instrucciones para la IA» ofrecía primero tres textos para copiar (al
+empezar, al terminar y las condiciones para un repositorio) y después dos. El
+texto de empezar mezclaba lo que pide la guía, que es igual en todos los
+materiales, con la descripción del material concreto, que cambia cada vez. Había
+que editar un bloque largo en cada uso, con el riesgo de borrar algo, y lo dicho
+al empezar se diluye en las conversaciones largas o no llega a las sesiones
+siguientes.
+
+## Decisión
+
+Lo que pide la guía está en un solo archivo, `contenido/<idioma>/instrucciones-ia.md`,
+que `construir.py` publica como `instrucciones-vibe-responsable.md` y muestra
+entero en `para-la-ia.html`, en el lugar de la marca `<!-- instrucciones -->`,
+con dos botones: descargar y copiar. El archivo:
+
+- contiene solo lo que pide la guía; el material se describe aparte;
+- pide a la IA que pregunte la autoría y el lugar de publicación si no los
+  conoce, de modo que se usa sin editarlo;
+- lleva la licencia fija (CC BY-SA 4.0 y AGPL v3), salvo que se indiquen otras;
+- incluye las condiciones para un repositorio o sitio propio, que la IA aplica
+  según el lugar de publicación;
+- incluye la lista de revisión, que se activa con «revisa el material según las
+  instrucciones».
+
+La página explica cómo usarlo en cada familia de herramientas: adjunto al primer
+mensaje en un chatbot, como archivo de instrucciones del proyecto en un agente o
+editor, y en las instrucciones permanentes del proyecto en las plataformas.
+
+## Alternativas descartadas
+
+- **Dos textos para copiar (empezar y revisar)**: seguía mezclando la guía con la
+  descripción del material y obligaba a editar el texto en cada uso.
+- **Un archivo solo para empezar y la revisión como texto aparte**: dos piezas
+  donde basta una; la revisión se pide con una frase.
+- **Solo descarga, sin mostrar el contenido**: impide leerlo antes de usarlo y
+  deja sin opción a quien trabaja en una plataforma que no admite adjuntos.
+
+## Consecuencias
+
+- Los capítulos remiten al «archivo de instrucciones para la IA» y a su
+  apartado de revisión, por número de punto. Si cambia la numeración de la
+  lista de revisión, hay que revisar esas remisiones.
+- Al traducir la guía, cada idioma necesita su `instrucciones-ia.md`.

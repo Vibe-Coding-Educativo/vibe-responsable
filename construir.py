@@ -12,7 +12,8 @@ Páginas por idioma, en el orden en que se leen:
   index.html          presentación: qué es, por qué y cómo se utiliza (00-presentacion.md)
   guia.html           la guía: las diez recomendaciones (01-guia.md)
   herramientas.html   familias de herramientas y los dos niveles (02-herramientas.md)
-  para-la-ia.html     los textos para dar a la IA (04-para-la-ia.md)
+  para-la-ia.html     cómo usar el archivo de instrucciones para la IA (04-para-la-ia.md),
+                      que se muestra en la página y se publica aparte para descargarlo
   referencias.html    todo lo citado en el texto (05-referencias.md)
   creditos.html       créditos y licencias, enlazada desde el pie (03-creditos.md)
 
@@ -31,6 +32,9 @@ REPO = "https://github.com/Vibe-Coding-Educativo/vibe-responsable"
 COMUNIDAD = "https://vibe-coding-educativo.github.io/"   # mismo dominio: se abre en la misma pestaña
 CLAVE_TEMA = "vibe-responsable:tema"   # única entrada en localStorage; la misma en recursos/guia.js
 PDF = "vibe-responsable-{idioma}.pdf"  # la guía completa, generada con --pdf y publicada junto a las páginas
+# Las instrucciones para la IA: contenido/<idioma>/instrucciones-ia.md se publica con este nombre
+# y se muestra entero en para-la-ia.html, en el lugar de la marca <!-- instrucciones -->
+INSTRUCCIONES = "instrucciones-vibe-responsable.md"
 ICONOS = ["book-check", "shield-check", "creative-commons", "bot", "messages-square",
           "unplug", "accessibility", "quote", "notebook-pen", "download"]
 
@@ -71,6 +75,7 @@ UI = {
         "cerrar": "Cerrar",
         "copiar": "Copiar el texto",
         "copiado": "Texto copiado",
+        "descargar_archivo": "Descargar el archivo",
         "acercar": "Ver a tamaño de lectura",
         "alejar": "Ajustar a la pantalla",
         "niveles": {"Lo mínimo.": "minimo", "Lo recomendado.": "recomendado", "En todos los casos.": "todos"},
@@ -294,6 +299,10 @@ def pagina_lista(idioma):
     return marco(idioma, "guia.html", titulo, cuerpo, "pagina-lista")
 
 
+def instrucciones(idioma):
+    return (RAIZ / "contenido" / idioma / "instrucciones-ia.md").read_text(encoding="utf-8")
+
+
 def pagina_texto(idioma, archivo, fuente):
     T = UI[idioma]
     md = (RAIZ / "contenido" / idioma / fuente).read_text(encoding="utf-8")
@@ -303,11 +312,14 @@ def pagina_texto(idioma, archivo, fuente):
     for a in apartados:
         cab, resto = a.split("\n", 1)
         cab = cab.strip()
+        resto = resto.replace("<!-- instrucciones -->", "~~~~\n" + instrucciones(idioma) + "~~~~")
         h = pandoc(resto.strip())
         if archivo == "herramientas.html":
             h = h.replace("<ul>", '<ul class="familias">', 1)
+        descarga = (f'<a class="descarga" href="{INSTRUCCIONES}" download>{icono("download")}{html.escape(T["descargar_archivo"])}</a>'
+                    if archivo == "para-la-ia.html" else "")
         h = re.sub(r"<pre[^>]*>",
-                   f'<div class="copiable"><p class="copiable-cab solo-js">'
+                   f'<div class="copiable"><p class="copiable-cab solo-js">{descarga}'
                    f'<button type="button" class="copiar discreto" data-hecho="{html.escape(T["copiado"])}">{html.escape(T["copiar"])}</button></p><pre>',
                    h)
         h = h.replace("</pre>", "</pre></div>")
@@ -505,6 +517,7 @@ if __name__ == "__main__":
         paginas["creditos.html"] = pagina_texto(idioma, "creditos.html", "03-creditos.md")
         for archivo, contenido in paginas.items():
             (destino / archivo).write_text(contenido, encoding="utf-8")
+        (destino / INSTRUCCIONES).write_text(instrucciones(idioma), encoding="utf-8")
         viejo = destino / "presentacion.html"
         if viejo.exists():
             viejo.unlink()

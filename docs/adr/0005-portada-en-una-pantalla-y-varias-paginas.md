@@ -32,7 +32,7 @@ de los archivos de `contenido/<idioma>/` y el del menú:
    utiliza» va bajo el texto.
 2. **Guía** (`01-guia.md`, `guia.html`): las diez recomendaciones.
 3. **Herramientas y niveles** (`02-herramientas.md`).
-4. **Instrucciones para la IA** (`04-para-la-ia.md`): los textos para copiar.
+4. **Instrucciones para la IA** (`04-para-la-ia.md`): cómo usar el archivo de instrucciones para la IA, que se muestra entero y se descarga (ADR 10).
 
 5. **Referencias** (`05-referencias.md`): todo lo que el texto cita, con una
    comprobación en `construir.py` de que no falta ni sobra ninguna. Es material
