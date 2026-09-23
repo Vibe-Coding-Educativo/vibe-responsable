@@ -307,20 +307,15 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 .rubrica[open] > summary { border-bottom: 1px solid var(--raya); }
 .rubrica table { border-style: hidden; }
 .rubrica caption { padding: 0.6rem 0.8rem !important; }
-.rubrica table { width: 100%; border-collapse: collapse; font-size: 0.93rem; line-height: 1.5; background: var(--hoja); }
+.rubrica table { width: 100%; border-collapse: collapse; font-size: 0.84rem; line-height: 1.45; background: var(--hoja); }
 .rubrica caption { text-align: left; font-weight: 700; padding: 0 0 0.5rem; }
-.rubrica th, .rubrica td { padding: 0.6rem 0.8rem; border: 1px solid var(--raya); vertical-align: top; text-align: left; }
-.rubrica thead th { background: var(--marca); font-size: 0.88rem; }
+.rubrica th, .rubrica td { padding: 0.5rem 0.6rem; border: 1px solid var(--raya); vertical-align: top; text-align: left; }
+.rubrica thead th { background: var(--marca); font-size: 0.82rem; }
 .rubrica thead th:not(:first-child) { text-align: center; width: 27%; }
 .rubrica th:first-child { text-align: right; }
-.rubrica tbody th { font-weight: 700; width: 16%; }
+.rubrica tbody th { font-weight: 700; width: 19%; }
 .rubrica tbody th small { display: block; font-weight: 400; color: var(--tinta-suave); }
 .rubrica .rub-n { color: var(--verde); }
-@media (min-width: 62rem) {   /* cuando el apartado tiene dos columnas: título y texto */
-  .apartado > .rubrica { grid-column: 1 / -1; }
-  .apartado > .texto-sigue { grid-column: 2; }
-  .apartado:has(> .rubrica) h2 { position: static; }   /* fijo, se montaría sobre la tabla */
-}
 /* En pantallas estrechas cada punto es una ficha, con la puntuación delante de cada nivel */
 @media (max-width: 47.99rem) {
   .rubrica thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
