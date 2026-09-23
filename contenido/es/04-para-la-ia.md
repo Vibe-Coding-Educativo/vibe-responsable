@@ -34,4 +34,4 @@ Esta es la rúbrica VCER, la que utiliza el archivo de evaluación anterior:
 
 <!-- rubrica -->
 
-El porcentaje final es la suma de las puntuaciones dividida entre el máximo posible de los puntos que la IA ha podido comprobar. El resultado es «No recomendable» si el punto 1 o el 2 tienen un 0, sea cual sea el porcentaje, «Mejorable» por debajo del 70 % y «Recomendable» a partir del 70 %. Para obtener «Recomendable», además, la IA tiene que haber podido puntuar el contenido y los datos personales; si alguno ha quedado sin puntuar, el resultado es «Mejorable».
+El porcentaje final es la suma de las puntuaciones dividida entre el máximo posible de los puntos que la IA ha podido comprobar. El resultado es «No recomendable» si el punto 1 o el 2 tienen un 0, sea cual sea el porcentaje, «Mejorable» por debajo del 70 % y «Recomendable» a partir del 70 %. Para obtener «Recomendable», además, la IA tiene que haber podido puntuar el contenido y los datos personales, y la accesibilidad no puede tener un 0; en caso contrario, el resultado es «Mejorable».

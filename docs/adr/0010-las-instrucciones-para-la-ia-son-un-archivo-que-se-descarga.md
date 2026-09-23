@@ -45,8 +45,12 @@ guía, y no corrige nada:
   (contenido) o el 2 (datos personales) tienen 0, «Mejorable» por debajo del
   70 % y «Recomendable» desde el 70 %, solo si esos dos puntos se han podido
   puntuar (23-09-2026: un recurso con errores evidentes o sin comprobar la
-  privacidad no puede recomendarse por buena que sea la media), y las tres
-  mejoras que más subirían la nota;
+  privacidad no puede recomendarse por buena que sea la media), y siempre que
+  el punto 7 (accesibilidad) no tenga 0, porque un recurso que no puede usarse
+  con el teclado sacaba un 90 % con el resto perfecto; con 0 en el 7 queda en
+  «Mejorable», sin hacerlo eliminatorio, que dejaría como «No recomendable» un
+  recurso usable con fallos de contraste, color y pantalla estrecha (23-09-2026);
+  y las tres mejoras que más subirían la nota;
 - el punto 1 se puntúa con los errores que la IA detecta por su cuenta, que
   bastan para ver un recurso sin revisar, aunque no certifican el contenido;
 - si después se pide corregir, la IA propone los cambios antes de hacerlos y,

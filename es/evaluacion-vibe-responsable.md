@@ -106,9 +106,10 @@ creado o no siguiendo la guía.
   posible de los puntos puntuados.
 - Da un resultado: «No recomendable» si el punto 1 o el 2 tienen 0, sea cual
   sea el porcentaje; «Mejorable» por debajo del 70 %; «Recomendable» a partir
-  del 70 %, siempre que los puntos 1 y 2 se hayan podido puntuar. Si alguno de
-  los dos ha quedado sin puntuar, el resultado es «Mejorable» e indica qué
-  falta por comprobar.
+  del 70 %, siempre que los puntos 1 y 2 se hayan podido puntuar y el punto 7
+  no tenga 0. Si alguno de los puntos 1 y 2 ha quedado sin puntuar, el
+  resultado es «Mejorable» e indica qué falta por comprobar; si el punto 7
+  tiene 0, también es «Mejorable» e indica qué impide usarlo.
 - Empieza el informe con una línea como «Rúbrica VCER: Recomendable
   (85 %)».
 - Termina con las tres mejoras que más subirían la puntuación.
