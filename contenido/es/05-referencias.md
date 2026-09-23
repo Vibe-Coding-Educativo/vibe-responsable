@@ -13,8 +13,9 @@
 ## Guías, informes y recomendaciones
 
 - Agencia Española de Protección de Datos. (2018). *Guía para centros educativos*. <https://www.aepd.es/documento/guia-centros-educativos.pdf>
+- Creative Commons. (s. f.). Does my use violate the NonCommercial clause of the licenses? En *Frequently asked questions*. <https://creativecommons.org/faq/#does-my-use-violate-the-noncommercial-clause-of-the-licenses>
 - Creative Commons. (2024). *Recommended practices for attribution*. Creative Commons Wiki. <https://wiki.creativecommons.org/wiki/Recommended_practices_for_attribution>
-- Creative Commons. (s. f.). *Licencia Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)*. <https://creativecommons.org/licenses/by-sa/4.0/deed.es>
+- Wikimedia Commons. (s. f.). *Commons:Licencias*. <https://commons.wikimedia.org/wiki/Commons:Licensing/es>
 - Free Software Foundation. (s. f.). *¿Qué es el software libre?* Proyecto GNU. <https://www.gnu.org/philosophy/free-sw.es.html>
 - Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado. (2026). *Guía sobre el uso de la inteligencia artificial en el ámbito educativo* (versión 2.0). Ministerio de Educación, Formación Profesional y Deportes. <https://code.intef.es/wp-content/uploads/2026/09/ACTUALIZACI%C3%93N-GU%C3%8DA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5.pdf>
 - UNICEF Innocenti. (2025). *Guidance on AI and children* (versión 3.0). UNICEF Office of Strategy and Evidence – Innocenti. <https://www.unicef.org/innocenti/reports/policy-guidance-ai-children>
@@ -22,6 +23,16 @@
 - W3C Web Accessibility Initiative. (2025). *Introducción a la accesibilidad web* (traducción de la versión de 2024). <https://www.w3.org/WAI/fundamentals/accessibility-intro/es>
 - W3C Web Accessibility Initiative. (2025). *Sumario de WCAG 2* (traducción de la versión de 2025). <https://www.w3.org/WAI/standards-guidelines/wcag/es>
 - W3C Web Accessibility Initiative. (2025). *Visión general sobre la evaluación de la accesibilidad web* (traducción de la versión de 2023). <https://www.w3.org/WAI/test-evaluate/es>
+
+## Licencias
+
+- Apache Software Foundation. (2004). *Apache License, Version 2.0*. <https://www.apache.org/licenses/LICENSE-2.0>
+- Creative Commons. (2013). *Licencia Reconocimiento 4.0 Internacional (CC BY 4.0)*. <https://creativecommons.org/licenses/by/4.0/deed.es>
+- Creative Commons. (2013). *Licencia Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)*. <https://creativecommons.org/licenses/by-sa/4.0/deed.es>
+- De Haro, J. J. (2025). *Generador de licencias para recursos educativos abiertos (REA)*. <https://jjdeharo.github.io/licencias-libres/>
+- Free Software Foundation. (2007). *GNU Affero General Public License, version 3*. <https://www.gnu.org/licenses/agpl-3.0.html>
+- Mozilla Foundation. (2012). *Mozilla Public License, version 2.0*. <https://www.mozilla.org/MPL/2.0/>
+- Open Source Initiative. (s. f.). *The MIT License*. <https://opensource.org/license/mit>
 
 ## Artículos y ponencias
 

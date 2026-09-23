@@ -18,7 +18,7 @@ El nombre, las notas, la voz o la imagen del alumnado son datos personales. En E
 Las obras quedan protegidas por derechos de autor de forma automática, de modo que un material sin licencia no puede reutilizarse con seguridad aunque esté publicado. Una licencia libre indica a las demás personas que pueden usarlo, adaptarlo y compartirlo, y con qué condiciones. El código y los contenidos necesitan licencias distintas, y lo generado por la IA plantea dudas de autoría que se tratan en su capítulo.
 
 - **Lo mínimo.** Escribir la autoría y la licencia dentro del propio material, en un lugar visible, por ejemplo al pie.
-- **Lo recomendado.** Añadir el archivo de licencia al proyecto, con una licencia de software libre para el código y una Creative Commons (CC) libre, como CC BY o CC BY-SA, para los contenidos.
+- **Lo recomendado.** Añadir el archivo de licencia al proyecto, con una licencia de software libre para el código, como AGPL v3 o MIT, y una Creative Commons (CC) libre, como CC BY-SA o CC BY, para los contenidos.
 
 ## 4\. Indica que se ha hecho con IA y qué ha comprobado la persona
 

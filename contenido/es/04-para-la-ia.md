@@ -16,7 +16,7 @@ EL MATERIAL
 - Qué tiene que hacer: [describir aquí lo que se necesita]
 - A quién va dirigido: [materia, curso o edad del alumnado]
 - Autoría que debe figurar: [nombre o nombre de usuario]
-- Licencia: CC BY-SA 4.0
+- Licencia: CC BY-SA 4.0 para los contenidos y AGPL v3 para el código
 - Dónde se publicará: [la web del chatbot, una plataforma, o un repositorio o
   sitio propio]
 
@@ -51,8 +51,9 @@ CÓMO DEBE CONSTRUIRSE
 SI SE PUBLICA EN UN REPOSITORIO O EN UN SITIO PROPIO
 - El proyecto puede tener varios archivos, pero debe contener todo lo que
   necesita para funcionar, sin depender de servicios externos.
-- Añade un archivo de licencia, con una licencia de software libre para el
-  código y una Creative Commons libre para los contenidos.
+- Añade un archivo LICENSE con la licencia del código y otro con la de los
+  contenidos, e indica la licencia al inicio de cada archivo de código con una
+  línea SPDX-License-Identifier.
 - Añade un documento que explique cómo está organizado el proyecto y para qué
   sirve cada archivo.
 - Lleva un registro de decisiones (ADR) dentro del proyecto, con un archivo por
