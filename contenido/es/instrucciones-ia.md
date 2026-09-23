@@ -85,7 +85,8 @@ que dependa de ti y dime qué queda pendiente para mí.
 2. DATOS PERSONALES. Comprueba si el material pide datos que identifiquen a una
    persona, si los necesita para su función y dónde los guarda. Comprueba si
    envía algo fuera del navegador y enumera todas las direcciones externas que
-   aparezcan en el código.
+   aparezcan en el código. Si tiene cuentas de usuario o se conecta con un
+   servidor, revisa también cómo se accede a esos datos y cómo se protegen.
 3. LICENCIA. Comprueba que el material indica su autoría y su licencia en un
    lugar visible y, si es un proyecto con varios archivos, que incluye los
    archivos de licencia.

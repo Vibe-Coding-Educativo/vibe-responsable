@@ -20,7 +20,7 @@ Lo mínimo es guardar en el propio ordenador una copia del código del material 
 
 ## Lo que se carga de fuera
 
-Programar desde cero lo que ya resuelve una biblioteca conocida no es realista, y tampoco lo es alojar dentro del material todo lo que utiliza. Las bibliotecas que muestran fórmulas, gráficos o mapas, y las tipografías, pueden cargarse desde fuera sin inconveniente. Lo importante es que procedan de un servicio conocido y estable, y que quede constancia de ellas.
+Programar desde cero lo que ya resuelve una biblioteca conocida no es realista, y tampoco lo es alojar dentro del material todo lo que utiliza. Las bibliotecas que muestran fórmulas, gráficos o mapas, y las tipografías, pueden cargarse desde fuera, siempre que procedan de un servicio conocido y quede constancia de ellas. Un servicio conocido tampoco garantiza que vaya a mantenerse igual, y por eso conviene comprobar qué deja de funcionar al abrir el material sin conexión.
 
 Lo recomendado es pedir a la IA que cargue estos recursos de servicios conocidos y que los anote en la nota de decisiones de la recomendación 9, con su licencia. Esa lista no está pensada para el docente, sino para quien tenga que arreglar o adaptar el material más adelante, que muchas veces será de nuevo una IA. Lo que no puede recuperarse de otro sitio, como las imágenes, los textos y los datos propios, conviene que esté dentro del material, o al menos guardado en una copia, y no solo incrustado desde otra plataforma.
 

@@ -17,7 +17,7 @@ creado o no siguiendo la guía.
 
 ## Rúbrica
 
-1. CONTENIDO
+1. CONTENIDO (eliminatorio)
    2: No se detectan errores en lo que enseña: los datos, las definiciones
       y las respuestas que se dan por correctas.
    1: Hay alguna imprecisión menor en lo que enseña.
@@ -97,9 +97,11 @@ creado o no siguiendo la guía.
 
 - Calcula el porcentaje: la suma de las puntuaciones dividida entre el máximo
   posible de los puntos puntuados.
-- Da un resultado: «No recomendable» si el punto 2 tiene 0, sea cual sea el
-  porcentaje; «Mejorable» por debajo del 70 %; «Recomendable» a partir del
-  70 %.
+- Da un resultado: «No recomendable» si el punto 1 o el 2 tienen 0, sea cual
+  sea el porcentaje; «Mejorable» por debajo del 70 %; «Recomendable» a partir
+  del 70 %, siempre que los puntos 1 y 2 se hayan podido puntuar. Si alguno de
+  los dos ha quedado sin puntuar, el resultado es «Mejorable» e indica qué
+  falta por comprobar.
 - Termina con las tres mejoras que más subirían la puntuación.
 
 ## Si después te pido corregirlo

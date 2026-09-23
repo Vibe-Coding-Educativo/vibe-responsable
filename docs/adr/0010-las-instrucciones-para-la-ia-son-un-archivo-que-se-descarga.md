@@ -41,9 +41,12 @@ guía, y no corrige nada:
 - una rúbrica de 2, 1 o 0 para cada uno de los diez puntos, con un nivel
   descrito para cada valor y una frase que justifique la nota; lo que no puede
   comprobarse queda sin puntuar;
-- un porcentaje sobre los puntos puntuados, con «No recomendable» si el punto 2
-  (datos personales) tiene 0, «Mejorable» por debajo del 70 % y «Recomendable»
-  desde el 70 %, y las tres mejoras que más subirían la nota;
+- un porcentaje sobre los puntos puntuados, con «No recomendable» si el punto 1
+  (contenido) o el 2 (datos personales) tienen 0, «Mejorable» por debajo del
+  70 % y «Recomendable» desde el 70 %, solo si esos dos puntos se han podido
+  puntuar (23-09-2026: un recurso con errores evidentes o sin comprobar la
+  privacidad no puede recomendarse por buena que sea la media), y las tres
+  mejoras que más subirían la nota;
 - el punto 1 se puntúa con los errores que la IA detecta por su cuenta, que
   bastan para ver un recurso sin revisar, aunque no certifican el contenido;
 - si después se pide corregir, la IA propone los cambios antes de hacerlos y,

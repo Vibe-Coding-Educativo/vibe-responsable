@@ -8,9 +8,9 @@ La transparencia es uno de los principios éticos de la [«Guía sobre el uso de
 
 ## La obligación legal de declarar
 
-En la Unión Europea, el [Reglamento de IA](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/spa) establece en su artículo 50 unas obligaciones de transparencia que se aplican desde el 2 de agosto de 2026. La mayor parte recae en los proveedores de los sistemas de IA, que deben marcar los contenidos generados de forma que pueda detectarse su origen. A las personas que utilizan esos sistemas les obliga a declararlo en dos casos: cuando difunden imágenes, audios o vídeos que suplantan a personas reales, y cuando publican textos para informar sobre asuntos de interés público sin que hayan pasado por una revisión humana.
+En la Unión Europea, el [Reglamento de IA](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/spa) establece en su artículo 50 unas obligaciones de transparencia que se aplican desde el 2 de agosto de 2026. La mayor parte recae en los proveedores de los sistemas de IA, que deben marcar los contenidos generados de forma que pueda detectarse su origen. A las personas que utilizan esos sistemas les obliga a declararlo en dos casos: cuando difunden imágenes, audios o vídeos generados o manipulados que se asemejan a personas, objetos, lugares o sucesos reales y pueden tomarse por auténticos, lo que el Reglamento llama ultrasuplantación, y cuando publican textos para informar sobre asuntos de interés público sin que hayan pasado por una revisión humana.
 
-Un material educativo revisado por su autor no entra en esos casos, de modo que declarar el uso de IA es una buena práctica y no una exigencia legal. Otros países tienen normas distintas, y conviene consultarlas.
+Un material educativo revisado por su autor no suele entrar en esos casos, salvo que incluya imágenes, audios o vídeos realistas de ese tipo, como la recreación de un hecho histórico que pueda tomarse por auténtica. Fuera de ese caso, declarar el uso de IA es una buena práctica y no una exigencia legal. Otros países tienen normas distintas, y conviene consultarlas.
 
 ## El contenido de la declaración
 
