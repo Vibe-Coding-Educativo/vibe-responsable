@@ -218,7 +218,9 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 /* En el móvil, una sola columna con la imagen después de «Por qué esta guía». */
 .textos { display: contents; }
 .entrada > .paso-guia { order: 1; }
-.textos > .utiliza, .textos > .notas { order: 2; }
+.textos > .utiliza { order: 2; }
+.entrada > .ir-guia { order: 3; margin: -1.2rem 0 0; }
+.textos > .notas { order: 4; }
 .entrada h2, .nota h2 { margin: 0 0 0.5rem; font-size: 1.18rem; line-height: 1.22; text-wrap: balance; }
 .columna, .utiliza { border-top: 2px solid var(--verde); padding-top: 0.6rem; }
 .entrada p { margin: 0 0 0.8rem; }
@@ -229,7 +231,6 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 .descarga .icono { width: 1.1rem; height: 1.1rem; }
 .continuar { display: inline-block; margin-top: 0.1rem; padding: 0.55rem 1.05rem; border-radius: 4px; background: var(--verde); color: var(--hoja); font-weight: 700; text-decoration: none; transition: background 0.15s ease; }
 .continuar:hover { background: color-mix(in srgb, var(--verde) 86%, var(--tinta)); }
-.entrada p:has(> .continuar) { margin-bottom: 0; }
 .nota { margin-top: 1.3rem; padding-top: 0.7rem; border-top: 1px solid var(--raya); color: var(--tinta-suave); font-size: 0.88rem; max-width: 62rem; }
 .nota h2 { font-size: 0.92rem; margin-bottom: 0.2rem; color: var(--tinta); }
 .nota p { margin: 0; }
@@ -240,15 +241,17 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 @media (min-width: 62rem) {
   /* El texto fluye en dos columnas equilibradas: un apartado puede empezar en la izquierda y
      seguir en la derecha, así no quedan huecos. La imagen ocupa el alto que deja la pantalla. */
-  .entrada { grid-template-columns: minmax(0, 1fr) auto; gap: 1rem 2.4rem; }
+  .entrada { grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto 1fr; gap: 1rem 2.4rem; }
+  .textos { grid-row: 1 / span 2; }
+  .entrada > .ir-guia { grid-column: 2; grid-row: 2; justify-self: center; margin: 0; }
   .textos { display: block; columns: 2; column-gap: 2.4rem; }
   .textos > * { order: 0; }
   .textos section + section, .textos > .notas { margin-top: 1rem; }
   .textos h2 { break-after: avoid; }
   .textos p { orphans: 2; widows: 2; }
-  .textos p:has(> .continuar), .textos .nota { break-inside: avoid; }
-  .entrada > .paso-guia { order: 0; }
-  .entrada .tarjeta { --mini-al: clamp(14rem, calc(100dvh - 19.5rem), 50rem); }
+  .textos .nota { break-inside: avoid; }
+  .entrada > .paso-guia, .entrada > .ir-guia { order: 0; }
+  .entrada .tarjeta { --mini-al: clamp(14rem, calc(100dvh - 23rem), 50rem); }
   .tarjeta .miniatura { width: calc(var(--mini-al) * var(--ig-an) / var(--ig-al)); height: var(--mini-al); }
   .tarjeta .miniatura img { height: 100%; object-fit: contain; }
 }

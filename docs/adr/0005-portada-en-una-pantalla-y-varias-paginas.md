@@ -21,7 +21,8 @@ de los archivos de `contenido/<idioma>/` y el del menú:
    educativo, por qué existe la guía, cómo se utiliza y cómo se ha elaborado. El
    texto fluye seguido en dos columnas equilibradas, de forma que un apartado
    puede empezar en una y seguir en la otra y no quedan huecos; al lado va la
-   infografía en una columna propia, con un enlace para descargarla debajo. Su
+   infografía en una columna propia, con un enlace para descargarla debajo y,
+   bajo ella, el botón que lleva a la guía, fuera del texto. Su
    alto es el que deja la pantalla, y de él sale la anchura de su columna, así
    que en un monitor grande se lee sin ampliarla y en un portátil queda como
    miniatura. Al final del texto van dos notas en letra pequeña, «Cómo se ha
@@ -44,8 +45,7 @@ una línea, con la autoría, las dos licencias y el enlace a los créditos.
 La guía cabe en una pantalla, también en un portátil de 1366 × 650 píxeles
 útiles; en pantallas bajas se compacta sola. La presentación creció al
 explicar mejor por qué existe la guía (23-09-2026): en un portátil de 1366 × 768
-el enlace a la guía queda a la vista y solo el final de la primera columna, las
-notas y el pie piden bajar un poco. Las demás
+el botón que lleva a la guía queda a la vista y solo el pie pide bajar un poco. Las demás
 páginas son texto explicativo y pueden extenderse hacia abajo.
 
 La página de la guía es una lista con su explicación. A la izquierda están las

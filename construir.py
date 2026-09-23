@@ -259,6 +259,11 @@ def pagina_presentacion(idioma):
     # se añadirá con la versión definitiva) y las del Markdown, como «Cómo se ha elaborado».
     notas = ('<div class="notas">' + "".join(bloque(i, "nota") for i in range(3, len(apartados)))
              + f'<p class="nota cita"><strong>{html.escape(T["citar"])}.</strong> {T["cita"]}</p></div>')
+    # El botón que lleva a la guía sale de «Cómo se utiliza» y va bajo la imagen.
+    cab, h = apartados[2]
+    boton = re.search(r'<p><a [^>]*class="continuar"[^>]*>.*?</a></p>', h)
+    apartados[2] = (cab, h.replace(boton.group(0), "").strip())
+    boton = boton.group(0).replace("<p>", '<p class="ir-guia">', 1)
     # Todo el texto va seguido, para que en pantalla ancha fluya en dos columnas sin huecos
     # (un apartado puede empezar en una y seguir en la otra); la imagen, aparte, a la derecha.
     cuerpo = f"""<h1>{html.escape(titulo)}</h1>
@@ -270,6 +275,7 @@ def pagina_presentacion(idioma):
 {notas}
 </div>
 <aside class="paso-guia">{tarjeta}</aside>
+{boton}
 </div>
 {visor(idioma)}"""
     return marco(idioma, "index.html", titulo, cuerpo, "pagina-presentacion")
