@@ -25,9 +25,10 @@ de los archivos de `contenido/<idioma>/` y el del menú:
    bajo ella, el botón que lleva a la guía, fuera del texto. Su
    alto es el que deja la pantalla, y de él sale la anchura de su columna, así
    que en un monitor grande se lee sin ampliarla y en un portátil queda como
-   miniatura. Al final del texto van dos notas en letra pequeña, «Cómo se ha
-   elaborado» y «Cómo citar», con la misma cita que la portada del PDF y el DOI
-   pendiente de la versión definitiva. En el móvil todo va en una columna, con
+   miniatura. Al final del texto va en letra pequeña la nota «Cómo se ha
+   elaborado». La nota «Cómo citar», con la misma cita que la portada del PDF y
+   el DOI pendiente de la versión definitiva, está de momento en la página de
+   créditos (23-09-2026) y volverá a la portada. En el móvil todo va en una columna, con
    la infografía después de «Por qué esta guía».
 2. **Guía** (`01-guia.md`, `guia.html`): las diez recomendaciones.
 3. **Herramientas y niveles** (`02-herramientas.md`).

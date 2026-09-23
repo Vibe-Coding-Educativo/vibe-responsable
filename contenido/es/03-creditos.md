@@ -6,6 +6,10 @@ Los textos de la guía y la infografía se publican con la licencia [Creative Co
 
 El código de la web se publica con la licencia [GNU AGPL v3](https://www.gnu.org/licenses/agpl-3.0.html), siglas en inglés de *Affero General Public License* (licencia pública general de Affero). El código fuente está en su [repositorio](https://github.com/Vibe-Coding-Educativo/vibe-responsable). En él se encuentra también el [registro de decisiones](https://github.com/Vibe-Coding-Educativo/vibe-responsable/tree/main/docs/adr) del proyecto, o ADR, siglas en inglés de *Architecture Decision Record* (registro de decisiones de arquitectura).
 
+## Cómo citar
+
+<!-- cita -->
+
 ## Materiales de otras personas
 
 Los iconos proceden de [Lucide](https://lucide.dev/), que se distribuye con la licencia ISC, que toma su nombre del Internet Systems Consortium. El logotipo de la guía combina dos iconos de esa misma colección, los corchetes de código y la marca de verificación.

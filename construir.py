@@ -261,10 +261,9 @@ def pagina_presentacion(idioma):
     tarjeta = (f'<div class="tarjeta"><a class="miniatura ampliar" href="{img}" aria-label="{html.escape(T["ampliar"])}" title="{html.escape(T["ampliar"])}">'
                f'<img src="{img}" width="{an}" height="{al}" alt="{html.escape(T["infografia_alt"])}"></a>'
                f'<a class="descarga" href="{img}" download>{icono("download")}{html.escape(T["descargar"])}</a></div>')
-    # Las notas del pie de la portada: «Cómo citar» (misma cita que la portada del PDF; el DOI
-    # se añadirá con la versión definitiva) y las del Markdown, como «Cómo se ha elaborado».
-    notas = ('<div class="notas">' + "".join(bloque(i, "nota") for i in range(3, len(apartados)))
-             + f'<p class="nota cita"><strong>{html.escape(T["citar"])}.</strong> {T["cita"]}</p></div>')
+    # Las notas del pie de la portada, que vienen del Markdown, como «Cómo se ha elaborado».
+    # «Cómo citar» está de momento en créditos (<!-- cita --> en 03-creditos.md); volverá aquí.
+    notas = '<div class="notas">' + "".join(bloque(i, "nota") for i in range(3, len(apartados))) + "</div>"
     # El botón que lleva a la guía sale de «Cómo se utiliza» y va bajo la imagen.
     cab, h = apartados[2]
     boton = re.search(r'<p><a [^>]*class="continuar"[^>]*>.*?</a></p>', h)
@@ -358,7 +357,7 @@ def pagina_texto(idioma, archivo, fuente):
     for a in apartados:
         cab, resto = a.split("\n", 1)
         cab = cab.strip()
-        resto = resto.replace("<!-- rubrica -->", "ARCHIVO-IA-RUBRICA")
+        resto = resto.replace("<!-- rubrica -->", "ARCHIVO-IA-RUBRICA").replace("<!-- cita -->", "CITA-DE-LA-GUIA")
         for clave in ARCHIVOS_IA:
             resto = resto.replace(f"<!-- {clave} -->", f"ARCHIVO-IA-{clave}\n\n~~~~\n" + archivo_ia(idioma, clave) + "~~~~")
         h = pandoc(resto.strip())
@@ -369,6 +368,7 @@ def pagina_texto(idioma, archivo, fuente):
         # Un archivo para la IA lleva además su enlace de descarga, y su texto va plegado para no
         # ocupar la página; cualquier otro bloque lleva solo el botón de copiar
         h = h.replace("<p>ARCHIVO-IA-RUBRICA</p>", tabla_rubrica(idioma))
+        h = h.replace("<p>CITA-DE-LA-GUIA</p>", f'<p class="cita">{T["cita"]}</p>')   # la misma que la portada del PDF
         h = re.sub(r"<p>ARCHIVO-IA-(\w+)</p>\s*<pre[^>]*>(.*?)</pre>",
                    lambda m: botones + f'<a class="descarga" href="{ARCHIVOS_IA[m.group(1)][1]}" download>'
                              f'{icono("download")}{html.escape(T["descargar_archivo"])}</a>' + copiar +
@@ -467,7 +467,7 @@ def pagina_completa(idioma, paginas):
 .pdf .paso-guia {{ display: contents; }}
 .pdf .tarjeta {{ border: 0; box-shadow: none; padding: 0; margin: 1rem 0; break-before: page; }}
 .pdf .tarjeta .miniatura {{ width: 12cm !important; height: auto !important; margin: 0 auto; border: 1px solid #bbb; }}
-.pdf .descarga, .pdf .nota.cita {{ display: none; }} /* la cita ya va en la portada */
+.pdf .descarga, .pdf #como-citar {{ display: none; }} /* la cita ya va en la portada */
 .pdf a {{ color: inherit; text-decoration: none; }}
 .pdf .pdf-indice a, .pdf .texto a[href^="http"], .pdf .explicacion a[href^="http"] {{ color: var(--verde); }}
 </style>

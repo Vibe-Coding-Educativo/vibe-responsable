@@ -234,7 +234,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 .nota { margin-top: 1.3rem; padding-top: 0.7rem; border-top: 1px solid var(--raya); color: var(--tinta-suave); font-size: 0.88rem; max-width: 62rem; }
 .nota h2 { font-size: 0.92rem; margin-bottom: 0.2rem; color: var(--tinta); }
 .nota p { margin: 0; }
-/* Las notas del pie de la portada: «Cómo se ha elaborado» arriba y «Cómo citar» al final. */
+/* Las notas del pie de la portada, como «Cómo se ha elaborado». */
 .notas { display: flex; flex-direction: column; justify-content: space-between; gap: 0.5rem; }
 .notas .nota { margin-top: 0; }
 .cita a { color: inherit; }
