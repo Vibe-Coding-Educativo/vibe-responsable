@@ -77,9 +77,9 @@ UI = {
         "copiar": "Copiar el texto",
         "copiado": "Texto copiado",
         "descargar_archivo": "Descargar el archivo",
-        "ver_archivo": "Ver el contenido del archivo",
+        "ver_archivo": {"instrucciones": "Ver las instrucciones para crear", "evaluacion": "Ver las instrucciones para evaluar"},
         "rubrica": "Rúbrica de evaluación: 2, se cumple; 1, en parte; 0, no se cumple",
-        "ver_rubrica": "Ver la rúbrica en una tabla",
+        "ver_rubrica": "Ver la rúbrica de evaluación en una tabla",
         "punto": "Recomendación",
         "acercar": "Ver a tamaño de lectura",
         "alejar": "Ajustar a la pantalla",
@@ -359,7 +359,7 @@ def pagina_texto(idioma, archivo, fuente):
         h = re.sub(r"<p>ARCHIVO-IA-(\w+)</p>\s*<pre[^>]*>(.*?)</pre>",
                    lambda m: botones + f'<a class="descarga" href="{ARCHIVOS_IA[m.group(1)][1]}" download>'
                              f'{icono("download")}{html.escape(T["descargar_archivo"])}</a>' + copiar +
-                             f'<details class="archivo-ia"><summary>{html.escape(T["ver_archivo"])}</summary>'
+                             f'<details class="archivo-ia"><summary>{html.escape(T["ver_archivo"][m.group(1)])}</summary>'
                              f'<pre>{m.group(2)}</pre></details></div>', h, flags=re.S)
         h = re.sub(r"(?<!</summary>)<pre[^>]*>(.*?)</pre>",
                    lambda m: botones + copiar + f"<pre>{m.group(1)}</pre></div>", h, flags=re.S)

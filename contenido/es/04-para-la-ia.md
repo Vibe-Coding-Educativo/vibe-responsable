@@ -14,16 +14,22 @@ Si la IA no conoce la autoría o el lugar donde se publicará el material, las p
 
 ## Para crear un material
 
+Este es el archivo que se entrega a la IA al empezar a crear un material. Puede descargarse para adjuntarlo o para guardarlo en la carpeta del proyecto, o copiarse su texto para pegarlo al principio de la conversación.
+
 <!-- instrucciones -->
 
 ## Para evaluar un recurso ya hecho
 
-El archivo de evaluación sirve para cualquier recurso ya publicado, propio o ajeno, se haya creado o no con la guía. Se adjunta junto con el código del recurso, o con el archivo HTML guardado desde el navegador, y se pide «evalúa este recurso según las instrucciones». La IA puntúa cada recomendación con una rúbrica, da un porcentaje final y propone las tres mejoras que más subirían la puntuación. Si después se le pide corregirlo, primero propone los cambios y espera a que se aprueben; antes conviene guardar una copia.
+El archivo de evaluación sirve para cualquier recurso ya publicado, propio o ajeno, se haya creado o no con la guía. Para evaluar una web:
 
-La puntuación orienta, pero no sustituye a la revisión de la persona, sobre todo en la corrección del contenido, donde la IA solo detecta los errores que ve.
+1. Descargar el archivo de evaluación que aparece a continuación y adjuntarlo en la conversación con la IA, o copiar su texto y pegarlo al principio.
+2. Proporcionar el código del recurso: adjuntar el archivo HTML guardado desde el navegador, o pegar el código.
+3. Pedir «evalúa este recurso según las instrucciones».
+
+<!-- evaluacion -->
+
+La IA puntúa cada recomendación con la rúbrica, da un porcentaje final y propone las tres mejoras que más subirían la puntuación. Si después se le pide corregirlo, primero propone los cambios y espera a que se aprueben; antes conviene guardar una copia. La puntuación orienta, pero no sustituye a la revisión de la persona, sobre todo en la corrección del contenido, donde la IA solo detecta los errores que ve.
 
 <!-- rubrica -->
 
 El porcentaje final es la suma de las puntuaciones dividida entre el máximo posible de los puntos que la IA ha podido comprobar. El resultado es «No recomendable» si el punto 2 tiene un 0, sea cual sea el porcentaje, «Mejorable» por debajo del 70 % y «Recomendable» a partir del 70 %.
-
-<!-- evaluacion -->
