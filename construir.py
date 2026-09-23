@@ -83,7 +83,7 @@ UI = {
         "acercar": "Ver a tamaño de lectura",
         "alejar": "Ajustar a la pantalla",
         "niveles": {"Lo mínimo.": "minimo", "Lo recomendado.": "recomendado", "En todos los casos.": "todos"},
-        "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Código bajo <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL v3</a> y contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>.',
+        "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>.',
         "pie_2": '<a href="creditos.html">Créditos y licencias</a>.',
     },
 }
