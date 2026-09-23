@@ -21,7 +21,7 @@ Los capítulos que desarrollan cada recomendación están en contenido/<idioma>/
 y se publican como capitulo-N.html. Se enlazan desde su recomendación en la guía; los
 que aún no están escritos no muestran enlace.
 """
-import html, re, subprocess, sys, unicodedata
+import hashlib, html, re, subprocess, sys, unicodedata
 from datetime import date
 from pathlib import Path
 
@@ -92,6 +92,12 @@ PAGINAS = [("index.html", "00-presentacion.md"), ("guia.html", "01-guia.md"),
            ("referencias.html", "05-referencias.md")]
 
 
+def version(ruta):
+    """Marca que cambia con el contenido del archivo. Va en su dirección (?v=…) para que el
+    navegador no siga usando una copia antigua de los estilos o del script tras actualizar."""
+    return hashlib.sha256((RAIZ / ruta).read_bytes()).hexdigest()[:10]
+
+
 def pandoc(md):
     r = subprocess.run(["pandoc", "-f", "markdown-auto_identifiers+link_attributes", "-t", "html5", "--wrap=none"],
                        input=md, capture_output=True, text=True, check=True)
@@ -149,9 +155,9 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 <link rel="icon" href="../recursos/logo/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="../recursos/logo/apple-touch-icon.png">
 <link rel="preload" href="../recursos/fuentes/atkinson-hyperlegible-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../recursos/estilos.css">
+<link rel="stylesheet" href="../recursos/estilos.css?v={version("recursos/estilos.css")}">
 <script>(function(){{try{{var t=localStorage.getItem("{CLAVE_TEMA}");if(t!=="light"&&t!=="dark"){{t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}}document.documentElement.dataset.theme=t;}}catch(e){{}}}})();</script>
-<script src="../recursos/guia.js" defer></script>
+<script src="../recursos/guia.js?v={version("recursos/guia.js")}" defer></script>
 </head>
 <body class="{clase}">
 <a class="saltar" href="#contenido">{html.escape(T["saltar"])}</a>
@@ -427,7 +433,7 @@ def pagina_completa(idioma, paginas):
 <head>
 <meta charset="utf-8">
 <title>{html.escape(T["guia"])}</title>
-<link rel="stylesheet" href="../recursos/estilos.css">
+<link rel="stylesheet" href="../recursos/estilos.css?v={version("recursos/estilos.css")}">
 <style>
 /* Solo para la impresión a PDF de la guía completa */
 .pdf {{ background: #fff; color: #000; }}
@@ -535,6 +541,7 @@ def comprobar_enlaces_internos(idioma):
             if re.match(r"(https?:|mailto:)", href):
                 continue
             ruta, _, fragmento = href.partition("#")
+            ruta = ruta.split("?")[0]   # la marca de versión (?v=…) no forma parte del archivo
             destino = p if not ruta else (base / ruta / "index.html" if ruta.endswith("/") or ruta == "./" else base / ruta)
             if not destino.resolve().exists():
                 rotos.append(f"{p.name}: {href} (no existe)")

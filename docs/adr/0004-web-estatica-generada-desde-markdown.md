@@ -62,3 +62,9 @@ al Markdown. Quien quiera regenerarla necesita pandoc. A cambio, la web es
 ligera (el 21-09-2026, las quince páginas de un idioma con los estilos y el
 script sumaban 189 KB, más 53 KB de tipografía), no depende de nadie y cumple las
 recomendaciones que ella misma da.
+
+Las páginas piden `estilos.css` y `guia.js` con una marca de versión en la
+dirección (`?v=` seguido de parte de su huella), que `construir.py` calcula a partir del
+contenido de cada archivo. Así, al actualizar la web, el navegador de quien ya la
+había visitado no sigue usando una copia antigua, que descolocaba lo nuevo
+(23-09-2026, con la tabla de la rúbrica).
