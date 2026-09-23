@@ -127,11 +127,11 @@
     window.addEventListener("afterprint", function () { document.documentElement.classList.add("js"); });
   }
 
-  /* ---------- Archivos para la IA plegados ---------- */
+  /* ---------- Archivos para la IA y rúbrica plegados ---------- */
   // Al imprimir se despliegan, para que el papel lleve el texto; después vuelven como estaban
   var plegados = [];
   window.addEventListener("beforeprint", function () {
-    plegados = Array.prototype.filter.call(document.querySelectorAll("details.archivo-ia"), function (d) { return !d.open; });
+    plegados = Array.prototype.filter.call(document.querySelectorAll("details.archivo-ia, details.rubrica"), function (d) { return !d.open; });
     plegados.forEach(function (d) { d.open = true; });
   });
   window.addEventListener("afterprint", function () { plegados.forEach(function (d) { d.open = false; }); });

@@ -79,6 +79,7 @@ UI = {
         "descargar_archivo": "Descargar el archivo",
         "ver_archivo": "Ver el contenido del archivo",
         "rubrica": "Rúbrica de evaluación: 2, se cumple; 1, en parte; 0, no se cumple",
+        "ver_rubrica": "Ver la rúbrica en una tabla",
         "punto": "Recomendación",
         "acercar": "Ver a tamaño de lectura",
         "alejar": "Ajustar a la pantalla",
@@ -330,8 +331,9 @@ def tabla_rubrica(idioma):
         celda = f'<th scope="row"><span class="rub-n">{cab.group(1)}</span> {html.escape(nombre)}' + (f' <small>({html.escape(nota.group(1))})</small>' if nota else "") + "</th>"
         filas.append("<tr>" + celda + "".join(f'<td data-nota="{n}">{html.escape(niveles.get(n, ""))}</td>' for n in "210") + "</tr>")
     cabecera = "".join(f'<th scope="col">{n}</th>' for n in "210")
-    return (f'<div class="rubrica"><table><caption>{html.escape(T["rubrica"])}</caption><thead><tr><th scope="col">{html.escape(T["punto"])}</th>{cabecera}</tr></thead>'
-            f'<tbody>{"".join(filas)}</tbody></table></div>')
+    return (f'<details class="rubrica"><summary>{html.escape(T["ver_rubrica"])}</summary>'
+            f'<table><caption>{html.escape(T["rubrica"])}</caption><thead><tr><th scope="col">{html.escape(T["punto"])}</th>{cabecera}</tr></thead>'
+            f'<tbody>{"".join(filas)}</tbody></table></details>')
 
 
 def pagina_texto(idioma, archivo, fuente):
@@ -363,7 +365,7 @@ def pagina_texto(idioma, archivo, fuente):
                    lambda m: botones + copiar + f"<pre>{m.group(1)}</pre></div>", h, flags=re.S)
         cuerpo_apartado = f'<div class="texto">{h}</div>'
         # La tabla de la rúbrica sale de la columna de texto y ocupa todo el ancho del apartado
-        tabla = re.search(r'<div class="rubrica">.*?</table></div>', h, flags=re.S)
+        tabla = re.search(r'<details class="rubrica">.*?</table></details>', h, flags=re.S)
         if tabla:
             antes, despues = h[:tabla.start()], h[tabla.end():]
             cuerpo_apartado = f'<div class="texto">{antes}</div>{tabla.group(0)}<div class="texto texto-sigue">{despues}</div>'
@@ -425,7 +427,7 @@ def pagina_completa(idioma, paginas):
         cuerpo = re.sub(r'href="[a-z0-9-]+\.html#', 'href="#', cuerpo)
         cuerpo = re.sub(r'href="([a-z0-9-]+)\.html"', r'href="#pagina-\1"', cuerpo)
         cuerpo = cuerpo.replace('href="./"', 'href="#pagina-index"')
-        cuerpo = cuerpo.replace('<details class="archivo-ia">', '<details class="archivo-ia" open>')   # en el PDF, desplegados
+        cuerpo = re.sub(r'<details class="(archivo-ia|rubrica)">', r'<details class="\1" open>', cuerpo)   # en el PDF, desplegados
         partes.append(f'<section class="pdf-pagina" id="pagina-{clave}">{cuerpo}</section>')
         indice.append(f'<li><a href="#pagina-{clave}">{html.escape(titulo)}</a></li>')
     return f"""<!DOCTYPE html>
