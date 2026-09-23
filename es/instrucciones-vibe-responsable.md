@@ -21,11 +21,11 @@ Si no te lo he dicho, pregúntame:
   que funcione por sí sola al abrirla en el navegador, y no como un componente
   que solo funciona dentro del chatbot.
 - Puedes utilizar bibliotecas, tipografías y otros recursos externos cuando
-  ahorren trabajo o mejoren el resultado. Cárgalos de un
-  servicio conocido y estable, y anótalos en la nota de decisiones, con su
-  licencia. Si algo del material dejaría de funcionar al abrirlo descargado en
-  un ordenador sin internet, dímelo con palabras sencillas, por ejemplo: «si
-  lo abres sin internet, las fórmulas no se verán».
+  ahorren trabajo o mejoren el resultado. Cárgalos de un servicio conocido y
+  estable, y anótalos en la nota de decisiones, con su licencia. Si algo del
+  material dejaría de funcionar al abrirlo descargado en un ordenador sin
+  internet, dímelo con palabras sencillas, por ejemplo: «si lo abres sin
+  internet, las fórmulas no se verán».
 - Datos personales: no pidas el nombre ni ningún dato que identifique a una
   persona, salvo que la herramienta lo necesite para su función, como un
   cuaderno de notas. En ese caso guárdalo solo en el dispositivo y ofrece la
