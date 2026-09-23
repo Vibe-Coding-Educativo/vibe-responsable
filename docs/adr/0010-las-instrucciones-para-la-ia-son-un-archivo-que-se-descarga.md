@@ -49,7 +49,14 @@ guía, y no corrige nada:
 - si después se pide corregir, la IA propone los cambios antes de hacerlos y,
   si no hay nota de decisiones, describe el recurso tal como está.
 
-La página muestra además la rúbrica en una tabla (marca `<!-- rubrica -->`), que
+La rúbrica se ajustó tras probarla con el MIAE (23-09-2026), que sacó un 65 % por
+criterios que no medían lo que se buscaba: lo incrustado o cargado de otros
+servidores cuenta solo en el punto 6 (antes restaba también en el 2); el punto 10
+castiga el código difícil de entender sin comentarios, no el código corto y claro
+que no los lleva; y el punto 1 se limita a lo que el recurso enseña, sin contar
+las erratas de las referencias.
+
+La página muestra además la rúbrica en una tabla a la vista, sin plegar, presentada como la rúbrica del archivo de evaluación (marca `<!-- rubrica -->`), que
 `construir.py` genera a partir del propio `evaluacion-ia.md`, para que la tabla y
 lo que lee la IA no puedan separarse. Por eso la rúbrica mantiene su formato:
 `N. TÍTULO`, y debajo `2:`, `1:` y `0:` con su descripción, redactada en forma

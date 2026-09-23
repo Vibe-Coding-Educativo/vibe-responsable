@@ -30,6 +30,8 @@ El archivo de evaluación sirve para cualquier recurso ya publicado, propio o aj
 
 La IA puntúa cada recomendación con la rúbrica, da un porcentaje final y propone las tres mejoras que más subirían la puntuación. Si después se le pide corregirlo, primero propone los cambios y espera a que se aprueben; antes conviene guardar una copia. La puntuación orienta, pero no sustituye a la revisión de la persona, sobre todo en la corrección del contenido, donde la IA solo detecta los errores que ve.
 
+Esta es la rúbrica que utiliza el archivo de evaluación anterior:
+
 <!-- rubrica -->
 
 El porcentaje final es la suma de las puntuaciones dividida entre el máximo posible de los puntos que la IA ha podido comprobar. El resultado es «No recomendable» si el punto 2 tiene un 0, sea cual sea el porcentaje, «Mejorable» por debajo del 70 % y «Recomendable» a partir del 70 %.

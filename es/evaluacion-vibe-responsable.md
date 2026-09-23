@@ -18,22 +18,24 @@ creado o no siguiendo la guía.
 ## Rúbrica
 
 1. CONTENIDO
-   2: No se detectan errores en los datos, las definiciones ni las
-      respuestas que se dan por correctas.
-   1: Hay algún error menor o alguna imprecisión en un dato secundario.
+   2: No se detectan errores en lo que enseña: los datos, las definiciones
+      y las respuestas que se dan por correctas.
+   1: Hay alguna imprecisión menor en lo que enseña.
    0: Hay errores evidentes en conceptos, datos o respuestas.
    Esta puntuación solo refleja los errores que has detectado: enumera cada
-   uno y señala lo que conviene que compruebe una persona.
+   uno y señala lo que conviene que compruebe una persona. Las erratas y los
+   fallos de formato de las referencias no restan aquí: señálalos aparte.
 
 2. DATOS PERSONALES (eliminatorio)
    2: No pide datos que identifiquen a nadie, o los guarda solo en el
-      dispositivo y permite exportar sin nombres. No envía nada a servidores
-      ni lleva analítica.
-   1: No envía datos del alumnado, pero carga recursos de otros servidores
-      que reciben la visita (tipografías, bibliotecas), o guarda nombres sin
-      opción de exportar sin ellos.
+      dispositivo y permite exportar sin nombres. No envía datos a ningún
+      servidor ni lleva analítica.
+   1: No envía datos del alumnado, pero guarda nombres sin opción de
+      exportar sin ellos.
    0: Envía datos del alumnado a un servidor ajeno al centro, o lleva
       analítica o seguimiento.
+   Lo que se carga o se incrusta de otros servidores (vídeos, audios,
+   tipografías, bibliotecas) se valora en el punto 6, no aquí.
 
 3. LICENCIA
    2: Autoría y licencia libre visibles en el material, con enlace. Si es un
@@ -56,10 +58,12 @@ creado o no siguiendo la guía.
       que declara no coincide con el código.
 
 6. DEPENDENCIAS
-   2: Lo que carga de fuera procede de servicios conocidos y está anotado, y
-      los textos, imágenes y datos propios están dentro del material.
-   1: Carga recursos externos sin anotarlos, o parte del contenido propio
-      solo está incrustado desde otra plataforma.
+   2: Lo que carga o incrusta de fuera procede de servicios conocidos y está
+      anotado, y los textos, imágenes y datos propios están dentro del
+      material.
+   1: Carga o incrusta recursos externos sin anotarlos, o parte del
+      contenido propio (un vídeo, un audio, un mapa) solo está en otra
+      plataforma.
    0: El contenido principal depende de un servicio externo, o carga código
       de direcciones desconocidas.
 
@@ -83,10 +87,10 @@ creado o no siguiendo la guía.
    0: No hay nada.
 
 10. REUTILIZACIÓN
-   2: El código puede obtenerse completo, es legible, está comentado y hay
-      indicaciones para modificarlo.
-   1: Puede obtenerse, pero está poco comentado, en parte comprimido o sin
-      indicaciones.
+   2: El código puede obtenerse completo, se entiende al leerlo, con
+      comentarios donde hacen falta, y hay indicaciones para modificarlo.
+   1: Puede obtenerse, pero es difícil de entender sin comentarios, está en
+      parte comprimido o no tiene indicaciones.
    0: No puede obtenerse, o está ofuscado o comprimido.
 
 ## Resultado
