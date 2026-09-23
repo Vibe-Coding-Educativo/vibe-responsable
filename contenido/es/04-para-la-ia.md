@@ -4,7 +4,7 @@
 
 Las diez recomendaciones de la guía pueden darse directamente a la inteligencia artificial (IA), de modo que el trabajo de cumplirlas no recaiga sobre la persona. El primer texto se entrega al empezar, para que el material se genere ya conforme a la guía. El segundo se entrega al terminar, para revisar lo que se ha obtenido.
 
-Ambos textos sirven en cualquier herramienta, desde la web de un chatbot hasta un agente de programación. Conviene tener presente que la revisión de la IA no sustituye a la de la persona, ya que el modelo también se equivoca al revisar su propio trabajo.
+Ambos textos sirven en cualquier herramienta, desde la web de un chatbot hasta un agente de programación. Basta con indicar en el primero dónde se publicará el material, y la IA aplica las condiciones que corresponden cuando se trata de un repositorio o de un sitio propio. Conviene tener presente que la revisión de la IA no sustituye a la de la persona, ya que el modelo también se equivoca al revisar su propio trabajo.
 
 ## Al empezar un material
 
@@ -17,9 +17,12 @@ EL MATERIAL
 - A quién va dirigido: [materia, curso o edad del alumnado]
 - Autoría que debe figurar: [nombre o nombre de usuario]
 - Licencia: CC BY-SA 4.0
+- Dónde se publicará: [la web del chatbot, una plataforma, o un repositorio o
+  sitio propio]
 
 CÓMO DEBE CONSTRUIRSE
-- Un único archivo HTML, con los estilos y el código dentro, sin bibliotecas,
+- Salvo que se publique en un repositorio o en un sitio propio, un único
+  archivo HTML, con los estilos y el código dentro, sin bibliotecas,
   tipografías ni servicios externos, de forma que funcione sin conexión y pueda
   incrustarse en otra página.
 - Datos personales: no pidas el nombre ni ningún dato que identifique a una
@@ -41,12 +44,29 @@ CÓMO DEBE CONSTRUIRSE
 - Si incorporas imágenes, sonidos o fragmentos de código de otras personas,
   utiliza solo material cuya licencia permita la reutilización, e indica su
   autoría, su procedencia y su licencia dentro del propio material.
+- Si el programa va a guardar datos del alumnado en los sistemas del centro,
+  indícame qué debe revisar una persona con conocimientos técnicos antes de
+  ponerlo en uso.
+
+SI SE PUBLICA EN UN REPOSITORIO O EN UN SITIO PROPIO
+- El proyecto puede tener varios archivos, pero debe contener todo lo que
+  necesita para funcionar, sin depender de servicios externos.
+- Añade un archivo de licencia, con una licencia de software libre para el
+  código y una Creative Commons libre para los contenidos.
+- Añade un documento que explique cómo está organizado el proyecto y para qué
+  sirve cada archivo.
+- Lleva un registro de decisiones (ADR) dentro del proyecto, con un archivo por
+  decisión que recoja el contexto, las alternativas descartadas y las
+  consecuencias. Anota en él cada decisión que tomemos, sin esperar a que te lo
+  pida.
+- Revisa la accesibilidad con una herramienta automática y corrige lo que
+  detecte.
 
 CUANDO TERMINES
 - Explica en dos frases qué hace el material, qué guarda y si se comunica con
   algún servicio externo.
 - Escribe una nota breve con las decisiones importantes que has tomado y el
-  motivo de cada una.
+  motivo de cada una, o resúmelas del registro de decisiones si lo hay.
 - Indica qué debo comprobar yo, empezando por la corrección de los contenidos.
 ```
 
@@ -66,7 +86,8 @@ que dependa de ti y dime qué queda pendiente para mí.
    envía algo fuera del navegador y enumera todas las direcciones externas que
    aparezcan en el código.
 3. LICENCIA. Comprueba que el material indica su autoría y su licencia en un
-   lugar visible.
+   lugar visible y, si es un proyecto con varios archivos, que incluye el
+   archivo de licencia.
 4. USO DE IA. Comprueba que el material indica que se ha creado con IA y qué ha
    comprobado la persona que lo publica.
 5. EXPLICACIÓN. Resume en dos frases qué hace el material, qué guarda y si se
@@ -75,32 +96,13 @@ que dependa de ti y dime qué queda pendiente para mí.
    dentro del archivo, e indica si dejaría de funcionar sin conexión.
 7. ACCESIBILIDAD. Comprueba el manejo con el teclado, el orden de tabulación,
    las etiquetas de los controles, los textos alternativos, el contraste y el
-   comportamiento en una pantalla estrecha.
+   comportamiento en una pantalla estrecha. Si dispones de una herramienta
+   automática de accesibilidad, utilízala.
 8. MATERIAL AJENO. Enumera las imágenes, los sonidos, los textos y los
    fragmentos de código de otras personas, y comprueba que cada uno indica su
    autoría, su procedencia y su licencia.
-9. RASTRO. Comprueba si existe una nota con las decisiones tomadas y su motivo,
-   y complétala si falta alguna.
+9. RASTRO. Comprueba si existe una nota o un registro de decisiones (ADR) con
+   las decisiones tomadas y su motivo, y complétalo si falta alguna.
 10. REUTILIZACIÓN. Comprueba que el material puede descargarse y modificarse, y
     que el código es legible y está comentado.
-```
-
-## Si se trabaja con un repositorio
-
-Cuando el material se publica en un repositorio o en un sitio propio, pueden añadirse estas condiciones al primer texto, que corresponden a lo recomendado en cada punto de la guía.
-
-```
-- Añade al proyecto un archivo de licencia, con una licencia de software libre
-  para el código y una Creative Commons libre para los contenidos.
-- Añade un documento que explique cómo está organizado el proyecto y para qué
-  sirve cada archivo.
-- Lleva un registro de decisiones (ADR) dentro del proyecto, con un archivo por
-  decisión que recoja el contexto, las alternativas descartadas y las
-  consecuencias. Anota en él cada decisión que tomemos, sin esperar a que te lo
-  pida.
-- Revisa la accesibilidad con una herramienta automática y corrige lo que
-  detecte.
-- Si el programa va a guardar datos del alumnado en los sistemas del centro,
-  indícame qué debe revisar una persona con conocimientos técnicos antes de
-  ponerlo en uso.
 ```
