@@ -104,6 +104,12 @@ def pandoc(md):
     return r.stdout.strip()
 
 
+def sin_notas(md):
+    """Quita las notas de trabajo (<!-- … -->) del Markdown. Los marcadores de una sola
+    palabra, como <!-- rubrica -->, se conservan porque el generador los sustituye."""
+    return re.sub(r"<!--(?!\s*[\w-]+\s*-->).*?-->\n?", "", md, flags=re.S)
+
+
 def ancla(texto):
     s = unicodedata.normalize("NFD", texto.lower())
     s = "".join(c for c in s if unicodedata.category(c) != "Mn")
@@ -345,7 +351,7 @@ def tabla_rubrica(idioma):
 
 def pagina_texto(idioma, archivo, fuente):
     T = UI[idioma]
-    md = (RAIZ / "contenido" / idioma / fuente).read_text(encoding="utf-8")
+    md = sin_notas((RAIZ / "contenido" / idioma / fuente).read_text(encoding="utf-8"))
     titulo = titulo_de(md)
     apartados = re.split(r"^## ", md.split("\n", 1)[1], flags=re.M)[1:]
     secciones = []
