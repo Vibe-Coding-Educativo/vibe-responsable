@@ -136,6 +136,29 @@
   });
   window.addEventListener("afterprint", function () { plegados.forEach(function (d) { d.open = false; }); });
 
+  // Abrir y cerrar con un movimiento suave de la altura, salvo con movimiento reducido
+  document.querySelectorAll("details.archivo-ia, details.rubrica").forEach(function (d) {
+    var resumen = d.querySelector("summary"), animacion = null;
+    resumen.addEventListener("click", function (ev) {
+      if (REDUCIDO.matches || !d.animate) { return; }
+      ev.preventDefault();
+      var abrir = !d.open || (animacion && d.dataset.cerrando === "1");
+      var desde = d.getBoundingClientRect().height;
+      if (animacion) { animacion.cancel(); }
+      if (abrir) { d.open = true; }
+      d.dataset.cerrando = abrir ? "0" : "1";
+      var hasta = abrir ? d.scrollHeight : resumen.getBoundingClientRect().height + (d.offsetHeight - d.clientHeight);
+      d.style.overflow = "hidden";
+      animacion = d.animate({ height: [desde + "px", hasta + "px"] },
+        { duration: Math.min(450, 180 + Math.abs(hasta - desde) / 6), easing: "cubic-bezier(0.2, 0, 0, 1)" });
+      animacion.onfinish = function () {
+        if (!abrir) { d.open = false; }
+        d.style.overflow = ""; d.dataset.cerrando = ""; animacion = null;
+      };
+      animacion.oncancel = function () { d.style.overflow = ""; };
+    });
+  });
+
   /* ---------- Copiar los textos para la IA ---------- */
   document.querySelectorAll(".copiar").forEach(function (boton) {
     boton.addEventListener("click", function () {
