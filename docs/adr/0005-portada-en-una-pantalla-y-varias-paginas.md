@@ -19,17 +19,15 @@ de los archivos de `contenido/<idioma>/` y el del menú:
 
 1. **Presentación** (`00-presentacion.md`, portada): qué es el vibe coding
    educativo, por qué existe la guía, cómo se utiliza y cómo se ha elaborado. El
-   texto va en dos columnas y, al lado, la infografía en una columna propia, con
-   un enlace para descargarla debajo. Su alto es el que deja la pantalla, y de
-   él sale la anchura de su columna, así que en un monitor grande se lee sin
-   ampliarla y en un portátil queda como miniatura. Bajo «Por qué esta guía»
-   van dos notas en letra pequeña: «Cómo se ha elaborado», justo debajo del
-   texto, y «Cómo citar», pegada al pie de la columna, con la misma cita que la
-   portada del PDF y el DOI pendiente de la versión definitiva. En pantallas de
-   740 píxeles de alto o menos, el texto no cabe en dos columnas: «Cómo se
-   utiliza», con el enlace que lleva a la guía, pasa bajo la infografía, y las
-   dos notas van una junto a otra a lo ancho; en las demás pantallas «Cómo se
-   utiliza» va bajo el texto.
+   texto fluye seguido en dos columnas equilibradas, de forma que un apartado
+   puede empezar en una y seguir en la otra y no quedan huecos; al lado va la
+   infografía en una columna propia, con un enlace para descargarla debajo. Su
+   alto es el que deja la pantalla, y de él sale la anchura de su columna, así
+   que en un monitor grande se lee sin ampliarla y en un portátil queda como
+   miniatura. Al final del texto van dos notas en letra pequeña, «Cómo se ha
+   elaborado» y «Cómo citar», con la misma cita que la portada del PDF y el DOI
+   pendiente de la versión definitiva. En el móvil todo va en una columna, con
+   la infografía después de «Por qué esta guía».
 2. **Guía** (`01-guia.md`, `guia.html`): las diez recomendaciones.
 3. **Herramientas y niveles** (`02-herramientas.md`).
 4. **Instrucciones para la IA** (`04-para-la-ia.md`): cómo usar el archivo de instrucciones para la IA, que se muestra entero y se descarga (ADR 10).
@@ -43,8 +41,11 @@ desde el pie, y los diez capítulos, que regula el
 [ADR 7](0007-capitulos-en-paginas-propias-con-una-sola-fuente.md). El pie ocupa
 una línea, con la autoría, las dos licencias y el enlace a los créditos.
 
-La presentación y la guía caben en una pantalla, también en un portátil de
-1366 × 650 píxeles útiles; en pantallas bajas se compactan solas. Las demás
+La guía cabe en una pantalla, también en un portátil de 1366 × 650 píxeles
+útiles; en pantallas bajas se compacta sola. La presentación creció al
+explicar mejor por qué existe la guía (23-09-2026): en un portátil de 1366 × 768
+el enlace a la guía queda a la vista y solo el final de la primera columna, las
+notas y el pie piden bajar un poco. Las demás
 páginas son texto explicativo y pueden extenderse hacia abajo.
 
 La página de la guía es una lista con su explicación. A la izquierda están las

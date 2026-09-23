@@ -213,8 +213,12 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   height: min(calc(100dvh - 4.7rem), calc((100vw - 2rem) * var(--ig-al) / var(--ig-an))); transition: height 0.34s cubic-bezier(0.2, 0.7, 0.2, 1); }
 .visor.acercado .visor-lienzo img { height: min(calc(var(--ig-al) * 1px), calc((100vw - 2rem) * var(--ig-al) / var(--ig-an))); cursor: zoom-out; }
 
-/* Presentación: dos columnas de texto y, al lado, el resumen gráfico con el paso a la guía */
+/* Presentación: el texto en dos columnas y, al lado, el resumen gráfico */
 .entrada { display: grid; gap: 1.4rem; align-items: start; }
+/* En el móvil, una sola columna con la imagen después de «Por qué esta guía». */
+.textos { display: contents; }
+.entrada > .paso-guia { order: 1; }
+.textos > .utiliza, .textos > .notas { order: 2; }
 .entrada h2, .nota h2 { margin: 0 0 0.5rem; font-size: 1.18rem; line-height: 1.22; text-wrap: balance; }
 .columna, .utiliza { border-top: 2px solid var(--verde); padding-top: 0.6rem; }
 .entrada p { margin: 0 0 0.8rem; }
@@ -234,28 +238,19 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 .notas .nota { margin-top: 0; }
 .cita a { color: inherit; }
 @media (min-width: 62rem) {
-  /* Pantalla alta: la infografía ocupa todo el alto que deja la pantalla, en su propia columna,
-     y «Cómo se utiliza» pasa bajo el texto. El aside se disuelve (display: contents) para que
-     sus dos piezas se coloquen por separado en la rejilla. */
-  .entrada { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; grid-template-rows: auto auto minmax(0, 1fr); gap: 1rem 2.4rem; }
-  .paso-guia { display: contents; }
-  .entrada .tarjeta { grid-column: 3; grid-row: 1 / span 3; --mini-al: clamp(14rem, calc(100dvh - 19.5rem), 50rem); }
-  .entrada .utiliza { grid-column: 1; grid-row: 2 / span 2; align-self: end; }
-  .entrada > .notas { grid-column: 2; grid-row: 2 / span 2; }
+  /* El texto fluye en dos columnas equilibradas: un apartado puede empezar en la izquierda y
+     seguir en la derecha, así no quedan huecos. La imagen ocupa el alto que deja la pantalla. */
+  .entrada { grid-template-columns: minmax(0, 1fr) auto; gap: 1rem 2.4rem; }
+  .textos { display: block; columns: 2; column-gap: 2.4rem; }
+  .textos > * { order: 0; }
+  .textos section + section, .textos > .notas { margin-top: 1rem; }
+  .textos h2 { break-after: avoid; }
+  .textos p { orphans: 2; widows: 2; }
+  .textos p:has(> .continuar), .textos .nota { break-inside: avoid; }
+  .entrada > .paso-guia { order: 0; }
+  .entrada .tarjeta { --mini-al: clamp(14rem, calc(100dvh - 19.5rem), 50rem); }
   .tarjeta .miniatura { width: calc(var(--mini-al) * var(--ig-an) / var(--ig-al)); height: var(--mini-al); }
   .tarjeta .miniatura img { height: 100%; object-fit: contain; }
-}
-/* Portátil bajo: el texto no cabe en dos columnas, así que «Cómo se utiliza» va bajo la imagen. */
-@media (min-width: 62rem) and (max-height: 740px) {
-  .entrada { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(18rem, 22rem); }
-  .entrada { grid-template-rows: auto auto; }
-  .paso-guia { display: grid; grid-column: 3; grid-row: 1 / span 2; gap: 0.5rem; }
-  .entrada .tarjeta { grid-column: auto; grid-row: auto; justify-self: stretch; padding: 0.6rem; --mini-al: clamp(6rem, calc(100dvh - 34.3rem), 50rem); }
-  .entrada .utiliza { grid-column: auto; grid-row: auto; align-self: start; }
-  /* Las dos notas, una junto a otra, para no añadir alto. */
-  .entrada > .notas { grid-column: 1 / 3; grid-row: 2; display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 0 1.5rem; }
-  .pagina-presentacion .nota { font-size: 0.76rem; }
-  .tarjeta .miniatura { max-width: 100%; }
 }
 @media (min-width: 62rem) and (max-height: 940px) {
   .pagina-presentacion h1 { font-size: 1.6rem; margin: 0.45rem 0 0.5rem; }

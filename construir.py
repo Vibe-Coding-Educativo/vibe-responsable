@@ -238,7 +238,7 @@ def visor(idioma):
 
 
 def pagina_presentacion(idioma):
-    """Portada: dos columnas de texto y, al lado, el resumen gráfico con el paso a la guía."""
+    """Portada: el texto en dos columnas y, al lado, el resumen gráfico."""
     T = UI[idioma]
     md = (RAIZ / "contenido" / idioma / "00-presentacion.md").read_text(encoding="utf-8")
     titulo = titulo_de(md)
@@ -259,14 +259,17 @@ def pagina_presentacion(idioma):
     # se añadirá con la versión definitiva) y las del Markdown, como «Cómo se ha elaborado».
     notas = ('<div class="notas">' + "".join(bloque(i, "nota") for i in range(3, len(apartados)))
              + f'<p class="nota cita"><strong>{html.escape(T["citar"])}.</strong> {T["cita"]}</p></div>')
-    # La tarjeta y «Cómo se utiliza» van juntas en el HTML; en pantalla, el CSS las
-    # separa (pantalla alta) o las apila en la misma columna (portátil bajo).
+    # Todo el texto va seguido, para que en pantalla ancha fluya en dos columnas sin huecos
+    # (un apartado puede empezar en una y seguir en la otra); la imagen, aparte, a la derecha.
     cuerpo = f"""<h1>{html.escape(titulo)}</h1>
 <div class="entrada" {medidas}>
+<div class="textos">
 {bloque(0, "columna")}
 {bloque(1, "columna")}
-<aside class="paso-guia">{tarjeta}{bloque(2, "utiliza")}</aside>
+{bloque(2, "utiliza")}
 {notas}
+</div>
+<aside class="paso-guia">{tarjeta}</aside>
 </div>
 {visor(idioma)}"""
     return marco(idioma, "index.html", titulo, cuerpo, "pagina-presentacion")
