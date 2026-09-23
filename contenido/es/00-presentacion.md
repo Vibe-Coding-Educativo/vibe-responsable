@@ -10,9 +10,11 @@ Permite al profesorado disponer de recursos hechos a la medida de su aula, y cue
 
 ## Por qué esta guía
 
-Esta guía nace de dos motivos, uno ético y otro legal. El motivo ético es que todo material creado con ayuda de la inteligencia artificial se beneficia del conocimiento que otras personas han compartido antes. Publicar un material que nadie más puede reutilizar, o que deja fuera a parte del alumnado, es una actitud poco solidaria con esa comunidad. La guía parte de los principios del [Decálogo del conocimiento abierto](https://conocimiento-abierto.github.io/), del mismo autor.
+Esta guía surge de la experiencia acumulada a través del grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca). En él se comparten cada vez más aplicaciones, juegos y actividades que el profesorado crea con IA para su aula. Se hace con buena intención, pero a veces sin licencia, enviando datos del alumnado a servicios externos o sin que nadie más pueda aprovechar el código. Son detalles que se resuelven con facilidad cuando se conocen, y a ellos se dedican las recomendaciones de la guía.
 
-El motivo legal es que la persona que publica un material es responsable de lo que ese material hace, aunque lo haya generado la IA. Recoger datos del alumnado sin que el centro lo haya autorizado, o utilizar material ajeno sin respetar su licencia, puede tener consecuencias jurídicas.
+La IA escribe el código gracias a los programas, la documentación y las respuestas que muchas personas han publicado de forma abierta durante años. Es justo que lo que se crea de esta manera vuelva a la comunidad con una licencia que permita reutilizarlo, y que pueda usarlo todo el alumnado, también el que tiene alguna discapacidad. Estos principios, recogidos en el [Decálogo del conocimiento abierto](https://conocimiento-abierto.github.io/), son el punto de partida de la guía.
+
+Además, la persona que publica un material responde de lo que ese material hace, aunque el código lo haya escrito la IA. Por eso conviene saber, por ejemplo, si una aplicación envía datos del alumnado a un servicio que el centro no ha autorizado, o si incluye imágenes y textos ajenos sin respetar su licencia.
 
 ## Cómo se utiliza
 
