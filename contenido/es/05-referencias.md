@@ -16,7 +16,7 @@
 - Creative Commons. (s. f.). Does my use violate the NonCommercial clause of the licenses? En *Frequently asked questions*. <https://creativecommons.org/faq/#does-my-use-violate-the-noncommercial-clause-of-the-licenses>
 - Creative Commons. (2024). *Recommended practices for attribution*. Creative Commons Wiki. <https://wiki.creativecommons.org/wiki/Recommended_practices_for_attribution>
 - Wikimedia Commons. (s. f.). *Commons:Licencias*. <https://commons.wikimedia.org/wiki/Commons:Licensing/es>
-- De Haro, J. J. (2026). *Decálogo del conocimiento abierto* (versión 2.1). <https://conocimiento-abierto.github.io/>
+- De Haro, J. J. (2026). *Decálogo del conocimiento abierto* (versión 2.2). <https://conocimiento-abierto.github.io/>
 - Free Knowledge Foundation. (2007). *Declaration on libre knowledge*. WikiEducator. <https://wikieducator.org/Declaration_on_libre_knowledge>
 - Free Software Foundation. (s. f.). *¿Qué es el software libre?* Proyecto GNU. <https://www.gnu.org/philosophy/free-sw.es.html>
 - Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado. (2026). *Guía sobre el uso de la inteligencia artificial en el ámbito educativo* (versión 2.0). Ministerio de Educación, Formación Profesional y Deportes. <https://code.intef.es/wp-content/uploads/2026/09/ACTUALIZACI%C3%93N-GU%C3%8DA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5.pdf>
