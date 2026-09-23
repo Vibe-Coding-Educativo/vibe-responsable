@@ -1,7 +1,7 @@
 ---
 titulo: Crear REA con eXeLearning en tiempos de IA
 subtitulo: Del contenido generado a la transparencia del código; retos para mantener la «A» de Abierto
-autor: CEDEC (INTEF)
+autor: Martín Núñez Calleja (CEDEC, INTEF)
 evento: I Jornada sobre Software Libre e Inteligencia Artificial Abierta (seLIA), URJC Fuenlabrada
 fecha: 2026-07-06
 url: https://descargas.intef.es/cedec/formacion/SL_REA_IA_julio26/index.html

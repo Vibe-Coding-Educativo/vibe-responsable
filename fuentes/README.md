@@ -9,7 +9,7 @@ Material de consulta para la guía. No forma parte de ella ni se republica: se c
 | [Mantener la «A» de abierto en los REA en tiempos de IA](cedec-2026-05-28-mantener-la-a-de-abierto-en-los-rea-en-tiempos-de-ia.md) | CEDEC (INTEF) | 28-05-2026 | CC BY-SA 3.0 España |
 | [Cedec en seLIA: dos miradas sobre IA, software libre y REA](cedec-2026-09-17-cedec-en-selia-dos-miradas.md) | CEDEC (INTEF) | 17-09-2026 | CC BY-SA 3.0 España |
 | [Guía sobre el uso de la inteligencia artificial en el ámbito educativo, v. 2.0](intef-2026-09-guia-uso-de-la-ia-en-el-ambito-educativo-v2.pdf) ([texto extraído](intef-2026-09-guia-uso-de-la-ia-en-el-ambito-educativo-v2.txt)) | INTEF | 09-2026 | CC BY-SA 4.0. [Original en code.intef.es](https://code.intef.es/wp-content/uploads/2026/09/ACTUALIZACI%C3%93N-GU%C3%8DA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5.pdf) |
-| [Crear REA con eXeLearning en tiempos de IA](selia-2026-07-06-cedec-crear-rea-con-exelearning-en-tiempos-de-ia.md) (ponencia en seLIA) | CEDEC (INTEF) | 06-07-2026 | CC BY-SA 4.0 |
+| [Crear REA con eXeLearning en tiempos de IA](selia-2026-07-06-cedec-crear-rea-con-exelearning-en-tiempos-de-ia.md) (ponencia en seLIA) | Martín Núñez Calleja (CEDEC, INTEF) | 06-07-2026 | CC BY-SA 4.0 |
 | [IA: programar, documentar y no acabar en un berenjenal](selia-2026-07-06-serrano-ia-programar-documentar.md) (ponencia en seLIA) | Ernesto Serrano (eXeLearning) | 06-07-2026 | CC BY-SA 4.0 |
 
 Imágenes asociadas, en `imagenes/`:
