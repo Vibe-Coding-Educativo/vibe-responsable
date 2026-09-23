@@ -23,6 +23,10 @@ La IA acelera la producción, pero la responsabilidad pedagógica sigue siendo d
 
 Esto tiene una consecuencia práctica para el resto de la guía. La IA puede encargarse de casi todas las recomendaciones, desde la licencia hasta la accesibilidad, pero no de esta. Puede señalar qué conviene comprobar, e incluso advertir de aquello de lo que no está segura, aunque no puede certificar que lo que enseña el material sea correcto. Por eso el apartado de revisión del [archivo de instrucciones para la IA](para-la-ia.html) le pide exactamente eso, señalar lo que debe revisar la persona.
 
+## La revisión después de publicar
+
+La revisión no termina al publicar. Las personas que utilizan el material encuentran fallos que su autor no ha visto, porque lo prueban con otro alumnado, en otros dispositivos y con otras preguntas. Por eso conviene darlo a conocer en una comunidad docente y atender a lo que comenten quienes lo prueban. En el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca), la sección «¡Comparte tu App!» está pensada para presentar los programas publicados, y los comentarios que reciben sirven para corregirlos y mejorarlos.
+
 ## El valor didáctico del material
 
 Que los datos sean exactos es el mínimo, no el objetivo. Un material puede no contener ningún error y seguir siendo pobre desde el punto de vista didáctico. El artículo [«Mantener la "A" de abierto en los REA en tiempos de IA»](https://cedec.intef.es/mantener-la-a-de-abierto-en-los-rea-en-tiempos-de-ia/) señala tres aspectos que ningún código sustituye.

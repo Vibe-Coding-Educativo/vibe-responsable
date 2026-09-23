@@ -10,7 +10,7 @@ Permite al profesorado disponer de recursos hechos a la medida de su aula, y cue
 
 ## Por qué esta guía
 
-Esta guía nace de dos motivos, uno ético y otro legal. El motivo ético es que todo material creado con ayuda de la inteligencia artificial se beneficia del conocimiento que otras personas han compartido antes. Publicar un material que nadie más puede reutilizar, o que deja fuera a parte del alumnado, es una actitud poco solidaria con esa comunidad.
+Esta guía nace de dos motivos, uno ético y otro legal. El motivo ético es que todo material creado con ayuda de la inteligencia artificial se beneficia del conocimiento que otras personas han compartido antes. Publicar un material que nadie más puede reutilizar, o que deja fuera a parte del alumnado, es una actitud poco solidaria con esa comunidad. La guía parte de los principios del [Decálogo del conocimiento abierto](https://conocimiento-abierto.github.io/), del mismo autor.
 
 El motivo legal es que la persona que publica un material es responsable de lo que ese material hace, aunque lo haya generado la IA. Recoger datos del alumnado sin que el centro lo haya autorizado, o utilizar material ajeno sin respetar su licencia, puede tener consecuencias jurídicas.
 
