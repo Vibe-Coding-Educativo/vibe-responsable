@@ -39,7 +39,7 @@ Si nadie entiende cómo funciona un material, no podrá corregirse cuando falle,
 Un recurso que incrusta contenido de otra web, o que carga piezas desde servidores ajenos, deja de funcionar cuando esos servicios cambian o cierran. Lo mismo ocurre con la plataforma donde se ha creado el material, puesto que el enlace compartido dura lo que la empresa decida.
 
 - **Lo mínimo.** Guardar en el propio ordenador una copia del código del material, y actualizarla cuando cambie.
-- **Lo recomendado.** Incluir dentro del proyecto todo lo que necesita para funcionar, de forma que pueda usarse incluso sin conexión.
+- **Lo recomendado.** Pedir a la IA que cargue de servicios conocidos lo que el material necesite de fuera y lo anote en la nota de decisiones, y guardar dentro del proyecto las imágenes, los textos y los datos propios.
 
 ## 7\. Puede usarse con teclado, con lector de pantalla y en un móvil
 

@@ -25,6 +25,12 @@ con dos botones: descargar y copiar. El archivo:
 - lleva la licencia fija (CC BY-SA 4.0 y AGPL v3), salvo que se indiquen otras;
 - incluye las condiciones para un repositorio o sitio propio, que la IA aplica
   según el lugar de publicación;
+- permite cargar bibliotecas, tipografías y otros recursos externos cuando
+  ahorran trabajo, porque rehacerlos desde cero o alojarlo todo en el material no
+  es realista. La IA los anota en la nota de decisiones, que sirve a quien
+  arregle o adapte el material más adelante, y al docente solo le dice, con
+  palabras sencillas, qué dejaría de funcionar al abrirlo descargado sin
+  internet. El capítulo 6 sigue el mismo criterio;
 - incluye la lista de revisión, que se activa con «revisa el material según las
   instrucciones».
 
@@ -38,6 +44,9 @@ editor, y en las instrucciones permanentes del proyecto en las plataformas.
   descripción del material y obligaba a editar el texto en cada uso.
 - **Un archivo solo para empezar y la revisión como texto aparte**: dos piezas
   donde basta una; la revisión se pide con una frase.
+- **Exigir un material sin recursos externos**: obliga a programar desde cero lo
+  que ya resuelven bibliotecas conocidas, y la web de un chatbot las carga por su
+  cuenta.
 - **Solo descarga, sin mostrar el contenido**: impide leerlo antes de usarlo y
   deja sin opción a quien trabaja en una plataforma que no admite adjuntos.
 
