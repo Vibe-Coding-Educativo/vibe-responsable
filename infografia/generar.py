@@ -27,7 +27,7 @@ TEXTOS = {
             ("accessibility", "Hacerlo accesible a cualquier persona"),
             ("quote", "Citar la autoría de lo que se toma de otras personas"),
             ("notebook-pen", "Guardar el rastro de cómo se hizo"),
-            ("download", "Permitir que otras personas lo descarguen, modifiquen y mejoren"),
+            ("download", "Ofrecer el código para que otras personas lo adapten"),
         ],
         "pie1": "jjdeharo, CC BY-SA 4.0",
         "pie2": "vibe-coding-educativo.github.io/vibe-responsable",

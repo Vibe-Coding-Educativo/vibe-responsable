@@ -86,8 +86,8 @@
 <g transform="translate(198 1540) scale(2.3333)" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
   <path d="m7 10 5 5 5-5" /></g>
-<text x="296" y="1560" font-size="33" font-weight="400" fill="#16232b">Permitir que otras personas</text>
-<text x="296" y="1602" font-size="33" font-weight="400" fill="#16232b">lo descarguen, modifiquen y mejoren</text>
+<text x="296" y="1560" font-size="33" font-weight="400" fill="#16232b">Ofrecer el código para que otras</text>
+<text x="296" y="1602" font-size="33" font-weight="400" fill="#16232b">personas lo adapten</text>
 <line x1="70" y1="1654" x2="1010" y2="1654" stroke="#dde3df" stroke-width="2"/>
 <text x="70" y="1706" font-size="30" font-weight="700" fill="#16232b">jjdeharo, CC BY-SA 4.0</text>
 <text x="70" y="1748" font-size="27" font-weight="400" fill="#0f766e">vibe-coding-educativo.github.io/vibe-responsable</text>

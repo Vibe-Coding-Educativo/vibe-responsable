@@ -1,4 +1,4 @@
-# Permitir que otras personas lo descarguen, modifiquen y mejoren
+# Ofrecer el código para que otras personas lo adapten
 
 ## La apertura en la práctica
 

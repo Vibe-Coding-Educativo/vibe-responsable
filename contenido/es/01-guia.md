@@ -62,7 +62,7 @@ Con la IA se avanza muy deprisa, y a las pocas semanas nadie recuerda por qué s
 - **Lo mínimo.** Mantener un documento con las decisiones importantes y su porqué. Lo redacta la propia IA cuando se le pide al terminar cada sesión de trabajo, y solo queda revisarlo y guardarlo.
 - **Lo recomendado.** Pedir a la IA que lleve dentro del proyecto un registro de decisiones o ADR, siglas en inglés de *Architecture Decision Record* (registro de decisiones de arquitectura), que es el nombre con el que la IA lo reconoce. Es la IA la que lo escribe, a partir de lo que se decide en la conversación, con un archivo por decisión que recoge el contexto, las alternativas descartadas y las consecuencias. A los agentes de programación basta con indicárselo una vez en sus instrucciones, y después solo queda revisar que lo anotado corresponde a lo decidido. El control de versiones conserva, además, la historia de los cambios.
 
-## 10\. Permitir que otras personas lo descarguen, modifiquen y mejoren
+## 10\. Ofrecer el código para que otras personas lo adapten
 
 La licencia da el permiso, pero el material debe poder obtenerse, además, en una forma que permita trabajar con él. De este modo otra persona puede adaptarlo a su aula sin pedir nada a nadie.
 
