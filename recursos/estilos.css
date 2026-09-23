@@ -303,21 +303,30 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 .copiable pre { margin: 0; padding: 0.9rem 1rem; background: var(--hoja); border: 1px solid var(--raya); border-left: 3px solid var(--verde); border-radius: 4px; white-space: pre-wrap; overflow-wrap: break-word; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.82rem; line-height: 1.5; tab-size: 2; }
 .copiable-cab { display: flex; justify-content: flex-end; align-items: center; flex-wrap: wrap; gap: 0.4rem 1rem; margin: 0 0 0.3rem; }
 .copiable .copiar { font-size: 0.83rem; padding: 0.2rem 0.5rem; }
-.rubrica { margin: 0 0 1.2rem; }
-.rubrica table { width: 100%; border-collapse: collapse; font-size: 0.9rem; line-height: 1.45; background: var(--hoja); border: 1px solid var(--raya); }
+.rubrica { margin: 0.4rem 0 1rem; }
+.rubrica table { width: 100%; border-collapse: collapse; font-size: 0.93rem; line-height: 1.5; background: var(--hoja); }
 .rubrica caption { text-align: left; font-weight: 700; padding: 0 0 0.5rem; }
-.rubrica th, .rubrica td { padding: 0.55rem 0.7rem; border-bottom: 1px solid var(--raya); vertical-align: top; text-align: left; }
-.rubrica thead th { background: var(--marca); font-size: 0.85rem; }
+.rubrica th, .rubrica td { padding: 0.6rem 0.8rem; border: 1px solid var(--raya); vertical-align: top; text-align: left; }
+.rubrica thead th { background: var(--marca); font-size: 0.88rem; }
 .rubrica thead th:not(:first-child) { text-align: center; width: 27%; }
-.rubrica tbody th { font-weight: 700; width: 19%; }
+.rubrica th:first-child { text-align: right; }
+.rubrica tbody th { font-weight: 700; width: 16%; }
 .rubrica tbody th small { display: block; font-weight: 400; color: var(--tinta-suave); }
 .rubrica .rub-n { color: var(--verde); }
+@media (min-width: 62rem) {   /* cuando el apartado tiene dos columnas: título y texto */
+  .apartado > .rubrica { grid-column: 1 / -1; }
+  .apartado > .texto-sigue { grid-column: 2; }
+  .apartado:has(> .rubrica) h2 { position: static; }   /* fijo, se montaría sobre la tabla */
+}
 /* En pantallas estrechas cada punto es una ficha, con la puntuación delante de cada nivel */
 @media (max-width: 47.99rem) {
   .rubrica thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   .rubrica table, .rubrica caption, .rubrica tbody, .rubrica tr, .rubrica th, .rubrica td { display: block; width: auto !important; }
   .rubrica caption { padding: 0.6rem 0.7rem; border-bottom: 1px solid var(--raya); }
   .rubrica tr { border-bottom: 2px solid var(--raya); }
+  .rubrica th:first-child { text-align: left; }
+  .rubrica th, .rubrica caption { border: 0; border-bottom: 1px solid var(--raya); }
+  .rubrica table { border: 1px solid var(--raya); }
   .rubrica td { border: 0; padding: 0.25rem 0.7rem 0.25rem 2.4rem; position: relative; }
   .rubrica td::before { content: attr(data-nota); position: absolute; left: 0.9rem; font-weight: 700; color: var(--verde); }
   .rubrica tr > :last-child { padding-bottom: 0.7rem; }

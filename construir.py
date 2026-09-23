@@ -355,8 +355,14 @@ def pagina_texto(idioma, archivo, fuente):
                              f'<pre>{m.group(2)}</pre></details></div>', h, flags=re.S)
         h = re.sub(r"(?<!</summary>)<pre[^>]*>(.*?)</pre>",
                    lambda m: botones + copiar + f"<pre>{m.group(1)}</pre></div>", h, flags=re.S)
+        cuerpo_apartado = f'<div class="texto">{h}</div>'
+        # La tabla de la rúbrica sale de la columna de texto y ocupa todo el ancho del apartado
+        tabla = re.search(r'<div class="rubrica">.*?</table></div>', h, flags=re.S)
+        if tabla:
+            antes, despues = h[:tabla.start()], h[tabla.end():]
+            cuerpo_apartado = f'<div class="texto">{antes}</div>{tabla.group(0)}<div class="texto texto-sigue">{despues}</div>'
         secciones.append(f'<section class="apartado" id="{ancla(cab)}" aria-labelledby="h-{ancla(cab)}">'
-                         f'<h2 id="h-{ancla(cab)}">{html.escape(cab)}</h2><div class="texto">{h}</div></section>')
+                         f'<h2 id="h-{ancla(cab)}">{html.escape(cab)}</h2>{cuerpo_apartado}</section>')
     cuerpo = f'<h1>{html.escape(titulo)}</h1>\n' + "\n".join(secciones)
     clase = "pagina-texto pagina-referencias" if archivo == "referencias.html" else "pagina-texto"
     return marco(idioma, archivo, titulo, cuerpo, clase)
