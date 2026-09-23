@@ -48,8 +48,9 @@ Si no te lo he dicho, pregúntame:
   utiliza solo material cuya licencia permita la reutilización, e indica su
   autoría, su procedencia y su licencia dentro del propio material.
 - Si el programa va a guardar datos del alumnado en los sistemas del centro,
-  indícame qué debe revisar una persona con conocimientos técnicos antes de
-  ponerlo en uso.
+  no escribas claves ni contraseñas en el código que llega al navegador, haz
+  que solo el docente o el centro puedan leer lo recogido e indícame qué debe
+  revisar una persona con conocimientos técnicos antes de ponerlo en uso.
 
 ## Si se publica en un repositorio o en un sitio propio
 
