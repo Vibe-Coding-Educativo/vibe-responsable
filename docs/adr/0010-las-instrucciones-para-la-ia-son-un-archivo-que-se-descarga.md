@@ -1,4 +1,4 @@
-# 10. Las instrucciones para la IA son un archivo que se descarga
+# 10. Las instrucciones para la IA son archivos que se descargan, uno para crear y otro para evaluar
 
 Fecha: 2026-09-23 · Estado: aceptado
 
@@ -33,18 +33,21 @@ con dos botones: descargar y copiar. El archivo:
   internet. El capítulo 6 sigue el mismo criterio;
 - incluye la lista de revisión, que se activa con «revisa el material según las
   instrucciones».
-- incluye un apartado para revisar un material que no se hizo con el archivo:
-  la IA pide el código, propone los cambios antes de hacerlos y, si no hay nota
-  de decisiones, describe el material tal como está, indicando que se ha
-  redactado después;
-- incluye una rúbrica para evaluar un recurso, propio o ajeno, sin corregirlo:
-  2, 1 o 0 en cada uno de los diez puntos, con un nivel descrito para cada
-  valor y una frase que lo justifique; lo que no puede comprobarse queda sin
-  puntuar. El resultado es un porcentaje sobre los puntos puntuados, con
-  «No recomendable» si el punto 2 (datos personales) tiene 0, «Mejorable» por
-  debajo del 70 % y «Recomendable» desde el 70 %. El punto 1 se puntúa con los
-  errores que la IA detecta por su cuenta, que bastan para ver un recurso sin
-  revisar, aunque no certifican que el contenido sea correcto.
+Evaluar un recurso ya hecho tiene su propio archivo, `contenido/<idioma>/evaluacion-ia.md`,
+publicado como `evaluacion-vibe-responsable.md` y mostrado en la misma página (marca
+`<!-- evaluacion -->`). Sirve para recursos propios o ajenos, hechos o no con la
+guía, y no corrige nada:
+
+- una rúbrica de 2, 1 o 0 para cada uno de los diez puntos, con un nivel
+  descrito para cada valor y una frase que justifique la nota; lo que no puede
+  comprobarse queda sin puntuar;
+- un porcentaje sobre los puntos puntuados, con «No recomendable» si el punto 2
+  (datos personales) tiene 0, «Mejorable» por debajo del 70 % y «Recomendable»
+  desde el 70 %, y las tres mejoras que más subirían la nota;
+- el punto 1 se puntúa con los errores que la IA detecta por su cuenta, que
+  bastan para ver un recurso sin revisar, aunque no certifican el contenido;
+- si después se pide corregir, la IA propone los cambios antes de hacerlos y,
+  si no hay nota de decisiones, describe el recurso tal como está.
 
 La página explica cómo usarlo en cada familia de herramientas: adjunto al primer
 mensaje en un chatbot, como archivo de instrucciones del proyecto en un agente o
@@ -56,6 +59,8 @@ editor, y en las instrucciones permanentes del proyecto en las plataformas.
   descripción del material y obligaba a editar el texto en cada uso.
 - **Un archivo solo para empezar y la revisión como texto aparte**: dos piezas
   donde basta una; la revisión se pide con una frase.
+- **La rúbrica de evaluación dentro del archivo de crear**: unas setenta líneas
+  que acompañarían todo el trabajo sin servir para nada mientras se crea.
 - **Exigir un material sin recursos externos**: obliga a programar desde cero lo
   que ya resuelven bibliotecas conocidas, y la web de un chatbot las carga por su
   cuenta.
@@ -70,4 +75,7 @@ editor, y en las instrucciones permanentes del proyecto en las plataformas.
 - Los capítulos remiten al «archivo de instrucciones para la IA» y a su
   apartado de revisión, por número de punto. Si cambia la numeración de la
   lista de revisión, hay que revisar esas remisiones.
-- Al traducir la guía, cada idioma necesita su `instrucciones-ia.md`.
+- Al traducir la guía, cada idioma necesita su `instrucciones-ia.md` y su
+  `evaluacion-ia.md`.
+- Los dos archivos repiten los diez puntos: un cambio en uno debe llevarse al
+  otro.

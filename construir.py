@@ -12,8 +12,8 @@ Páginas por idioma, en el orden en que se leen:
   index.html          presentación: qué es, por qué y cómo se utiliza (00-presentacion.md)
   guia.html           la guía: las diez recomendaciones (01-guia.md)
   herramientas.html   familias de herramientas y los dos niveles (02-herramientas.md)
-  para-la-ia.html     cómo usar el archivo de instrucciones para la IA (04-para-la-ia.md),
-                      que se muestra en la página y se publica aparte para descargarlo
+  para-la-ia.html     cómo usar los archivos para la IA, uno para crear y otro para evaluar
+                      (04-para-la-ia.md); se muestran en la página y se publican aparte
   referencias.html    todo lo citado en el texto (05-referencias.md)
   creditos.html       créditos y licencias, enlazada desde el pie (03-creditos.md)
 
@@ -32,9 +32,10 @@ REPO = "https://github.com/Vibe-Coding-Educativo/vibe-responsable"
 COMUNIDAD = "https://vibe-coding-educativo.github.io/"   # mismo dominio: se abre en la misma pestaña
 CLAVE_TEMA = "vibe-responsable:tema"   # única entrada en localStorage; la misma en recursos/guia.js
 PDF = "vibe-responsable-{idioma}.pdf"  # la guía completa, generada con --pdf y publicada junto a las páginas
-# Las instrucciones para la IA: contenido/<idioma>/instrucciones-ia.md se publica con este nombre
-# y se muestra entero en para-la-ia.html, en el lugar de la marca <!-- instrucciones -->
-INSTRUCCIONES = "instrucciones-vibe-responsable.md"
+# Los archivos para la IA: cada uno está en contenido/<idioma>/ y se publica con otro nombre para
+# descargarlo; para-la-ia.html lo muestra entero en el lugar de su marca (<!-- instrucciones -->).
+ARCHIVOS_IA = {"instrucciones": ("instrucciones-ia.md", "instrucciones-vibe-responsable.md"),   # para crear
+               "evaluacion": ("evaluacion-ia.md", "evaluacion-vibe-responsable.md")}         # para evaluar
 ICONOS = ["book-check", "shield-check", "creative-commons", "bot", "messages-square",
           "unplug", "accessibility", "quote", "notebook-pen", "download"]
 
@@ -299,8 +300,8 @@ def pagina_lista(idioma):
     return marco(idioma, "guia.html", titulo, cuerpo, "pagina-lista")
 
 
-def instrucciones(idioma):
-    return (RAIZ / "contenido" / idioma / "instrucciones-ia.md").read_text(encoding="utf-8")
+def archivo_ia(idioma, clave):
+    return (RAIZ / "contenido" / idioma / ARCHIVOS_IA[clave][0]).read_text(encoding="utf-8")
 
 
 def pagina_texto(idioma, archivo, fuente):
@@ -312,16 +313,18 @@ def pagina_texto(idioma, archivo, fuente):
     for a in apartados:
         cab, resto = a.split("\n", 1)
         cab = cab.strip()
-        resto = resto.replace("<!-- instrucciones -->", "~~~~\n" + instrucciones(idioma) + "~~~~")
+        for clave in ARCHIVOS_IA:
+            resto = resto.replace(f"<!-- {clave} -->", f"ARCHIVO-IA-{clave}\n\n~~~~\n" + archivo_ia(idioma, clave) + "~~~~")
         h = pandoc(resto.strip())
         if archivo == "herramientas.html":
             h = h.replace("<ul>", '<ul class="familias">', 1)
-        descarga = (f'<a class="descarga" href="{INSTRUCCIONES}" download>{icono("download")}{html.escape(T["descargar_archivo"])}</a>'
-                    if archivo == "para-la-ia.html" else "")
-        h = re.sub(r"<pre[^>]*>",
-                   f'<div class="copiable"><p class="copiable-cab solo-js">{descarga}'
-                   f'<button type="button" class="copiar discreto" data-hecho="{html.escape(T["copiado"])}">{html.escape(T["copiar"])}</button></p><pre>',
-                   h)
+        cab = '<div class="copiable"><p class="copiable-cab solo-js">'
+        copiar = f'<button type="button" class="copiar discreto" data-hecho="{html.escape(T["copiado"])}">{html.escape(T["copiar"])}</button></p><pre>'
+        # Un archivo para la IA lleva además su enlace de descarga; cualquier otro bloque, solo el de copiar
+        h = re.sub(r"<p>ARCHIVO-IA-(\w+)</p>\s*<pre[^>]*>",
+                   lambda m: cab + f'<a class="descarga" href="{ARCHIVOS_IA[m.group(1)][1]}" download>'
+                                   f'{icono("download")}{html.escape(T["descargar_archivo"])}</a>' + copiar, h)
+        h = re.sub(r"(?<!</button></p>)<pre[^>]*>", lambda m: cab + copiar, h)
         h = h.replace("</pre>", "</pre></div>")
         secciones.append(f'<section class="apartado" id="{ancla(cab)}" aria-labelledby="h-{ancla(cab)}">'
                          f'<h2 id="h-{ancla(cab)}">{html.escape(cab)}</h2><div class="texto">{h}</div></section>')
@@ -517,7 +520,8 @@ if __name__ == "__main__":
         paginas["creditos.html"] = pagina_texto(idioma, "creditos.html", "03-creditos.md")
         for archivo, contenido in paginas.items():
             (destino / archivo).write_text(contenido, encoding="utf-8")
-        (destino / INSTRUCCIONES).write_text(instrucciones(idioma), encoding="utf-8")
+        for fuente_ia, publicado in ARCHIVOS_IA.values():
+            (destino / publicado).write_text((RAIZ / "contenido" / idioma / fuente_ia).read_text(encoding="utf-8"), encoding="utf-8")
         viejo = destino / "presentacion.html"
         if viejo.exists():
             viejo.unlink()

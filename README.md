@@ -4,13 +4,13 @@ Guía ética y de responsabilidad, no técnica, para la comunidad educativa: lic
 
 **Web de la guía:** <https://vibe-coding-educativo.github.io/vibe-responsable/>
 
-Nace en el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca) y se dirige a docentes de cualquier país. Contiene una presentación, la lista «Antes de publicar: diez recomendaciones» con su infografía, un capítulo que desarrolla cada recomendación, un archivo de instrucciones para la IA que puede descargarse, y una página sobre las herramientas. Está en revisión por su autor.
+Nace en el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca) y se dirige a docentes de cualquier país. Contiene una presentación, la lista «Antes de publicar: diez recomendaciones» con su infografía, un capítulo que desarrolla cada recomendación, dos archivos de instrucciones para la IA que pueden descargarse, uno para crear y otro para evaluar, y una página sobre las herramientas. Está en revisión por su autor.
 
 ## Cómo está organizado el repositorio
 
 | Carpeta o archivo | Contenido |
 | --- | --- |
-| `contenido/<idioma>/` | El texto de la guía en Markdown, un archivo por página, en el orden en que se leen: `00-presentacion.md`, `01-guia.md`, `02-herramientas.md`, `04-para-la-ia.md`, `05-referencias.md` y `03-creditos.md`, más un archivo por capítulo en `capitulos/` y el archivo de instrucciones para la IA, `instrucciones-ia.md`, que se publica como `instrucciones-vibe-responsable.md`. Cada enlace externo del texto debe tener su entrada en las referencias: `construir.py` lo comprueba. Es lo único que hay que editar para cambiar el contenido. |
+| `contenido/<idioma>/` | El texto de la guía en Markdown, un archivo por página, en el orden en que se leen: `00-presentacion.md`, `01-guia.md`, `02-herramientas.md`, `04-para-la-ia.md`, `05-referencias.md` y `03-creditos.md`, más un archivo por capítulo en `capitulos/` y los dos archivos para la IA: `instrucciones-ia.md`, para crear, que se publica como `instrucciones-vibe-responsable.md`, y `evaluacion-ia.md`, para evaluar, que se publica como `evaluacion-vibe-responsable.md`. Cada enlace externo del texto debe tener su entrada en las referencias: `construir.py` lo comprueba. Es lo único que hay que editar para cambiar el contenido. |
 | `construir.py` | Genera la web a partir del Markdown. Necesita [pandoc](https://pandoc.org/). Con `--pdf` genera además la guía completa en PDF. |
 | `generar-pdf.js` | Imprime a PDF la guía completa con el Chromium de [Playwright](https://playwright.dev/), instalado de forma global (`npm i -g playwright`). Lo llama `construir.py --pdf`. |
 | `es/`, `index.html` | La web generada, y en `es/vibe-responsable-es.pdf` la guía completa. No se editan a mano. |
