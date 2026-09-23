@@ -303,6 +303,11 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 .copiable pre { margin: 0; padding: 0.9rem 1rem; background: var(--hoja); border: 1px solid var(--raya); border-left: 3px solid var(--verde); border-radius: 4px; white-space: pre-wrap; overflow-wrap: break-word; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.82rem; line-height: 1.5; tab-size: 2; }
 .copiable-cab { display: flex; justify-content: flex-end; align-items: center; flex-wrap: wrap; gap: 0.4rem 1rem; margin: 0 0 0.3rem; }
 .copiable .copiar { font-size: 0.83rem; padding: 0.2rem 0.5rem; }
+.archivo-ia { border: 1px solid var(--raya); border-left: 3px solid var(--verde); border-radius: 4px; background: var(--hoja); }
+.archivo-ia summary { cursor: pointer; padding: 0.6rem 1rem; color: var(--verde); font-weight: 700; font-size: 0.92rem; }
+.archivo-ia summary:hover { background: var(--marca); }
+.archivo-ia[open] summary { border-bottom: 1px solid var(--raya); }
+.archivo-ia pre { border: 0 !important; border-radius: 0 0 4px 4px !important; }
 
 /* Páginas de texto: los títulos de apartado van al margen */
 .apartado { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.3rem 3rem; padding: 1.3rem 0 0.6rem; border-top: 1px solid var(--raya); }
@@ -339,7 +344,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   html { font-size: 10.5pt; }
   .pizarra { background: none; color: #000; border-bottom: 2px solid #000; }
   /* En papel no hay navegación: ni el menú, ni volver, continuar, anterior o siguiente. */
-  .pizarra nav, .globo, .saltar, .migas, .entre-capitulos, .continuar, .copiable-cab, .detalle-pie, .visor, .utiles { display: none !important; }
+  .pizarra nav, .globo, .saltar, .migas, .entre-capitulos, .continuar, .copiable-cab, .detalle-pie, .visor, .utiles, .archivo-ia summary { display: none !important; }
   .sitio a, .sitio .sitio-comunidad { color: #000; }
   /* El aviso de borrador también en papel: solo con borde, por si no se imprimen los fondos. */
   .estado { background: none; color: #000; border: 1.5px solid #000; }

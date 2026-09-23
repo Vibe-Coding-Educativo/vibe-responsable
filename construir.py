@@ -77,6 +77,7 @@ UI = {
         "copiar": "Copiar el texto",
         "copiado": "Texto copiado",
         "descargar_archivo": "Descargar el archivo",
+        "ver_archivo": "Ver el contenido del archivo",
         "acercar": "Ver a tamaño de lectura",
         "alejar": "Ajustar a la pantalla",
         "niveles": {"Lo mínimo.": "minimo", "Lo recomendado.": "recomendado", "En todos los casos.": "todos"},
@@ -318,14 +319,17 @@ def pagina_texto(idioma, archivo, fuente):
         h = pandoc(resto.strip())
         if archivo == "herramientas.html":
             h = h.replace("<ul>", '<ul class="familias">', 1)
-        cab = '<div class="copiable"><p class="copiable-cab solo-js">'
-        copiar = f'<button type="button" class="copiar discreto" data-hecho="{html.escape(T["copiado"])}">{html.escape(T["copiar"])}</button></p><pre>'
-        # Un archivo para la IA lleva además su enlace de descarga; cualquier otro bloque, solo el de copiar
-        h = re.sub(r"<p>ARCHIVO-IA-(\w+)</p>\s*<pre[^>]*>",
-                   lambda m: cab + f'<a class="descarga" href="{ARCHIVOS_IA[m.group(1)][1]}" download>'
-                                   f'{icono("download")}{html.escape(T["descargar_archivo"])}</a>' + copiar, h)
-        h = re.sub(r"(?<!</button></p>)<pre[^>]*>", lambda m: cab + copiar, h)
-        h = h.replace("</pre>", "</pre></div>")
+        botones = '<div class="copiable"><p class="copiable-cab solo-js">'
+        copiar = f'<button type="button" class="copiar discreto" data-hecho="{html.escape(T["copiado"])}">{html.escape(T["copiar"])}</button></p>'
+        # Un archivo para la IA lleva además su enlace de descarga, y su texto va plegado para no
+        # ocupar la página; cualquier otro bloque lleva solo el botón de copiar
+        h = re.sub(r"<p>ARCHIVO-IA-(\w+)</p>\s*<pre[^>]*>(.*?)</pre>",
+                   lambda m: botones + f'<a class="descarga" href="{ARCHIVOS_IA[m.group(1)][1]}" download>'
+                             f'{icono("download")}{html.escape(T["descargar_archivo"])}</a>' + copiar +
+                             f'<details class="archivo-ia"><summary>{html.escape(T["ver_archivo"])}</summary>'
+                             f'<pre>{m.group(2)}</pre></details></div>', h, flags=re.S)
+        h = re.sub(r"(?<!</summary>)<pre[^>]*>(.*?)</pre>",
+                   lambda m: botones + copiar + f"<pre>{m.group(1)}</pre></div>", h, flags=re.S)
         secciones.append(f'<section class="apartado" id="{ancla(cab)}" aria-labelledby="h-{ancla(cab)}">'
                          f'<h2 id="h-{ancla(cab)}">{html.escape(cab)}</h2><div class="texto">{h}</div></section>')
     cuerpo = f'<h1>{html.escape(titulo)}</h1>\n' + "\n".join(secciones)
@@ -384,6 +388,7 @@ def pagina_completa(idioma, paginas):
         cuerpo = re.sub(r'href="[a-z0-9-]+\.html#', 'href="#', cuerpo)
         cuerpo = re.sub(r'href="([a-z0-9-]+)\.html"', r'href="#pagina-\1"', cuerpo)
         cuerpo = cuerpo.replace('href="./"', 'href="#pagina-index"')
+        cuerpo = cuerpo.replace('<details class="archivo-ia">', '<details class="archivo-ia" open>')   # en el PDF, desplegados
         partes.append(f'<section class="pdf-pagina" id="pagina-{clave}">{cuerpo}</section>')
         indice.append(f'<li><a href="#pagina-{clave}">{html.escape(titulo)}</a></li>')
     return f"""<!DOCTYPE html>

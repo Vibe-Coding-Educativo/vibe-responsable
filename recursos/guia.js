@@ -127,6 +127,15 @@
     window.addEventListener("afterprint", function () { document.documentElement.classList.add("js"); });
   }
 
+  /* ---------- Archivos para la IA plegados ---------- */
+  // Al imprimir se despliegan, para que el papel lleve el texto; después vuelven como estaban
+  var plegados = [];
+  window.addEventListener("beforeprint", function () {
+    plegados = Array.prototype.filter.call(document.querySelectorAll("details.archivo-ia"), function (d) { return !d.open; });
+    plegados.forEach(function (d) { d.open = true; });
+  });
+  window.addEventListener("afterprint", function () { plegados.forEach(function (d) { d.open = false; }); });
+
   /* ---------- Copiar los textos para la IA ---------- */
   document.querySelectorAll(".copiar").forEach(function (boton) {
     boton.addEventListener("click", function () {
