@@ -10,6 +10,8 @@ Las recomendaciones de la guía están reunidas en un archivo de instrucciones p
 
 Si la IA no conoce la autoría o el lugar donde se publicará el material, las propias instrucciones le piden que lo pregunte antes de empezar. Al terminar, basta con pedir «revisa el material según las instrucciones», y la IA comprueba cada recomendación y corrige lo que dependa de ella. Esa revisión no sustituye a la de la persona, ya que el modelo también se equivoca al revisar su propio trabajo.
 
+Para revisar un material que ya estaba hecho, se adjunta el archivo de instrucciones junto con el código del material, o el archivo HTML guardado desde el navegador, y se pide «revisa este material ya hecho según las instrucciones». Antes de aplicar las correcciones conviene guardar una copia.
+
 ## El archivo de instrucciones
 
 <!-- instrucciones -->

@@ -108,3 +108,16 @@ que dependa de ti y dime qué queda pendiente para mí.
    las decisiones tomadas y su motivo, y complétalo si falta alguna.
 10. REUTILIZACIÓN. Comprueba que el material puede descargarse y modificarse, y
     que el código es legible y está comentado.
+
+## Si el material ya estaba hecho
+
+Si te pido revisar un material que no se creó con estas instrucciones:
+- Trabaja sobre el código que te doy. Si no lo tienes, pídemelo antes de
+  empezar.
+- Revísalo con la misma lista, pero antes de corregir nada dime qué cambiarías
+  y espera a que lo apruebe. No cambies el contenido ni el funcionamiento, salvo
+  que te lo pida.
+- En el punto 9, si no hay nota de decisiones, escribe una que describa cómo
+  funciona el material ahora, e indica que se ha redactado después.
+- Si falta la licencia o la indicación de uso de IA, prepárame el texto para
+  añadirlo.
