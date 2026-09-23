@@ -368,7 +368,7 @@ def pagina_texto(idioma, archivo, fuente):
         # Un archivo para la IA lleva además su enlace de descarga, y su texto va plegado para no
         # ocupar la página; cualquier otro bloque lleva solo el botón de copiar
         h = h.replace("<p>ARCHIVO-IA-RUBRICA</p>", tabla_rubrica(idioma))
-        h = h.replace("<p>CITA-DE-LA-GUIA</p>", f'<p class="cita">{T["cita"]}</p>')   # la misma que la portada del PDF
+        h = h.replace("<p>CITA-DE-LA-GUIA</p>", f'<p>{T["cita"]}</p>')   # la misma que la portada del PDF
         h = re.sub(r"<p>ARCHIVO-IA-(\w+)</p>\s*<pre[^>]*>(.*?)</pre>",
                    lambda m: botones + f'<a class="descarga" href="{ARCHIVOS_IA[m.group(1)][1]}" download>'
                              f'{icono("download")}{html.escape(T["descargar_archivo"])}</a>' + copiar +
