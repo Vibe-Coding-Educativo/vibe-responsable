@@ -29,7 +29,7 @@ TEXTOS = {
             ("notebook-pen", "Guardar el rastro de cómo se hizo"),
             ("download", "Ofrecer el código para que otras personas lo adapten"),
         ],
-        "pie1": "jjdeharo, CC BY-SA 4.0",
+        "pie1": "@jjdeharo, CC BY-SA 4.0",
         "pie2": "vibe-coding-educativo.github.io/vibe-responsable",
         "pie3": ["Iconos: Lucide (ISC). Tipografía: Atkinson Hyperlegible (OFL).", "Maquetación generada con IA y revisada por el autor."],
         "desc": "Infografía con las diez recomendaciones para publicar de forma responsable materiales educativos creados con vibe coding.",
