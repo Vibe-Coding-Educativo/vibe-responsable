@@ -46,7 +46,8 @@ UI = {
         "saltar": "Saltar al contenido",
         "nav": "Secciones de la guía",
         "nav_capitulos": "Capítulo anterior y siguiente",
-        "nav_guia": "Guía",
+        # rótulos del menú más cortos que el título de su página
+        "nav_cortos": {"guia.html": "Guía", "referencias.html": "Referencias"},
         "borrador": "Borrador",
         "borrador_ayuda": "La guía está completa, pero su autor la está revisando y el texto puede cambiar.",
         "imprimir": "Imprimir esta página",
@@ -140,7 +141,7 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
     titulos = {a: titulo_de((RAIZ / "contenido" / idioma / m).read_text(encoding="utf-8")) for a, m in PAGINAS}
     nav = []
     for a, _ in PAGINAS:
-        rotulo = T["nav_guia"] if a == "guia.html" else titulos[a]
+        rotulo = T["nav_cortos"].get(a, titulos[a])
         destino = "./" if a == "index.html" else a
         actual = ' aria-current="page"' if a == archivo else ""
         nav.append(f'<li><a href="{destino}"{actual}>{html.escape(rotulo)}</a></li>')
@@ -525,7 +526,12 @@ def comprobar_referencias(idioma):
             continue
         for url in re.findall(patron, md.read_text(encoding="utf-8")):
             citados.setdefault(url, md.name)
-    referencias = set(re.findall(r"https?://[^\s)>\]]+", (carpeta / "05-referencias.md").read_text(encoding="utf-8")))
+    patron_url = r"https?://[^\s)>\]]+"
+    texto_referencias = (carpeta / "05-referencias.md").read_text(encoding="utf-8")
+    referencias = set(re.findall(patron_url, texto_referencias))
+    # Cada entrada es una línea de la lista; puede dar varias direcciones de la misma obra
+    # (el DOI y la edición web), y basta con que el texto cite una de ellas.
+    entradas = [urls for urls in (re.findall(patron_url, l) for l in texto_referencias.splitlines() if l.startswith("- ")) if urls]
     # Una dirección cuenta como citada si la referencia es la misma página sin sus parámetros
     # (…/miae/?nivel=4), la portada de esa web citada en un idioma (…/miae/es/ → …/miae/)
     # o la portada de la obra a la que pertenece la página (…/html/apartado.html →
@@ -542,7 +548,8 @@ def comprobar_referencias(idioma):
         return v
     faltan = [f"{url} ({md})" for url, md in citados.items() if not (variantes(url) & referencias)]
     citadas = set().union(*(variantes(u) for u in citados)) if citados else set()
-    sobran = [url for url in referencias if url not in citadas and not url.startswith(URL_SITIO.rstrip("/"))]
+    sobran = [urls[0] for urls in entradas
+              if not set(urls) & citadas and not any(u.startswith(URL_SITIO.rstrip("/")) for u in urls)]
     return faltan, sobran
 
 

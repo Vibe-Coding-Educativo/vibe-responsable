@@ -1,4 +1,4 @@
-# Referencias
+# Referencias citadas en la guía
 
 ## Normativa
 
@@ -42,7 +42,7 @@
 - CEDEC. (2026, 28 de mayo). Mantener la «A» de abierto en los REA en tiempos de IA. *Cedec*, INTEF. <https://cedec.intef.es/mantener-la-a-de-abierto-en-los-rea-en-tiempos-de-ia/>
 - CEDEC. (2026, 17 de septiembre). Cedec en seLIA: dos miradas sobre IA, software libre y recursos educativos abiertos. *Cedec*, INTEF. <https://cedec.intef.es/cedec-en-selia-dos-miradas-sobre-ia-software-libre-y-recursos-educativos-abiertos/>
 - De Haro, J. J. (2025, 5 de septiembre). Licencias libres para docentes: apps educativas y materiales didácticos. *Bilateria*. <https://educacion.bilateria.org/licencias-libres-para-docentes-apps-educativas-y-materiales-didacticos/>
-- De Haro, J. J. (2026). *Marco para la integración de la IA generativa en las tareas educativas (MIAE)*, versión 2.1. <https://jjdeharo.github.io/miae/>
+- De Haro, J. J. (2026). *Marco para la integración de la IA generativa en las tareas educativas (MIAE)*, versión 2.1. <https://doi.org/10.5281/zenodo.22647407>. Edición web: <https://jjdeharo.github.io/miae/>
 - De Haro, J. J. (2026, 10 de septiembre). Consolas de IA: qué son y cómo se instalan. *Bilateria*. <https://educacion.bilateria.org/consolas-de-ia-en-2026-que-son-como-se-instalan-y-que-cuestan-ahora/>
 - Karpathy, A. (2025, 2 de febrero). There's a new kind of coding I call «vibe coding» [publicación en X]. <https://x.com/karpathy/status/1886192184808149383>
 - Núñez Calleja, M. (2026, 6 de julio). *Crear REA con eXeLearning en tiempos de IA* [ponencia en la Jornada sobre Software Libre e Inteligencia Artificial Abierta, seLIA]. CEDEC, INTEF. <https://descargas.intef.es/cedec/formacion/SL_REA_IA_julio26/index.html>
