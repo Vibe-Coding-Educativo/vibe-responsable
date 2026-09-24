@@ -35,8 +35,8 @@ PDF = "vibe-responsable-{idioma}.pdf"  # la guía completa, generada con --pdf y
 # descargarlo; para-la-ia.html lo muestra entero en el lugar de su marca (<!-- instrucciones -->).
 ARCHIVOS_IA = {"instrucciones": ("instrucciones-ia.md", "instrucciones-vibe-responsable.md"),   # para crear
                "evaluacion": ("evaluacion-ia.md", "evaluacion-vibe-responsable.md")}         # para evaluar
-ICONOS = ["book-check", "shield-check", "creative-commons", "bot", "messages-square",
-          "unplug", "accessibility", "quote", "notebook-pen", "download"]
+ICONOS = ["book-check", "shield-check", "messages-square", "unplug", "accessibility",
+          "quote", "notebook-pen", "bot", "creative-commons", "download"]
 
 UI = {
     "es": {
@@ -73,7 +73,7 @@ UI = {
         "pie_pdf": "Vibe coding responsable · Juan José de Haro · CC BY-SA 4.0 · Borrador, {fecha}",
         "meses": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
         "infografia_titulo": "Resumen gráfico",
-        "infografia_alt": "Infografía con las diez recomendaciones, las mismas que aparecen en la lista.",
+        "infografia_alt": "Infografía con las diez recomendaciones, las mismas que aparecen en la lista, agrupadas en cuatro fases: proteger al alumnado, construir el material, documentar el trabajo y compartir el material.",
         "ampliar": "Ampliar la infografía",
         "descargar": "Descargar la imagen",
         "anterior": "Anterior",
@@ -525,7 +525,7 @@ def pagina_completa(idioma, paginas):
 .pdf .apartado h2 {{ margin-bottom: 0.4rem; }}
 .pdf .entrada {{ display: flex; flex-direction: column; gap: 1rem; }} /* la rejilla de la web no se reparte bien entre páginas */
 .pdf .tarjeta {{ border: 0; box-shadow: none; padding: 0; margin: 1rem 0; break-before: page; }}
-.pdf .tarjeta .miniatura {{ width: 10.5cm !important; height: auto !important; margin: 0 auto; border: 1px solid #bbb; }}
+.pdf .tarjeta .miniatura {{ width: 9.2cm !important; height: auto !important; margin: 0 auto; border: 1px solid #bbb; }}
 /* Las diez recomendaciones: sin la fila plegable de la web ni el recuadro de la lista,
    que se partía entre páginas; cada recomendación, entera en una página. */
 .pdf .hoja {{ border: 0; border-radius: 0; box-shadow: none; overflow: visible; }}

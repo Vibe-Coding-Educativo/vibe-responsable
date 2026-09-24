@@ -4,7 +4,7 @@
 
 Con la inteligencia artificial (IA) se programa muy deprisa, y a las pocas semanas nadie recuerda por qué se tomó cada decisión. Ernesto Serrano, del equipo de eXeLearning, lo describe en su ponencia [«Inteligencia artificial: programar, documentar y no acabar en un berenjenal»](https://erseco.github.io/talks/charlas/2026-07-06-selia-ia-programar-documentar/unit/index.html): el código está, pero el porqué no, y nadie recuerda qué alternativas se descartaron ni con qué argumentos. La IA no causa ese desorden, aunque hace que llegue antes.
 
-Conservar el rastro sirve para tres cosas. Permite retomar el trabajo después de un tiempo sin tener que reconstruirlo, permite explicarlo a otra persona que quiera continuarlo, y evita deshacer de buena fe una decisión que tenía un motivo. En un material educativo abierto tiene una cuarta utilidad, ya que muestra a las personas que lo reutilizan cómo se hizo, que es lo que completa la declaración de la recomendación 4.
+Conservar el rastro sirve para tres cosas. Permite retomar el trabajo después de un tiempo sin tener que reconstruirlo, permite explicarlo a otra persona que quiera continuarlo, y evita deshacer de buena fe una decisión que tenía un motivo. En un material educativo abierto tiene una cuarta utilidad, ya que muestra a las personas que lo reutilizan cómo se hizo, que es lo que completa la declaración de la recomendación 8.
 
 ## El registro de decisiones
 

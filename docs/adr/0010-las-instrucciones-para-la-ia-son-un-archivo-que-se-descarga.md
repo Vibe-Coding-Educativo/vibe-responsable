@@ -30,7 +30,7 @@ con dos botones: descargar y copiar. El archivo:
   es realista. La IA los anota en la nota de decisiones, que sirve a quien
   arregle o adapte el material más adelante, y al docente solo le dice, con
   palabras sencillas, qué dejaría de funcionar al abrirlo descargado sin
-  internet. El capítulo 6 sigue el mismo criterio;
+  internet. El capítulo 4 sigue el mismo criterio;
 - no lleva lista de revisión: al terminar, el material se revisa con el
   archivo de evaluación, adjunto en la misma conversación, y después se pide
   corregirlo (24-09-2026). Antes llevaba su propia lista de diez puntos, que
@@ -49,14 +49,14 @@ guía, y no corrige nada:
   70 % y «Recomendable» desde el 70 %, solo si esos dos puntos se han podido
   puntuar (23-09-2026: un recurso con errores evidentes o sin comprobar la
   privacidad no puede recomendarse por buena que sea la media), y siempre que
-  el punto 7 (accesibilidad) no tenga 0, porque un recurso que no puede usarse
+  el punto 5 (accesibilidad) no tenga 0, porque un recurso que no puede usarse
   con el teclado sacaba un 90 % con el resto perfecto; con 0 en el 7 queda en
   «Mejorable», sin hacerlo eliminatorio, que dejaría como «No recomendable» un
   recurso usable con fallos de contraste, color y pantalla estrecha (23-09-2026);
   y las tres mejoras que más subirían la nota;
 - el punto 1 se puntúa con los errores que la IA detecta por su cuenta, que
   bastan para ver un recurso sin revisar, aunque no certifican el contenido;
-- el punto 7 se comprueba, si la IA puede ejecutar código, con una herramienta
+- el punto 5 se comprueba, si la IA puede ejecutar código, con una herramienta
   automática de accesibilidad en el navegador, también con contenido cargado,
   sin contar lo incrustado de otros sitios y recorriendo aparte el teclado; la
   IA dice qué ha probado y cómo. Está en el propio archivo porque quien evalúa
@@ -81,7 +81,7 @@ guía, y no corrige nada:
 
 La rúbrica se ajustó tras probarla con el MIAE (23-09-2026), que sacó un 65 % por
 criterios que no medían lo que se buscaba: lo incrustado o cargado de otros
-servidores cuenta solo en el punto 6 (antes restaba también en el 2); el punto 10
+servidores cuenta solo en el punto 4 (antes restaba también en el 2); el punto 10
 castiga el código difícil de entender sin comentarios, no el código corto y claro
 que no los lleva; y el punto 1 se limita a lo que el recurso enseña, sin contar
 las erratas de las referencias.

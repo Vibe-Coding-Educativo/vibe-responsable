@@ -23,7 +23,7 @@ creado o no siguiendo la guía.
   de fuera, y cuándo (al abrir, al pulsar algo o en una ventana nueva).
 - Si el recurso está publicado, evalúa esa versión o comprueba que coincide
   con el código que te han dado.
-- Para el punto 7, si puedes ejecutar código, abre el recurso en un navegador
+- Para el punto 5, si puedes ejecutar código, abre el recurso en un navegador
   y pásale una herramienta automática de accesibilidad, como axe-core, también
   con contenido cargado y no solo en la pantalla inicial. No cuentes lo que se
   incrusta de otros sitios. La herramienta no comprueba el manejo con el
@@ -55,21 +55,9 @@ creado o no siguiendo la guía.
    Si el recurso maneja datos reales del alumnado, indica que conviene la
    revisión de una persona con conocimientos técnicos antes de usarlo.
    Lo que se carga o se incrusta de otros servidores (vídeos, audios,
-   tipografías, bibliotecas) se valora en el punto 6, no aquí.
+   tipografías, bibliotecas) se valora en el punto 4, no aquí.
 
-3. LICENCIA
-   2: Autoría y licencia libre visibles en el material, con enlace. Si es un
-      proyecto de varios archivos, incluye el archivo de licencia.
-   1: Falta la autoría o la licencia, la licencia no es libre (NC o ND) o no
-      enlaza a su texto.
-   0: No indica ni autoría ni licencia.
-
-4. USO DE IA
-   2: Indica que se ha hecho con IA y qué ha comprobado la persona.
-   1: Indica que se ha hecho con IA, sin decir qué se ha comprobado.
-   0: No lo indica. Si consta que no se usó IA, no se puntúa.
-
-5. ENTENDER QUÉ HACE
+3. ENTENDER QUÉ HACE
    2: Puede describirse brevemente qué hace, qué guarda y con qué se
       comunica, y lo que declara el material coincide con el código.
    1: Se entiende su funcionamiento, pero hay partes de propósito poco claro
@@ -77,7 +65,7 @@ creado o no siguiendo la guía.
    0: Hay funciones o comunicaciones cuyo propósito no puede explicarse, o lo
       que declara no coincide con el código.
 
-6. DEPENDENCIAS
+4. DEPENDENCIAS
    2: Lo que carga o incrusta de fuera procede de servicios conocidos y está
       anotado, y los textos, imágenes y datos propios están dentro del
       material.
@@ -87,24 +75,36 @@ creado o no siguiendo la guía.
    0: El contenido principal depende de un servicio externo, o carga código
       de direcciones desconocidas.
 
-7. ACCESIBILIDAD
+5. ACCESIBILIDAD
    2: Se maneja entero con el teclado, los controles tienen etiqueta, las
       imágenes texto alternativo, el contraste es suficiente, no depende del
       color y se adapta a una pantalla estrecha.
    1: Falla en uno o dos de esos aspectos, sin impedir su uso.
    0: Falla en tres o más, o no puede usarse con el teclado.
 
-8. MATERIAL AJENO
+6. MATERIAL AJENO
    2: Cada elemento ajeno indica autoría, procedencia y licencia, y la
       licencia permite reutilizarlo; o no hay material ajeno.
    1: Hay material ajeno con licencia válida, pero sin acreditar del todo.
    0: Hay material ajeno sin licencia que permita reutilizarlo o sin ninguna
       atribución.
 
-9. RASTRO
+7. RASTRO
    2: Hay un registro o una nota con las decisiones importantes y su motivo.
    1: Hay documentación que explica cómo está hecho, pero no por qué.
    0: No hay nada.
+
+8. USO DE IA
+   2: Indica que se ha hecho con IA y qué ha comprobado la persona.
+   1: Indica que se ha hecho con IA, sin decir qué se ha comprobado.
+   0: No lo indica. Si consta que no se usó IA, no se puntúa.
+
+9. LICENCIA
+   2: Autoría y licencia libre visibles en el material, con enlace. Si es un
+      proyecto de varios archivos, incluye el archivo de licencia.
+   1: Falta la autoría o la licencia, la licencia no es libre (NC o ND) o no
+      enlaza a su texto.
+   0: No indica ni autoría ni licencia.
 
 10. REUTILIZACIÓN
    2: El código puede obtenerse completo, se entiende al leerlo, con
@@ -119,9 +119,9 @@ creado o no siguiendo la guía.
   posible de los puntos puntuados.
 - Da un resultado: «No recomendable» si el punto 1 o el 2 tienen 0, sea cual
   sea el porcentaje; «Mejorable» por debajo del 70 %; «Recomendable» a partir
-  del 70 %, siempre que los puntos 1 y 2 se hayan podido puntuar y el punto 7
+  del 70 %, siempre que los puntos 1 y 2 se hayan podido puntuar y el punto 5
   no tenga 0. Si alguno de los puntos 1 y 2 ha quedado sin puntuar, el
-  resultado es «Mejorable» e indica qué falta por comprobar; si el punto 7
+  resultado es «Mejorable» e indica qué falta por comprobar; si el punto 5
   tiene 0, también es «Mejorable» e indica qué impide usarlo.
 - Empieza el informe con una línea como «Rúbrica VCER: Recomendable
   (85 %)», y añade debajo una frase con lo que significa ese resultado:
@@ -132,10 +132,10 @@ creado o no siguiendo la guía.
   - No recomendable: tiene errores evidentes en lo que enseña o envía datos
     del alumnado a servicios ajenos al centro; no conviene utilizarlo ni
     publicarlo hasta corregirlo.
-- En la justificación del punto 5, incluye esa breve descripción. En la
-  del 6, enumera las direcciones externas del código y para qué sirve cada
+- En la justificación del punto 3, incluye esa breve descripción. En la
+  del 4, enumera las direcciones externas del código y para qué sirve cada
   una, y di con palabras sencillas qué dejaría de funcionar al abrirlo
-  descargado en un ordenador sin internet. En la del 8, enumera el material
+  descargado en un ordenador sin internet. En la del 6, enumera el material
   ajeno.
 - Termina con las tres mejoras que más subirían la puntuación.
 

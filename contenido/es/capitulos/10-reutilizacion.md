@@ -8,13 +8,13 @@ El artículo [«Mantener la "A" de abierto en los REA en tiempos de IA»](https:
 
 ## La obtención del material
 
-Lo mínimo es que el material ofrezca su código para copiarlo o descargarlo. En la web de un chatbot y en las plataformas para crear aplicaciones se suele poder ver el código, pero las demás personas solo reciben un enlace, de modo que conviene añadir al propio material la forma de obtenerlo, o publicarlo aparte. Junto con el código conviene ofrecer la nota de decisiones de la recomendación 9, que permite a otra persona continuarlo sin tener que adivinar por qué está hecho así.
+Lo mínimo es que el material ofrezca su código para copiarlo o descargarlo. En la web de un chatbot y en las plataformas para crear aplicaciones se suele poder ver el código, pero las demás personas solo reciben un enlace, de modo que conviene añadir al propio material la forma de obtenerlo, o publicarlo aparte. Junto con el código conviene ofrecer la nota de decisiones de la recomendación 7, que permite a otra persona continuarlo sin tener que adivinar por qué está hecho así.
 
 Lo recomendado es publicar el proyecto en un repositorio abierto, con una explicación de cómo usarlo y cómo modificarlo. Un repositorio permite, además, que otras personas propongan mejoras y que el autor las incorpore.
 
 ## Un material fácil de adaptar
 
-Un material es más reutilizable cuando el contenido está separado del funcionamiento. Un cuestionario cuyas preguntas están en una lista al principio del código, o en un archivo aparte, puede adaptarse a otra materia cambiando esa lista, sin tocar el resto. Conviene pedirlo a la inteligencia artificial (IA) desde el principio, junto con el código comentado de la recomendación 5 y la ausencia de dependencias de la recomendación 6, que son las otras dos condiciones que facilitan la adaptación.
+Un material es más reutilizable cuando el contenido está separado del funcionamiento. Un cuestionario cuyas preguntas están en una lista al principio del código, o en un archivo aparte, puede adaptarse a otra materia cambiando esa lista, sin tocar el resto. Conviene pedirlo a la inteligencia artificial (IA) desde el principio, junto con el código comentado de la recomendación 3 y la ausencia de dependencias de la recomendación 4, que son las otras dos condiciones que facilitan la adaptación.
 
 También ayuda indicar en la documentación qué partes están pensadas para cambiarse, como los textos, los colores o el idioma. Una persona que quiera traducir el material, o ajustarlo a otro nivel educativo, encuentra así por dónde empezar.
 

@@ -21,19 +21,23 @@ TEXTOS = {
         "puntos": [
             ("book-check", "Revisar el contenido sin delegarlo en la IA"),
             ("shield-check", "No enviar datos personales a servicios ajenos al centro"),
-            ("creative-commons", "Publicar con una licencia libre a la vista"),
-            ("bot", "Declarar el uso de IA y lo que se ha comprobado"),
             ("messages-square", "Entender qué hace el material"),
             ("unplug", "No depender de servicios que pueden desaparecer"),
             ("accessibility", "Hacerlo accesible a cualquier persona"),
             ("quote", "Citar la autoría de lo que se toma de otras personas"),
             ("notebook-pen", "Guardar el rastro de cómo se hizo"),
+            ("bot", "Declarar el uso de IA y lo que se ha comprobado"),
+            ("creative-commons", "Publicar con una licencia libre a la vista"),
             ("download", "Ofrecer el código para que otras personas lo adapten"),
         ],
+        # Las fases de la vida del material: el número de la primera recomendación de cada una.
+        # Nombran lo que se hace, no la importancia: las diez tienen el mismo rango.
+        "grupos": {1: "Proteger al alumnado", 3: "Construir el material",
+                   6: "Documentar el trabajo", 9: "Compartir el material"},
         "pie1": "@jjdeharo, CC BY-SA 4.0",
         "pie2": "vibe-coding-educativo.github.io/vibe-responsable",
         "pie3": ["Iconos: Lucide (ISC y MIT). Tipografía: Atkinson Hyperlegible (OFL).", "Maquetación generada con IA y revisada por el autor."],
-        "desc": "Infografía con las diez recomendaciones para publicar de forma responsable materiales educativos creados con vibe coding.",
+        "desc": "Infografía con las diez recomendaciones para publicar de forma responsable materiales educativos creados con vibe coding, agrupadas en cuatro fases: proteger al alumnado, construir el material, documentar el trabajo y compartir el material.",
     },
 }
 
@@ -73,8 +77,18 @@ def generar(idioma="es"):
     y = alto_cab + 30
 
     ALTO_FILA = 128
+    ALTO_GRUPO = 58
     for i, (ic, texto) in enumerate(T["puntos"], start=1):
         color = VERDE
+        # rótulo de la fase, con una raya que llega al borde derecho
+        if i in T["grupos"]:
+            if i > 1:
+                y += 10
+            rotulo = T["grupos"][i].upper()
+            out.append(f'<text x="72" y="{y+32}" font-size="24" font-weight="700" letter-spacing="2.5" fill="{VERDE}">{html.escape(rotulo)}</text>')
+            fin_rotulo = 72 + len(rotulo) * 17.2 + 24
+            out.append(f'<line x1="{fin_rotulo:.0f}" y1="{y+24}" x2="{ANCHO-70}" y2="{y+24}" stroke="{RAYA}" stroke-width="2"/>')
+            y += ALTO_GRUPO
         # tarjeta
         out.append(f'<rect x="70" y="{y}" width="{ANCHO-140}" height="{ALTO_FILA-16}" rx="20" fill="{BLANCO}" stroke="{RAYA}" stroke-width="2"/>')
         # número
