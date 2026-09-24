@@ -29,7 +29,7 @@ En un material creado con vibe coding el código es obra de la IA, y lo habitual
 
 ## 5\. Entender qué hace el material
 
-Si nadie entiende cómo funciona un material, no podrá corregirse cuando falle, por lo que en la práctica deja de ser abierto. Para cumplir este punto no hace falta saber programar, ya que es suficiente con poder resumir en dos frases qué hace la aplicación, qué guarda y si se comunica con algún servicio externo.
+Si nadie entiende cómo funciona un material, no podrá corregirse cuando falle, por lo que en la práctica deja de ser abierto. Para cumplir este punto no hace falta saber programar, ya que es suficiente con poder describir brevemente qué hace la aplicación, qué guarda y si se comunica con algún servicio externo.
 
 - **Lo mínimo.** Pedir a la IA que explique en lenguaje llano qué hace la aplicación y si guarda o envía algo, y comprobar que la explicación coincide con lo que se observa al usarla. Pedir también que el código propio del material esté comentado y sea legible, ya que el código comprimido en líneas interminables es motivo suficiente para no publicar. Las bibliotecas conocidas que se incluyan son la excepción, puesto que suelen distribuirse así.
 - **Lo recomendado.** Añadir un documento que explique cómo está organizado el proyecto y para qué sirve cada archivo.

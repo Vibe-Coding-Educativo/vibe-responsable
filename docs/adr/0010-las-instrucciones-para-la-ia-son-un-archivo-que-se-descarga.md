@@ -105,7 +105,7 @@ editor, y en las instrucciones permanentes del proyecto en las plataformas.
 - **Mantener una lista de revisión propia en el archivo de crear**: dos listas
   de los mismos diez puntos acaban diciendo cosas distintas, y la persona que
   crea el material recibe una revisión con un criterio distinto del que usará
-  quien lo evalúe. Lo que solo pedía esa lista (la explicación en dos frases,
+  quien lo evalúe. Lo que solo pedía esa lista (la breve descripción del material,
   las direcciones externas, lo que falla sin internet y el material ajeno) pasó
   al informe de la evaluación.
 - **La rúbrica de evaluación dentro del archivo de crear**: unas setenta líneas

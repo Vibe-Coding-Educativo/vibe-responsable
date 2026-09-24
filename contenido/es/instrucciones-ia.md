@@ -68,7 +68,7 @@ Si no te lo he dicho, pregúntame:
 
 ## Cuando termines el material
 
-- Explica en dos frases qué hace el material, qué guarda y si se comunica con
+- Describe brevemente qué hace el material, qué guarda y si se comunica con
   algún servicio externo.
 - Escribe una nota breve con las decisiones importantes que has tomado y el
   motivo de cada una, o resúmelas del registro de decisiones si lo hay.

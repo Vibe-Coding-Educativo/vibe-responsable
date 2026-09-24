@@ -70,7 +70,7 @@ creado o no siguiendo la guía.
    0: No lo indica. Si consta que no se usó IA, no se puntúa.
 
 5. ENTENDER QUÉ HACE
-   2: Se puede explicar en dos frases qué hace, qué guarda y con qué se
+   2: Puede describirse brevemente qué hace, qué guarda y con qué se
       comunica, y lo que declara el material coincide con el código.
    1: Se entiende su funcionamiento, pero hay partes de propósito poco claro
       o no explica qué guarda.
@@ -125,7 +125,7 @@ creado o no siguiendo la guía.
   tiene 0, también es «Mejorable» e indica qué impide usarlo.
 - Empieza el informe con una línea como «Rúbrica VCER: Recomendable
   (85 %)».
-- En la justificación del punto 5, da la explicación en dos frases. En la
+- En la justificación del punto 5, incluye esa breve descripción. En la
   del 6, enumera las direcciones externas del código y para qué sirve cada
   una, y di con palabras sencillas qué dejaría de funcionar al abrirlo
   descargado en un ordenador sin internet. En la del 8, enumera el material

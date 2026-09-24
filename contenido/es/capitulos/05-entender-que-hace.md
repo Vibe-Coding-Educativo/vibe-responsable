@@ -6,7 +6,7 @@ Un recurso educativo es abierto cuando otra persona puede descargarlo, comprende
 
 El problema es práctico, ya que un material que funciona hoy puede dejar de hacerlo tras una actualización del navegador, y si nadie entiende cómo está hecho, tampoco podrá corregirse. El mismo artículo propone una regla sencilla: si no se puede explicar en dos frases qué hace el código, el recurso todavía no está listo para publicarse.
 
-## La explicación en dos frases
+## Una breve descripción del material
 
 Cumplir esta recomendación no exige saber programar, ya que es suficiente con poder decir con palabras corrientes tres cosas del material: qué hace, qué guarda y si se comunica con algún servicio externo. Una explicación de este tipo sería la siguiente: «El simulador calcula la aceleración de un cuerpo en un plano inclinado a partir del ángulo y del material elegidos, y dibuja las fuerzas. No guarda ningún dato ni se conecta con ningún servicio».
 
