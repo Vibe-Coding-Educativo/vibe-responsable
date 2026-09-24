@@ -49,7 +49,15 @@ UI = {
         # rótulos del menú más cortos que el título de su página
         "nav_cortos": {"guia.html": "Guía", "referencias.html": "Referencias"},
         "borrador": "Borrador",
-        "borrador_ayuda": "La guía está completa, pero su autor la está revisando y el texto puede cambiar.",
+        "borrador_boton": "La guía está en revisión: cómo enviar sugerencias",
+        # Panel de la etiqueta «Borrador», que abre también «Sugerencias y correcciones» del pie
+        "participar": '''<p class="participar-tit">La guía está en revisión</p>
+<p>Está completa, pero el texto aún puede cambiar. Las sugerencias y correcciones pueden enviarse por cualquiera de estas vías:</p>
+<ul>
+<li>En <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">GitHub</a>, abriendo una incidencia.</li>
+<li>En el grupo de Telegram Vibe Coding Educativo, en el <a href="https://t.me/vceduca/13553">tema abierto para comentar la guía</a>.</li>
+<li>En los comentarios de la presentación en <a href="https://www.linkedin.com/feed/update/urn:li:share:7508820800175636480/">LinkedIn</a>, <a href="https://x.com/jjdeharo/status/2103052984326267278">X</a> o <a href="https://bsky.app/profile/jjdeharo.bsky.social/post/3mwayfn6zlp2v">Bluesky</a>.</li>
+</ul>''',
         "imprimir": "Imprimir esta página",
         "imprimir_desc": "Solo lo que se ve en esta página",
         "imprimir_menu": "Imprimir o descargar",
@@ -85,7 +93,7 @@ UI = {
         "alejar": "Ajustar a la pantalla",
         "niveles": {"Lo mínimo.": "minimo", "Lo recomendado.": "recomendado", "En todos los casos.": "todos"},
         "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>.',
-        "pie_2": '<a href="creditos.html">Créditos y licencias</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Sugerencias y correcciones</a>.',
+        "pie_2": '<a href="creditos.html">Créditos y licencias</a>. <a class="abrir-participar" href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Sugerencias y correcciones</a>.',
     },
 }
 PAGINAS = [("index.html", "00-presentacion.md"), ("guia.html", "01-guia.md"),
@@ -170,9 +178,12 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 <a class="saltar" href="#contenido">{html.escape(T["saltar"])}</a>
 <header class="pizarra">
 <div class="ancho pizarra-int">
-<p class="sitio"><a class="sitio-guia" href="./"><img class="marca" src="../recursos/logo/logo.svg" alt="" width="30" height="30"><span>{html.escape(T["nombre"])}</span></a>
+<div class="sitio"><a class="sitio-guia" href="./"><img class="marca" src="../recursos/logo/logo.svg" alt="" width="30" height="30"><span>{html.escape(T["nombre"])}</span></a>
 <span class="sitio-desc">{html.escape(T["guia"])}</span>
-<span class="estado" tabindex="0">{html.escape(T["borrador"])}<span class="globo">{html.escape(T["borrador_ayuda"])}</span></span></p>
+<button type="button" class="estado" title="{html.escape(T["borrador_boton"])}" aria-expanded="false" aria-controls="participar">{html.escape(T["borrador"])}</button>
+<div class="participar" id="participar" hidden>
+{T["participar"]}
+</div></div>
 <nav aria-label="{html.escape(T["nav"])}"><ul>{"".join(nav)}</ul></nav>
 <div class="utiles">
 <button type="button" class="tema" title="{html.escape(T["tema"])}" aria-label="{html.escape(T["tema"])}"><span class="luna">{icono("moon")}</span><span class="sol">{icono("sun")}</span></button>

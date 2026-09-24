@@ -68,9 +68,21 @@ h1 { font-size: clamp(1.55rem, 1.05rem + 1.5vw, 2.3rem); line-height: 1.12; lett
 .marca { display: block; width: 1.75rem; height: 1.75rem; border-radius: 6px; box-shadow: 0 0 0 1px rgba(243, 241, 231, 0.35); }
 .sitio .sitio-guia span { font-weight: 700; }
 .sitio .sitio-desc { color: var(--tiza-suave); }
-.estado { font-size: 0.78rem; font-weight: 700; border: 1px solid #b8860b; color: #1a1400; background: #f2b705; border-radius: 999px; padding: 0.1rem 0.65rem; cursor: help; }
-.globo { position: absolute; z-index: 15; top: calc(100% + 0.5rem); left: 0; width: min(22rem, calc(100vw - 2.5rem)); padding: 0.7rem 0.85rem; border-radius: 6px; background: var(--hoja); color: var(--tinta); border: 1px solid var(--raya); box-shadow: var(--sombra); font-size: 0.92rem; line-height: 1.4; opacity: 0; visibility: hidden; transform: translateY(-0.25rem); transition: opacity 0.16s ease, transform 0.16s ease, visibility 0s linear 0.16s; }
-.estado:hover .globo, .estado:focus .globo, .estado:focus-within .globo { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
+/* La etiqueta «Borrador» abre un panel con las vías para enviar sugerencias; sin JS es solo la etiqueta. */
+.estado { font: inherit; font-size: 0.78rem; font-weight: 700; border: 1px solid #b8860b; color: #1a1400; background: #f2b705; border-radius: 999px; padding: 0.1rem 0.65rem; }
+.js .estado { cursor: pointer; }
+.js .estado:hover, .estado[aria-expanded="true"] { background: #ffc928; }
+.participar { position: absolute; z-index: 15; top: calc(100% + 0.5rem); left: 0; width: min(25rem, calc(100vw - 2rem)); padding: 0.8rem 1rem; border-radius: 6px; background: var(--hoja); color: var(--tinta); border: 1px solid var(--raya); box-shadow: var(--sombra); font-size: 0.92rem; line-height: 1.45; }
+.participar[hidden] { display: none; }
+.participar p { margin: 0 0 0.5rem; }
+.participar .participar-tit { font-weight: 700; }
+.participar ul { margin: 0; padding-left: 1.2rem; }
+.participar li + li { margin-top: 0.3rem; }
+.participar a { color: var(--verde); }
+@media (prefers-reduced-motion: no-preference) {
+  .participar:not([hidden]) { animation: aparecer 0.16s ease; }
+  @keyframes aparecer { from { opacity: 0; transform: translateY(-0.25rem); } }
+}
 .pizarra nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.1rem 1.25rem; }
 .pizarra nav a { display: block; color: var(--tiza); text-decoration: none; padding: 0.25rem 0; border-bottom: 2px solid transparent; font-size: 0.95rem; }
 .pizarra nav a:hover { border-bottom-color: var(--tiza-suave); }
@@ -376,7 +388,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   html { font-size: 10.5pt; }
   .pizarra { background: none; color: #000; border-bottom: 2px solid #000; position: static; transform: none; }
   /* En papel no hay navegación: ni el menú, ni volver, continuar, anterior o siguiente. */
-  .pizarra nav, .globo, .saltar, .migas, .entre-capitulos, .continuar, .copiable-cab, .detalle-pie, .visor, .utiles, .archivo-ia summary { display: none !important; }
+  .pizarra nav, .participar, .saltar, .migas, .entre-capitulos, .continuar, .copiable-cab, .detalle-pie, .visor, .utiles, .archivo-ia summary { display: none !important; }
   .sitio a, .sitio .sitio-desc { color: #000; }
   /* El aviso de borrador también en papel: solo con borde, por si no se imprimen los fondos. */
   .estado { background: none; color: #000; border: 1.5px solid #000; }

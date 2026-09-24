@@ -15,17 +15,26 @@
 <link rel="icon" href="../recursos/logo/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="../recursos/logo/apple-touch-icon.png">
 <link rel="preload" href="../recursos/fuentes/atkinson-hyperlegible-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../recursos/estilos.css?v=8e070ffe1e">
+<link rel="stylesheet" href="../recursos/estilos.css?v=abd8d38e7a">
 <script>(function(){try{var t=localStorage.getItem("vibe-responsable:tema");if(t!=="light"&&t!=="dark"){t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.dataset.theme=t;}catch(e){}})();</script>
-<script src="../recursos/guia.js?v=01dd515a04" defer></script>
+<script src="../recursos/guia.js?v=eccecc9266" defer></script>
 </head>
 <body class="pagina-texto pagina-capitulo">
 <a class="saltar" href="#contenido">Saltar al contenido</a>
 <header class="pizarra">
 <div class="ancho pizarra-int">
-<p class="sitio"><a class="sitio-guia" href="./"><img class="marca" src="../recursos/logo/logo.svg" alt="" width="30" height="30"><span>Vibe coding responsable</span></a>
+<div class="sitio"><a class="sitio-guia" href="./"><img class="marca" src="../recursos/logo/logo.svg" alt="" width="30" height="30"><span>Vibe coding responsable</span></a>
 <span class="sitio-desc">Guía para publicar materiales educativos creados con vibe coding</span>
-<span class="estado" tabindex="0">Borrador<span class="globo">La guía está completa, pero su autor la está revisando y el texto puede cambiar.</span></span></p>
+<button type="button" class="estado" title="La guía está en revisión: cómo enviar sugerencias" aria-expanded="false" aria-controls="participar">Borrador</button>
+<div class="participar" id="participar" hidden>
+<p class="participar-tit">La guía está en revisión</p>
+<p>Está completa, pero el texto aún puede cambiar. Las sugerencias y correcciones pueden enviarse por cualquiera de estas vías:</p>
+<ul>
+<li>En <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues" target="_blank" rel="noopener">GitHub</a>, abriendo una incidencia.</li>
+<li>En el grupo de Telegram Vibe Coding Educativo, en el <a href="https://t.me/vceduca/13553" target="_blank" rel="noopener">tema abierto para comentar la guía</a>.</li>
+<li>En los comentarios de la presentación en <a href="https://www.linkedin.com/feed/update/urn:li:share:7508820800175636480/" target="_blank" rel="noopener">LinkedIn</a>, <a href="https://x.com/jjdeharo/status/2103052984326267278" target="_blank" rel="noopener">X</a> o <a href="https://bsky.app/profile/jjdeharo.bsky.social/post/3mwayfn6zlp2v" target="_blank" rel="noopener">Bluesky</a>.</li>
+</ul>
+</div></div>
 <nav aria-label="Secciones de la guía"><ul><li><a href="./">Presentación</a></li><li><a href="guia.html" aria-current="page">Guía</a></li><li><a href="herramientas.html">Herramientas y niveles</a></li><li><a href="para-la-ia.html">Instrucciones para la IA</a></li><li><a href="referencias.html">Referencias</a></li></ul></nav>
 <div class="utiles">
 <button type="button" class="tema" title="Modo claro u oscuro" aria-label="Modo claro u oscuro"><span class="luna"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><span class="sol"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" />
@@ -67,7 +76,7 @@
 </main>
 <footer class="pie">
 <div class="ancho">
-<p>© 2026 <a href="https://bilateria.org" target="_blank" rel="noopener">Juan José de Haro</a>. Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank" rel="noopener">CC BY-SA 4.0</a>. <a href="creditos.html">Créditos y licencias</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues" target="_blank" rel="noopener">Sugerencias y correcciones</a>.</p>
+<p>© 2026 <a href="https://bilateria.org" target="_blank" rel="noopener">Juan José de Haro</a>. Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank" rel="noopener">CC BY-SA 4.0</a>. <a href="creditos.html">Créditos y licencias</a>. <a class="abrir-participar" href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Sugerencias y correcciones</a>.</p>
 </div>
 </footer>
 </body>

@@ -76,6 +76,34 @@
     });
   }
 
+  /* ---------- Sugerencias ---------- */
+  // La etiqueta «Borrador» despliega las vías para enviar sugerencias. El enlace
+  // «Sugerencias y correcciones» del pie abre el mismo panel; sin JS lleva a GitHub.
+  // Se cierra al pulsar fuera o con Escape.
+  var estado = document.querySelector(".estado");
+  var participar = document.getElementById("participar");
+  if (estado && participar) {
+    var abrirParticipar = function (abierto) {
+      participar.hidden = !abierto;
+      estado.setAttribute("aria-expanded", abierto ? "true" : "false");
+    };
+    estado.addEventListener("click", function () { abrirParticipar(participar.hidden); });
+    document.querySelectorAll(".abrir-participar").forEach(function (a) {
+      a.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        abrirParticipar(true);
+        estado.focus({ preventScroll: true });  // el foco devuelve la cabecera si estaba escondida
+      });
+    });
+    document.addEventListener("click", function (ev) {
+      if (!participar.hidden && !estado.contains(ev.target) && !participar.contains(ev.target) &&
+          !ev.target.closest(".abrir-participar")) { abrirParticipar(false); }
+    });
+    document.addEventListener("keydown", function (ev) {
+      if (ev.key === "Escape" && !participar.hidden) { abrirParticipar(false); estado.focus(); }
+    });
+  }
+
   /* ---------- Lista y panel ---------- */
   var panel = document.querySelector(".panel");
   var puntos = Array.prototype.slice.call(document.querySelectorAll(".punto"));
