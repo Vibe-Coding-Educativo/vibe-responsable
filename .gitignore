@@ -6,3 +6,4 @@ fuentes/consulta/
 
 # La guía completa en una sola página, que construir.py --pdf genera solo para imprimirla a PDF
 */completo.html
+__pycache__/
