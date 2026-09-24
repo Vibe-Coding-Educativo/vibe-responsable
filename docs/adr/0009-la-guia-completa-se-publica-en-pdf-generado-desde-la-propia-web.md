@@ -37,6 +37,18 @@ imprime, porque con `file://` el navegador no carga la tipografía. Usa la misma
 hoja de estilos que la web y sus reglas de impresión, que ocultan toda la
 navegación y muestran el aviso de borrador.
 
+Encima de ellas, el documento intermedio lleva reglas de composición propias,
+porque lo que en pantalla se pliega o se reparte en rejillas no funciona en
+papel. Sin JavaScript, la lista de recomendaciones mostraría a la vez cada fila
+plegada y su detalle, así que en el PDF solo sale el detalle, sin el recuadro de
+la lista, y cada recomendación va entera en una página. Las rejillas de la
+presentación y de los apartados pasan a bloques, que Chromium reparte mejor
+entre páginas. Ningún título queda solo al pie, los recuadros y las tablas
+cortas (hasta seis filas) no se parten, y los párrafos y bloques de código no
+dejan líneas sueltas. Cada capítulo empieza en página nueva. Tras cambiar el
+contenido o estas reglas, hay que repasar el PDF página por página, porque un
+cambio de pocas líneas puede dejar una página casi vacía.
+
 En la web, el botón de la impresora de la cabecera despliega dos opciones, cada
 una con una línea que dice lo que hace: imprimir la página que se está viendo o
 descargar la guía completa en PDF.

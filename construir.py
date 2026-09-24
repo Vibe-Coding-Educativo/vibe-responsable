@@ -448,6 +448,8 @@ def pagina_completa(idioma, paginas):
         cuerpo = re.sub(r'href="([a-z0-9-]+)\.html"', r'href="#pagina-\1"', cuerpo)
         cuerpo = cuerpo.replace('href="./"', 'href="#pagina-index"')
         cuerpo = cuerpo.replace('<details class="archivo-ia">', '<details class="archivo-ia" open>')   # en el PDF, desplegados
+        # Las tablas cortas van enteras en una página; las largas, como la rúbrica, se reparten.
+        cuerpo = re.sub(r"<table>(.*?</table>)", lambda m: ('<table class="entera">' if m.group(1).count("<tr") <= 6 else "<table>") + m.group(1), cuerpo, flags=re.S)
         partes.append(f'<section class="pdf-pagina" id="pagina-{clave}">{cuerpo}</section>')
         indice.append(f'<li><a href="#pagina-{clave}">{html.escape(titulo)}</a></li>')
     return f"""<!DOCTYPE html>
@@ -477,8 +479,30 @@ def pagina_completa(idioma, paginas):
 .pdf-pagina {{ break-before: page; }}
 .pdf-pagina h1 {{ margin-top: 0; }}
 .pdf .paso-guia {{ display: contents; }}
+.pdf .familias {{ margin: 0; }}
+.pdf .familias li {{ padding: 0.3rem 0 0.3rem; }}
+.pdf .familias strong:first-child {{ margin-bottom: 0; }}
+.pdf .apartado {{ display: block; padding: 0.9rem 0 0.3rem; }}
+.pdf .apartado h2 {{ margin-bottom: 0.4rem; }}
+.pdf .entrada {{ display: flex; flex-direction: column; gap: 1rem; }} /* la rejilla de la web no se reparte bien entre páginas */
 .pdf .tarjeta {{ border: 0; box-shadow: none; padding: 0; margin: 1rem 0; break-before: page; }}
-.pdf .tarjeta .miniatura {{ width: 12cm !important; height: auto !important; margin: 0 auto; border: 1px solid #bbb; }}
+.pdf .tarjeta .miniatura {{ width: 10.5cm !important; height: auto !important; margin: 0 auto; border: 1px solid #bbb; }}
+/* Las diez recomendaciones: sin la fila plegable de la web ni el recuadro de la lista,
+   que se partía entre páginas; cada recomendación, entera en una página. */
+.pdf .hoja {{ border: 0; border-radius: 0; box-shadow: none; overflow: visible; }}
+.pdf .punto > .fila {{ display: none; }}
+.pdf .punto {{ break-inside: avoid; padding: 1rem 0 0.2rem; }}
+.pdf .punto + .punto {{ border-top: 1px solid #bbb; }}
+.pdf .punto > .detalle {{ border-top: 0; }}
+.pdf .detalle-caja {{ padding: 0; }}
+/* El número del capítulo, separado del título como en la web */
+.pdf h1:has(> .cifra-cap) {{ display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.7rem; align-items: center; }}
+/* Ningún título solo al pie de página, ni recuadros o filas partidos, ni líneas sueltas */
+.pdf h1, .pdf h2, .pdf h3, .pdf h4 {{ break-after: avoid; }}
+.pdf .que-hacer, .pdf .nivel, .pdf li, .pdf tr, .pdf .nota {{ break-inside: avoid; }}
+.pdf p {{ orphans: 3; widows: 3; }}
+.pdf table.entera {{ break-inside: avoid; }}
+.pdf .copiable pre {{ orphans: 4; widows: 4; -webkit-box-decoration-break: clone; box-decoration-break: clone; }}
 .pdf .descarga, .pdf #como-citar {{ display: none; }} /* la cita ya va en la portada */
 .pdf a {{ color: inherit; text-decoration: none; }}
 .pdf .pdf-indice a, .pdf .texto a[href^="http"], .pdf .explicacion a[href^="http"] {{ color: var(--verde); }}
