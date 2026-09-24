@@ -425,6 +425,45 @@ def pagina_capitulo(idioma, n, archivo, md):
     return marco(idioma, "guia.html", titulo, cuerpo, "pagina-texto pagina-capitulo")
 
 
+# El PDF se justifica con el guionado de Chromium (hyphens: auto), que solo pone el guion
+# donde corta la línea y deja limpio el texto para buscar y copiar. Chromium no trae
+# diccionario para estos idiomas; en ellos los guiones opcionales los pone Pyphen, con los
+# diccionarios de LibreOffice. Comprobado en septiembre de 2026 con es, ca, gl, eu, en, fr,
+# it y pt: solo falta el catalán. Al añadir un idioma, comprobar si Chromium lo parte.
+SIN_GUIONADO_CHROMIUM = {"ca"}
+GUIONADO = {"en": "en_US"}   # diccionario de Pyphen para cada idioma, si no se llama igual
+
+
+def guionar(h, idioma):
+    """Inserta guiones opcionales (&shy;) en las palabras del texto para justificarlo en el PDF.
+
+    No toca etiquetas, código ni direcciones. En catalán no parte por la ele geminada
+    («col·laboració»), porque la norma cambia la grafía al partir y un guion opcional no puede."""
+    if idioma not in SIN_GUIONADO_CHROMIUM:
+        return h
+    import pyphen
+    dic = pyphen.Pyphen(lang=GUIONADO.get(idioma, idioma), left=2, right=3)
+    def palabra(m):
+        w = m.group()
+        pos = [p for p in dic.positions(w) if w[p - 1] != "·"]
+        for p in reversed(pos):
+            w = w[:p] + "\u00ad" + w[p:]
+        return w
+    partes, dentro = [], 0
+    for trozo in re.split(r"(<[^>]+>)", h):
+        if trozo.startswith("<"):
+            etiqueta = re.match(r"</?(\w+)", trozo)
+            if etiqueta and etiqueta.group(1) in ("pre", "code", "script", "style"):
+                dentro += -1 if trozo.startswith("</") else 1
+        elif not dentro:
+            # Las direcciones y los nombres de archivo (con «/», «@» o un punto entre letras) no se parten
+            trozo = re.sub(r"\S+", lambda t: t.group() if re.search(r"[/@]|\w\.\w", t.group()) else
+                           re.sub(r"[^\W\d_](?:[^\W\d_]|·)*[^\W\d_]", lambda m: palabra(m) if len(m.group()) >= 6 else m.group(), t.group()),
+                           trozo)
+        partes.append(trozo)
+    return "".join(partes)
+
+
 def pagina_completa(idioma, paginas):
     """Todas las páginas seguidas, con portada e índice, para imprimirlas a PDF (generar-pdf.js).
 
@@ -450,7 +489,7 @@ def pagina_completa(idioma, paginas):
         cuerpo = cuerpo.replace('<details class="archivo-ia">', '<details class="archivo-ia" open>')   # en el PDF, desplegados
         # Las tablas cortas van enteras en una página; las largas, como la rúbrica, se reparten.
         cuerpo = re.sub(r"<table>(.*?</table>)", lambda m: ('<table class="entera">' if m.group(1).count("<tr") <= 6 else "<table>") + m.group(1), cuerpo, flags=re.S)
-        partes.append(f'<section class="pdf-pagina" id="pagina-{clave}">{cuerpo}</section>')
+        partes.append(f'<section class="pdf-pagina" id="pagina-{clave}">{guionar(cuerpo, idioma)}</section>')
         indice.append(f'<li><a href="#pagina-{clave}">{html.escape(titulo)}</a></li>')
     return f"""<!DOCTYPE html>
 <html lang="{idioma}" data-theme="light">
@@ -501,6 +540,10 @@ def pagina_completa(idioma, paginas):
 .pdf h1, .pdf h2, .pdf h3, .pdf h4 {{ break-after: avoid; }}
 .pdf .que-hacer, .pdf .nivel, .pdf li, .pdf tr, .pdf .nota {{ break-inside: avoid; }}
 .pdf p {{ orphans: 3; widows: 3; }}
+/* Texto justificado con partición de palabras (véase SIN_GUIONADO_CHROMIUM); las tablas,
+   de columnas estrechas, siguen alineadas a la izquierda. */
+.pdf-pagina p, .pdf-pagina li {{ text-align: justify; hyphens: auto; }}
+.pdf td p, .pdf th p, .pdf td, .pdf th {{ text-align: left; }}
 .pdf table.entera {{ break-inside: avoid; }}
 .pdf .copiable pre {{ orphans: 4; widows: 4; -webkit-box-decoration-break: clone; box-decoration-break: clone; }}
 .pdf .descarga, .pdf #como-citar {{ display: none; }} /* la cita ya va en la portada */

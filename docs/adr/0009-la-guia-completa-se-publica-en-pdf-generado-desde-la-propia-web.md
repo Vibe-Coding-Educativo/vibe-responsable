@@ -49,6 +49,22 @@ dejan líneas sueltas. Cada capítulo empieza en página nueva. Tras cambiar el
 contenido o estas reglas, hay que repasar el PDF página por página, porque un
 cambio de pocas líneas puede dejar una página casi vacía.
 
+El texto corrido del PDF va justificado y con partición de palabras; las tablas,
+de columnas estrechas, siguen alineadas a la izquierda. Parte las palabras el
+propio Chromium (`hyphens: auto`, según el idioma de la página), que solo pone el
+guion donde corta la línea y deja limpio el texto para buscar y copiar. Se
+comprobó en septiembre de 2026 con los idiomas previstos para la traducción
+(castellano, catalán, gallego, euskera, inglés, francés, italiano y portugués):
+Chromium los parte todos menos el catalán. En los idiomas sin diccionario
+(`SIN_GUIONADO_CHROMIUM` en `construir.py`), `guionar()` inserta guiones
+opcionales con Pyphen, que usa los diccionarios de guionado de LibreOffice; en
+ellos, esos guiones quedan también en el texto del PDF. No se parten las
+direcciones, los nombres de archivo ni el código, y en catalán tampoco la ele
+geminada, porque la norma cambia la grafía al partirla («col-/laboració») y un
+guion opcional no puede hacerlo. Al añadir un idioma hay que comprobar si
+Chromium lo parte. La web no se justifica: se lee en pantallas estrechas y en
+navegadores con diccionarios distintos.
+
 En la web, el botón de la impresora de la cabecera despliega dos opciones, cada
 una con una línea que dice lo que hace: imprimir la página que se está viendo o
 descargar la guía completa en PDF.
