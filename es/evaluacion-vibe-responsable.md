@@ -1,4 +1,4 @@
-# Instrucciones para evaluar un recurso educativo abierto
+# Instrucciones para evaluar un recurso educativo abierto (evaluación VCER)
 
 Estas instrucciones proceden de la guía «Vibe coding responsable», para
 publicar materiales educativos creados con vibe coding

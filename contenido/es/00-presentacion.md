@@ -18,7 +18,7 @@ Además, la persona que publica un material responde de lo que ese material hace
 
 ## Cómo se utiliza
 
-La guía reúne diez recomendaciones, de forma que también sirve para revisar un material que ya está hecho. Cada una enlaza con el capítulo donde se explica con más detalle. En [Instrucciones para la IA](para-la-ia.html) hay dos archivos para dar a la IA: uno para que siga las recomendaciones al crear un material y otro para que evalúe un recurso ya hecho y proponga cómo corregirlo.
+La guía reúne diez recomendaciones, de forma que también sirve para revisar un material que ya está hecho. Cada una enlaza con el capítulo donde se explica con más detalle. En [Instrucciones para la IA](para-la-ia.html) hay dos archivos para dar a la IA: uno para que siga las recomendaciones al crear un material y otro para que evalúe un recurso ya hecho y proponga cómo corregirlo (evaluación VCER, de vibe coding educativo responsable).
 
 [Leer la guía](guia.html){.continuar}
 

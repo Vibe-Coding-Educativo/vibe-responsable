@@ -20,7 +20,7 @@ Este es el archivo que se entrega a la IA al empezar a crear un material. Puede 
 
 ## Para evaluar un recurso ya hecho
 
-El archivo de evaluación sirve para cualquier recurso ya publicado, propio o ajeno, se haya creado o no con la guía. Para evaluar una web:
+El archivo de evaluación, que aplica la evaluación VCER (vibe coding educativo responsable), sirve para cualquier recurso ya publicado, propio o ajeno, se haya creado o no con la guía. Para evaluar una web:
 
 1. Descargar el archivo de evaluación que aparece a continuación y adjuntarlo en la conversación con la IA, o copiar su texto y pegarlo al principio.
 2. Proporcionar el código del recurso: adjuntar el archivo HTML guardado desde el navegador, o pegar el código.
@@ -28,7 +28,7 @@ El archivo de evaluación sirve para cualquier recurso ya publicado, propio o aj
 
 <!-- evaluacion -->
 
-La IA puntúa cada recomendación con la rúbrica VCER (vibe coding educativo responsable), da un porcentaje final y propone las tres mejoras que más subirían la puntuación. Si después se le pide corregirlo, primero propone los cambios y espera a que se aprueben; antes conviene guardar una copia. La puntuación orienta, pero no sustituye a la revisión de la persona, sobre todo en la corrección del contenido, donde la IA solo detecta los errores que ve.
+La IA puntúa cada recomendación con la rúbrica VCER, da un porcentaje final y propone las tres mejoras que más subirían la puntuación. Si después se le pide corregirlo, primero propone los cambios y espera a que se aprueben; antes conviene guardar una copia. La puntuación orienta, pero no sustituye a la revisión de la persona, sobre todo en la corrección del contenido, donde la IA solo detecta los errores que ve.
 
 Esta es la rúbrica VCER, la que utiliza el archivo de evaluación anterior:
 
