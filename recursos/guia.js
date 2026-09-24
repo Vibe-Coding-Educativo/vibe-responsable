@@ -8,6 +8,31 @@
   var ESCRITORIO = window.matchMedia("(min-width: 62rem)");
   var REDUCIDO = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+  /* ---------- Cabecera fija ---------- */
+  // La cabecera se queda arriba al bajar. Su altura se guarda en --alto-cabecera
+  // para que los enlaces internos no dejen el destino debajo de ella. En el
+  // móvil, donde ocupa mucho, se oculta al bajar y vuelve en cuanto se sube.
+  var cabecera = document.querySelector(".pizarra");
+  if (cabecera) {
+    var MOVIL = window.matchMedia("(max-width: 40rem)");
+    var ultima = window.scrollY;
+    var medir = function () {
+      document.documentElement.style.setProperty("--alto-cabecera", cabecera.offsetHeight + "px");
+    };
+    medir();
+    window.addEventListener("resize", medir);
+    window.addEventListener("scroll", function () {
+      var y = window.scrollY;
+      if (Math.abs(y - ultima) < 8) { return; }
+      var menuAbierto = cabecera.querySelector('[aria-expanded="true"]');
+      var ocultar = MOVIL.matches && y > ultima && y > cabecera.offsetHeight && !menuAbierto;
+      cabecera.classList.toggle("escondida", ocultar);
+      ultima = y;
+    }, { passive: true });
+    // Con el teclado, la cabecera reaparece al llegar a uno de sus controles.
+    cabecera.addEventListener("focusin", function () { cabecera.classList.remove("escondida"); });
+  }
+
   /* ---------- Tema claro u oscuro ---------- */
   // El aspecto sigue al del dispositivo mientras no se elija otra cosa. Si se
   // elige justo el que ya trae el dispositivo, se vuelve a seguirlo. La clave

@@ -49,7 +49,12 @@ html:not(.js) .solo-js { display: none !important; }
 h1 { font-size: clamp(1.55rem, 1.05rem + 1.5vw, 2.3rem); line-height: 1.12; letter-spacing: -0.012em; margin: clamp(0.9rem, 2.4vh, 1.6rem) 0 clamp(0.7rem, 2vh, 1.2rem); text-wrap: balance; }
 
 /* Cabecera: la pizarra */
-.pizarra { background: var(--pizarra); color: var(--tiza); }
+.pizarra { background: var(--pizarra); color: var(--tiza); position: sticky; top: 0; z-index: 20; }
+/* En el móvil la cabecera ocupa mucho: se oculta al bajar y vuelve al subir (guia.js). */
+@media (max-width: 40rem) {
+  .js .pizarra { transition: transform 0.25s ease; }
+  .js .pizarra.escondida { transform: translateY(-100%); }
+}
 /* Dos filas: nombre del sitio y botones de utilidad arriba, menú de secciones debajo. */
 .pizarra-int { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 0.3rem 1rem; padding-block: 0.65rem; }
 .pizarra-int > .sitio { grid-column: 1; grid-row: 1; }
@@ -298,7 +303,8 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 .texto > table td { padding: 0.55rem 0.6rem; border-bottom: 1px solid var(--raya); vertical-align: top; }
 @media (max-width: 30rem) { .texto > table { font-size: 0.88rem; } .texto > table th, .texto > table td { padding-inline: 0.35rem; } .texto > table td { hyphens: auto; } }
 .apartado:target h2 { color: var(--verde); }
-.apartado { scroll-margin-top: 1rem; }
+/* Los enlaces internos dejan el destino a la vista, debajo de la cabecera fija. */
+[id] { scroll-margin-top: calc(var(--alto-cabecera, 6rem) + 0.75rem); }
 
 /* Textos para copiar y dar a la IA */
 .copiable { min-width: 0; margin: 0 0 1rem; }
@@ -368,7 +374,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 @media print {
   :root { --papel: #fff; --hoja: #fff; --tinta: #000; --tinta-suave: #333; --raya: #bbb; --verde: #0f5f59; --azul: #1d3f73; --sombra: none; }
   html { font-size: 10.5pt; }
-  .pizarra { background: none; color: #000; border-bottom: 2px solid #000; }
+  .pizarra { background: none; color: #000; border-bottom: 2px solid #000; position: static; transform: none; }
   /* En papel no hay navegación: ni el menú, ni volver, continuar, anterior o siguiente. */
   .pizarra nav, .globo, .saltar, .migas, .entre-capitulos, .continuar, .copiable-cab, .detalle-pie, .visor, .utiles, .archivo-ia summary { display: none !important; }
   .sitio a, .sitio .sitio-desc { color: #000; }
