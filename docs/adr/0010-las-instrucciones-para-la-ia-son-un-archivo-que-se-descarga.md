@@ -53,6 +53,15 @@ guía, y no corrige nada:
   y las tres mejoras que más subirían la nota;
 - el punto 1 se puntúa con los errores que la IA detecta por su cuenta, que
   bastan para ver un recurso sin revisar, aunque no certifican el contenido;
+- el punto 7 se comprueba, si la IA puede ejecutar código, con una herramienta
+  automática de accesibilidad en el navegador, también con contenido cargado,
+  sin contar lo incrustado de otros sitios y recorriendo aparte el teclado; la
+  IA dice qué ha probado y cómo. Está en el propio archivo porque quien evalúa
+  solo lee ese archivo: al evaluar el Escritorio Digital (24-09-2026) la IA se
+  limitó a leer el código y no vio el contraste de 1,96:1 de todas las
+  ventanas ni los fallos que solo aparecían con datos cargados. No es requisito
+  de la nota, que depende del material y no de la herramienta, para no
+  castigar a quien evalúa desde un chat sin ejecutar código;
 - si después se pide corregir, la IA propone los cambios antes de hacerlos y,
   si no hay nota de decisiones, describe el recurso tal como está.
 
