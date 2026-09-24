@@ -70,7 +70,7 @@ UI = {
         "anterior": "Anterior",
         "siguiente": "Siguiente",
         "niveles_ayuda": "Qué significan «Lo mínimo» y «Lo recomendado»",
-        "leer_capitulo": "Leer el capítulo",
+        "leer_capitulo": "Más información",
         "que_hacer": "Qué hay que hacer",
         "volver_guia": "Volver a la guía",
         "cerrar": "Cerrar",
