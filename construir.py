@@ -525,7 +525,7 @@ def pagina_completa(idioma, paginas):
 .pdf .apartado h2 {{ margin-bottom: 0.4rem; }}
 .pdf .entrada {{ display: flex; flex-direction: column; gap: 1rem; }} /* la rejilla de la web no se reparte bien entre páginas */
 .pdf .tarjeta {{ border: 0; box-shadow: none; padding: 0; margin: 1rem 0; break-before: page; }}
-.pdf .tarjeta .miniatura {{ width: 9.2cm !important; height: auto !important; margin: 0 auto; border: 1px solid #bbb; }}
+.pdf .tarjeta .miniatura {{ width: 10cm !important; height: auto !important; margin: 0 auto; border: 1px solid #bbb; }}
 /* Las diez recomendaciones: sin la fila plegable de la web ni el recuadro de la lista,
    que se partía entre páginas; cada recomendación, entera en una página. */
 .pdf .hoja {{ border: 0; border-radius: 0; box-shadow: none; overflow: visible; }}

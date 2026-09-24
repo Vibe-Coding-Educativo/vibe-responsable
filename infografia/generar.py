@@ -77,33 +77,38 @@ def generar(idioma="es"):
     y = alto_cab + 30
 
     ALTO_FILA = 128
-    ALTO_GRUPO = 58
+    DX = 102            # margen izquierdo para las fases en vertical
+    SEP = 26           # separación entre fases
+    tramos = []        # (y inicial, y final, rótulo) de cada fase
     for i, (ic, texto) in enumerate(T["puntos"], start=1):
         color = VERDE
-        # rótulo de la fase, con una raya que llega al borde derecho
         if i in T["grupos"]:
             if i > 1:
-                y += 10
-            rotulo = T["grupos"][i].upper()
-            out.append(f'<text x="72" y="{y+32}" font-size="24" font-weight="700" letter-spacing="2.5" fill="{VERDE}">{html.escape(rotulo)}</text>')
-            fin_rotulo = 72 + len(rotulo) * 17.2 + 24
-            out.append(f'<line x1="{fin_rotulo:.0f}" y1="{y+24}" x2="{ANCHO-70}" y2="{y+24}" stroke="{RAYA}" stroke-width="2"/>')
-            y += ALTO_GRUPO
-        # tarjeta
-        out.append(f'<rect x="70" y="{y}" width="{ANCHO-140}" height="{ALTO_FILA-16}" rx="20" fill="{BLANCO}" stroke="{RAYA}" stroke-width="2"/>')
-        # número
-        out.append(f'<text x="128" y="{y+76}" font-size="58" font-weight="700" fill="{color}" text-anchor="middle">{i}</text>')
-        # icono
-        out.append(f'<rect x="186" y="{y+16}" width="80" height="80" rx="18" fill="{color}"/>')
-        out.append(f'<g transform="translate(198 {y+28}) scale(2.3333)" fill="none" stroke="{BLANCO}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{icono(ic)}</g>')
-        # texto (una o dos líneas)
-        lineas = partir(texto)
+                y += SEP
+            tramos.append([y, None, T["grupos"][i]])
+        x0 = 70 + DX
+        out.append(f'<rect x="{x0}" y="{y}" width="{ANCHO-140-DX}" height="{ALTO_FILA-16}" rx="20" fill="{BLANCO}" stroke="{RAYA}" stroke-width="2"/>')
+        out.append(f'<text x="{128+DX}" y="{y+76}" font-size="58" font-weight="700" fill="{color}" text-anchor="middle">{i}</text>')
+        out.append(f'<rect x="{186+DX}" y="{y+16}" width="80" height="80" rx="18" fill="{color}"/>')
+        out.append(f'<g transform="translate({198+DX} {y+28}) scale(2.3333)" fill="none" stroke="{BLANCO}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{icono(ic)}</g>')
+        lineas = partir(texto, 40)
+        xt = 296 + DX
         if len(lineas) == 1:
-            out.append(f'<text x="296" y="{y+68}" font-size="33" font-weight="400" fill="{TINTA}">{html.escape(lineas[0])}</text>')
+            out.append(f'<text x="{xt}" y="{y+68}" font-size="33" font-weight="400" fill="{TINTA}">{html.escape(lineas[0])}</text>')
         else:
-            out.append(f'<text x="296" y="{y+48}" font-size="33" font-weight="400" fill="{TINTA}">{html.escape(lineas[0])}</text>')
-            out.append(f'<text x="296" y="{y+90}" font-size="33" font-weight="400" fill="{TINTA}">{html.escape(" ".join(lineas[1:]))}</text>')
+            out.append(f'<text x="{xt}" y="{y+48}" font-size="33" font-weight="400" fill="{TINTA}">{html.escape(lineas[0])}</text>')
+            out.append(f'<text x="{xt}" y="{y+90}" font-size="33" font-weight="400" fill="{TINTA}">{html.escape(" ".join(lineas[1:]))}</text>')
         y += ALTO_FILA
+        tramos[-1][1] = y - 16
+    # Fases en vertical, leídas de abajo arriba, con una llave que abarca sus tarjetas
+    for y0, y1, rotulo in tramos:
+        xl = 70 + DX - 22
+        out.append(f'<path d="M{xl+12} {y0} H{xl} V{y1} H{xl+12}" fill="none" stroke="{VERDE}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>')
+        verbo, _, resto = rotulo.upper().partition(" ")
+        cy = (y0 + y1) / 2
+        for k, linea in enumerate((verbo, resto)):
+            xk = 70 + 27 + k * 40
+            out.append(f'<text transform="translate({xk} {cy:.0f}) rotate(-90)" font-size="31" font-weight="700" letter-spacing="1.8" fill="{VERDE}" text-anchor="middle">{html.escape(linea)}</text>')
 
     # Pie
     y += 14

@@ -13,15 +13,20 @@ títulos de las recomendaciones han cambiado varias veces durante la redacción.
 ## Decisión
 
 La infografía la genera `infografia/generar.py`, que escribe un SVG de
-1080 × 2112 píxeles con los títulos de las diez recomendaciones, cada uno con un
+1080 × 1928 píxeles con los títulos de las diez recomendaciones, cada uno con un
 icono de Lucide guardado en `infografia/iconos/`. Usa la paleta y la tipografía
 de la web. Los textos están en un diccionario por idioma dentro del script, de
 modo que una traducción o un cambio de título se resuelve regenerando la imagen.
 Las diez recomendaciones van en una sola serie numerada, sin separar unas pocas
-como esenciales. Desde el 24-09-2026 la serie se divide con un rótulo en las
-cuatro fases de la vida del material que marca su orden (ADR 15): proteger al
-alumnado, construir el material, documentar el trabajo y compartir el
-material. Los rótulos nombran lo que se hace en cada fase, no su importancia.
+como esenciales. Desde el 24-09-2026 la serie se divide en las cuatro fases de
+la vida del material que marca su orden (ADR 15): proteger al alumnado,
+construir el material, documentar el trabajo y compartir el material. Cada fase
+se rotula en vertical en el margen izquierdo, en dos líneas (verbo y
+complemento), junto a una llave que abarca sus tarjetas; el tamaño del rótulo
+es el mayor que cabe en las fases de dos recomendaciones. Se eligió frente a un
+rótulo horizontal sobre cada fase, que dejaba menos claro qué abarcaba y hacía
+la imagen 184 píxeles más alta. Los rótulos nombran lo que se hace en cada
+fase, no su importancia.
 
 El SVG es el original editable y se conserva en el repositorio. Para la web se
 exporta a PNG y se reduce su paleta, con lo que pesa unos 90 KB.
