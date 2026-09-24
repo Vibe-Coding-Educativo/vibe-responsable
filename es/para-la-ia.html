@@ -62,7 +62,7 @@
 <li><strong>En un agente de programación o un editor de código con IA</strong>, se guarda en la carpeta del proyecto como archivo de instrucciones, y la IA lo tiene en cuenta en todas las sesiones.</li>
 <li><strong>En las plataformas para crear aplicaciones</strong>, se pega en las instrucciones permanentes del proyecto, que muchas ofrecen en sus ajustes o como un archivo del propio proyecto.</li>
 </ul>
-<p>Si la IA no conoce la autoría o el lugar donde se publicará el material, las propias instrucciones le piden que lo pregunte antes de empezar. Al terminar, basta con pedir «revisa el material según las instrucciones», y la IA comprueba cada recomendación y corrige lo que dependa de ella. Esa revisión no sustituye a la de la persona, ya que el modelo también se equivoca al revisar su propio trabajo.</p></div></section>
+<p>Si la IA no conoce la autoría o el lugar donde se publicará el material, las propias instrucciones le piden que lo pregunte antes de empezar. Al terminar, se adjunta en la misma conversación el <a href="#para-evaluar-un-recurso-ya-hecho">archivo de evaluación</a> que aparece más abajo y se pide «evalúa el material según las instrucciones». Después, si se pide «corrígelo», la IA propone los cambios y espera a que se aprueben. Esa revisión no sustituye a la de la persona, ya que el modelo también se equivoca al revisar su propio trabajo.</p></div></section>
 <section class="apartado" id="para-crear-un-material" aria-labelledby="h-para-crear-un-material"><h2 id="h-para-crear-un-material">Para crear un material</h2><div class="texto"><p>Este es el archivo que se entrega a la IA al empezar a crear un material. Puede descargarse para adjuntarlo o para guardarlo en la carpeta del proyecto, o copiarse su texto para pegarlo al principio de la conversación.</p>
 <div class="copiable"><p class="copiable-cab solo-js"><a class="descarga" href="instrucciones-vibe-responsable.md" download><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -140,45 +140,7 @@ Si no te lo he dicho, pregúntame:
   algún servicio externo.
 - Escribe una nota breve con las decisiones importantes que has tomado y el
   motivo de cada una, o resúmelas del registro de decisiones si lo hay.
-- Indica qué debo comprobar yo, empezando por la corrección de los contenidos.
-
-## Cuando te pida revisar el material
-
-Revisa el material con esta lista. Comprueba cada punto en el código, no por lo
-que parezca a simple vista. Indica en cada uno si se cumple, si se cumple en
-parte o si no se cumple, con una frase que lo justifique. Al final, corrige lo
-que dependa de ti y dime qué queda pendiente para mí.
-
-1. CORRECCIÓN DEL CONTENIDO. Este punto no puedes darlo por bueno. Señala los
-   datos, las definiciones y las respuestas que conviene que yo compruebe, y
-   avisa de aquello de lo que no estés seguro.
-2. DATOS PERSONALES. Comprueba si el material pide datos que identifiquen a una
-   persona, si los necesita para su función y dónde los guarda. Comprueba si
-   envía algo fuera del navegador y enumera todas las direcciones externas que
-   aparezcan en el código. Si tiene cuentas de usuario o se conecta con un
-   servidor, revisa también cómo se accede a esos datos y cómo se protegen.
-3. LICENCIA. Comprueba que el material indica su autoría y su licencia en un
-   lugar visible y, si es un proyecto con varios archivos, que incluye los
-   archivos de licencia.
-4. USO DE IA. Comprueba que el material indica que se ha creado con IA y qué ha
-   comprobado la persona que lo publica.
-5. EXPLICACIÓN. Resume en dos frases qué hace el material, qué guarda y si se
-   comunica con algún servicio externo.
-6. DEPENDENCIAS. Comprueba que la nota de decisiones recoge todo lo que el
-   material carga de fuera, con su licencia, y completa lo que falte. Dime,
-   con palabras sencillas, qué dejaría de funcionar al abrirlo descargado en un
-   ordenador sin internet.
-7. ACCESIBILIDAD. Comprueba el manejo con el teclado, el orden de tabulación,
-   las etiquetas de los controles, los textos alternativos, el contraste y el
-   comportamiento en una pantalla estrecha. Si dispones de una herramienta
-   automática de accesibilidad, utilízala.
-8. MATERIAL AJENO. Enumera las imágenes, los sonidos, los textos y los
-   fragmentos de código de otras personas, y comprueba que cada uno indica su
-   autoría, su procedencia y su licencia.
-9. RASTRO. Comprueba si existe una nota o un registro de decisiones (ADR) con
-   las decisiones tomadas y su motivo, y complétalo si falta alguna.
-10. REUTILIZACIÓN. Comprueba que el material puede descargarse y modificarse, y
-    que el código es legible y está comentado.</code></pre></details></div></div></section>
+- Indica qué debo comprobar yo, empezando por la corrección de los contenidos.</code></pre></details></div></div></section>
 <section class="apartado" id="para-evaluar-un-recurso-ya-hecho" aria-labelledby="h-para-evaluar-un-recurso-ya-hecho"><h2 id="h-para-evaluar-un-recurso-ya-hecho">Para evaluar un recurso ya hecho</h2><div class="texto"><p>El archivo de evaluación, que aplica la evaluación VCER (vibe coding educativo responsable), sirve para cualquier recurso ya publicado, propio o ajeno, se haya creado o no con la guía. Para evaluar una web:</p>
 <ol type="1">
 <li>Descargar el archivo de evaluación que aparece a continuación y adjuntarlo en la conversación con la IA, o copiar su texto y pegarlo al principio.</li>
@@ -314,6 +276,11 @@ creado o no siguiendo la guía.
   tiene 0, también es «Mejorable» e indica qué impide usarlo.
 - Empieza el informe con una línea como «Rúbrica VCER: Recomendable
   (85 %)».
+- En la justificación del punto 5, da la explicación en dos frases. En la
+  del 6, enumera las direcciones externas del código y para qué sirve cada
+  una, y di con palabras sencillas qué dejaría de funcionar al abrirlo
+  descargado en un ordenador sin internet. En la del 8, enumera el material
+  ajeno.
 - Termina con las tres mejoras que más subirían la puntuación.
 
 ## Si después te pido corregirlo

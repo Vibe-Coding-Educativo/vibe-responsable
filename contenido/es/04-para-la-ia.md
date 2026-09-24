@@ -10,7 +10,7 @@ El archivo para crear se entrega al empezar:
 - **En un agente de programación o un editor de código con IA**, se guarda en la carpeta del proyecto como archivo de instrucciones, y la IA lo tiene en cuenta en todas las sesiones.
 - **En las plataformas para crear aplicaciones**, se pega en las instrucciones permanentes del proyecto, que muchas ofrecen en sus ajustes o como un archivo del propio proyecto.
 
-Si la IA no conoce la autoría o el lugar donde se publicará el material, las propias instrucciones le piden que lo pregunte antes de empezar. Al terminar, basta con pedir «revisa el material según las instrucciones», y la IA comprueba cada recomendación y corrige lo que dependa de ella. Esa revisión no sustituye a la de la persona, ya que el modelo también se equivoca al revisar su propio trabajo.
+Si la IA no conoce la autoría o el lugar donde se publicará el material, las propias instrucciones le piden que lo pregunte antes de empezar. Al terminar, se adjunta en la misma conversación el [archivo de evaluación](#para-evaluar-un-recurso-ya-hecho) que aparece más abajo y se pide «evalúa el material según las instrucciones». Después, si se pide «corrígelo», la IA propone los cambios y espera a que se aprueben. Esa revisión no sustituye a la de la persona, ya que el modelo también se equivoca al revisar su propio trabajo.
 
 ## Para crear un material
 

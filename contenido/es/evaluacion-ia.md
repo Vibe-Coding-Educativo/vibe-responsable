@@ -125,6 +125,11 @@ creado o no siguiendo la guía.
   tiene 0, también es «Mejorable» e indica qué impide usarlo.
 - Empieza el informe con una línea como «Rúbrica VCER: Recomendable
   (85 %)».
+- En la justificación del punto 5, da la explicación en dos frases. En la
+  del 6, enumera las direcciones externas del código y para qué sirve cada
+  una, y di con palabras sencillas qué dejaría de funcionar al abrirlo
+  descargado en un ordenador sin internet. En la del 8, enumera el material
+  ajeno.
 - Termina con las tres mejoras que más subirían la puntuación.
 
 ## Si después te pido corregirlo

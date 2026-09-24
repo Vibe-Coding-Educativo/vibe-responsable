@@ -31,8 +31,11 @@ con dos botones: descargar y copiar. El archivo:
   arregle o adapte el material más adelante, y al docente solo le dice, con
   palabras sencillas, qué dejaría de funcionar al abrirlo descargado sin
   internet. El capítulo 6 sigue el mismo criterio;
-- incluye la lista de revisión, que se activa con «revisa el material según las
-  instrucciones».
+- no lleva lista de revisión: al terminar, el material se revisa con el
+  archivo de evaluación, adjunto en la misma conversación, y después se pide
+  corregirlo (24-09-2026). Antes llevaba su propia lista de diez puntos, que
+  repetía la rúbrica con otras palabras y obligaba a llevar cada cambio a las
+  dos.
 Evaluar un recurso ya hecho tiene su propio archivo, `contenido/<idioma>/evaluacion-ia.md`,
 publicado como `evaluacion-vibe-responsable.md` y mostrado en la misma página (marca
 `<!-- evaluacion -->`). Sirve para recursos propios o ajenos, hechos o no con la
@@ -99,6 +102,12 @@ editor, y en las instrucciones permanentes del proyecto en las plataformas.
   descripción del material y obligaba a editar el texto en cada uso.
 - **Un archivo solo para empezar y la revisión como texto aparte**: dos piezas
   donde basta una; la revisión se pide con una frase.
+- **Mantener una lista de revisión propia en el archivo de crear**: dos listas
+  de los mismos diez puntos acaban diciendo cosas distintas, y la persona que
+  crea el material recibe una revisión con un criterio distinto del que usará
+  quien lo evalúe. Lo que solo pedía esa lista (la explicación en dos frases,
+  las direcciones externas, lo que falla sin internet y el material ajeno) pasó
+  al informe de la evaluación.
 - **La rúbrica de evaluación dentro del archivo de crear**: unas setenta líneas
   que acompañarían todo el trabajo sin servir para nada mientras se crea.
 - **Exigir un material sin recursos externos**: obliga a programar desde cero lo
@@ -112,10 +121,9 @@ editor, y en las instrucciones permanentes del proyecto en las plataformas.
 
 ## Consecuencias
 
-- Los capítulos remiten al «archivo de instrucciones para la IA» y a su
-  apartado de revisión, por número de punto. Si cambia la numeración de la
-  lista de revisión, hay que revisar esas remisiones.
+- Los capítulos remiten a la evaluación VCER por número de punto. Si cambia la
+  numeración de la rúbrica, hay que revisar esas remisiones.
 - Al traducir la guía, cada idioma necesita su `instrucciones-ia.md` y su
   `evaluacion-ia.md`.
-- Los dos archivos repiten los diez puntos: un cambio en uno debe llevarse al
-  otro.
+- Revisar un material al terminarlo exige adjuntar un segundo archivo; en un
+  agente de programación basta con dejar los dos en la carpeta del proyecto.
