@@ -62,6 +62,17 @@ guía, y no corrige nada:
   ventanas ni los fallos que solo aparecían con datos cargados. No es requisito
   de la nota, que depende del material y no de la herramienta, para no
   castigar a quien evalúa desde un chat sin ejecutar código;
+- antes de puntuar, la IA hace inventario completo en vez de mirar una
+  muestra: funciones que piden o guardan datos de personas y cómo se exportan,
+  archivos de imagen, sonido, vídeo, iconos y tipografías con su origen, y lo
+  que se carga de fuera y cuándo. En la misma evaluación (24-09-2026) la IA
+  había dado por bueno el punto 2 sin ver que Asistencia exportaba siempre con
+  nombres, el 8 mirando solo los dos sonidos acreditados (faltaban 22 fondos,
+  46 iconos y un logotipo redibujado) y el 6 describiendo como incrustadas
+  apps que se abren en ventana nueva;
+- si el recurso está publicado, se evalúa esa versión o se comprueba que
+  coincide con el código: tras subir cambios al repositorio, la web siguió con
+  la versión anterior hasta desplegarla;
 - si después se pide corregir, la IA propone los cambios antes de hacerlos y,
   si no hay nota de decisiones, describe el recurso tal como está.
 
