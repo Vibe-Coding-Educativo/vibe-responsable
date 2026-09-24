@@ -35,8 +35,8 @@ La guía se elabora en el nivel 4 del [MIAE](https://jjdeharo.github.io/miae/?ni
 ## Licencias
 
 - **Código** (`construir.py`, `recursos/`, `infografia/generar.py`): [GNU AGPL v3](LICENSE).
-- **Contenidos** (textos de la guía e infografía): [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.es).
-- **Iconos**: [Lucide](https://lucide.dev/), licencia ISC.
+- **Contenidos** (textos de la guía e infografía): [Creative Commons BY-SA 4.0](LICENSE-CONTENIDOS).
+- **Iconos**: [Lucide](https://lucide.dev/), licencia ISC; los derivados de Feather, licencia MIT. Texto de ambas en [`infografia/iconos/LICENSE`](infografia/iconos/LICENSE).
 - **Tipografía**: [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/), del Braille Institute, [licencia OFL](recursos/fuentes/OFL.txt).
 - **Fuentes de terceros** en `fuentes/`: cada documento conserva su autoría y su licencia, indicadas en su cabecera y en [`fuentes/README.md`](fuentes/README.md).
 

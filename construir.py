@@ -45,6 +45,7 @@ UI = {
         "comunidad": "Vibe Coding Educativo",
         "saltar": "Saltar al contenido",
         "nav": "Secciones de la guía",
+        "nav_capitulos": "Capítulo anterior y siguiente",
         "nav_guia": "Guía",
         "borrador": "Borrador",
         "borrador_ayuda": "La guía está completa, pero su autor la está revisando y el texto puede cambiar.",
@@ -407,7 +408,7 @@ def pagina_capitulo(idioma, n, archivo, md):
     cuerpo = (f'<p class="migas"><a href="guia.html">{html.escape(T["volver_guia"])}</a></p>'
               f'<h1><span class="cifra-cap" aria-hidden="true">{n}</span>{html.escape(titulo)}</h1>'
               + recuadro + previo + "\n".join(secciones)
-              + f'<nav class="entre-capitulos" aria-label="{html.escape(T["nav"])}">{ant}'
+              + f'<nav class="entre-capitulos" aria-label="{html.escape(T["nav_capitulos"])}">{ant}'
                 f'<a href="guia.html">{html.escape(T["volver_guia"])}</a>{sig}</nav>')
     return marco(idioma, "guia.html", titulo, cuerpo, "pagina-texto pagina-capitulo")
 

@@ -3,7 +3,8 @@
 
 Uso: python3 generar.py [idioma]      -> lista-iconos.<idioma>.svg
 Los textos están en TEXTOS; para otro idioma basta con añadir su bloque.
-Los iconos son de Lucide (licencia ISC) y están en iconos/.
+Los iconos son de Lucide (licencia ISC; los derivados de Feather, MIT) y están en
+iconos/, con el texto de las licencias en iconos/LICENSE.
 """
 import re, sys, html
 from pathlib import Path
@@ -31,7 +32,7 @@ TEXTOS = {
         ],
         "pie1": "@jjdeharo, CC BY-SA 4.0",
         "pie2": "vibe-coding-educativo.github.io/vibe-responsable",
-        "pie3": ["Iconos: Lucide (ISC). Tipografía: Atkinson Hyperlegible (OFL).", "Maquetación generada con IA y revisada por el autor."],
+        "pie3": ["Iconos: Lucide (ISC y MIT). Tipografía: Atkinson Hyperlegible (OFL).", "Maquetación generada con IA y revisada por el autor."],
         "desc": "Infografía con las diez recomendaciones para publicar de forma responsable materiales educativos creados con vibe coding.",
     },
 }

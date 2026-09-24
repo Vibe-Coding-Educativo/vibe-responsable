@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t">
   <title id="t">Vibe coding responsable</title>
   <!-- Corchetes de código con una marca de verificación: código que ha pasado la revisión.
-       Los trazos proceden de los iconos «code» y «check» de Lucide (licencia ISC). -->
+       Los trazos proceden de los iconos «code» y «check» de Lucide, derivados de Feather
+       (Cole Bemis, licencia MIT). -->
   <rect width="64" height="64" rx="14" fill="#17453b"/>
   <g fill="none" stroke-linecap="round" stroke-linejoin="round">
     <g stroke="#f3f1e7" stroke-width="5">
