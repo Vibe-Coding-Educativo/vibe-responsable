@@ -73,6 +73,10 @@ UI = {
         "pie_pdf": "Vibe coding responsable · Juan José de Haro · CC BY-SA 4.0 · Borrador, {fecha}",
         "meses": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
         "infografia_titulo": "Resumen gráfico",
+        # Fases de la vida del material (ADR 15): primera recomendación de cada una, con el verbo
+        # y el complemento, que forman las dos líneas del rótulo vertical. Los mismos que la infografía.
+        "fases": {1: ("Proteger", "al alumnado"), 3: ("Construir", "el material"),
+                  6: ("Documentar", "el trabajo"), 9: ("Compartir", "el material")},
         "infografia_alt": "Infografía con las diez recomendaciones, las mismas que aparecen en la lista, agrupadas en cuatro fases: proteger al alumnado, construir el material, documentar el trabajo y compartir el material.",
         "ampliar": "Ampliar la infografía",
         "descargar": "Descargar la imagen",
@@ -325,10 +329,19 @@ def pagina_lista(idioma):
             f'<footer class="detalle-pie solo-js">{ant}{ayuda}{sig}</footer>'
             f'</div></div></article></li>')
 
+    # Las filas se agrupan por fases: cada una, un elemento con su rótulo y su propia lista numerada
+    inicios = sorted(T["fases"]) + [total + 1]
+    fases = []
+    for k, (a, b) in enumerate(zip(inicios, inicios[1:]), start=1):
+        verbo, complemento = T["fases"][a]
+        fases.append(f'<li class="fase" aria-labelledby="fase-{k}">'
+                     f'<div class="fase-cab"><span class="fase-rotulo" id="fase-{k}"><span>{html.escape(verbo)}</span> '
+                     f'<span>{html.escape(complemento)}</span></span></div>'
+                     f'<ol class="fase-puntos" start="{a}">{"".join(filas[a - 1:b - 1])}</ol></li>')
     cuerpo = f"""<h1>{html.escape(titulo)}</h1>
 <div class="tablero">
 <section class="hoja" aria-label="{html.escape(titulo)}">
-<ol class="diez">{"".join(filas)}</ol>
+<ul class="diez">{"".join(fases)}</ul>
 </section>
 <div class="panel"></div>
 </div>"""

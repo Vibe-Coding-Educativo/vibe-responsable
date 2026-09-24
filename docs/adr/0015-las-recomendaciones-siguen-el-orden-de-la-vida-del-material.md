@@ -26,8 +26,16 @@ Las recomendaciones siguen la vida del material, en cuatro fases:
 Toda remisión entre recomendaciones va hacia atrás: la declaración de IA (8) y
 la oferta del código (10) remiten al registro (7), que ya se ha leído. Los
 capítulos, la rúbrica VCER, la infografía y los iconos de la lista siguen la
-misma numeración. La infografía rotula las cuatro fases (ADR 8); la lista de la
-web no, para no añadir elementos a una pantalla que ya está llena.
+misma numeración. Las cuatro fases se muestran igual en la infografía (ADR 8) y
+en la lista de la guía: un rótulo vertical en el margen izquierdo, en dos líneas
+(verbo y complemento), junto a una llave que abarca sus recomendaciones. En la
+lista, el rótulo mide lo máximo que cabe en una fase de dos recomendaciones en
+una pantalla de portátil (unos 10,5 píxeles), y la lista no crece en altura, de
+modo que la página sigue cabiendo en una pantalla. Cada fase es un elemento de
+lista con su nombre y su propia lista numerada, para que los lectores de
+pantalla anuncien el grupo. En el papel el rótulo pasa a ser un título
+horizontal sobre cada fase. Los nombres de las fases están en `UI` de
+`construir.py` (`fases`) y en `infografia/generar.py`, y deben coincidir.
 
 ## Alternativas descartadas
 

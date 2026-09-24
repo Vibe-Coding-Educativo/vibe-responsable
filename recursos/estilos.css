@@ -114,8 +114,15 @@ h1 { font-size: clamp(1.55rem, 1.05rem + 1.5vw, 2.3rem); line-height: 1.12; lett
 .tablero { display: grid; gap: 1.2rem; align-items: start; }
 .hoja, .panel { background: var(--hoja); border: 1px solid var(--raya); border-radius: 6px; box-shadow: var(--sombra); }
 .hoja { overflow: hidden; }
-.diez { list-style: none; margin: 0; padding: 0; }
-.punto + .punto { border-top: 1px solid var(--raya); }
+.diez, .fase-puntos { list-style: none; margin: 0; padding: 0; }
+.punto + .punto, .fase + .fase { border-top: 1px solid var(--raya); }
+/* Fases (ADR 15): el rótulo en vertical, leído de abajo arriba, en dos líneas (verbo y
+   complemento), junto a una llave que abarca sus recomendaciones, como en la infografía. */
+.fase { display: grid; grid-template-columns: 2.7rem minmax(0, 1fr); }
+.fase-cab { position: relative; display: flex; align-items: center; justify-content: center; padding-left: 0.3rem; }
+.fase-cab::after { content: ""; position: absolute; top: 0.55rem; bottom: 0.55rem; right: 0; width: 0.35rem; border: 2px solid var(--verde); border-right: 0; border-radius: 2px 0 0 2px; }
+.fase-rotulo { writing-mode: vertical-rl; transform: rotate(180deg); display: block; margin: 0.6rem 0.45rem 0.6rem 0; font-size: 0.66rem; font-weight: 700; line-height: 1.15; letter-spacing: 0.02em; text-transform: uppercase; text-align: center; color: var(--verde); }
+.fase-rotulo > span { display: block; white-space: nowrap; } /* en vertical, cada línea es un bloque: verbo y complemento */
 .fila { display: block; }
 .abrir { display: grid; grid-template-columns: 1.7rem 1.35rem minmax(0, 1fr); gap: 0.7rem; align-items: center; min-height: var(--fila); padding: 0.3rem 0.9rem 0.3rem 0.85rem; color: inherit; text-decoration: none; transition: background 0.15s ease, box-shadow 0.15s ease; }
 .abrir:hover { background: color-mix(in srgb, var(--marca) 55%, transparent); }
@@ -396,6 +403,11 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   .panel > *, .punto > .detalle { opacity: 1 !important; visibility: visible !important; transform: none !important; display: block !important; }
   .detalle .detalle-cab { display: grid !important; }
   .detalle { break-inside: avoid; border-top: 1px solid #bbb; }
+  .fase { display: block; }
+  .fase-cab { display: block; padding: 0.6rem 0 0; }
+  .fase-cab::after { content: none; }
+  .fase-rotulo { writing-mode: horizontal-tb; transform: none; display: block; margin: 0; font-size: 0.8rem; text-align: left; break-after: avoid; }
+  .fase-rotulo > span { display: inline; }
   .cifra { font-size: 2.2rem; }
   .miniatura { height: auto; width: 9rem; }
   a { color: inherit; text-decoration: none; }
