@@ -124,7 +124,14 @@ creado o no siguiendo la guía.
   resultado es «Mejorable» e indica qué falta por comprobar; si el punto 7
   tiene 0, también es «Mejorable» e indica qué impide usarlo.
 - Empieza el informe con una línea como «Rúbrica VCER: Recomendable
-  (85 %)».
+  (85 %)», y añade debajo una frase con lo que significa ese resultado:
+  - Recomendable: cumple lo esencial de la guía y puede utilizarse o
+    publicarse; las mejoras propuestas lo completan.
+  - Mejorable: tiene fallos que conviene corregir antes de publicarlo o
+    recomendarlo, aunque ninguno lo descarta.
+  - No recomendable: tiene errores evidentes en lo que enseña o envía datos
+    del alumnado a servicios ajenos al centro; no conviene utilizarlo ni
+    publicarlo hasta corregirlo.
 - En la justificación del punto 5, incluye esa breve descripción. En la
   del 6, enumera las direcciones externas del código y para qué sirve cada
   una, y di con palabras sencillas qué dejaría de funcionar al abrirlo

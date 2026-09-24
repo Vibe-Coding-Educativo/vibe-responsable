@@ -15,7 +15,7 @@
 <link rel="icon" href="../recursos/logo/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="../recursos/logo/apple-touch-icon.png">
 <link rel="preload" href="../recursos/fuentes/atkinson-hyperlegible-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../recursos/estilos.css?v=2e2ce91d30">
+<link rel="stylesheet" href="../recursos/estilos.css?v=40e9c12f07">
 <script>(function(){try{var t=localStorage.getItem("vibe-responsable:tema");if(t!=="light"&&t!=="dark"){t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.dataset.theme=t;}catch(e){}})();</script>
 <script src="../recursos/guia.js?v=2aeda7a240" defer></script>
 </head>
@@ -275,7 +275,14 @@ creado o no siguiendo la guía.
   resultado es «Mejorable» e indica qué falta por comprobar; si el punto 7
   tiene 0, también es «Mejorable» e indica qué impide usarlo.
 - Empieza el informe con una línea como «Rúbrica VCER: Recomendable
-  (85 %)».
+  (85 %)», y añade debajo una frase con lo que significa ese resultado:
+  - Recomendable: cumple lo esencial de la guía y puede utilizarse o
+    publicarse; las mejoras propuestas lo completan.
+  - Mejorable: tiene fallos que conviene corregir antes de publicarlo o
+    recomendarlo, aunque ninguno lo descarta.
+  - No recomendable: tiene errores evidentes en lo que enseña o envía datos
+    del alumnado a servicios ajenos al centro; no conviene utilizarlo ni
+    publicarlo hasta corregirlo.
 - En la justificación del punto 5, incluye esa breve descripción. En la
   del 6, enumera las direcciones externas del código y para qué sirve cada
   una, y di con palabras sencillas qué dejaría de funcionar al abrirlo
@@ -294,7 +301,38 @@ creado o no siguiendo la guía.
 <p>La IA puntúa cada recomendación con la rúbrica VCER, da un porcentaje final y propone las tres mejoras que más subirían la puntuación. Si después se le pide corregirlo, primero propone los cambios y espera a que se aprueben; antes conviene guardar una copia. La puntuación orienta, pero no sustituye a la revisión de la persona, sobre todo en la corrección del contenido, donde la IA solo detecta los errores que ve.</p>
 <p>Esta es la rúbrica VCER, la que utiliza el archivo de evaluación anterior:</p>
 <div class="rubrica"><table><caption>Rúbrica VCER: 2, se cumple; 1, en parte; 0, no se cumple</caption><thead><tr><th scope="col">Recomendación</th><th scope="col">2</th><th scope="col">1</th><th scope="col">0</th></tr></thead><tbody><tr><th scope="row"><span class="rub-n">1</span> Contenido <small>(eliminatorio)</small></th><td data-nota="2">No se detectan errores en lo que enseña: los datos, las definiciones y las respuestas que se dan por correctas.</td><td data-nota="1">Hay alguna imprecisión menor en lo que enseña.</td><td data-nota="0">Hay errores evidentes en conceptos, datos o respuestas.</td></tr><tr><th scope="row"><span class="rub-n">2</span> Datos personales <small>(eliminatorio)</small></th><td data-nota="2">No pide datos que identifiquen a nadie, o los guarda solo en el dispositivo y permite exportar sin nombres; o los envía únicamente a un servicio del centro, sin claves visibles en el código y de forma que solo el docente o el centro puedan leerlos. No lleva analítica.</td><td data-nota="1">No envía datos del alumnado a servicios ajenos, pero guarda nombres sin opción de exportar sin ellos, o el envío al servicio del centro no está bien protegido (claves en el código, una dirección que permite leer lo recogido).</td><td data-nota="0">Envía datos del alumnado a un servidor ajeno al centro, o lleva analítica o seguimiento.</td></tr><tr><th scope="row"><span class="rub-n">3</span> Licencia</th><td data-nota="2">Autoría y licencia libre visibles en el material, con enlace. Si es un proyecto de varios archivos, incluye el archivo de licencia.</td><td data-nota="1">Falta la autoría o la licencia, la licencia no es libre (NC o ND) o no enlaza a su texto.</td><td data-nota="0">No indica ni autoría ni licencia.</td></tr><tr><th scope="row"><span class="rub-n">4</span> Uso de IA</th><td data-nota="2">Indica que se ha hecho con IA y qué ha comprobado la persona.</td><td data-nota="1">Indica que se ha hecho con IA, sin decir qué se ha comprobado.</td><td data-nota="0">No lo indica. Si consta que no se usó IA, no se puntúa.</td></tr><tr><th scope="row"><span class="rub-n">5</span> Entender qué hace</th><td data-nota="2">Puede describirse brevemente qué hace, qué guarda y con qué se comunica, y lo que declara el material coincide con el código.</td><td data-nota="1">Se entiende su funcionamiento, pero hay partes de propósito poco claro o no explica qué guarda.</td><td data-nota="0">Hay funciones o comunicaciones cuyo propósito no puede explicarse, o lo que declara no coincide con el código.</td></tr><tr><th scope="row"><span class="rub-n">6</span> Dependencias</th><td data-nota="2">Lo que carga o incrusta de fuera procede de servicios conocidos y está anotado, y los textos, imágenes y datos propios están dentro del material.</td><td data-nota="1">Carga o incrusta recursos externos sin anotarlos, o parte del contenido propio (un vídeo, un audio, un mapa) solo está en otra plataforma.</td><td data-nota="0">El contenido principal depende de un servicio externo, o carga código de direcciones desconocidas.</td></tr><tr><th scope="row"><span class="rub-n">7</span> Accesibilidad</th><td data-nota="2">Se maneja entero con el teclado, los controles tienen etiqueta, las imágenes texto alternativo, el contraste es suficiente, no depende del color y se adapta a una pantalla estrecha.</td><td data-nota="1">Falla en uno o dos de esos aspectos, sin impedir su uso.</td><td data-nota="0">Falla en tres o más, o no puede usarse con el teclado.</td></tr><tr><th scope="row"><span class="rub-n">8</span> Material ajeno</th><td data-nota="2">Cada elemento ajeno indica autoría, procedencia y licencia, y la licencia permite reutilizarlo; o no hay material ajeno.</td><td data-nota="1">Hay material ajeno con licencia válida, pero sin acreditar del todo.</td><td data-nota="0">Hay material ajeno sin licencia que permita reutilizarlo o sin ninguna atribución.</td></tr><tr><th scope="row"><span class="rub-n">9</span> Rastro</th><td data-nota="2">Hay un registro o una nota con las decisiones importantes y su motivo.</td><td data-nota="1">Hay documentación que explica cómo está hecho, pero no por qué.</td><td data-nota="0">No hay nada.</td></tr><tr><th scope="row"><span class="rub-n">10</span> Reutilización</th><td data-nota="2">El código puede obtenerse completo, se entiende al leerlo, con comentarios donde hacen falta, y hay indicaciones para modificarlo.</td><td data-nota="1">Puede obtenerse, pero es difícil de entender sin comentarios, está en parte comprimido o no tiene indicaciones.</td><td data-nota="0">No puede obtenerse, o está ofuscado o comprimido.</td></tr></tbody></table></div>
-<p>El porcentaje final es la suma de las puntuaciones dividida entre el máximo posible de los puntos que la IA ha podido comprobar. El resultado es «No recomendable» si el punto 1 o el 2 tienen un 0, sea cual sea el porcentaje, «Mejorable» por debajo del 70 % y «Recomendable» a partir del 70 %. Para obtener «Recomendable», además, la IA tiene que haber podido puntuar el contenido y los datos personales, y la accesibilidad no puede tener un 0; en caso contrario, el resultado es «Mejorable».</p></div></section>
+<p>El porcentaje final es la suma de las puntuaciones dividida entre el máximo posible de los puntos que la IA ha podido comprobar. Con él y con los puntos esenciales se obtiene uno de estos tres resultados:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Resultado</th>
+<th>Cuándo se da</th>
+<th>Qué significa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Recomendable</strong></td>
+<td>70 % o más, con el contenido y los datos personales puntuados y sin un 0 en ninguno de ellos ni en la accesibilidad</td>
+<td>El recurso cumple lo esencial de la guía y puede utilizarse o publicarse. Las mejoras propuestas lo completan.</td>
+</tr>
+<tr>
+<td><strong>Mejorable</strong></td>
+<td>Menos del 70 %, o cuando no se ha podido comprobar el contenido o los datos personales, o la accesibilidad tiene un 0</td>
+<td>El recurso tiene fallos que conviene corregir antes de publicarlo o de recomendarlo, aunque ninguno lo descarta. El informe indica cuáles son y qué falta por comprobar.</td>
+</tr>
+<tr>
+<td><strong>No recomendable</strong></td>
+<td>Un 0 en el contenido o en los datos personales, sea cual sea el porcentaje</td>
+<td>El recurso tiene errores evidentes en lo que enseña o envía datos del alumnado a servicios ajenos al centro. No conviene utilizarlo con el alumnado ni publicarlo hasta corregirlo.</td>
+</tr>
+</tbody>
+</table></div></section>
 </main>
 <footer class="pie">
 <div class="ancho">
