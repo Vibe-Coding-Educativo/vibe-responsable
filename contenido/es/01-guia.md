@@ -68,4 +68,4 @@ Las obras quedan protegidas por derechos de autor de forma automática, de modo 
 La licencia da el permiso, pero el material debe poder obtenerse, además, en una forma que permita trabajar con él. De este modo otra persona puede adaptarlo a su aula sin pedir nada a nadie.
 
 - **Lo mínimo.** Ofrecer el código para copiarlo o descargarlo, acompañado de la nota de decisiones del punto 7, de forma que otra persona pueda continuarlo.
-- **Lo recomendado.** Publicarlo en un repositorio abierto, con una explicación de cómo usarlo y cómo modificarlo.
+- **Lo recomendado.** Publicarlo en un repositorio abierto, con una explicación de cómo usarlo y cómo modificarlo, y pedir a la IA que marque cada versión publicada con una etiqueta de versión, que permite recuperar después el código exacto de esa versión.

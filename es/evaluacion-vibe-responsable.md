@@ -22,7 +22,9 @@ creado o no siguiendo la guía.
   imágenes: un logotipo redibujado sigue siendo ajeno); y todo lo que se carga
   de fuera, y cuándo (al abrir, al pulsar algo o en una ventana nueva).
 - Si el recurso está publicado, evalúa esa versión o comprueba que coincide
-  con el código que te han dado.
+  con el código que te han dado. Anota qué versión has evaluado: la etiqueta
+  de versión y el commit si está en un repositorio, o la dirección y la fecha
+  de la evaluación si no lo está.
 - Para el punto 5, si puedes ejecutar código, abre el recurso en un navegador
   y pásale una herramienta automática de accesibilidad, como axe-core, también
   con contenido cargado y no solo en la pantalla inicial. No cuentes lo que se
@@ -124,7 +126,8 @@ creado o no siguiendo la guía.
   resultado es «Mejorable» e indica qué falta por comprobar; si el punto 5
   tiene 0, también es «Mejorable» e indica qué impide usarlo.
 - Empieza el informe con una línea como «Rúbrica VCER: Recomendable
-  (85 %)», y añade debajo una frase con lo que significa ese resultado:
+  (85 %)», seguida de otra con la versión evaluada, y añade debajo una frase
+  con lo que significa ese resultado:
   - Recomendable: cumple lo esencial de la guía y puede utilizarse o
     publicarse; las mejoras propuestas lo completan.
   - Mejorable: tiene fallos que conviene corregir antes de publicarlo o

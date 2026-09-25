@@ -72,6 +72,8 @@ Si no te lo he dicho, pregúntame:
   pendiente de validación.
 - Revisa la accesibilidad con una herramienta automática y corrige lo que
   detecte.
+- Cuando publiquemos una versión, márcala con una etiqueta de versión (v1.0,
+  v1.1…) y no muevas ni reutilices después una etiqueta ya publicada.
 
 ## Cuando termines el material
 

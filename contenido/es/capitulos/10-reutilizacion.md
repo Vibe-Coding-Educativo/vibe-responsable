@@ -12,6 +12,8 @@ Lo mínimo es que el material ofrezca su código para copiarlo o descargarlo. En
 
 Lo recomendado es publicar el proyecto en un repositorio abierto, con una explicación de cómo usarlo y cómo modificarlo. Un repositorio permite, además, que otras personas propongan mejoras y que el autor las incorpore.
 
+En un repositorio el código sigue cambiando después de publicarse, de modo que el enlace al proyecto lleva siempre a la versión más reciente. Para recuperar más adelante la versión exacta que se publicó, se utilizó en clase o se evaluó, conviene marcar cada versión publicada con una etiqueta de versión, o *tag* en la terminología de Git, como v1.0 o v1.1. La crea la IA al publicar, y basta con indicárselo una vez en sus instrucciones. Una etiqueta ya publicada no se mueve ni se reutiliza, porque dejaría de señalar lo que se publicó. Junto a ella puede anotarse el identificador del *commit*, el código que Git asigna a cada estado guardado del proyecto, que sirve de referencia exacta aunque la etiqueta se cambiara por error.
+
 ## Un material fácil de adaptar
 
 Un material es más reutilizable cuando el contenido está separado del funcionamiento. Un cuestionario cuyas preguntas están en una lista al principio del código, o en un archivo aparte, puede adaptarse a otra materia cambiando esa lista, sin tocar el resto. Conviene pedirlo a la inteligencia artificial (IA) desde el principio, junto con el código comentado de la recomendación 3 y la ausencia de dependencias de la recomendación 4, que son las otras dos condiciones que facilitan la adaptación.
