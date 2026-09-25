@@ -49,3 +49,7 @@ sugerencias llegan dispersas por cinco sitios y hay que recogerlas de todos. Los
 enlaces a las publicaciones de las redes llevan a un anuncio concreto; si se
 publica otro, hay que cambiarlos. Los textos y enlaces están en `UI` de
 `construir.py` (`participar`).
+
+Las propuestas que se incorporan se agradecen en «Créditos y licencias», con
+enlace a su incidencia. Las tres primeras, de Ernesto Serrano, se incorporaron
+el 25-09-2026.

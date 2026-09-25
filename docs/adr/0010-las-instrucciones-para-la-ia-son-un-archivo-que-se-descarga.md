@@ -35,7 +35,17 @@ con dos botones: descargar y copiar. El archivo:
   archivo de evaluación, adjunto en la misma conversación, y después se pide
   corregirlo (24-09-2026). Antes llevaba su propia lista de diez puntos, que
   repetía la rúbrica con otras palabras y obligaba a llevar cada cambio a las
-  dos.
+  dos;
+- pide a la IA una lista de comprobaciones del propio material, con sus
+  recorridos principales y sus casos extremos, para repetirla después de cada
+  cambio, y que la convierta en pruebas automáticas si el proyecto lo permite
+  (25-09-2026). La lista comprueba que el material sigue funcionando tras un
+  cambio, así que no sustituye la evaluación con la rúbrica ni repite sus diez
+  puntos;
+- en un repositorio, pide marcar cada versión publicada con una etiqueta de
+  versión, sin moverla ni reutilizarla, y anotar en el registro de decisiones
+  la evidencia, los riesgos y la validación de las decisiones técnicas
+  (25-09-2026).
 Evaluar un recurso ya hecho tiene su propio archivo, `contenido/<idioma>/evaluacion-ia.md`,
 publicado como `evaluacion-vibe-responsable.md` y mostrado en la misma página (marca
 `<!-- evaluacion -->`). Sirve para recursos propios o ajenos, hechos o no con la
@@ -76,6 +86,10 @@ guía, y no corrige nada:
 - si el recurso está publicado, se evalúa esa versión o se comprueba que
   coincide con el código: tras subir cambios al repositorio, la web siguió con
   la versión anterior hasta desplegarla;
+- el informe indica, debajo del resultado, qué versión se ha evaluado: la
+  etiqueta y el commit si el recurso está en un repositorio, o la dirección y
+  la fecha si no lo está, para que la evaluación pueda comprobarse aunque el
+  recurso cambie (25-09-2026);
 - si después se pide corregir, la IA propone los cambios antes de hacerlos y,
   si no hay nota de decisiones, describe el recurso tal como está.
 

@@ -31,7 +31,8 @@ pasa a ser su descripción. Se aplica en todos los sitios donde aparece el nombr
 - La evaluación de los archivos para la IA se llama «rúbrica VCER», siglas de
   vibe coding educativo responsable, que se explican la primera vez que aparecen
   en cada archivo. Su informe empieza con una línea con ese nombre, el
-  resultado y el porcentaje, como «Rúbrica VCER: Recomendable (85 %)». La sigla
+  resultado y el porcentaje, como «Rúbrica VCER: Recomendable (85 %)», seguida
+  de otra con la versión evaluada (ADR 10). La sigla
   incluye «educativo», que el nombre de la guía omite para no alargarlo.
 
 El nombre se escribe en minúsculas salvo la inicial, porque «vibe coding» es un
