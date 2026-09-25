@@ -18,15 +18,25 @@ El contenido se reparte en páginas, en el orden en que se lee, que es también 
 de los archivos de `contenido/<idioma>/` y el del menú:
 
 1. **Presentación** (`00-presentacion.md`, portada): qué es el vibe coding
-   educativo, por qué existe la guía, cómo se utiliza y cómo se ha elaborado. El
-   texto fluye seguido en dos columnas equilibradas, de forma que un apartado
-   puede empezar en una y seguir en la otra y no quedan huecos; al lado va la
+   educativo, por qué existe la guía y cómo empezar, en unas 270 palabras. Se
+   redujo desde unas 480 (25-09-2026) porque, en el grupo, se señaló que la guía
+   podía resultar abrumadora para quien empieza: quedó lo fundamental, y cómo
+   utilizarla pasó a tres pasos, en los que la IA hace el trabajo salvo la
+   revisión del contenido. Las dos definiciones, la del vibe coding educativo y
+   la del vibe coding educativo responsable (VCER), que da nombre a la
+   evaluación, van en un marco con su nombre cortando el borde, cada una al final
+   de su columna, y las dos columnas se equilibran ajustando el texto. Debajo van
+   los tres pasos en tarjetas numeradas, a ras del botón que lleva a la guía. Tan
+   malo es un texto que desborda la pantalla como uno que la deja medio vacía,
+   así que el texto ocupa el alto de la infografía: su letra sale del alto de la
+   pantalla, ajustada con medidas de 1280 × 720 a 2560 × 1440. En el móvil las tarjetas van en columna. Al lado va la
    infografía en una columna propia, con un enlace para descargarla debajo y,
    bajo ella, el botón que lleva a la guía, fuera del texto. Su
    alto es el que deja la pantalla, y de él sale la anchura de su columna, así
    que en un monitor grande se lee sin ampliarla y en un portátil queda como
-   miniatura. Al final del texto va en letra pequeña la nota «Cómo se ha
-   elaborado». La nota «Cómo citar», con la misma cita que la portada del PDF y
+   miniatura. La declaración de uso de IA («Cómo se ha elaborado») iba en letra
+   pequeña al final del texto y pasó a «Créditos y licencias» (25-09-2026). La
+   nota «Cómo citar», con la misma cita que la portada del PDF y
    el DOI pendiente de la versión definitiva, está de momento en la página de
    créditos (23-09-2026) y volverá a la portada. En el móvil todo va en una columna, con
    la infografía después de «Por qué esta guía».
@@ -44,9 +54,8 @@ desde el pie, y los diez capítulos, que regula el
 una línea, con la autoría, las dos licencias y el enlace a los créditos.
 
 La guía cabe en una pantalla, también en un portátil de 1366 × 650 píxeles
-útiles; en pantallas bajas se compacta sola. La presentación creció al
-explicar mejor por qué existe la guía (23-09-2026): en un portátil de 1366 × 768
-el botón que lleva a la guía queda a la vista y solo el pie pide bajar un poco. Las demás
+útiles; en pantallas bajas se compacta sola. La presentación cabe
+entera en un portátil de 1366 × 768. Las demás
 páginas son texto explicativo y pueden extenderse hacia abajo.
 
 La página de la guía es una lista con su explicación. A la izquierda están las

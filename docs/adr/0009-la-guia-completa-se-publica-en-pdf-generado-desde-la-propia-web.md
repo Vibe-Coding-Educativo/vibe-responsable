@@ -47,7 +47,9 @@ entre páginas. Ningún título queda solo al pie, los recuadros y las tablas
 cortas (hasta seis filas) no se parten, y los párrafos y bloques de código no
 dejan líneas sueltas. En los párrafos se piden dos líneas como mínimo a cada lado
 del salto: con tres, un párrafo de cuatro o cinco líneas no puede cumplir las dos
-reglas a la vez, y Chromium las relaja dejando una línea sola. Cada capítulo empieza en página nueva. Tras cambiar el
+reglas a la vez, y Chromium las relaja dejando una línea sola. En la
+presentación, los tres pasos para empezar van en fila, sin partirse, justo después
+del texto, y la infografía ocupa la página siguiente. Cada capítulo empieza en página nueva. Tras cambiar el
 contenido o estas reglas, hay que repasar el PDF página por página, porque un
 cambio de pocas líneas puede dejar una página casi vacía.
 

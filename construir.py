@@ -552,13 +552,17 @@ def pagina_completa(idioma, paginas):
 /* Ningún título solo al pie de página, ni recuadros o filas partidos, ni líneas sueltas */
 .pdf h1, .pdf h2, .pdf h3, .pdf h4 {{ break-after: avoid; }}
 .pdf .que-hacer, .pdf .nivel, .pdf li, .pdf tr, .pdf .nota {{ break-inside: avoid; }}
+/* Portada: las definiciones enteras, y los tres pasos en fila y juntos, como en pantalla */
+.pdf .definicion, .pdf .utiliza {{ break-inside: avoid; }}
+.pdf .utiliza ul {{ grid-template-columns: repeat(3, minmax(0, 1fr)); }}
+.pdf .textos > .utiliza {{ order: 0; }} /* tras el texto, en su página; la infografía va en la siguiente */
 /* Dos líneas como mínimo a cada lado del salto. Con tres, un párrafo de cuatro o cinco
    líneas no puede cumplir las dos reglas a la vez, y Chromium deja una línea sola. */
 .pdf p {{ orphans: 2; widows: 2; }}
 /* Texto justificado con partición de palabras (véase SIN_GUIONADO_CHROMIUM); las tablas,
    de columnas estrechas, siguen alineadas a la izquierda. */
 .pdf-pagina p, .pdf-pagina li {{ text-align: justify; hyphens: auto; }}
-.pdf td p, .pdf th p, .pdf td, .pdf th {{ text-align: left; }}
+.pdf td p, .pdf th p, .pdf td, .pdf th, .pdf .utiliza li {{ text-align: left; }}
 .pdf table.entera {{ break-inside: avoid; }}
 .pdf .copiable pre {{ orphans: 4; widows: 4; -webkit-box-decoration-break: clone; box-decoration-break: clone; }}
 .pdf .descarga, .pdf #como-citar {{ display: none; }} /* la cita ya va en la portada */

@@ -15,6 +15,7 @@
 
 - Agencia Española de Protección de Datos. (2018). *Guía para centros educativos*. <https://www.aepd.es/documento/guia-centros-educativos.pdf>
 - Creative Commons. (s. f.). Does my use violate the NonCommercial clause of the licenses? En *Frequently asked questions*. <https://creativecommons.org/faq/#does-my-use-violate-the-noncommercial-clause-of-the-licenses>
+- Creative Commons. (s. f.). If I derive or adapt material offered under a Creative Commons license, which CC license(s) can I use? En *Frequently asked questions*. <https://creativecommons.org/faq/#if-i-derive-or-adapt-material-offered-under-a-creative-commons-license-which-cc-license-s-can-i-use>
 - Creative Commons. (2024). *Recommended practices for attribution*. Creative Commons Wiki. <https://wiki.creativecommons.org/wiki/Recommended_practices_for_attribution>
 - Wikimedia Commons. (s. f.). *Commons:Licencias*. <https://commons.wikimedia.org/wiki/Commons:Licensing/es>
 - De Haro, J. J. (2026). *Decálogo del conocimiento abierto* (versión 2.2). <https://conocimiento-abierto.github.io/>

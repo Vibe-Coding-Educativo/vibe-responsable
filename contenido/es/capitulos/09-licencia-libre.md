@@ -17,6 +17,8 @@ No todas las licencias Creative Commons son libres. Cada condición se indica co
 
 Conviene evitar la condición NC, aunque parezca la más prudente, porque no siempre está claro qué es un uso comercial. La propia Creative Commons [indica](https://creativecommons.org/faq/#does-my-use-violate-the-noncommercial-clause-of-the-licenses) que depende de las circunstancias y de la intención de quien utiliza el material, y no del tipo de organización, y que no puede aclarar qué usos lo son. Puede discutirse, por ejemplo, el de un centro privado o el de una plataforma con publicidad. Además, un material con NC no puede subirse a [Wikimedia Commons](https://commons.wikimedia.org/wiki/Commons:Licensing/es), el repositorio de imágenes y archivos que utiliza Wikipedia.
 
+Si lo que se busca es que nadie se apropie del material, esa protección la da la condición SA. Una empresa puede utilizar un material con CC BY-SA, pero tiene que publicar sus adaptaciones con la misma licencia, de modo que las mejoras vuelven a la comunidad. La condición NC cierra, además, la puerta a la mezcla con otros materiales libres. Según las [preguntas frecuentes de Creative Commons](https://creativecommons.org/faq/#if-i-derive-or-adapt-material-offered-under-a-creative-commons-license-which-cc-license-s-can-i-use), una adaptación de material con SA tiene que publicarse con la misma licencia, así que un texto de Wikipedia, que usa CC BY-SA, no puede incorporarse a un material con CC BY-NC-SA.
+
 Para el código, las licencias de software libre más utilizadas son cuatro:
 
 - **[MIT](https://opensource.org/license/mit).** La más sencilla, que permite cualquier uso siempre que se mantenga el aviso de autoría y de licencia.
