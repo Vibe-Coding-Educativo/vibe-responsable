@@ -18,7 +18,7 @@ Esta guía se ha elaborado en el nivel 4 del [Marco para la integración de la I
 
 ## Materiales de otras personas
 
-Los iconos proceden de [Lucide](https://lucide.dev/), de Lucide Icons and Contributors, que se distribuye con la licencia ISC, que toma su nombre del Internet Systems Consortium. Algunos derivan del proyecto Feather, de Cole Bemis, con licencia MIT: la luna, la descarga, el código y la marca de verificación. El logotipo de la guía combina estos dos últimos. El [texto de las dos licencias](https://github.com/Vibe-Coding-Educativo/vibe-responsable/blob/main/infografia/iconos/LICENSE) se conserva en el repositorio.
+Los iconos proceden de [Lucide](https://lucide.dev/), de Lucide Icons and Contributors, que se distribuye con la licencia ISC, que toma su nombre del Internet Systems Consortium. Algunos derivan del proyecto Feather, de Cole Bemis, con licencia MIT: la luna, la descarga, el código, la marca de verificación, copiar, la flecha y el aspa de cerrar. El logotipo de la guía combina estos dos últimos. El [texto de las dos licencias](https://github.com/Vibe-Coding-Educativo/vibe-responsable/blob/main/infografia/iconos/LICENSE) se conserva en el repositorio.
 
 La tipografía es [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/), diseñada por el Braille Institute para facilitar la lectura, y se distribuye con la licencia SIL Open Font License 1.1.
 

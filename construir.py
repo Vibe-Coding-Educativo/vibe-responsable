@@ -91,6 +91,17 @@ UI = {
         "copiado": "Texto copiado",
         "descargar_archivo": "Descargar el archivo",
         "ver_archivo": {"instrucciones": "Ver las instrucciones para crear", "evaluacion": "Ver las instrucciones para evaluar"},
+        # Las ventanas de la portada que ofrecen cada archivo sin salir de ella
+        "ventana_ia": {
+            "instrucciones": ("Instrucciones para crear un material",
+                              "Al empezar, adjuntar el archivo en la conversación con la IA, o pegar el texto al principio, junto con la descripción del material que se quiere crear."),
+            "evaluacion": ("Instrucciones para evaluar el material",
+                           "Al terminar, adjuntar el archivo en la misma conversación, o pegar el texto, y pedir «evalúa el material según las instrucciones»."),
+        },
+        "mas_informacion": "Más información",
+        "copiar_titulo": "Copiar el texto para pegarlo en la conversación con la IA",
+        "descargar_titulo": "Descargar el archivo para adjuntarlo en la conversación con la IA",
+        "mas_informacion_titulo": "Ir a la página de instrucciones para la IA, con el texto completo",
         "rubrica": "Rúbrica VCER: 2, se cumple; 1, en parte; 0, no se cumple",
         "punto": "Recomendación",
         "acercar": "Ver a tamaño de lectura",
@@ -259,6 +270,28 @@ def visor(idioma):
 </dialog>"""
 
 
+def ventanas_ia(idioma):
+    """Una ventana por archivo para la IA, que abren los enlaces de «Cómo empezar»: una instrucción
+    breve, copiar, descargar y el enlace a la página completa. El texto del archivo va oculto, solo
+    para copiarlo; quien quiera leerlo va a la página. Sin JavaScript, el enlace lleva a la página."""
+    T = UI[idioma]
+    ventanas = []
+    for clave, ancla_pagina in (("instrucciones", "para-crear-un-material"), ("evaluacion", "para-evaluar-un-recurso-ya-hecho")):
+        titulo, texto = T["ventana_ia"][clave]
+        ventanas.append(f"""<dialog class="ventana-ia" id="ventana-{clave}" aria-labelledby="ventana-{clave}-titulo">
+<div class="ventana-cab"><h2 id="ventana-{clave}-titulo">{html.escape(titulo)}</h2>
+<button type="button" class="ventana-cerrar" aria-label="{html.escape(T["cerrar"])}" title="{html.escape(T["cerrar"])}">{icono("x")}</button></div>
+<p>{html.escape(texto)}</p>
+<div class="copiable ventana-botones">
+<button type="button" class="copiar" data-hecho="{html.escape(T["copiado"])}" title="{html.escape(T["copiar_titulo"])}">{icono("copy")}<span>{html.escape(T["copiar"])}</span></button>
+<a class="boton" href="{ARCHIVOS_IA[clave][1]}" download title="{html.escape(T["descargar_titulo"])}">{icono("download")}{html.escape(T["descargar_archivo"])}</a>
+<pre hidden>{html.escape(archivo_ia(idioma, clave))}</pre>
+</div>
+<p class="ventana-mas"><a href="para-la-ia.html#{ancla_pagina}" title="{html.escape(T["mas_informacion_titulo"])}">{html.escape(T["mas_informacion"])}{icono("arrow-right")}</a></p>
+</dialog>""")
+    return "\n".join(ventanas)
+
+
 def pagina_presentacion(idioma):
     """Portada: el texto en dos columnas y, al lado, el resumen gráfico."""
     T = UI[idioma]
@@ -298,7 +331,8 @@ def pagina_presentacion(idioma):
 <aside class="paso-guia">{tarjeta}</aside>
 {boton}
 </div>
-{visor(idioma)}"""
+{visor(idioma)}
+{ventanas_ia(idioma)}"""
     return marco(idioma, "index.html", titulo, cuerpo, "pagina-presentacion")
 
 

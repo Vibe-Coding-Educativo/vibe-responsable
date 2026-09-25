@@ -15,9 +15,9 @@
 <link rel="icon" href="../recursos/logo/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="../recursos/logo/apple-touch-icon.png">
 <link rel="preload" href="../recursos/fuentes/atkinson-hyperlegible-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../recursos/estilos.css?v=4d2fc9d59b">
+<link rel="stylesheet" href="../recursos/estilos.css?v=d314651bd9">
 <script>(function(){try{var t=localStorage.getItem("vibe-responsable:tema");if(t!=="light"&&t!=="dark"){t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.dataset.theme=t;}catch(e){}})();</script>
-<script src="../recursos/guia.js?v=eccecc9266" defer></script>
+<script src="../recursos/guia.js?v=b76616d47e" defer></script>
 </head>
 <body class="pagina-presentacion">
 <a class="saltar" href="#contenido">Saltar al contenido</a>
@@ -75,9 +75,9 @@
 <p>El <strong>vibe coding educativo responsable</strong> (VCER) es el que <strong>publica materiales seguros para el alumnado, accesibles, duraderos, transparentes sobre cómo se hicieron y libres para que otras personas los reutilicen</strong>.</p>
 </div></section>
 <section class="utiliza" aria-labelledby="h-como-empezar"><h2 id="h-como-empezar">Cómo empezar</h2><ul>
-<li><strong>Al crear un material.</strong> Dar a la IA el <a href="para-la-ia.html#para-crear-un-material">archivo de instrucciones</a>, que le indica cómo seguir las recomendaciones.</li>
-<li><strong>Al terminarlo.</strong> Pedirle la evaluación VCER con el <a href="para-la-ia.html#para-evaluar-un-recurso-ya-hecho">archivo de evaluación</a>, que señala lo que falta.</li>
-<li><strong>Para publicar.</strong> Con estos dos pasos, la IA se ocupa de lo mínimo de cada recomendación, salvo la revisión del contenido, que corresponde a la persona. Los capítulos quedan para resolver dudas.</li>
+<li><strong>Al crear un material.</strong> Dar a la IA el <a href="para-la-ia.html#para-crear-un-material" class="abrir-ventana" data-ventana="ventana-instrucciones">archivo de instrucciones</a>, que le indica cómo seguir las recomendaciones.</li>
+<li><strong>Al terminarlo.</strong> Pedirle la evaluación VCER con el <a href="para-la-ia.html#para-evaluar-un-recurso-ya-hecho" class="abrir-ventana" data-ventana="ventana-evaluacion">archivo de evaluación</a>, que señala lo que falta.</li>
+<li><strong>Para publicar.</strong> Con estos dos pasos, la IA se ocupa de lo mínimo de cada recomendación, salvo la revisión del contenido, que corresponde a la persona.</li>
 </ul></section>
 <div class="notas"></div>
 </div>
@@ -91,6 +91,277 @@
 <button type="button" class="visor-zoom" data-acercar="Ver a tamaño de lectura" data-alejar="Ajustar a la pantalla">Ver a tamaño de lectura</button>
 <button type="button" class="visor-cerrar">Cerrar</button></div>
 <div class="visor-lienzo"><img alt="Infografía con las diez recomendaciones, las mismas que aparecen en la lista, agrupadas en cuatro fases: proteger al alumnado, construir el material, documentar el trabajo y compartir el material." width="1080" height="1928"></div>
+</dialog>
+<dialog class="ventana-ia" id="ventana-instrucciones" aria-labelledby="ventana-instrucciones-titulo">
+<div class="ventana-cab"><h2 id="ventana-instrucciones-titulo">Instrucciones para crear un material</h2>
+<button type="button" class="ventana-cerrar" aria-label="Cerrar" title="Cerrar"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" />
+  <path d="m6 6 12 12" /></svg></button></div>
+<p>Al empezar, adjuntar el archivo en la conversación con la IA, o pegar el texto al principio, junto con la descripción del material que se quiere crear.</p>
+<div class="copiable ventana-botones">
+<button type="button" class="copiar" data-hecho="Texto copiado" title="Copiar el texto para pegarlo en la conversación con la IA"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" /></svg><span>Copiar el texto</span></button>
+<a class="boton" href="instrucciones-vibe-responsable.md" download title="Descargar el archivo para adjuntarlo en la conversación con la IA"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <path d="m7 10 5 5 5-5" /></svg>Descargar el archivo</a>
+<pre hidden># Instrucciones para crear un material educativo abierto
+
+Estas instrucciones proceden de la guía «Vibe coding responsable», para
+publicar materiales educativos creados con vibe coding
+(https://vibe-coding-educativo.github.io/vibe-responsable/).
+Síguelas en todo el trabajo, junto con lo que te pida sobre el material que
+quiero crear. El material se publicará en abierto, para que otras personas
+puedan utilizarlo y adaptarlo.
+
+## Antes de empezar
+
+Si no te lo he dicho, pregúntame:
+- La autoría que debe figurar (un nombre o un nombre de usuario).
+- Dónde se publicará: la web de un chatbot, una plataforma para crear
+  aplicaciones, o un repositorio o sitio propio.
+
+## Cómo debe construirse
+
+- Licencia: CC BY-SA 4.0 para los contenidos y AGPL v3 para el código, salvo
+  que te indique otras.
+- Si trabajamos en la web de un chatbot, haz el material como una página HTML
+  que funcione por sí sola al abrirla en el navegador, y no como un componente
+  que solo funciona dentro del chatbot.
+- Puedes utilizar bibliotecas, tipografías y otros recursos externos cuando
+  ahorren trabajo o mejoren el resultado. Cárgalos de un servicio conocido y
+  estable, y anótalos en la nota de decisiones, con su licencia. Si algo del
+  material dejaría de funcionar al abrirlo descargado en un ordenador sin
+  internet, dímelo con palabras sencillas, por ejemplo: «si lo abres sin
+  internet, las fórmulas no se verán».
+- Datos personales: no pidas el nombre ni ningún dato que identifique a una
+  persona, salvo que la herramienta lo necesite para su función, como un
+  cuaderno de notas. En ese caso guárdalo solo en el dispositivo y ofrece la
+  opción de exportar o imprimir sin los nombres. Si el programa recoge
+  respuestas del alumnado, muestra el resultado al terminar o permite
+  descargarlo para entregarlo, e identifica a cada persona con un código en
+  lugar de su nombre. No envíes nada a ningún servidor ni añadas analítica o
+  contadores de visitas.
+- Accesible, siguiendo las Pautas de Accesibilidad para el Contenido Web
+  (WCAG): manejable solo con el teclado, con un orden de tabulación lógico,
+  etiquetas en los controles, textos alternativos en las imágenes, contraste
+  suficiente, sin depender del color para entender nada y legible en la
+  pantalla de un móvil.
+- Código legible y comentado en el idioma del material, sin comprimir, con
+  nombres de variables comprensibles.
+- Al pie del material: el título, la autoría, la licencia con su enlace y una
+  línea que indique que se ha creado con inteligencia artificial.
+- Si incorporas imágenes, sonidos o fragmentos de código de otras personas,
+  utiliza solo material cuya licencia permita la reutilización, e indica su
+  autoría, su procedencia y su licencia dentro del propio material.
+- Si el programa va a guardar datos del alumnado en los sistemas del centro,
+  no escribas claves ni contraseñas en el código que llega al navegador, haz
+  que solo el docente o el centro puedan leer lo recogido e indícame qué debe
+  revisar una persona con conocimientos técnicos antes de ponerlo en uso.
+- Después de cada cambio, vuelve a comprobar lo que ya funcionaba: ejecuta las
+  pruebas si las hay o, si no puedes hacerlo, dime qué comprobaciones debo
+  repetir.
+
+## Si se publica en un repositorio o en un sitio propio
+
+- Añade un archivo LICENSE con la licencia del código y otro con la de los
+  contenidos, e indica la licencia al inicio de cada archivo de código con una
+  línea SPDX-License-Identifier.
+- Añade un documento que explique cómo está organizado el proyecto y para qué
+  sirve cada archivo.
+- Lleva un registro de decisiones (ADR) dentro del proyecto, con un archivo por
+  decisión que recoja el contexto, las alternativas descartadas y las
+  consecuencias. Anota en él cada decisión que tomemos, sin esperar a que te lo
+  pida. En las decisiones técnicas, anota también en qué te basas
+  (documentación oficial, una versión concreta del código o una prueba que
+  pueda repetirse), los riesgos conocidos y cómo lo has comprobado. No inventes
+  fuentes ni pruebas: lo que no hayas podido comprobar, márcalo como hipótesis
+  pendiente de validación.
+- Revisa la accesibilidad con una herramienta automática y corrige lo que
+  detecte.
+- Cuando publiquemos una versión, márcala con una etiqueta de versión (v1.0,
+  v1.1…) y no muevas ni reutilices después una etiqueta ya publicada.
+
+## Cuando termines el material
+
+- Describe brevemente qué hace el material, qué guarda y si se comunica con
+  algún servicio externo.
+- Prepara una lista breve de comprobaciones con los recorridos principales y
+  los casos extremos, para repetirla después de cada cambio. Si el proyecto lo
+  permite, conviértela en pruebas automáticas.
+- Escribe una nota breve con las decisiones importantes que has tomado y el
+  motivo de cada una, o resúmelas del registro de decisiones si lo hay.
+- Indica qué debo comprobar yo, empezando por la corrección de los contenidos.
+</pre>
+</div>
+<p class="ventana-mas"><a href="para-la-ia.html#para-crear-un-material" title="Ir a la página de instrucciones para la IA, con el texto completo">Más información<svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></svg></a></p>
+</dialog>
+<dialog class="ventana-ia" id="ventana-evaluacion" aria-labelledby="ventana-evaluacion-titulo">
+<div class="ventana-cab"><h2 id="ventana-evaluacion-titulo">Instrucciones para evaluar el material</h2>
+<button type="button" class="ventana-cerrar" aria-label="Cerrar" title="Cerrar"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" />
+  <path d="m6 6 12 12" /></svg></button></div>
+<p>Al terminar, adjuntar el archivo en la misma conversación, o pegar el texto, y pedir «evalúa el material según las instrucciones».</p>
+<div class="copiable ventana-botones">
+<button type="button" class="copiar" data-hecho="Texto copiado" title="Copiar el texto para pegarlo en la conversación con la IA"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" /></svg><span>Copiar el texto</span></button>
+<a class="boton" href="evaluacion-vibe-responsable.md" download title="Descargar el archivo para adjuntarlo en la conversación con la IA"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <path d="m7 10 5 5 5-5" /></svg>Descargar el archivo</a>
+<pre hidden># Instrucciones para evaluar un recurso educativo abierto (evaluación VCER)
+
+Estas instrucciones proceden de la guía «Vibe coding responsable», para
+publicar materiales educativos creados con vibe coding
+(https://vibe-coding-educativo.github.io/vibe-responsable/).
+Sirven para evaluar un recurso ya hecho, propio o de otra persona, se haya
+creado o no siguiendo la guía.
+
+## Cómo evaluar
+
+- Trabaja sobre el código del recurso que te doy. Si no lo tienes, pídemelo
+  antes de empezar.
+- No lo corrijas: solo evalúalo.
+- Puntúa cada uno de los diez puntos con 2, 1 o 0 según la rúbrica VCER
+  (vibe coding educativo responsable), y justifica cada puntuación con una
+  frase sobre lo que has visto en el recurso.
+- Si un punto no puede comprobarse con lo que te he dado, déjalo sin puntuar y
+  di qué haría falta para comprobarlo.
+- Antes de puntuar, haz inventario completo, no una muestra: cada función que
+  pide o guarda datos de personas y cómo se exportan o copian; cada imagen,
+  sonido, vídeo, icono y tipografía del proyecto, y de dónde sale (mira las
+  imágenes: un logotipo redibujado sigue siendo ajeno); y todo lo que se carga
+  de fuera, y cuándo (al abrir, al pulsar algo o en una ventana nueva).
+- Si el recurso está publicado, evalúa esa versión o comprueba que coincide
+  con el código que te han dado. Anota qué versión has evaluado: la etiqueta
+  de versión y el commit si está en un repositorio, o la dirección y la fecha
+  de la evaluación si no lo está.
+- Para el punto 5, si puedes ejecutar código, abre el recurso en un navegador
+  y pásale una herramienta automática de accesibilidad, como axe-core, también
+  con contenido cargado y no solo en la pantalla inicial. No cuentes lo que se
+  incrusta de otros sitios. La herramienta no comprueba el manejo con el
+  teclado: recórrelo con el tabulador. En la justificación del punto, di qué
+  has probado y cómo; si solo has podido leer el código, indícalo.
+
+## Rúbrica VCER
+
+1. CONTENIDO (eliminatorio)
+   2: No se detectan errores en lo que enseña: los datos, las definiciones
+      y las respuestas que se dan por correctas.
+   1: Hay alguna imprecisión menor en lo que enseña.
+   0: Hay errores evidentes en conceptos, datos o respuestas.
+   Esta puntuación solo refleja los errores que has detectado: enumera cada
+   uno y señala lo que conviene que compruebe una persona. Las erratas y los
+   fallos de formato de las referencias no restan aquí: señálalos aparte.
+
+2. DATOS PERSONALES (eliminatorio)
+   2: No pide datos que identifiquen a nadie, o los guarda solo en el
+      dispositivo y permite exportar sin nombres; o los envía únicamente a
+      un servicio del centro, sin claves visibles en el código y de forma
+      que solo el docente o el centro puedan leerlos. No lleva analítica.
+   1: No envía datos del alumnado a servicios ajenos, pero guarda nombres
+      sin opción de exportar sin ellos, o el envío al servicio del centro no
+      está bien protegido (claves en el código, una dirección que permite
+      leer lo recogido).
+   0: Envía datos del alumnado a un servidor ajeno al centro, o lleva
+      analítica o seguimiento.
+   Si el recurso maneja datos reales del alumnado, indica que conviene la
+   revisión de una persona con conocimientos técnicos antes de usarlo.
+   Lo que se carga o se incrusta de otros servidores (vídeos, audios,
+   tipografías, bibliotecas) se valora en el punto 4, no aquí.
+
+3. ENTENDER QUÉ HACE
+   2: Puede describirse brevemente qué hace, qué guarda y con qué se
+      comunica, y lo que declara el material coincide con el código.
+   1: Se entiende su funcionamiento, pero hay partes de propósito poco claro
+      o no explica qué guarda.
+   0: Hay funciones o comunicaciones cuyo propósito no puede explicarse, o lo
+      que declara no coincide con el código.
+
+4. DEPENDENCIAS
+   2: Lo que carga o incrusta de fuera procede de servicios conocidos y está
+      anotado, y los textos, imágenes y datos propios están dentro del
+      material.
+   1: Carga o incrusta recursos externos sin anotarlos, o parte del
+      contenido propio (un vídeo, un audio, un mapa) solo está en otra
+      plataforma.
+   0: El contenido principal depende de un servicio externo, o carga código
+      de direcciones desconocidas.
+
+5. ACCESIBILIDAD
+   2: Se maneja entero con el teclado, los controles tienen etiqueta, las
+      imágenes texto alternativo, el contraste es suficiente, no depende del
+      color y se adapta a una pantalla estrecha.
+   1: Falla en uno o dos de esos aspectos, sin impedir su uso.
+   0: Falla en tres o más, o no puede usarse con el teclado.
+
+6. MATERIAL AJENO
+   2: Cada elemento ajeno indica autoría, procedencia y licencia, y la
+      licencia permite reutilizarlo; o no hay material ajeno.
+   1: Hay material ajeno con licencia válida, pero sin acreditar del todo.
+   0: Hay material ajeno sin licencia que permita reutilizarlo o sin ninguna
+      atribución.
+
+7. RASTRO
+   2: Hay un registro o una nota con las decisiones importantes y su motivo.
+   1: Hay documentación que explica cómo está hecho, pero no por qué.
+   0: No hay nada.
+
+8. USO DE IA
+   2: Indica que se ha hecho con IA y qué ha comprobado la persona.
+   1: Indica que se ha hecho con IA, sin decir qué se ha comprobado.
+   0: No lo indica. Si consta que no se usó IA, no se puntúa.
+
+9. LICENCIA
+   2: Autoría y licencia libre visibles en el material, con enlace. Si es un
+      proyecto de varios archivos, incluye el archivo de licencia.
+   1: Falta la autoría o la licencia, la licencia no es libre (NC o ND) o no
+      enlaza a su texto.
+   0: No indica ni autoría ni licencia.
+
+10. REUTILIZACIÓN
+   2: El código puede obtenerse completo, se entiende al leerlo, con
+      comentarios donde hacen falta, y hay indicaciones para modificarlo.
+   1: Puede obtenerse, pero es difícil de entender sin comentarios, está en
+      parte comprimido o no tiene indicaciones.
+   0: No puede obtenerse, o está ofuscado o comprimido.
+
+## Resultado
+
+- Calcula el porcentaje: la suma de las puntuaciones dividida entre el máximo
+  posible de los puntos puntuados.
+- Da un resultado: «No recomendable» si el punto 1 o el 2 tienen 0, sea cual
+  sea el porcentaje; «Mejorable» por debajo del 70 %; «Recomendable» a partir
+  del 70 %, siempre que los puntos 1 y 2 se hayan podido puntuar y el punto 5
+  no tenga 0. Si alguno de los puntos 1 y 2 ha quedado sin puntuar, el
+  resultado es «Mejorable» e indica qué falta por comprobar; si el punto 5
+  tiene 0, también es «Mejorable» e indica qué impide usarlo.
+- Empieza el informe con una línea como «Rúbrica VCER: Recomendable
+  (85 %)», seguida de otra con la versión evaluada, y añade debajo una frase
+  con lo que significa ese resultado:
+  - Recomendable: cumple lo esencial de la guía y puede utilizarse o
+    publicarse; las mejoras propuestas lo completan.
+  - Mejorable: tiene fallos que conviene corregir antes de publicarlo o
+    recomendarlo, aunque ninguno lo descarta.
+  - No recomendable: tiene errores evidentes en lo que enseña o envía datos
+    del alumnado a servicios ajenos al centro; no conviene utilizarlo ni
+    publicarlo hasta corregirlo.
+- En la justificación del punto 3, incluye esa breve descripción. En la
+  del 4, enumera las direcciones externas del código y para qué sirve cada
+  una, y di con palabras sencillas qué dejaría de funcionar al abrirlo
+  descargado en un ordenador sin internet. En la del 6, enumera el material
+  ajeno.
+- Termina con las tres mejoras que más subirían la puntuación.
+
+## Si después te pido corregirlo
+
+- Antes de cambiar nada, dime qué cambiarías y espera a que lo apruebe. No
+  cambies el contenido ni el funcionamiento, salvo que te lo pida.
+- Si no hay nota de decisiones, escribe una que describa cómo funciona el
+  recurso ahora, e indica que se ha redactado después.
+- Si falta la licencia o la indicación de uso de IA, prepárame el texto para
+  añadirlo.
+</pre>
+</div>
+<p class="ventana-mas"><a href="para-la-ia.html#para-evaluar-un-recurso-ya-hecho" title="Ir a la página de instrucciones para la IA, con el texto completo">Más información<svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></svg></a></p>
 </dialog>
 </main>
 <footer class="pie">

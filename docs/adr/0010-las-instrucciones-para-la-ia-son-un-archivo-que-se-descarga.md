@@ -106,6 +106,14 @@ lo que lee la IA no puedan separarse. Por eso la rúbrica mantiene su formato:
 `N. TÍTULO`, y debajo `2:`, `1:` y `0:` con su descripción, redactada en forma
 impersonal para que sirva igual a la IA y a quien lee la tabla.
 
+Desde la portada, los enlaces a los dos archivos de «Cómo empezar» abren una
+ventana en lugar de llevar a esta página, que resulta abrumadora para quien
+empieza (25-09-2026). La ventana lleva una instrucción breve (adjuntar el archivo o
+pegar el texto), los botones de copiar y descargar, el enlace «Más información» a
+la página y una X para cerrar; se cierra también con Escape o al pulsar fuera. No
+muestra el texto del archivo, que va oculto solo para copiarlo: quien quiera
+leerlo va a la página. Sin JavaScript, el enlace lleva a la página, como antes.
+
 La página explica cómo usarlo en cada familia de herramientas: adjunto al primer
 mensaje en un chatbot, como archivo de instrucciones del proyecto en un agente o
 editor, y en las instrucciones permanentes del proyecto en las plataformas.

@@ -216,10 +216,11 @@
   document.querySelectorAll(".copiar").forEach(function (boton) {
     boton.addEventListener("click", function () {
       var texto = boton.closest(".copiable").querySelector("pre").textContent;
+      var rotulo = boton.querySelector("span") || boton;   // con icono, cambia solo el rótulo
       var hecho = function () {
-        var antes = boton.textContent;
-        boton.textContent = boton.dataset.hecho;
-        setTimeout(function () { boton.textContent = antes; }, 1800);
+        var antes = rotulo.textContent;
+        rotulo.textContent = boton.dataset.hecho;
+        setTimeout(function () { rotulo.textContent = antes; }, 1800);
       };
       var respaldo = function () {
         var a = document.createElement("textarea");
@@ -232,6 +233,18 @@
         navigator.clipboard.writeText(texto).then(hecho, function () { respaldo(); hecho(); });
       } else { respaldo(); hecho(); }
     });
+  });
+
+  /* ---------- Ventanas de la portada con cada archivo para la IA ---------- */
+  // Los enlaces de «Cómo empezar» abren su ventana; sin JavaScript o sin <dialog>, llevan a la
+  // página de instrucciones. Se cierran con la X, con Escape o al pulsar fuera.
+  document.querySelectorAll("a.abrir-ventana").forEach(function (enlace) {
+    var ventana = document.getElementById(enlace.dataset.ventana);
+    if (!ventana || typeof ventana.showModal !== "function") { return; }
+    enlace.addEventListener("click", function (ev) { ev.preventDefault(); ventana.showModal(); });
+    ventana.querySelector(".ventana-cerrar").addEventListener("click", function () { ventana.close(); });
+    ventana.addEventListener("click", function (ev) { if (ev.target === ventana) { ventana.close(); } });
+    ventana.addEventListener("close", function () { enlace.focus(); });
   });
 
   /* ---------- Visor de la infografía ---------- */
