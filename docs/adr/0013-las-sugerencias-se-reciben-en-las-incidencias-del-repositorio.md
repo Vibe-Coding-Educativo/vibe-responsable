@@ -51,5 +51,6 @@ publica otro, hay que cambiarlos. Los textos y enlaces están en `UI` de
 `construir.py` (`participar`).
 
 Las propuestas que se incorporan se agradecen en «Créditos y licencias», con
-enlace a su incidencia. Las tres primeras, de Ernesto Serrano, se incorporaron
-el 25-09-2026.
+enlace a su incidencia o al grupo donde se hicieron, y diciendo qué cambió en la
+guía. Las primeras, de Ernesto Serrano (incidencias) y David Cordones (grupo de
+Telegram), se incorporaron el 25-09-2026.
