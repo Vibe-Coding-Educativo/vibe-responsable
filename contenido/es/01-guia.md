@@ -4,7 +4,8 @@
 
 La inteligencia artificial (IA) puede equivocarse con total naturalidad, y un error en una simulación o en un cuestionario acaba siendo un aprendizaje equivocado. Antes de publicar hay que usar el material como lo haría el alumnado y comprobar los conceptos, los datos y las respuestas que da por buenas. Esta revisión no se puede delegar, ya que la responsabilidad de lo que se enseña es de la persona que lo publica.
 
-- **En todos los casos.** Recorrer el material de principio a fin, también con respuestas equivocadas, y revisar cada resultado con el criterio de la materia.
+- **Lo mínimo.** Recorrer el material de principio a fin, también con respuestas equivocadas, y revisar cada resultado con el criterio de la materia. Después de cada cambio importante, repetir el recorrido con una lista de comprobaciones que puede redactar la propia IA, ya que una modificación pequeña puede estropear algo que ya funcionaba.
+- **Lo recomendado.** Pedir a la IA que convierta esa lista en pruebas automáticas y las ejecute después de cada cambio.
 
 ## 2\. No enviar datos personales a servicios ajenos al centro
 

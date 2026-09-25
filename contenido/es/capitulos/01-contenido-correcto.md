@@ -17,6 +17,20 @@ Conviene revisar el material completo antes de publicarlo, y no solo la parte qu
 
 La forma de hacerlo es recorrer el material como lo haría el alumnado, también con respuestas equivocadas, y no limitarse a mirar la pantalla inicial. Muchos fallos solo aparecen al llegar al final de la actividad o al repetirla.
 
+## La revisión después de cada cambio
+
+Con la IA es fácil modificar un material ya revisado, y esa facilidad tiene un riesgo. Un cambio que parece pequeño, como añadir una pregunta o cambiar el diseño, puede estropear otra parte que ya funcionaba, aunque aparentemente no tenga relación con lo que se ha pedido. Estos fallos se conocen como regresiones, y la revisión inicial no los detecta, ya que se hizo sobre la versión anterior.
+
+Para detectarlos, la revisión se convierte en una lista de comprobaciones que se repite después de cada cambio importante. La lista recoge los recorridos principales y los casos extremos que ya se han comprobado, y puede redactarla la propia IA a partir de lo que se ha probado. En un cuestionario, por ejemplo, podría ser la siguiente:
+
+- El cuestionario se completa de principio a fin.
+- Una respuesta incorrecta muestra la retroalimentación prevista.
+- Una respuesta en blanco no produce errores.
+- Al reiniciar, la actividad vuelve al estado inicial.
+- Funciona solo con el teclado.
+
+Cuando el proyecto lo permite, la IA puede convertir esas comprobaciones en pruebas automáticas y ejecutarlas después de cada cambio. Los agentes de programación lo hacen sin ayuda. Estas pruebas solo confirman que el material sigue funcionando como antes, y la corrección de lo que enseña sigue dependiendo de la revisión descrita más arriba. La IA puede encargarse de repetir las comprobaciones, aunque decidir qué comportamientos deben conservarse corresponde a la persona que conoce el material.
+
 ## La responsabilidad pedagógica
 
 La IA acelera la producción, pero la responsabilidad pedagógica sigue siendo de la persona que publica el material. Así lo recoge también la [«Guía sobre el uso de la inteligencia artificial en el ámbito educativo»](https://code.intef.es/wp-content/uploads/2026/09/ACTUALIZACI%C3%93N-GU%C3%8DA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5.pdf) del Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado (INTEF), en su versión 2.0 de septiembre de 2026, que entre sus principios éticos sitúa la supervisión humana y la responsabilidad: el profesorado debe mantener el control sobre el uso de la IA, y las decisiones educativas no pueden depender de sistemas automatizados.

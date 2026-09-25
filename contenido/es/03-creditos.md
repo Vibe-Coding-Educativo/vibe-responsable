@@ -22,7 +22,7 @@ Los documentos consultados para elaborar la guía, con su autoría y su licencia
 
 ## Agradecimientos
 
-Ernesto Serrano, del equipo de eXeLearning, propuso [completar el registro de decisiones](https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues/1) con la evidencia, los riesgos y la validación de cada decisión técnica, tal como se recoge en la recomendación 7.
+Ernesto Serrano, del equipo de eXeLearning, propuso [completar el registro de decisiones](https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues/1) con la evidencia, los riesgos y la validación de cada decisión técnica (recomendación 7), y [convertir la revisión en comprobaciones](https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues/2) que se repitan después de cada cambio (recomendación 1).
 
 <!-- Agradecimientos: pendiente de los nombres de quienes revisen la guía.
      Para publicarlo, completar los nombres y sacar el párrafo del comentario.
