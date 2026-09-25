@@ -28,7 +28,7 @@ Los documentos consultados para elaborar la guía, con su autoría y su licencia
 
 Ernesto Serrano, del equipo de eXeLearning, propuso tres mejoras que la guía ha incorporado: [convertir la revisión en comprobaciones](https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues/2) que se repitan después de cada cambio (recomendación 1), [completar el registro de decisiones](https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues/1) con la evidencia, los riesgos y la validación de cada decisión técnica (recomendación 7) e [identificar cada versión publicada](https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues/3) con una etiqueta (recomendación 10).
 
-David Cordones señaló en el grupo [Vibe Coding Educativo](https://t.me/vceduca) que la guía podía resultar abrumadora para quien empieza, lo que llevó a simplificar la presentación, y preguntó por la condición NC de las licencias, que el capítulo 9 explica ahora con más detalle.
+David Cordones señaló [en el grupo Vibe Coding Educativo](https://t.me/vceduca/13553/13587) que la guía podía resultar abrumadora para quien empieza, lo que llevó a simplificar la presentación, y preguntó por la condición NC de las licencias, que el capítulo 9 explica ahora con más detalle.
 
 <!-- Agradecimientos: pendiente de los nombres de quienes revisen la guía.
      Para publicarlo, completar los nombres y sacar el párrafo del comentario.
