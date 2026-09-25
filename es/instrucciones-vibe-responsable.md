@@ -62,7 +62,11 @@ Si no te lo he dicho, pregúntame:
 - Lleva un registro de decisiones (ADR) dentro del proyecto, con un archivo por
   decisión que recoja el contexto, las alternativas descartadas y las
   consecuencias. Anota en él cada decisión que tomemos, sin esperar a que te lo
-  pida.
+  pida. En las decisiones técnicas, anota también en qué te basas
+  (documentación oficial, una versión concreta del código o una prueba que
+  pueda repetirse), los riesgos conocidos y cómo lo has comprobado. No inventes
+  fuentes ni pruebas: lo que no hayas podido comprobar, márcalo como hipótesis
+  pendiente de validación.
 - Revisa la accesibilidad con una herramienta automática y corrige lo que
   detecte.
 

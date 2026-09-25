@@ -17,6 +17,8 @@ La forma habitual de conservarlo en el desarrollo de software es el registro de 
 
 Una decisión que deja de valer no se borra, sino que se marca como sustituida por la nueva, de modo que el rastro se conserva. En el proyecto que presenta la ponencia, cada registro anota además con qué herramienta de IA y con qué modelo se tomó la decisión, lo que permite cambiar de herramienta sin perder la historia.
 
+En ese mismo proyecto, cada registro recoge también la evidencia en la que se apoya la decisión, los riesgos conocidos y la forma en que se validó. La ponencia lo resume en la regla «sin fuente no hay afirmación»: cada dato remite a la documentación oficial, a una versión concreta del código o a una prueba que cualquiera puede repetir. Esta precaución es especialmente útil con IA, ya que puede redactar una justificación convincente de una decisión que parte de una premisa falsa. La evidencia anotada permite a la persona comprobarla sin rehacer el trabajo. Lo que no se ha podido verificar se anota como hipótesis pendiente de validación, de forma que nadie lo tome después por un hecho comprobado.
+
 ## El trabajo de la IA y el de la persona
 
 El registro no supone una tarea añadida para el docente, ya que lo escribe la IA a partir de lo que se decide en la conversación, y la persona comprueba que lo anotado corresponde a lo decidido. La ponencia lo resume en que la IA propone y la persona dispone.

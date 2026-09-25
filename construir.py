@@ -552,7 +552,9 @@ def pagina_completa(idioma, paginas):
 /* Ningún título solo al pie de página, ni recuadros o filas partidos, ni líneas sueltas */
 .pdf h1, .pdf h2, .pdf h3, .pdf h4 {{ break-after: avoid; }}
 .pdf .que-hacer, .pdf .nivel, .pdf li, .pdf tr, .pdf .nota {{ break-inside: avoid; }}
-.pdf p {{ orphans: 3; widows: 3; }}
+/* Dos líneas como mínimo a cada lado del salto. Con tres, un párrafo de cuatro o cinco
+   líneas no puede cumplir las dos reglas a la vez, y Chromium deja una línea sola. */
+.pdf p {{ orphans: 2; widows: 2; }}
 /* Texto justificado con partición de palabras (véase SIN_GUIONADO_CHROMIUM); las tablas,
    de columnas estrechas, siguen alineadas a la izquierda. */
 .pdf-pagina p, .pdf-pagina li {{ text-align: justify; hyphens: auto; }}

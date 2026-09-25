@@ -20,10 +20,12 @@ La tipografía es [Atkinson Hyperlegible](https://www.brailleinstitute.org/freef
 
 Los documentos consultados para elaborar la guía, con su autoría y su licencia, se recogen en el [índice de fuentes](https://github.com/Vibe-Coding-Educativo/vibe-responsable/blob/main/fuentes/README.md) del repositorio.
 
-<!-- Agradecimientos: pendiente de los nombres de quienes revisen la guía.
-     Para publicarlo, completar los nombres y quitar las marcas de comentario.
-
 ## Agradecimientos
+
+Ernesto Serrano, del equipo de eXeLearning, propuso [completar el registro de decisiones](https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues/1) con la evidencia, los riesgos y la validación de cada decisión técnica, tal como se recoge en la recomendación 7.
+
+<!-- Agradecimientos: pendiente de los nombres de quienes revisen la guía.
+     Para publicarlo, completar los nombres y sacar el párrafo del comentario.
 
 La guía se ha beneficiado de la lectura y las sugerencias de [NOMBRES], y de los miembros del grupo [Vibe Coding Educativo](https://t.me/vceduca) que la revisaron antes de su publicación.
 
