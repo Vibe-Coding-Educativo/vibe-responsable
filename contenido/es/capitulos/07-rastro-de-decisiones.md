@@ -2,7 +2,7 @@
 
 ## El motivo de cada decisión
 
-Con la inteligencia artificial (IA) se programa muy deprisa, y a las pocas semanas nadie recuerda por qué se tomó cada decisión. Ernesto Serrano, del equipo de eXeLearning, lo describe en su ponencia [«Inteligencia artificial: programar, documentar y no acabar en un berenjenal»](https://erseco.github.io/talks/charlas/2026-07-06-selia-ia-programar-documentar/unit/index.html): el código está, pero el porqué no, y nadie recuerda qué alternativas se descartaron ni con qué argumentos. La IA no causa ese desorden, aunque hace que llegue antes.
+Con la inteligencia artificial (IA) se programa muy deprisa, y **a las pocas semanas nadie recuerda por qué se tomó cada decisión**. Ernesto Serrano, del equipo de eXeLearning, lo describe en su ponencia [«Inteligencia artificial: programar, documentar y no acabar en un berenjenal»](https://erseco.github.io/talks/charlas/2026-07-06-selia-ia-programar-documentar/unit/index.html): el código está, pero el porqué no, y nadie recuerda qué alternativas se descartaron ni con qué argumentos. La IA no causa ese desorden, aunque hace que llegue antes.
 
 Conservar el rastro sirve para tres cosas. Permite retomar el trabajo después de un tiempo sin tener que reconstruirlo, permite explicarlo a otra persona que quiera continuarlo, y evita deshacer de buena fe una decisión que tenía un motivo. En un material educativo abierto tiene una cuarta utilidad, ya que muestra a las personas que lo reutilizan cómo se hizo, que es lo que completa la declaración de la recomendación 8.
 
@@ -21,9 +21,9 @@ En ese mismo proyecto, cada registro recoge también la evidencia en la que se a
 
 ## El trabajo de la IA y el de la persona
 
-El registro no supone una tarea añadida para el docente, ya que lo escribe la IA a partir de lo que se decide en la conversación, y la persona comprueba que lo anotado corresponde a lo decidido. La ponencia lo resume en que la IA propone y la persona dispone.
+**El registro no supone una tarea añadida para el docente**, ya que lo escribe la IA a partir de lo que se decide en la conversación, y la persona comprueba que lo anotado corresponde a lo decidido. La ponencia lo resume en que la IA propone y la persona dispone.
 
-El registro tampoco se reconstruye al final, ya que un material suele salir de muchas sesiones de trabajo repartidas en días distintos, y recomponer después esas conversaciones resulta inviable. El registro se escribe en el momento en que se decide, y por eso resiste el paso de las sesiones. A los agentes de programación se les indica una vez en su archivo de instrucciones, y lo mantienen en todas. Conviene pedirlo por su nombre, por ejemplo «lleva un registro de decisiones con ADR», ya que la IA conoce el formato y lo aplica sin más explicaciones. En la web de un chatbot, lo mínimo es pedir al terminar cada sesión que la IA anote las decisiones de ese día en un documento que se va guardando.
+El registro tampoco se reconstruye al final, ya que un material suele salir de muchas sesiones de trabajo repartidas en días distintos, y recomponer después esas conversaciones resulta inviable. **El registro se escribe en el momento en que se decide**, y por eso resiste el paso de las sesiones. A los agentes de programación se les indica una vez en su archivo de instrucciones, y lo mantienen en todas. Conviene pedirlo por su nombre, por ejemplo «lleva un registro de decisiones con ADR», ya que la IA conoce el formato y lo aplica sin más explicaciones. En la web de un chatbot, lo mínimo es pedir al terminar cada sesión que la IA anote las decisiones de ese día en un documento que se va guardando.
 
 ## Un ejemplo de la comunidad
 

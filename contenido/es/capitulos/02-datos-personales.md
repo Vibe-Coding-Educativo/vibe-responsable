@@ -19,13 +19,13 @@ Aunque no haga falta el consentimiento, o el alumnado pueda darlo por sí mismo,
 
 ## La decisión sobre los datos del alumnado
 
-Publicar un material que envía datos del alumnado a un servidor no es una decisión que pueda tomar cada docente por su cuenta. En España, la misma guía indica que las administraciones y los centros deben disponer de instrucciones para el uso de las tecnologías por el profesorado, que deberá utilizar las que la administración o el centro hayan dispuesto. En un centro público, el responsable del tratamiento de los datos del alumnado es, normalmente, la administración educativa. En cambio, de lo que un profesor publica al margen de su función docente en el centro, el responsable es el propio profesor.
+Publicar un material que envía datos del alumnado a un servidor **no es una decisión que pueda tomar cada docente por su cuenta**. En España, la misma guía indica que las administraciones y los centros deben disponer de instrucciones para el uso de las tecnologías por el profesorado, que deberá utilizar las que la administración o el centro hayan dispuesto. En un centro público, el responsable del tratamiento de los datos del alumnado es, normalmente, la administración educativa. En cambio, de lo que un profesor publica al margen de su función docente en el centro, el responsable es el propio profesor.
 
 La consecuencia es que un material creado por iniciativa propia no debe guardar datos del alumnado en un servicio que el centro no haya dispuesto. Otros países tienen normas distintas, pero la precaución es la misma: antes de recoger datos del alumnado hay que contar con el centro.
 
 ## Materiales que no necesitan datos
 
-La forma más sencilla de cumplir es que el material no recoja datos. El Reglamento europeo establece el principio de minimización, según el cual los datos deben limitarse a lo necesario para su finalidad, y obliga a aplicar la protección de datos desde el diseño. La [guía sobre la inteligencia artificial (IA) y la infancia](https://www.unicef.org/innocenti/reports/policy-guidance-ai-children) del Fondo de las Naciones Unidas para la Infancia (UNICEF), de alcance mundial, recomienda lo mismo: reducir al mínimo la recogida de datos y adoptar un enfoque de privacidad desde el diseño.
+**La forma más sencilla de cumplir es que el material no recoja datos**. El Reglamento europeo establece el principio de minimización, según el cual los datos deben limitarse a lo necesario para su finalidad, y obliga a aplicar la protección de datos desde el diseño. La [guía sobre la inteligencia artificial (IA) y la infancia](https://www.unicef.org/innocenti/reports/policy-guidance-ai-children) del Fondo de las Naciones Unidas para la Infancia (UNICEF), de alcance mundial, recomienda lo mismo: reducir al mínimo la recogida de datos y adoptar un enfoque de privacidad desde el diseño.
 
 En un material creado con vibe coding, esto se traduce en unas pocas decisiones que pueden pedirse a la IA desde el principio:
 
@@ -38,7 +38,7 @@ Con un material construido así, la persona que lo publica no recibe ningún dat
 
 ## Herramientas que necesitan identificar al alumnado
 
-Algunos materiales necesitan identificar al alumnado para cumplir su función, como un cuaderno de calificaciones, un plano de clase o un generador de grupos. Estas herramientas pueden crearse y publicarse, ya que el seguimiento del alumnado forma parte de la función educativa. La condición es que los datos permanezcan bajo el control del docente y de su centro.
+Algunos materiales necesitan identificar al alumnado para cumplir su función, como un cuaderno de calificaciones, un plano de clase o un generador de grupos. Estas herramientas pueden crearse y publicarse, ya que el seguimiento del alumnado forma parte de la función educativa. **La condición es que los datos permanezcan bajo el control del docente y de su centro**.
 
 La guía de la Agencia Española de Protección de Datos admite que el profesorado utilice aplicaciones en sus dispositivos personales, siempre que respeten la política de privacidad definida por el centro o por la administración educativa. Considera de especial importancia que ese uso no implique una transmisión de los datos del alumnado al prestador del servicio, para que los utilice con sus propios fines o los almacene de forma permanente.
 
@@ -73,4 +73,4 @@ Otro riesgo está en el código que envía información sin que su autor lo sepa
 
 Las plataformas para crear aplicaciones merecen una atención especial, ya que añaden con facilidad cuentas de usuario y bases de datos, y entonces los datos se guardan en los servidores de una empresa. Lo mismo ocurre cuando el material se abre dentro de la web de un chatbot: el alumnado entra en el servicio de un tercero, que puede exigir registro o una edad mínima.
 
-Para comprobar un material no hace falta leer el código. Una primera comprobación consiste en pedir a la IA que enumere todas las direcciones externas que aparecen en él y que explique para qué sirve cada una, como pide la [evaluación VCER](para-la-ia.html#para-evaluar-un-recurso-ya-hecho). Una dirección que no se reconozca es motivo suficiente para no publicar hasta aclararla. Si el material tiene cuentas de usuario o se conecta con un servidor, conviene pedir además a la IA que revise cómo se accede a esos datos y cómo se protegen.
+Para comprobar un material no hace falta leer el código. Una primera comprobación consiste en pedir a la IA que enumere todas las direcciones externas que aparecen en él y que explique para qué sirve cada una, como pide la [evaluación VCER](para-la-ia.html#para-evaluar-un-recurso-ya-hecho). **Una dirección que no se reconozca es motivo suficiente para no publicar hasta aclararla**. Si el material tiene cuentas de usuario o se conecta con un servidor, conviene pedir además a la IA que revise cómo se accede a esos datos y cómo se protegen.

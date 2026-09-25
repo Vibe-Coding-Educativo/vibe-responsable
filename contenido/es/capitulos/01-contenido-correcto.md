@@ -2,7 +2,7 @@
 
 ## Cómo se equivoca la inteligencia artificial
 
-Los textos que genera la inteligencia artificial (IA) suenan bien, las explicaciones resultan convincentes y las referencias parecen reales. Sin embargo, a veces son falsos. El riesgo no está en el error evidente, que cualquiera detecta, sino en el error plausible: la fecha que casi es correcta, la cita que casi existió, el dato que casi coincide. Martín Núñez Calleja, del Centro Nacional de Desarrollo Curricular en Sistemas no Propietarios (CEDEC), lo resume con claridad en su ponencia [«Crear REA con eXeLearning en tiempos de IA»](https://descargas.intef.es/cedec/formacion/SL_REA_IA_julio26/index.html), dedicada a los recursos educativos abiertos (REA): en el aula, un error que nadie detecta deja de ser un error y se convierte en un aprendizaje equivocado.
+Los textos que genera la inteligencia artificial (IA) suenan bien, las explicaciones resultan convincentes y las referencias parecen reales. Sin embargo, a veces son falsos. El riesgo no está en el error evidente, que cualquiera detecta, sino en el error plausible: la fecha que casi es correcta, la cita que casi existió, el dato que casi coincide. Martín Núñez Calleja, del Centro Nacional de Desarrollo Curricular en Sistemas no Propietarios (CEDEC), lo resume con claridad en su ponencia [«Crear REA con eXeLearning en tiempos de IA»](https://descargas.intef.es/cedec/formacion/SL_REA_IA_julio26/index.html), dedicada a los recursos educativos abiertos (REA): en el aula, **un error que nadie detecta deja de ser un error y se convierte en un aprendizaje equivocado**.
 
 En un material interactivo el problema se multiplica, porque el error no se lee una vez, sino que se repite con cada alumno que lo utiliza. Un simulador con una fórmula mal aplicada, un cuestionario que da por buena una respuesta incorrecta o una explicación que invierte una relación de causa y efecto enseñan ese error tantas veces como se abra el material.
 
@@ -21,7 +21,7 @@ La forma de hacerlo es recorrer el material como lo haría el alumnado, también
 
 Con la IA es fácil modificar un material ya revisado, y esa facilidad tiene un riesgo. Un cambio que parece pequeño, como añadir una pregunta o cambiar el diseño, puede estropear otra parte que ya funcionaba, aunque aparentemente no tenga relación con lo que se ha pedido. Estos fallos se conocen como regresiones, y la revisión inicial no los detecta, ya que se hizo sobre la versión anterior.
 
-Para detectarlos, la revisión se convierte en una lista de comprobaciones que se repite después de cada cambio importante. La lista recoge los recorridos principales y los casos extremos que ya se han comprobado, y puede redactarla la propia IA a partir de lo que se ha probado. En un cuestionario, por ejemplo, podría ser la siguiente:
+Para detectarlos, **la revisión se convierte en una lista de comprobaciones que se repite después de cada cambio importante**. La lista recoge los recorridos principales y los casos extremos que ya se han comprobado, y puede redactarla la propia IA a partir de lo que se ha probado. En un cuestionario, por ejemplo, podría ser la siguiente:
 
 - El cuestionario se completa de principio a fin.
 - Una respuesta incorrecta muestra la retroalimentación prevista.
@@ -33,7 +33,7 @@ Cuando el proyecto lo permite, la IA puede convertir esas comprobaciones en prue
 
 ## La responsabilidad pedagógica
 
-La IA acelera la producción, pero la responsabilidad pedagógica sigue siendo de la persona que publica el material. Así lo recoge también la [«Guía sobre el uso de la inteligencia artificial en el ámbito educativo»](https://code.intef.es/wp-content/uploads/2026/09/ACTUALIZACI%C3%93N-GU%C3%8DA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5.pdf) del Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado (INTEF), en su versión 2.0 de septiembre de 2026, que entre sus principios éticos sitúa la supervisión humana y la responsabilidad: el profesorado debe mantener el control sobre el uso de la IA, y las decisiones educativas no pueden depender de sistemas automatizados.
+La IA acelera la producción, pero **la responsabilidad pedagógica sigue siendo de la persona que publica el material**. Así lo recoge también la [«Guía sobre el uso de la inteligencia artificial en el ámbito educativo»](https://code.intef.es/wp-content/uploads/2026/09/ACTUALIZACI%C3%93N-GU%C3%8DA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5.pdf) del Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado (INTEF), en su versión 2.0 de septiembre de 2026, que entre sus principios éticos sitúa la supervisión humana y la responsabilidad: el profesorado debe mantener el control sobre el uso de la IA, y las decisiones educativas no pueden depender de sistemas automatizados.
 
 Esto tiene una consecuencia práctica para el resto de la guía. La IA puede encargarse de casi todas las recomendaciones, desde la licencia hasta la accesibilidad, pero no de esta. Puede señalar qué conviene comprobar, e incluso advertir de aquello de lo que no está segura, aunque no puede certificar que lo que enseña el material sea correcto. Por eso, en la [evaluación VCER](para-la-ia.html#para-evaluar-un-recurso-ya-hecho), la IA puntúa solo los errores que detecta y señala lo que debe revisar la persona.
 
