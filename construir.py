@@ -568,7 +568,7 @@ def pagina_completa(idioma, paginas):
 .pdf .familias {{ margin: 0; }}
 .pdf .familias li {{ padding: 0.3rem 0 0.3rem; }}
 .pdf .familias strong:first-child {{ margin-bottom: 0; }}
-.pdf .apartado {{ display: block; padding: 0.9rem 0 0.3rem; }}
+.pdf .apartado {{ display: block; padding: 0.8rem 0 0.2rem; }}
 .pdf .apartado h2 {{ margin-bottom: 0.4rem; }}
 .pdf .entrada {{ display: flex; flex-direction: column; gap: 1rem; }} /* la rejilla de la web no se reparte bien entre páginas */
 .pdf .tarjeta {{ border: 0; box-shadow: none; padding: 0; margin: 1rem 0; break-before: page; }}

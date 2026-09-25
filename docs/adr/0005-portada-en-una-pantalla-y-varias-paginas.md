@@ -27,9 +27,12 @@ de los archivos de `contenido/<idioma>/` y el del menú:
    evaluación, van en un marco con su nombre cortando el borde, cada una al final
    de su columna, y las dos columnas se equilibran ajustando el texto. Debajo van
    los tres pasos en tarjetas numeradas, a ras del botón que lleva a la guía. Tan
-   malo es un texto que desborda la pantalla como uno que la deja medio vacía,
-   así que el texto ocupa el alto de la infografía: su letra sale del alto de la
-   pantalla, ajustada con medidas de 1280 × 720 a 2560 × 1440. En el móvil las tarjetas van en columna. Al lado va la
+   malo es un texto que desborda la pantalla como uno que la deja medio vacía:
+   la infografía toma el alto que deja la pantalla y, si queda más alta que el
+   texto, `guia.js` la reduce hasta igualarlo, de modo que el espacio que sobra
+   queda al final de la página y no en medio. Se probó antes a hacer crecer la
+   letra con el alto de la pantalla, y se descartó porque rompía la uniformidad
+   tipográfica del sitio. En el móvil las tarjetas van en columna. Al lado va la
    infografía en una columna propia, con un enlace para descargarla debajo y,
    bajo ella, el botón que lleva a la guía, fuera del texto. Su
    alto es el que deja la pantalla, y de él sale la anchura de su columna, así
@@ -52,6 +55,15 @@ Fuera del menú quedan **Créditos y licencias** (`03-creditos.md`), enlazada
 desde el pie, y los diez capítulos, que regula el
 [ADR 7](0007-capitulos-en-paginas-propias-con-una-sola-fuente.md). El pie ocupa
 una línea, con la autoría, las dos licencias y el enlace a los créditos.
+
+Todas las páginas usan el mismo tamaño e interlineado de texto: el tamaño base,
+que es algo menor en pantallas de hasta 940 píxeles de alto. Ninguna página lo
+reduce para caber (25-09-2026); si no cabe, se acorta el texto o se reparte. Por
+eso, en el panel de la guía, la explicación y los dos niveles fluyen seguidos en
+dos columnas, que quedan equilibradas; un nivel no se parte entre columnas. La
+navegación del panel (anterior, más información, siguiente) va siempre al pie,
+en el mismo sitio para todas las recomendaciones, para pasar de una a otra sin
+buscarla.
 
 La guía cabe en una pantalla, también en un portátil de 1366 × 650 píxeles
 útiles; en pantallas bajas se compacta sola. La presentación cabe

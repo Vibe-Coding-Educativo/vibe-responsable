@@ -235,6 +235,33 @@
     });
   });
 
+  /* ---------- Portada: la infografía, como mucho, del alto del texto ---------- */
+  // El CSS le da el alto que deja la pantalla; si así queda más alta que el texto de al lado,
+  // se reduce lo que sobra, para que el espacio libre quede al final de la página y no en medio.
+  // Al estrecharse la imagen se ensancha el texto y baja su alto, así que se repite hasta ajustar.
+  var entrada = document.querySelector(".pagina-presentacion .entrada");
+  if (entrada) {
+    var tarjeta = entrada.querySelector(".tarjeta");
+    var miniatura = entrada.querySelector(".tarjeta .miniatura");
+    var ancha = window.matchMedia("(min-width: 62rem)");
+    var ajustarImagen = function () {
+      tarjeta.style.removeProperty("--mini-al");
+      if (!ancha.matches) { return; }
+      entrada.classList.add("midiendo");
+      for (var i = 0; i < 4; i++) {
+        var pasos = entrada.querySelector(".utiliza").getBoundingClientRect().bottom;
+        var boton = entrada.querySelector(".ir-guia").getBoundingClientRect().bottom;
+        var sobra = boton - pasos;
+        if (sobra < 2) { break; }
+        tarjeta.style.setProperty("--mini-al", (miniatura.getBoundingClientRect().height - sobra) + "px");
+      }
+      entrada.classList.remove("midiendo");
+    };
+    ajustarImagen();
+    window.addEventListener("resize", ajustarImagen);
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(ajustarImagen); }
+  }
+
   /* ---------- Ventanas de la portada con cada archivo para la IA ---------- */
   // Los enlaces de «Cómo empezar» abren su ventana; sin JavaScript o sin <dialog>, llevan a la
   // página de instrucciones. Se cierran con la X, con Escape o al pulsar fuera.
