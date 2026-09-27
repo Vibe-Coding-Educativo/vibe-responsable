@@ -294,7 +294,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 .ver-animacion { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; justify-self: stretch; padding: 0.5rem 0.9rem; border: 1.5px solid var(--verde); border-radius: 4px; color: var(--verde); font-weight: 700; text-decoration: none; transition: background 0.15s ease; }
 .ver-animacion:hover { background: var(--marca); }
 .ver-animacion .icono { width: 1.1rem; height: 1.1rem; }
-.ventana-animacion { --lado: min(calc(100vw - 4.6rem), calc(100dvh - 10.5rem), 58rem); width: calc(var(--lado) + 2.6rem); max-width: none; max-height: none; }
+.ventana-animacion { --lado: min(calc(100vw - 4.6rem), calc(100dvh - 16rem), 40rem); width: calc(var(--lado) + 2.6rem); max-width: none; max-height: none; }
 .ventana-animacion iframe { display: block; width: var(--lado); height: calc(var(--lado) + 3.3rem); border: 0; margin-bottom: 0.6rem; }
 .ventana-mas a { display: inline-flex; align-items: center; gap: 0.35rem; }
 .ventana-mas .icono { width: 1rem; height: 1rem; }

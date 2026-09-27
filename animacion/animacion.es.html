@@ -58,9 +58,9 @@ h1 { font-size: 1.15rem; margin: 0 0 8px; align-self: stretch; text-align: cente
 .reproductor { --lado: min(calc(100vw - 32px), calc(100svh - 11.5rem), 62rem); width: var(--lado); }
 .marco { position: relative; width: var(--lado); height: var(--lado); overflow: hidden; border-radius: 10px;
   box-shadow: 0 1px 2px rgba(22,35,43,.08), 0 8px 24px rgba(22,35,43,.08); background: #fbfbf8; }
-.empezar { position: absolute; inset: 0; margin: auto; width: max-content; height: max-content; display: flex; align-items: center; gap: 0.6rem;
-  font: inherit; font-size: clamp(1rem, 2.4vw, 1.3rem); font-weight: 700; padding: 0.8rem 1.4rem 0.8rem 1.1rem; border-radius: 999px; border: 0; cursor: pointer;
-  background: #f2b705; color: #1a1400; box-shadow: 0 6px 20px rgba(0,0,0,.25); z-index: 5; top: 38%; }
+.empezar { position: absolute; left: 0; right: 0; bottom: 4%; margin-inline: auto; width: max-content; display: flex; align-items: center; gap: 0.5em;
+  font: inherit; font-size: clamp(0.85rem, 2.2vw, 1.3rem); font-weight: 700; padding: 0.55em 1.1em 0.55em 0.85em; border-radius: 999px; border: 0; cursor: pointer;
+  background: #f2b705; color: #1a1400; box-shadow: 0 6px 20px rgba(0,0,0,.25); z-index: 5; }
 .empezar:hover { background: #ffc928; }
 .empezar svg { width: 1.4em; height: 1.4em; }
 .empezar[hidden] { display: none; }
@@ -633,9 +633,11 @@ const bPlay = $("play"), bSonido = $("sonido"), rango = $("posicion"), tiempo = 
 const mmss = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
 const escenaEn = s => { let k = 0; escenas.forEach((e, i) => { if (s >= e.ini - 0.01) k = i; }); return k; };
 
+// El reloj es el del sonido mientras suena; si el navegador aún no lo deja sonar, el del sistema,
+// para que la animación avance igual aunque sea en silencio.
 function ahora() {
   if (!reproduciendo) return t;
-  return actx ? actx.currentTime - base : reloj + (performance.now() - marcaPerf) / 1000;
+  return cad && actx.state === "running" ? actx.currentTime - base : reloj + (performance.now() - marcaPerf) / 1000;
 }
 
 function pararSonido() {
@@ -646,9 +648,18 @@ function pararSonido() {
 }
 function arrancarSonido() {
   if (!actx) {
+    // En la ventana de la portada, el contexto que esta creó al pulsar el botón, que ya puede sonar.
+    let prestado = null;
+    try { if (parametros.has("incrustar") && window.parent !== window) prestado = window.parent.contextoAnimacion; } catch (_) {}
     const AC = window.AudioContext || window.webkitAudioContext;
-    if (!AC) return;
-    actx = new AC();
+    if (!prestado && !AC) return;
+    actx = prestado || new AC();
+    // Si el sonido empieza con la animación ya en marcha, se vuelve a programar desde ese punto.
+    actx.onstatechange = () => {
+      if (!reproduciendo || actx.state !== "running") return;
+      t = reloj + (performance.now() - marcaPerf) / 1000; reloj = t; marcaPerf = performance.now();
+      pararSonido(); arrancarSonido();
+    };
   }
   actx.resume();
   const vol = actx.createGain(); vol.gain.value = silencio ? 0 : 1; vol.connect(actx.destination);
@@ -770,12 +781,16 @@ const marco = $("marco");
 function escalar() { escenario.style.transform = `scale(${marco.clientWidth / 1080})`; }
 new ResizeObserver(escalar).observe(marco); escalar();
 
+// Desde el botón de la portada (&auto) la animación arranca sola.
+if (parametros.has("auto")) document.fonts.ready.then(reproducir);
+
 // Quien llega a #texto (desde la ventana de la portada) encuentra el texto ya desplegado.
 if (location.hash === "#texto") $("texto").open = true;
 
 window.fijar = s => { t = s; render(s); };
 window.DURACION = TOTAL;
-render(0); pintarControles();
+// Antes de reproducir, el escenario muestra la portada ya compuesta, como un cartel; la posición sigue en 0.
+render(grabando ? 0 : Math.max(...porId.portada.animados.map(a => a.en + a.d))); pintarControles();
 </script>
 </body>
 </html>

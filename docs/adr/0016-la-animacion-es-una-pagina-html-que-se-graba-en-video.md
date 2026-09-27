@@ -36,9 +36,16 @@ recomendaciones y «Lo mínimo» de cada una, cómo empezar y cierre.
 - **La portada la ofrece en una ventana**: bajo la infografía, un botón «Ver
   la animación» abre una ventana del mayor tamaño que cabe con la página en
   modo incrustado (`?incrustar`), que muestra solo el escenario y sus
-  controles, con el tema claro u oscuro de la web (`&tema=`). El marco se carga
-  al abrir la ventana y se vacía al cerrarla, para que no siga sonando; Escape
-  la cierra también con el foco dentro. Debajo, un enlace lleva al texto de la
+  controles, con el tema claro u oscuro de la web (`&tema=`), en un tamaño que
+  deja margen alrededor (como mucho 40 rem de lado). Arranca sola (`&auto`),
+  sin una segunda pulsación: los navegadores solo dejan sonar tras una acción
+  de la persona, así que la portada crea el contexto de sonido al pulsar el
+  botón y la animación lo toma prestado; si aun así no puede sonar, avanza en
+  silencio con el reloj del sistema. El marco se carga al abrir la ventana y se
+  vacía al cerrarla, y el contexto de sonido se cierra, para que no siga
+  sonando; Escape la cierra también con el foco dentro. En su página propia, la
+  animación espera parada mostrando la portada ya compuesta, con el botón
+  «Reproducir con sonido». Debajo, un enlace lleva al texto de la
   animación en su página. Sin JavaScript, el botón lleva a esa página. Así la
   portada sigue cabiendo en una pantalla con la infografía a la vista (ADR 5).
 - **El vídeo se genera con `node animacion/grabar.js`**: pinta cada fotograma
@@ -99,8 +106,10 @@ página de destino aunque esté fuera de la carpeta del idioma.
   con tema claro y oscuro: 18 combinaciones sin errores de JavaScript, sin
   recursos que fallen y sin desbordamiento.
 - Ventana de la portada en Chromium y Firefox, a 1366 × 768, 1920 × 1080 (tema
-  oscuro) y 390 × 844: cabe sin barras de desplazamiento, la animación arranca
-  con sonido dentro y el marco se vacía al cerrar.
+  oscuro) y 390 × 844: cabe sin barras de desplazamiento y el marco se vacía
+  al cerrar. En Chromium, Firefox y WebKit la animación arranca sola al abrir
+  la ventana, con el contexto de sonido en marcha, y al cerrarla el contexto
+  queda cerrado.
 - axe-core en Chromium y Firefox, con la animación parada, en marcha y con el
   texto desplegado: ninguna infracción. Recorrido con el tabulador en orden
   lógico por todos los controles.

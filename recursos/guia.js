@@ -269,17 +269,29 @@
     var ventana = document.getElementById(enlace.dataset.ventana);
     if (!ventana || typeof ventana.showModal !== "function") { return; }
     // La ventana de la animación carga su marco al abrirse, con el tema de la web, y lo vacía al
-    // cerrarse para que no siga sonando.
+    // cerrarse para que no siga sonando. Arranca sola (&auto): el contexto de sonido se crea aquí, con
+    // la pulsación del botón, que es lo que exigen los navegadores para sonar, y la animación lo toma
+    // prestado (window.contextoAnimacion). Al cerrar se cierra el contexto y se apaga todo.
     var marcoIncrustado = ventana.querySelector("iframe[data-src]");
+    var cerrarSonido = function () {
+      if (window.contextoAnimacion) { try { window.contextoAnimacion.close(); } catch (e) {} window.contextoAnimacion = null; }
+    };
     enlace.addEventListener("click", function (ev) {
       ev.preventDefault();
-      if (marcoIncrustado) { marcoIncrustado.src = marcoIncrustado.dataset.src + "&tema=" + (document.documentElement.dataset.theme || ""); }
+      if (marcoIncrustado) {
+        cerrarSonido();
+        try {
+          var Contexto = window.AudioContext || window.webkitAudioContext;
+          if (Contexto) { window.contextoAnimacion = new Contexto(); window.contextoAnimacion.resume(); }
+        } catch (e) {}
+        marcoIncrustado.src = marcoIncrustado.dataset.src + "&auto&tema=" + (document.documentElement.dataset.theme || "");
+      }
       ventana.showModal();
     });
     ventana.querySelector(".ventana-cerrar").addEventListener("click", function () { ventana.close(); });
     ventana.addEventListener("click", function (ev) { if (ev.target === ventana) { ventana.close(); } });
     ventana.addEventListener("close", function () {
-      if (marcoIncrustado) { marcoIncrustado.removeAttribute("src"); }
+      if (marcoIncrustado) { marcoIncrustado.removeAttribute("src"); cerrarSonido(); }
       enlace.focus();
     });
   });
