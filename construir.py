@@ -83,7 +83,6 @@ UI = {
         # La animación de la guía (ADR 16), que la portada abre en una ventana
         "ver_animacion": "Ver la animación",
         "animacion_titulo": "La guía en una animación",
-        "animacion_texto": "Leer el texto de la animación",
         "anterior": "Anterior",
         "siguiente": "Siguiente",
         "niveles_ayuda": "Qué significan «Lo mínimo» y «Lo recomendado»",
@@ -115,6 +114,10 @@ UI = {
         "pie_2": '<a href="creditos.html">Créditos y licencias</a>. <a class="abrir-participar" href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Sugerencias y correcciones</a>.',
     },
 }
+# El vídeo de la animación que abre la portada (ADR 17) y su cartel, relativos a la carpeta del idioma.
+VIDEO = "../animacion/vibe-responsable-zoom.{idioma}.mp4"
+CARTEL_VIDEO = "../animacion/vibe-responsable-zoom.{idioma}.jpg"
+
 PAGINAS = [("index.html", "00-presentacion.md"), ("guia.html", "01-guia.md"),
            ("herramientas.html", "02-herramientas.md"), ("para-la-ia.html", "04-para-la-ia.md"),
            ("referencias.html", "05-referencias.md")]
@@ -297,16 +300,13 @@ def ventanas_ia(idioma):
 
 
 def ventana_animacion(idioma):
-    """La animación en una ventana, solo el escenario y sus controles (?incrustar). El marco se carga
-    al abrirla y se vacía al cerrarla, para que no suene de fondo. Sin JavaScript, el enlace de la
-    portada lleva a la página de la animación."""
+    """La animación en vídeo, en una ventana (ADR 17). El vídeo se descarga solo al abrirla, empieza
+    a sonar con la misma pulsación y se detiene al cerrarla. Sin JavaScript, el botón abre el vídeo."""
     T = UI[idioma]
-    pagina = f"../animacion/animacion.{idioma}.html"
     return f"""<dialog class="ventana-ia ventana-animacion" id="ventana-animacion" aria-labelledby="ventana-animacion-titulo">
 <div class="ventana-cab"><h2 id="ventana-animacion-titulo">{html.escape(T["animacion_titulo"])}</h2>
 <button type="button" class="ventana-cerrar" aria-label="{html.escape(T["cerrar"])}" title="{html.escape(T["cerrar"])}">{icono("x")}</button></div>
-<iframe data-src="{pagina}?incrustar" title="{html.escape(T["animacion_titulo"])}" allow="fullscreen"></iframe>
-<p class="ventana-mas"><a href="{pagina}#texto">{html.escape(T["animacion_texto"])}{icono("arrow-right")}</a></p>
+<video data-src="{VIDEO.format(idioma=idioma)}" poster="{CARTEL_VIDEO.format(idioma=idioma)}" controls playsinline preload="none"></video>
 </dialog>"""
 
 
@@ -328,9 +328,9 @@ def pagina_presentacion(idioma):
     tarjeta = (f'<div class="tarjeta"><a class="miniatura ampliar" href="{img}" aria-label="{html.escape(T["ampliar"])}" title="{html.escape(T["ampliar"])}">'
                f'<img src="{img}" width="{an}" height="{al}" alt="{html.escape(T["infografia_alt"])}"></a>'
                f'<a class="descarga" href="{img}" download>{icono("download")}{html.escape(T["descargar"])}</a></div>')
-    hay_animacion = (RAIZ / "animacion" / f"animacion.{idioma}.html").exists()
+    hay_animacion = (RAIZ / "es" / VIDEO.format(idioma=idioma)).resolve().exists()
     if hay_animacion:
-        tarjeta += (f'<a class="ver-animacion abrir-ventana" data-ventana="ventana-animacion" href="../animacion/animacion.{idioma}.html">'
+        tarjeta += (f'<a class="ver-animacion abrir-ventana" data-ventana="ventana-animacion" href="{VIDEO.format(idioma=idioma)}">'
                     f'{icono("play")}{html.escape(T["ver_animacion"])}</a>')
     # Las notas del pie de la portada, que vienen del Markdown, como «Cómo se ha elaborado».
     # «Cómo citar» está de momento en créditos (<!-- cita --> en 03-creditos.md); volverá aquí.

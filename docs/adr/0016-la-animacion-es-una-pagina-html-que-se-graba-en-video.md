@@ -33,7 +33,7 @@ recomendaciones y «Lo mínimo» de cada una, cómo empezar y cierre.
 - **El sonido solo empieza al pulsar «Reproducir con sonido»** y tiene botón
   para silenciarlo. La página ofrece además el texto completo de la animación,
   plegado, para quien no pueda o no quiera verla.
-- **La portada la ofrece en una ventana**: bajo la infografía, un botón «Ver
+- **La portada la ofrecía en una ventana** (sustituido el 27-09-2026 por el vídeo de la segunda animación, ADR 17; lo que sigue describe cómo funciona el modo incrustado, que la página conserva): bajo la infografía, un botón «Ver
   la animación» abre una ventana del mayor tamaño que cabe con la página en
   modo incrustado (`?incrustar`), que muestra solo el escenario y sus
   controles, con el tema claro u oscuro de la web (`&tema=`), en un tamaño que
@@ -52,7 +52,7 @@ recomendaciones y «Lo mínimo» de cada una, cómo empezar y cierre.
   con Playwright, obtiene la banda sonora con `OfflineAudioContext` y los une
   con ffmpeg en `animacion/vibe-responsable.es.mp4` (H.264 y AAC, 30 fps,
   unos 6,6 MB, sonoridad de −16 LUFS).
-- **El MP4 no se guarda en el repositorio**: se regenera cuando cambia la
+- **El MP4 no se guarda en el repositorio** (salvo el que abre la portada, ADR 17): se regenera cuando cambia la
   página y se publica aparte (como archivo de una versión publicada o en las
   redes), para que cada cambio no añada varios megas al historial.
 

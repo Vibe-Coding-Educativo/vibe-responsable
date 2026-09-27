@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-// Graba la animación en vídeo: vibe-responsable.<idioma>.mp4
-// Uso, desde la raíz del repositorio: node animacion/grabar.js [idioma]
+// Graba una animación en vídeo: vibe-responsable.<idioma>.mp4 (animacion.<idioma>.html) o
+// vibe-responsable-<página>.<idioma>.mp4 (<página>.<idioma>.html, por ejemplo zoom).
+// Uso, desde la raíz del repositorio: node animacion/grabar.js [idioma] [página]
 // Necesita el Chromium de Playwright instalado de forma global (npm i -g playwright) y ffmpeg.
 // Sirve el repositorio en un puerto libre, pinta cada fotograma con window.fijar(t),
 // obtiene la banda sonora con window.audioWav() y lo une todo con ffmpeg.
@@ -11,6 +12,7 @@ const { execSync, spawn } = require("child_process");
 const { chromium } = require(path.join(execSync("npm root -g").toString().trim(), "playwright"));
 
 const idioma = process.argv[2] || "es";
+const pagina = process.argv[3] || "animacion";
 const raiz = path.resolve(__dirname, "..");
 const FPS = 30, LADO = 1080;
 const tipos = { ".html": "text/html", ".woff2": "font/woff2", ".svg": "image/svg+xml", ".css": "text/css", ".js": "text/javascript", ".png": "image/png" };
@@ -26,11 +28,11 @@ const servidor = http.createServer((req, res) => {
   await new Promise(r => servidor.listen(0, "127.0.0.1", r));
   const puerto = servidor.address().port;
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "animacion-"));
-  const wav = path.join(tmp, "sonido.wav"), mp4 = path.join(__dirname, `vibe-responsable.${idioma}.mp4`);
+  const wav = path.join(tmp, "sonido.wav"), mp4 = path.join(__dirname, pagina === "animacion" ? `vibe-responsable.${idioma}.mp4` : `vibe-responsable-${pagina}.${idioma}.mp4`);
   const nav = await chromium.launch();
   try {
     const pag = await nav.newPage({ viewport: { width: LADO, height: LADO } });
-    await pag.goto(`http://127.0.0.1:${puerto}/animacion/animacion.${idioma}.html?grabar`);
+    await pag.goto(`http://127.0.0.1:${puerto}/animacion/${pagina}.${idioma}.html?grabar`);
     await pag.evaluate(() => document.fonts.ready);
     const dur = await pag.evaluate(() => window.DURACION);
     fs.writeFileSync(wav, Buffer.from(await pag.evaluate(() => window.audioWav()), "base64"));

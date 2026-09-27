@@ -8,5 +8,6 @@ fuentes/consulta/
 */completo.html
 __pycache__/
 
-# El vídeo de la animación se regenera con animacion/grabar.js y se publica aparte (ADR 16)
+# Los vídeos se regeneran con animacion/grabar.js (ADR 16); se publica solo el que abre la portada (ADR 17)
 animacion/*.mp4
+!animacion/vibe-responsable-zoom.*.mp4
