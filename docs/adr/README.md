@@ -21,6 +21,7 @@ deshaga después de buena fe, ni siquiera nosotros dentro de un año.
 | [13](0013-las-sugerencias-se-reciben-en-las-incidencias-del-repositorio.md) | Las vías para enviar sugerencias se reúnen en un panel del aviso de borrador | aceptado |
 | [14](0014-la-cabecera-queda-fija-al-desplazarse.md) | La cabecera queda fija al desplazarse; en el móvil se oculta al bajar y vuelve al subir | aceptado |
 | [15](0015-las-recomendaciones-siguen-el-orden-de-la-vida-del-material.md) | Las recomendaciones siguen el orden de la vida del material, en cuatro fases | aceptado |
+| [16](0016-la-animacion-es-una-pagina-html-que-se-graba-en-video.md) | La animación es una página HTML con sonido sintetizado, que se graba en vídeo | propuesto |
 
 Para añadir una, se copia [la plantilla](0000-plantilla.md) con el número
 siguiente y se anota aquí. Una decisión que deje de valer no se borra: se marca

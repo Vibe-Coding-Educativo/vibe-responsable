@@ -16,6 +16,7 @@ Nace en el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca) y se 
 | `es/`, `index.html` | La web generada, y en `es/vibe-responsable-es.pdf` la guía completa. No se editan a mano. |
 | `recursos/` | Hoja de estilos, script y tipografía de la web, y el logotipo con su favicon en `recursos/logo/` (el original editable es `logo.svg`). |
 | `infografia/` | La infografía, su original editable en SVG y el script que la genera. |
+| `animacion/` | La animación de la guía, una página HTML con música y sonido sintetizados en el navegador, y `grabar.js`, que la graba en vídeo MP4 con Playwright y ffmpeg. El vídeo no se guarda en el repositorio. |
 | `fuentes/` | Los documentos consultados, con su autoría y su licencia, y el índice de los que solo se consultan. |
 | `docs/adr/` | Registro de las decisiones del proyecto, con su contexto y las alternativas descartadas. |
 
@@ -24,6 +25,7 @@ Para regenerar la web después de cambiar el contenido:
 ```bash
 python3 construir.py --pdf        # la web y la guía completa en PDF
 python3 infografia/generar.py     # solo si cambian los títulos de la lista
+node animacion/grabar.js          # el vídeo de la animación, si cambia su página
 ```
 
 La web no usa bibliotecas ni servicios externos, y no recoge ningún dato; lo único que guarda en el navegador es el tema claro u oscuro, cuando se elige uno distinto al del dispositivo. La tipografía va dentro del propio repositorio.
@@ -34,7 +36,7 @@ La guía se elabora en el nivel 4 del [MIAE](https://jjdeharo.github.io/miae/?ni
 
 ## Licencias
 
-- **Código** (`construir.py`, `recursos/`, `infografia/generar.py`): [GNU AGPL v3](LICENSE).
+- **Código** (`construir.py`, `recursos/`, `infografia/generar.py`, `animacion/`): [GNU AGPL v3](LICENSE).
 - **Contenidos** (textos de la guía e infografía): [Creative Commons BY-SA 4.0](LICENSE-CONTENIDOS).
 - **Iconos**: [Lucide](https://lucide.dev/), licencia ISC; los derivados de Feather, licencia MIT. Texto de ambas en [`infografia/iconos/LICENSE`](infografia/iconos/LICENSE).
 - **Tipografía**: [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/), del Braille Institute, [licencia OFL](recursos/fuentes/OFL.txt).
