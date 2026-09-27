@@ -35,7 +35,9 @@ de los archivos de `contenido/<idioma>/` y el del menú:
    tipográfica del sitio. En el móvil las tarjetas van en columna. Al lado va la
    infografía en una columna propia, con un enlace para descargarla debajo, el
    botón «Ver la animación», que la abre en una ventana (ADR 16, 27-09-2026), y,
-   bajo ella, el botón que lleva a la guía, fuera del texto. Su
+   bajo ella, el botón que lleva a la guía, fuera del texto. Los dos botones
+   miden lo mismo, el ancho de la columna; el de la guía va relleno, como
+   camino principal, y el de la animación, con contorno (27-09-2026). Su
    alto es el que deja la pantalla, y de él sale la anchura de su columna, así
    que en un monitor grande se lee sin ampliarla y en un portátil queda como
    miniatura. La declaración de uso de IA («Cómo se ha elaborado») iba en letra

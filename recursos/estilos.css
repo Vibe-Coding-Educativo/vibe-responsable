@@ -294,6 +294,8 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 .ver-animacion { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; justify-self: stretch; padding: 0.5rem 0.9rem; border: 1.5px solid var(--verde); border-radius: 4px; color: var(--verde); font-weight: 700; text-decoration: none; transition: background 0.15s ease; }
 .ver-animacion:hover { background: var(--marca); }
 .ver-animacion .icono { width: 1.1rem; height: 1.1rem; }
+/* «Leer la guía» mide lo mismo que «Ver la animación»; el relleno lo distingue como el camino principal. */
+.ir-guia .continuar { display: flex; justify-content: center; margin: 0; padding: 0.5rem 0.9rem; border: 1.5px solid var(--verde); }
 .ventana-animacion { --lado: min(calc(100vw - 4.6rem), calc(100dvh - 16rem), 40rem); width: calc(var(--lado) + 2.6rem); max-width: none; max-height: none; }
 .ventana-animacion iframe { display: block; width: var(--lado); height: calc(var(--lado) + 3.3rem); border: 0; margin-bottom: 0.6rem; }
 .ventana-mas a { display: inline-flex; align-items: center; gap: 0.35rem; }
@@ -313,7 +315,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
      medio: el espacio que sobre queda al final de la página. */
   .entrada { grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto 1fr; gap: 1rem 2.4rem; }
   .textos { grid-row: 1 / span 2; }
-  .entrada > .ir-guia { grid-column: 2; grid-row: 2; justify-self: center; margin: 0; }
+  .entrada > .ir-guia { grid-column: 2; grid-row: 2; justify-self: stretch; margin: 0; }
   .textos { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-self: stretch; align-content: space-between; gap: 1.6rem 2.4rem; }
   .textos > * { order: 0; }
   .textos > .utiliza, .textos > .notas { grid-column: 1 / -1; }
@@ -328,6 +330,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 @media (min-width: 62rem) and (max-height: 940px) {
   .pagina-presentacion h1 { font-size: 1.6rem; margin: 0.45rem 0 0.5rem; }
   .pagina-presentacion .entrada { gap: 0.2rem 2rem; }
+  .pagina-presentacion .entrada > .ir-guia { margin-top: 0.6rem; }   /* la misma separación entre los dos botones que en pantallas altas */
   .pagina-presentacion .textos { row-gap: 0.9rem; }
   .pagina-presentacion .entrada p { margin-bottom: 0.55rem; }
   .pagina-presentacion .definicion { margin-top: 1.05rem; padding: 0.95rem 0.95rem 0.15rem; }
