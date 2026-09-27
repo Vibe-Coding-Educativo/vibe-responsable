@@ -33,7 +33,8 @@ de los archivos de `contenido/<idioma>/` y el del menú:
    queda al final de la página y no en medio. Se probó antes a hacer crecer la
    letra con el alto de la pantalla, y se descartó porque rompía la uniformidad
    tipográfica del sitio. En el móvil las tarjetas van en columna. Al lado va la
-   infografía en una columna propia, con un enlace para descargarla debajo y,
+   infografía en una columna propia, con un enlace para descargarla debajo, el
+   botón «Ver la animación», que la abre en una ventana (ADR 16, 27-09-2026), y,
    bajo ella, el botón que lleva a la guía, fuera del texto. Su
    alto es el que deja la pantalla, y de él sale la anchura de su columna, así
    que en un monitor grande se lee sin ampliarla y en un portátil queda como

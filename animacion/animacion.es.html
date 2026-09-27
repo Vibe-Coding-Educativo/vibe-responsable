@@ -27,10 +27,14 @@
   --pizarra: #17453b; --tiza: #f3f1e7; --tiza-suave: #bcd2c9; --verde: #0f766e; --azul: #24508f; --marca: #e7f1ee;
   color-scheme: light dark;
 }
+/* Tema: el del dispositivo, o el que pase la web al incrustarla (?tema=light|dark → data-theme). */
 @media (prefers-color-scheme: dark) {
-  :root { --papel: #0f1c19; --hoja: #152722; --tinta: #e9ece6; --tinta-suave: #a9b8b1; --raya: #27413b;
+  :root:not([data-theme="light"]) { --papel: #0f1c19; --hoja: #152722; --tinta: #e9ece6; --tinta-suave: #a9b8b1; --raya: #27413b;
     --verde: #6fcdb9; --azul: #9bbcf2; --marca: #1c362f; }
 }
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; --papel: #0f1c19; --hoja: #152722; --tinta: #e9ece6; --tinta-suave: #a9b8b1; --raya: #27413b;
+  --verde: #6fcdb9; --azul: #9bbcf2; --marca: #1c362f; }
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; }
 body { min-height: 100svh; display: flex; flex-direction: column; background: var(--papel); color: var(--tinta);
@@ -192,6 +196,13 @@ h2.tit { font-size: 58px; line-height: 1.1; letter-spacing: -0.01em; color: #162
 .cierre .url { font-size: 38px; font-weight: 700; color: #f5c542; margin-bottom: 56px; }
 .cierre .firma { font-size: 32px; font-weight: 700; margin-bottom: 14px; }
 .cierre .creditos { font-size: 24px; color: #bcd2c9; line-height: 1.4; }
+
+/* Modo incrustado (la ventana de la portada): solo el escenario y los controles, a todo el marco */
+.incrustar body { background: var(--hoja); min-height: 0; }
+.incrustar .barra, .incrustar h1, .incrustar .escena-actual, .incrustar .texto, .incrustar .pie { display: none !important; }
+.incrustar main { padding: 0; }
+.incrustar .reproductor { --lado: min(100vw, calc(100vh - 3.3rem)); }
+.incrustar .marco { border-radius: 6px; box-shadow: none; border: 1px solid var(--raya); }
 
 /* Modo grabación: solo el escenario, a tamaño real */
 .grabar .barra, .grabar h1, .grabar .controles, .grabar .escena-actual, .grabar .texto, .grabar .pie, .grabar .empezar { display: none !important; }
@@ -393,7 +404,7 @@ h2.tit { font-size: 58px; line-height: 1.1; letter-spacing: -0.01em; color: #162
   <p class="escena-actual" id="escena-actual" aria-live="polite"></p>
 </div>
 
-<details class="texto">
+<details class="texto" id="texto">
   <summary>Texto de la animación</summary>
   <div id="transcripcion"></div>
 </details>
@@ -408,8 +419,11 @@ h2.tit { font-size: 58px; line-height: 1.1; letter-spacing: -0.01em; color: #162
 
 <script>
 "use strict";
-const grabando = new URLSearchParams(location.search).has("grabar");
+const parametros = new URLSearchParams(location.search);
+const grabando = parametros.has("grabar");
 if (grabando) document.documentElement.classList.add("grabar");
+if (parametros.has("incrustar")) document.documentElement.classList.add("incrustar");
+if (["light", "dark"].includes(parametros.get("tema"))) document.documentElement.dataset.theme = parametros.get("tema");
 const reducido = !grabando && matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 // ─── Línea de tiempo: cada escena empieza donde acaba la anterior ───
@@ -717,6 +731,11 @@ document.addEventListener("keydown", ev => {
   if (ev.target.closest("input, summary, a, button, details") && ev.key !== " ") { if (ev.target !== rango || !["ArrowLeft", "ArrowRight"].includes(ev.key)) return; }
   if (ev.key === " " && !ev.target.closest("button, summary, a")) { ev.preventDefault(); reproduciendo ? pausar() : reproducir(); }
 });
+// Incrustada en la ventana de la portada: Escape la cierra también con el foco dentro del marco.
+if (parametros.has("incrustar")) document.addEventListener("keydown", ev => {
+  if (ev.key !== "Escape") return;
+  try { const v = window.frameElement && window.frameElement.closest("dialog"); if (v) v.close(); } catch (_) {}
+});
 document.addEventListener("visibilitychange", () => { if (document.hidden && reproduciendo) pausar(); });
 
 // Marcas de las escenas en la línea de tiempo y texto completo para leerlo sin animación.
@@ -750,6 +769,9 @@ document.fonts.ready.then(medirConector); medirConector();
 const marco = $("marco");
 function escalar() { escenario.style.transform = `scale(${marco.clientWidth / 1080})`; }
 new ResizeObserver(escalar).observe(marco); escalar();
+
+// Quien llega a #texto (desde la ventana de la portada) encuentra el texto ya desplegado.
+if (location.hash === "#texto") $("texto").open = true;
 
 window.fijar = s => { t = s; render(s); };
 window.DURACION = TOTAL;

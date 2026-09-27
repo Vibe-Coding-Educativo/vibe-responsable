@@ -268,10 +268,20 @@
   document.querySelectorAll("a.abrir-ventana").forEach(function (enlace) {
     var ventana = document.getElementById(enlace.dataset.ventana);
     if (!ventana || typeof ventana.showModal !== "function") { return; }
-    enlace.addEventListener("click", function (ev) { ev.preventDefault(); ventana.showModal(); });
+    // La ventana de la animación carga su marco al abrirse, con el tema de la web, y lo vacía al
+    // cerrarse para que no siga sonando.
+    var marcoIncrustado = ventana.querySelector("iframe[data-src]");
+    enlace.addEventListener("click", function (ev) {
+      ev.preventDefault();
+      if (marcoIncrustado) { marcoIncrustado.src = marcoIncrustado.dataset.src + "&tema=" + (document.documentElement.dataset.theme || ""); }
+      ventana.showModal();
+    });
     ventana.querySelector(".ventana-cerrar").addEventListener("click", function () { ventana.close(); });
     ventana.addEventListener("click", function (ev) { if (ev.target === ventana) { ventana.close(); } });
-    ventana.addEventListener("close", function () { enlace.focus(); });
+    ventana.addEventListener("close", function () {
+      if (marcoIncrustado) { marcoIncrustado.removeAttribute("src"); }
+      enlace.focus();
+    });
   });
 
   /* ---------- Visor de la infografía ---------- */

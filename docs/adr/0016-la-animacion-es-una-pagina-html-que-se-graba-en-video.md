@@ -33,6 +33,14 @@ recomendaciones y «Lo mínimo» de cada una, cómo empezar y cierre.
 - **El sonido solo empieza al pulsar «Reproducir con sonido»** y tiene botón
   para silenciarlo. La página ofrece además el texto completo de la animación,
   plegado, para quien no pueda o no quiera verla.
+- **La portada la ofrece en una ventana**: bajo la infografía, un botón «Ver
+  la animación» abre una ventana del mayor tamaño que cabe con la página en
+  modo incrustado (`?incrustar`), que muestra solo el escenario y sus
+  controles, con el tema claro u oscuro de la web (`&tema=`). El marco se carga
+  al abrir la ventana y se vacía al cerrarla, para que no siga sonando; Escape
+  la cierra también con el foco dentro. Debajo, un enlace lleva al texto de la
+  animación en su página. Sin JavaScript, el botón lleva a esa página. Así la
+  portada sigue cabiendo en una pantalla con la infografía a la vista (ADR 5).
 - **El vídeo se genera con `node animacion/grabar.js`**: pinta cada fotograma
   con Playwright, obtiene la banda sonora con `OfflineAudioContext` y los une
   con ffmpeg en `animacion/vibe-responsable.es.mp4` (H.264 y AAC, 30 fps,
@@ -47,6 +55,10 @@ recomendaciones y «Lo mínimo» de cada una, cómo empezar y cierre.
   cada cambio de texto o de idioma obligaría a rehacerlo, y el texto no se
   podría corregir ni leer con un lector de pantalla.
 - **Formato 16:9**: en un móvil vertical el texto quedaría ilegible.
+- **La animación en la portada, en lugar de la infografía o debajo de todo**:
+  en la columna de la infografía queda pequeña y la deja fuera de la vista;
+  debajo, la portada deja de caber en una pantalla. El autor propuso abrirla
+  con un botón en una ventana, como los archivos para la IA.
 - **Música de un banco con licencia libre**: obliga a acreditarla y a
   comprobar su licencia, y no se sincroniza con las apariciones. La sintetizada
   pesa unas líneas de código.
@@ -59,8 +71,9 @@ Cambiar un texto es editar la página y volver a ejecutar `grabar.js` (unos
 cinco minutos). Si cambian los títulos o los mínimos de la guía, hay que
 trasladarlos a mano a la animación, igual que a la infografía. En un móvil el
 texto del escenario queda pequeño (el escenario se reduce a la anchura de la
-pantalla); el vídeo a pantalla completa o el texto plegado lo resuelven. La
-página aún no está enlazada desde la guía.
+pantalla); el vídeo a pantalla completa o el texto plegado lo resuelven. El
+comprobador de enlaces internos de `construir.py` lee ahora las anclas de la
+página de destino aunque esté fuera de la carpeta del idioma.
 
 ## Evidencia
 
@@ -85,6 +98,9 @@ página aún no está enlazada desde la guía.
 - `probar-web` en Chromium, Firefox y WebKit, en escritorio, tableta y móvil,
   con tema claro y oscuro: 18 combinaciones sin errores de JavaScript, sin
   recursos que fallen y sin desbordamiento.
+- Ventana de la portada en Chromium y Firefox, a 1366 × 768, 1920 × 1080 (tema
+  oscuro) y 390 × 844: cabe sin barras de desplazamiento, la animación arranca
+  con sonido dentro y el marco se vacía al cerrar.
 - axe-core en Chromium y Firefox, con la animación parada, en marcha y con el
   texto desplegado: ninguna infracción. Recorrido con el tabulador en orden
   lógico por todos los controles.

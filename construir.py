@@ -80,6 +80,10 @@ UI = {
         "infografia_alt": "Infografía con las diez recomendaciones, las mismas que aparecen en la lista, agrupadas en cuatro fases: proteger al alumnado, construir el material, documentar el trabajo y compartir el material.",
         "ampliar": "Ampliar la infografía",
         "descargar": "Descargar la imagen",
+        # La animación de la guía (ADR 16), que la portada abre en una ventana
+        "ver_animacion": "Ver la animación",
+        "animacion_titulo": "La guía en una animación",
+        "animacion_texto": "Leer el texto de la animación",
         "anterior": "Anterior",
         "siguiente": "Siguiente",
         "niveles_ayuda": "Qué significan «Lo mínimo» y «Lo recomendado»",
@@ -292,6 +296,20 @@ def ventanas_ia(idioma):
     return "\n".join(ventanas)
 
 
+def ventana_animacion(idioma):
+    """La animación en una ventana, solo el escenario y sus controles (?incrustar). El marco se carga
+    al abrirla y se vacía al cerrarla, para que no suene de fondo. Sin JavaScript, el enlace de la
+    portada lleva a la página de la animación."""
+    T = UI[idioma]
+    pagina = f"../animacion/animacion.{idioma}.html"
+    return f"""<dialog class="ventana-ia ventana-animacion" id="ventana-animacion" aria-labelledby="ventana-animacion-titulo">
+<div class="ventana-cab"><h2 id="ventana-animacion-titulo">{html.escape(T["animacion_titulo"])}</h2>
+<button type="button" class="ventana-cerrar" aria-label="{html.escape(T["cerrar"])}" title="{html.escape(T["cerrar"])}">{icono("x")}</button></div>
+<iframe data-src="{pagina}?incrustar" title="{html.escape(T["animacion_titulo"])}" allow="fullscreen"></iframe>
+<p class="ventana-mas"><a href="{pagina}#texto">{html.escape(T["animacion_texto"])}{icono("arrow-right")}</a></p>
+</dialog>"""
+
+
 def pagina_presentacion(idioma):
     """Portada: el texto en dos columnas y, al lado, el resumen gráfico."""
     T = UI[idioma]
@@ -310,6 +328,10 @@ def pagina_presentacion(idioma):
     tarjeta = (f'<div class="tarjeta"><a class="miniatura ampliar" href="{img}" aria-label="{html.escape(T["ampliar"])}" title="{html.escape(T["ampliar"])}">'
                f'<img src="{img}" width="{an}" height="{al}" alt="{html.escape(T["infografia_alt"])}"></a>'
                f'<a class="descarga" href="{img}" download>{icono("download")}{html.escape(T["descargar"])}</a></div>')
+    hay_animacion = (RAIZ / "animacion" / f"animacion.{idioma}.html").exists()
+    if hay_animacion:
+        tarjeta += (f'<a class="ver-animacion abrir-ventana" data-ventana="ventana-animacion" href="../animacion/animacion.{idioma}.html">'
+                    f'{icono("play")}{html.escape(T["ver_animacion"])}</a>')
     # Las notas del pie de la portada, que vienen del Markdown, como «Cómo se ha elaborado».
     # «Cómo citar» está de momento en créditos (<!-- cita --> en 03-creditos.md); volverá aquí.
     notas = '<div class="notas">' + "".join(bloque(i, "nota") for i in range(3, len(apartados))) + "</div>"
@@ -332,7 +354,8 @@ def pagina_presentacion(idioma):
 {boton}
 </div>
 {visor(idioma)}
-{ventanas_ia(idioma)}"""
+{ventanas_ia(idioma)}
+{ventana_animacion(idioma) if hay_animacion else ""}"""
     return marco(idioma, "index.html", titulo, cuerpo, "pagina-presentacion")
 
 
@@ -687,7 +710,11 @@ def comprobar_referencias(idioma):
 def comprobar_enlaces_internos(idioma):
     """Revisa que cada enlace interno de las páginas generadas lleve a un archivo y a un ancla que existen."""
     base, rotos = RAIZ / idioma, []
-    ids = {p.name: set(re.findall(r'id="([^"]+)"', p.read_text(encoding="utf-8"))) for p in base.glob("*.html")}
+    ids = {}   # anclas de cada página enlazada, también fuera de la carpeta del idioma (la animación)
+    def anclas(pagina):
+        if pagina not in ids:
+            ids[pagina] = set(re.findall(r'id="([^"]+)"', pagina.read_text(encoding="utf-8")))
+        return ids[pagina]
     for p in sorted(base.glob("*.html")):
         for href in re.findall(r'href="([^"]+)"', p.read_text(encoding="utf-8")):
             if re.match(r"(https?:|mailto:)", href):
@@ -697,7 +724,7 @@ def comprobar_enlaces_internos(idioma):
             destino = p if not ruta else (base / ruta / "index.html" if ruta.endswith("/") or ruta == "./" else base / ruta)
             if not destino.resolve().exists():
                 rotos.append(f"{p.name}: {href} (no existe)")
-            elif fragmento and destino.suffix == ".html" and fragmento not in ids.get(destino.name, set()):
+            elif fragmento and destino.suffix == ".html" and fragmento not in anclas(destino.resolve()):
                 rotos.append(f"{p.name}: {href} (ancla inexistente)")
     return rotos
 
