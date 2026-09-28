@@ -18,7 +18,9 @@ enlace al texto de la animación.
   fase 1; dentro de la pantalla de una tableta, la fase 2; dentro de una tecla,
   la fase 3; dentro del símbolo de Creative Commons, la fase 4. Al final una
   copia del material se divide en 2, 4, 8… hasta 256, y la cámara sale de vuelta
-  por todos los niveles hasta la conversación, donde aparece el cierre. Cada
+  por todos los niveles hasta la conversación, donde aparece el cierre:
+  «Vibe coding responsable» y, debajo, en otro color y otro peso, «Vibe coding
+  ético» (añadido el 28-09-2026 a petición del autor). Cada
   nivel tiene un color de la paleta de la guía; los números de las
   recomendaciones son grandes y huecos; las palabras entran al ritmo de la
   música; hay un temblor de cámara en cada golpe, grano de película y viñeta.
@@ -62,14 +64,19 @@ enlace al texto de la animación.
 La portada pesa lo mismo al entrar: el vídeo solo se descarga al pedirlo. Cada
 cambio en la animación exige volver a grabarla (unos 30 minutos) y recomprimir
 el vídeo, y cada versión añade unos 6,6 MB al historial del repositorio. Sin
-voz, el vídeo no necesita subtítulos; su texto está en la página de la
-animación, que ya no se enlaza desde la portada.
+voz, el vídeo no necesita subtítulos. La página de la animación, que ya no se
+enlaza desde la portada, tampoco lleva su texto: el autor lo retiró el
+28-09-2026 por innecesario.
 
 ## Evidencia
 
-- Recompresión: `ffmpeg -i <grabación> -i <sonido.wav> -c:v libx264 -preset
-  slow -crf 31 -af alimiter=limit=0.79 -c:a aac -b:a 128k -movflags +faststart`.
-  Con CRF 28 pesaba 8,2 MB; con CRF 22, 14 MB.
+- Recompresión: `ffmpeg -i <grabación> -i <sonido.wav> -map 0:v -map 1:a
+  -c:v libx264 -preset slow -crf 31 -af alimiter=limit=0.79:level=false -c:a aac
+  -b:a 128k -movflags +faststart`. Con CRF 28 pesaba 8,2 MB; con CRF 22, 14 MB.
+  `level=false` hace falta en el ffmpeg actual: con la nivelación automática
+  del limitador, el sonido subía a −14,3 LUFS con picos por encima de 0 dB
+  (comprobado al regrabar el 28-09-2026; así queda en −16,1 LUFS y −1,6 dBFS,
+  como el vídeo anterior).
 
 ## Riesgos y limitaciones
 

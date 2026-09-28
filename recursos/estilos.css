@@ -296,8 +296,14 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 .ver-animacion .icono { width: 1.1rem; height: 1.1rem; }
 /* «Leer la guía» mide lo mismo que «Ver la animación»; el relleno lo distingue como el camino principal. */
 .ir-guia .continuar { display: flex; justify-content: center; margin: 0; padding: 0.5rem 0.9rem; border: 1.5px solid var(--verde); }
-.ventana-animacion { --lado: min(calc(100vw - 4.6rem), calc(100dvh - 11rem), 43rem); width: calc(var(--lado) + 2.6rem); max-width: none; max-height: none; }
+/* El ancho suma el relleno y los dos bordes de 1px: sin ellos, el vídeo desborda y aparece una barra horizontal. */
+.ventana-animacion { --lado: min(calc(100vw - 4.6rem), calc(100dvh - 11rem), 43rem); width: calc(var(--lado) + 2.6rem + 2px); max-width: none; max-height: none; }
 .ventana-animacion video { display: block; width: var(--lado); height: var(--lado); border-radius: 6px; background: #0b1714; }
+.video-marco { position: relative; }
+.volver-a-ver { position: absolute; inset: 0; margin: auto; width: fit-content; height: fit-content; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.2rem; border: 0; border-radius: 4px; background: var(--verde); color: var(--hoja); font: inherit; font-weight: 700; cursor: pointer; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45); }
+.volver-a-ver[hidden] { display: none; }
+.volver-a-ver:hover { background: color-mix(in srgb, var(--verde) 86%, var(--tinta)); }
+.volver-a-ver .icono { width: 1.2rem; height: 1.2rem; color: inherit; }
 .ventana-mas a { display: inline-flex; align-items: center; gap: 0.35rem; }
 .ventana-mas .icono { width: 1rem; height: 1rem; }
 /* La definición de la portada, en un marco con su rótulo cortando el borde superior. */

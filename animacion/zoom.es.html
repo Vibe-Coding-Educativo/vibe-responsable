@@ -75,10 +75,6 @@ h1 { font-size: 1.15rem; margin: 0 0 8px; text-align: center; }
 .tiempo { flex: none; font-variant-numeric: tabular-nums; font-size: 0.9rem; color: var(--tinta-suave); min-width: 5.6rem; text-align: center; }
 .escena-actual { margin: 4px 0 0; font-size: 0.9rem; color: var(--tinta-suave); text-align: center; min-height: 1.4em; }
 @media (max-width: 30rem) { .tiempo { display: none; } }
-.texto { width: min(calc(100vw - 32px), 62rem); margin-top: 10px; }
-.texto summary { cursor: pointer; font-weight: 700; color: var(--verde); }
-.texto h2 { font-size: 1.05rem; margin: 1rem 0 0.3rem; }
-.texto p { margin: 0.2rem 0; }
 .pie { font-size: 0.85rem; color: var(--tinta-suave); border-top: 1px solid var(--raya); }
 .pie-int { padding-block: 0.6rem; display: flex; flex-wrap: wrap; gap: 0.2rem 1.2rem; }
 
@@ -103,11 +99,11 @@ h1 { font-size: 1.15rem; margin: 0 0 8px; text-align: center; }
 
 /* Modos incrustado y de grabación, como en la primera animación */
 .incrustar body { background: var(--hoja); min-height: 0; }
-.incrustar .barra, .incrustar h1, .incrustar .escena-actual, .incrustar .texto, .incrustar .pie { display: none !important; }
+.incrustar .barra, .incrustar h1, .incrustar .escena-actual, .incrustar .pie { display: none !important; }
 .incrustar main { padding: 0; }
 .incrustar .reproductor { --lado: min(100vw, calc(100vh - 3.3rem)); }
 .incrustar .marco { border-radius: 6px; box-shadow: none; }
-.grabar .barra, .grabar h1, .grabar .controles, .grabar .escena-actual, .grabar .texto, .grabar .pie, .grabar .empezar { display: none !important; }
+.grabar .barra, .grabar h1, .grabar .controles, .grabar .escena-actual, .grabar .pie, .grabar .empezar { display: none !important; }
 .grabar main { padding: 0; }
 .grabar .reproductor { --lado: 1080px; }
 .grabar .marco { border-radius: 0; box-shadow: none; }
@@ -125,7 +121,7 @@ h1 { font-size: 1.15rem; margin: 0 0 8px; text-align: center; }
 <h1>La guía en un zoom infinito</h1>
 <div class="reproductor">
   <div class="marco" id="marco">
-    <div class="escenario" id="escenario" role="img" aria-label="Animación en un solo plano sobre la guía Vibe coding responsable. Su texto completo está debajo, en «Texto de la animación».">
+    <div class="escenario" id="escenario" role="img" aria-label="Animación en un solo plano sobre la guía Vibe coding responsable.">
       <div class="camara" id="camara"></div>
       <div class="grano" id="grano"></div>
       <div class="vineta"></div>
@@ -144,34 +140,6 @@ h1 { font-size: 1.15rem; margin: 0 0 8px; text-align: center; }
   <p class="escena-actual" id="escena-actual" aria-live="polite"></p>
 </div>
 
-<details class="texto" id="texto">
-  <summary>Texto de la animación</summary>
-  <div>
-    <h2>Inicio</h2>
-    <p>En una conversación con la IA: «crea una simulación del ciclo del agua».</p>
-    <p>Vibe coding educativo. La IA escribe el código. La persona aporta la intención pedagógica y comprueba el resultado.</p>
-    <p>Quien publica el material responde de él, aunque el código sea de la IA. Diez recomendaciones antes de publicar.</p>
-    <h2>Fase 1: proteger al alumnado</h2>
-    <p><strong>1. Revisar el contenido sin delegarlo en la IA.</strong> La IA puede equivocarse con total naturalidad: en el ejemplo, da por verdadero que el agua hierve a 90 °C a nivel del mar. La responsabilidad de lo que se enseña es de la persona que lo publica.</p>
-    <p><strong>2. No enviar datos personales a servicios ajenos al centro.</strong> El nombre, las notas, la voz y la imagen no salen hacia un servicio ajeno: se quedan solo en el dispositivo. La forma más sencilla de cumplir: que el material no pida datos.</p>
-    <h2>Fase 2: construir el material</h2>
-    <p><strong>3. Entender qué hace el material.</strong> Qué hace, qué guarda y con qué se comunica. No hace falta saber programar: basta con pedir a la IA que lo explique en lenguaje llano y comprobarlo al usarlo.</p>
-    <p><strong>4. No depender de servicios que pueden desaparecer.</strong> El enlace compartido dura lo que la empresa decida: si la plataforma cierra, el enlace se rompe. Por eso, una copia del código en el propio ordenador.</p>
-    <p><strong>5. Hacerlo accesible a cualquier persona.</strong> Sin ratón, sin depender del color y en una pantalla pequeña. Pedir a la IA, desde el principio, que siga las pautas de accesibilidad.</p>
-    <h2>Fase 3: documentar el trabajo</h2>
-    <p><strong>6. Citar la autoría de lo que se toma de otras personas.</strong> Imágenes, sonidos y tipografías, con su autoría, su procedencia y su licencia. Tienen autoría y licencia, aunque los haya colocado la IA.</p>
-    <p><strong>7. Guardar el rastro de cómo se hizo.</strong> Un registro de decisiones, cada una con su porqué. Lo redacta la propia IA al terminar cada sesión; la persona lo revisa.</p>
-    <p><strong>8. Declarar el uso de IA y lo que se ha comprobado.</strong> En el pie del material: «Creado con IA. Comprobado: los contenidos, el funcionamiento y el tratamiento de los datos». Quien lo reutilice debe saberlo para decidir cuánto puede fiarse de él.</p>
-    <h2>Fase 4: compartir el material</h2>
-    <p><strong>9. Publicar con una licencia libre a la vista.</strong> Para el código, AGPL v3 o MIT; para los contenidos, CC BY-SA o CC BY. Sin licencia, un material no puede reutilizarse con seguridad, aunque esté publicado.</p>
-    <p><strong>10. Ofrecer el código para que otras personas lo adapten.</strong> Una copia se convierte en 2, 4, 8… hasta 256, cada una adaptada. Otra persona puede adaptarlo a su aula sin pedir nada a nadie.</p>
-    <h2>Final</h2>
-    <p>La cámara vuelve a salir, mundo a mundo, hasta la conversación del principio.</p>
-    <p>Vibe coding responsable. Vibe coding educativo responsable: materiales seguros para el alumnado, accesibles, duraderos, transparentes sobre cómo se hicieron y libres para que otras personas los reutilicen.</p>
-    <p>Para empezar: dar a la IA el archivo de instrucciones y, al terminar, pedirle la evaluación VCER. La revisión del contenido corresponde a la persona.</p>
-    <p>vibe-coding-educativo.github.io/vibe-responsable · @jjdeharo · CC BY-SA 4.0</p>
-  </div>
-</details>
 </main>
 
 <footer class="pie">
@@ -289,13 +257,14 @@ E(N0, `left:0;top:730px;width:1080px;text-align:center;font-size:52px;color:${AM
 // El final, de vuelta en la conversación
 E(N0, `left:80px;top:96px;font-size:134px;font-weight:700;letter-spacing:-.03em;line-height:1`, "Vibe coding", A(109.1, "o0 s1.8", 0.5), "golpe@109.1");
 E(N0, `left:80px;top:230px;font-size:134px;font-weight:700;letter-spacing:-.03em;line-height:1;color:${AMARILLO}`, "responsable", A(109.45, "o0 s1.8", 0.5));
-E(N0, `left:84px;top:410px;font-size:28px;color:${SUAVE0}`, "Vibe coding educativo responsable: materiales…", A(110.4, "o0 x-30", 0.5, "eo"));
+E(N0, `left:84px;top:372px;font-size:84px;font-weight:400;letter-spacing:-.02em;line-height:1;color:#6fcdb9`, "Vibe coding ético", A(109.8, "o0 x-40", 0.5, "eo"), "pop@109.8");
+E(N0, `left:84px;top:480px;font-size:28px;color:${SUAVE0}`, "Vibe coding educativo responsable: materiales…", A(110.4, "o0 x-30", 0.5, "eo"));
 [["seguros", "para el alumnado,"], ["accesibles,", ""], ["duraderos,", ""], ["transparentes", "sobre cómo se hicieron"], ["y libres", "para que otras personas los reutilicen."]]
-  .forEach(([a, b], i) => E(N0, `left:84px;top:${456 + i * 58}px;width:960px;font-size:48px;font-weight:700;white-space:nowrap`,
+  .forEach(([a, b], i) => E(N0, `left:84px;top:${524 + i * 54}px;width:960px;font-size:48px;font-weight:700;white-space:nowrap`,
     `${a} <span style="font-size:30px;font-weight:400;color:${SUAVE0}">${b}</span>`, A(110.9 + i * 0.4, "o0 x-70", 0.45), `pop@${r2(110.9 + i * 0.4)}`));
-E(N0, `left:84px;top:772px;width:920px;font-size:30px;line-height:1.3`, `<b style="color:${AMARILLO}">Para empezar:</b> dar a la IA el archivo de instrucciones y, al terminar, pedirle la evaluación VCER. La revisión del contenido corresponde a la persona.`, A(113.4, "o0 y30", 0.5, "eo"));
-E(N0, `left:84px;top:906px;font-size:40px;font-weight:700;color:${AMARILLO}`, "vibe-coding-educativo.github.io/vibe-responsable", A(115.0, "o0 y30", 0.5), "chispa@115");
-E(N0, `left:84px;top:966px;width:920px;font-size:21px;line-height:1.4;color:${SUAVE0}`, "@jjdeharo · CC BY-SA 4.0 · Iconos: Lucide (ISC y MIT) · Tipografía: Atkinson Hyperlegible (OFL)<br>Animación, música y sonido generados con IA.", A(115.6, "o0", 0.6, "eo"));
+E(N0, `left:84px;top:802px;width:920px;font-size:30px;line-height:1.3`, `<b style="color:${AMARILLO}">Para empezar:</b> dar a la IA el archivo de instrucciones y, al terminar, pedirle la evaluación VCER. La revisión del contenido corresponde a la persona.`, A(113.4, "o0 y30", 0.5, "eo"));
+E(N0, `left:84px;top:934px;font-size:40px;font-weight:700;color:${AMARILLO}`, "vibe-coding-educativo.github.io/vibe-responsable", A(115.0, "o0 y30", 0.5), "chispa@115");
+E(N0, `left:84px;top:986px;width:920px;font-size:21px;line-height:1.4;color:${SUAVE0}`, "@jjdeharo · CC BY-SA 4.0 · Iconos: Lucide (ISC y MIT) · Tipografía: Atkinson Hyperlegible (OFL)<br>Animación, música y sonido generados con IA.", A(115.6, "o0", 0.6, "eo"));
 
 // Nivel 1: proteger al alumnado (dentro del cursor)
 const TIZA = "#f3f1e7", SUAVE1 = "#bcd2c9";
@@ -373,7 +342,7 @@ const tecla = document.createElement("div");
 tecla.style.cssText = "position:absolute;left:170px;top:30px;width:108px;height:108px";
 tecla.dataset.portal = "rect"; tecla.dataset.radio = "18";
 teclas.append(tecla);
-E(teclas, "left:-8px;top:22px;width:166px;height:124px;border:5px solid #f5c542;border-radius:24px", "", "17.9:o0|18.1:o1 eo|18.9:x170 w0.76 eio|19.3:o1|19.6:o0.9");
+E(teclas, "left:-8px;top:22px;width:166px;height:124px;border:5px solid #f5c542;border-radius:24px", "", "17.9:o0|18.1:o1 eo|18.9:x149 w0.76 eio|19.3:o1|19.6:o0.9");
 E(N2, "left:400px;top:470px;width:300px;height:300px", `
   <div style="position:absolute;left:0;top:10px;background:#0f766e;color:#fff;font-size:30px;font-weight:700;padding:10px 20px;border-radius:12px">${svg("check", 28, "#fff", 3)} Correcto</div>
   <div style="position:absolute;left:0;top:90px;background:#b42318;color:#fff;font-size:30px;font-weight:700;padding:10px 20px;border-radius:12px">${svg("x", 28, "#fff", 3)} Error</div>
@@ -430,9 +399,9 @@ const TINTA4 = "#16232b", PIZARRA = "#17453b", SUAVE4 = "#5b4a12";
 const N4 = nivel(86, "#f5c542", TINTA4);
 fase(N4, 4, "Compartir", "el material", PIZARRA, SUAVE4);
 recomendacion(N4, 9, "Publicar con una licencia libre a la vista", 2.4, 8.7, PIZARRA);
-[["Código", "AGPL v3 · MIT", "software libre", 90, 3.8], ["Contenidos", "CC BY-SA · CC BY", "Creative Commons libre", 560, 4.3]].forEach(([a, b, c, x, t]) =>
-  E(N4, `left:${x}px;top:450px;width:430px;height:250px;background:${PIZARRA};color:#f3f1e7;border-radius:24px;padding:30px 34px`,
-    `<p style="font-size:26px;color:#bcd2c9;font-weight:700;letter-spacing:.1em">${a.toUpperCase()}</p><p style="font-size:52px;font-weight:700;margin-top:18px;white-space:nowrap">${b}</p><p style="font-size:26px;margin-top:22px;color:#bcd2c9">${c}</p>`,
+[["Código", ["AGPL v3", "MIT"], "software libre", 90, 3.8], ["Contenidos", ["CC BY-SA", "CC BY"], "Creative Commons libre", 560, 4.3]].forEach(([a, b, c, x, t]) =>
+  E(N4, `left:${x}px;top:430px;width:430px;height:300px;background:${PIZARRA};color:#f3f1e7;border-radius:24px;padding:30px 34px`,
+    `<p style="font-size:26px;color:#bcd2c9;font-weight:700;letter-spacing:.1em">${a.toUpperCase()}</p><p style="font-size:52px;font-weight:700;margin-top:14px;line-height:1.1;white-space:nowrap">${b.join("<br>")}</p><p style="font-size:26px;margin-top:22px;color:#bcd2c9">${c}</p>`,
     A(t, "o0 y80 r-3", 0.5) + S(8.7, "o0 y60", 0.35), `golpe@${t}`));
 palabras(N4, "left:90px;top:760px;width:900px;font-size:40px;line-height:1.25;font-weight:700", "Sin licencia, un material no puede reutilizarse con seguridad, aunque esté publicado.", 5.6, 0.06, 8.7);
 
@@ -863,7 +832,6 @@ function escalar() { escenario.style.transform = `scale(${marco.clientWidth / 10
 new ResizeObserver(escalar).observe(marco); escalar();
 document.fonts.ready.then(() => { medir(); PUNTOS = puntosCamara(); render(reproduciendo ? t : CARTEL); });
 if (parametros.has("auto")) document.fonts.ready.then(reproducir);
-if (location.hash === "#texto") $("texto").open = true;
 
 window.fijar = s => { t = s; render(s); };
 window.DURACION = TOTAL;

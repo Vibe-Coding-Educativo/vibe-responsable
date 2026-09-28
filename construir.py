@@ -82,6 +82,7 @@ UI = {
         "descargar": "Descargar la imagen",
         # La animación de la guía (ADR 16), que la portada abre en una ventana
         "ver_animacion": "Ver la animación",
+        "volver_a_ver": "Volver a ver",
         "animacion_titulo": "La guía en una animación",
         "anterior": "Anterior",
         "siguiente": "Siguiente",
@@ -301,12 +302,15 @@ def ventanas_ia(idioma):
 
 def ventana_animacion(idioma):
     """La animación en vídeo, en una ventana (ADR 17). El vídeo se descarga solo al abrirla, empieza
-    a sonar con la misma pulsación y se detiene al cerrarla. Sin JavaScript, el botón abre el vídeo."""
+    a sonar con la misma pulsación y se detiene al cerrarla. Al terminar muestra «Volver a ver», porque
+    el botón del reproductor apenas se distingue sobre el fotograma final. Sin JavaScript, el botón
+    abre el vídeo."""
     T = UI[idioma]
     return f"""<dialog class="ventana-ia ventana-animacion" id="ventana-animacion" aria-labelledby="ventana-animacion-titulo">
 <div class="ventana-cab"><h2 id="ventana-animacion-titulo">{html.escape(T["animacion_titulo"])}</h2>
 <button type="button" class="ventana-cerrar" aria-label="{html.escape(T["cerrar"])}" title="{html.escape(T["cerrar"])}">{icono("x")}</button></div>
-<video data-src="{VIDEO.format(idioma=idioma)}" poster="{CARTEL_VIDEO.format(idioma=idioma)}" controls playsinline preload="none"></video>
+<div class="video-marco"><video data-src="{VIDEO.format(idioma=idioma)}" poster="{CARTEL_VIDEO.format(idioma=idioma)}" controls playsinline preload="none"></video>
+<button type="button" class="volver-a-ver" hidden>{icono("rotate-ccw")}{html.escape(T["volver_a_ver"])}</button></div>
 </dialog>"""
 
 

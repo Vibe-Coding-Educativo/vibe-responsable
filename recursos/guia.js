@@ -271,14 +271,25 @@
     // La ventana de la animación carga el vídeo al abrirse y lo pone en marcha con la misma pulsación,
     // que es lo que piden los navegadores para que suene; al cerrarse, lo detiene.
     var video = ventana.querySelector("video[data-src]");
+    var otraVez = ventana.querySelector(".volver-a-ver");
+    function desdeElPrincipio() {
+      if (otraVez) { otraVez.hidden = true; }
+      video.currentTime = 0;
+      var marcha = video.play();
+      if (marcha && marcha.catch) { marcha.catch(function () {}); }
+    }
+    // Al terminar, un botón bien visible para volver a verla: el del reproductor apenas se distingue.
+    if (video && otraVez) {
+      video.addEventListener("ended", function () { otraVez.hidden = false; otraVez.focus(); });
+      video.addEventListener("play", function () { otraVez.hidden = true; });
+      otraVez.addEventListener("click", desdeElPrincipio);
+    }
     enlace.addEventListener("click", function (ev) {
       ev.preventDefault();
       ventana.showModal();
       if (video) {
         if (!video.getAttribute("src")) { video.src = video.dataset.src; }
-        video.currentTime = 0;
-        var marcha = video.play();
-        if (marcha && marcha.catch) { marcha.catch(function () {}); }
+        desdeElPrincipio();
       }
     });
     ventana.querySelector(".ventana-cerrar").addEventListener("click", function () { ventana.close(); });
