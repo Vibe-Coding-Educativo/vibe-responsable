@@ -10,7 +10,7 @@ The website code is published under the [GNU AGPL v3](https://www.gnu.org/licens
 
 ## How it was made
 
-This guide was produced at level 4 of the [Framework for integrating generative AI into educational tasks (MIAE)](https://jjdeharo.github.io/miae/?nivel=4), which corresponds to advanced collaboration between the person and the AI. The text was written in dialogue with Claude Code, and the author directed and corrected the content, checked the claims against their sources and reviewed the result. The translations into Catalan, Galician, Basque and English were made with the same AI from the Spanish original.
+This guide was produced at level 4 of the [Framework for integrating generative AI into educational tasks (MIAE)](https://jjdeharo.github.io/miae/?nivel=4), which corresponds to advanced collaboration between the person and the AI. The text was written in dialogue with Claude Code, and the author directed and corrected the content, checked the claims against their sources and reviewed the result. The translations into Catalan, Galician, Basque and English were made automatically with the same AI, from the Spanish original, and have not been reviewed by a professional translator.
 
 ## How to cite
 

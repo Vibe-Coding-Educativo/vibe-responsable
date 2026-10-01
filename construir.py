@@ -65,7 +65,7 @@ UI = {
         "nav": "Secciones de la guía",
         "nav_capitulos": "Capítulo anterior y siguiente",
         # rótulos del menú más cortos que el título de su página
-        "nav_cortos": {"guia.html": "Guía", "referencias.html": "Referencias"},
+        "nav_cortos": {"guia.html": "Guía", "referencias.html": "Referencias", "creditos.html": "Créditos"},
         "imprimir": "Imprimir esta página",
         "imprimir_desc": "Solo lo que se ve en esta página",
         "imprimir_menu": "Imprimir o descargar",
@@ -131,7 +131,7 @@ UI = {
         "saltar": "Salta al contingut",
         "nav": "Seccions de la guia",
         "nav_capitulos": "Capítol anterior i següent",
-        "nav_cortos": {"guia.html": "Guia", "referencias.html": "Referències"},
+        "nav_cortos": {"guia.html": "Guia", "referencias.html": "Referències", "creditos.html": "Crèdits"},
         "imprimir": "Imprimir aquesta pàgina",
         "imprimir_desc": "Només el que es veu en aquesta pàgina",
         "imprimir_menu": "Imprimir o descarregar",
@@ -193,7 +193,7 @@ UI = {
         "saltar": "Saltar ao contido",
         "nav": "Seccións da guía",
         "nav_capitulos": "Capítulo anterior e seguinte",
-        "nav_cortos": {"guia.html": "Guía", "referencias.html": "Referencias"},
+        "nav_cortos": {"guia.html": "Guía", "referencias.html": "Referencias", "creditos.html": "Créditos"},
         "imprimir": "Imprimir esta páxina",
         "imprimir_desc": "Só o que se ve nesta páxina",
         "imprimir_menu": "Imprimir ou descargar",
@@ -255,7 +255,7 @@ UI = {
         "saltar": "Joan edukira",
         "nav": "Gidaren atalak",
         "nav_capitulos": "Aurreko eta hurrengo kapitulua",
-        "nav_cortos": {"guia.html": "Gida", "referencias.html": "Erreferentziak"},
+        "nav_cortos": {"guia.html": "Gida", "referencias.html": "Erreferentziak", "creditos.html": "Kredituak"},
         "imprimir": "Orri hau inprimatu",
         "imprimir_desc": "Orri honetan ikusten dena bakarrik",
         "imprimir_menu": "Inprimatu edo deskargatu",
@@ -318,7 +318,7 @@ UI = {
         "saltar": "Skip to content",
         "nav": "Sections of the guide",
         "nav_capitulos": "Previous and next chapter",
-        "nav_cortos": {"guia.html": "Guide", "referencias.html": "References"},
+        "nav_cortos": {"guia.html": "Guide", "referencias.html": "References", "creditos.html": "Credits"},
         "imprimir": "Print this page",
         "imprimir_desc": "Only what is shown on this page",
         "imprimir_menu": "Print or download",
@@ -452,9 +452,11 @@ def marco(idioma, archivo, titulo, cuerpo, clase, propio=None):
     idiomas = "".join(f'<a role="menuitem" href="../{i}/{destino_idioma}" hreflang="{i}" lang="{i}"'
                       + (' aria-current="true"' if i == idioma else "") + f'>{html.escape(NOMBRES_IDIOMAS[i])}</a>'
                       for i in IDIOMAS)
-    titulos = {a: titulo_de((RAIZ / "contenido" / idioma / m).read_text(encoding="utf-8")) for a, m in PAGINAS}
+    # El menú lleva también los créditos, donde está la forma de citar la guía
+    entradas = PAGINAS + [("creditos.html", "03-creditos.md")]
+    titulos = {a: titulo_de((RAIZ / "contenido" / idioma / m).read_text(encoding="utf-8")) for a, m in entradas}
     nav = []
-    for a, _ in PAGINAS:
+    for a, _ in entradas:
         rotulo = T["nav_cortos"].get(a, titulos[a])
         destino = "./" if a == "index.html" else a
         actual = ' aria-current="page"' if a == archivo else ""

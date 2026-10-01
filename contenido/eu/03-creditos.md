@@ -10,7 +10,7 @@ Webaren kodea [GNU AGPL v3](https://www.gnu.org/licenses/agpl-3.0.html) lizentzi
 
 ## Nola egin den
 
-Gida hau [Hezkuntza-zereginetan IA sortzailea integratzeko esparruaren (MIAE)](https://jjdeharo.github.io/miae/?nivel=4) 4. mailan egin da, pertsonaren eta IAren arteko lankidetza aurreratuari dagokiona. Testua Claude Coderekin elkarrizketan idatzi da, eta egileak edukia gidatu eta zuzendu du, baieztapenak iturriekin kontrastatu ditu eta emaitza berrikusi du. Katalanerako, galizierarako, euskararako eta ingeleserako itzulpenak IA berarekin egin dira, gaztelaniazko jatorrizkotik abiatuta.
+Gida hau [Hezkuntza-zereginetan IA sortzailea integratzeko esparruaren (MIAE)](https://jjdeharo.github.io/miae/?nivel=4) 4. mailan egin da, pertsonaren eta IAren arteko lankidetza aurreratuari dagokiona. Testua Claude Coderekin elkarrizketan idatzi da, eta egileak edukia gidatu eta zuzendu du, baieztapenak iturriekin kontrastatu ditu eta emaitza berrikusi du. Katalanerako, galizierarako, euskararako eta ingeleserako itzulpenak automatikoki egin dira IA berarekin, gaztelaniazko jatorrizkotik abiatuta, eta ez ditu itzultzaile profesional batek berrikusi.
 
 ## Nola aipatu
 

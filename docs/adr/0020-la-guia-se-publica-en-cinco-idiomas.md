@@ -7,7 +7,7 @@ Fecha: 2026-10-01 · Estado: aceptado
 La guía se escribió en castellano, para docentes de cualquier país. Antes de
 depositar la versión 1.0 en Zenodo, Juanjo pidió traducirla a los idiomas
 habituales de sus trabajos: «antes lo teníamos que haber traducido»; y después,
-«sí, los cinco idiomas y el vídeo en castellano». El generador ya estaba
+«sí, los cinco idiomas y el vídeo en castellano». Ese mismo día, ya publicada la 1.0, pidió también el vídeo: «haz la animación en todos los idiomas»; y, sobre las traducciones, que «en algún lado hay que decir que las traducciones son automáticas y no han sido revisadas por un revisor profesional». El generador ya estaba
 preparado para varios idiomas (`IDIOMAS`, una carpeta por idioma en
 `contenido/` y un bloque por idioma en `UI`), pero algunas piezas tenían el
 castellano escrito en el código.
@@ -22,8 +22,9 @@ castellano escrito en el código.
   idiomas, cada uno con su nombre en su propia lengua, que lleva a la misma
   página en el otro idioma. Cada página declara sus equivalentes con
   `hreflang`.
-- Las traducciones las hace la IA a partir del original en castellano, y los
-  créditos de cada idioma lo dicen.
+- Las traducciones las hace la IA a partir del original en castellano, de forma
+  automática y sin revisión de un traductor profesional; los créditos de cada
+  idioma y la descripción del depósito de Zenodo lo dicen.
 - Los títulos de las obras citadas se mantienen en su idioma original. Los
   enlaces apuntan a la versión en el idioma de la página cuando la fuente la
   tiene: las licencias Creative Commons en los cinco; la definición de obras
@@ -36,9 +37,11 @@ castellano escrito en el código.
   título traducido. En catalán y gallego el nombre coincide con el castellano.
 - La sigla VCER se mantiene en todos los idiomas; en inglés y euskera se aclara
   que procede del castellano.
-- El vídeo de la portada se queda en castellano: todas las portadas lo abren, y
-  el título de su ventana lo advierte. Si algún día se graba en otro idioma,
-  `video()` lo usa sin cambiar nada más.
+- El vídeo de la portada se graba en cada idioma. `animacion/traducir.py`
+  genera `zoom.<idioma>.html` a partir de `zoom.es.html`, el único que se edita,
+  con una tabla de sustituciones que avisa si un texto ya no está en el
+  original; luego `grabar.js` graba cada página. Si falta el vídeo de un idioma,
+  `video()` usa el castellano.
 - La infografía se genera en cada idioma con `infografia/generar.py`, y se
   convierte a PNG con `rsvg-convert` y la misma paleta reducida (64 colores).
 
@@ -55,8 +58,9 @@ infografía no deja a final de línea.
 - **Traducir con un servicio de traducción automática en la propia web.**
   Envía el texto a un tercero, no se puede revisar y no produce PDF ni archivos
   para la IA en cada idioma.
-- **Grabar el vídeo en cada idioma ahora.** Exige rehacer la animación y
-  regrabarla cinco veces por una pieza accesoria; se aplaza.
+- **Una copia de la animación por idioma, editada a mano.** Cinco archivos de
+  800 líneas que se separarían con el primer cambio; la tabla de traducciones
+  obliga a cambiar el original y deja ver qué falta traducir.
 - **Enlazar siempre las fuentes en castellano.** Contradice el criterio de
   enlazar en el idioma del texto cuando existe la versión.
 

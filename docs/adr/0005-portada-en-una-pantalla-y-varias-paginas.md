@@ -43,8 +43,8 @@ de los archivos de `contenido/<idioma>/` y el del menú:
    miniatura. La declaración de uso de IA («Cómo se ha elaborado») iba en letra
    pequeña al final del texto y pasó a «Créditos y licencias» (25-09-2026). La
    nota «Cómo citar», con la misma cita que la portada del PDF y
-   el DOI pendiente de la versión definitiva, está de momento en la página de
-   créditos (23-09-2026) y volverá a la portada. En el móvil todo va en una columna, con
+   el DOI de la versión, se queda en la página de créditos, que desde el
+   01-10-2026 está en el menú para que se encuentre (ADR 19). En el móvil todo va en una columna, con
    la infografía después de «Por qué esta guía».
 2. **Guía** (`01-guia.md`, `guia.html`): las diez recomendaciones.
 3. **Herramientas y niveles** (`02-herramientas.md`).
@@ -54,8 +54,14 @@ de los archivos de `contenido/<idioma>/` y el del menú:
    comprobación en `construir.py` de que no falta ni sobra ninguna. Es material
    de apoyo y por eso va al final del menú.
 
-Fuera del menú quedan **Créditos y licencias** (`03-creditos.md`), enlazada
-desde el pie, y los diez capítulos, que regula el
+6. **Créditos** (`03-creditos.md`, «Créditos y licencias»): licencias,
+   declaración de uso de IA, forma de citar, materiales ajenos y
+   agradecimientos. Estaba fuera del menú, enlazada solo desde el pie; se añadió
+   el 01-10-2026 porque Juanjo buscó la forma de citar en «Referencias» y no la
+   encontró. Se descartó moverla a las referencias, que recogen lo que la guía
+   cita y no la propia guía.
+
+Fuera del menú quedan los diez capítulos, que regula el
 [ADR 7](0007-capitulos-en-paginas-propias-con-una-sola-fuente.md). El pie ocupa
 una línea, con la autoría, las dos licencias y el enlace a los créditos.
 

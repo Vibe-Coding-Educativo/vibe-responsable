@@ -10,7 +10,7 @@ O código da web publícase coa licenza [GNU AGPL v3](https://www.gnu.org/licens
 
 ## Como se elaborou
 
-Esta guía elaborouse no nivel 4 do [Marco para a integración da IA xerativa nas tarefas educativas (MIAE)](https://jjdeharo.github.io/miae/?nivel=4), que corresponde á colaboración avanzada entre a persoa e a IA. O texto escribiuse en diálogo con Claude Code, e o autor dirixiu e corrixiu o contido, contrastou as afirmacións coas súas fontes e revisou o resultado. As traducións ao catalán, ao galego, ao éuscaro e ao inglés fixéronse coa mesma IA a partir do orixinal en castelán.
+Esta guía elaborouse no nivel 4 do [Marco para a integración da IA xerativa nas tarefas educativas (MIAE)](https://jjdeharo.github.io/miae/?nivel=4), que corresponde á colaboración avanzada entre a persoa e a IA. O texto escribiuse en diálogo con Claude Code, e o autor dirixiu e corrixiu o contido, contrastou as afirmacións coas súas fontes e revisou o resultado. As traducións ao catalán, ao galego, ao éuscaro e ao inglés fixéronse de forma automática coa mesma IA, a partir do orixinal en castelán, e non as revisou ningún tradutor profesional.
 
 ## Como citar
 

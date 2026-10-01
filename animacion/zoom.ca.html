@@ -1,0 +1,843 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later (código) AND CC-BY-SA-4.0 (textos) -->
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vibe coding responsable · Zoom infinit</title>
+<meta name="description" content="Animació de la guia «Vibe coding responsable» en un sol pla: un zoom infinit que entra al cursor d'una conversa amb la IA i recorre les deu recomanacions en quatre mons, l'un dins de l'altre.">
+<link rel="icon" href="../recursos/logo/favicon.svg" type="image/svg+xml">
+<!--
+  Segunda animación de la guía (ADR 17): un zoom infinito con tipografía cinética.
+  Cinco niveles, cada uno dentro de un objeto del anterior (el cursor, la pantalla de una tableta,
+  una tecla y el símbolo de Creative Commons). La cámara es un número z: la parte entera es el nivel
+  y la decimal, lo que se ha avanzado hacia el siguiente; cada nivel se escala alrededor del punto
+  fijo de su «portal», de modo que la entrada es continua, sin cortes.
+  Todo sale del tiempo, como en animacion.es.html: render(t) pinta un instante exacto, y grabar.js
+  lo convierte en vídeo. La música y los efectos se sintetizan con Web Audio.
+  Cada elemento se anima con fotogramas clave en data-k: «t:propiedades|t:propiedades…», con
+  o (opacidad), x e y (desplazamiento), s (escala), w (escala horizontal) y r (giro), y la curva
+  del tramo (eo, ei, eio, eb con rebote, lin). Los tiempos cuentan desde la llegada al nivel.
+  Iconos: Lucide (ISC; los derivados de Feather, MIT). Tipografía: Atkinson Hyperlegible (OFL).
+-->
+<style>
+@font-face { font-family: "Atkinson Hyperlegible"; src: url("../recursos/fuentes/atkinson-hyperlegible-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+@font-face { font-family: "Atkinson Hyperlegible"; src: url("../recursos/fuentes/atkinson-hyperlegible-700-normal.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+
+:root {
+  --papel: #fbfbf8; --hoja: #ffffff; --tinta: #16232b; --tinta-suave: #4d5b63; --raya: #dde3df;
+  --pizarra: #17453b; --tiza: #f3f1e7; --tiza-suave: #bcd2c9; --verde: #0f766e; --azul: #24508f; --marca: #e7f1ee;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --papel: #0f1c19; --hoja: #152722; --tinta: #e9ece6; --tinta-suave: #a9b8b1; --raya: #27413b;
+    --verde: #6fcdb9; --azul: #9bbcf2; --marca: #1c362f; }
+}
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; --papel: #0f1c19; --hoja: #152722; --tinta: #e9ece6; --tinta-suave: #a9b8b1; --raya: #27413b;
+  --verde: #6fcdb9; --azul: #9bbcf2; --marca: #1c362f; }
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; }
+body { min-height: 100svh; display: flex; flex-direction: column; background: var(--papel); color: var(--tinta);
+  font-family: "Atkinson Hyperlegible", system-ui, sans-serif; line-height: 1.5; }
+a { color: var(--verde); text-underline-offset: 0.16em; }
+:focus-visible { outline: 3px solid var(--azul); outline-offset: 2px; border-radius: 3px; }
+
+.barra { background: var(--pizarra); color: var(--tiza); }
+.barra-int, .pie-int, main { width: 100%; max-width: 64rem; margin-inline: auto; padding-inline: 16px; }
+.barra-int { display: flex; align-items: center; gap: 0.6rem; padding-block: 0.5rem; font-size: 0.95rem; }
+.barra a { color: var(--tiza); text-decoration: none; display: inline-flex; align-items: center; gap: 0.55rem; font-weight: 700; }
+.barra a:hover { text-decoration: underline; }
+.barra img { width: 1.6rem; height: 1.6rem; border-radius: 5px; }
+.barra span { color: var(--tiza-suave); }
+.barra :focus-visible { outline-color: var(--tiza); }
+main { flex: 1; display: flex; flex-direction: column; align-items: center; padding-block: 12px; }
+h1 { font-size: 1.15rem; margin: 0 0 8px; text-align: center; }
+.reproductor { --lado: min(calc(100vw - 32px), calc(100svh - 11.5rem), 62rem); width: var(--lado); }
+.marco { position: relative; width: var(--lado); height: var(--lado); overflow: hidden; border-radius: 10px; background: #0b1714;
+  box-shadow: 0 1px 2px rgba(22,35,43,.08), 0 8px 24px rgba(22,35,43,.08); }
+.empezar { position: absolute; left: 0; right: 0; bottom: 5%; margin-inline: auto; width: max-content; display: flex; align-items: center; gap: 0.5em;
+  font: inherit; font-size: clamp(0.85rem, 2.2vw, 1.3rem); font-weight: 700; padding: 0.55em 1.1em 0.55em 0.85em; border-radius: 999px; border: 0; cursor: pointer;
+  background: #f5c542; color: #1a1400; box-shadow: 0 6px 20px rgba(0,0,0,.35); z-index: 5; }
+.empezar:hover { background: #ffd35c; }
+.empezar svg { width: 1.4em; height: 1.4em; }
+.empezar[hidden] { display: none; }
+.controles { display: flex; align-items: center; gap: 6px; padding-top: 8px; }
+.controles button { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; padding: 0; border-radius: 6px;
+  border: 1px solid var(--raya); background: var(--hoja); color: var(--tinta); cursor: pointer; }
+.controles button:hover { background: var(--marca); }
+.controles svg { width: 1.25rem; height: 1.25rem; }
+.controles svg [hidden] { display: none; }
+.linea { position: relative; flex: 1; min-width: 4rem; height: 2.5rem; display: flex; align-items: center; }
+.linea input { width: 100%; margin: 0; accent-color: var(--verde); cursor: pointer; position: relative; z-index: 1; }
+.marcas { position: absolute; inset: 0; pointer-events: none; }
+.marcas i { position: absolute; top: calc(50% + 0.55rem); width: 2px; height: 0.4rem; background: var(--tinta-suave); opacity: .55; }
+.tiempo { flex: none; font-variant-numeric: tabular-nums; font-size: 0.9rem; color: var(--tinta-suave); min-width: 5.6rem; text-align: center; }
+.escena-actual { margin: 4px 0 0; font-size: 0.9rem; color: var(--tinta-suave); text-align: center; min-height: 1.4em; }
+@media (max-width: 30rem) { .tiempo { display: none; } }
+.pie { font-size: 0.85rem; color: var(--tinta-suave); border-top: 1px solid var(--raya); }
+.pie-int { padding-block: 0.6rem; display: flex; flex-wrap: wrap; gap: 0.2rem 1.2rem; }
+
+/* ─── Escenario: 1080 × 1080, escalado al marco ─── */
+.escenario { position: absolute; left: 0; top: 0; width: 1080px; height: 1080px; transform-origin: 0 0; overflow: hidden; background: #0b1714;
+  font-family: "Atkinson Hyperlegible", system-ui, sans-serif; line-height: 1.15; }
+.escenario * { margin: 0; }
+.camara { position: absolute; inset: 0; }
+.nivel { position: absolute; left: 0; top: 0; width: 1080px; height: 1080px; transform-origin: 0 0; overflow: hidden; }
+.k { position: absolute; transform-origin: 50% 50%; }
+.p { display: inline-block; transform-origin: 50% 70%; }
+.pl { white-space: pre-wrap; }
+.b { font-weight: 700; }
+.num { font-weight: 700; line-height: 0.9; -webkit-text-fill-color: transparent; -webkit-text-stroke: 6px currentColor; letter-spacing: -0.04em; }
+.cab { left: 60px; top: 44px; font-size: 24px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.tit { left: 330px; top: 130px; width: 700px; font-size: 62px; font-weight: 700; line-height: 1.1; }
+.ic { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.pastilla { padding: 10px 22px; border-radius: 999px; font-size: 30px; font-weight: 700; white-space: nowrap; }
+.cursor { display: inline-block; width: 40px; height: 40px; vertical-align: -6px; margin-left: 6px; background: #f3f1e7; border-radius: 4px; }
+.grano { position: absolute; inset: 0; pointer-events: none; opacity: .07; background-size: 256px 256px; mix-blend-mode: overlay; }
+.vineta { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at center, transparent 58%, rgba(0,0,0,.34) 100%); }
+
+/* Modos incrustado y de grabación, como en la primera animación */
+.incrustar body { background: var(--hoja); min-height: 0; }
+.incrustar .barra, .incrustar h1, .incrustar .escena-actual, .incrustar .pie { display: none !important; }
+.incrustar main { padding: 0; }
+.incrustar .reproductor { --lado: min(100vw, calc(100vh - 3.3rem)); }
+.incrustar .marco { border-radius: 6px; box-shadow: none; }
+.grabar .barra, .grabar h1, .grabar .controles, .grabar .escena-actual, .grabar .pie, .grabar .empezar { display: none !important; }
+.grabar main { padding: 0; }
+.grabar .reproductor { --lado: 1080px; }
+.grabar .marco { border-radius: 0; box-shadow: none; }
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-int">
+    <a href="../ca/index.html"><img src="../recursos/logo/favicon.svg" alt="">Vibe coding responsable</a>
+    <span>· Zoom infinit</span>
+  </div>
+</header>
+
+<main>
+<h1>La guia en un zoom infinit</h1>
+<div class="reproductor">
+  <div class="marco" id="marco">
+    <div class="escenario" id="escenario" role="img" aria-label="Animació en un sol pla sobre la guia Vibe coding responsable.">
+      <div class="camara" id="camara"></div>
+      <div class="grano" id="grano"></div>
+      <div class="vineta"></div>
+    </div>
+    <button class="empezar" id="empezar-btn" type="button"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></svg>Reprodueix amb so</button>
+  </div>
+
+  <div class="controles">
+    <button type="button" id="anterior" aria-label="Part anterior" title="Part anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.971 4.285A2 2 0 0 1 21 6v12a2 2 0 0 1-3.029 1.715l-9.997-5.998a2 2 0 0 1-.003-3.432z"/><path d="M3 20V4"/></svg></button>
+    <button type="button" id="play" aria-label="Reprodueix" title="Reprodueix (barra d'espai)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="i-play" d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/><g class="i-pausa" hidden><rect x="14" y="3" width="5" height="18" rx="1"/><rect x="5" y="3" width="5" height="18" rx="1"/></g><g class="i-otra" hidden><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></g></svg></button>
+    <button type="button" id="siguiente" aria-label="Part següent" title="Part següent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4v16"/><path d="M6.029 4.285A2 2 0 0 0 3 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z"/></svg></button>
+    <div class="linea"><input type="range" id="posicion" min="0" max="1000" step="1" value="0" aria-label="Posició a l'animació"><div class="marcas" id="marcas"></div></div>
+    <span class="tiempo" id="tiempo">0:00 / 0:00</span>
+    <button type="button" id="sonido" aria-label="Silencia" title="Silencia" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><g class="i-con"><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></g><g class="i-sin" hidden><path d="m16.5 14.5 5-5"/><path d="m16.5 9.5 5 5"/></g></svg></button>
+  </div>
+  <p class="escena-actual" id="escena-actual" aria-live="polite"></p>
+</div>
+
+</main>
+
+<footer class="pie">
+  <div class="pie-int">
+    <span>© 2026 <a href="https://bilateria.org" target="_blank" rel="noopener">Juan José de Haro</a>. Contingut: <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ca" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</span>
+    <span>Creada amb IA (<a href="https://jjdeharo.github.io/miae/?nivel=4" target="_blank" rel="noopener">nivell 4 del MIAE</a>): l'autor ha dirigit la feina i ha contrastat els textos amb la guia.</span>
+  </div>
+</footer>
+
+<script>
+"use strict";
+const parametros = new URLSearchParams(location.search);
+const grabando = parametros.has("grabar");
+if (grabando) document.documentElement.classList.add("grabar");
+if (parametros.has("incrustar")) document.documentElement.classList.add("incrustar");
+if (["light", "dark"].includes(parametros.get("tema"))) document.documentElement.dataset.theme = parametros.get("tema");
+const $ = id => document.getElementById(id);
+
+// ─── Utilidades de fotogramas clave ───
+const r2 = n => Math.round(n * 1000) / 1000;
+// Aparecer en t desde un estado («o0 y50») hasta el reposo; salir en t hacia otro estado.
+const A = (t, desde = "o0 y50", d = 0.55, e = "eb") => `${r2(t)}:${desde}|${r2(t + d)}:o1 x0 y0 s1 r0 w1 ${e}`;
+const S = (t, hacia = "o0 y-40", d = 0.45, e = "ei") => `|${r2(t)}:|${r2(t + d)}:${hacia} ${e}`;
+const ICONO = {
+  check: '<path d="M20 6 9 17l-5-5"/>',
+  x: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
+  escudo: '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
+  nube: '<path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>',
+  enlace: '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>',
+  roto: '<path d="m18.84 12.25 1.72-1.71h-.02a5.004 5.004 0 0 0-.12-7.07 5.006 5.006 0 0 0-6.95 0l-1.72 1.71"/><path d="m5.17 11.75-1.71 1.71a5.004 5.004 0 0 0 .12 7.07 5.006 5.006 0 0 0 6.95 0l1.71-1.71"/><path d="M8 2v3"/><path d="M2 8h3"/><path d="M16 19v3"/><path d="M19 16h3"/>',
+  imagen: '<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>',
+  musica: '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
+  cc: '<circle cx="12" cy="12" r="10"/><path d="M10 9.3a2.8 2.8 0 0 0-3.5 1 3.1 3.1 0 0 0 0 3.4 2.7 2.7 0 0 0 3.5 1"/><path d="M17 9.3a2.8 2.8 0 0 0-3.5 1 3.1 3.1 0 0 0 0 3.4 2.7 2.7 0 0 0 3.5 1"/>',
+  libro: '<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/><path d="m9 9.5 2 2 4-4"/>',
+};
+const svg = (nombre, px, color = "currentColor", grosor = 2) =>
+  `<svg class="ic" viewBox="0 0 24 24" width="${px}" height="${px}" style="color:${color};stroke-width:${grosor}" aria-hidden="true">${ICONO[nombre]}</svg>`;
+
+function E(padre, estilo, html, k, son, clase = "") {
+  const d = document.createElement("div");
+  d.className = ("k " + clase).trim();
+  d.style.cssText = estilo;
+  d.innerHTML = html;
+  if (k) d.dataset.k = k;
+  if (son) d.dataset.son = son;
+  padre.append(d);
+  return d;
+}
+// Palabras que entran una a una; «salida» (opcional) las retira en cascada.
+function palabras(padre, estilo, texto, t0, paso = 0.08, salida = null, desde = "o0 y44", clase = "") {
+  const d = E(padre, estilo, "", null, null, clase);
+  texto.split(" ").forEach((w, i) => {
+    const s = document.createElement("span");
+    s.className = "p"; s.textContent = w;
+    s.dataset.k = A(t0 + i * paso, desde, 0.5) + (salida != null ? S(salida + i * 0.015, "o0 y-36", 0.35) : "");
+    d.append(s, document.createTextNode(" "));
+  });
+  return d;
+}
+// Texto que se escribe letra a letra (con cursor opcional al final).
+const TECLEO = [];
+function escribir(padre, estilo, texto, t0, cps, conCursor = false, k = null) {
+  const d = E(padre, estilo, "", k, null, "pl");
+  [...texto].forEach((c, i) => {
+    const s = document.createElement("span");
+    s.textContent = c; s.dataset.t = r2(t0 + i / cps);
+    d.append(s); TECLEO.push(s);
+  });
+  if (conCursor) { const c = document.createElement("span"); c.className = "cursor"; d.append(c); d.cursor = c; }
+  d.fin = t0 + texto.length / cps;
+  return d;
+}
+
+// ─── Los cinco niveles: cada uno vive dentro del «portal» del anterior ───
+const camaraEl = $("camara");
+const NIVELES = [];
+function nivel(llegada, fondo, tinta) {
+  const el = document.createElement("div");
+  el.className = "nivel"; el.style.background = fondo; el.style.color = tinta;
+  camaraEl.append(el);
+  const n = { i: NIVELES.length, el, llegada };
+  NIVELES.push(n);
+  return n.el;
+}
+// Rótulo grande de fase al llegar, que se encoge en la cabecera del nivel.
+function fase(N, numero, verbo, resto, acento, suave) {
+  E(N, `left:0;top:350px;width:1080px;text-align:center;font-size:30px;font-weight:700;letter-spacing:.3em;color:${suave}`, `FASE ${numero} DE 4`, A(-1.0, "o0 y-30", 0.5, "eo") + S(1.9, "o0", 0.3));
+  E(N, `left:0;top:400px;width:1080px;text-align:center;font-size:170px;font-weight:700;letter-spacing:-.02em`, verbo, A(-0.9, "o0 s0.4", 0.6) + S(2.0, "o0 s1.8", 0.4));
+  E(N, `left:0;top:590px;width:1080px;text-align:center;font-size:96px;font-weight:700;color:${acento}`, resto, A(-0.6, "o0 s0.4", 0.6) + S(2.05, "o0 s1.8", 0.4));
+  E(N, `color:${suave}`, `${numero} · ${verbo} ${resto}`, A(2.2, "o0 x-40", 0.5, "eo"), null, "cab");
+}
+// Número gigante hueco y título de una recomendación.
+function recomendacion(N, n, titulo, t0, salida, acento, tamano = 400) {
+  E(N, `left:${n > 9 ? 20 : 40}px;top:92px;font-size:${tamano}px;color:${acento}`, String(n),
+    A(t0, "o0 s2.6 r-12", 0.5) + (salida != null ? S(salida, "o0 x-160 r-10", 0.4) : ""), `golpe@${t0}`, "num");
+  palabras(N, n > 9 ? "left:390px;top:130px;width:650px;font-size:60px;font-weight:700;line-height:1.1" : "", titulo, t0 + 0.3, 0.07, salida, "o0 y50", n > 9 ? "" : "tit");
+}
+
+// Nivel 0: la conversación con la IA
+const TINTA0 = "#f3f1e7", SUAVE0 = "#9fbab0", AMARILLO = "#f5c542";
+const N0 = nivel(0, "#0b1714", TINTA0);
+const prompt = escribir(N0, `left:80px;top:118px;width:940px;font-size:42px;color:${TINTA0}`, "› crea una simulació del cicle de l'aigua", 0.6, 15, true, "108.4:|109:o0 y-30 ei");
+prompt.cursor.dataset.portal = "rect"; prompt.cursor.dataset.radio = "4";
+E(N0, `left:80px;top:395px;font-size:26px;font-weight:700;letter-spacing:.22em;color:${SUAVE0}`, "VIBE CODING EDUCATIU", A(3.9, "o0 x-40", 0.5, "eo") + S(9.6, "o0", 0.3));
+E(N0, `left:80px;top:440px;font-size:200px;font-weight:700;letter-spacing:-.03em`, "La IA", A(4.1, "o0 s1.8", 0.45) + S(6.7, "o0 x-120", 0.35), "golpe@4.1");
+palabras(N0, "left:86px;top:670px;width:900px;font-size:74px;font-weight:700", "escriu el codi.", 4.6, 0.14, 6.7);
+E(N0, `left:80px;top:440px;font-size:160px;font-weight:700;letter-spacing:-.03em`, "La persona", A(7.0, "o0 s1.8", 0.45) + S(9.6, "o0 x-120", 0.35), "golpe@7");
+palabras(N0, "left:86px;top:640px;width:920px;font-size:62px;font-weight:700", "aporta la intenció pedagògica", 7.5, 0.1, 9.6);
+palabras(N0, `left:86px;top:720px;width:920px;font-size:62px;font-weight:700;color:${AMARILLO}`, "i comprova el resultat.", 8.3, 0.1, 9.6);
+palabras(N0, "left:80px;top:330px;width:940px;font-size:84px;font-weight:700", "Qui publica el material en respon,", 9.9, 0.09, 12.5);
+palabras(N0, `left:80px;top:680px;width:940px;font-size:84px;font-weight:700;color:${AMARILLO}`, "encara que el codi sigui de la IA.", 10.9, 0.1, 12.5);
+E(N0, `left:0;top:250px;width:1080px;text-align:center;font-size:330px;color:${AMARILLO}`, "10", A(12.6, "o0 s2.6 r-10", 0.45) + S(15.0, "o0", 0.2), "golpe@12.6", "num");
+E(N0, `left:0;top:600px;width:1080px;text-align:center;font-size:100px;font-weight:700;letter-spacing:-.02em`, "recomanacions", A(12.9, "o0 y50", 0.45) + S(15.0, "o0", 0.2));
+E(N0, `left:0;top:730px;width:1080px;text-align:center;font-size:52px;color:${AMARILLO};font-weight:700`, "abans de publicar", A(13.2, "o0 y40", 0.45) + S(15.0, "o0", 0.2));
+// El final, de vuelta en la conversación
+E(N0, `left:80px;top:96px;font-size:134px;font-weight:700;letter-spacing:-.03em;line-height:1`, "Vibe coding", A(109.1, "o0 s1.8", 0.5), "golpe@109.1");
+E(N0, `left:80px;top:230px;font-size:134px;font-weight:700;letter-spacing:-.03em;line-height:1;color:${AMARILLO}`, "responsable", A(109.45, "o0 s1.8", 0.5));
+E(N0, `left:84px;top:372px;font-size:84px;font-weight:400;letter-spacing:-.02em;line-height:1;color:#6fcdb9`, "Vibe coding ètic", A(109.8, "o0 x-40", 0.5, "eo"), "pop@109.8");
+E(N0, `left:84px;top:480px;font-size:28px;color:${SUAVE0}`, "Vibe coding educatiu responsable: materials…", A(110.4, "o0 x-30", 0.5, "eo"));
+[["segurs", "per a l'alumnat,"], ["accessibles,", ""], ["duradors,", ""], ["transparents", "sobre com es van fer"], ["i lliures", "perquè altres persones els reutilitzin."]]
+  .forEach(([a, b], i) => E(N0, `left:84px;top:${524 + i * 54}px;width:960px;font-size:48px;font-weight:700;white-space:nowrap`,
+    `${a} <span style="font-size:30px;font-weight:400;color:${SUAVE0}">${b}</span>`, A(110.9 + i * 0.4, "o0 x-70", 0.45), `pop@${r2(110.9 + i * 0.4)}`));
+E(N0, `left:84px;top:802px;width:920px;font-size:30px;line-height:1.3`, `<b style="color:${AMARILLO}">Per començar:</b> donar a la IA el fitxer d'instruccions i, en acabar, demanar-li l'avaluació VCER. La revisió del contingut correspon a la persona.`, A(113.4, "o0 y30", 0.5, "eo"));
+E(N0, `left:84px;top:934px;font-size:40px;font-weight:700;color:${AMARILLO}`, "vibe-coding-educativo.github.io/vibe-responsable", A(115.0, "o0 y30", 0.5), "chispa@115");
+E(N0, `left:84px;top:986px;width:920px;font-size:21px;line-height:1.4;color:${SUAVE0}`, "@jjdeharo · CC BY-SA 4.0 · Icones: Lucide (ISC i MIT) · Tipografia: Atkinson Hyperlegible (OFL)<br>Animació, música i so generats amb IA.", A(115.6, "o0", 0.6, "eo"));
+
+// Nivel 1: proteger al alumnado (dentro del cursor)
+const TIZA = "#f3f1e7", SUAVE1 = "#bcd2c9";
+const N1 = nivel(16, "#17453b", TIZA);
+fase(N1, 1, "Protegir", "l'alumnat", AMARILLO, SUAVE1);
+recomendacion(N1, 1, "Revisar el contingut sense delegar-lo a la IA", 2.4, 8.7, AMARILLO);
+const tarjeta = E(N1, "left:150px;top:470px;width:780px;height:240px;background:#f3f1e7;color:#16232b;border-radius:24px;box-shadow:0 20px 50px rgba(0,0,0,.35)",
+  `<p style="position:absolute;left:36px;top:30px;font-size:22px;font-weight:700;letter-spacing:.14em;color:#0f766e">PREGUNTA DEL QÜESTIONARI</p>
+   <p style="position:absolute;left:36px;top:72px;width:700px;font-size:40px;font-weight:700;line-height:1.2">L'aigua bull a 90 °C al nivell del mar.</p>`,
+  A(3.9, "o0 y90 r4", 0.55) + S(8.7, "o0 y60 r-3", 0.4), "pop@3.9");
+E(tarjeta, "left:430px;top:160px;background:#0f766e;color:#fff", `${svg("check", 30, "#fff", 3)} Vertader`, A(4.7, "o0 s2.4 r-10", 0.35) + S(5.9, "o0 s0.6", 0.2), "sello@4.7", "pastilla");
+E(tarjeta, "left:380px;top:150px;background:#b42318;color:#fff;font-size:38px;padding:12px 26px", `${svg("x", 36, "#fff", 3)} Error`, A(6.0, "o0 s3 r14", 0.3), "sello@6", "pastilla");
+E(tarjeta, "left:30px;top:118px;width:470px;height:6px;background:#b42318;border-radius:3px;transform-origin:0 50%", "", "6.1:w0|6.35:w1 eo");
+palabras(N1, "left:60px;top:760px;width:960px;font-size:42px;font-weight:700", "La IA es pot equivocar amb tota naturalitat.", 5.0, 0.07, 8.7);
+palabras(N1, `left:60px;top:840px;width:960px;font-size:36px;color:${AMARILLO}`, "La responsabilitat del que s'ensenya és de la persona que ho publica.", 6.8, 0.06, 8.7);
+recomendacion(N1, 2, "No enviar dades personals a serveis aliens al centre", 9.2, null, AMARILLO);
+palabras(N1, "left:60px;top:470px;width:470px;font-size:38px;line-height:1.25", "La manera més senzilla de complir: que el material no demani dades.", 13.4, 0.06);
+E(N1, `left:720px;top:420px;width:300px;text-align:center;color:${SUAVE1};font-size:22px`, `${svg("nube", 170, SUAVE1, 1.5)}<p>servei aliè al centre</p>`, A(10.3, "o0 y-40", 0.5));
+E(N1, "left:596px;top:560px", svg("escudo", 110, AMARILLO, 2.2), A(11.4, "o0 s2.6 r-20", 0.35), "bloqueo@11.4");
+const tableta = E(N1, "left:375px;top:740px;width:330px;height:258px;background:#0b1714;border:3px solid #bcd2c9;border-radius:28px",
+  `<div style="position:absolute;left:18px;top:18px;width:288px;height:216px;background:#f3f1e7;border-radius:10px"></div>`, A(10.0, "o0 y90", 0.55));
+const pantalla = document.createElement("div");
+pantalla.style.cssText = "position:absolute;left:54px;top:18px;width:216px;height:216px";
+pantalla.dataset.portal = "rect"; pantalla.dataset.radio = "10";
+tableta.append(pantalla);
+E(N1, `left:730px;top:860px;width:300px;font-size:28px;font-weight:700;color:${AMARILLO}`, "Les dades, només al dispositiu.", A(13.0, "o0 x40", 0.5, "eo"));
+// Los datos salen hacia el servicio ajeno, rebotan en el escudo y vuelven a la tableta.
+["nom", "notes", "veu", "imatge"].forEach((dato, i) => {
+  const sal = 10.8 + i * 0.22, choque = sal + 0.62, vuelta = choque + 0.75;
+  const dy = -130 + i * 34, dx = 120 - i * 18;
+  E(N1, `left:${470 - i * 10}px;top:720px;background:${AMARILLO};color:#16232b`, dato,
+    `${r2(sal)}:o0 s0.3|${r2(sal + 0.2)}:o1 s1 eo|${r2(choque)}:x${dx} y${dy} r${8 - i * 5} ei|${r2(choque + 0.3)}:x${dx - 70} y${dy + 40} r${-14 + i * 6} eo|${r2(vuelta)}:x${-20 + i * 12} y70 s0.35 r0 o0 ei`,
+    `pop@${r2(sal)} rebote@${r2(choque)}`, "pastilla");
+});
+
+// Nivel 2: construir el material (dentro de la pantalla de la tableta)
+const TINTA2 = "#16232b", VERDE = "#0f766e", SUAVE2 = "#4d5b63";
+const N2 = nivel(34, "#f3f1e7", TINTA2);
+fase(N2, 2, "Construir", "el material", VERDE, SUAVE2);
+recomendacion(N2, 3, "Entendre què fa el material", 2.4, 8.7, VERDE);
+const codigo = E(N2, "left:60px;top:440px;width:600px;height:292px;background:#0b1714;border-radius:18px;padding:26px 28px;font-size:25px;line-height:1.55;color:#e9ece6;white-space:pre",
+  `<span style="color:#9bbcf2">function</span> comprova(resposta) {
+  <span style="color:#9bbcf2">const</span> be = resposta === solucio;
+  mostra(be ? <span style="color:#f5c542">"Correcte!"</span> : <span style="color:#f5c542">"Revisa"</span>);
+}
+localStorage.setItem(<span style="color:#f5c542">"progres"</span>, nivell);
+<span style="color:#7f9a92">// sense connexions a servidors externs</span>`, A(3.4, "o0 x-90", 0.55) + S(8.7, "o0 x-90", 0.4));
+[[0, 4, 3.9], [4, 1, 4.5], [5, 1, 5.1]].forEach(([desde, filas, t]) =>
+  E(codigo, `left:14px;top:${22 + desde * 38.75}px;width:572px;height:${filas * 38.75}px;background:rgba(245,197,66,.16);border-left:5px solid #f5c542;border-radius:4px;transform-origin:0 50%`, "", `${t}:w0 o0|${r2(t + 0.35)}:w1 o1 eo`));
+[["Què fa", "comprova les respostes", 3.9, 452], ["Què guarda", "el progrés, al dispositiu", 4.5, 572], ["Amb què es comunica", "amb cap servidor extern", 5.1, 692]]
+  .forEach(([a, b, t, y]) => E(N2, `left:690px;top:${y}px;width:340px;font-size:24px;line-height:1.25;border-left:5px solid ${VERDE};padding-left:14px`,
+    `<b style="font-size:28px;color:${VERDE}">${a}</b><br>${b}`, A(t, "o0 x60", 0.45) + S(8.7, "o0 x60", 0.35), `pop@${t}`));
+palabras(N2, "left:60px;top:790px;width:960px;font-size:36px;line-height:1.28", "No cal saber programar: n'hi ha prou de demanar a la IA que ho expliqui en llenguatge planer i comprovar-ho en fer-lo servir.", 5.8, 0.05, 8.7);
+
+recomendacion(N2, 4, "No dependre de serveis que poden desaparèixer", 9.2, 15.6, VERDE);
+const plataforma = E(N2, `left:90px;top:430px;width:420px;height:280px;text-align:center;color:${SUAVE2}`,
+  `${svg("nube", 280, SUAVE2, 1.4)}<div style="position:absolute;left:140px;top:120px;width:140px;height:96px;background:${VERDE};border-radius:14px;display:grid;place-items:center">${svg("libro", 52, "#fff", 2)}</div><p style="position:absolute;left:0;top:246px;width:420px;font-size:24px">la plataforma on es va crear</p>`,
+  A(10.2, "o0 y-40", 0.5) + "|12.2:|12.35:s1.12 eo|12.8:o0 s1.9 ei", "apagar@12.3");
+E(N2, `left:540px;top:520px;background:#fff;border:3px solid ${VERDE};color:${VERDE}`, `${svg("enlace", 30, VERDE, 2.4)} enllaç compartit`, A(10.8, "o0 x-40", 0.45) + S(12.4, "o0 y30 r20", 0.3), null, "pastilla");
+E(N2, "left:560px;top:520px;background:#b42318;color:#fff", `${svg("roto", 30, "#fff", 2.4)} enllaç trencat`, A(12.6, "o0 s2 r-10", 0.35) + S(15.6, "o0 y30", 0.35), "bloqueo@12.6", "pastilla");
+const portatil = E(N2, "left:600px;top:600px;width:400px;height:250px",
+  `<div style="position:absolute;left:30px;top:0;width:340px;height:210px;background:#16232b;border-radius:14px;border:3px solid #16232b"></div>
+   <div style="position:absolute;left:0;top:210px;width:400px;height:22px;background:#4d5b63;border-radius:0 0 18px 18px"></div>`, A(13.1, "o0 y60", 0.5) + S(15.6, "o0 y60", 0.35));
+E(portatil, `left:120px;top:40px;width:160px;height:110px;background:${VERDE};border-radius:14px;display:grid;place-items:center`, svg("libro", 56, "#fff", 2), A(13.6, "o0 s0.3 r-20", 0.5), "chispa@13.6");
+E(portatil, "left:60px;top:160px;width:280px;text-align:center;color:#f3f1e7;font-size:20px", "còpia del codi", A(13.9, "o0", 0.4, "eo"));
+palabras(N2, "left:60px;top:880px;width:520px;font-size:34px;line-height:1.25", "L'enllaç compartit dura el que l'empresa decideixi.", 10.9, 0.06, 13.6);
+palabras(N2, `left:60px;top:880px;width:520px;font-size:34px;line-height:1.25;font-weight:700;color:${VERDE}`, "Per això, una còpia del codi a l'ordinador propi.", 14.1, 0.06, 15.6, "o0 y44");
+
+recomendacion(N2, 5, "Fer-lo accessible a qualsevol persona", 16.2, null, VERDE);
+const teclas = E(N2, "left:60px;top:450px;width:320px;height:300px", `
+  <div style="position:absolute;left:0;top:30px;width:150px;height:108px;background:#fff;border:3px solid #16232b;border-bottom-width:9px;border-radius:18px;display:grid;place-items:center;font-size:36px;font-weight:700">Tab</div>
+  <div style="position:absolute;left:170px;top:30px;width:108px;height:108px;background:#24508f;border-radius:18px;display:grid;place-items:center;font-size:56px;color:#fff;font-weight:700">⏎</div>
+  <p style="position:absolute;left:0;top:190px;width:300px;font-size:30px;font-weight:700">sense ratolí</p>`, A(17.2, "o0 y60", 0.5), "pop@17.2");
+const tecla = document.createElement("div");
+tecla.style.cssText = "position:absolute;left:170px;top:30px;width:108px;height:108px";
+tecla.dataset.portal = "rect"; tecla.dataset.radio = "18";
+teclas.append(tecla);
+E(teclas, "left:-8px;top:22px;width:166px;height:124px;border:5px solid #f5c542;border-radius:24px", "", "17.9:o0|18.1:o1 eo|18.9:x149 w0.76 eio|19.3:o1|19.6:o0.9");
+E(N2, "left:400px;top:470px;width:300px;height:300px", `
+  <div style="position:absolute;left:0;top:10px;background:#0f766e;color:#fff;font-size:30px;font-weight:700;padding:10px 20px;border-radius:12px">${svg("check", 28, "#fff", 3)} Correcte</div>
+  <div style="position:absolute;left:0;top:90px;background:#b42318;color:#fff;font-size:30px;font-weight:700;padding:10px 20px;border-radius:12px">${svg("x", 28, "#fff", 3)} Error</div>
+  <p style="position:absolute;left:0;top:170px;width:290px;font-size:30px;font-weight:700;line-height:1.2">sense dependre del color</p>`, A(18.3, "o0 y60", 0.5), "pop@18.3");
+E(N2, "left:740px;top:430px;width:300px;height:340px", `
+  <div style="position:absolute;left:70px;top:0;width:150px;height:260px;background:#16232b;border-radius:26px">
+    <div style="position:absolute;left:12px;top:22px;width:126px;height:210px;background:#fff;border-radius:10px;padding:14px 10px;font-size:15px;line-height:1.3;color:#16232b"><b style="font-size:19px">Cicle de l'aigua</b><br>Evaporació, condensació i precipitació.</div></div>
+  <p style="position:absolute;left:0;top:280px;width:300px;text-align:center;font-size:30px;font-weight:700;line-height:1.2">en una pantalla petita</p>`, A(19.3, "o0 y60", 0.5), "pop@19.3");
+palabras(N2, `left:60px;top:850px;width:960px;font-size:36px;line-height:1.28`, "Demanar a la IA, des del principi, que segueixi les pautes d'accessibilitat.", 20.4, 0.06);
+
+// Nivel 3: documentar el trabajo (dentro de la tecla)
+const BLANCO = "#ffffff", SUAVE3 = "#c9d7f2";
+const N3 = nivel(60, "#24508f", BLANCO);
+fase(N3, 3, "Documentar", "la feina", AMARILLO, SUAVE3);
+recomendacion(N3, 6, "Citar l'autoria del que es pren d'altres persones", 2.4, 8.7, AMARILLO);
+[["imagen", "imatge"], ["musica", "so"], [null, "tipografia"]].forEach(([ic, nombre], i) => {
+  const x = 80 + i * 320, t = 3.6 + i * 0.3;
+  E(N3, `left:${x}px;top:450px;width:280px;height:190px;background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.35);border-radius:20px;display:grid;place-items:center;text-align:center;font-size:24px`,
+    `<div>${ic ? svg(ic, 86, BLANCO, 1.6) : '<span style="font-size:84px;font-weight:700;line-height:1">Aa</span>'}<p style="margin-top:8px">${nombre}</p></div>`, A(t, "o0 y70 r-4", 0.5) + S(8.7, "o0 y40", 0.35), `pop@${r2(t)}`);
+  E(N3, `left:${x + 10}px;top:660px;width:260px;background:#fff;color:#16232b;border-radius:14px;padding:12px 16px;font-size:23px;line-height:1.35;box-shadow:0 10px 24px rgba(0,0,0,.25)`,
+    "<b>Autoria</b><br><b>Procedència</b><br><b>Llicència</b>", A(4.8 + i * 0.35, "o0 y-60 r6", 0.45) + S(8.7, "o0 y40", 0.35), `sello@${r2(4.8 + i * 0.35)}`);
+});
+palabras(N3, `left:80px;top:880px;width:940px;font-size:38px;color:${AMARILLO};font-weight:700`, "Tenen autoria i llicència, encara que els hi hagi posat la IA.", 6.2, 0.06, 8.7);
+
+recomendacion(N3, 7, "Guardar el rastre de com es va fer", 9.2, 15.6, AMARILLO);
+E(N3, `left:108px;top:440px;width:6px;height:380px;background:${SUAVE3};border-radius:3px;transform-origin:50% 0`, "", "10.1:o0|10.2:o1" + S(15.6, "o0", 0.35));
+[["Les dades es guarden només al dispositiu.", "Perquè són dades de l'alumnat."],
+ ["Icones d'una biblioteca amb llicència lliure.", "Perquè es poden reutilitzar i citar."],
+ ["Sense comptes d'usuari.", "Perquè així l'alumnat no s'ha de registrar."]].forEach(([dec, por], i) => {
+  const t = 10.4 + i * 0.8, y = 440 + i * 128;
+  E(N3, `left:92px;top:${y + 8}px;width:38px;height:38px;border-radius:50%;background:${AMARILLO};border:6px solid #24508f`, "", A(t, "o0 s0", 0.35) + S(15.6, "o0", 0.3), `pop@${r2(t)}`);
+  E(N3, `left:160px;top:${y}px;width:860px;font-size:32px;line-height:1.3`, `<b>${dec}</b><br><span style="color:${SUAVE3};font-size:27px">${por}</span>`, A(t + 0.1, "o0 x60", 0.45) + S(15.6, "o0 y-30", 0.35));
+});
+palabras(N3, "left:80px;top:870px;width:940px;font-size:36px;line-height:1.28", "El redacta la mateixa IA en acabar cada sessió; la persona el revisa.", 13.0, 0.06, 15.6);
+
+recomendacion(N3, 8, "Declarar l'ús d'IA i el que s'ha comprovat", 16.2, null, AMARILLO);
+const ventana = E(N3, "left:70px;top:440px;width:940px;height:370px;background:#fff;border-radius:18px;box-shadow:0 20px 50px rgba(0,0,0,.35);color:#16232b", `
+  <div style="position:absolute;left:0;top:0;width:940px;height:48px;background:#e9ece6;border-radius:18px 18px 0 0"></div>
+  <div style="position:absolute;left:24px;top:16px;width:16px;height:16px;border-radius:50%;background:#b42318"></div>
+  <div style="position:absolute;left:50px;top:16px;width:16px;height:16px;border-radius:50%;background:#f5c542"></div>
+  <div style="position:absolute;left:76px;top:16px;width:16px;height:16px;border-radius:50%;background:#0f766e"></div>
+  <div style="position:absolute;left:40px;top:80px;width:420px;height:30px;border-radius:6px;background:#16232b"></div>
+  <div style="position:absolute;left:40px;top:130px;width:780px;height:18px;border-radius:6px;background:#dde3df"></div>
+  <div style="position:absolute;left:40px;top:162px;width:700px;height:18px;border-radius:6px;background:#dde3df"></div>
+  <div style="position:absolute;left:40px;top:194px;width:740px;height:18px;border-radius:6px;background:#dde3df"></div>
+  <div style="position:absolute;left:0;top:250px;width:940px;height:2px;background:#dde3df"></div>`, A(17.2, "o0 y80", 0.55), "pop@17.2");
+escribir(ventana, "left:40px;top:268px;width:760px;font-size:25px;line-height:1.35;color:#16232b", "Creat amb IA. Comprovat: els continguts, el funcionament i el tractament de les dades.", 18.0, 32);
+const cc = E(ventana, `left:820px;top:262px;width:96px;height:96px;border-radius:50%;background:${AMARILLO};display:grid;place-items:center`, svg("cc", 72, "#16232b", 1.8), A(21.0, "o0 s2.4 r-40", 0.4), "sello@21");
+cc.dataset.portal = "circulo";
+palabras(N3, "left:80px;top:860px;width:940px;font-size:36px;line-height:1.28", "Qui el reutilitzi ho ha de saber per decidir fins a quin punt se'n pot refiar.", 21.4, 0.06);
+
+// Nivel 4: compartir el material (dentro del símbolo de Creative Commons)
+const TINTA4 = "#16232b", PIZARRA = "#17453b", SUAVE4 = "#5b4a12";
+const N4 = nivel(86, "#f5c542", TINTA4);
+fase(N4, 4, "Compartir", "el material", PIZARRA, SUAVE4);
+recomendacion(N4, 9, "Publicar amb una llicència lliure a la vista", 2.4, 8.7, PIZARRA);
+[["Codi", ["AGPL v3", "MIT"], "programari lliure", 90, 3.8], ["Continguts", ["CC BY-SA", "CC BY"], "Creative Commons lliure", 560, 4.3]].forEach(([a, b, c, x, t]) =>
+  E(N4, `left:${x}px;top:430px;width:430px;height:300px;background:${PIZARRA};color:#f3f1e7;border-radius:24px;padding:30px 34px`,
+    `<p style="font-size:26px;color:#bcd2c9;font-weight:700;letter-spacing:.1em">${a.toUpperCase()}</p><p style="font-size:52px;font-weight:700;margin-top:14px;line-height:1.1;white-space:nowrap">${b.join("<br>")}</p><p style="font-size:26px;margin-top:22px;color:#bcd2c9">${c}</p>`,
+    A(t, "o0 y80 r-3", 0.5) + S(8.7, "o0 y60", 0.35), `golpe@${t}`));
+palabras(N4, "left:90px;top:760px;width:900px;font-size:40px;line-height:1.25;font-weight:700", "Sense llicència, un material no es pot reutilitzar amb seguretat, encara que estigui publicat.", 5.6, 0.06, 8.7);
+
+recomendacion(N4, 10, "Oferir el codi perquè altres persones l'adaptin", 9.2, null, PIZARRA, 290);
+// Una copia se divide en dos, cuatro… hasta 256, cada una de un color: cada aula la adapta.
+const OLA0 = 10.9, OLA = 0.55, OLAS = 9, AREA = { x: 60, y: 420, w: 960, h: 570 };
+const COLORES = ["#17453b", "#0f766e", "#24508f", "#16232b", "#8a5a00", "#b42318"];
+function hueco(w, i) {
+  const n = 2 ** w, cols = Math.ceil(Math.sqrt(n * AREA.w / AREA.h)), filas = Math.ceil(n / cols);
+  const celda = Math.min(AREA.w / cols, AREA.h / filas);
+  const ox = AREA.x + (AREA.w - cols * celda) / 2, oy = AREA.y + (AREA.h - filas * celda) / 2;
+  const cx = ox + (i % cols + 0.5) * celda, cy = oy + (Math.floor(i / cols) + 0.5) * celda;
+  return `x${r2(cx - 50)} y${r2(cy - 50)} s${r2(celda * 0.84 / 100)}`;
+}
+for (let i = 0; i < 2 ** (OLAS - 1); i++) {
+  const nace = i === 0 ? 0 : Math.floor(Math.log2(i)) + 1, madre = i === 0 ? 0 : i - 2 ** (nace - 1);
+  let k = nace === 0 ? `${OLA0}:o0 ${hueco(0, 0)} s0.4|${r2(OLA0 + 0.45)}:o1 ${hueco(0, 0)} eb`
+    : `${r2(OLA0 + nace * OLA - 0.01)}:o0 ${hueco(nace - 1, madre)}|${r2(OLA0 + nace * OLA)}:o1 ${hueco(nace - 1, madre)} lin|${r2(OLA0 + nace * OLA + 0.42)}:o1 ${hueco(nace, i)} eio`;
+  for (let w = nace + 1; w < OLAS; w++) k += `|${r2(OLA0 + w * OLA)}:|${r2(OLA0 + w * OLA + 0.42)}:${hueco(w, i)} eio`;
+  E(N4, `left:0;top:0;width:100px;height:100px;border-radius:14px;background:${COLORES[i % COLORES.length]}`,
+    `<div style="position:absolute;left:10px;top:10px;width:80px;height:16px;border-radius:4px;background:rgba(255,255,255,.55)"></div>
+     <div style="position:absolute;left:10px;top:36px;width:58px;height:9px;border-radius:3px;background:rgba(255,255,255,.35)"></div>
+     <div style="position:absolute;left:10px;top:52px;width:70px;height:9px;border-radius:3px;background:rgba(255,255,255,.35)"></div>
+     <svg class="ic" viewBox="0 0 24 24" style="position:absolute;right:8px;bottom:6px;width:30px;height:30px;color:#f5c542;stroke-width:3">${ICONO.check}</svg>`, k);
+}
+// Las primeras palabras del título se retiran para dejar sitio a las copias.
+E(N4, `left:70px;top:770px;width:940px;background:${TINTA4};color:#f3f1e7;border-radius:22px;padding:26px 34px;font-size:42px;font-weight:700;line-height:1.25;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.4)`,
+  "Una altra persona el pot adaptar a la seva aula sense demanar res a ningú.", A(OLA0 + OLAS * OLA + 0.4, "o0 s0.7 y40", 0.55), `chispa@${r2(OLA0 + OLAS * OLA + 0.4)}`);
+
+// ─── Línea de tiempo de la cámara ───
+const TOTAL = 122;
+const CAPITULOS = [[0, "Inici"], [16, "Protegir l'alumnat"], [34, "Construir el material"], [60, "Documentar la feina"], [86, "Compartir el material"], [104, "Final"]];
+// Portales: posición y tamaño de cada nivel dentro del anterior, medidos en el propio documento.
+function medir() {
+  for (const s of TECLEO) s.style.display = "";
+  for (let i = 1; i < NIVELES.length; i++) {
+    const p = NIVELES[i - 1].el.querySelector("[data-portal]");
+    let x = 0, y = 0, e = p;
+    // offsetLeft cuenta desde el interior del borde del contenedor: se suma ese borde.
+    while (e && e !== NIVELES[i - 1].el) { const pa = e.offsetParent; x += e.offsetLeft + (pa ? pa.clientLeft : 0); y += e.offsetTop + (pa ? pa.clientTop : 0); e = pa; }
+    Object.assign(NIVELES[i], { px: x, py: y, K: 1080 / p.offsetWidth, forma: p.dataset.portal, radio: parseFloat(p.dataset.radio || "0") });
+  }
+}
+medir();
+// Empuje lento dentro de cada nivel (como mucho un 3,5 %) y zoom de dos segundos al siguiente.
+const deriva = i => Math.log(1.035) / Math.log(i < NIVELES.length - 1 ? NIVELES[i + 1].K : 10);
+function puntosCamara() {
+  const L = NIVELES.map(n => n.llegada);
+  return [[0, 0], [14, deriva(0)], [L[1], 1, "eio"], [32, 1 + deriva(1)], [L[2], 2, "eio"], [58, 2 + deriva(2)], [L[3], 3, "eio"],
+    [84, 3 + deriva(3)], [L[4], 4, "eio"], [104, 4 + deriva(4)], [108, 0, "eio"], [TOTAL, 0]];
+}
+let PUNTOS = puntosCamara();
+const CURVAS = {
+  eo: u => 1 - Math.pow(1 - u, 3), ei: u => u * u * u, lin: u => u,
+  eio: u => (u < 0.5 ? 4 * u * u * u : 1 - Math.pow(-2 * u + 2, 3) / 2),
+  eb: u => { const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(u - 1, 3) + c1 * Math.pow(u - 1, 2); },
+};
+function zEn(t) {
+  for (let i = 0; i < PUNTOS.length - 1; i++) {
+    const [t0, z0] = PUNTOS[i], [t1, z1, c] = PUNTOS[i + 1];
+    if (t <= t1) { const u = Math.max(0, (t - t0) / (t1 - t0)); return z0 + (z1 - z0) * CURVAS[c || "lin"](u); }
+  }
+  return PUNTOS.at(-1)[1];
+}
+
+// ─── Fotogramas clave ───
+const BASE = { o: 1, x: 0, y: 0, s: 1, r: 0, w: 1 };
+function leerK(texto) {
+  let previo = BASE;
+  return texto.split("|").map(seg => {
+    const [t, resto = ""] = seg.split(":");
+    let c = "eo";
+    const propio = {};
+    for (const tok of resto.trim().split(/\s+/).filter(Boolean)) {
+      if (tok in CURVAS) c = tok; else propio[tok[0]] = parseFloat(tok.slice(1));
+    }
+    previo = { ...previo, ...propio };
+    return { t: parseFloat(t), c, v: previo };
+  });
+}
+for (const n of NIVELES) {
+  n.animados = [...n.el.querySelectorAll("[data-k]")].map(el => ({ el, k: leerK(el.dataset.k) }));
+  n.tecleo = [...n.el.querySelectorAll("[data-t]")];
+  n.cursor = n.el.querySelector(".cursor");
+}
+function valor(k, lt) {
+  if (lt <= k[0].t) return k[0].v;
+  for (let i = 0; i < k.length - 1; i++) {
+    if (lt < k[i + 1].t) {
+      const u = CURVAS[k[i + 1].c]((lt - k[i].t) / (k[i + 1].t - k[i].t)), a = k[i].v, b = k[i + 1].v, v = {};
+      for (const p in BASE) v[p] = a[p] + (b[p] - a[p]) * u;
+      return v;
+    }
+  }
+  return k.at(-1).v;
+}
+
+// ─── Temblor de cámara en cada golpe, grano de película ───
+const GOLPES = [];
+const grano = $("grano");
+(function hacerGrano() {
+  const c = document.createElement("canvas"); c.width = c.height = 256;
+  const g = c.getContext("2d"), img = g.createImageData(256, 256), r = azar(3);
+  for (let i = 0; i < img.data.length; i += 4) { const v = r() * 255; img.data[i] = img.data[i + 1] = img.data[i + 2] = v; img.data[i + 3] = 255; }
+  g.putImageData(img, 0, 0); grano.style.backgroundImage = `url(${c.toDataURL()})`;
+})();
+function azar(semilla) { return () => { semilla |= 0; semilla = semilla + 0x6D2B79F5 | 0; let t = Math.imul(semilla ^ semilla >>> 15, 1 | semilla); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+
+// ─── Pintar un instante ───
+const reducido = !grabando && matchMedia("(prefers-reduced-motion: reduce)").matches;
+function render(t) {
+  const z = Math.max(0, Math.min(NIVELES.length - 1 + 0.2, zEn(t)));
+  const i0 = Math.min(Math.floor(z), NIVELES.length - 1), f = z - i0;
+  // Transformación del nivel actual: se escala alrededor del punto fijo de su portal.
+  let m, bx, by;
+  if (i0 < NIVELES.length - 1) {
+    const h = NIVELES[i0 + 1], cx = h.px / (1 - 1 / h.K), cy = h.py / (1 - 1 / h.K);
+    m = Math.pow(h.K, f); bx = cx * (1 - m); by = cy * (1 - m);
+  } else { m = Math.pow(10, f); bx = 540 * (1 - m); by = 540 * (1 - m); }
+  NIVELES.forEach((n, j) => {
+    const s = n.el.style;
+    if (j < i0 || j > i0 + 1) { s.visibility = "hidden"; return; }
+    if (j === i0 + 1) { bx = m * n.px + bx; by = m * n.py + by; m = m / n.K; }
+    s.visibility = "visible";
+    s.transform = `translate(${bx}px,${by}px) scale(${m})`;
+    if (j === i0) { s.opacity = 1; s.clipPath = "none"; }
+    else {
+      s.opacity = Math.min(1, Math.max(0, (f - deriva(i0)) / 0.22));
+      const u = CURVAS.eio(Math.min(1, f));
+      s.clipPath = n.forma === "circulo" ? `circle(${540 + 230 * u}px at 50% 50%)` : `inset(0 round ${n.radio * n.K * (1 - u)}px)`;
+    }
+    const lt = t - n.llegada;
+    for (const a of n.animados) {
+      const v = valor(a.k, lt), st = a.el.style;
+      st.opacity = v.o; st.visibility = v.o <= 0.001 ? "hidden" : "";
+      if (v.o <= 0.001) continue;
+      st.transform = reducido ? "" : `translate(${v.x}px,${v.y}px) rotate(${v.r}deg) scale(${v.s * v.w},${v.s})`;
+    }
+    for (const c of n.tecleo) c.style.display = lt >= parseFloat(c.dataset.t) ? "" : "none";
+    if (n.cursor) n.cursor.style.opacity = (lt > prompt.fin && Math.floor(lt * 2.4) % 2) ? 0.15 : 1;
+  });
+  let sx = 0, sy = 0;
+  if (!reducido) for (const g of GOLPES) { const d = t - g; if (d > 0 && d < 0.5) { const a = 9 * Math.exp(-d * 9); sx += a * Math.sin(d * 70); sy += a * Math.cos(d * 55); } }
+  camaraEl.style.transform = `translate(${sx}px,${sy}px) scale(1.02)`;
+  grano.style.backgroundPosition = `${(Math.floor(t * 24) * 73) % 256}px ${(Math.floor(t * 24) * 151) % 256}px`;
+}
+
+// ─── Sonido: electrónica a 120 pulsaciones, sintetizada ───
+// La menor: La m – Fa – Do – Sol, un acorde por compás (2 s). Cada inmersión lleva un
+// crescendo de ruido y un impacto al llegar; la vuelta atrás, un «rebobinado».
+const NEGRA = 0.5, COMPAS = 2;
+const hz = m => 440 * Math.pow(2, (m - 69) / 12);
+const ACORDES = [
+  { bajo: 33, pad: [57, 60, 64, 69], arp: [69, 72, 76, 81] },
+  { bajo: 29, pad: [57, 60, 65, 69], arp: [65, 69, 72, 77] },
+  { bajo: 36, pad: [55, 60, 64, 67], arp: [67, 72, 76, 79] },
+  { bajo: 31, pad: [55, 59, 62, 67], arp: [67, 71, 74, 79] },
+];
+const ZOOMS = [14, 32, 58, 84];
+const LLEGADAS = NIVELES.map(n => n.llegada);
+function seccion(t) {
+  if (t < 16) return 0;
+  if (ZOOMS.some(z => t >= z && t < z + 2)) return -1;
+  if (t >= 104 && t < 108) return -2;
+  if (t >= 108) return 5;
+  return LLEGADAS.filter(l => t >= l).length - 1;
+}
+function eventos() {
+  const ev = [];
+  for (let b = 0; b < TOTAL / COMPAS; b++) {
+    const t = b * COMPAS, a = ACORDES[b % 4], sec = seccion(t);
+    if (sec === -2) continue;
+    if (sec === 5) continue;
+    ev.push({ t, tipo: "pad", notas: a.pad, dur: COMPAS + 0.3, vol: sec === 0 ? 0.6 : 1 });
+    if (sec === 0) {
+      if (t >= 6) for (let j = 0; j < 4; j++) ev.push({ t: t + j * NEGRA, tipo: "latido" });
+      if (t >= 8) for (let j = 0; j < 16; j++) ev.push({ t: t + j * NEGRA / 4, tipo: "arp", nota: a.arp[[0, 1, 2, 3, 2, 1, 2, 3][j % 8]], vol: 0.45, filtro: 900 + (t - 8) * 250 });
+      continue;
+    }
+    if (sec === -1) continue;
+    for (let j = 0; j < 4; j++) {
+      ev.push({ t: t + j * NEGRA, tipo: "bombo" });
+      if (j % 2 && (sec >= 2 || t >= 20)) ev.push({ t: t + j * NEGRA, tipo: "palmas" });
+      ev.push({ t: t + j * NEGRA, tipo: "bajo", nota: a.bajo, dur: 0.22 });
+      ev.push({ t: t + j * NEGRA + NEGRA / 2, tipo: "bajo", nota: a.bajo + 12, dur: 0.2 });
+      if (sec >= 2) ev.push({ t: t + j * NEGRA + NEGRA / 2, tipo: "charles", vol: sec >= 4 ? 1.3 : 1 });
+    }
+    if (sec >= 3) for (let j = 0; j < 16; j++) ev.push({ t: t + j * NEGRA / 4, tipo: "arp", nota: a.arp[[0, 1, 2, 3, 2, 1, 2, 3][j % 8]] + (j >= 8 && sec >= 4 ? 12 : 0), vol: 1, filtro: 2600 });
+    if (sec >= 3 && b % 2 === 0) [0, 1, 2, 3].forEach(j => ev.push({ t: t + j * NEGRA * 2, tipo: "melodia", nota: [a.arp[3] + 12, a.arp[2] + 12, a.arp[1] + 12, a.arp[2] + 12][j] }));
+  }
+  for (const z of ZOOMS) { ev.push({ t: z, tipo: "subida", dur: 2 }); }
+  for (const l of LLEGADAS.slice(1)) ev.push({ t: l, tipo: "impacto" });
+  ev.push({ t: 104, tipo: "rebobinar" });
+  ev.push({ t: 108, tipo: "impacto" });
+  ev.push({ t: 108, tipo: "pad", notas: [48, 55, 60, 64, 67, 74], dur: 14, vol: 1.3, final: true });
+  ev.push({ t: 108, tipo: "bajo", nota: 36, dur: 5 });
+  [72, 76, 79, 84, 79, 76, 81, 79].forEach((n, i) => ev.push({ t: 109 + i * 0.5, tipo: "campana", nota: n }));
+  [72, 76, 79, 84].forEach((n, i) => ev.push({ t: 115 + i * 0.25, tipo: "campana", nota: n }));
+  // Efectos de los elementos (data-son) y del tecleo.
+  for (const n of NIVELES) {
+    for (const el of n.el.querySelectorAll("[data-son]")) for (const tok of el.dataset.son.split(" ")) {
+      const [tipo, cuando] = tok.split("@");
+      ev.push({ t: n.llegada + parseFloat(cuando), tipo, nota: 72 });
+      if (tipo === "golpe") GOLPES.push(n.llegada + parseFloat(cuando));
+    }
+    for (const c of n.tecleo) if (c.textContent.trim()) ev.push({ t: n.llegada + parseFloat(c.dataset.t), tipo: "tecla" });
+  }
+  // Cada ola de copias, una nota más aguda.
+  for (let w = 0; w < OLAS; w++) ev.push({ t: NIVELES[4].llegada + OLA0 + w * OLA, tipo: "blip", nota: [60, 62, 64, 67, 69, 72, 74, 76, 79][w] });
+  GOLPES.push(...LLEGADAS.slice(1), 108);
+  return ev.filter(e => e.t < TOTAL).sort((x, y) => x.t - y.t);
+}
+const EVENTOS = eventos();
+
+function cadena(ctx, destino) {
+  const comp = ctx.createDynamicsCompressor();
+  comp.threshold.value = -16; comp.ratio.value = 6; comp.attack.value = 0.005; comp.release.value = 0.2;
+  const salida = ctx.createGain(); salida.gain.value = 1.4;
+  // Limitador final: los impactos no pasan de −2 dB.
+  const limite = ctx.createDynamicsCompressor();
+  limite.threshold.value = -3; limite.knee.value = 0; limite.ratio.value = 20; limite.attack.value = 0.001; limite.release.value = 0.1;
+  comp.connect(salida).connect(limite).connect(destino);
+  const rev = ctx.createConvolver();
+  const largo = Math.floor(ctx.sampleRate * 2.2), ir = ctx.createBuffer(2, largo, ctx.sampleRate), r = azar(7);
+  for (let c = 0; c < 2; c++) { const d = ir.getChannelData(c); for (let i = 0; i < largo; i++) d[i] = (r() * 2 - 1) * Math.pow(1 - i / largo, 3); }
+  rev.buffer = ir;
+  const humedo = ctx.createGain(); humedo.gain.value = 0.22; rev.connect(humedo).connect(comp);
+  const musica = ctx.createGain(); musica.gain.value = 0.5;
+  const efectos = ctx.createGain(); efectos.gain.value = 0.7;
+  musica.connect(comp); efectos.connect(comp); musica.connect(rev); efectos.connect(rev);
+  const ruido = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate), r2_ = azar(11), dr = ruido.getChannelData(0);
+  for (let i = 0; i < dr.length; i++) dr[i] = r2_() * 2 - 1;
+  return { musica, efectos, ruido, salida, nodos: [] };
+}
+function osc(ctx, c, bus, tipo, f, cuando, dur, env, filtro) {
+  const o = ctx.createOscillator(), g = ctx.createGain();
+  o.type = tipo; o.frequency.setValueAtTime(f, cuando);
+  let ultimo = o;
+  if (filtro) { const fi = ctx.createBiquadFilter(); fi.type = "lowpass"; fi.frequency.value = filtro; o.connect(fi); ultimo = fi; }
+  env(g.gain, cuando, dur);
+  ultimo.connect(g).connect(bus); o.start(cuando); o.stop(cuando + dur + 0.05);
+  c.nodos.push(o); return o;
+}
+const percusion = (vol, caida) => (p, t0) => { p.setValueAtTime(0, t0); p.linearRampToValueAtTime(vol, t0 + 0.004); p.exponentialRampToValueAtTime(0.0001, t0 + caida); };
+const sostenido = (vol, ataque, soltar) => (p, t0, dur) => { p.setValueAtTime(0, t0); p.linearRampToValueAtTime(vol, t0 + ataque); p.setValueAtTime(vol, t0 + Math.max(ataque, dur - soltar)); p.linearRampToValueAtTime(0, t0 + dur); };
+function ruido(ctx, c, bus, cuando, dur, vol, tipo, f0, f1, env) {
+  const s = ctx.createBufferSource(), fi = ctx.createBiquadFilter(), g = ctx.createGain();
+  s.buffer = c.ruido; s.loop = true; fi.type = tipo; fi.Q.value = 0.8;
+  fi.frequency.setValueAtTime(f0, cuando); fi.frequency.exponentialRampToValueAtTime(f1, cuando + dur);
+  (env || percusion(vol, dur))(g.gain, cuando, dur);
+  s.connect(fi).connect(g).connect(bus); s.start(cuando); s.stop(cuando + dur + 0.05);
+  c.nodos.push(s);
+}
+function sonar(ctx, c, ev, cuando, corte = 0) {
+  const M = c.musica, E_ = c.efectos;
+  switch (ev.tipo) {
+    case "pad": for (const n of ev.notas) for (const det of [-7, 7]) {
+      const o = osc(ctx, c, M, "sawtooth", hz(n), cuando, ev.dur - corte, sostenido(0.018 * ev.vol, corte ? 0.1 : 0.4, ev.final ? 6 : 0.6), ev.final ? 1400 : 1100);
+      o.detune.value = det;
+    } break;
+    case "latido": osc(ctx, c, M, "sine", 55, cuando, 0.4, percusion(0.35, 0.4)); break;
+    case "bombo": { const o = osc(ctx, c, M, "sine", 150, cuando, 0.4, percusion(0.9, 0.38)); o.frequency.exponentialRampToValueAtTime(42, cuando + 0.12); break; }
+    case "palmas": for (const d of [0, 0.012, 0.024]) ruido(ctx, c, M, cuando + d, 0.14, 0.22, "bandpass", 1300, 1100); break;
+    case "charles": ruido(ctx, c, M, cuando, 0.05, 0.08 * (ev.vol || 1), "highpass", 8000, 9000); break;
+    case "bajo": osc(ctx, c, M, "sawtooth", hz(ev.nota), cuando, ev.dur - corte, sostenido(0.16, 0.01, 0.08), 420); break;
+    case "arp": osc(ctx, c, M, "square", hz(ev.nota), cuando, 0.12, percusion(0.035 * ev.vol, 0.12), ev.filtro); break;
+    case "melodia": { const o = osc(ctx, c, M, "triangle", hz(ev.nota), cuando, 0.9, percusion(0.09, 0.9)); break; }
+    case "campana": osc(ctx, c, E_, "sine", hz(ev.nota), cuando, 1.6, percusion(0.1, 1.6)); osc(ctx, c, E_, "sine", hz(ev.nota) * 2.76, cuando, 0.4, percusion(0.025, 0.4)); break;
+    case "subida": {
+      ruido(ctx, c, E_, cuando, ev.dur - corte, 0.2, "bandpass", 300, 7000, (p, t0, d) => { p.setValueAtTime(0.0001, t0); p.exponentialRampToValueAtTime(0.22, t0 + d); p.linearRampToValueAtTime(0, t0 + d + 0.02); });
+      const o = osc(ctx, c, E_, "sine", 180, cuando, ev.dur - corte, (p, t0, d) => { p.setValueAtTime(0, t0); p.linearRampToValueAtTime(0.08, t0 + d); p.linearRampToValueAtTime(0, t0 + d + 0.02); });
+      o.frequency.exponentialRampToValueAtTime(1100, cuando + ev.dur - corte); break;
+    }
+    case "impacto": {
+      const o = osc(ctx, c, E_, "sine", 90, cuando, 1.4, percusion(0.9, 1.4)); o.frequency.exponentialRampToValueAtTime(30, cuando + 1);
+      ruido(ctx, c, E_, cuando, 1.1, 0.35, "lowpass", 3000, 200); break;
+    }
+    case "rebobinar": {
+      for (const n of [57, 64, 69, 72]) { const o = osc(ctx, c, M, "sawtooth", hz(n), cuando, 3.8, sostenido(0.03, 0.05, 1.5), 1600); o.frequency.exponentialRampToValueAtTime(hz(n) / 8, cuando + 3.6); }
+      ruido(ctx, c, E_, cuando, 3.8, 0.18, "bandpass", 6000, 250, sostenido(0.16, 0.2, 0.6)); break;
+    }
+    case "tecla": ruido(ctx, c, E_, cuando, 0.035, 0.16, "highpass", 2500, 3500); break;
+    case "pop": { const o = osc(ctx, c, E_, "sine", 700, cuando, 0.14, percusion(0.12, 0.14)); o.frequency.exponentialRampToValueAtTime(1300, cuando + 0.06); break; }
+    case "golpe": {
+      const o = osc(ctx, c, E_, "sine", 130, cuando, 0.5, percusion(0.8, 0.5)); o.frequency.exponentialRampToValueAtTime(38, cuando + 0.25);
+      ruido(ctx, c, E_, cuando, 0.25, 0.25, "lowpass", 2500, 400); break;
+    }
+    case "sello": ruido(ctx, c, E_, cuando, 0.16, 0.4, "lowpass", 1400, 500); osc(ctx, c, E_, "sine", 95, cuando, 0.25, percusion(0.5, 0.25)); break;
+    case "bloqueo": osc(ctx, c, E_, "square", 98, cuando, 0.2, percusion(0.12, 0.2), 700); ruido(ctx, c, E_, cuando, 0.1, 0.2, "lowpass", 900, 300); break;
+    case "rebote": { const o = osc(ctx, c, E_, "triangle", 520, cuando, 0.22, percusion(0.12, 0.22)); o.frequency.exponentialRampToValueAtTime(260, cuando + 0.2); break; }
+    case "apagar": { const o = osc(ctx, c, E_, "sine", 900, cuando, 0.9, percusion(0.14, 0.9)); o.frequency.exponentialRampToValueAtTime(90, cuando + 0.8); ruido(ctx, c, E_, cuando, 0.5, 0.15, "bandpass", 2000, 200); break; }
+    case "chispa": [84, 88, 91, 96, 100].forEach((n, i) => osc(ctx, c, E_, "triangle", hz(n), cuando + i * 0.045, 0.4, percusion(0.06, 0.4))); break;
+    case "blip": osc(ctx, c, E_, "square", hz(ev.nota + 12), cuando, 0.2, percusion(0.07, 0.2), 3000); osc(ctx, c, E_, "sine", hz(ev.nota), cuando, 0.3, percusion(0.1, 0.3)); break;
+  }
+}
+const SOSTENIDOS = new Set(["pad", "bajo", "subida"]);
+
+window.audioWav = async () => {
+  const sr = 48000, ctx = new OfflineAudioContext(2, Math.ceil(TOTAL * sr), sr);
+  const c = cadena(ctx, ctx.destination);
+  for (const ev of EVENTOS) sonar(ctx, c, ev, ev.t);
+  const buf = await ctx.startRendering();
+  const n = buf.length, datos = new DataView(new ArrayBuffer(44 + n * 4));
+  const txt = (o, s) => [...s].forEach((ch, i) => datos.setUint8(o + i, ch.charCodeAt(0)));
+  txt(0, "RIFF"); datos.setUint32(4, 36 + n * 4, true); txt(8, "WAVEfmt "); datos.setUint32(16, 16, true);
+  datos.setUint16(20, 1, true); datos.setUint16(22, 2, true); datos.setUint32(24, sr, true); datos.setUint32(28, sr * 4, true);
+  datos.setUint16(32, 4, true); datos.setUint16(34, 16, true); txt(36, "data"); datos.setUint32(40, n * 4, true);
+  const L = buf.getChannelData(0), R = buf.getChannelData(1);
+  for (let i = 0; i < n; i++) { datos.setInt16(44 + i * 4, Math.max(-1, Math.min(1, L[i])) * 32767, true); datos.setInt16(46 + i * 4, Math.max(-1, Math.min(1, R[i])) * 32767, true); }
+  const bytes = new Uint8Array(datos.buffer); let bin = "";
+  for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+  return btoa(bin);
+};
+
+// ─── Reproductor (el mismo que en la primera animación) ───
+let t = 0, reproduciendo = false, silencio = false;
+let actx = null, cad = null, base = 0, siguienteEv = 0, reloj = 0, marcaPerf = 0, programador = 0;
+const bPlay = $("play"), bSonido = $("sonido"), rango = $("posicion"), tiempo = $("tiempo"), rotulo = $("escena-actual"), bEmpezar = $("empezar-btn");
+const mmss = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+const capituloEn = s => { let k = 0; CAPITULOS.forEach(([c], i) => { if (s >= c - 0.01) k = i; }); return k; };
+function ahora() {
+  if (!reproduciendo) return t;
+  return cad && actx.state === "running" ? actx.currentTime - base : reloj + (performance.now() - marcaPerf) / 1000;
+}
+function pararSonido() {
+  if (!cad) return;
+  const c = cad; cad = null;
+  c.salida.gain.setTargetAtTime(0, actx.currentTime, 0.03);
+  setTimeout(() => { for (const n of c.nodos) { try { n.stop(); } catch (_) {} } c.salida.disconnect(); }, 200);
+}
+function arrancarSonido() {
+  if (!actx) {
+    let prestado = null;
+    try { if (parametros.has("incrustar") && window.parent !== window) prestado = window.parent.contextoAnimacion; } catch (_) {}
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!prestado && !AC) return;
+    actx = prestado || new AC();
+    actx.onstatechange = () => {
+      if (!reproduciendo || actx.state !== "running") return;
+      t = reloj + (performance.now() - marcaPerf) / 1000; reloj = t; marcaPerf = performance.now();
+      pararSonido(); arrancarSonido();
+    };
+  }
+  actx.resume();
+  const vol = actx.createGain(); vol.gain.value = silencio ? 0 : 1; vol.connect(actx.destination);
+  cad = cadena(actx, vol); cad.vol = vol;
+  base = actx.currentTime + 0.08 - t;
+  for (const ev of EVENTOS) if (SOSTENIDOS.has(ev.tipo) && ev.t < t && ev.t + ev.dur > t + 0.3) sonar(actx, cad, ev, actx.currentTime + 0.08, t - ev.t);
+  siguienteEv = EVENTOS.findIndex(ev => ev.t >= t); if (siguienteEv < 0) siguienteEv = EVENTOS.length;
+}
+function programar() {
+  if (!cad) return;
+  const limite = ahora() + 0.6;
+  while (siguienteEv < EVENTOS.length && EVENTOS[siguienteEv].t < limite) {
+    const ev = EVENTOS[siguienteEv++];
+    sonar(actx, cad, ev, Math.max(actx.currentTime, base + ev.t));
+  }
+}
+function pintarControles() {
+  const fin = t >= TOTAL - 0.01;
+  bPlay.querySelector(".i-play").toggleAttribute("hidden", reproduciendo || fin);
+  bPlay.querySelector(".i-pausa").toggleAttribute("hidden", !reproduciendo);
+  bPlay.querySelector(".i-otra").toggleAttribute("hidden", reproduciendo || !fin);
+  const et = reproduciendo ? "Pausa" : fin ? "Torna a començar" : "Reprodueix";
+  bPlay.setAttribute("aria-label", et); bPlay.title = et + " (barra d'espai)";
+  rango.value = Math.round(t / TOTAL * 1000);
+  const cap = CAPITULOS[capituloEn(t)][1];
+  rango.setAttribute("aria-valuetext", `${mmss(t)} de ${mmss(TOTAL)}, ${cap}`);
+  tiempo.textContent = `${mmss(t)} / ${mmss(TOTAL)}`;
+  const tit = `${capituloEn(t) + 1} de ${CAPITULOS.length}: ${cap}`;
+  if (rotulo.textContent !== tit) rotulo.textContent = tit;
+}
+function bucle() {
+  if (!reproduciendo) return;
+  t = Math.min(TOTAL, ahora());
+  render(t); pintarControles();
+  if (t >= TOTAL) { pausar(); return; }
+  requestAnimationFrame(bucle);
+}
+function reproducir() {
+  if (t >= TOTAL - 0.01) t = 0;
+  bEmpezar.hidden = true;
+  reproduciendo = true; reloj = t; marcaPerf = performance.now();
+  arrancarSonido();
+  clearInterval(programador); programador = setInterval(programar, 100); programar();
+  requestAnimationFrame(bucle);
+}
+function pausar() {
+  t = Math.min(TOTAL, ahora()); reproduciendo = false;
+  clearInterval(programador); pararSonido();
+  render(t); pintarControles();
+}
+function irA(s) {
+  const seguia = reproduciendo;
+  if (seguia) pausar();
+  t = Math.max(0, Math.min(TOTAL, s));
+  bEmpezar.hidden = true;
+  render(t); pintarControles();
+  if (seguia) reproducir();
+}
+// En pausa, saltar a una parte la muestra ya compuesta (tras el rótulo de la fase).
+const irACapitulo = i => { i = Math.max(0, Math.min(CAPITULOS.length - 1, i)); irA(CAPITULOS[i][0] + (reproduciendo ? 0 : i === 5 ? 14 : 3)); };
+bPlay.addEventListener("click", () => reproduciendo ? pausar() : reproducir());
+bEmpezar.addEventListener("click", reproducir);
+$("anterior").addEventListener("click", () => { const k = capituloEn(t); irACapitulo(t - CAPITULOS[k][0] > 1.5 && reproduciendo ? k : k - 1); });
+$("siguiente").addEventListener("click", () => irACapitulo(capituloEn(t) + 1));
+rango.addEventListener("input", () => irA(rango.value / 1000 * TOTAL));
+bSonido.addEventListener("click", () => {
+  silencio = !silencio;
+  if (cad) cad.vol.gain.setTargetAtTime(silencio ? 0 : 1, actx.currentTime, 0.03);
+  bSonido.setAttribute("aria-pressed", silencio);
+  bSonido.querySelector(".i-con").toggleAttribute("hidden", silencio);
+  bSonido.querySelector(".i-sin").toggleAttribute("hidden", !silencio);
+  const et = silencio ? "Activa el so" : "Silencia"; bSonido.setAttribute("aria-label", et); bSonido.title = et;
+});
+document.addEventListener("keydown", ev => {
+  if (ev.key === " " && !ev.target.closest("button, summary, a, input")) { ev.preventDefault(); reproduciendo ? pausar() : reproducir(); }
+});
+if (parametros.has("incrustar")) document.addEventListener("keydown", ev => {
+  if (ev.key !== "Escape") return;
+  try { const v = window.frameElement && window.frameElement.closest("dialog"); if (v) v.close(); } catch (_) {}
+});
+document.addEventListener("visibilitychange", () => { if (document.hidden && reproduciendo) pausar(); });
+$("marcas").innerHTML = CAPITULOS.slice(1).map(([c]) => `<i style="left:calc(${(c / TOTAL * 100).toFixed(2)}% - 1px)"></i>`).join("");
+
+const marco = $("marco"), escenario = $("escenario");
+function escalar() { escenario.style.transform = `scale(${marco.clientWidth / 1080})`; }
+new ResizeObserver(escalar).observe(marco); escalar();
+document.fonts.ready.then(() => { medir(); PUNTOS = puntosCamara(); render(reproduciendo ? t : CARTEL); });
+if (parametros.has("auto")) document.fonts.ready.then(reproducir);
+
+window.fijar = s => { t = s; render(s); };
+window.DURACION = TOTAL;
+// Antes de reproducir, el escenario muestra el título final como cartel; la posición sigue en 0.
+const CARTEL = grabando ? 0 : 117;
+render(CARTEL); pintarControles();
+</script>
+</body>
+</html>
