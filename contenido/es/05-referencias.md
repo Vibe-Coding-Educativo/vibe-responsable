@@ -9,6 +9,7 @@
 - Directiva (UE) 2016/2102 del Parlamento Europeo y del Consejo, de 26 de octubre de 2016, sobre la accesibilidad de los sitios web y aplicaciones para dispositivos móviles de los organismos del sector público. *Diario Oficial de la Unión Europea*, L 327, de 2 de diciembre de 2016. <https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32016L2102>
 - Reglamento (UE) 2024/1689 del Parlamento Europeo y del Consejo, de 13 de junio de 2024, por el que se establecen normas armonizadas en materia de inteligencia artificial (Reglamento de Inteligencia Artificial). *Diario Oficial de la Unión Europea*, de 12 de julio de 2024. <https://eur-lex.europa.eu/eli/reg/2024/1689/oj/spa>
 - Reglamento (UE) 2026/1744 del Parlamento Europeo y del Consejo, de 8 de julio de 2026, por el que se modifican los Reglamentos (UE) 2024/1689, (UE) 2018/1139 y (UE) 2023/1230 en lo que respecta a la simplificación de la aplicación de normas armonizadas en materia de inteligencia artificial (Ómnibus digital sobre IA). *Diario Oficial de la Unión Europea*, de 24 de julio de 2026. <https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32026R1744>
+- Oberlandesgericht Düsseldorf. (2026, 2 de abril). *Beschluss 20 W 2/26*. Justiz NRW. <https://nrwe.justiz.nrw.de/olgs/duesseldorf/j2026/20_W_2_26_Urteil_20260402.html>
 - UNESCO. (2019). *Recomendación sobre los Recursos Educativos Abiertos (REA)*. <https://www.unesco.org/es/legal-affairs/recommendation-open-educational-resources-oer>
 
 ## Guías, informes y recomendaciones
@@ -22,7 +23,7 @@
 - Wikimedia Commons. (s. f.). *Commons:Licencias*. <https://commons.wikimedia.org/wiki/Commons:Licensing/es>
 - De Haro, J. J. (2026). *Decálogo del conocimiento abierto* (versión 2.2). <https://conocimiento-abierto.github.io/>
 - Free Knowledge Foundation. (2007). *Declaration on libre knowledge*. WikiEducator. <https://wikieducator.org/Declaration_on_libre_knowledge>
-- Free Software Foundation. (s. f.). *¿Qué es el software libre?* Proyecto GNU. <https://www.gnu.org/philosophy/free-sw.es.html>
+- Free Software Foundation. (2026, 10 de junio). *¿Qué es el software libre?* Proyecto GNU. <https://www.gnu.org/philosophy/free-sw.es.html>
 - Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado. (2026). *Guía sobre el uso de la inteligencia artificial en el ámbito educativo* (versión 2.0). Ministerio de Educación, Formación Profesional y Deportes. <https://code.intef.es/wp-content/uploads/2026/09/ACTUALIZACI%C3%93N-GU%C3%8DA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5.pdf>
 - Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado. (2026). *Orientaciones sobre el uso de herramientas digitales en el ámbito educativo desde la perspectiva de la protección de datos* (versión 3.0). Ministerio de Educación, Formación Profesional y Deportes. <https://intef.es/wp-content/uploads/2026/07/Orientaciones_sobre_el_uso_de_herramientas_digital.pdf>
 - UNICEF Innocenti. (2025). *Guidance on AI and children* (versión 3.0). UNICEF Office of Strategy and Evidence – Innocenti. <https://www.unicef.org/innocenti/reports/policy-guidance-ai-children>
@@ -58,19 +59,17 @@
 
 Consultadas en septiembre de 2026.
 
-- Anthropic. (s. f.). *Consumer Terms of Service*. <https://www.anthropic.com/legal/consumer-terms>
-- Google. (s. f.). *Términos del Servicio de Google*. <https://policies.google.com/terms?hl=es>
-- OpenAI. (s. f.). *EU Terms of Use*. <https://openai.com/policies/eu-terms-of-use/>
+- Anthropic. (2025, 8 de octubre). *Consumer Terms of Service*. <https://www.anthropic.com/legal/consumer-terms>
+- Google. (2026, 30 de julio). *Términos del Servicio de Google*. <https://policies.google.com/terms?hl=es>
+- OpenAI. (2026, 16 de enero). *EU Terms of Use*. <https://openai.com/policies/eu-terms-of-use/>
 
 ## Ejemplos de la comunidad educativa
 
 Aplicaciones y materiales citados como ejemplo, la mayoría del [catálogo](https://vibe-coding-educativo.github.io/app_edu/) de la comunidad [Vibe Coding Educativo](https://t.me/vceduca). El año es el de su alta en el catálogo o, para los que no están en él, el de la creación de su repositorio.
 
-- Boixader, E. (2025). *¿Quién quiere ser millonario? Magnitudes y unidades* [juego]. <https://eboixader.github.io/magnitunid/>
 - De Haro, J. J. (2025). *Plantilla correctora digital para exámenes tipo test (PCD)*. <https://jjdeharo.github.io/pcd/>
 - De Haro, J. J. (2026). *OpenWorksheets: creación de fichas interactivas y autocorregibles*. <https://openworksheets.github.io/>
 - El profe de la bata. (2026). *IAGuar: implementación automatizada de guardias*. <https://elprofedelabata.es/iaguar/>
-- Emmarin04. (2025). *¿Quién quiere ser millonario? Función lineal* [juego]. <https://emmarin04.github.io/Juego_Millonario/>
 - expliCarlos. (2026). *Elige tu IA: guía interactiva para docentes*. <https://explikarlos.github.io/elige-ia/>. Registro de decisiones: <https://github.com/explikarlos/elige-ia/blob/main/docs/decisions/ADR-001-static-pages.md>
 - González García, A. (2025). *Simulador interactivo: plano inclinado con rozamiento*. IES Majuelo. <https://onio72.github.io/iesmajuelo/bach/fq1/planoincroz/>
 - Guízar, P. G. (2025). *Generador SCORM de certificado de finalización*. <https://github.com/PabloGGuizar/generador-scorm-de-certificado-de-finalizacion>

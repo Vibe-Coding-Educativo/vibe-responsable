@@ -19,7 +19,3 @@ En un repositorio el código sigue cambiando después de publicarse, de modo que
 **Un material es más reutilizable cuando el contenido está separado del funcionamiento**. Un cuestionario cuyas preguntas están en una lista al principio del código, o en un archivo aparte, puede adaptarse a otra materia cambiando esa lista, sin tocar el resto. Conviene pedirlo a la inteligencia artificial (IA) desde el principio, junto con el código comentado de la recomendación 3 y la ausencia de dependencias de la recomendación 4, que son las otras dos condiciones que facilitan la adaptación.
 
 También ayuda indicar en la documentación qué partes están pensadas para cambiarse, como los textos, los colores o el idioma. Una persona que quiera traducir el material, o ajustarlo a otro nivel educativo, encuentra así por dónde empezar.
-
-## Un ejemplo de la comunidad
-
-En el [catálogo](https://vibe-coding-educativo.github.io/app_edu/) de la comunidad Vibe Coding Educativo hay casos de reutilización entre docentes. El juego [«¿Quién quiere ser millonario?» sobre la función lineal](https://emmarin04.github.io/Juego_Millonario/), publicado por Emmarin04, parte del [juego sobre magnitudes y unidades](https://eboixader.github.io/magnitunid/) de EBoixader, como indica su ficha del catálogo. La adaptación mantiene el formato del concurso y cambia las preguntas, de forma que un material pensado para Física y Química sirve ahora también en Matemáticas.
