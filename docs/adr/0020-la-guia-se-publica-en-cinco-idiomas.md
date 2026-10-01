@@ -41,7 +41,7 @@ castellano escrito en el código.
   genera `zoom.<idioma>.html` a partir de `zoom.es.html`, el único que se edita,
   con una tabla de sustituciones que avisa si un texto ya no está en el
   original; luego `grabar.js` graba cada página. Si falta el vídeo de un idioma,
-  `video()` usa el castellano.
+  `video()` usa el castellano. Los cuatro vídeos traducidos se grabaron el 01-10-2026 y se comprimieron como el castellano (ADR 17): entre 6,4 y 6,5 MB, −16,1 LUFS y picos de −1,7 a −1,8 dBFS; el cartel de cada uno es su último fotograma.
 - La infografía se genera en cada idioma con `infografia/generar.py`, y se
   convierte a PNG con `rsvg-convert` y la misma paleta reducida (64 colores).
 
