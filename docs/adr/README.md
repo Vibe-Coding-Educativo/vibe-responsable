@@ -18,7 +18,7 @@ deshaga después de buena fe, ni siquiera nosotros dentro de un año.
 | [10](0010-las-instrucciones-para-la-ia-son-un-archivo-que-se-descarga.md) | Las instrucciones para la IA son archivos que se descargan: uno para crear y otro para evaluar, con la rúbrica VCER, que sirve también para revisar lo creado | aceptado |
 | [11](0011-el-pie-muestra-solo-la-licencia-del-contenido.md) | El pie muestra solo la licencia del contenido; la del código queda en el repositorio y en los créditos | aceptado |
 | [12](0012-la-guia-se-llama-vibe-coding-responsable.md) | La guía se llama «Vibe coding responsable»; el título largo pasa a ser su descripción | aceptado |
-| [13](0013-las-sugerencias-se-reciben-en-las-incidencias-del-repositorio.md) | Las vías para enviar sugerencias se reúnen en un panel del aviso de borrador | aceptado |
+| [13](0013-las-sugerencias-se-reciben-en-las-incidencias-del-repositorio.md) | Las sugerencias se reciben en las incidencias del repositorio | aceptado |
 | [14](0014-la-cabecera-queda-fija-al-desplazarse.md) | La cabecera queda fija al desplazarse; en el móvil se oculta al bajar y vuelve al subir | aceptado |
 | [15](0015-las-recomendaciones-siguen-el-orden-de-la-vida-del-material.md) | Las recomendaciones siguen el orden de la vida del material, en cuatro fases | aceptado |
 | [16](0016-la-animacion-es-una-pagina-html-que-se-graba-en-video.md) | La animación es una página HTML con sonido sintetizado, que se graba en vídeo | propuesto |

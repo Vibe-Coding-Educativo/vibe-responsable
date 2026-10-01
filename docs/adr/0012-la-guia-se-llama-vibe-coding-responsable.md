@@ -24,8 +24,7 @@ pasa a ser su descripción. Se aplica en todos los sitios donde aparece el nombr
 - La portada del PDF lleva el nombre como título y el título largo como
   subtítulo; el pie de sus páginas lleva el nombre.
 - La cita: De Haro, J. J. (2026). *Vibe coding responsable: guía para publicar
-  materiales educativos creados con vibe coding* (borrador). Vibe Coding
-  Educativo.
+  materiales educativos creados con vibe coding*. Vibe Coding Educativo.
 - La infografía lleva el nombre en su subtítulo, para que se identifique si
   circula fuera de la web.
 - La evaluación de los archivos para la IA se llama «rúbrica VCER», siglas de

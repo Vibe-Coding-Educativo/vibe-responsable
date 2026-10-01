@@ -83,8 +83,7 @@ JavaScript, todo el contenido queda visible, una recomendación tras otra. La
 página no tiene casillas ni recuento. Lo único que la web guarda en el navegador
 es el tema claro u oscuro, y solo cuando se elige uno distinto al del
 dispositivo con el botón de la cabecera; junto a él hay otro para imprimir la
-página, que en papel sale sin navegación y con el aviso de borrador mientras lo
-sea.
+página, que en papel sale sin navegación.
 
 La infografía está solo en la presentación. La propia imagen es el único
 control para ampliarla: abre un visor que la ajusta siempre a la pantalla, con

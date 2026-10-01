@@ -24,18 +24,18 @@ de todas en una sola página intermedia (`es/completo.html`, que no se publica y
 está en `.gitignore`), con una portada, un índice enlazado y las páginas en el
 orden de lectura: presentación, lista, los diez capítulos, herramientas,
 instrucciones, referencias y créditos. Los enlaces entre páginas pasan a ser anclas dentro
-del documento. La portada lleva el título, el autor, la fecha, el aviso de
-borrador mientras lo sea, la licencia y el apartado «Cómo citar», con la misma
-cita que la página de créditos de la web; cuando exista el DOI, se añadirá en
+del documento. La portada lleva el título, el autor, la fecha, la licencia y el apartado
+«Cómo citar», con la misma cita que la página de créditos de la web; cuando exista el DOI, se añadirá en
 los dos sitios desde el mismo texto de `construir.py`. Cada página del PDF lleva
-al pie el título de la guía, el autor, la licencia y el número de página.
+al pie el título de la guía, el autor, la licencia, la fecha y el número de
+página.
 
 La impresión la hace `generar-pdf.js` con el Chromium de Playwright, instalado
 de forma global para todos los proyectos, sin añadir dependencias al
 repositorio. El script sirve el repositorio por HTTP en un puerto libre mientras
 imprime, porque con `file://` el navegador no carga la tipografía. Usa la misma
 hoja de estilos que la web y sus reglas de impresión, que ocultan toda la
-navegación y muestran el aviso de borrador.
+navegación.
 
 Encima de ellas, el documento intermedio lleva reglas de composición propias,
 porque lo que en pantalla se pliega o se reparte en rejillas no funciona en

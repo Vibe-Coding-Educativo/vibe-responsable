@@ -48,16 +48,6 @@ UI = {
         "nav_capitulos": "Capítulo anterior y siguiente",
         # rótulos del menú más cortos que el título de su página
         "nav_cortos": {"guia.html": "Guía", "referencias.html": "Referencias"},
-        "borrador": "Borrador",
-        "borrador_boton": "La guía está en revisión: cómo enviar sugerencias",
-        # Panel de la etiqueta «Borrador», que abre también «Sugerencias y correcciones» del pie
-        "participar": '''<p class="participar-tit">La guía está en revisión</p>
-<p>Está completa, pero el texto aún puede cambiar. Las sugerencias y correcciones pueden enviarse por cualquiera de estas vías:</p>
-<ul>
-<li>En <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">GitHub</a>, abriendo una incidencia.</li>
-<li>En el grupo de Telegram Vibe Coding Educativo, en el <a href="https://t.me/vceduca/13553">tema abierto para comentar la guía</a>.</li>
-<li>En los comentarios de la presentación en <a href="https://www.linkedin.com/feed/update/urn:li:share:7508820800175636480/">LinkedIn</a>, <a href="https://x.com/jjdeharo/status/2103052984326267278">X</a> o <a href="https://bsky.app/profile/jjdeharo.bsky.social/post/3mwayfn6zlp2v">Bluesky</a>.</li>
-</ul>''',
         "imprimir": "Imprimir esta página",
         "imprimir_desc": "Solo lo que se ve en esta página",
         "imprimir_menu": "Imprimir o descargar",
@@ -65,12 +55,11 @@ UI = {
         "pdf_desc": "Todas las páginas en un solo documento",
         "tema": "Modo claro u oscuro",
         "citar": "Cómo citar",
-        "cita": 'De Haro, J. J. (2026). <i>Vibe coding responsable: guía para publicar materiales educativos creados con vibe coding</i> (borrador). Vibe Coding Educativo. <a href="https://vibe-coding-educativo.github.io/vibe-responsable/">https://vibe-coding-educativo.github.io/vibe-responsable/</a>',
+        "cita": 'De Haro, J. J. (2026). <i>Vibe coding responsable: guía para publicar materiales educativos creados con vibe coding</i>. Vibe Coding Educativo. <a href="https://vibe-coding-educativo.github.io/vibe-responsable/">https://vibe-coding-educativo.github.io/vibe-responsable/</a>',
                 "autor": "Juan José de Haro",
-        "borrador_pdf": "Borrador del {fecha}. La guía está completa, pero su autor la está revisando y el texto puede cambiar. La versión al día está en {url}.",
         "contenido": "Contenido",
         "capitulo": "Capítulo {n}",
-        "pie_pdf": "Vibe coding responsable · Juan José de Haro · CC BY-SA 4.0 · Borrador, {fecha}",
+        "pie_pdf": "Vibe coding responsable · Juan José de Haro · CC BY-SA 4.0 · {fecha}",
         "meses": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
         "infografia_titulo": "Resumen gráfico",
         # Fases de la vida del material (ADR 15): primera recomendación de cada una, con el verbo
@@ -112,7 +101,7 @@ UI = {
         "alejar": "Ajustar a la pantalla",
         "niveles": {"Lo mínimo.": "minimo", "Lo recomendado.": "recomendado", "En todos los casos.": "todos"},
         "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>.',
-        "pie_2": '<a href="creditos.html">Créditos y licencias</a>. <a class="abrir-participar" href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Sugerencias y correcciones</a>.',
+        "pie_2": '<a href="creditos.html">Créditos y licencias</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Sugerencias y correcciones</a>.',
     },
 }
 # El vídeo de la animación que abre la portada (ADR 17) y su cartel, relativos a la carpeta del idioma.
@@ -203,10 +192,7 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 <div class="ancho pizarra-int">
 <div class="sitio"><a class="sitio-guia" href="./"><img class="marca" src="../recursos/logo/logo.svg" alt="" width="30" height="30"><span>{html.escape(T["nombre"])}</span></a>
 <span class="sitio-desc">{html.escape(T["guia"])}</span>
-<button type="button" class="estado" title="{html.escape(T["borrador_boton"])}" aria-expanded="false" aria-controls="participar">{html.escape(T["borrador"])}</button>
-<div class="participar" id="participar" hidden>
-{T["participar"]}
-</div></div>
+</div>
 <nav aria-label="{html.escape(T["nav"])}"><ul>{"".join(nav)}</ul></nav>
 <div class="utiles">
 <button type="button" class="tema" title="{html.escape(T["tema"])}" aria-label="{html.escape(T["tema"])}"><span class="luna">{icono("moon")}</span><span class="sol">{icono("sun")}</span></button>
@@ -580,8 +566,8 @@ def pagina_completa(idioma, paginas):
 .pdf-portada .pdf-comunidad {{ margin: 0; font-weight: 700; color: var(--verde); }}
 .pdf-portada h1 {{ font-size: 2.4rem; margin: 0.4rem 0 0.6rem; }}
 .pdf-portada .pdf-sub {{ font-size: 1.15rem; margin: 0 0 1.6rem; color: #333; }}
-.pdf-portada .pdf-autor {{ font-size: 1.15rem; font-weight: 700; margin: 0 0 3rem; }}
-.pdf-portada .pdf-borrador {{ border: 1.5px solid #000; border-radius: 6px; padding: 0.7rem 0.9rem; margin: 0 0 2rem; }}
+.pdf-portada .pdf-autor {{ font-size: 1.15rem; font-weight: 700; margin: 0 0 0.4rem; }}
+.pdf-portada .pdf-fecha {{ margin: 0 0 3rem; color: #333; }}
 .pdf-portada .pdf-cita {{ margin-top: auto; }}
 .pdf-portada .pdf-cita h2 {{ font-size: 1.05rem; margin: 0 0 0.3rem; }}
 .pdf-portada .pdf-cita p {{ margin: 0 0 1.2rem; }}
@@ -638,7 +624,7 @@ def pagina_completa(idioma, paginas):
 <h1>{html.escape(T["nombre"])}</h1>
 <p class="pdf-sub">{html.escape(T["guia"])}</p>
 <p class="pdf-autor">{html.escape(T["autor"])}</p>
-<p class="pdf-borrador">{html.escape(T["borrador_pdf"].format(fecha=fecha, url=URL_SITIO))}</p>
+<p class="pdf-fecha">{html.escape(fecha)}</p>
 <div class="pdf-cita"><h2>{html.escape(T["citar"])}</h2><p>{T["cita"]}</p>
 <p class="pdf-licencia">{T["pie_1"]}</p></div>
 </section>
