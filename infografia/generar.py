@@ -39,14 +39,112 @@ TEXTOS = {
         "pie3": ["Iconos: Lucide (ISC y MIT). Tipografía: Atkinson Hyperlegible (OFL).", "Maquetación generada con IA y revisada por el autor."],
         "desc": "Infografía con las diez recomendaciones para publicar de forma responsable materiales educativos creados con vibe coding, agrupadas en cuatro fases: proteger al alumnado, construir el material, documentar el trabajo y compartir el material.",
     },
+    "ca": {
+        "titulo": ["Abans de publicar:", "deu recomanacions"],
+        "subtitulo": "Vibe coding responsable · Materials educatius",
+        "puntos": [
+            ("book-check", "Revisar el contingut sense delegar-lo a la IA"),
+            ("shield-check", "No enviar dades personals a serveis aliens al centre"),
+            ("messages-square", "Entendre què fa el material"),
+            ("unplug", "No dependre de serveis que poden desaparèixer"),
+            ("accessibility", "Fer-lo accessible a qualsevol persona"),
+            ("quote", "Citar l'autoria del que es pren d'altres persones"),
+            ("notebook-pen", "Guardar el rastre de com es va fer"),
+            ("bot", "Declarar l'ús d'IA i el que s'ha comprovat"),
+            ("creative-commons", "Publicar amb una llicència lliure a la vista"),
+            ("download", "Oferir el codi perquè altres persones l'adaptin"),
+        ],
+        "grupos": {1: "Protegir l'alumnat", 3: "Construir el material",
+                   6: "Documentar la feina", 9: "Compartir el material"},
+        "pie1": "@jjdeharo, CC BY-SA 4.0",
+        "pie2": "vibe-coding-educativo.github.io/vibe-responsable",
+        "pie3": ["Icones: Lucide (ISC i MIT). Tipografia: Atkinson Hyperlegible (OFL).", "Maquetació generada amb IA i revisada per l'autor."],
+        "desc": "Infografia amb les deu recomanacions per publicar de manera responsable materials educatius creats amb vibe coding, agrupades en quatre fases: protegir l'alumnat, construir el material, documentar la feina i compartir el material.",
+    },
+    "gl": {
+        "titulo": ["Antes de publicar:", "dez recomendacións"],
+        "subtitulo": "Vibe coding responsable · Materiais educativos",
+        "puntos": [
+            ("book-check", "Revisar o contido sen delegalo na IA"),
+            ("shield-check", "Non enviar datos persoais a servizos alleos ao centro"),
+            ("messages-square", "Entender que fai o material"),
+            ("unplug", "Non depender de servizos que poden desaparecer"),
+            ("accessibility", "Facelo accesible a calquera persoa"),
+            ("quote", "Citar a autoría do que se toma doutras persoas"),
+            ("notebook-pen", "Gardar o rastro de como se fixo"),
+            ("bot", "Declarar o uso de IA e o que se comprobou"),
+            ("creative-commons", "Publicar cunha licenza libre á vista"),
+            ("download", "Ofrecer o código para que outras persoas o adapten"),
+        ],
+        "grupos": {1: "Protexer o alumnado", 3: "Construír o material",
+                   6: "Documentar o traballo", 9: "Compartir o material"},
+        "pie1": "@jjdeharo, CC BY-SA 4.0",
+        "pie2": "vibe-coding-educativo.github.io/vibe-responsable",
+        "pie3": ["Iconas: Lucide (ISC e MIT). Tipografía: Atkinson Hyperlegible (OFL).", "Maquetación xerada con IA e revisada polo autor."],
+        "desc": "Infografía coas dez recomendacións para publicar de forma responsable materiais educativos creados con vibe coding, agrupadas en catro fases: protexer o alumnado, construír o material, documentar o traballo e compartir o material.",
+    },
+    "eu": {
+        "titulo": ["Argitaratu aurretik:", "hamar gomendio"],
+        "subtitulo": "Vibe coding arduratsua · Material hezitzaileak",
+        "puntos": [
+            ("book-check", "Edukia berrikustea, IAren esku utzi gabe"),
+            ("shield-check", "Datu pertsonalak ez bidaltzea ikastetxetik kanpoko zerbitzuetara"),
+            ("messages-square", "Materialak zer egiten duen ulertzea"),
+            ("unplug", "Desager daitezkeen zerbitzuen mende ez egotea"),
+            ("accessibility", "Edonorentzat irisgarri egitea"),
+            ("quote", "Besteengandik hartutakoaren egiletza aipatzea"),
+            ("notebook-pen", "Nola egin zen arrastoa gordetzea"),
+            ("bot", "IAren erabilera eta egiaztatutakoa adieraztea"),
+            ("creative-commons", "Lizentzia libre batekin argitaratzea, agerian"),
+            ("download", "Kodea eskaintzea, besteek egoki dezaten"),
+        ],
+        "grupos": {1: "Ikasleak babestu", 3: "Materiala eraiki",
+                   6: "Lana dokumentatu", 9: "Materiala partekatu"},
+        "pie1": "@jjdeharo, CC BY-SA 4.0",
+        "pie2": "vibe-coding-educativo.github.io/vibe-responsable",
+        "pie3": ["Ikonoak: Lucide (ISC eta MIT). Tipografia: Atkinson Hyperlegible (OFL).", "IArekin sortutako maketazioa, egileak berrikusia."],
+        "desc": "Vibe coding bidez sortutako material hezitzaileak modu arduratsuan argitaratzeko hamar gomendioak dituen infografia, lau fasetan multzokatuta: ikasleak babestu, materiala eraiki, lana dokumentatu eta materiala partekatu.",
+    },
+    "en": {
+        "titulo": ["Before publishing:", "ten recommendations"],
+        "subtitulo": "Responsible vibe coding · Educational materials",
+        "puntos": [
+            ("book-check", "Review the content without delegating it to the AI"),
+            ("shield-check", "Do not send personal data to services outside the school"),
+            ("messages-square", "Understand what the material does"),
+            ("unplug", "Do not depend on services that may disappear"),
+            ("accessibility", "Make it accessible to everyone"),
+            ("quote", "Credit the authorship of what is taken from others"),
+            ("notebook-pen", "Keep a record of how it was made"),
+            ("bot", "Declare the use of AI and what has been checked"),
+            ("creative-commons", "Publish with a visible free licence"),
+            ("download", "Offer the code so that others can adapt it"),
+        ],
+        "grupos": {1: "Protect students", 3: "Build the material",
+                   6: "Document the work", 9: "Share the material"},
+        "pie1": "@jjdeharo, CC BY-SA 4.0",
+        "pie2": "vibe-coding-educativo.github.io/vibe-responsable",
+        "pie3": ["Icons: Lucide (ISC and MIT). Typeface: Atkinson Hyperlegible (OFL).", "Layout generated with AI and reviewed by the author."],
+        "desc": "Infographic with the ten recommendations for responsibly publishing educational materials created with vibe coding, grouped into four phases: protect students, build the material, document the work and share the material.",
+    },
 }
 
 
-ATONAS = {"a", "al", "con", "de", "del", "el", "en", "la", "las", "lo", "los", "o", "para", "por",
-          "que", "se", "sin", "su", "un", "una", "y"}
+# Palabras átonas de cada idioma: una línea no termina en ellas
+ATONAS = {
+    "es": {"a", "al", "con", "de", "del", "el", "en", "la", "las", "lo", "los", "o", "para", "por",
+           "que", "se", "sin", "su", "un", "una", "y"},
+    "ca": {"a", "al", "amb", "de", "del", "el", "els", "en", "i", "la", "les", "l'", "o", "per", "que",
+           "es", "sense", "un", "una", "d'"},
+    "gl": {"a", "ao", "as", "co", "coa", "con", "da", "das", "de", "do", "dos", "e", "en", "na", "no",
+           "o", "os", "ou", "para", "por", "que", "se", "sen", "un", "unha"},
+    "eu": {"eta", "edo", "ez", "bat"},
+    "en": {"a", "an", "and", "as", "for", "from", "in", "it", "of", "on", "or", "so", "that", "the",
+           "to", "what", "with"},
+}
 
 
-def partir(texto, cabe=45):
+def partir(texto, cabe=45, idioma="es"):
     """Una línea si cabe; si no, dos líneas lo más parecidas posible, para no dejar
     una palabra sola en la segunda (caben unos 45 caracteres a 33 px entre el icono y el borde)."""
     if len(texto) <= cabe:
@@ -55,7 +153,7 @@ def partir(texto, cabe=45):
     cortes = [(" ".join(palabras[:i]), " ".join(palabras[i:])) for i in range(1, len(palabras))]
     validos = [c for c in cortes if len(c[0]) <= cabe and len(c[1]) <= cabe]
     # Una línea no termina en una palabra átona (artículo, preposición, conjunción, pronombre)
-    buenos = [c for c in validos if c[0].split()[-1].lower() not in ATONAS] or validos
+    buenos = [c for c in validos if c[0].split()[-1].lower() not in ATONAS[idioma]] or validos
     return list(min(buenos, key=lambda c: abs(len(c[0]) - len(c[1]))))
 
 def icono(nombre):
@@ -91,7 +189,7 @@ def generar(idioma="es"):
         out.append(f'<text x="{128+DX}" y="{y+76}" font-size="58" font-weight="700" fill="{color}" text-anchor="middle">{i}</text>')
         out.append(f'<rect x="{186+DX}" y="{y+16}" width="80" height="80" rx="18" fill="{color}"/>')
         out.append(f'<g transform="translate({198+DX} {y+28}) scale(2.3333)" fill="none" stroke="{BLANCO}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{icono(ic)}</g>')
-        lineas = partir(texto, 40)
+        lineas = partir(texto, 38, idioma)
         xt = 296 + DX
         if len(lineas) == 1:
             out.append(f'<text x="{xt}" y="{y+68}" font-size="33" font-weight="400" fill="{TINTA}">{html.escape(lineas[0])}</text>')

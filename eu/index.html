@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurkezpena | Vibe coding arduratsua</title>
+<meta name="description" content="Vibe coding arduratsua: vibe coding bidez sortutako material hezitzaileak argitaratzeko gida. Aurkezpena.">
+<meta name="author" content="Juan José de Haro">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<meta property="og:title" content="Argitaratu aurretik: hamar gomendio">
+<meta property="og:description" content="Vibe coding bidez sortutako material hezitzaileak argitaratzeko gida">
+<meta property="og:image" content="https://vibe-coding-educativo.github.io/vibe-responsable/infografia/lista-iconos.eu.png">
+<meta property="og:type" content="article">
+<link rel="alternate" hreflang="es" href="https://vibe-coding-educativo.github.io/vibe-responsable/es/">
+<link rel="alternate" hreflang="ca" href="https://vibe-coding-educativo.github.io/vibe-responsable/ca/">
+<link rel="alternate" hreflang="gl" href="https://vibe-coding-educativo.github.io/vibe-responsable/gl/">
+<link rel="alternate" hreflang="eu" href="https://vibe-coding-educativo.github.io/vibe-responsable/eu/">
+<link rel="alternate" hreflang="en" href="https://vibe-coding-educativo.github.io/vibe-responsable/en/">
+<link rel="icon" href="../recursos/logo/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../recursos/logo/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="../recursos/logo/apple-touch-icon.png">
+<link rel="preload" href="../recursos/fuentes/atkinson-hyperlegible-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../recursos/estilos.css?v=bd8f57c8a2">
+<script>(function(){try{var t=localStorage.getItem("vibe-responsable:tema");if(t!=="light"&&t!=="dark"){t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.dataset.theme=t;}catch(e){}})();</script>
+<script src="../recursos/guia.js?v=511747d9bd" defer></script>
+</head>
+<body class="pagina-presentacion">
+<a class="saltar" href="#contenido">Joan edukira</a>
+<header class="pizarra">
+<div class="ancho pizarra-int">
+<div class="sitio"><a class="sitio-guia" href="./"><img class="marca" src="../recursos/logo/logo.svg" alt="" width="30" height="30"><span>Vibe coding arduratsua</span></a>
+<span class="sitio-desc">Vibe coding bidez sortutako material hezitzaileak argitaratzeko gida</span>
+</div>
+<nav aria-label="Gidaren atalak"><ul><li><a href="./" aria-current="page">Aurkezpena</a></li><li><a href="guia.html">Gida</a></li><li><a href="herramientas.html">Tresnak eta mailak</a></li><li><a href="para-la-ia.html">IArentzako jarraibideak</a></li><li><a href="referencias.html">Erreferentziak</a></li></ul></nav>
+<div class="utiles">
+<div class="desplegable">
+<button type="button" class="idiomas" title="Hizkuntza" aria-label="Hizkuntza" aria-haspopup="menu" aria-expanded="false"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6" />
+  <path d="m4 14 6-6 2-3" />
+  <path d="M2 5h12" />
+  <path d="M7 2h1" />
+  <path d="m22 22-5-10-5 10" />
+  <path d="M14 18h6" /></svg></button>
+<div class="menu menu-idiomas" role="menu" hidden><a role="menuitem" href="../es/" hreflang="es" lang="es">Castellano</a><a role="menuitem" href="../ca/" hreflang="ca" lang="ca">Català</a><a role="menuitem" href="../gl/" hreflang="gl" lang="gl">Galego</a><a role="menuitem" href="../eu/" hreflang="eu" lang="eu" aria-current="true">Euskara</a><a role="menuitem" href="../en/" hreflang="en" lang="en">English</a></div>
+</div>
+<button type="button" class="tema" title="Modu argia edo iluna" aria-label="Modu argia edo iluna"><span class="luna"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><span class="sol"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" />
+  <path d="M12 2v2" />
+  <path d="M12 20v2" />
+  <path d="m4.93 4.93 1.41 1.41" />
+  <path d="m17.66 17.66 1.41 1.41" />
+  <path d="M2 12h2" />
+  <path d="M20 12h2" />
+  <path d="m6.34 17.66-1.41 1.41" />
+  <path d="m19.07 4.93-1.41 1.41" /></svg></span></button>
+<div class="desplegable">
+<button type="button" class="imprimir" title="Inprimatu edo deskargatu" aria-label="Inprimatu edo deskargatu" aria-haspopup="menu" aria-expanded="false"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+  <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
+  <rect x="6" y="14" width="12" height="8" rx="1" /></svg></button>
+<div class="menu" role="menu" hidden>
+<button type="button" role="menuitem" class="menu-imprimir"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+  <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
+  <rect x="6" y="14" width="12" height="8" rx="1" /></svg><span><b>Orri hau inprimatu</b><small>Orri honetan ikusten dena bakarrik</small></span></button>
+<a role="menuitem" href="vibe-responsable-eu.pdf" download><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <path d="m7 10 5 5 5-5" /></svg><span><b>Gida osoa PDFan deskargatu</b><small>Orri guztiak dokumentu bakarrean</small></span></a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main id="contenido" class="ancho">
+<h1>Aurkezpena</h1>
+<div class="entrada" style="--ig-an:1080;--ig-al:1928">
+<div class="textos">
+<section class="columna" aria-labelledby="h-zer-da-vibe-coding-hezitzailea"><h2 id="h-zer-da-vibe-coding-hezitzailea">Zer da vibe coding hezitzailea</h2><p>Vibe coding-a, <a href="https://x.com/karpathy/status/1886192184808149383" target="_blank" rel="noopener">Andrej Karpathyk 2025eko otsailean proposatutako izena</a>, programa informatikoak sortzea da, adimen artifizialeko (IA) eredu bati lortu nahi dena azalduz, kodea idatzi beharrik gabe.</p>
+<div class="definicion" data-titulo="Vibe coding hezitzailea">
+<p><strong>Vibe coding hezitzailea</strong>, gida honetan ulertzen den moduan, <strong>irakasteko eta ikasteko baliabideak eta aplikazioak sortzea da, hizkuntza naturalean adimen artifizial batekin hitz eginez: IAk kodea idazten du, eta pertsonak asmo pedagogikoa jartzen du eta emaitza egiaztatzen du</strong>.</p>
+</div></section>
+<section class="columna" aria-labelledby="h-zergatik-gida-hau"><h2 id="h-zergatik-gida-hau">Zergatik gida hau</h2><p><a href="https://t.me/vceduca" target="_blank" rel="noopener">Vibe Coding Educativo</a> Telegram taldean gero eta material gehiago partekatzen dira IArekin sortuak, batzuetan lizentziarik gabe, ikasleen datuak kanpoko zerbitzuetara bidaliz edo beste inork kodea aprobetxatu ezin duela. Argitaratzen dituen pertsona da haien erantzule, kodea IArena izan arren, eta gidak, <a href="https://conocimiento-abierto.github.io/" target="_blank" rel="noopener">Ezagutza irekiaren dekalogoa</a> oinarri hartuta, hori egiteko modu arduratsu bat proposatzen du.</p>
+<div class="definicion" data-titulo="Vibe coding hezitzaile arduratsua">
+<p><strong>Vibe coding hezitzaile arduratsuak</strong> (VCER, gaztelaniazko siglak) <strong>ikasleentzat seguruak, irisgarriak, iraunkorrak, nola egin ziren argi azaltzen duten eta beste pertsona batzuek berrerabiltzeko libreak diren materialak argitaratzen ditu</strong>.</p>
+</div></section>
+<section class="utiliza" aria-labelledby="h-nola-hasi"><h2 id="h-nola-hasi">Nola hasi</h2><ul>
+<li><strong>Material bat sortzean.</strong> IAri <a href="para-la-ia.html#material-bat-sortzeko" class="abrir-ventana" data-ventana="ventana-instrucciones">jarraibideen fitxategia</a> ematea, gomendioak nola bete adierazten diona.</li>
+<li><strong>Amaitzean.</strong> VCER ebaluazioa eskatzea <a href="para-la-ia.html#egindako-baliabide-bat-ebaluatzeko" class="abrir-ventana" data-ventana="ventana-evaluacion">ebaluazio-fitxategiarekin</a>, falta dena adierazten duena.</li>
+<li><strong>Argitaratzeko.</strong> Bi urrats horiekin, IA arduratzen da gomendio bakoitzaren gutxienekoaz, edukiaren berrikuspenaz izan ezik, pertsonari baitagokio.</li>
+</ul></section>
+<div class="notas"></div>
+</div>
+<aside class="paso-guia"><div class="tarjeta"><a class="miniatura ampliar" href="../infografia/lista-iconos.eu.png" aria-label="Infografia handitu" title="Infografia handitu"><img src="../infografia/lista-iconos.eu.png" width="1080" height="1928" alt="Hamar gomendioak dituen infografia, zerrendan agertzen diren berberak, lau fasetan multzokatuta: ikasleak babestu, materiala eraiki, lana dokumentatu eta materiala partekatu."></a><a class="descarga" href="../infografia/lista-iconos.eu.png" download><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <path d="m7 10 5 5 5-5" /></svg>Irudia deskargatu</a></div><a class="ver-animacion abrir-ventana" data-ventana="ventana-animacion" href="../animacion/vibe-responsable-zoom.es.mp4"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" /></svg>Animazioa ikusi</a></aside>
+<p class="ir-guia"><a href="guia.html" class="continuar">Gida irakurri</a></p>
+</div>
+<dialog class="visor" style="--ig-an:1080;--ig-al:1928" aria-label="Laburpen grafikoa">
+<div class="visor-barra"><a class="visor-descarga" href="../infografia/lista-iconos.eu.png" download>Irudia deskargatu</a>
+<button type="button" class="visor-zoom" data-acercar="Irakurtzeko tamainan ikusi" data-alejar="Pantailara doitu">Irakurtzeko tamainan ikusi</button>
+<button type="button" class="visor-cerrar">Itxi</button></div>
+<div class="visor-lienzo"><img alt="Hamar gomendioak dituen infografia, zerrendan agertzen diren berberak, lau fasetan multzokatuta: ikasleak babestu, materiala eraiki, lana dokumentatu eta materiala partekatu." width="1080" height="1928"></div>
+</dialog>
+<dialog class="ventana-ia" id="ventana-instrucciones" aria-labelledby="ventana-instrucciones-titulo">
+<div class="ventana-cab"><h2 id="ventana-instrucciones-titulo">Material bat sortzeko jarraibideak</h2>
+<button type="button" class="ventana-cerrar" aria-label="Itxi" title="Itxi"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" />
+  <path d="m6 6 12 12" /></svg></button></div>
+<p>Hastean, erantsi fitxategia IArekiko elkarrizketan, edo itsatsi testua hasieran, sortu nahi den materialaren deskribapenarekin batera.</p>
+<div class="copiable ventana-botones">
+<button type="button" class="copiar" data-hecho="Testua kopiatuta" title="Testua kopiatu IArekiko elkarrizketan itsasteko"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" /></svg><span>Testua kopiatu</span></button>
+<a class="boton" href="instrucciones-vibe-responsable.md" download title="Fitxategia deskargatu IArekiko elkarrizketan eransteko"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <path d="m7 10 5 5 5-5" /></svg>Fitxategia deskargatu</a>
+<pre hidden># Material hezitzaile ireki bat sortzeko jarraibideak
+
+Jarraibide hauek «Vibe coding arduratsua» gidatik datoz, vibe coding bidez
+sortutako material hezitzaileak argitaratzeko
+(https://vibe-coding-educativo.github.io/vibe-responsable/eu/).
+Jarraitu itzazu lan osoan, sortu nahi dudan materialari buruz eskatzen
+dizudanarekin batera. Materiala modu irekian argitaratuko da, beste pertsona
+batzuek erabili eta egokitu ahal izan dezaten.
+
+## Hasi aurretik
+
+Esan ez badizut, galdetu:
+- Agertu behar den egiletza (izen bat edo erabiltzaile-izen bat).
+- Non argitaratuko den: txatbot baten weban, aplikazioak sortzeko plataforma
+  batean, edo biltegi batean edo norberaren gune batean.
+
+## Nola eraiki behar den
+
+- Lizentzia: CC BY-SA 4.0 edukientzat eta AGPL v3 kodearentzat, beste
+  batzuk adierazten ez badizkizut.
+- Txatbot baten weban lan egiten badugu, egin materiala nabigatzailean
+  irekitzean berez funtzionatzen duen HTML orri gisa, eta ez txatbotaren
+  barruan bakarrik funtzionatzen duen osagai gisa.
+- Liburutegiak, tipografiak eta kanpoko beste baliabide batzuk erabil
+  ditzakezu lana aurrezten badute edo emaitza hobetzen badute. Kargatu itzazu
+  zerbitzu ezagun eta egonkor batetik, eta jaso itzazu erabakien oharrean,
+  haien lizentziarekin. Materialaren zerbaitek funtzionatzeari utziko balio
+  interneterik gabeko ordenagailu batean deskargatuta irekitzean, esan iezadazu
+  hitz errazekin, adibidez: «interneterik gabe irekitzen baduzu, formulak ez
+  dira ikusiko».
+- Datu pertsonalak: ez eskatu izena ezta pertsona bat identifikatzen duen
+  daturik ere, tresnak bere funtziorako behar ez badu, notak jasotzeko
+  koaderno batek adibidez. Kasu horretan, gorde gailuan bakarrik eta eskaini
+  izenik gabe esportatzeko edo inprimatzeko aukera. Programak ikasleen
+  erantzunak biltzen baditu, erakutsi emaitza amaitzean edo utzi deskargatzen
+  entregatzeko, eta identifikatu pertsona bakoitza kode batekin, izenaren
+  ordez. Ez bidali ezer inongo zerbitzarira, eta ez gehitu analitikarik ezta
+  bisita-kontagailurik ere.
+- Irisgarria, Web Edukiaren Irisgarritasun Jarraibideei (WCAG) jarraituz:
+  teklatuarekin bakarrik erabiltzeko modukoa, tabulazio-ordena logikoarekin,
+  kontroletan etiketekin, irudietan testu alternatiboekin, kontraste
+  nahikoarekin, ezer ulertzeko kolorearen mende egon gabe eta mugikor baten
+  pantailan irakurtzeko modukoa.
+- Kode irakurgarria eta materialaren hizkuntzan iruzkindua, trinkotu gabe,
+  aldagai-izen ulergarriekin.
+- Materialaren oinean: izenburua, egiletza, lizentzia bere estekarekin eta
+  IAren erabilerari buruzko adierazpen labur bat, tresnarekin, hilabetearekin
+  eta urtearekin, eta nik egiaztatu dudanarekin (galdetu argitaratu aurretik).
+- Beste pertsona batzuen irudiak, soinuak edo kode-zatiak gehitzen badituzu,
+  erabili berrerabiltzea ahalbidetzen duen lizentzia duen materiala bakarrik,
+  eta adierazi haren egiletza, jatorria eta lizentzia materialaren barruan
+  bertan.
+- Programak ikasleen datuak ikastetxeko sistemetan gordeko baditu, ez idatzi
+  gakorik edo pasahitzik nabigatzailera iristen den kodean, egin ezazu
+  bildutakoa irakasleak edo ikastetxeak bakarrik irakurri ahal izatea, eta
+  adierazi iezadazu ezagutza teknikoak dituen pertsona batek zer berrikusi
+  behar duen erabiltzen hasi aurretik.
+- Aldaketa bakoitzaren ondoren, egiaztatu berriro lehendik ondo zebilena:
+  exekutatu probak baldin badaude edo, ezin baduzu, esan iezadazu zer
+  egiaztapen errepikatu behar ditudan.
+
+## Biltegi batean edo norberaren gune batean argitaratzen bada
+
+- Gehitu LICENSE fitxategi bat kodearen lizentziarekin eta beste bat
+  edukienarekin, eta adierazi lizentzia kode-fitxategi bakoitzaren hasieran
+  SPDX-License-Identifier lerro batekin.
+- Gehitu proiektua nola antolatuta dagoen eta fitxategi bakoitza zertarako
+  den azaltzen duen dokumentu bat.
+- Eraman erabakien erregistro bat (ADR) proiektuaren barruan, erabaki
+  bakoitzeko fitxategi batekin, testuingurua, baztertutako aukerak eta
+  ondorioak jasoz. Jaso bertan hartzen dugun erabaki bakoitza, nik eskatu
+  arte itxaron gabe. Erabaki teknikoetan, jaso zertan oinarritzen zaren ere
+  (dokumentazio ofiziala, kodearen bertsio zehatz bat edo errepika daitekeen
+  proba bat), arrisku ezagunak eta nola egiaztatu duzun. Ez asmatu iturririk
+  ezta probarik ere: egiaztatu ezin izan duzuna, markatu baliozkotzeko
+  dagoen hipotesi gisa.
+- Berrikusi irisgarritasuna tresna automatiko batekin eta zuzendu
+  detektatzen duena.
+- Bertsio bat argitaratzen dugunean, markatu bertsio-etiketa batekin (v1.0,
+  v1.1…) eta ez mugitu edo berrerabili gero argitaratutako etiketa bat.
+
+## Materiala amaitzen duzunean
+
+- Deskribatu laburki materialak zer egiten duen, zer gordetzen duen eta
+  kanpoko zerbitzuren batekin komunikatzen den.
+- Prestatu egiaztapen-zerrenda labur bat ibilbide nagusiekin eta muturreko
+  kasuekin, aldaketa bakoitzaren ondoren errepikatzeko. Proiektuak
+  ahalbidetzen badu, bihurtu proba automatiko.
+- Idatzi ohar labur bat hartu dituzun erabaki garrantzitsuekin eta bakoitzaren
+  arrazoiarekin, edo laburbildu erabakien erregistrotik, baldin badago.
+- Adierazi zer egiaztatu behar dudan nik, edukien zuzentasunetik hasita.
+</pre>
+</div>
+<p class="ventana-mas"><a href="para-la-ia.html#material-bat-sortzeko" title="IArentzako jarraibideen orrira joan, testu osoarekin">Informazio gehiago<svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></svg></a></p>
+</dialog>
+<dialog class="ventana-ia" id="ventana-evaluacion" aria-labelledby="ventana-evaluacion-titulo">
+<div class="ventana-cab"><h2 id="ventana-evaluacion-titulo">Materiala ebaluatzeko jarraibideak</h2>
+<button type="button" class="ventana-cerrar" aria-label="Itxi" title="Itxi"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" />
+  <path d="m6 6 12 12" /></svg></button></div>
+<p>Amaitzean, erantsi fitxategia elkarrizketa berean, edo itsatsi testua, eta eskatu «ebaluatu materiala jarraibideen arabera».</p>
+<div class="copiable ventana-botones">
+<button type="button" class="copiar" data-hecho="Testua kopiatuta" title="Testua kopiatu IArekiko elkarrizketan itsasteko"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" /></svg><span>Testua kopiatu</span></button>
+<a class="boton" href="evaluacion-vibe-responsable.md" download title="Fitxategia deskargatu IArekiko elkarrizketan eransteko"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <path d="m7 10 5 5 5-5" /></svg>Fitxategia deskargatu</a>
+<pre hidden># Baliabide hezitzaile ireki bat ebaluatzeko jarraibideak (VCER ebaluazioa)
+
+Jarraibide hauek «Vibe coding arduratsua» gidatik datoz, vibe coding bidez
+sortutako material hezitzaileak argitaratzeko
+(https://vibe-coding-educativo.github.io/vibe-responsable/eu/).
+Egindako baliabide bat ebaluatzeko balio dute, norberarena edo beste
+pertsona batena, gidari jarraituz sortua izan ala ez.
+
+## Nola ebaluatu
+
+- Lan egin ematen dizudan baliabidearen kodearen gainean. Ez baduzu, eskatu
+  iezadazu hasi aurretik.
+- Ez zuzendu: ebaluatu bakarrik.
+- Puntuatu hamar puntuetako bakoitza 2, 1 edo 0rekin VCER errubrikaren
+  arabera (vibe coding hezitzaile arduratsua, gaztelaniazko siglak), eta
+  justifikatu puntuazio bakoitza baliabidean ikusi duzunari buruzko esaldi
+  batekin.
+- Puntu bat eman dizudanarekin egiaztatu ezin bada, utzi puntuatu gabe eta
+  esan zer beharko litzatekeen egiaztatzeko.
+- Puntuatu aurretik, egin inbentario osoa, ez lagin bat: pertsonen datuak
+  eskatzen edo gordetzen dituen funtzio bakoitza eta nola esportatzen edo
+  kopiatzen diren; proiektuko irudi, soinu, bideo, ikono eta tipografia
+  bakoitza, eta nondik datorren (begiratu irudiak: berriro marraztutako logo
+  bat besterena da oraindik); eta kanpotik kargatzen den guztia, eta noiz
+  (irekitzean, zerbait sakatzean edo leiho berri batean).
+- Baliabidea argitaratuta badago, ebaluatu bertsio hori edo egiaztatu eman
+  dizuten kodearekin bat datorrela. Jaso zer bertsio ebaluatu duzun: bertsio-
+  etiketa eta commit-a biltegi batean badago, edo helbidea eta ebaluazioaren
+  data ez badago.
+- 5. punturako, kodea exekuta badezakezu, ireki baliabidea nabigatzaile
+  batean eta pasa iezaiozu irisgarritasun-tresna automatiko bat, axe-core
+  adibidez, edukia kargatuta ere bai, eta ez hasierako pantailan bakarrik. Ez
+  kontatu beste gune batzuetatik txertatzen dena. Tresnak ez du egiaztatzen
+  teklatuarekin erabiltzea: ibili tabuladorearekin. Puntuaren
+  justifikazioan, esan zer probatu duzun eta nola; kodea irakurri baino ezin
+  izan baduzu, adierazi.
+
+## VCER errubrika
+
+1. EDUKIA (baztertzailea)
+   2: Ez da akatsik detektatzen irakasten duenean: datuetan, definizioetan
+      eta zuzentzat ematen diren erantzunetan.
+   1: Irakasten duenean zehaztasun-falta txikiren bat dago.
+   0: Akats nabarmenak daude kontzeptuetan, datuetan edo erantzunetan.
+   Puntuazio honek detektatu dituzun akatsak bakarrik islatzen ditu:
+   zerrendatu banan-banan eta adierazi pertsona batek zer egiaztatzea
+   komeni den. Idazketa-hutsek eta erreferentzien formatu-akatsek ez dute
+   hemen kentzen: adierazi bereiz.
+
+2. DATU PERTSONALAK (baztertzailea)
+   2: Ez du inor identifikatzen duen daturik eskatzen, edo gailuan bakarrik
+      gordetzen ditu eta izenik gabe esportatzeko aukera ematen du; edo
+      ikastetxeko zerbitzu batera bakarrik bidaltzen ditu, kodean gako
+      ikusgarririk gabe eta irakasleak edo ikastetxeak bakarrik irakurri
+      ahal izateko moduan. Ez du analitikarik.
+   1: Ez ditu ikasleen datuak kanpoko zerbitzuetara bidaltzen, baina izenak
+      gordetzen ditu haiek gabe esportatzeko aukerarik gabe, edo
+      ikastetxeko zerbitzurako bidalketa ez dago ondo babestuta (gakoak
+      kodean, bildutakoa irakurtzeko aukera ematen duen helbide bat).
+   0: Ikasleen datuak ikastetxetik kanpoko zerbitzari batera bidaltzen
+      ditu, edo analitika edo jarraipena du.
+   Baliabideak ikasleen benetako datuak kudeatzen baditu, adierazi komeni
+   dela ezagutza teknikoak dituen pertsona batek berrikustea erabili
+   aurretik.
+   Beste zerbitzari batzuetatik kargatzen edo txertatzen dena (bideoak,
+   audioak, tipografiak, liburutegiak) 4. puntuan baloratzen da, ez hemen.
+
+3. ZER EGITEN DUEN ULERTZEA
+   2: Laburki deskriba daiteke zer egiten duen, zer gordetzen duen eta
+      zerekin komunikatzen den, eta materialak adierazten duena kodearekin
+      bat dator.
+   1: Funtzionamendua ulertzen da, baina helburu argirik gabeko zatiak
+      daude edo ez du azaltzen zer gordetzen duen.
+   0: Helburua azaldu ezin den funtzioak edo komunikazioak daude, edo
+      adierazten duena ez dator bat kodearekin.
+
+4. MENDEKOTASUNAK
+   2: Kanpotik kargatzen edo txertatzen duena zerbitzu ezagunetatik dator eta
+      jasota dago, eta norberaren testuak, irudiak eta datuak materialaren
+      barruan daude.
+   1: Kanpoko baliabideak kargatzen edo txertatzen ditu jaso gabe, edo
+      norberaren edukiaren zati bat (bideo bat, audio bat, mapa bat) beste
+      plataforma batean bakarrik dago.
+   0: Eduki nagusia kanpoko zerbitzu baten mende dago, edo helbide
+      ezezagunetatik kodea kargatzen du.
+
+5. IRISGARRITASUNA
+   2: Osorik erabiltzen da teklatuarekin, kontrolek etiketa dute, irudiek
+      testu alternatiboa, kontrastea nahikoa da, ez dago kolorearen mende eta
+      pantaila estu batera egokitzen da.
+   1: Alderdi horietako batean edo bitan huts egiten du, erabiltzea eragotzi
+      gabe.
+   0: Hiru alderditan edo gehiagotan huts egiten du, edo ezin da
+      teklatuarekin erabili.
+
+6. KANPOKO MATERIALA
+   2: Kanpoko elementu bakoitzak egiletza, jatorria eta lizentzia adierazten
+      ditu, eta lizentziak berrerabiltzea ahalbidetzen du; edo ez dago
+      kanpoko materialik.
+   1: Lizentzia baliodunarekin kanpoko materiala dago, baina ez dago
+      guztiz aitortuta.
+   0: Berrerabiltzea ahalbidetzen duen lizentziarik gabeko edo inolako
+      aipamenik gabeko kanpoko materiala dago.
+
+7. ARRASTOA
+   2: Erabaki garrantzitsuak eta haien arrazoia jasotzen dituen erregistro
+      edo ohar bat dago.
+   1: Nola egina dagoen azaltzen duen dokumentazioa dago, baina ez zergatik.
+   0: Ez dago ezer.
+
+8. IAREN ERABILERA
+   2: IArekin egin dela eta pertsonak zer egiaztatu duen adierazten du.
+   1: IArekin egin dela adierazten du, zer egiaztatu den esan gabe.
+   0: Ez du adierazten. IArik erabili ez zela jasota badago, ez da
+      puntuatzen.
+
+9. LIZENTZIA
+   2: Egiletza eta lizentzia librea materialean ikusgai, estekarekin. Fitxategi
+      anitzeko proiektua bada, lizentzia-fitxategia barne hartzen du.
+   1: Egiletza edo lizentzia falta da, lizentzia ez da librea (NC edo ND)
+      edo ez du bere testurako estekarik.
+   0: Ez du ez egiletzarik ez lizentziarik adierazten.
+
+10. BERRERABILTZEA
+   2: Kodea osorik eskura daiteke, irakurtzean ulertzen da, behar den lekuan
+      iruzkinekin, eta aldatzeko argibideak daude.
+   1: Eskura daiteke, baina zaila da ulertzen iruzkinik gabe, zati batean
+      trinkotuta dago edo ez du argibiderik.
+   0: Ezin da eskuratu, edo nahasita edo trinkotuta dago.
+
+## Emaitza
+
+- Kalkulatu ehunekoa: puntuazioen batura, puntuatutako puntuen gehienezko
+  balioaz zatituta.
+- Eman emaitza bat: «Ez gomendagarria» 1. edo 2. puntuak 0 badu, ehunekoa
+  edozein dela ere; «Hobetu beharrekoa» % 70etik behera; «Gomendagarria» %
+  70etik aurrera, betiere 1. eta 2. puntuak puntuatu ahal izan badira eta 5.
+  puntuak 0rik ez badu. 1. eta 2. puntuetako bat puntuatu gabe geratu bada,
+  emaitza «Hobetu beharrekoa» da eta zer falta den egiaztatzeko adierazten
+  du; 5. puntuak 0 badu, «Hobetu beharrekoa» da hori ere, eta zerk eragozten
+  duen erabiltzea adierazten du.
+- Hasi txostena «VCER errubrika: Gomendagarria (% 85)» bezalako lerro
+  batekin, eta jarraian beste bat ebaluatutako bertsioarekin; gehitu azpian
+  emaitza horrek zer esan nahi duen azaltzen duen esaldi bat:
+  - Gomendagarria: gidaren funtsezkoa betetzen du eta erabil edo argitara
+    daiteke; proposatutako hobekuntzek osatzen dute.
+  - Hobetu beharrekoa: argitaratu edo gomendatu aurretik zuzentzea komeni
+    diren akatsak ditu, nahiz eta horietako batek ere ez duen baztertzen.
+  - Ez gomendagarria: akats nabarmenak ditu irakasten duenean edo ikasleen
+    datuak ikastetxetik kanpoko zerbitzuetara bidaltzen ditu; ez da komeni
+    erabiltzea ezta argitaratzea ere, zuzendu arte.
+- 3. puntuaren justifikazioan, sartu deskribapen labur hori. 4.arenean,
+  zerrendatu kodeko kanpoko helbideak eta bakoitza zertarako den, eta esan
+  hitz errazekin zerk utziko liokeen funtzionatzeari interneterik gabeko
+  ordenagailu batean deskargatuta irekitzean. 6.arenean, zerrendatu kanpoko
+  materiala.
+- Amaitu puntuazioa gehien igoko luketen hiru hobekuntzekin.
+
+## Gero zuzentzeko eskatzen badizut
+
+- Ezer aldatu aurretik, esan iezadazu zer aldatuko zenukeen eta itxaron nik
+  onartu arte. Ez aldatu edukia ezta funtzionamendua ere, nik eskatzen ez
+  badizut.
+- Erabakien oharrik ez badago, idatzi bat baliabideak orain nola
+  funtzionatzen duen deskribatzen duena, eta adierazi gero idatzi dela.
+- Lizentzia edo IAren erabileraren adierazpena falta bada, prestatu
+  iezadazu testua gehitzeko.
+</pre>
+</div>
+<p class="ventana-mas"><a href="para-la-ia.html#egindako-baliabide-bat-ebaluatzeko" title="IArentzako jarraibideen orrira joan, testu osoarekin">Informazio gehiago<svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></svg></a></p>
+</dialog>
+<dialog class="ventana-ia ventana-animacion" id="ventana-animacion" aria-labelledby="ventana-animacion-titulo">
+<div class="ventana-cab"><h2 id="ventana-animacion-titulo">Gida animazio batean (gaztelaniaz)</h2>
+<button type="button" class="ventana-cerrar" aria-label="Itxi" title="Itxi"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" />
+  <path d="m6 6 12 12" /></svg></button></div>
+<div class="video-marco"><video data-src="../animacion/vibe-responsable-zoom.es.mp4" poster="../animacion/vibe-responsable-zoom.es.jpg" lang="es" controls playsinline preload="none"></video>
+<button type="button" class="volver-a-ver" hidden><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+  <path d="M3 3v5h5" /></svg>Berriro ikusi</button></div>
+</dialog>
+</main>
+<footer class="pie">
+<div class="ancho">
+<p>© 2026 <a href="https://bilateria.org" target="_blank" rel="noopener">Juan José de Haro</a>. Edukiak <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.eu" target="_blank" rel="noopener">CC BY-SA 4.0</a> lizentziarekin. <a href="creditos.html">Kredituak eta lizentziak</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/releases/tag/v1.0" target="_blank" rel="noopener">1.0 bertsioa</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues" target="_blank" rel="noopener">Iradokizunak eta zuzenketak</a>.</p>
+</div>
+</footer>
+</body>
+</html>

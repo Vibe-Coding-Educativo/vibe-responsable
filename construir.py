@@ -26,9 +26,19 @@ from datetime import date
 from pathlib import Path
 
 RAIZ = Path(__file__).parent
-IDIOMAS = ["es"]                      # se amplía al añadir contenido/<idioma>/
+# Los idiomas de la guía (ADR 20). El castellano es el original y el idioma por omisión;
+# cada idioma tiene su carpeta en contenido/<idioma>/ y su bloque en UI.
+IDIOMAS = ["es", "ca", "gl", "eu", "en"]
+NOMBRES_IDIOMAS = {"es": "Castellano", "ca": "Català", "gl": "Galego", "eu": "Euskara", "en": "English"}
 URL_SITIO = "https://vibe-coding-educativo.github.io/vibe-responsable/"
 REPO = "https://github.com/Vibe-Coding-Educativo/vibe-responsable"
+# La versión publicada de la guía (ADR 19). Cambia con el contenido, no con los ajustes de la web;
+# cada una lleva su etiqueta en el repositorio (v1.0) y su depósito en Zenodo, con su DOI.
+VERSION = "1.0"
+FECHA_VERSION = date(2026, 10, 1)
+DOI = "10.5281/zenodo.23081518"            # el de esta versión
+DOI_CONCEPTO = "10.5281/zenodo.23081517"   # el de todas las versiones: lleva siempre a la última
+NOTAS_VERSION = f"{REPO}/releases/tag/v{VERSION}"
 CLAVE_TEMA = "vibe-responsable:tema"   # única entrada en localStorage; la misma en recursos/guia.js
 PDF = "vibe-responsable-{idioma}.pdf"  # la guía completa, generada con --pdf y publicada junto a las páginas
 # Los archivos para la IA: cada uno está en contenido/<idioma>/ y se publica con otro nombre para
@@ -37,6 +47,14 @@ ARCHIVOS_IA = {"instrucciones": ("instrucciones-ia.md", "instrucciones-vibe-resp
                "evaluacion": ("evaluacion-ia.md", "evaluacion-vibe-responsable.md")}         # para evaluar
 ICONOS = ["book-check", "shield-check", "messages-square", "unplug", "accessibility",
           "quote", "notebook-pen", "bot", "creative-commons", "download"]
+
+MESES = {
+    "es": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
+    "ca": ["gener", "febrer", "març", "abril", "maig", "juny", "juliol", "agost", "setembre", "octubre", "novembre", "desembre"],
+    "gl": ["xaneiro", "febreiro", "marzo", "abril", "maio", "xuño", "xullo", "agosto", "setembro", "outubro", "novembro", "decembro"],
+    "eu": ["urtarrilaren", "otsailaren", "martxoaren", "apirilaren", "maiatzaren", "ekainaren", "uztailaren", "abuztuaren", "irailaren", "urriaren", "azaroaren", "abenduaren"],
+    "en": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+}
 
 UI = {
     "es": {
@@ -54,13 +72,16 @@ UI = {
         "pdf": "Descargar la guía completa en PDF",
         "pdf_desc": "Todas las páginas en un solo documento",
         "tema": "Modo claro u oscuro",
+        "idioma": "Idioma",
         "citar": "Cómo citar",
-        "cita": 'De Haro, J. J. (2026). <i>Vibe coding responsable: guía para publicar materiales educativos creados con vibe coding</i>. Vibe Coding Educativo. <a href="https://vibe-coding-educativo.github.io/vibe-responsable/">https://vibe-coding-educativo.github.io/vibe-responsable/</a>',
-                "autor": "Juan José de Haro",
+        "cita": f'De Haro, J. J. (2026). <i>Vibe coding responsable: guía para publicar materiales educativos creados con vibe coding</i> (versión {VERSION}). Vibe Coding Educativo. <a href="https://doi.org/{DOI}">https://doi.org/{DOI}</a>',
+        "cita_nota": f'Para citar la guía sin fijar la versión: <a href="https://doi.org/{DOI_CONCEPTO}">https://doi.org/{DOI_CONCEPTO}</a>, que lleva siempre a la última.',
+        "version_fecha": "Versión {version}, {fecha}",
+        "autor": "Juan José de Haro",
         "contenido": "Contenido",
         "capitulo": "Capítulo {n}",
         "pie_pdf": "Vibe coding responsable · Juan José de Haro · CC BY-SA 4.0 · {fecha}",
-        "meses": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
+        "fecha": lambda d: f"{d.day} de {MESES['es'][d.month - 1]} de {d.year}",
         "infografia_titulo": "Resumen gráfico",
         # Fases de la vida del material (ADR 15): primera recomendación de cada una, con el verbo
         # y el complemento, que forman las dos líneas del rótulo vertical. Los mismos que la infografía.
@@ -101,12 +122,270 @@ UI = {
         "alejar": "Ajustar a la pantalla",
         "niveles": {"Lo mínimo.": "minimo", "Lo recomendado.": "recomendado", "En todos los casos.": "todos"},
         "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>.',
-        "pie_2": '<a href="creditos.html">Créditos y licencias</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Sugerencias y correcciones</a>.',
+        "pie_2": f'<a href="creditos.html">Créditos y licencias</a>. <a href="{NOTAS_VERSION}">Versión {VERSION}</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Sugerencias y correcciones</a>.',
+    },
+    "ca": {
+        "nombre": "Vibe coding responsable",
+        "guia": "Guia per publicar materials educatius creats amb vibe coding",
+        "comunidad": "Vibe Coding Educativo",
+        "saltar": "Salta al contingut",
+        "nav": "Seccions de la guia",
+        "nav_capitulos": "Capítol anterior i següent",
+        "nav_cortos": {"guia.html": "Guia", "referencias.html": "Referències"},
+        "imprimir": "Imprimir aquesta pàgina",
+        "imprimir_desc": "Només el que es veu en aquesta pàgina",
+        "imprimir_menu": "Imprimir o descarregar",
+        "pdf": "Descarregar la guia completa en PDF",
+        "pdf_desc": "Totes les pàgines en un sol document",
+        "tema": "Mode clar o fosc",
+        "idioma": "Llengua",
+        "citar": "Com citar",
+        "cita": f'De Haro, J. J. (2026). <i>Vibe coding responsable: guia per publicar materials educatius creats amb vibe coding</i> (versió {VERSION}). Vibe Coding Educativo. <a href="https://doi.org/{DOI}">https://doi.org/{DOI}</a>',
+        "cita_nota": f'Per citar la guia sense fixar la versió: <a href="https://doi.org/{DOI_CONCEPTO}">https://doi.org/{DOI_CONCEPTO}</a>, que porta sempre a la darrera.',
+        "version_fecha": "Versió {version}, {fecha}",
+        "autor": "Juan José de Haro",
+        "contenido": "Contingut",
+        "capitulo": "Capítol {n}",
+        "pie_pdf": "Vibe coding responsable · Juan José de Haro · CC BY-SA 4.0 · {fecha}",
+        "fecha": lambda d: f"{d.day} {'d’' if MESES['ca'][d.month - 1][0] in 'ao' else 'de '}{MESES['ca'][d.month - 1]} de {d.year}",
+        "infografia_titulo": "Resum gràfic",
+        "fases": {1: ("Protegir", "l'alumnat"), 3: ("Construir", "el material"),
+                  6: ("Documentar", "la feina"), 9: ("Compartir", "el material")},
+        "infografia_alt": "Infografia amb les deu recomanacions, les mateixes que apareixen a la llista, agrupades en quatre fases: protegir l'alumnat, construir el material, documentar la feina i compartir el material.",
+        "ampliar": "Ampliar la infografia",
+        "descargar": "Descarregar la imatge",
+        "ver_animacion": "Veure l'animació",
+        "volver_a_ver": "Tornar a veure",
+        "animacion_titulo": "La guia en una animació (en castellà)",
+        "anterior": "Anterior",
+        "siguiente": "Següent",
+        "niveles_ayuda": "Què signifiquen «El mínim» i «El recomanat»",
+        "leer_capitulo": "Més informació",
+        "que_hacer": "Què cal fer",
+        "volver_guia": "Tornar a la guia",
+        "cerrar": "Tancar",
+        "copiar": "Copiar el text",
+        "copiado": "Text copiat",
+        "descargar_archivo": "Descarregar el fitxer",
+        "ver_archivo": {"instrucciones": "Veure les instruccions per crear", "evaluacion": "Veure les instruccions per avaluar"},
+        "ventana_ia": {
+            "instrucciones": ("Instruccions per crear un material",
+                              "En començar, adjuntar el fitxer a la conversa amb la IA, o enganxar el text al principi, juntament amb la descripció del material que es vol crear."),
+            "evaluacion": ("Instruccions per avaluar el material",
+                           "En acabar, adjuntar el fitxer a la mateixa conversa, o enganxar el text, i demanar «avalua el material segons les instruccions»."),
+        },
+        "mas_informacion": "Més informació",
+        "copiar_titulo": "Copiar el text per enganxar-lo a la conversa amb la IA",
+        "descargar_titulo": "Descarregar el fitxer per adjuntar-lo a la conversa amb la IA",
+        "mas_informacion_titulo": "Anar a la pàgina d'instruccions per a la IA, amb el text complet",
+        "rubrica": "Rúbrica VCER: 2, es compleix; 1, en part; 0, no es compleix",
+        "punto": "Recomanació",
+        "acercar": "Veure a mida de lectura",
+        "alejar": "Ajustar a la pantalla",
+        "niveles": {"El mínim.": "minimo", "El recomanat.": "recomendado", "En tots els casos.": "todos"},
+        "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Continguts amb llicència <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ca">CC BY-SA 4.0</a>.',
+        "pie_2": f'<a href="creditos.html">Crèdits i llicències</a>. <a href="{NOTAS_VERSION}">Versió {VERSION}</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Suggeriments i correccions</a>.',
+    },
+    "gl": {
+        "nombre": "Vibe coding responsable",
+        "guia": "Guía para publicar materiais educativos creados con vibe coding",
+        "comunidad": "Vibe Coding Educativo",
+        "saltar": "Saltar ao contido",
+        "nav": "Seccións da guía",
+        "nav_capitulos": "Capítulo anterior e seguinte",
+        "nav_cortos": {"guia.html": "Guía", "referencias.html": "Referencias"},
+        "imprimir": "Imprimir esta páxina",
+        "imprimir_desc": "Só o que se ve nesta páxina",
+        "imprimir_menu": "Imprimir ou descargar",
+        "pdf": "Descargar a guía completa en PDF",
+        "pdf_desc": "Todas as páxinas nun só documento",
+        "tema": "Modo claro ou escuro",
+        "idioma": "Idioma",
+        "citar": "Como citar",
+        "cita": f'De Haro, J. J. (2026). <i>Vibe coding responsable: guía para publicar materiais educativos creados con vibe coding</i> (versión {VERSION}). Vibe Coding Educativo. <a href="https://doi.org/{DOI}">https://doi.org/{DOI}</a>',
+        "cita_nota": f'Para citar a guía sen fixar a versión: <a href="https://doi.org/{DOI_CONCEPTO}">https://doi.org/{DOI_CONCEPTO}</a>, que leva sempre á última.',
+        "version_fecha": "Versión {version}, {fecha}",
+        "autor": "Juan José de Haro",
+        "contenido": "Contido",
+        "capitulo": "Capítulo {n}",
+        "pie_pdf": "Vibe coding responsable · Juan José de Haro · CC BY-SA 4.0 · {fecha}",
+        "fecha": lambda d: f"{d.day} de {MESES['gl'][d.month - 1]} de {d.year}",
+        "infografia_titulo": "Resumo gráfico",
+        "fases": {1: ("Protexer", "o alumnado"), 3: ("Construír", "o material"),
+                  6: ("Documentar", "o traballo"), 9: ("Compartir", "o material")},
+        "infografia_alt": "Infografía coas dez recomendacións, as mesmas que aparecen na lista, agrupadas en catro fases: protexer o alumnado, construír o material, documentar o traballo e compartir o material.",
+        "ampliar": "Ampliar a infografía",
+        "descargar": "Descargar a imaxe",
+        "ver_animacion": "Ver a animación",
+        "volver_a_ver": "Volver ver",
+        "animacion_titulo": "A guía nunha animación (en castelán)",
+        "anterior": "Anterior",
+        "siguiente": "Seguinte",
+        "niveles_ayuda": "Que significan «O mínimo» e «O recomendado»",
+        "leer_capitulo": "Máis información",
+        "que_hacer": "Que hai que facer",
+        "volver_guia": "Volver á guía",
+        "cerrar": "Pechar",
+        "copiar": "Copiar o texto",
+        "copiado": "Texto copiado",
+        "descargar_archivo": "Descargar o ficheiro",
+        "ver_archivo": {"instrucciones": "Ver as instrucións para crear", "evaluacion": "Ver as instrucións para avaliar"},
+        "ventana_ia": {
+            "instrucciones": ("Instrucións para crear un material",
+                              "Ao comezar, achegar o ficheiro na conversa coa IA, ou pegar o texto ao principio, xunto coa descrición do material que se quere crear."),
+            "evaluacion": ("Instrucións para avaliar o material",
+                           "Ao rematar, achegar o ficheiro na mesma conversa, ou pegar o texto, e pedir «avalía o material segundo as instrucións»."),
+        },
+        "mas_informacion": "Máis información",
+        "copiar_titulo": "Copiar o texto para pegalo na conversa coa IA",
+        "descargar_titulo": "Descargar o ficheiro para achegalo na conversa coa IA",
+        "mas_informacion_titulo": "Ir á páxina de instrucións para a IA, co texto completo",
+        "rubrica": "Rúbrica VCER: 2, cúmprese; 1, en parte; 0, non se cumpre",
+        "punto": "Recomendación",
+        "acercar": "Ver a tamaño de lectura",
+        "alejar": "Axustar á pantalla",
+        "niveles": {"O mínimo.": "minimo", "O recomendado.": "recomendado", "En todos os casos.": "todos"},
+        "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Contidos baixo licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.gl">CC BY-SA 4.0</a>.',
+        "pie_2": f'<a href="creditos.html">Créditos e licenzas</a>. <a href="{NOTAS_VERSION}">Versión {VERSION}</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Suxestións e correccións</a>.',
+    },
+    "eu": {
+        "nombre": "Vibe coding arduratsua",
+        "guia": "Vibe coding bidez sortutako material hezitzaileak argitaratzeko gida",
+        "comunidad": "Vibe Coding Educativo",
+        "saltar": "Joan edukira",
+        "nav": "Gidaren atalak",
+        "nav_capitulos": "Aurreko eta hurrengo kapitulua",
+        "nav_cortos": {"guia.html": "Gida", "referencias.html": "Erreferentziak"},
+        "imprimir": "Orri hau inprimatu",
+        "imprimir_desc": "Orri honetan ikusten dena bakarrik",
+        "imprimir_menu": "Inprimatu edo deskargatu",
+        "pdf": "Gida osoa PDFan deskargatu",
+        "pdf_desc": "Orri guztiak dokumentu bakarrean",
+        "tema": "Modu argia edo iluna",
+        "idioma": "Hizkuntza",
+        "citar": "Nola aipatu",
+        "cita": f'De Haro, J. J. (2026). <i>Vibe coding arduratsua: vibe coding bidez sortutako material hezitzaileak argitaratzeko gida</i> ({VERSION} bertsioa). Vibe Coding Educativo. <a href="https://doi.org/{DOI}">https://doi.org/{DOI}</a>',
+        "cita_nota": f'Gida bertsioa finkatu gabe aipatzeko: <a href="https://doi.org/{DOI_CONCEPTO}">https://doi.org/{DOI_CONCEPTO}</a>, beti azkenera eramaten duena.',
+        "version_fecha": "{version} bertsioa, {fecha}",
+        "autor": "Juan José de Haro",
+        "contenido": "Edukia",
+        "capitulo": "{n}. kapitulua",
+        "pie_pdf": "Vibe coding arduratsua · Juan José de Haro · CC BY-SA 4.0 · {fecha}",
+        "fecha": lambda d: f"{d.year}ko {MESES['eu'][d.month - 1]} {d.day}a",
+        "infografia_titulo": "Laburpen grafikoa",
+        "fases": {1: ("Ikasleak", "babestu"), 3: ("Materiala", "eraiki"),
+                  6: ("Lana", "dokumentatu"), 9: ("Materiala", "partekatu")},
+        "infografia_alt": "Hamar gomendioak dituen infografia, zerrendan agertzen diren berberak, lau fasetan multzokatuta: ikasleak babestu, materiala eraiki, lana dokumentatu eta materiala partekatu.",
+        "ampliar": "Infografia handitu",
+        "descargar": "Irudia deskargatu",
+        "ver_animacion": "Animazioa ikusi",
+        "volver_a_ver": "Berriro ikusi",
+        "animacion_titulo": "Gida animazio batean (gaztelaniaz)",
+        "anterior": "Aurrekoa",
+        "siguiente": "Hurrengoa",
+        "niveles_ayuda": "Zer esan nahi dute «Gutxienekoa» eta «Gomendatua»",
+        "leer_capitulo": "Informazio gehiago",
+        "que_hacer": "Zer egin behar den",
+        "volver_guia": "Gidara itzuli",
+        "cerrar": "Itxi",
+        "copiar": "Testua kopiatu",
+        "copiado": "Testua kopiatuta",
+        "descargar_archivo": "Fitxategia deskargatu",
+        "ver_archivo": {"instrucciones": "Sortzeko jarraibideak ikusi", "evaluacion": "Ebaluatzeko jarraibideak ikusi"},
+        "ventana_ia": {
+            "instrucciones": ("Material bat sortzeko jarraibideak",
+                              "Hastean, erantsi fitxategia IArekiko elkarrizketan, edo itsatsi testua hasieran, sortu nahi den materialaren deskribapenarekin batera."),
+            "evaluacion": ("Materiala ebaluatzeko jarraibideak",
+                           "Amaitzean, erantsi fitxategia elkarrizketa berean, edo itsatsi testua, eta eskatu «ebaluatu materiala jarraibideen arabera»."),
+        },
+        "mas_informacion": "Informazio gehiago",
+        "copiar_titulo": "Testua kopiatu IArekiko elkarrizketan itsasteko",
+        "descargar_titulo": "Fitxategia deskargatu IArekiko elkarrizketan eransteko",
+        "mas_informacion_titulo": "IArentzako jarraibideen orrira joan, testu osoarekin",
+        "rubrica": "VCER errubrika: 2, betetzen da; 1, zati batean; 0, ez da betetzen",
+        "punto": "Gomendioa",
+        "acercar": "Irakurtzeko tamainan ikusi",
+        "alejar": "Pantailara doitu",
+        "siglas": ["IAren", "IA"],
+        "niveles": {"Gutxienekoa.": "minimo", "Gomendatua.": "recomendado", "Kasu guztietan.": "todos"},
+        "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Edukiak <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.eu">CC BY-SA 4.0</a> lizentziarekin.',
+        "pie_2": f'<a href="creditos.html">Kredituak eta lizentziak</a>. <a href="{NOTAS_VERSION}">{VERSION} bertsioa</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Iradokizunak eta zuzenketak</a>.',
+    },
+    "en": {
+        "nombre": "Responsible vibe coding",
+        "guia": "A guide to publishing educational materials created with vibe coding",
+        "comunidad": "Vibe Coding Educativo",
+        "saltar": "Skip to content",
+        "nav": "Sections of the guide",
+        "nav_capitulos": "Previous and next chapter",
+        "nav_cortos": {"guia.html": "Guide", "referencias.html": "References"},
+        "imprimir": "Print this page",
+        "imprimir_desc": "Only what is shown on this page",
+        "imprimir_menu": "Print or download",
+        "pdf": "Download the full guide as PDF",
+        "pdf_desc": "All the pages in a single document",
+        "tema": "Light or dark mode",
+        "idioma": "Language",
+        "citar": "How to cite",
+        "cita": f'De Haro, J. J. (2026). <i>Responsible vibe coding: a guide to publishing educational materials created with vibe coding</i> (version {VERSION}). Vibe Coding Educativo. <a href="https://doi.org/{DOI}">https://doi.org/{DOI}</a>',
+        "cita_nota": f'To cite the guide without fixing the version: <a href="https://doi.org/{DOI_CONCEPTO}">https://doi.org/{DOI_CONCEPTO}</a>, which always leads to the latest one.',
+        "version_fecha": "Version {version}, {fecha}",
+        "autor": "Juan José de Haro",
+        "contenido": "Contents",
+        "capitulo": "Chapter {n}",
+        "pie_pdf": "Responsible vibe coding · Juan José de Haro · CC BY-SA 4.0 · {fecha}",
+        "fecha": lambda d: f"{d.day} {MESES['en'][d.month - 1]} {d.year}",
+        "infografia_titulo": "Visual summary",
+        "fases": {1: ("Protect", "students"), 3: ("Build", "the material"),
+                  6: ("Document", "the work"), 9: ("Share", "the material")},
+        "infografia_alt": "Infographic with the ten recommendations, the same ones that appear in the list, grouped into four phases: protect students, build the material, document the work and share the material.",
+        "ampliar": "Enlarge the infographic",
+        "descargar": "Download the image",
+        "ver_animacion": "Watch the animation",
+        "volver_a_ver": "Watch again",
+        "animacion_titulo": "The guide in an animation (in Spanish)",
+        "anterior": "Previous",
+        "siguiente": "Next",
+        "niveles_ayuda": "What «Minimum» and «Recommended» mean",
+        "leer_capitulo": "More information",
+        "que_hacer": "What needs to be done",
+        "volver_guia": "Back to the guide",
+        "cerrar": "Close",
+        "copiar": "Copy the text",
+        "copiado": "Text copied",
+        "descargar_archivo": "Download the file",
+        "ver_archivo": {"instrucciones": "View the instructions for creating", "evaluacion": "View the instructions for evaluating"},
+        "ventana_ia": {
+            "instrucciones": ("Instructions for creating a material",
+                              "When starting, attach the file in the conversation with the AI, or paste the text at the beginning, together with the description of the material you want to create."),
+            "evaluacion": ("Instructions for evaluating the material",
+                           "When finished, attach the file in the same conversation, or paste the text, and ask it to «evaluate the material according to the instructions»."),
+        },
+        "mas_informacion": "More information",
+        "copiar_titulo": "Copy the text to paste it into the conversation with the AI",
+        "descargar_titulo": "Download the file to attach it in the conversation with the AI",
+        "mas_informacion_titulo": "Go to the page of instructions for the AI, with the full text",
+        "rubrica": "VCER rubric: 2, met; 1, partly met; 0, not met",
+        "punto": "Recommendation",
+        "acercar": "View at reading size",
+        "alejar": "Fit to screen",
+        "siglas": ["AI"],
+        "niveles": {"Minimum.": "minimo", "Recommended.": "recomendado", "In all cases.": "todos"},
+        "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Content under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>.',
+        "pie_2": f'<a href="creditos.html">Credits and licences</a>. <a href="{NOTAS_VERSION}">Version {VERSION}</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Suggestions and corrections</a>.',
     },
 }
 # El vídeo de la animación que abre la portada (ADR 17) y su cartel, relativos a la carpeta del idioma.
 VIDEO = "../animacion/vibe-responsable-zoom.{idioma}.mp4"
 CARTEL_VIDEO = "../animacion/vibe-responsable-zoom.{idioma}.jpg"
+
+
+def video(idioma):
+    """El vídeo de la portada y su cartel en el idioma de la página o, si no lo hay, en castellano (ADR 20)."""
+    for i in (idioma, "es"):
+        if (RAIZ / "es" / VIDEO.format(idioma=i)).resolve().exists():
+            return VIDEO.format(idioma=i), CARTEL_VIDEO.format(idioma=i), i
+    return None
 
 PAGINAS = [("index.html", "00-presentacion.md"), ("guia.html", "01-guia.md"),
            ("herramientas.html", "02-herramientas.md"), ("para-la-ia.html", "04-para-la-ia.md"),
@@ -151,13 +430,28 @@ def icono(nombre):
             f"{trazos}</svg>")
 
 
+def anclas_de(idioma, fuente):
+    """Las anclas de los apartados (##) de una página, en su orden, para enlazarlos en cualquier idioma."""
+    md = (RAIZ / "contenido" / idioma / fuente).read_text(encoding="utf-8")
+    return [ancla(c) for c in re.findall(r"^## (.+)$", md, flags=re.M)]
+
+
 def titulo_de(md):
     return re.match(r"#\s+(.*)", md).group(1).strip()
 
 
-def marco(idioma, archivo, titulo, cuerpo, clase):
-    """Cabecera, navegación y pie comunes a todas las páginas."""
+def marco(idioma, archivo, titulo, cuerpo, clase, propio=None):
+    """Cabecera, navegación y pie comunes a todas las páginas.
+
+    «archivo» es la entrada del menú que se marca; «propio», el archivo de la página cuando no
+    coincide con ella (un capítulo se marca como la guía), para enlazarla en los otros idiomas."""
     T = UI[idioma]
+    propio = propio or archivo
+    destino_idioma = "" if propio == "index.html" else propio
+    alternativas = "\n".join(f'<link rel="alternate" hreflang="{i}" href="{URL_SITIO}{i}/{destino_idioma}">' for i in IDIOMAS)
+    idiomas = "".join(f'<a role="menuitem" href="../{i}/{destino_idioma}" hreflang="{i}" lang="{i}"'
+                      + (' aria-current="true"' if i == idioma else "") + f'>{html.escape(NOMBRES_IDIOMAS[i])}</a>'
+                      for i in IDIOMAS)
     titulos = {a: titulo_de((RAIZ / "contenido" / idioma / m).read_text(encoding="utf-8")) for a, m in PAGINAS}
     nav = []
     for a, _ in PAGINAS:
@@ -178,6 +472,7 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 <meta property="og:description" content="{html.escape(T["guia"])}">
 <meta property="og:image" content="{URL_SITIO}infografia/lista-iconos.{idioma}.png">
 <meta property="og:type" content="article">
+{alternativas}
 <link rel="icon" href="../recursos/logo/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="../recursos/logo/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="../recursos/logo/apple-touch-icon.png">
@@ -195,6 +490,10 @@ def marco(idioma, archivo, titulo, cuerpo, clase):
 </div>
 <nav aria-label="{html.escape(T["nav"])}"><ul>{"".join(nav)}</ul></nav>
 <div class="utiles">
+<div class="desplegable">
+<button type="button" class="idiomas" title="{html.escape(T["idioma"])}" aria-label="{html.escape(T["idioma"])}" aria-haspopup="menu" aria-expanded="false">{icono("languages")}</button>
+<div class="menu menu-idiomas" role="menu" hidden>{idiomas}</div>
+</div>
 <button type="button" class="tema" title="{html.escape(T["tema"])}" aria-label="{html.escape(T["tema"])}"><span class="luna">{icono("moon")}</span><span class="sol">{icono("sun")}</span></button>
 <div class="desplegable">
 <button type="button" class="imprimir" title="{html.escape(T["imprimir_menu"])}" aria-label="{html.escape(T["imprimir_menu"])}" aria-haspopup="menu" aria-expanded="false">{icono("printer")}</button>
@@ -270,7 +569,8 @@ def ventanas_ia(idioma):
     para copiarlo; quien quiera leerlo va a la página. Sin JavaScript, el enlace lleva a la página."""
     T = UI[idioma]
     ventanas = []
-    for clave, ancla_pagina in (("instrucciones", "para-crear-un-material"), ("evaluacion", "para-evaluar-un-recurso-ya-hecho")):
+    apartados = anclas_de(idioma, "04-para-la-ia.md")   # cómo se utilizan, para crear, para evaluar
+    for clave, ancla_pagina in (("instrucciones", apartados[1]), ("evaluacion", apartados[2])):
         titulo, texto = T["ventana_ia"][clave]
         ventanas.append(f"""<dialog class="ventana-ia" id="ventana-{clave}" aria-labelledby="ventana-{clave}-titulo">
 <div class="ventana-cab"><h2 id="ventana-{clave}-titulo">{html.escape(titulo)}</h2>
@@ -295,7 +595,7 @@ def ventana_animacion(idioma):
     return f"""<dialog class="ventana-ia ventana-animacion" id="ventana-animacion" aria-labelledby="ventana-animacion-titulo">
 <div class="ventana-cab"><h2 id="ventana-animacion-titulo">{html.escape(T["animacion_titulo"])}</h2>
 <button type="button" class="ventana-cerrar" aria-label="{html.escape(T["cerrar"])}" title="{html.escape(T["cerrar"])}">{icono("x")}</button></div>
-<div class="video-marco"><video data-src="{VIDEO.format(idioma=idioma)}" poster="{CARTEL_VIDEO.format(idioma=idioma)}" controls playsinline preload="none"></video>
+<div class="video-marco"><video data-src="{video(idioma)[0]}" poster="{video(idioma)[1]}" lang="{video(idioma)[2]}" controls playsinline preload="none"></video>
 <button type="button" class="volver-a-ver" hidden>{icono("rotate-ccw")}{html.escape(T["volver_a_ver"])}</button></div>
 </dialog>"""
 
@@ -318,9 +618,9 @@ def pagina_presentacion(idioma):
     tarjeta = (f'<div class="tarjeta"><a class="miniatura ampliar" href="{img}" aria-label="{html.escape(T["ampliar"])}" title="{html.escape(T["ampliar"])}">'
                f'<img src="{img}" width="{an}" height="{al}" alt="{html.escape(T["infografia_alt"])}"></a>'
                f'<a class="descarga" href="{img}" download>{icono("download")}{html.escape(T["descargar"])}</a></div>')
-    hay_animacion = (RAIZ / "es" / VIDEO.format(idioma=idioma)).resolve().exists()
+    hay_animacion = video(idioma) is not None
     if hay_animacion:
-        tarjeta += (f'<a class="ver-animacion abrir-ventana" data-ventana="ventana-animacion" href="{VIDEO.format(idioma=idioma)}">'
+        tarjeta += (f'<a class="ver-animacion abrir-ventana" data-ventana="ventana-animacion" href="{video(idioma)[0]}">'
                     f'{icono("play")}{html.escape(T["ver_animacion"])}</a>')
     # Las notas del pie de la portada, que vienen del Markdown, como «Cómo se ha elaborado».
     # «Cómo citar» está de momento en créditos (<!-- cita --> en 03-creditos.md); volverá aquí.
@@ -360,7 +660,7 @@ def pagina_lista(idioma):
     filas = []
     for (n, t, explicacion, niveles), ic in zip(puntos, ICONOS):
         ayuda = (f'<a class="leer-capitulo" href="{caps[n][0]}">{html.escape(T["leer_capitulo"])}</a>' if n in caps
-                 else f'<a class="ayuda-niveles" href="herramientas.html#{ancla("Lo mínimo y lo recomendado")}">{html.escape(T["niveles_ayuda"])}</a>')
+                 else f'<a class="ayuda-niveles" href="herramientas.html#{anclas_de(idioma, "02-herramientas.md")[2]}">{html.escape(T["niveles_ayuda"])}</a>')
         ant = f'<button type="button" class="paso" data-ir="{n-1}">{html.escape(T["anterior"])}</button>' if n > 1 else "<span></span>"
         sig = f'<button type="button" class="paso" data-ir="{n+1}">{html.escape(T["siguiente"])}</button>' if n < total else "<span></span>"
         filas.append(
@@ -412,7 +712,8 @@ def tabla_rubrica(idioma):
         nombre = cab.group(2).strip()
         nota = re.search(r"\((.*?)\)", nombre)
         nombre = re.sub(r"\s*\(.*?\)", "", nombre).capitalize()
-        nombre = re.sub(r"\bia\b", "IA", nombre)   # las siglas vuelven a mayúsculas
+        for sigla in T.get("siglas", ["IA"]):   # las siglas vuelven a mayúsculas
+            nombre = re.sub(rf"\b{sigla}\b", sigla, nombre, flags=re.I)
         celda = f'<th scope="row"><span class="rub-n">{cab.group(1)}</span> {html.escape(nombre)}' + (f' <small>({html.escape(nota.group(1))})</small>' if nota else "") + "</th>"
         filas.append("<tr>" + celda + "".join(f'<td data-nota="{n}">{html.escape(niveles.get(n, ""))}</td>' for n in "210") + "</tr>")
     cabecera = "".join(f'<th scope="col">{n}</th>' for n in "210")
@@ -440,7 +741,7 @@ def pagina_texto(idioma, archivo, fuente):
         # Un archivo para la IA lleva además su enlace de descarga, y su texto va plegado para no
         # ocupar la página; cualquier otro bloque lleva solo el botón de copiar
         h = h.replace("<p>ARCHIVO-IA-RUBRICA</p>", tabla_rubrica(idioma))
-        h = h.replace("<p>CITA-DE-LA-GUIA</p>", f'<p>{T["cita"]}</p>')   # la misma que la portada del PDF
+        h = h.replace("<p>CITA-DE-LA-GUIA</p>", f'<p>{T["cita"]}</p>\n<p>{T["cita_nota"]}</p>')   # la misma que la portada del PDF
         h = re.sub(r"<p>ARCHIVO-IA-(\w+)</p>\s*<pre[^>]*>(.*?)</pre>",
                    lambda m: botones + f'<a class="descarga" href="{ARCHIVOS_IA[m.group(1)][1]}" download>'
                              f'{icono("download")}{html.escape(T["descargar_archivo"])}</a>' + copiar +
@@ -482,7 +783,7 @@ def pagina_capitulo(idioma, n, archivo, md):
               + recuadro + previo + "\n".join(secciones)
               + f'<nav class="entre-capitulos" aria-label="{html.escape(T["nav_capitulos"])}">{ant}'
                 f'<a href="guia.html">{html.escape(T["volver_guia"])}</a>{sig}</nav>')
-    return marco(idioma, "guia.html", titulo, cuerpo, "pagina-texto pagina-capitulo")
+    return marco(idioma, "guia.html", titulo, cuerpo, "pagina-texto pagina-capitulo", propio=archivo)
 
 
 # El PDF se justifica con el guionado de Chromium (hyphens: auto), que solo pone el guion
@@ -530,8 +831,8 @@ def pagina_completa(idioma, paginas):
     Orden de lectura: presentación, guía, los capítulos que la desarrollan, herramientas,
     instrucciones para la IA y créditos. Los enlaces entre páginas pasan a ser anclas."""
     T = UI[idioma]
-    hoy = date.today()
-    fecha = f"{hoy.day} de {T['meses'][hoy.month - 1]} de {hoy.year}"
+    d = FECHA_VERSION
+    fecha = T["version_fecha"].format(version=VERSION, fecha=T["fecha"](d))
     caps = capitulos(idioma)
     titulos = {a: titulo_de((RAIZ / "contenido" / idioma / m).read_text(encoding="utf-8")) for a, m in PAGINAS}
     titulos["creditos.html"] = titulo_de((RAIZ / "contenido" / idioma / "03-creditos.md").read_text(encoding="utf-8"))
@@ -625,7 +926,7 @@ def pagina_completa(idioma, paginas):
 <p class="pdf-sub">{html.escape(T["guia"])}</p>
 <p class="pdf-autor">{html.escape(T["autor"])}</p>
 <p class="pdf-fecha">{html.escape(fecha)}</p>
-<div class="pdf-cita"><h2>{html.escape(T["citar"])}</h2><p>{T["cita"]}</p>
+<div class="pdf-cita"><h2>{html.escape(T["citar"])}</h2><p>{T["cita"]}</p><p>{T["cita_nota"]}</p>
 <p class="pdf-licencia">{T["pie_1"]}</p></div>
 </section>
 <nav class="pdf-indice" aria-label="{html.escape(T["contenido"])}"><h2>{html.escape(T["contenido"])}</h2><ol>{"".join(indice)}</ol></nav>
@@ -744,6 +1045,8 @@ if __name__ == "__main__":
             (destino / "completo.html").write_text(pagina_completa(idioma, paginas), encoding="utf-8")
             subprocess.run(["node", str(RAIZ / "generar-pdf.js"), f"{idioma}/completo.html",
                             f"{idioma}/{PDF.format(idioma=idioma)}"], cwd=RAIZ, check=True)
+    # Las comprobaciones, cuando ya están todos los idiomas, porque cada página enlaza las de los demás
+    for idioma in IDIOMAS:
         rotos = comprobar_enlaces_internos(idioma)
         if rotos:
             print("ENLACES INTERNOS ROTOS:")

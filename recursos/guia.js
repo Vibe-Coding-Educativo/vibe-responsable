@@ -53,28 +53,30 @@
   }
   sistemaOscuro.addEventListener("change", function (ev) { if (leer() === null) { aplicarTema(ev.matches); } });
 
-  /* ---------- Imprimir o descargar ---------- */
-  // El botón de la impresora despliega un menú con dos opciones: imprimir la
-  // página o descargar la guía completa en PDF. Se cierra al elegir, al pulsar
-  // fuera o con Escape.
-  var imprimir = document.querySelector(".imprimir");
-  var menu = document.querySelector(".menu");
-  if (imprimir && menu) {
+  /* ---------- Menús de la cabecera ---------- */
+  // El botón de idiomas despliega los idiomas de la guía, que llevan a la misma página
+  // en cada uno; el de la impresora, imprimir la página o descargar la guía completa en
+  // PDF. Cada menú se cierra al elegir, al pulsar fuera o con Escape.
+  document.querySelectorAll(".desplegable").forEach(function (caja) {
+    var boton = caja.querySelector("button[aria-haspopup]");
+    var menu = caja.querySelector(".menu");
+    if (!boton || !menu) { return; }
     var abrirMenu = function (abierto) {
       menu.hidden = !abierto;
-      imprimir.setAttribute("aria-expanded", abierto ? "true" : "false");
-      if (abierto) { menu.querySelector("[role=menuitem]").focus(); }
+      boton.setAttribute("aria-expanded", abierto ? "true" : "false");
+      if (abierto) { (menu.querySelector("[aria-current]") || menu.querySelector("[role=menuitem]")).focus(); }
     };
-    imprimir.addEventListener("click", function () { abrirMenu(menu.hidden); });
-    menu.querySelector(".menu-imprimir").addEventListener("click", function () { abrirMenu(false); window.print(); });
-    menu.querySelector("a").addEventListener("click", function () { abrirMenu(false); });
+    boton.addEventListener("click", function () { abrirMenu(menu.hidden); });
+    var imprimir = menu.querySelector(".menu-imprimir");
+    if (imprimir) { imprimir.addEventListener("click", function () { abrirMenu(false); window.print(); }); }
+    menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () { abrirMenu(false); }); });
     document.addEventListener("click", function (ev) {
-      if (!menu.hidden && !imprimir.contains(ev.target) && !menu.contains(ev.target)) { abrirMenu(false); }
+      if (!menu.hidden && !boton.contains(ev.target) && !menu.contains(ev.target)) { abrirMenu(false); }
     });
     document.addEventListener("keydown", function (ev) {
-      if (ev.key === "Escape" && !menu.hidden) { abrirMenu(false); imprimir.focus(); }
+      if (ev.key === "Escape" && !menu.hidden) { abrirMenu(false); boton.focus(); }
     });
-  }
+  });
 
   /* ---------- Lista y panel ---------- */
   var panel = document.querySelector(".panel");

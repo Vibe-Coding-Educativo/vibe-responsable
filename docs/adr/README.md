@@ -23,6 +23,8 @@ deshaga después de buena fe, ni siquiera nosotros dentro de un año.
 | [15](0015-las-recomendaciones-siguen-el-orden-de-la-vida-del-material.md) | Las recomendaciones siguen el orden de la vida del material, en cuatro fases | aceptado |
 | [16](0016-la-animacion-es-una-pagina-html-que-se-graba-en-video.md) | La animación es una página HTML con sonido sintetizado, que se graba en vídeo | propuesto |
 | [17](0017-la-portada-abre-en-video-una-animacion-de-zoom-infinito.md) | La portada abre en vídeo una segunda animación, un zoom infinito | propuesto |
+| [19](0019-cada-version-publicada-lleva-numero-etiqueta-y-doi.md) | Cada versión publicada lleva número, etiqueta y DOI | aceptado |
+| [20](0020-la-guia-se-publica-en-cinco-idiomas.md) | La guía se publica en cinco idiomas | aceptado |
 
 Para añadir una, se copia [la plantilla](0000-plantilla.md) con el número
 siguiente y se anota aquí. Una decisión que deje de valer no se borra: se marca

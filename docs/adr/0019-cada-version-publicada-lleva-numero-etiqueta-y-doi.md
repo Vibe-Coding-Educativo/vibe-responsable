@@ -1,0 +1,58 @@
+# 19. Cada versión publicada lleva número, etiqueta y DOI
+
+Fecha: 2026-10-01 · Estado: aceptado
+
+## Contexto
+
+La recomendación 10 de la guía pide marcar cada versión publicada con una
+etiqueta, y Juanjo quiere ver la versión de sus programas en el pie y en los
+créditos. Hasta el 01-10-2026 la guía era un borrador sin número: el
+repositorio no tenía etiquetas y la web no decía qué versión se estaba leyendo.
+Al cerrar el borrador (ADR 13) se decidió publicar la 1.0 y depositarla en
+Zenodo para tener un DOI, como el MIAE.
+
+## Decisión
+
+- La versión se define en un solo sitio, `construir.py` (`VERSION`,
+  `FECHA_VERSION`, `DOI`, `DOI_CONCEPTO`), y de ahí sale a todas las páginas y a
+  los PDF.
+- El pie de todas las páginas dice «Versión 1.0», con enlace a las notas de esa
+  versión en GitHub (`releases/tag/v1.0`).
+- La portada del PDF y su pie llevan la versión y su fecha, no la fecha en que
+  se generó el archivo.
+- La cita lleva el número de versión y el DOI de esa versión; debajo, el DOI de
+  concepto, que lleva siempre a la última.
+- Cada versión tiene su etiqueta en el repositorio (`v1.0`), su versión
+  publicada en GitHub con unas notas breves y su depósito en Zenodo con los PDF
+  de todos los idiomas y los archivos para la IA.
+- La versión cambia cuando cambia el contenido de la guía, no con los ajustes
+  de la web. Un cambio que corrige sin alterar las recomendaciones sube el
+  segundo número (1.1); uno que cambia las recomendaciones, el primero (2.0).
+
+El DOI de la 1.0 se reservó en Zenodo antes de generar los PDF, para que la
+cita impresa ya lo lleve: versión `10.5281/zenodo.23081518`, concepto
+`10.5281/zenodo.23081517`.
+
+## Alternativas descartadas
+
+- **La fecha como versión.** Es lo que había; no sirve para citar ni para saber
+  si dos copias son la misma.
+- **Numerar también los ajustes de la web.** Multiplicaría los depósitos en
+  Zenodo sin que cambie lo que se cita.
+- **Pedir el DOI después de publicar la web.** Obligaría a regenerar los PDF y
+  a subir otra versión a Zenodo solo para añadir el DOI.
+
+## Consecuencias
+
+Publicar una versión nueva exige cambiar `VERSION`, `FECHA_VERSION` y los DOI
+en `construir.py` (pidiendo antes una versión nueva en Zenodo y reservando su
+DOI), regenerar la web y los PDF, etiquetar el commit y depositar los archivos.
+Una etiqueta publicada no se mueve ni se reutiliza.
+
+## Evidencia
+
+El borrador de Zenodo 23081518 se creó el 01-10-2026 con la skill
+`deposito-zenodo`; su DOI se reservó con la API de InvenioRDM
+(`POST /api/records/{id}/draft/pids/doi`). El DOI de concepto sigue la pauta
+comprobada en el MIAE: el número del registro padre (22647407 frente a
+22647408). Hasta que se publique el depósito, ninguno de los dos DOI resuelve.

@@ -10,10 +10,10 @@ Nace en el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca) y se 
 
 | Carpeta o archivo | Contenido |
 | --- | --- |
-| `contenido/<idioma>/` | El texto de la guía en Markdown, un archivo por página, en el orden en que se leen: `00-presentacion.md`, `01-guia.md`, `02-herramientas.md`, `04-para-la-ia.md`, `05-referencias.md` y `03-creditos.md`, más un archivo por capítulo en `capitulos/` y los dos archivos para la IA: `instrucciones-ia.md`, para crear, que se publica como `instrucciones-vibe-responsable.md`, y `evaluacion-ia.md`, para evaluar, que se publica como `evaluacion-vibe-responsable.md`. Cada enlace externo del texto debe tener su entrada en las referencias: `construir.py` lo comprueba. Es lo único que hay que editar para cambiar el contenido. |
+| `contenido/<idioma>/` | El texto de la guía en Markdown, en cinco idiomas (`es`, el original, `ca`, `gl`, `eu` y `en`; ADR 20), un archivo por página, en el orden en que se leen: `00-presentacion.md`, `01-guia.md`, `02-herramientas.md`, `04-para-la-ia.md`, `05-referencias.md` y `03-creditos.md`, más un archivo por capítulo en `capitulos/` y los dos archivos para la IA: `instrucciones-ia.md`, para crear, que se publica como `instrucciones-vibe-responsable.md`, y `evaluacion-ia.md`, para evaluar, que se publica como `evaluacion-vibe-responsable.md`. Cada enlace externo del texto debe tener su entrada en las referencias: `construir.py` lo comprueba. Es lo único que hay que editar para cambiar el contenido, y un cambio se hace en los cinco idiomas. |
 | `construir.py` | Genera la web a partir del Markdown. Necesita [pandoc](https://pandoc.org/). Con `--pdf` genera además la guía completa en PDF, con el texto justificado y partido con guiones; para los idiomas en los que Chromium no trae diccionario de guionado (hoy, el catalán) necesita [Pyphen](https://pyphen.org/) (`pip install --user pyphen`). |
 | `generar-pdf.js` | Imprime a PDF la guía completa con el Chromium de [Playwright](https://playwright.dev/), instalado de forma global (`npm i -g playwright`). Lo llama `construir.py --pdf`. |
-| `es/`, `index.html` | La web generada, y en `es/vibe-responsable-es.pdf` la guía completa. No se editan a mano. |
+| `es/`, `ca/`, `gl/`, `eu/`, `en/`, `index.html` | La web generada, con la guía completa en PDF en cada idioma (`es/vibe-responsable-es.pdf`…). La raíz envía al idioma del navegador. No se editan a mano. |
 | `recursos/` | Hoja de estilos, script y tipografía de la web, y el logotipo con su favicon en `recursos/logo/` (el original editable es `logo.svg`). |
 | `infografia/` | La infografía, su original editable en SVG y el script que la genera. |
 | `animacion/` | Las dos animaciones de la guía, páginas HTML con música y sonido sintetizados en el navegador: `animacion.es.html` y `zoom.es.html`, un zoom infinito cuyo vídeo (`vibe-responsable-zoom.es.mp4`, con su cartel) abre la portada. `grabar.js` las graba en vídeo MP4 con Playwright y ffmpeg. |
@@ -24,7 +24,7 @@ Para regenerar la web después de cambiar el contenido:
 
 ```bash
 python3 construir.py --pdf        # la web y la guía completa en PDF
-python3 infografia/generar.py     # solo si cambian los títulos de la lista
+python3 infografia/generar.py es  # solo si cambian los títulos de la lista; uno por idioma
 node animacion/grabar.js es zoom  # el vídeo de la portada, si cambia su página (luego se recomprime, ADR 17)
 ```
 

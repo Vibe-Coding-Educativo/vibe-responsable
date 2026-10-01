@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instruccions per a la IA | Vibe coding responsable</title>
+<meta name="description" content="Vibe coding responsable: guia per publicar materials educatius creats amb vibe coding. Instruccions per a la IA.">
+<meta name="author" content="Juan José de Haro">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<meta property="og:title" content="Abans de publicar: deu recomanacions">
+<meta property="og:description" content="Guia per publicar materials educatius creats amb vibe coding">
+<meta property="og:image" content="https://vibe-coding-educativo.github.io/vibe-responsable/infografia/lista-iconos.ca.png">
+<meta property="og:type" content="article">
+<link rel="alternate" hreflang="es" href="https://vibe-coding-educativo.github.io/vibe-responsable/es/para-la-ia.html">
+<link rel="alternate" hreflang="ca" href="https://vibe-coding-educativo.github.io/vibe-responsable/ca/para-la-ia.html">
+<link rel="alternate" hreflang="gl" href="https://vibe-coding-educativo.github.io/vibe-responsable/gl/para-la-ia.html">
+<link rel="alternate" hreflang="eu" href="https://vibe-coding-educativo.github.io/vibe-responsable/eu/para-la-ia.html">
+<link rel="alternate" hreflang="en" href="https://vibe-coding-educativo.github.io/vibe-responsable/en/para-la-ia.html">
+<link rel="icon" href="../recursos/logo/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../recursos/logo/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="../recursos/logo/apple-touch-icon.png">
+<link rel="preload" href="../recursos/fuentes/atkinson-hyperlegible-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../recursos/estilos.css?v=bd8f57c8a2">
+<script>(function(){try{var t=localStorage.getItem("vibe-responsable:tema");if(t!=="light"&&t!=="dark"){t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.dataset.theme=t;}catch(e){}})();</script>
+<script src="../recursos/guia.js?v=511747d9bd" defer></script>
+</head>
+<body class="pagina-texto">
+<a class="saltar" href="#contenido">Salta al contingut</a>
+<header class="pizarra">
+<div class="ancho pizarra-int">
+<div class="sitio"><a class="sitio-guia" href="./"><img class="marca" src="../recursos/logo/logo.svg" alt="" width="30" height="30"><span>Vibe coding responsable</span></a>
+<span class="sitio-desc">Guia per publicar materials educatius creats amb vibe coding</span>
+</div>
+<nav aria-label="Seccions de la guia"><ul><li><a href="./">Presentació</a></li><li><a href="guia.html">Guia</a></li><li><a href="herramientas.html">Eines i nivells</a></li><li><a href="para-la-ia.html" aria-current="page">Instruccions per a la IA</a></li><li><a href="referencias.html">Referències</a></li></ul></nav>
+<div class="utiles">
+<div class="desplegable">
+<button type="button" class="idiomas" title="Llengua" aria-label="Llengua" aria-haspopup="menu" aria-expanded="false"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6" />
+  <path d="m4 14 6-6 2-3" />
+  <path d="M2 5h12" />
+  <path d="M7 2h1" />
+  <path d="m22 22-5-10-5 10" />
+  <path d="M14 18h6" /></svg></button>
+<div class="menu menu-idiomas" role="menu" hidden><a role="menuitem" href="../es/para-la-ia.html" hreflang="es" lang="es">Castellano</a><a role="menuitem" href="../ca/para-la-ia.html" hreflang="ca" lang="ca" aria-current="true">Català</a><a role="menuitem" href="../gl/para-la-ia.html" hreflang="gl" lang="gl">Galego</a><a role="menuitem" href="../eu/para-la-ia.html" hreflang="eu" lang="eu">Euskara</a><a role="menuitem" href="../en/para-la-ia.html" hreflang="en" lang="en">English</a></div>
+</div>
+<button type="button" class="tema" title="Mode clar o fosc" aria-label="Mode clar o fosc"><span class="luna"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><span class="sol"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" />
+  <path d="M12 2v2" />
+  <path d="M12 20v2" />
+  <path d="m4.93 4.93 1.41 1.41" />
+  <path d="m17.66 17.66 1.41 1.41" />
+  <path d="M2 12h2" />
+  <path d="M20 12h2" />
+  <path d="m6.34 17.66-1.41 1.41" />
+  <path d="m19.07 4.93-1.41 1.41" /></svg></span></button>
+<div class="desplegable">
+<button type="button" class="imprimir" title="Imprimir o descarregar" aria-label="Imprimir o descarregar" aria-haspopup="menu" aria-expanded="false"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+  <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
+  <rect x="6" y="14" width="12" height="8" rx="1" /></svg></button>
+<div class="menu" role="menu" hidden>
+<button type="button" role="menuitem" class="menu-imprimir"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+  <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
+  <rect x="6" y="14" width="12" height="8" rx="1" /></svg><span><b>Imprimir aquesta pàgina</b><small>Només el que es veu en aquesta pàgina</small></span></button>
+<a role="menuitem" href="vibe-responsable-ca.pdf" download><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <path d="m7 10 5 5 5-5" /></svg><span><b>Descarregar la guia completa en PDF</b><small>Totes les pàgines en un sol document</small></span></a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main id="contenido" class="ancho">
+<h1>Instruccions per a la IA</h1>
+<section class="apartado" id="com-s-utilitzen" aria-labelledby="h-com-s-utilitzen"><h2 id="h-com-s-utilitzen">Com s&#x27;utilitzen</h2><div class="texto"><p>Les recomanacions de la guia es poden donar directament a la intel·ligència artificial (IA), de manera que la feina de complir-les no recaigui sobre la persona. Per fer-ho hi ha dos fitxers, que es poden descarregar i utilitzar en qualsevol eina: un per crear un material i un altre per avaluar un recurs ja fet. Tots dos contenen només el que demana la guia; el que ha de fer el material es descriu a part, com sempre.</p>
+<p>El fitxer per crear es lliura en començar:</p>
+<ul>
+<li><strong>Al web d’un xatbot</strong>, s’adjunta al primer missatge, juntament amb la descripció del material que es vol crear i la indicació «segueix les instruccions del fitxer adjunt».</li>
+<li><strong>En un agent de programació o un editor de codi amb IA</strong>, es desa a la carpeta del projecte com a fitxer d’instruccions, i la IA el té en compte en totes les sessions.</li>
+<li><strong>A les plataformes per crear aplicacions</strong>, s’enganxa a les instruccions permanents del projecte, que moltes ofereixen a la configuració o com un fitxer del mateix projecte.</li>
+</ul>
+<p>Si la IA no coneix l’autoria o el lloc on es publicarà el material, les mateixes instruccions li demanen que ho pregunti abans de començar. En acabar, s’adjunta a la mateixa conversa el <a href="#per-avaluar-un-recurs-ja-fet">fitxer d’avaluació</a> que apareix més avall i es demana «avalua el material segons les instruccions». Després, si es demana «corregeix-lo», la IA proposa els canvis i espera que s’aprovin. Aquesta revisió no substitueix la de la persona, ja que el model també s’equivoca en revisar la seva pròpia feina.</p></div></section>
+<section class="apartado" id="per-crear-un-material" aria-labelledby="h-per-crear-un-material"><h2 id="h-per-crear-un-material">Per crear un material</h2><div class="texto"><p>Aquest és el fitxer que es lliura a la IA en començar a crear un material. Es pot descarregar per adjuntar-lo o per desar-lo a la carpeta del projecte, o copiar-ne el text per enganxar-lo al principi de la conversa.</p>
+<div class="copiable"><p class="copiable-cab solo-js"><a class="descarga" href="instrucciones-vibe-responsable.md" download><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <path d="m7 10 5 5 5-5" /></svg>Descarregar el fitxer</a><button type="button" class="copiar discreto" data-hecho="Text copiat">Copiar el text</button></p><details class="archivo-ia"><summary>Veure les instruccions per crear</summary><pre><code># Instruccions per crear un material educatiu obert
+
+Aquestes instruccions procedeixen de la guia «Vibe coding responsable», per
+publicar materials educatius creats amb vibe coding
+(https://vibe-coding-educativo.github.io/vibe-responsable/ca/).
+Segueix-les en tota la feina, juntament amb el que et demani sobre el
+material que vull crear. El material es publicarà en obert, perquè altres
+persones el puguin utilitzar i adaptar.
+
+## Abans de començar
+
+Si no t&#39;ho he dit, pregunta&#39;m:
+- L&#39;autoria que hi ha de figurar (un nom o un nom d&#39;usuari).
+- On es publicarà: el web d&#39;un xatbot, una plataforma per crear aplicacions,
+  o un repositori o un lloc propi.
+
+## Com s&#39;ha de construir
+
+- Llicència: CC BY-SA 4.0 per als continguts i AGPL v3 per al codi, excepte
+  si t&#39;indico unes altres.
+- Si treballem al web d&#39;un xatbot, fes el material com una pàgina HTML que
+  funcioni per si sola en obrir-la al navegador, i no com un component que
+  només funciona dins del xatbot.
+- Pots utilitzar biblioteques, tipografies i altres recursos externs quan
+  estalviïn feina o millorin el resultat. Carrega&#39;ls d&#39;un servei conegut i
+  estable, i anota&#39;ls a la nota de decisions, amb la seva llicència. Si alguna
+  part del material deixaria de funcionar en obrir-lo descarregat en un
+  ordinador sense internet, digues-m&#39;ho amb paraules senzilles, per exemple:
+  «si l&#39;obres sense internet, les fórmules no es veuran».
+- Dades personals: no demanis el nom ni cap dada que identifiqui una persona,
+  excepte si l&#39;eina ho necessita per a la seva funció, com un quadern de
+  notes. En aquest cas guarda-ho només al dispositiu i ofereix l&#39;opció
+  d&#39;exportar o imprimir sense els noms. Si el programa recull respostes de
+  l&#39;alumnat, mostra el resultat en acabar o permet descarregar-lo per
+  lliurar-lo, i identifica cada persona amb un codi en lloc del seu nom. No
+  enviïs res a cap servidor ni afegeixis analítica o comptadors de visites.
+- Accessible, seguint les Pautes d&#39;Accessibilitat per al Contingut Web
+  (WCAG): utilitzable només amb el teclat, amb un ordre de tabulació lògic,
+  etiquetes als controls, textos alternatius a les imatges, contrast
+  suficient, sense dependre del color per entendre res i llegible a la
+  pantalla d&#39;un mòbil.
+- Codi llegible i comentat en la llengua del material, sense comprimir, amb
+  noms de variables comprensibles.
+- Al peu del material: el títol, l&#39;autoria, la llicència amb el seu enllaç i
+  una declaració breu d&#39;ús d&#39;IA, amb l&#39;eina, el mes i l&#39;any, i el que jo hagi
+  comprovat (pregunta-m&#39;ho abans de publicar).
+- Si incorpores imatges, sons o fragments de codi d&#39;altres persones, utilitza
+  només material la llicència del qual en permeti la reutilització, i indica&#39;n
+  l&#39;autoria, la procedència i la llicència dins del mateix material.
+- Si el programa ha de guardar dades de l&#39;alumnat en els sistemes del centre,
+  no escriguis claus ni contrasenyes al codi que arriba al navegador, fes que
+  només el docent o el centre puguin llegir el que s&#39;ha recollit i indica&#39;m
+  què ha de revisar una persona amb coneixements tècnics abans de posar-lo en
+  ús.
+- Després de cada canvi, torna a comprovar el que ja funcionava: executa les
+  proves si n&#39;hi ha o, si no ho pots fer, digues-me quines comprovacions he
+  de repetir.
+
+## Si es publica en un repositori o en un lloc propi
+
+- Afegeix un fitxer LICENSE amb la llicència del codi i un altre amb la dels
+  continguts, i indica la llicència al principi de cada fitxer de codi amb
+  una línia SPDX-License-Identifier.
+- Afegeix un document que expliqui com està organitzat el projecte i per a
+  què serveix cada fitxer.
+- Porta un registre de decisions (ADR) dins del projecte, amb un fitxer per
+  decisió que reculli el context, les alternatives descartades i les
+  conseqüències. Anota-hi cada decisió que prenguem, sense esperar que t&#39;ho
+  demani. En les decisions tècniques, anota també en què et bases
+  (documentació oficial, una versió concreta del codi o una prova que es
+  pugui repetir), els riscos coneguts i com ho has comprovat. No inventis
+  fonts ni proves: el que no hagis pogut comprovar, marca-ho com a hipòtesi
+  pendent de validació.
+- Revisa l&#39;accessibilitat amb una eina automàtica i corregeix el que detecti.
+- Quan publiquem una versió, marca-la amb una etiqueta de versió (v1.0,
+  v1.1…) i no moguis ni reutilitzis després una etiqueta ja publicada.
+
+## Quan acabis el material
+
+- Descriu breument què fa el material, què guarda i si es comunica amb algun
+  servei extern.
+- Prepara una llista breu de comprovacions amb els recorreguts principals i
+  els casos extrems, per repetir-la després de cada canvi. Si el projecte ho
+  permet, converteix-la en proves automàtiques.
+- Escriu una nota breu amb les decisions importants que has pres i el motiu
+  de cadascuna, o resumeix-les del registre de decisions si n&#39;hi ha.
+- Indica què he de comprovar jo, començant per la correcció dels continguts.</code></pre></details></div></div></section>
+<section class="apartado" id="per-avaluar-un-recurs-ja-fet" aria-labelledby="h-per-avaluar-un-recurs-ja-fet"><h2 id="h-per-avaluar-un-recurs-ja-fet">Per avaluar un recurs ja fet</h2><div class="texto"><p>El fitxer d’avaluació, que aplica l’avaluació VCER (vibe coding educatiu responsable), serveix per a qualsevol recurs ja publicat, propi o aliè, s’hagi creat o no amb la guia. Per avaluar un web:</p>
+<ol type="1">
+<li>Descarregar el fitxer d’avaluació que apareix a continuació i adjuntar-lo a la conversa amb la IA, o copiar-ne el text i enganxar-lo al principi.</li>
+<li>Proporcionar el codi del recurs: adjuntar el fitxer HTML desat des del navegador, o enganxar el codi.</li>
+<li>Demanar «avalua aquest recurs segons les instruccions».</li>
+</ol>
+<div class="copiable"><p class="copiable-cab solo-js"><a class="descarga" href="evaluacion-vibe-responsable.md" download><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <path d="m7 10 5 5 5-5" /></svg>Descarregar el fitxer</a><button type="button" class="copiar discreto" data-hecho="Text copiat">Copiar el text</button></p><details class="archivo-ia"><summary>Veure les instruccions per avaluar</summary><pre><code># Instruccions per avaluar un recurs educatiu obert (avaluació VCER)
+
+Aquestes instruccions procedeixen de la guia «Vibe coding responsable», per
+publicar materials educatius creats amb vibe coding
+(https://vibe-coding-educativo.github.io/vibe-responsable/ca/).
+Serveixen per avaluar un recurs ja fet, propi o d&#39;una altra persona, s&#39;hagi
+creat o no seguint la guia.
+
+## Com avaluar
+
+- Treballa sobre el codi del recurs que et dono. Si no el tens, demana-me&#39;l
+  abans de començar.
+- No el corregeixis: només avalua&#39;l.
+- Puntua cadascun dels deu punts amb 2, 1 o 0 segons la rúbrica VCER (vibe
+  coding educatiu responsable), i justifica cada puntuació amb una frase
+  sobre el que has vist al recurs.
+- Si un punt no es pot comprovar amb el que t&#39;he donat, deixa&#39;l sense
+  puntuar i digues què caldria per comprovar-lo.
+- Abans de puntuar, fes un inventari complet, no una mostra: cada funció que
+  demana o guarda dades de persones i com s&#39;exporten o es copien; cada
+  imatge, so, vídeo, icona i tipografia del projecte, i d&#39;on surt (mira les
+  imatges: un logotip redibuixat continua sent aliè); i tot el que es carrega
+  de fora, i quan (en obrir, en prémer alguna cosa o en una finestra nova).
+- Si el recurs està publicat, avalua aquella versió o comprova que coincideix
+  amb el codi que t&#39;han donat. Anota quina versió has avaluat: l&#39;etiqueta de
+  versió i el commit si és en un repositori, o l&#39;adreça i la data de
+  l&#39;avaluació si no ho és.
+- Per al punt 5, si pots executar codi, obre el recurs en un navegador i
+  passa-li una eina automàtica d&#39;accessibilitat, com axe-core, també amb
+  contingut carregat i no només a la pantalla inicial. No comptis el que
+  s&#39;incrusta d&#39;altres llocs. L&#39;eina no comprova l&#39;ús amb el teclat:
+  recorre&#39;l amb el tabulador. A la justificació del punt, digues què has
+  provat i com; si només has pogut llegir el codi, indica-ho.
+
+## Rúbrica VCER
+
+1. CONTINGUT (eliminatori)
+   2: No es detecten errors en el que ensenya: les dades, les definicions
+      i les respostes que es donen per correctes.
+   1: Hi ha alguna imprecisió menor en el que ensenya.
+   0: Hi ha errors evidents en conceptes, dades o respostes.
+   Aquesta puntuació només reflecteix els errors que has detectat: enumera&#39;ls
+   un per un i assenyala el que convé que comprovi una persona. Les errades i
+   els errors de format de les referències no resten aquí: assenyala&#39;ls a
+   part.
+
+2. DADES PERSONALS (eliminatori)
+   2: No demana dades que identifiquin ningú, o les guarda només al
+      dispositiu i permet exportar sense noms; o les envia únicament a un
+      servei del centre, sense claus visibles al codi i de manera que només
+      el docent o el centre les puguin llegir. No porta analítica.
+   1: No envia dades de l&#39;alumnat a serveis aliens, però guarda noms sense
+      opció d&#39;exportar sense ells, o l&#39;enviament al servei del centre no
+      està ben protegit (claus al codi, una adreça que permet llegir el que
+      s&#39;ha recollit).
+   0: Envia dades de l&#39;alumnat a un servidor aliè al centre, o porta
+      analítica o seguiment.
+   Si el recurs gestiona dades reals de l&#39;alumnat, indica que convé la
+   revisió d&#39;una persona amb coneixements tècnics abans de fer-lo servir.
+   El que es carrega o s&#39;incrusta d&#39;altres servidors (vídeos, àudios,
+   tipografies, biblioteques) es valora al punt 4, no aquí.
+
+3. ENTENDRE QUÈ FA
+   2: Es pot descriure breument què fa, què guarda i amb què es comunica,
+      i el que declara el material coincideix amb el codi.
+   1: S&#39;entén el seu funcionament, però hi ha parts de propòsit poc clar o
+      no explica què guarda.
+   0: Hi ha funcions o comunicacions el propòsit de les quals no es pot
+      explicar, o el que declara no coincideix amb el codi.
+
+4. DEPENDÈNCIES
+   2: El que carrega o incrusta de fora procedeix de serveis coneguts i està
+      anotat, i els textos, les imatges i les dades pròpies són dins del
+      material.
+   1: Carrega o incrusta recursos externs sense anotar-los, o una part del
+      contingut propi (un vídeo, un àudio, un mapa) només és en una altra
+      plataforma.
+   0: El contingut principal depèn d&#39;un servei extern, o carrega codi
+      d&#39;adreces desconegudes.
+
+5. ACCESSIBILITAT
+   2: Es fa servir sencer amb el teclat, els controls tenen etiqueta, les
+      imatges text alternatiu, el contrast és suficient, no depèn del color
+      i s&#39;adapta a una pantalla estreta.
+   1: Falla en un o dos d&#39;aquests aspectes, sense impedir-ne l&#39;ús.
+   0: Falla en tres o més, o no es pot fer servir amb el teclat.
+
+6. MATERIAL ALIÈ
+   2: Cada element aliè indica autoria, procedència i llicència, i la
+      llicència en permet la reutilització; o no hi ha material aliè.
+   1: Hi ha material aliè amb llicència vàlida, però sense acreditar del
+      tot.
+   0: Hi ha material aliè sense llicència que en permeti la reutilització o
+      sense cap atribució.
+
+7. RASTRE
+   2: Hi ha un registre o una nota amb les decisions importants i el seu
+      motiu.
+   1: Hi ha documentació que explica com està fet, però no per què.
+   0: No hi ha res.
+
+8. ÚS D&#39;IA
+   2: Indica que s&#39;ha fet amb IA i què ha comprovat la persona.
+   1: Indica que s&#39;ha fet amb IA, sense dir què s&#39;ha comprovat.
+   0: No ho indica. Si consta que no es va fer servir IA, no es puntua.
+
+9. LLICÈNCIA
+   2: Autoria i llicència lliure visibles al material, amb enllaç. Si és un
+      projecte de diversos fitxers, inclou el fitxer de llicència.
+   1: Falta l&#39;autoria o la llicència, la llicència no és lliure (NC o ND) o
+      no enllaça al seu text.
+   0: No indica ni autoria ni llicència.
+
+10. REUTILITZACIÓ
+   2: El codi es pot obtenir sencer, s&#39;entén en llegir-lo, amb comentaris on
+      calen, i hi ha indicacions per modificar-lo.
+   1: Es pot obtenir, però és difícil d&#39;entendre sense comentaris, està en
+      part comprimit o no té indicacions.
+   0: No es pot obtenir, o està ofuscat o comprimit.
+
+## Resultat
+
+- Calcula el percentatge: la suma de les puntuacions dividida pel màxim
+  possible dels punts puntuats.
+- Dona un resultat: «No recomanable» si el punt 1 o el 2 tenen 0, sigui quin
+  sigui el percentatge; «Millorable» per sota del 70 %; «Recomanable» a partir
+  del 70 %, sempre que els punts 1 i 2 s&#39;hagin pogut puntuar i el punt 5 no
+  tingui 0. Si algun dels punts 1 i 2 ha quedat sense puntuar, el resultat és
+  «Millorable» i indica què falta per comprovar; si el punt 5 té 0, també és
+  «Millorable» i indica què n&#39;impedeix l&#39;ús.
+- Comença l&#39;informe amb una línia com «Rúbrica VCER: Recomanable (85 %)»,
+  seguida d&#39;una altra amb la versió avaluada, i afegeix-hi a sota una frase
+  amb el que significa aquest resultat:
+  - Recomanable: compleix l&#39;essencial de la guia i es pot utilitzar o
+    publicar; les millores proposades el completen.
+  - Millorable: té errors que convé corregir abans de publicar-lo o
+    recomanar-lo, encara que cap no el descarta.
+  - No recomanable: té errors evidents en el que ensenya o envia dades de
+    l&#39;alumnat a serveis aliens al centre; no convé utilitzar-lo ni
+    publicar-lo fins a corregir-lo.
+- A la justificació del punt 3, inclou aquesta descripció breu. A la del 4,
+  enumera les adreces externes del codi i per a què serveix cadascuna, i
+  digues amb paraules senzilles què deixaria de funcionar en obrir-lo
+  descarregat en un ordinador sense internet. A la del 6, enumera el
+  material aliè.
+- Acaba amb les tres millores que més pujarien la puntuació.
+
+## Si després et demano corregir-lo
+
+- Abans de canviar res, digues-me què canviaries i espera que ho aprovi. No
+  canviïs el contingut ni el funcionament, excepte si t&#39;ho demano.
+- Si no hi ha nota de decisions, escriu-ne una que descrigui com funciona el
+  recurs ara, i indica que s&#39;ha redactat després.
+- Si falta la llicència o la indicació d&#39;ús d&#39;IA, prepara&#39;m el text per
+  afegir-lo.</code></pre></details></div>
+<p>La IA puntua cada recomanació amb la rúbrica VCER, dona un percentatge final i proposa les tres millores que més pujarien la puntuació. Si després se li demana corregir-lo, primer proposa els canvis i espera que s’aprovin; abans convé desar-ne una còpia. La puntuació orienta, però no substitueix la revisió de la persona, sobretot en la correcció del contingut, on la IA només detecta els errors que veu.</p>
+<p>Aquesta és la rúbrica VCER, la que utilitza el fitxer d’avaluació anterior:</p>
+<div class="rubrica"><table><caption>Rúbrica VCER: 2, es compleix; 1, en part; 0, no es compleix</caption><thead><tr><th scope="col">Recomanació</th><th scope="col">2</th><th scope="col">1</th><th scope="col">0</th></tr></thead><tbody><tr><th scope="row"><span class="rub-n">1</span> Contingut <small>(eliminatori)</small></th><td data-nota="2">No es detecten errors en el que ensenya: les dades, les definicions i les respostes que es donen per correctes.</td><td data-nota="1">Hi ha alguna imprecisió menor en el que ensenya.</td><td data-nota="0">Hi ha errors evidents en conceptes, dades o respostes.</td></tr><tr><th scope="row"><span class="rub-n">2</span> Dades personals <small>(eliminatori)</small></th><td data-nota="2">No demana dades que identifiquin ningú, o les guarda només al dispositiu i permet exportar sense noms; o les envia únicament a un servei del centre, sense claus visibles al codi i de manera que només el docent o el centre les puguin llegir. No porta analítica.</td><td data-nota="1">No envia dades de l&#x27;alumnat a serveis aliens, però guarda noms sense opció d&#x27;exportar sense ells, o l&#x27;enviament al servei del centre no està ben protegit (claus al codi, una adreça que permet llegir el que s&#x27;ha recollit).</td><td data-nota="0">Envia dades de l&#x27;alumnat a un servidor aliè al centre, o porta analítica o seguiment.</td></tr><tr><th scope="row"><span class="rub-n">3</span> Entendre què fa</th><td data-nota="2">Es pot descriure breument què fa, què guarda i amb què es comunica, i el que declara el material coincideix amb el codi.</td><td data-nota="1">S&#x27;entén el seu funcionament, però hi ha parts de propòsit poc clar o no explica què guarda.</td><td data-nota="0">Hi ha funcions o comunicacions el propòsit de les quals no es pot explicar, o el que declara no coincideix amb el codi.</td></tr><tr><th scope="row"><span class="rub-n">4</span> Dependències</th><td data-nota="2">El que carrega o incrusta de fora procedeix de serveis coneguts i està anotat, i els textos, les imatges i les dades pròpies són dins del material.</td><td data-nota="1">Carrega o incrusta recursos externs sense anotar-los, o una part del contingut propi (un vídeo, un àudio, un mapa) només és en una altra plataforma.</td><td data-nota="0">El contingut principal depèn d&#x27;un servei extern, o carrega codi d&#x27;adreces desconegudes.</td></tr><tr><th scope="row"><span class="rub-n">5</span> Accessibilitat</th><td data-nota="2">Es fa servir sencer amb el teclat, els controls tenen etiqueta, les imatges text alternatiu, el contrast és suficient, no depèn del color i s&#x27;adapta a una pantalla estreta.</td><td data-nota="1">Falla en un o dos d&#x27;aquests aspectes, sense impedir-ne l&#x27;ús.</td><td data-nota="0">Falla en tres o més, o no es pot fer servir amb el teclat.</td></tr><tr><th scope="row"><span class="rub-n">6</span> Material aliè</th><td data-nota="2">Cada element aliè indica autoria, procedència i llicència, i la llicència en permet la reutilització; o no hi ha material aliè.</td><td data-nota="1">Hi ha material aliè amb llicència vàlida, però sense acreditar del tot.</td><td data-nota="0">Hi ha material aliè sense llicència que en permeti la reutilització o sense cap atribució.</td></tr><tr><th scope="row"><span class="rub-n">7</span> Rastre</th><td data-nota="2">Hi ha un registre o una nota amb les decisions importants i el seu motiu.</td><td data-nota="1">Hi ha documentació que explica com està fet, però no per què.</td><td data-nota="0">No hi ha res.</td></tr><tr><th scope="row"><span class="rub-n">8</span> Ús d&#x27;IA</th><td data-nota="2">Indica que s&#x27;ha fet amb IA i què ha comprovat la persona.</td><td data-nota="1">Indica que s&#x27;ha fet amb IA, sense dir què s&#x27;ha comprovat.</td><td data-nota="0">No ho indica. Si consta que no es va fer servir IA, no es puntua.</td></tr><tr><th scope="row"><span class="rub-n">9</span> Llicència</th><td data-nota="2">Autoria i llicència lliure visibles al material, amb enllaç. Si és un projecte de diversos fitxers, inclou el fitxer de llicència.</td><td data-nota="1">Falta l&#x27;autoria o la llicència, la llicència no és lliure (NC o ND) o no enllaça al seu text.</td><td data-nota="0">No indica ni autoria ni llicència.</td></tr><tr><th scope="row"><span class="rub-n">10</span> Reutilització</th><td data-nota="2">El codi es pot obtenir sencer, s&#x27;entén en llegir-lo, amb comentaris on calen, i hi ha indicacions per modificar-lo.</td><td data-nota="1">Es pot obtenir, però és difícil d&#x27;entendre sense comentaris, està en part comprimit o no té indicacions.</td><td data-nota="0">No es pot obtenir, o està ofuscat o comprimit.</td></tr></tbody></table></div>
+<p>El percentatge final és la suma de les puntuacions dividida pel màxim possible dels punts que la IA ha pogut comprovar. Amb aquest percentatge i amb els punts essencials s’obté un d’aquests tres resultats:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Resultat</th>
+<th>Quan es dona</th>
+<th>Què significa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Recomanable</strong></td>
+<td>70 % o més, amb el contingut i les dades personals puntuats i sense un 0 en cap d’ells ni en l’accessibilitat</td>
+<td>El recurs compleix l’essencial de la guia i es pot utilitzar o publicar. Les millores proposades el completen.</td>
+</tr>
+<tr>
+<td><strong>Millorable</strong></td>
+<td>Menys del 70 %, o quan no s’ha pogut comprovar el contingut o les dades personals, o l’accessibilitat té un 0</td>
+<td>El recurs té errors que convé corregir abans de publicar-lo o de recomanar-lo, encara que cap no el descarta. L’informe indica quins són i què falta per comprovar.</td>
+</tr>
+<tr>
+<td><strong>No recomanable</strong></td>
+<td>Un 0 en el contingut o en les dades personals, sigui quin sigui el percentatge</td>
+<td>El recurs té errors evidents en el que ensenya o envia dades de l’alumnat a serveis aliens al centre. No convé utilitzar-lo amb l’alumnat ni publicar-lo fins a corregir-lo.</td>
+</tr>
+</tbody>
+</table></div></section>
+</main>
+<footer class="pie">
+<div class="ancho">
+<p>© 2026 <a href="https://bilateria.org" target="_blank" rel="noopener">Juan José de Haro</a>. Continguts amb llicència <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ca" target="_blank" rel="noopener">CC BY-SA 4.0</a>. <a href="creditos.html">Crèdits i llicències</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/releases/tag/v1.0" target="_blank" rel="noopener">Versió 1.0</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues" target="_blank" rel="noopener">Suggeriments i correccions</a>.</p>
+</div>
+</footer>
+</body>
+</html>

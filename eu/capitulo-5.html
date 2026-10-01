@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edonorentzat irisgarri egitea | Vibe coding arduratsua</title>
+<meta name="description" content="Vibe coding arduratsua: vibe coding bidez sortutako material hezitzaileak argitaratzeko gida. Edonorentzat irisgarri egitea.">
+<meta name="author" content="Juan José de Haro">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<meta property="og:title" content="Argitaratu aurretik: hamar gomendio">
+<meta property="og:description" content="Vibe coding bidez sortutako material hezitzaileak argitaratzeko gida">
+<meta property="og:image" content="https://vibe-coding-educativo.github.io/vibe-responsable/infografia/lista-iconos.eu.png">
+<meta property="og:type" content="article">
+<link rel="alternate" hreflang="es" href="https://vibe-coding-educativo.github.io/vibe-responsable/es/capitulo-5.html">
+<link rel="alternate" hreflang="ca" href="https://vibe-coding-educativo.github.io/vibe-responsable/ca/capitulo-5.html">
+<link rel="alternate" hreflang="gl" href="https://vibe-coding-educativo.github.io/vibe-responsable/gl/capitulo-5.html">
+<link rel="alternate" hreflang="eu" href="https://vibe-coding-educativo.github.io/vibe-responsable/eu/capitulo-5.html">
+<link rel="alternate" hreflang="en" href="https://vibe-coding-educativo.github.io/vibe-responsable/en/capitulo-5.html">
+<link rel="icon" href="../recursos/logo/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../recursos/logo/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="../recursos/logo/apple-touch-icon.png">
+<link rel="preload" href="../recursos/fuentes/atkinson-hyperlegible-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../recursos/estilos.css?v=bd8f57c8a2">
+<script>(function(){try{var t=localStorage.getItem("vibe-responsable:tema");if(t!=="light"&&t!=="dark"){t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.dataset.theme=t;}catch(e){}})();</script>
+<script src="../recursos/guia.js?v=511747d9bd" defer></script>
+</head>
+<body class="pagina-texto pagina-capitulo">
+<a class="saltar" href="#contenido">Joan edukira</a>
+<header class="pizarra">
+<div class="ancho pizarra-int">
+<div class="sitio"><a class="sitio-guia" href="./"><img class="marca" src="../recursos/logo/logo.svg" alt="" width="30" height="30"><span>Vibe coding arduratsua</span></a>
+<span class="sitio-desc">Vibe coding bidez sortutako material hezitzaileak argitaratzeko gida</span>
+</div>
+<nav aria-label="Gidaren atalak"><ul><li><a href="./">Aurkezpena</a></li><li><a href="guia.html" aria-current="page">Gida</a></li><li><a href="herramientas.html">Tresnak eta mailak</a></li><li><a href="para-la-ia.html">IArentzako jarraibideak</a></li><li><a href="referencias.html">Erreferentziak</a></li></ul></nav>
+<div class="utiles">
+<div class="desplegable">
+<button type="button" class="idiomas" title="Hizkuntza" aria-label="Hizkuntza" aria-haspopup="menu" aria-expanded="false"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6" />
+  <path d="m4 14 6-6 2-3" />
+  <path d="M2 5h12" />
+  <path d="M7 2h1" />
+  <path d="m22 22-5-10-5 10" />
+  <path d="M14 18h6" /></svg></button>
+<div class="menu menu-idiomas" role="menu" hidden><a role="menuitem" href="../es/capitulo-5.html" hreflang="es" lang="es">Castellano</a><a role="menuitem" href="../ca/capitulo-5.html" hreflang="ca" lang="ca">Català</a><a role="menuitem" href="../gl/capitulo-5.html" hreflang="gl" lang="gl">Galego</a><a role="menuitem" href="../eu/capitulo-5.html" hreflang="eu" lang="eu" aria-current="true">Euskara</a><a role="menuitem" href="../en/capitulo-5.html" hreflang="en" lang="en">English</a></div>
+</div>
+<button type="button" class="tema" title="Modu argia edo iluna" aria-label="Modu argia edo iluna"><span class="luna"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><span class="sol"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" />
+  <path d="M12 2v2" />
+  <path d="M12 20v2" />
+  <path d="m4.93 4.93 1.41 1.41" />
+  <path d="m17.66 17.66 1.41 1.41" />
+  <path d="M2 12h2" />
+  <path d="M20 12h2" />
+  <path d="m6.34 17.66-1.41 1.41" />
+  <path d="m19.07 4.93-1.41 1.41" /></svg></span></button>
+<div class="desplegable">
+<button type="button" class="imprimir" title="Inprimatu edo deskargatu" aria-label="Inprimatu edo deskargatu" aria-haspopup="menu" aria-expanded="false"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+  <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
+  <rect x="6" y="14" width="12" height="8" rx="1" /></svg></button>
+<div class="menu" role="menu" hidden>
+<button type="button" role="menuitem" class="menu-imprimir"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+  <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
+  <rect x="6" y="14" width="12" height="8" rx="1" /></svg><span><b>Orri hau inprimatu</b><small>Orri honetan ikusten dena bakarrik</small></span></button>
+<a role="menuitem" href="vibe-responsable-eu.pdf" download><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <path d="m7 10 5 5 5-5" /></svg><span><b>Gida osoa PDFan deskargatu</b><small>Orri guztiak dokumentu bakarrean</small></span></a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main id="contenido" class="ancho">
+<p class="migas"><a href="guia.html">Gidara itzuli</a></p><h1><span class="cifra-cap" aria-hidden="true">5</span>Edonorentzat irisgarri egitea</h1><aside class="que-hacer" aria-labelledby="h-que-hacer"><h2 id="h-que-hacer">Zer egin behar den</h2><ul class="niveles">
+<li class="nivel minimo"><strong>Gutxienekoa.</strong> IAri hasieratik eskatzea irisgarritasun-jarraibideak bete ditzala, eta emaitza probatzea teklatuarekin bakarrik, testua handituta eta telefono batean.</li>
+<li class="nivel recomendado"><strong>Gomendatua.</strong> IAri eskatzea irisgarritasuna tresna automatiko batekin berrikus dezala eta detektatzen duena zuzen dezala. Programazio-agenteek laguntzarik gabe egin dezakete, tresna instalatu, exekutatu eta zuzenketak aplikatzen baitituzte.</li>
+</ul></aside><section class="apartado" id="material-hezitzaile-baten-irisgarritasuna" aria-labelledby="h-material-hezitzaile-baten-irisgarritasuna"><h2 id="h-material-hezitzaile-baten-irisgarritasuna">Material hezitzaile baten irisgarritasuna</h2><div class="texto"><p>Material bat irisgarria da desgaitasuna duten pertsonek hauteman, ulertu, nabigatu eta harekin elkarreragin dezaketenean. <em>World Wide Web Consortium</em>-aren (W3C), weberako estandarrak egiten dituen partzuergoaren, <a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es" target="_blank" rel="noopener">Web Irisgarritasun Ekimenak</a> gogorarazten du ikusmen-, entzumen-, fisiko-, kognitibo-, neurologiko- eta hizketa-desgaitasunak hartzen dituela, eta beste pertsona batzuei ere mesede egiten diela, hala nola telefono mugikorra erabiltzen dutenei, konexio motela dutenei edo aldi baterako muga bat dutenei.</p>
+<p><strong>Hezkuntzan ez da aukerako hobekuntza bat</strong>, ikasleen zati batek erabili ezin duen material batek pertsona horiek jardueratik kanpo uzten baititu. Nazio Batuen Hezkuntza, Zientzia eta Kultura Erakundearen (UNESCO) <a href="https://www.unesco.org/es/legal-affairs/recommendation-open-educational-resources-oer" target="_blank" rel="noopener">Hezkuntza Baliabide Irekiei (HBI) buruzko Gomendioak</a> sarbide eraginkorra, bidezkoa eta inklusiboa jartzen du bere helburuen artean, eta Europar Batasunean irisgarritasuna lege-eskakizuna da sektore publikoko web-guneentzat, <a href="https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32016L2102" target="_blank" rel="noopener">2016/2102 Zuzentarauak</a> ezarria.</p></div></section>
+<section class="apartado" id="efektu-apaingarriak" aria-labelledby="h-efektu-apaingarriak"><h2 id="h-efektu-apaingarriak">Efektu apaingarriak</h2><div class="texto"><p>Adimen artifizialak (IA) ahaleginik gabe gehitzen ditu sarrera-animazioak, kurtsore pertsonalizatuak edo partikula-hondoak. Sistema ez Jabedunetako Curriculum Garapenerako Zentro Nazionalaren (CEDEC) <a href="https://cedec.intef.es/mantener-la-a-de-abierto-en-los-rea-en-tiempos-de-ia/" target="_blank" rel="noopener">«Mantener la “A” de abierto en los REA en tiempos de IA»</a> artikuluak adierazten du efektu horiek ez dutela balio pedagogikorik ematen, eta fitxategiaren pisua handitzen dutela, konexio motelean karga moteltzen dutela eta pantaila-irakurgailuekin eta beste laguntza-teknologia batzuekin interferentziak sor ditzaketela.</p>
+<p><strong>Komeni da apaintzeko baino ez dena alde batera uztea</strong>, eta IAri eskatzea gailuaren mugimendu murriztuaren hobespena errespeta dezala animazio batek funtzio bat duenean.</p></div></section>
+<section class="apartado" id="edozein-irakasleren-esku-dauden-probak" aria-labelledby="h-edozein-irakasleren-esku-dauden-probak"><h2 id="h-edozein-irakasleren-esku-dauden-probak">Edozein irakasleren esku dauden probak</h2><div class="texto"><p>Lau proba daude tresnarik eta ezagutza teknikorik behar ez dutenak:</p>
+<ul>
+<li><strong>Teklatuarekin bakarrik.</strong> Materiala tabulazio-teklarekin ibiltzen da eta kontrolak sartu teklarekin aktibatzen dira. Kontrol guztiak iristeko modukoak izan behar dute, ordena logiko batean, eta ikusi behar da zein kontroletan dagoen fokua.</li>
+<li><strong>Testua handituta.</strong> Orria bikoiztu egiten da nabigatzailetik. Edukiak irakurgarria izaten jarraitu behar du, testuak moztu edo gainjarri gabe.</li>
+<li><strong>Telefono mugikor batean.</strong> Materialak pantailaren zabaleran sartu behar du, eta botoiak hatzarekin sakatzeko modukoak izan behar dute.</li>
+<li><strong>Kolorearen mende egon gabe.</strong> Asmatze bat edo akats bat ezin dira kolorearen bidez bakarrik bereizi. Testu edo ikur batek lagundu behar die.</li>
+</ul></div></section>
+<section class="apartado" id="iaren-laguntzarekin-egindako-berrikuspena" aria-labelledby="h-iaren-laguntzarekin-egindako-berrikuspena"><h2 id="h-iaren-laguntzarekin-egindako-berrikuspena">IAren laguntzarekin egindako berrikuspena</h2><div class="texto"><p>Lan horren zati handi bat IAren esku utz daiteke. Gutxienekoa da hasieratik eskatzea materialak <a href="https://www.w3.org/WAI/standards-guidelines/wcag/es" target="_blank" rel="noopener">Web Edukiaren Irisgarritasun Jarraibideak</a> bete ditzala, nazioarteko estandarra, lau printzipiotan antolatzen dena: edukiak hautemangarria, erabilgarria, ulergarria eta sendoa izan behar du. Hala egiten du <a href="para-la-ia.html">IArentzako jarraibideen fitxategiak</a>.</p>
+<p>Gomendatua da, gainera, emaitza tresna automatiko batekin berrikus dezala eta detektatzen duena zuzen dezala eskatzea. Programazio-agenteek laguntzarik gabe egin dezakete, tresna instalatu, exekutatu eta zuzenketak aplikatzen baitituzte. W3Cek ohartarazten du, ordea, <a href="https://www.w3.org/WAI/test-evaluate/es" target="_blank" rel="noopener">inongo tresnak ezin duela berak bakarrik zehaztu gune batek irisgarritasun-estandarrak betetzen dituen</a>; beraz, <strong>eskuzko probak beharrezkoak dira oraindik</strong>.</p>
+<p>Adibide bat da Felip Sarrocaren <a href="https://felipsarroca.github.io/edu-apps/MCD-mcm/" target="_blank" rel="noopener">«MCD y mcm»</a> gida interaktiboa, zatitzaile komunetan handienari eta multiplo komunetan txikienari buruzkoa, katalanez. Inolako abisurik gabe gainditzen du berrikuspen automatikoa, kontrol guztiak teklatuaren eskura ditu, fokua ikusgai duela, bere hizkuntza adierazten du eta mugikor baten pantailara egokitzen da.</p></div></section><nav class="entre-capitulos" aria-label="Aurreko eta hurrengo kapitulua"><a class="paso" href="capitulo-4.html">Aurrekoa</a><a href="guia.html">Gidara itzuli</a><a class="paso" href="capitulo-6.html">Hurrengoa</a></nav>
+</main>
+<footer class="pie">
+<div class="ancho">
+<p>© 2026 <a href="https://bilateria.org" target="_blank" rel="noopener">Juan José de Haro</a>. Edukiak <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.eu" target="_blank" rel="noopener">CC BY-SA 4.0</a> lizentziarekin. <a href="creditos.html">Kredituak eta lizentziak</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/releases/tag/v1.0" target="_blank" rel="noopener">1.0 bertsioa</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues" target="_blank" rel="noopener">Iradokizunak eta zuzenketak</a>.</p>
+</div>
+</footer>
+</body>
+</html>
