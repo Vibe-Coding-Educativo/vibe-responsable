@@ -16,7 +16,7 @@ Nace en el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca) y se 
 | `es/`, `ca/`, `gl/`, `eu/`, `en/`, `index.html` | La web generada, con la guía completa en PDF en cada idioma (`es/vibe-responsable-es.pdf`…). La raíz envía al idioma del navegador. No se editan a mano. |
 | `recursos/` | Hoja de estilos, script y tipografía de la web, y el logotipo con su favicon en `recursos/logo/` (el original editable es `logo.svg`). |
 | `infografia/` | La infografía, su original editable en SVG y el script que la genera. |
-| `animacion/` | Las dos animaciones de la guía, páginas HTML con música y sonido sintetizados en el navegador: `animacion.es.html` y `zoom.es.html`, un zoom infinito cuyo vídeo (`vibe-responsable-zoom.es.mp4`, con su cartel) abre la portada. `grabar.js` las graba en vídeo MP4 con Playwright y ffmpeg. |
+| `animacion/` | La animación de la guía, una página HTML con música y sonido sintetizados en el navegador: `zoom.es.html`, un zoom infinito cuyo vídeo (`vibe-responsable-zoom.es.mp4`, con su cartel) abre la portada. `traducir.py` genera la página en los demás idiomas y `grabar.js` la graba en vídeo MP4 con Playwright y ffmpeg. |
 | `fuentes/` | Los documentos consultados, con su autoría y su licencia, y el índice de los que solo se consultan. |
 | `docs/adr/` | Registro de las decisiones del proyecto, con su contexto y las alternativas descartadas. |
 

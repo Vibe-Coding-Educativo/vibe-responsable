@@ -2,6 +2,13 @@
 
 Fecha: 2026-09-27 · Estado: propuesto
 
+> **Actualización (02-10-2026).** La página de esta primera animación,
+> `animacion/animacion.es.html`, se eliminó: la portada la había sustituido por
+> el zoom infinito (ADR 17) y ya no se enlazaba. Lo decidido aquí sobre el
+> mecanismo (una página HTML que calcula cada fotograma a partir del tiempo,
+> sonido sintetizado con Web Audio y grabación en vídeo con `grabar.js`) sigue
+> vigente en esa animación.
+
 ## Contexto
 
 El autor pidió una animación rigurosa sobre el contenido de la guía y, mientras

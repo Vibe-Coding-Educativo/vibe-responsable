@@ -42,9 +42,10 @@ enlace al texto de la animación.
   ventana con `animacion/vibe-responsable-zoom.es.mp4` (122 s, 1080 × 1080,
   6,6 MB) y su cartel. El vídeo se descarga solo al abrir la ventana, arranca
   con la misma pulsación y se detiene al cerrarla. Sin JavaScript, el botón
-  abre el vídeo. Sustituye a la primera animación incrustada (ADR 16), cuya
-  página sigue disponible pero ya no se enlaza, y desaparece el enlace al texto
-  de la animación. Este vídeo sí se guarda en el repositorio, porque la web lo
+  abre el vídeo. Sustituye a la primera animación incrustada (ADR 16), y
+  desaparece el enlace al texto de la animación. La página de la primera
+  animación, que ya no se enlazaba, se eliminó el 02-10-2026, junto con otras
+  pruebas que no llegaron a publicarse. Este vídeo sí se guarda en el repositorio, porque la web lo
   sirve; los demás siguen fuera (`.gitignore`).
 
 ## Alternativas descartadas
