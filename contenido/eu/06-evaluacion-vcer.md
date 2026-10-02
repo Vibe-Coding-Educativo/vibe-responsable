@@ -22,15 +22,15 @@ IAk ikusten dituen akatsak bakarrik antzematen ditu, batez ere edukian, eta emai
 
 ## Nola ebaluatu baliabide bat
 
-Web bat ebaluatzeko:
+Jarraian agertzen den ebaluazio-fitxategia IAri ematen zaio ebaluatu nahi den baliabidearekin batera, eta «ebaluatu baliabide hau jarraibideen arabera» eskatzen zaio. Nola eman baliabidea non dagoen araberakoa da:
 
-1. Jarraian agertzen den ebaluazio-fitxategia deskargatu eta IArekiko elkarrizketan erantsi, edo bere testua kopiatu eta hasieran itsatsi.
-2. Baliabidearen kodea eman: nabigatzailetik gordetako HTML fitxategia erantsi, edo kodea itsatsi.
-3. «Ebaluatu baliabide hau jarraibideen arabera» eskatu.
+- **Txatbot baten weban edo aplikazioak sortzeko plataforma batean sortu bada**, fitxategia erantsi edo bere testua itsasten da elkarrizketa berean, materiala amaituta dagoenean.
+- **Ordenagailuko karpeta batean edo biltegi batean badago**, fitxategia karpeta horretan irekitako programazio-agente bati edo IA duen kode-editore bati ematen zaio. Hori da modurik osoena, IAk proiektuko fitxategi guztiak irakur ditzakeelako eta, kodea exekuta badezake, baliabidea nabigatzailean proba dezakeelako.
+- **Argitaratutako weba bakarrik badago**, norberarena edo besteren batena, elkarrizketa bat irekitzen da IArekin, eta ebaluazio-fitxategia eta orriaren kodea, nabigatzailetik gordeta, eransten dira. Weba hainbat fitxategik osatzen badute, IAk ematen zaizkionak bakarrik ikusiko ditu; beraz, komeni da kode osoa lortzea, adibidez bere biltegitik, eta aurreko kasuan bezala ebaluatzea.
 
 <!-- evaluacion -->
 
-Materiala IArekin sortu berri bada, nahikoa da fitxategia elkarrizketa berean erantsi eta «ebaluatu materiala jarraibideen arabera» eskatzea. IAk gomendio bakoitza VCER errubrikarekin puntuatzen du, azken ehuneko bat ematen du eta puntuazioa gehien igoko luketen hiru hobekuntzak proposatzen ditu. Gero zuzentzeko eskatzen bazaio, lehenik aldaketak proposatzen ditu eta onartu arte itxaroten du; aurretik komeni da kopia bat gordetzea. Baliabidea norberarena bada, IAk txostena proiektuan gordetzea eta materialaren oinean emaitzaren aipamen bat gehitzea ere eskaintzen du, orri honetara estekatuta.
+IAk gomendio bakoitza VCER errubrikarekin puntuatzen du, azken ehuneko bat ematen du eta puntuazioa gehien igoko luketen hiru hobekuntzak proposatzen ditu. Gero zuzentzeko eskatzen bazaio, lehenik aldaketak proposatzen ditu eta onartu arte itxaroten du; aurretik komeni da kopia bat gordetzea. Baliabidea norberarena bada, IAk txostena proiektuan gordetzea eta materialaren oinean emaitzaren aipamen bat gehitzea ere eskaintzen du, orri honetara estekatuta.
 
 ## VCER errubrika
 

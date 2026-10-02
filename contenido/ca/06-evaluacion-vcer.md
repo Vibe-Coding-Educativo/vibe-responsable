@@ -22,15 +22,15 @@ La IA només detecta els errors que veu, sobretot en el contingut, i el resultat
 
 ## Com avaluar un recurs
 
-Per avaluar un web:
+El fitxer d'avaluació, que apareix a continuació, es dona a la IA juntament amb el recurs que es vol avaluar, i se li demana «avalua aquest recurs segons les instruccions». La manera de donar-l'hi depèn d'on sigui el recurs:
 
-1. Descarregar el fitxer d'avaluació que apareix a continuació i adjuntar-lo a la conversa amb la IA, o copiar-ne el text i enganxar-lo al principi.
-2. Proporcionar el codi del recurs: adjuntar el fitxer HTML desat des del navegador, o enganxar el codi.
-3. Demanar «avalua aquest recurs segons les instruccions».
+- **Si s'ha creat al web d'un xatbot o en una plataforma per crear aplicacions**, s'adjunta el fitxer, o se n'enganxa el text, a la mateixa conversa, quan el material està acabat.
+- **Si és en una carpeta de l'ordinador o en un repositori**, es dona el fitxer a un agent de programació o a un editor de codi amb IA obert en aquesta carpeta. És la manera més completa, perquè la IA pot llegir tots els fitxers del projecte i, si pot executar codi, provar el recurs al navegador.
+- **Si només es té el web publicat**, propi o aliè, s'obre una conversa amb la IA i s'hi adjunten el fitxer d'avaluació i el codi de la pàgina, desat des del navegador. Si el web està format per diversos fitxers, la IA només veurà els que se li donin, de manera que convé obtenir el codi complet, per exemple del seu repositori, i avaluar-lo com en el cas anterior.
 
 <!-- evaluacion -->
 
-Si el material s'acaba de crear amb la IA, n'hi ha prou d'adjuntar el fitxer a la mateixa conversa i demanar «avalua el material segons les instruccions». La IA puntua cada recomanació amb la rúbrica VCER, dona un percentatge final i proposa les tres millores que més pujarien la puntuació. Si després se li demana corregir-lo, primer proposa els canvis i espera que s'aprovin; abans convé desar-ne una còpia. Si el recurs és propi, la IA ofereix a més desar l'informe al projecte i afegir al peu del material una menció amb el resultat, enllaçada a aquesta pàgina.
+La IA puntua cada recomanació amb la rúbrica VCER, dona un percentatge final i proposa les tres millores que més pujarien la puntuació. Si després se li demana corregir-lo, primer proposa els canvis i espera que s'aprovin; abans convé desar-ne una còpia. Si el recurs és propi, la IA ofereix a més desar l'informe al projecte i afegir al peu del material una menció amb el resultat, enllaçada a aquesta pàgina.
 
 ## La rúbrica VCER
 

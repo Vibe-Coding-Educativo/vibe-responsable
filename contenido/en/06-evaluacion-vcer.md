@@ -22,15 +22,15 @@ The AI only detects the errors it sees, especially in the content, and the resul
 
 ## How to evaluate a resource
 
-To evaluate a website:
+The evaluation file, which appears below, is given to the AI together with the resource to be evaluated, and the AI is asked to «evaluate this resource according to the instructions». How to give it depends on where the resource is:
 
-1. Download the evaluation file below and attach it to the conversation with the AI, or copy its text and paste it at the beginning.
-2. Provide the resource's code: attach the HTML file saved from the browser, or paste the code.
-3. Ask it to «evaluate this resource according to the instructions».
+- **If it was created on a chatbot's website or on an app-building platform**, the file is attached, or its text pasted, in the same conversation, once the material is finished.
+- **If it is in a folder on the computer or in a repository**, the file is given to a coding agent or a code editor with AI opened in that folder. This is the most complete way, because the AI can read all the files of the project and, if it can run code, test the resource in the browser.
+- **If only the published website is available**, one's own or someone else's, a conversation with the AI is opened and the evaluation file and the code of the page, saved from the browser, are attached. If the website is made up of several files, the AI will only see the ones it is given, so it is advisable to obtain the complete code, for example from its repository, and evaluate it as in the previous case.
 
 <!-- evaluacion -->
 
-If the material has just been created with the AI, it is enough to attach the file to the same conversation and ask it to «evaluate the material according to the instructions». The AI scores each recommendation with the VCER rubric, gives a final percentage and proposes the three improvements that would raise the score the most. If it is then asked to fix it, it first proposes the changes and waits for them to be approved; it is advisable to save a copy beforehand. If the resource is one's own, the AI also offers to save the report in the project and to add to the footer of the material a mention with the result, linked to this page.
+The AI scores each recommendation with the VCER rubric, gives a final percentage and proposes the three improvements that would raise the score the most. If it is then asked to fix it, it first proposes the changes and waits for them to be approved; it is advisable to save a copy beforehand. If the resource is one's own, the AI also offers to save the report in the project and to add to the footer of the material a mention with the result, linked to this page.
 
 ## The VCER rubric
 

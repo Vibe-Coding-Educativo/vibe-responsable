@@ -22,15 +22,15 @@ La IA solo detecta los errores que ve, sobre todo en el contenido, y el resultad
 
 ## Cómo evaluar un recurso
 
-Para evaluar una web:
+El archivo de evaluación, que aparece a continuación, se da a la IA junto con el recurso que se quiere evaluar, y se le pide «evalúa este recurso según las instrucciones». La forma de dárselo depende de dónde esté el recurso:
 
-1. Descargar el archivo de evaluación que aparece a continuación y adjuntarlo en la conversación con la IA, o copiar su texto y pegarlo al principio.
-2. Proporcionar el código del recurso: adjuntar el archivo HTML guardado desde el navegador, o pegar el código.
-3. Pedir «evalúa este recurso según las instrucciones».
+- **Si se ha creado en la web de un chatbot o en una plataforma para crear aplicaciones**, se adjunta el archivo, o se pega su texto, en la misma conversación, cuando el material está terminado.
+- **Si está en una carpeta del ordenador o en un repositorio**, se da el archivo a un agente de programación o a un editor de código con IA abierto en esa carpeta. Es la forma más completa, porque la IA puede leer todos los archivos del proyecto y, si puede ejecutar código, probar el recurso en el navegador.
+- **Si solo se tiene la web publicada**, propia o ajena, se abre una conversación con la IA y se adjuntan el archivo de evaluación y el código de la página, guardado desde el navegador. Si la web está formada por varios archivos, la IA solo verá los que se le den, así que conviene obtener el código completo, por ejemplo de su repositorio, y evaluarlo como en el caso anterior.
 
 <!-- evaluacion -->
 
-Si el material se acaba de crear con la IA, basta con adjuntar el archivo en la misma conversación y pedir «evalúa el material según las instrucciones». La IA puntúa cada recomendación con la rúbrica VCER, da un porcentaje final y propone las tres mejoras que más subirían la puntuación. Si después se le pide corregirlo, primero propone los cambios y espera a que se aprueben; antes conviene guardar una copia. Si el recurso es propio, la IA ofrece además guardar el informe en el proyecto y añadir al pie del material una mención con el resultado, enlazada a esta página.
+La IA puntúa cada recomendación con la rúbrica VCER, da un porcentaje final y propone las tres mejoras que más subirían la puntuación. Si después se le pide corregirlo, primero propone los cambios y espera a que se aprueben; antes conviene guardar una copia. Si el recurso es propio, la IA ofrece además guardar el informe en el proyecto y añadir al pie del material una mención con el resultado, enlazada a esta página.
 
 ## La rúbrica VCER
 
