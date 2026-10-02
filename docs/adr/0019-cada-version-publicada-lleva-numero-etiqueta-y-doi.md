@@ -25,9 +25,12 @@ Zenodo para tener un DOI, como el MIAE.
 - Cada versión tiene su etiqueta en el repositorio (`v1.0`), su versión
   publicada en GitHub con unas notas breves y su depósito en Zenodo con los PDF
   de todos los idiomas y los archivos para la IA.
-- La versión cambia cuando cambia el contenido de la guía, no con los ajustes
-  de la web. Un cambio que corrige sin alterar las recomendaciones sube el
-  segundo número (1.1); uno que cambia las recomendaciones, el primero (2.0).
+- La versión cambia cuando cambia el texto de la guía, no con los ajustes de
+  la web. Las correcciones de traducción, ortografía o expresión, que no
+  cambian lo que dice la guía, suben el segundo número (1.1); un cambio de
+  contenido, el primero (2.0). Juanjo fijó este criterio el 02-10-2026, al
+  preparar la 1.1, frente a un esquema de tres números (1.0.1) que se le
+  propuso: «me parece más claro».
 
 El DOI de la 1.0 se reservó en Zenodo antes de generar los PDF, para que la
 cita impresa ya lo lleve: versión `10.5281/zenodo.23081518`, concepto
