@@ -23,7 +23,7 @@ Cando o elemento se modificou, convén indicalo. Unha atribución completa terí
 
 ## O que a IA engade pola súa conta
 
-**Convén preguntarlle á IA que elementos alleos incorporou e con que licenza**, xa que non sempre o indica. É o que pide o punto 6 da [avaliación VCER](para-la-ia.html#para-avaliar-un-recurso-xa-feito). Hai tres casos que merecen atención:
+**Convén preguntarlle á IA que elementos alleos incorporou e con que licenza**, xa que non sempre o indica. É o que pide o punto 6 da [avaliación VCER](vcer.html). Hai tres casos que merecen atención:
 
 - **As imaxes ligadas desde outra web.** A IA pode colocar unha imaxe mediante o seu enderezo noutro sitio, sen que conste a súa licenza. Convén substituíla por unha con licenza coñecida e gardala dentro do material.
 - **As imaxes xeradas por IA.** Non teñen un autor ao que acreditar, pero convén indicar que son xeradas e con que ferramenta, como pide a recomendación 8.

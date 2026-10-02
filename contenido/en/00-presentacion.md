@@ -19,7 +19,7 @@ In the Telegram group [Vibe Coding Educativo](https://t.me/vceduca), more and mo
 ## How to start
 
 - **When creating a resource.** Give the AI the [instructions file](para-la-ia.html#to-create-a-resource){.abrir-ventana data-ventana="ventana-instrucciones"}, which tells it how to follow the recommendations.
-- **When it is finished.** Ask it for the VCER evaluation with the [evaluation file](para-la-ia.html#to-evaluate-an-existing-resource){.abrir-ventana data-ventana="ventana-evaluacion"}, which points out what is missing.
+- **When it is finished.** Ask it for the VCER evaluation with the [evaluation file](vcer.html#how-to-evaluate-a-resource){.abrir-ventana data-ventana="ventana-evaluacion"}, which points out what is missing.
 - **To publish.** With these two steps, the AI takes care of the minimum of each recommendation, except for reviewing the content, which is the person's job.
 
 [Read the guide](guia.html){.continuar}

@@ -315,6 +315,20 @@
     visor.addEventListener("close", function () { if (origen) { origen.focus(); } });
   }
 
+  /* ---------- Apartados que han cambiado de página ---------- */
+  // Un enlace antiguo a un apartado que ya no está en esta página (data-mudado,
+  // con el ancla antigua y su destino nuevo) lleva a su sitio actual.
+  var mudado = document.querySelector("[data-mudado]");
+  if (mudado) {
+    var destinos = JSON.parse(mudado.getAttribute("data-mudado"));
+    var mudar = function () {
+      var ancla = decodeURIComponent(window.location.hash.slice(1));
+      if (Object.prototype.hasOwnProperty.call(destinos, ancla)) { window.location.replace(destinos[ancla]); }
+    };
+    mudar();
+    window.addEventListener("hashchange", mudar);
+  }
+
   /* ---------- Resultado de la evaluación VCER ---------- */
   // La mención del pie de un recurso evaluado enlaza a vcer.html con su resultado
   // en la dirección: r (recomendable, mejorable o no-recomendable), p (el

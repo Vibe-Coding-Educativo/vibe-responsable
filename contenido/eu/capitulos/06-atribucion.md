@@ -23,7 +23,7 @@ Elementua aldatu denean, komeni da adieraztea. Aipamen oso batek forma hau izang
 
 ## IAk bere kabuz gehitzen duena
 
-**Komeni da IAri galdetzea zer kanpoko elementu gehitu dituen eta zein lizentziarekin**, ez baitu beti adierazten. Hori eskatzen du [VCER ebaluazioaren](para-la-ia.html#egindako-baliabide-bat-ebaluatzeko) 6. puntuak. Hiru kasuk merezi dute arreta:
+**Komeni da IAri galdetzea zer kanpoko elementu gehitu dituen eta zein lizentziarekin**, ez baitu beti adierazten. Hori eskatzen du [VCER ebaluazioaren](vcer.html) 6. puntuak. Hiru kasuk merezi dute arreta:
 
 - **Beste web batetik estekatutako irudiak.** IAk irudi bat jar dezake beste gune bateko helbidearen bidez, haren lizentzia jaso gabe. Komeni da lizentzia ezaguna duen beste batekin ordeztea eta materialaren barruan gordetzea.
 - **IAk sortutako irudiak.** Ez dute aitortu beharreko egilerik, baina komeni da adieraztea sortuak direla eta zein tresnarekin, 8. gomendioak eskatzen duen bezala.

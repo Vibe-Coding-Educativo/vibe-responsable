@@ -48,11 +48,14 @@ de los archivos de `contenido/<idioma>/` y el del menú:
    la infografía después de «Por qué esta guía».
 2. **Guía** (`01-guia.md`, `guia.html`): las diez recomendaciones.
 3. **Herramientas y niveles** (`02-herramientas.md`).
-4. **Instrucciones para la IA** (`04-para-la-ia.md`): cómo usar el archivo de instrucciones para la IA, que se muestra entero y se descarga (ADR 10).
+4. **Crear con IA** (`04-para-la-ia.md`, `para-la-ia.html`, «Instrucciones para
+   crear con IA»): cómo se entrega el archivo para crear, que se muestra entero y
+   se descarga (ADR 10). Hasta el 02-10-2026 se llamaba «Instrucciones para la
+   IA» y llevaba también el archivo de evaluación.
 
-5. **Evaluación VCER** (`06-evaluacion-vcer.md`, `vcer.html`): qué es la
-   evaluación y cómo leer su resultado; es también el destino del enlace con el
-   resultado que muestra un recurso evaluado (ADR 21, 02-10-2026).
+5. **Evaluación VCER** (`06-evaluacion-vcer.md`, `vcer.html`): todo lo de la
+   evaluación, con su archivo y la rúbrica; es también el destino del enlace con
+   el resultado que muestra un recurso evaluado (ADR 21, 02-10-2026).
 
 6. **Referencias** (`05-referencias.md`): todo lo que el texto cita, con una
    comprobación en `construir.py` de que no falta ni sobra ninguna. Es material

@@ -19,13 +19,20 @@ modelo. Además, el recurso cambia después de evaluarse.
 
 ## Decisión
 
-- **Página nueva, `vcer.html`** («La evaluación VCER», en el menú tras las
-  instrucciones para la IA), generada de `contenido/<idioma>/06-evaluacion-vcer.md`:
-  qué es la evaluación, los diez puntos con el capítulo de su recomendación,
-  cómo se calcula el resultado, con la tabla de los tres resultados, y los
-  límites de la evaluación. Termina con dos salidas: evaluar un recurso y leer
-  la guía. La tabla de resultados pasa de «Instrucciones para la IA» a esta
-  página, que es su único sitio; aquella remite aquí.
+- **Página nueva, `vcer.html`** («La evaluación VCER», «Evaluación VCER» en el
+  menú), generada de `contenido/<idioma>/06-evaluacion-vcer.md`, que reúne todo
+  lo de la evaluación: qué es, cómo se calcula el resultado, con la tabla de los
+  tres resultados, los límites, cómo evaluar un recurso, con el archivo de
+  evaluación, y la rúbrica, con el nombre de cada punto enlazado al capítulo de
+  su recomendación. Termina con dos salidas: leer la guía y crear con IA.
+- **«Instrucciones para la IA» pasa a ser «Instrucciones para crear con IA»**
+  («Crear con IA» en el menú) y trata solo de la creación; al final remite a la
+  evaluación. Conserva su dirección, `para-la-ia.html`, y los enlaces antiguos a
+  su apartado «Para evaluar un recurso ya hecho», publicados fuera de la guía,
+  llevan a su sitio nuevo en `vcer.html` (`ANCLA_EVALUAR_ANTIGUA` en
+  `construir.py` y `data-mudado` en `recursos/guia.js`). Al principio la
+  evaluación quedó repartida entre las dos páginas; Juanjo lo vio desordenado y
+  pidió una página independiente para ella (02-10-2026).
 - **El resultado viaja en el enlace**, sin servidor ni registro:
   `vcer/?r=…&p=…&f=…&v=…&t=…&u=…`. `r` es el resultado (`recomendable`,
   `mejorable` o `no-recomendable`, igual en todos los idiomas) y es
@@ -57,6 +64,12 @@ modelo. Además, el recurso cambia después de evaluarse.
   propone.
 
 ## Alternativas descartadas
+
+- **Mantener «Instrucciones para la IA» con dos subpáginas en un desplegable**,
+  para no alargar el menú. Lo planteó Juanjo y se descartó: los dos rótulos
+  cortos ocupan casi lo mismo que el anterior, el desplegable esconde las
+  opciones y funciona peor en el móvil, y la página de la evaluación es una
+  entrada desde fuera que conviene que se vea con su nombre.
 
 - **Ventana emergente al llegar, como en el MIAE.** Juanjo la descartó: interrumpe
   la lectura al llegar y no le acaba de gustar.
@@ -107,5 +120,8 @@ modelo. Además, el recurso cambia después de evaluarse.
   porcentaje de 150, un mes 13, una dirección `javascript:` y un título con
   etiquetas HTML, esos datos se omiten o se muestran como texto.
 - axe-core (WCAG 2 A y AA y buenas prácticas) sin fallos en `vcer.html`, con y
-  sin resultado, y en `para-la-ia.html`, en Chromium y Firefox, en claro y
-  oscuro.
+  sin resultado, en `para-la-ia.html` y en la portada, en Chromium y Firefox, en
+  claro y oscuro.
+- Los enlaces antiguos `para-la-ia.html#para-evaluar-un-recurso-ya-hecho` (y su
+  equivalente en euskera) llevan a `vcer.html#como-evaluar-un-recurso` en
+  Chromium y Firefox; el resto de anclas de la página no cambian.

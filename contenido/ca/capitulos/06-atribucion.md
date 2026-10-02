@@ -23,7 +23,7 @@ Quan l'element s'ha modificat, convé indicar-ho. Una atribució completa tindri
 
 ## El que la IA afegeix pel seu compte
 
-**Convé preguntar a la IA quins elements aliens ha incorporat i amb quina llicència**, ja que no sempre ho indica. És el que demana el punt 6 de l'[avaluació VCER](para-la-ia.html#per-avaluar-un-recurs-ja-fet). Hi ha tres casos que mereixen atenció:
+**Convé preguntar a la IA quins elements aliens ha incorporat i amb quina llicència**, ja que no sempre ho indica. És el que demana el punt 6 de l'[avaluació VCER](vcer.html). Hi ha tres casos que mereixen atenció:
 
 - **Les imatges enllaçades des d'un altre web.** La IA pot col·locar una imatge mitjançant la seva adreça en un altre lloc, sense que en consti la llicència. Convé substituir-la per una amb llicència coneguda i guardar-la dins del material.
 - **Les imatges generades per IA.** No tenen un autor a qui acreditar, però convé indicar que són generades i amb quina eina, com demana la recomanació 8.

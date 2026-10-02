@@ -10,7 +10,7 @@ Arazoa praktikoa da, gaur funtzionatzen duen material batek nabigatzailearen egu
 
 Gomendio hau betetzeko ez da programatzen jakin behar; nahikoa da materialari buruzko hiru gauza hitz arruntekin esatea: **zer egiten duen, zer gordetzen duen eta kanpoko zerbitzuren batekin komunikatzen den**. Mota horretako azalpen bat hau izango litzateke: «Simulagailuak plano inklinatu bateko gorputz baten azelerazioa kalkulatzen du, aukeratutako angelutik eta materialetik abiatuta, eta indarrak marrazten ditu. Ez du daturik gordetzen ezta inongo zerbitzurekin konektatzen ere».
 
-Hori lortzeko modua IAri berari eskatzea da, hizkera arruntean, eta gero egiaztatzea bat datorrela materiala erabiltzean ikusten denarekin. Adimen artifizialak (IA) ezer gordetzen ez dela baieztatzen badu eta materialak aurreko eguneko erantzunak gogoratzen baditu, azalpena ez da zuzena, eta argitu egin behar da argitaratu aurretik. [VCER ebaluazioak](para-la-ia.html#egindako-baliabide-bat-ebaluatzeko) eskaera hori jasotzen du bere 3. puntuan.
+Hori lortzeko modua IAri berari eskatzea da, hizkera arruntean, eta gero egiaztatzea bat datorrela materiala erabiltzean ikusten denarekin. Adimen artifizialak (IA) ezer gordetzen ez dela baieztatzen badu eta materialak aurreko eguneko erantzunak gogoratzen baditu, azalpena ez da zuzena, eta argitu egin behar da argitaratu aurretik. [VCER ebaluazioak](vcer.html) eskaera hori jasotzen du bere 3. puntuan.
 
 ## Lau egiaztapen, programatzen jakin gabe
 

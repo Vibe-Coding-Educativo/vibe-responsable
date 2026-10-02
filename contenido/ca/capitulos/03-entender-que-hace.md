@@ -10,7 +10,7 @@ El problema és pràctic, ja que un material que funciona avui pot deixar de fer
 
 Complir aquesta recomanació no exigeix saber programar, ja que n'hi ha prou de poder dir amb paraules corrents tres coses del material: **què fa, què guarda i si es comunica amb algun servei extern**. Una explicació d'aquest tipus seria la següent: «El simulador calcula l'acceleració d'un cos en un pla inclinat a partir de l'angle i del material triats, i dibuixa les forces. No guarda cap dada ni es connecta amb cap servei».
 
-La manera d'obtenir-la és demanar-la a la mateixa IA, en llenguatge planer, i comprovar després que coincideix amb el que s'observa en fer servir el material. Si la intel·ligència artificial (IA) afirma que no es guarda res i el material recorda les respostes del dia anterior, l'explicació no és correcta i cal aclarir-ho abans de publicar. L'[avaluació VCER](para-la-ia.html#per-avaluar-un-recurs-ja-fet) inclou aquesta petició al seu punt 3.
+La manera d'obtenir-la és demanar-la a la mateixa IA, en llenguatge planer, i comprovar després que coincideix amb el que s'observa en fer servir el material. Si la intel·ligència artificial (IA) afirma que no es guarda res i el material recorda les respostes del dia anterior, l'explicació no és correcta i cal aclarir-ho abans de publicar. L'[avaluació VCER](vcer.html) inclou aquesta petició al seu punt 3.
 
 ## Quatre comprovacions sense saber programar
 

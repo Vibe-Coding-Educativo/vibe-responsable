@@ -10,7 +10,7 @@ The problem is a practical one, since a resource that works today may stop worki
 
 Meeting this recommendation does not require knowing how to program, since it is enough to be able to say three things about the material in ordinary words: **what it does, what it stores and whether it communicates with any external service**. An explanation of this kind would be the following: «The simulator calculates the acceleration of a body on an inclined plane from the chosen angle and material, and draws the forces. It stores no data and does not connect to any service».
 
-The way to obtain it is to ask the AI itself, in plain language, and then check that it matches what can be observed when using the material. If the artificial intelligence (AI) states that nothing is stored and the material remembers the previous day's answers, the explanation is not correct and it must be clarified before publishing. The [VCER evaluation](para-la-ia.html#to-evaluate-an-existing-resource) includes this request in its point 3.
+The way to obtain it is to ask the AI itself, in plain language, and then check that it matches what can be observed when using the material. If the artificial intelligence (AI) states that nothing is stored and the material remembers the previous day's answers, the explanation is not correct and it must be clarified before publishing. The [VCER evaluation](vcer.html) includes this request in its point 3.
 
 ## Four checks without knowing how to program
 

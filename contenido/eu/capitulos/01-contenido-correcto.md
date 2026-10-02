@@ -35,7 +35,7 @@ Proiektuak ahalbidetzen duenean, IAk egiaztapen horiek proba automatiko bihur di
 
 IAk ekoizpena bizkortzen du, baina **erantzukizun pedagogikoa materiala argitaratzen duen pertsonarena da oraindik**. Hala jasotzen du, halaber, Hezkuntza Teknologien eta Irakasleen Prestakuntzaren Institutu Nazionalaren (INTEF) [«Guía sobre el uso de la inteligencia artificial en el ámbito educativo»](https://code.intef.es/wp-content/uploads/2026/09/ACTUALIZACI%C3%93N-GU%C3%8DA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5.pdf) gidak, 2026ko iraileko 2.0 bertsioan, bere printzipio etikoen artean giza gainbegiratzea eta erantzukizuna jartzen baititu: irakasleek IAren erabileraren gaineko kontrola mantendu behar dute, eta hezkuntza-erabakiak ezin dira sistema automatizatuen mende egon.
 
-Horrek ondorio praktiko bat du gidaren gainerakoarentzat. IA ia gomendio guztiez arduratu daiteke, lizentziatik irisgarritasunera, baina ez honetaz. Egiaztatzea komeni dena adieraz dezake, eta baita seguru ez dagoenaz ohartarazi ere, baina ezin du ziurtatu materialak irakasten duena zuzena denik. Horregatik, [VCER ebaluazioan](para-la-ia.html#egindako-baliabide-bat-ebaluatzeko), IAk detektatzen dituen akatsak bakarrik puntuatzen ditu eta pertsonak berrikusi behar duena adierazten du.
+Horrek ondorio praktiko bat du gidaren gainerakoarentzat. IA ia gomendio guztiez arduratu daiteke, lizentziatik irisgarritasunera, baina ez honetaz. Egiaztatzea komeni dena adieraz dezake, eta baita seguru ez dagoenaz ohartarazi ere, baina ezin du ziurtatu materialak irakasten duena zuzena denik. Horregatik, [VCER ebaluazioan](vcer.html), IAk detektatzen dituen akatsak bakarrik puntuatzen ditu eta pertsonak berrikusi behar duena adierazten du.
 
 ## Argitaratu ondorengo berrikuspena
 

@@ -19,7 +19,7 @@ Vibe coding-a, [Andrej Karpathyk 2025eko otsailean proposatutako izena](https://
 ## Nola hasi
 
 - **Material bat sortzean.** IAri [jarraibideen fitxategia](para-la-ia.html#material-bat-sortzeko){.abrir-ventana data-ventana="ventana-instrucciones"} ematea, gomendioak nola bete adierazten diona.
-- **Amaitzean.** VCER ebaluazioa eskatzea [ebaluazio-fitxategiarekin](para-la-ia.html#egindako-baliabide-bat-ebaluatzeko){.abrir-ventana data-ventana="ventana-evaluacion"}, falta dena adierazten duena.
+- **Amaitzean.** VCER ebaluazioa eskatzea [ebaluazio-fitxategiarekin](vcer.html#nola-ebaluatu-baliabide-bat){.abrir-ventana data-ventana="ventana-evaluacion"}, falta dena adierazten duena.
 - **Argitaratzeko.** Bi urrats horiekin, IA arduratzen da gomendio bakoitzaren gutxienekoaz, edukiaren berrikuspenaz izan ezik, pertsonari baitagokio.
 
 [Gida irakurri](guia.html){.continuar}

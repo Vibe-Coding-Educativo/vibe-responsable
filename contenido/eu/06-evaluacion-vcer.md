@@ -4,17 +4,11 @@
 
 VCER «vibe coding hezitzaile arduratsua» esamoldearen gaztelaniazko siglak dira. «Vibe coding arduratsua» gidak proposatzen duen ebaluazioa da, baliabide hezitzaile batek gidaren funtsezkoa betetzen duen egiaztatzeko, argitaratu edo erabili aurretik. Edozein baliabide eginetarako balio du, norberarena edo besteren batena, gidari jarraituz sortu den ala ez.
 
-Ebaluazioa IA batek egiten du, gidatik deskargatzen den jarraibide-fitxategi batetik abiatuta. IAk baliabidearen kodea berrikusten du, errubrikako puntu bakoitza 2, 1 edo 0 puntuazioarekin baloratzen du, puntuazio bakoitza justifikatzen du eta emaitza gehien igoko luketen hiru hobekuntzak proposatzen ditu.
-
-## Errubrikaren puntuak
-
-Puntu bakoitzak gidaren gomendio bat egiaztatzen du, bere kapituluan garatzen dena. Edukia eta datu pertsonalak baztertzaileak dira.
-
-<!-- puntos -->
+Ebaluazioa IA batek egiten du, gidatik deskargatzen den [jarraibide-fitxategi](#nola-ebaluatu-baliabide-bat) batetik abiatuta. IAk baliabidearen kodea berrikusten du, errubrikako puntu bakoitza 2, 1 edo 0 puntuazioarekin baloratzen du, puntuazio bakoitza justifikatzen du eta emaitza gehien igoko luketen hiru hobekuntzak proposatzen ditu.
 
 ## Nola kalkulatzen den emaitza
 
-Ehunekoa puntuazioen batura da, IAk egiaztatu ahal izan dituen puntuen gehienezko balioaz zatituta. Ehuneko horrekin eta puntu baztertzaileekin, hiru emaitza hauetako bat lortzen da:
+Ehunekoa puntuazioen batura da, IAk egiaztatu ahal izan dituen puntuen gehienezko balioaz zatituta. Edukia eta datu pertsonalak baztertzaileak dira. Ehunekoarekin eta bi puntu horiekin, hiru emaitza hauetako bat lortzen da:
 
 | Emaitza | Noiz gertatzen den | Zer esan nahi duen |
 | --- | --- | --- |
@@ -25,3 +19,21 @@ Ehunekoa puntuazioen batura da, IAk egiaztatu ahal izan dituen puntuen gehienezk
 ## Ebaluazioaren mugak
 
 IAk ikusten dituen akatsak bakarrik antzematen ditu, batez ere edukian, eta emaitza alda daiteke erabilitako ereduaren arabera. Horregatik, puntuazioak orientatu egiten du, baina ez du pertsona baten berrikuspena ordezkatzen. Gainera, emaitza ebaluatu zen baliabidearen bertsioari dagokio, ebaluazioaren datan.
+
+## Nola ebaluatu baliabide bat
+
+Web bat ebaluatzeko:
+
+1. Jarraian agertzen den ebaluazio-fitxategia deskargatu eta IArekiko elkarrizketan erantsi, edo bere testua kopiatu eta hasieran itsatsi.
+2. Baliabidearen kodea eman: nabigatzailetik gordetako HTML fitxategia erantsi, edo kodea itsatsi.
+3. «Ebaluatu baliabide hau jarraibideen arabera» eskatu.
+
+<!-- evaluacion -->
+
+Materiala IArekin sortu berri bada, nahikoa da fitxategia elkarrizketa berean erantsi eta «ebaluatu materiala jarraibideen arabera» eskatzea. IAk gomendio bakoitza VCER errubrikarekin puntuatzen du, azken ehuneko bat ematen du eta puntuazioa gehien igoko luketen hiru hobekuntzak proposatzen ditu. Gero zuzentzeko eskatzen bazaio, lehenik aldaketak proposatzen ditu eta onartu arte itxaroten du; aurretik komeni da kopia bat gordetzea. Baliabidea norberarena bada, IAk txostena proiektuan gordetzea eta materialaren oinean emaitzaren aipamen bat gehitzea ere eskaintzen du, orri honetara estekatuta.
+
+## VCER errubrika
+
+Errubrikako puntu bakoitzak gidaren gomendio bat egiaztatzen du, bere kapituluan garatzen dena. Hau da ebaluazio-fitxategiak erabiltzen duen errubrika:
+
+<!-- rubrica -->

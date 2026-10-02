@@ -4,7 +4,7 @@
 
 Material bat kanpoko zerbitzu baten mende dago funtzionatzeko bere barruan ez dagoen zerbait behar duenean. Ohikoenak dira beste web batetik txertatutako edukia, kanpoko zerbitzarietatik kargatzen diren programazio-liburutegiak eta tipografiak, eta lineako zerbitzuekiko konexioak. Mendekotasuna da, halaber, materiala sortu den plataforma, materiala haren barruan bakarrik badago.
 
-Mendekotasun horiek ez dira ikusten materiala erabiltzean. Kodea irakurtzean edo adimen artifizialari (IA) zerrenda ditzala eskatzean aurkitzen dira, eta hori eskatzen du [VCER ebaluazioaren](para-la-ia.html#egindako-baliabide-bat-ebaluatzeko) 4. puntuak.
+Mendekotasun horiek ez dira ikusten materiala erabiltzean. Kodea irakurtzean edo adimen artifizialari (IA) zerrenda ditzala eskatzean aurkitzen dira, eta hori eskatzen du [VCER ebaluazioaren](vcer.html) 4. puntuak.
 
 ## Kanpoko zerbitzuen aldaketak
 

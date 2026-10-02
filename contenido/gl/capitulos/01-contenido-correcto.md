@@ -35,7 +35,7 @@ Cando o proxecto o permite, a IA pode converter esas comprobacións en probas au
 
 A IA acelera a produción, pero **a responsabilidade pedagóxica segue sendo da persoa que publica o material**. Así o recolle tamén a [«Guía sobre el uso de la inteligencia artificial en el ámbito educativo»](https://code.intef.es/wp-content/uploads/2026/09/ACTUALIZACI%C3%93N-GU%C3%8DA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5.pdf) do Instituto Nacional de Tecnoloxías Educativas e de Formación do Profesorado (INTEF), na súa versión 2.0 de setembro de 2026, que entre os seus principios éticos sitúa a supervisión humana e a responsabilidade: o profesorado debe manter o control sobre o uso da IA, e as decisións educativas non poden depender de sistemas automatizados.
 
-Isto ten unha consecuencia práctica para o resto da guía. A IA pode encargarse de case todas as recomendacións, desde a licenza ata a accesibilidade, pero non desta. Pode sinalar que convén comprobar, e mesmo advertir daquilo do que non está segura, aínda que non pode certificar que o que ensina o material sexa correcto. Por iso, na [avaliación VCER](para-la-ia.html#para-avaliar-un-recurso-xa-feito), a IA puntúa só os erros que detecta e sinala o que debe revisar a persoa.
+Isto ten unha consecuencia práctica para o resto da guía. A IA pode encargarse de case todas as recomendacións, desde a licenza ata a accesibilidade, pero non desta. Pode sinalar que convén comprobar, e mesmo advertir daquilo do que non está segura, aínda que non pode certificar que o que ensina o material sexa correcto. Por iso, na [avaliación VCER](vcer.html), a IA puntúa só os erros que detecta e sinala o que debe revisar a persoa.
 
 ## A revisión despois de publicar
 

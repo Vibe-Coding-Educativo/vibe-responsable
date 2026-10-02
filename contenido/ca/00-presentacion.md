@@ -19,7 +19,7 @@ El **vibe coding educatiu responsable** (VCER) és el que **publica materials se
 ## Com començar
 
 - **En crear un material.** Donar a la IA el [fitxer d'instruccions](para-la-ia.html#per-crear-un-material){.abrir-ventana data-ventana="ventana-instrucciones"}, que li indica com seguir les recomanacions.
-- **En acabar-lo.** Demanar-li l'avaluació VCER amb el [fitxer d'avaluació](para-la-ia.html#per-avaluar-un-recurs-ja-fet){.abrir-ventana data-ventana="ventana-evaluacion"}, que assenyala el que falta.
+- **En acabar-lo.** Demanar-li l'avaluació VCER amb el [fitxer d'avaluació](vcer.html#com-avaluar-un-recurs){.abrir-ventana data-ventana="ventana-evaluacion"}, que assenyala el que falta.
 - **Per publicar.** Amb aquests dos passos, la IA s'ocupa del mínim de cada recomanació, excepte la revisió del contingut, que correspon a la persona.
 
 [Llegir la guia](guia.html){.continuar}

@@ -4,7 +4,7 @@
 
 A resource depends on an external service when it needs something that is not inside it in order to work. The most common forms are content embedded from another website, programming libraries and typefaces loaded from third-party servers, and connections with online services. The platform where the material was created is also a dependency, when the material only exists within it.
 
-These dependencies are not visible when using the material. They are discovered by reading the code or by asking the artificial intelligence (AI) to list them, which is what point 4 of the [VCER evaluation](para-la-ia.html#to-evaluate-an-existing-resource) asks for.
+These dependencies are not visible when using the material. They are discovered by reading the code or by asking the artificial intelligence (AI) to list them, which is what point 4 of the [VCER evaluation](vcer.html) asks for.
 
 ## Changes in external services
 

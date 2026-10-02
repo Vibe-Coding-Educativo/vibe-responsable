@@ -35,7 +35,7 @@ When the project allows it, the AI can turn those checks into automated tests an
 
 AI speeds up production, but **pedagogical responsibility still lies with the person who publishes the material**. This is also stated in the [«Guía sobre el uso de la inteligencia artificial en el ámbito educativo»](https://code.intef.es/wp-content/uploads/2026/09/ACTUALIZACI%C3%93N-GU%C3%8DA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5.pdf) (Guide on the use of artificial intelligence in education) of Spain's National Institute of Educational Technologies and Teacher Training (INTEF), in its version 2.0 of September 2026, which includes human oversight and responsibility among its ethical principles: teachers must keep control over the use of AI, and educational decisions cannot depend on automated systems.
 
-This has a practical consequence for the rest of the guide. The AI can take care of almost all the recommendations, from the licence to accessibility, but not this one. It can point out what should be checked, and even warn about what it is unsure of, but it cannot certify that what the material teaches is correct. That is why, in the [VCER evaluation](para-la-ia.html#to-evaluate-an-existing-resource), the AI scores only the errors it detects and points out what the person must review.
+This has a practical consequence for the rest of the guide. The AI can take care of almost all the recommendations, from the licence to accessibility, but not this one. It can point out what should be checked, and even warn about what it is unsure of, but it cannot certify that what the material teaches is correct. That is why, in the [VCER evaluation](vcer.html), the AI scores only the errors it detects and points out what the person must review.
 
 ## Reviewing after publication
 

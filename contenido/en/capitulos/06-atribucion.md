@@ -23,7 +23,7 @@ When the element has been modified, it is advisable to say so. A complete attrib
 
 ## What the AI adds on its own
 
-**It is advisable to ask the AI which third-party elements it has incorporated and under which licence**, since it does not always say. This is what point 6 of the [VCER evaluation](para-la-ia.html#to-evaluate-an-existing-resource) asks for. There are three cases that deserve attention:
+**It is advisable to ask the AI which third-party elements it has incorporated and under which licence**, since it does not always say. This is what point 6 of the [VCER evaluation](vcer.html) asks for. There are three cases that deserve attention:
 
 - **Images linked from another website.** The AI may place an image by means of its address on another site, without its licence being stated. It is advisable to replace it with one whose licence is known and keep it inside the material.
 - **AI-generated images.** They have no author to credit, but it is advisable to state that they are generated and with which tool, as recommendation 8 asks.

@@ -429,8 +429,8 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   .familias { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 }
 
-/* La evaluación VCER: el resultado que trae el enlace de la mención (guia.js), los puntos de la
-   rúbrica con su capítulo y la fila de la tabla de resultados que corresponde al recurso. */
+/* La evaluación VCER: el resultado que trae el enlace de la mención (guia.js) y la fila de la
+   tabla de resultados que corresponde al recurso. */
 .resultado-vcer { max-width: 46rem; margin: 0 0 1.4rem; padding: 1rem 1.3rem 0.9rem; background: var(--hoja); border: 1px solid var(--raya); border-left: 4px solid var(--verde); border-radius: 6px; box-shadow: var(--sombra); }
 .resultado-vcer h2 { margin: 0 0 0.5rem; font-size: 1.15rem; }
 .resultado-vcer p { margin: 0 0 0.7rem; }
@@ -445,16 +445,9 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
 :lang(eu) .rv-umbral::after { content: "% 70"; }
 .rv-nota { font-size: 0.9rem; color: var(--tinta-suave); }
 .resultado-vcer > :last-child { margin-bottom: 0; }
-.puntos-vcer { list-style: none; margin: 0.4rem 0 0.6rem; padding: 0; display: grid; gap: 0.2rem 2.4rem; }
-.puntos-vcer li { display: flex; flex-direction: column; border-top: 2px solid var(--verde); padding: 0.45rem 0 0.55rem; break-inside: avoid; }
-.pv-nombre { font-weight: 700; }
-.pv-nombre .rub-n { color: var(--verde); }
-.pv-nombre small { font-weight: 400; color: var(--tinta-suave); }
-.texto:has(.puntos-vcer) { columns: auto; }
 .resultados-vcer tr.actual > * { background: var(--marca); }
 .resultados-vcer tr.actual > :first-child { box-shadow: inset 4px 0 0 var(--verde); }
 .salidas-vcer { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.4rem 0 0; padding-top: 1rem; border-top: 1px solid var(--raya); }
-@media (min-width: 48rem) { .puntos-vcer { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
 
 .pie { margin-top: 1.4rem; border-top: 1px solid var(--raya); padding: 0.8rem 0 1rem; font-size: 0.82rem; color: var(--tinta-suave); }
 .pie p { margin: 0 0 0.15rem; }

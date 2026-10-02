@@ -12,9 +12,10 @@ Páginas por idioma, en el orden en que se leen:
   index.html          presentación: qué es, por qué y cómo se utiliza (00-presentacion.md)
   guia.html           la guía: las diez recomendaciones (01-guia.md)
   herramientas.html   familias de herramientas y los dos niveles (02-herramientas.md)
-  para-la-ia.html     cómo usar los archivos para la IA, uno para crear y otro para evaluar
-                      (04-para-la-ia.md); se muestran en la página y se publican aparte
-  vcer.html           qué es la evaluación VCER y cómo leer su resultado (06-evaluacion-vcer.md);
+  para-la-ia.html     instrucciones para crear con IA: cómo se entrega el archivo para crear,
+                      que se muestra en la página y se publica aparte (04-para-la-ia.md)
+  vcer.html           la evaluación VCER: qué es, cómo se lee el resultado, cómo evaluar un
+                      recurso, con el archivo para evaluar, y la rúbrica (06-evaluacion-vcer.md);
                       arriba muestra el resultado que trae el enlace de la mención, que llega
                       a través de vcer/index.html (ADR 21)
   referencias.html    todo lo citado en el texto (05-referencias.md)
@@ -68,7 +69,7 @@ UI = {
         "nav": "Secciones de la guía",
         "nav_capitulos": "Capítulo anterior y siguiente",
         # rótulos del menú más cortos que el título de su página
-        "nav_cortos": {"guia.html": "Guía", "vcer.html": "Evaluación VCER", "referencias.html": "Referencias", "creditos.html": "Créditos"},
+        "nav_cortos": {"guia.html": "Guía", "para-la-ia.html": "Crear con IA", "vcer.html": "Evaluación VCER", "referencias.html": "Referencias", "creditos.html": "Créditos"},
         "imprimir": "Imprimir esta página",
         "imprimir_desc": "Solo lo que se ve en esta página",
         "imprimir_menu": "Imprimir o descargar",
@@ -118,7 +119,8 @@ UI = {
         "mas_informacion": "Más información",
         "copiar_titulo": "Copiar el texto para pegarlo en la conversación con la IA",
         "descargar_titulo": "Descargar el archivo para adjuntarlo en la conversación con la IA",
-        "mas_informacion_titulo": "Ir a la página de instrucciones para la IA, con el texto completo",
+        "mas_informacion_titulo": {"instrucciones": "Ir a la página de instrucciones para crear con IA, con el texto completo",
+                                   "evaluacion": "Ir a la página de la evaluación VCER, con el texto completo"},
         "rubrica": "Rúbrica VCER: 2, se cumple; 1, en parte; 0, no se cumple",
         "punto": "Recomendación",
         "acercar": "Ver a tamaño de lectura",
@@ -134,7 +136,7 @@ UI = {
         "saltar": "Salta al contingut",
         "nav": "Seccions de la guia",
         "nav_capitulos": "Capítol anterior i següent",
-        "nav_cortos": {"guia.html": "Guia", "vcer.html": "Avaluació VCER", "referencias.html": "Referències", "creditos.html": "Crèdits"},
+        "nav_cortos": {"guia.html": "Guia", "para-la-ia.html": "Crear amb IA", "vcer.html": "Avaluació VCER", "referencias.html": "Referències", "creditos.html": "Crèdits"},
         "imprimir": "Imprimir aquesta pàgina",
         "imprimir_desc": "Només el que es veu en aquesta pàgina",
         "imprimir_menu": "Imprimir o descarregar",
@@ -180,7 +182,8 @@ UI = {
         "mas_informacion": "Més informació",
         "copiar_titulo": "Copiar el text per enganxar-lo a la conversa amb la IA",
         "descargar_titulo": "Descarregar el fitxer per adjuntar-lo a la conversa amb la IA",
-        "mas_informacion_titulo": "Anar a la pàgina d'instruccions per a la IA, amb el text complet",
+        "mas_informacion_titulo": {"instrucciones": "Anar a la pàgina d'instruccions per crear amb IA, amb el text complet",
+                                   "evaluacion": "Anar a la pàgina de l'avaluació VCER, amb el text complet"},
         "rubrica": "Rúbrica VCER: 2, es compleix; 1, en part; 0, no es compleix",
         "punto": "Recomanació",
         "acercar": "Veure a mida de lectura",
@@ -196,7 +199,7 @@ UI = {
         "saltar": "Saltar ao contido",
         "nav": "Seccións da guía",
         "nav_capitulos": "Capítulo anterior e seguinte",
-        "nav_cortos": {"guia.html": "Guía", "vcer.html": "Avaliación VCER", "referencias.html": "Referencias", "creditos.html": "Créditos"},
+        "nav_cortos": {"guia.html": "Guía", "para-la-ia.html": "Crear con IA", "vcer.html": "Avaliación VCER", "referencias.html": "Referencias", "creditos.html": "Créditos"},
         "imprimir": "Imprimir esta páxina",
         "imprimir_desc": "Só o que se ve nesta páxina",
         "imprimir_menu": "Imprimir ou descargar",
@@ -242,7 +245,8 @@ UI = {
         "mas_informacion": "Máis información",
         "copiar_titulo": "Copiar o texto para pegalo na conversa coa IA",
         "descargar_titulo": "Descargar o ficheiro para achegalo na conversa coa IA",
-        "mas_informacion_titulo": "Ir á páxina de instrucións para a IA, co texto completo",
+        "mas_informacion_titulo": {"instrucciones": "Ir á páxina de instrucións para crear con IA, co texto completo",
+                                   "evaluacion": "Ir á páxina da avaliación VCER, co texto completo"},
         "rubrica": "Rúbrica VCER: 2, cúmprese; 1, en parte; 0, non se cumpre",
         "punto": "Recomendación",
         "acercar": "Ver a tamaño de lectura",
@@ -258,7 +262,7 @@ UI = {
         "saltar": "Joan edukira",
         "nav": "Gidaren atalak",
         "nav_capitulos": "Aurreko eta hurrengo kapitulua",
-        "nav_cortos": {"guia.html": "Gida", "vcer.html": "VCER ebaluazioa", "referencias.html": "Erreferentziak", "creditos.html": "Kredituak"},
+        "nav_cortos": {"guia.html": "Gida", "para-la-ia.html": "IArekin sortu", "vcer.html": "VCER ebaluazioa", "referencias.html": "Erreferentziak", "creditos.html": "Kredituak"},
         "imprimir": "Orri hau inprimatu",
         "imprimir_desc": "Orri honetan ikusten dena bakarrik",
         "imprimir_menu": "Inprimatu edo deskargatu",
@@ -304,7 +308,8 @@ UI = {
         "mas_informacion": "Informazio gehiago",
         "copiar_titulo": "Testua kopiatu IArekiko elkarrizketan itsasteko",
         "descargar_titulo": "Fitxategia deskargatu IArekiko elkarrizketan eransteko",
-        "mas_informacion_titulo": "IArentzako jarraibideen orrira joan, testu osoarekin",
+        "mas_informacion_titulo": {"instrucciones": "IArekin sortzeko jarraibideen orrira joan, testu osoarekin",
+                                   "evaluacion": "VCER ebaluazioaren orrira joan, testu osoarekin"},
         "rubrica": "VCER errubrika: 2, betetzen da; 1, zati batean; 0, ez da betetzen",
         "punto": "Gomendioa",
         "acercar": "Irakurtzeko tamainan ikusi",
@@ -321,7 +326,7 @@ UI = {
         "saltar": "Skip to content",
         "nav": "Sections of the guide",
         "nav_capitulos": "Previous and next chapter",
-        "nav_cortos": {"guia.html": "Guide", "vcer.html": "VCER evaluation", "referencias.html": "References", "creditos.html": "Credits"},
+        "nav_cortos": {"guia.html": "Guide", "para-la-ia.html": "Creating with AI", "vcer.html": "VCER evaluation", "referencias.html": "References", "creditos.html": "Credits"},
         "imprimir": "Print this page",
         "imprimir_desc": "Only what is shown on this page",
         "imprimir_menu": "Print or download",
@@ -367,7 +372,8 @@ UI = {
         "mas_informacion": "More information",
         "copiar_titulo": "Copy the text to paste it into the conversation with the AI",
         "descargar_titulo": "Download the file to attach it to the conversation with the AI",
-        "mas_informacion_titulo": "Go to the page of instructions for the AI, with the full text",
+        "mas_informacion_titulo": {"instrucciones": "Go to the page of instructions for creating with AI, with the full text",
+                                   "evaluacion": "Go to the page of the VCER evaluation, with the full text"},
         "rubrica": "VCER rubric: 2, met; 1, partly met; 0, not met",
         "punto": "Recommendation",
         "acercar": "View at reading size",
@@ -389,7 +395,7 @@ VCER = {
            "frase": "{recurso}{u} se evaluó con la rúbrica VCER{fecha}. Este es el resultado que declara su autoría:",
            "fecha": " en {mes} de {año}", "meses": MESES["es"], "pct": "{p} %",
            "nota": "Se trata de una autoevaluación orientativa, que no ha comprobado nadie más, y el recurso puede haber cambiado desde entonces.",
-           "salidas": ("Evaluar un recurso", "Leer la guía")},
+           "salidas": ("Leer la guía", "Crear con IA")},
     "ca": {"cab": "Avaluació VCER del recurs",
            "recurso": {"t": "El recurs «{t}»", "tv": "La versió {v} del recurs «{t}»",
                        "": "El recurs d'on prové aquest enllaç", "v": "La versió {v} del recurs d'on prové aquest enllaç"},
@@ -397,14 +403,14 @@ VCER = {
            "fecha": " {mes} de {año}", "meses": ["al gener", "al febrer", "al març", "a l'abril", "al maig", "al juny", "al juliol",
                                                  "a l'agost", "al setembre", "a l'octubre", "al novembre", "al desembre"], "pct": "{p} %",
            "nota": "Es tracta d'una autoavaluació orientativa, que ningú més no ha comprovat, i el recurs pot haver canviat des d'aleshores.",
-           "salidas": ("Avaluar un recurs", "Llegir la guia")},
+           "salidas": ("Llegir la guia", "Crear amb IA")},
     "gl": {"cab": "Avaliación VCER do recurso",
            "recurso": {"t": "O recurso «{t}»", "tv": "A versión {v} do recurso «{t}»",
                        "": "O recurso do que procede esta ligazón", "v": "A versión {v} do recurso do que procede esta ligazón"},
            "frase": "{recurso}{u} avaliouse coa rúbrica VCER{fecha}. Este é o resultado que declara a súa autoría:",
            "fecha": " en {mes} de {año}", "meses": MESES["gl"], "pct": "{p} %",
            "nota": "Trátase dunha autoavaliación orientativa, que ninguén máis comprobou, e o recurso pode ter cambiado desde entón.",
-           "salidas": ("Avaliar un recurso", "Ler a guía")},
+           "salidas": ("Ler a guía", "Crear con IA")},
     "eu": {"cab": "Baliabidearen VCER ebaluazioa",
            "recurso": {"t": "«{t}» baliabidea", "tv": "«{t}» baliabidearen {v} bertsioa",
                        "": "Esteka honen jatorriko baliabidea", "v": "Esteka honen jatorriko baliabidearen {v} bertsioa"},
@@ -412,18 +418,23 @@ VCER = {
            "fecha": " {año}ko {mes}", "meses": ["urtarrilean", "otsailean", "martxoan", "apirilean", "maiatzean", "ekainean", "uztailean",
                                                 "abuztuan", "irailean", "urrian", "azaroan", "abenduan"], "pct": "% {p}",
            "nota": "Autoebaluazio orientagarria da, beste inork egiaztatu ez duena, eta baliteke baliabidea ordutik aldatu izana.",
-           "salidas": ("Baliabide bat ebaluatu", "Gida irakurri")},
+           "salidas": ("Gida irakurri", "IArekin sortu")},
     "en": {"cab": "VCER evaluation of the resource",
            "recurso": {"t": "The resource «{t}»", "tv": "Version {v} of the resource «{t}»",
                        "": "The resource this link comes from", "v": "Version {v} of the resource this link comes from"},
            "frase": "{recurso}{u} was evaluated with the VCER rubric{fecha}. This is the result stated by its authors:",
            "fecha": " in {mes} {año}", "meses": MESES["en"], "pct": "{p} %",
            "nota": "This is an indicative self-assessment that nobody else has checked, and the resource may have changed since then.",
-           "salidas": ("Evaluate a resource", "Read the guide")},
+           "salidas": ("Read the guide", "Creating with AI")},
 }
 # Los valores de r en el enlace, en el orden de las filas de la tabla de resultados de 06-evaluacion-vcer.md.
 # Son los mismos en todos los idiomas, porque el enlace no depende del idioma del recurso.
 RESULTADOS_VCER = ["recomendable", "mejorable", "no-recomendable"]
+# El apartado «Para evaluar un recurso ya hecho» estuvo en para-la-ia.html hasta la versión 2.0, y hay
+# enlaces a él publicados fuera de la guía. guia.js los lleva a su sitio nuevo, en vcer.html (ADR 21).
+ANCLA_EVALUAR_ANTIGUA = {"es": "para-evaluar-un-recurso-ya-hecho", "ca": "per-avaluar-un-recurs-ja-fet",
+                         "gl": "para-avaliar-un-recurso-xa-feito", "eu": "egindako-baliabide-bat-ebaluatzeko",
+                         "en": "to-evaluate-an-existing-resource"}
 
 # El vídeo de la animación que abre la portada (ADR 17) y su cartel, relativos a la carpeta del idioma.
 VIDEO = "../animacion/vibe-responsable-zoom.{idioma}.mp4"
@@ -621,8 +632,10 @@ def ventanas_ia(idioma):
     para copiarlo; quien quiera leerlo va a la página. Sin JavaScript, el enlace lleva a la página."""
     T = UI[idioma]
     ventanas = []
-    apartados = anclas_de(idioma, "04-para-la-ia.md")   # cómo se utilizan, para crear, para evaluar
-    for clave, ancla_pagina in (("instrucciones", apartados[1]), ("evaluacion", apartados[2])):
+    # El archivo para crear está en para-la-ia.html; el de evaluar, en vcer.html, en «Cómo evaluar un recurso»
+    destinos = {"instrucciones": "para-la-ia.html#" + anclas_de(idioma, "04-para-la-ia.md")[1],
+                "evaluacion": "vcer.html#" + anclas_de(idioma, "06-evaluacion-vcer.md")[3]}
+    for clave, destino in destinos.items():
         titulo, texto = T["ventana_ia"][clave]
         ventanas.append(f"""<dialog class="ventana-ia" id="ventana-{clave}" aria-labelledby="ventana-{clave}-titulo">
 <div class="ventana-cab"><h2 id="ventana-{clave}-titulo">{html.escape(titulo)}</h2>
@@ -633,7 +646,7 @@ def ventanas_ia(idioma):
 <a class="boton" href="{ARCHIVOS_IA[clave][1]}" download title="{html.escape(T["descargar_titulo"])}">{icono("download")}{html.escape(T["descargar_archivo"])}</a>
 <pre hidden>{html.escape(archivo_ia(idioma, clave))}</pre>
 </div>
-<p class="ventana-mas"><a href="para-la-ia.html#{ancla_pagina}" title="{html.escape(T["mas_informacion_titulo"])}">{html.escape(T["mas_informacion"])}{icono("arrow-right")}</a></p>
+<p class="ventana-mas"><a href="{destino}" title="{html.escape(T["mas_informacion_titulo"][clave])}">{html.escape(T["mas_informacion"])}{icono("arrow-right")}</a></p>
 </dialog>""")
     return "\n".join(ventanas)
 
@@ -755,6 +768,7 @@ def tabla_rubrica(idioma):
     """La rúbrica del archivo de evaluación, en una tabla: una fila por punto y una columna por
     puntuación. Sale del propio archivo, para que la tabla y lo que lee la IA no se separen."""
     T = UI[idioma]
+    caps = capitulos(idioma)
     texto = archivo_ia(idioma, "evaluacion")
     bloque = texto[texto.index("\n1. ") + 1:texto.index("\n## ", texto.index("\n1. "))]
     filas = []
@@ -766,23 +780,13 @@ def tabla_rubrica(idioma):
         nombre = re.sub(r"\s*\(.*?\)", "", nombre).capitalize()
         for sigla in T.get("siglas", ["IA"]):   # las siglas vuelven a mayúsculas
             nombre = re.sub(rf"\b{sigla}\b", sigla, nombre, flags=re.I)
-        celda = f'<th scope="row"><span class="rub-n">{cab.group(1)}</span> {html.escape(nombre)}' + (f' <small>({html.escape(nota.group(1))})</small>' if nota else "") + "</th>"
+        n = int(cab.group(1))
+        nombre = f'<a href="{caps[n][0]}">{html.escape(nombre)}</a>' if n in caps else html.escape(nombre)
+        celda = f'<th scope="row"><span class="rub-n">{n}</span> {nombre}' + (f' <small>({html.escape(nota.group(1))})</small>' if nota else "") + "</th>"
         filas.append("<tr>" + celda + "".join(f'<td data-nota="{n}">{html.escape(niveles.get(n, ""))}</td>' for n in "210") + "</tr>")
     cabecera = "".join(f'<th scope="col">{n}</th>' for n in "210")
     return (f'<div class="rubrica"><table><caption>{html.escape(T["rubrica"])}</caption><thead><tr><th scope="col">{html.escape(T["punto"])}</th>{cabecera}</tr></thead>'
             f'<tbody>{"".join(filas)}</tbody></table></div>')
-
-
-def puntos_vcer(idioma):
-    """Los puntos de la rúbrica, cada uno con el capítulo de su recomendación. Los nombres salen de la
-    tabla de la rúbrica, que a su vez sale del archivo de evaluación: una sola fuente para todo."""
-    caps = capitulos(idioma)
-    items = []
-    for fila in re.findall(r'<th scope="row">(.*?)</th>', tabla_rubrica(idioma)):
-        n = int(re.search(r'class="rub-n">(\d+)<', fila).group(1))
-        enlace = f'<a href="{caps[n][0]}">{html.escape(caps[n][1])}</a>' if n in caps else ""
-        items.append(f'<li><span class="pv-nombre">{fila}</span>{enlace}</li>')
-    return f'<ol class="puntos-vcer">{"".join(items)}</ol>'
 
 
 def resultado_vcer(idioma):
@@ -810,8 +814,7 @@ def pagina_texto(idioma, archivo, fuente):
     for a in apartados:
         cab, resto = a.split("\n", 1)
         cab = cab.strip()
-        resto = (resto.replace("<!-- rubrica -->", "ARCHIVO-IA-RUBRICA").replace("<!-- cita -->", "CITA-DE-LA-GUIA")
-                 .replace("<!-- puntos -->", "PUNTOS-VCER"))
+        resto = resto.replace("<!-- rubrica -->", "ARCHIVO-IA-RUBRICA").replace("<!-- cita -->", "CITA-DE-LA-GUIA")
         for clave in ARCHIVOS_IA:
             resto = resto.replace(f"<!-- {clave} -->", f"ARCHIVO-IA-{clave}\n\n~~~~\n" + archivo_ia(idioma, clave) + "~~~~")
         h = pandoc(resto.strip())
@@ -821,14 +824,13 @@ def pagina_texto(idioma, archivo, fuente):
         copiar = f'<button type="button" class="copiar discreto" data-hecho="{html.escape(T["copiado"])}">{html.escape(T["copiar"])}</button></p>'
         # Un archivo para la IA lleva además su enlace de descarga, y su texto va plegado para no
         # ocupar la página; cualquier otro bloque lleva solo el botón de copiar
-        h = h.replace("<p>ARCHIVO-IA-RUBRICA</p>", tabla_rubrica(idioma))
-        h = h.replace("<p>PUNTOS-VCER</p>", puntos_vcer(idioma))
         if archivo == "vcer.html" and "<table>" in h:
             # Cada fila de la tabla de resultados, con su valor de r, para resaltar la que trae el enlace
             filas = iter(RESULTADOS_VCER)
             cuerpo_tabla = h[h.index("<tbody>"):h.index("</tbody>")]
             h = h.replace(cuerpo_tabla, re.sub(r"<tr(?: class=\"\w+\")?>", lambda m: f'<tr data-resultado="{next(filas)}">', cuerpo_tabla))
             h = h.replace("<table>", '<table class="resultados-vcer">', 1)
+        h = h.replace("<p>ARCHIVO-IA-RUBRICA</p>", tabla_rubrica(idioma))
         h = h.replace("<p>CITA-DE-LA-GUIA</p>", f'<p>{T["cita"]}</p>\n<p>{T["cita_nota"]}</p>')   # la misma que la portada del PDF
         h = re.sub(r"<p>ARCHIVO-IA-(\w+)</p>\s*<pre[^>]*>(.*?)</pre>",
                    lambda m: botones + f'<a class="descarga" href="{ARCHIVOS_IA[m.group(1)][1]}" download>'
@@ -842,11 +844,14 @@ def pagina_texto(idioma, archivo, fuente):
                          f'<h2 id="h-{ancla(cab)}">{html.escape(cab)}</h2>{cuerpo_apartado}</section>')
     cuerpo = f'<h1>{html.escape(titulo)}</h1>\n' + "\n".join(secciones)
     clase = "pagina-texto pagina-referencias" if archivo == "referencias.html" else "pagina-texto"
+    if archivo == "para-la-ia.html":
+        mudado = {ANCLA_EVALUAR_ANTIGUA[idioma]: "vcer.html#" + anclas_de(idioma, "06-evaluacion-vcer.md")[3]}
+        cuerpo += f"<div hidden data-mudado='{html.escape(json.dumps(mudado), quote=False)}'></div>"
     if archivo == "vcer.html":
         # Arriba, el resultado que trae el enlace, si lo trae; al final, las salidas al resto de la guía
-        evaluar, leer = VCER[idioma]["salidas"]
-        salidas = (f'<p class="salidas-vcer"><a class="continuar" href="para-la-ia.html#{anclas_de(idioma, "04-para-la-ia.md")[2]}">'
-                   f'{html.escape(evaluar)}</a> <a class="continuar" href="guia.html">{html.escape(leer)}</a></p>')
+        leer, crear = VCER[idioma]["salidas"]
+        salidas = (f'<p class="salidas-vcer"><a class="continuar" href="guia.html">{html.escape(leer)}</a> '
+                   f'<a class="continuar" href="para-la-ia.html">{html.escape(crear)}</a></p>')
         cuerpo = cuerpo.replace("</h1>\n", "</h1>\n" + resultado_vcer(idioma) + "\n", 1) + salidas
         clase += " pagina-vcer"
     return marco(idioma, archivo, titulo, cuerpo, clase)
@@ -924,7 +929,7 @@ def pagina_completa(idioma, paginas):
     """Todas las páginas seguidas, con portada e índice, para imprimirlas a PDF (generar-pdf.js).
 
     Orden de lectura: presentación, guía, los capítulos que la desarrollan, herramientas,
-    instrucciones para la IA y créditos. Los enlaces entre páginas pasan a ser anclas."""
+    instrucciones para crear con IA, evaluación VCER, referencias y créditos. Los enlaces entre páginas pasan a ser anclas."""
     T = UI[idioma]
     d = FECHA_VERSION
     fecha = T["version_fecha"].format(version=VERSION, fecha=T["fecha"](d))
@@ -994,6 +999,7 @@ def pagina_completa(idioma, paginas):
 .pdf h1:has(> .cifra-cap) {{ display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.7rem; align-items: center; }}
 /* Ningún título solo al pie de página, ni recuadros o filas partidos, ni líneas sueltas */
 .pdf h1, .pdf h2, .pdf h3, .pdf h4 {{ break-after: avoid; }}
+.pdf p:has(+ ol), .pdf p:has(+ ul) {{ break-after: avoid; }} /* la frase que presenta una lista va con ella */
 .pdf .que-hacer, .pdf .nivel, .pdf li, .pdf tr, .pdf .nota {{ break-inside: avoid; }}
 /* Portada: las definiciones enteras, y los tres pasos en fila y juntos, como en pantalla */
 .pdf .definicion, .pdf .utiliza {{ break-inside: avoid; }}

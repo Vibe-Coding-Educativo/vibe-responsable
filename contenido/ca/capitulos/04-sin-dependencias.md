@@ -4,7 +4,7 @@
 
 Un material depèn d'un servei extern quan necessita alguna cosa que no és dins seu per funcionar. Les formes més corrents són el contingut incrustat des d'un altre web, les biblioteques de programació i les tipografies que es carreguen des de servidors aliens, i les connexions amb serveis en línia. També és una dependència la plataforma on s'ha creat el material, quan aquest només existeix dins seu.
 
-Aquestes dependències no es veuen en fer servir el material. Es descobreixen en llegir el codi o en demanar a la intel·ligència artificial (IA) que les enumeri, que és el que demana el punt 4 de l'[avaluació VCER](para-la-ia.html#per-avaluar-un-recurs-ja-fet).
+Aquestes dependències no es veuen en fer servir el material. Es descobreixen en llegir el codi o en demanar a la intel·ligència artificial (IA) que les enumeri, que és el que demana el punt 4 de l'[avaluació VCER](vcer.html).
 
 ## Els canvis en els serveis externs
 

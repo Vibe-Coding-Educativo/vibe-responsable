@@ -4,7 +4,7 @@ Guía para publicar materiales educativos creados con vibe coding. Es una guía 
 
 **Web de la guía:** <https://vibe-coding-educativo.github.io/vibe-responsable/>
 
-Nace en el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca) y se dirige a docentes de cualquier país. Contiene una presentación, la lista «Antes de publicar: diez recomendaciones» con su infografía, un capítulo que desarrolla cada recomendación, dos archivos de instrucciones para la IA que pueden descargarse, uno para crear y otro para evaluar, una página que explica la evaluación VCER y su resultado, y una página sobre las herramientas. Está en revisión por su autor.
+Nace en el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca) y se dirige a docentes de cualquier país. Contiene una presentación, la lista «Antes de publicar: diez recomendaciones» con su infografía, un capítulo que desarrolla cada recomendación, una página sobre las herramientas, otra con las instrucciones para crear con IA y otra con la evaluación VCER, que explica cómo evaluar un recurso y cómo leer su resultado. Las instrucciones para crear y para evaluar son dos archivos que pueden descargarse. Está en revisión por su autor.
 
 ## Cómo está organizado el repositorio
 

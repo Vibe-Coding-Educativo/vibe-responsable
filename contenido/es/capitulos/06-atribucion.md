@@ -23,7 +23,7 @@ Cuando el elemento se ha modificado, conviene indicarlo. Una atribución complet
 
 ## Lo que la IA añade por su cuenta
 
-**Conviene preguntar a la IA qué elementos ajenos ha incorporado y con qué licencia**, ya que no siempre lo indica. Es lo que pide el punto 6 de la [evaluación VCER](para-la-ia.html#para-evaluar-un-recurso-ya-hecho). Hay tres casos que merecen atención:
+**Conviene preguntar a la IA qué elementos ajenos ha incorporado y con qué licencia**, ya que no siempre lo indica. Es lo que pide el punto 6 de la [evaluación VCER](vcer.html). Hay tres casos que merecen atención:
 
 - **Las imágenes enlazadas desde otra web.** La IA puede colocar una imagen mediante su dirección en otro sitio, sin que conste su licencia. Conviene sustituirla por una con licencia conocida y guardarla dentro del material.
 - **Las imágenes generadas por IA.** No tienen un autor al que acreditar, pero conviene indicar que son generadas y con qué herramienta, como pide la recomendación 8.

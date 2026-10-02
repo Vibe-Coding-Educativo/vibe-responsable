@@ -10,7 +10,7 @@ O problema é práctico, xa que un material que funciona hoxe pode deixar de fac
 
 Cumprir esta recomendación non esixe saber programar, xa que abonda con poder dicir con palabras correntes tres cousas do material: **que fai, que garda e se se comunica con algún servizo externo**. Unha explicación deste tipo sería a seguinte: «O simulador calcula a aceleración dun corpo nun plano inclinado a partir do ángulo e do material escollidos, e debuxa as forzas. Non garda ningún dato nin se conecta con ningún servizo».
 
-A forma de obtela é pedirlla á propia IA, en linguaxe sinxela, e comprobar despois que coincide co que se observa ao usar o material. Se a intelixencia artificial (IA) afirma que non se garda nada e o material lembra as respostas do día anterior, a explicación non é correcta e hai que aclaralo antes de publicar. A [avaliación VCER](para-la-ia.html#para-avaliar-un-recurso-xa-feito) inclúe esta petición no seu punto 3.
+A forma de obtela é pedirlla á propia IA, en linguaxe sinxela, e comprobar despois que coincide co que se observa ao usar o material. Se a intelixencia artificial (IA) afirma que non se garda nada e o material lembra as respostas do día anterior, a explicación non é correcta e hai que aclaralo antes de publicar. A [avaliación VCER](vcer.html) inclúe esta petición no seu punto 3.
 
 ## Catro comprobacións sen saber programar
 
