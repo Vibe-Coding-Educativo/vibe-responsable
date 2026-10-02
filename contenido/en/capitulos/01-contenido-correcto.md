@@ -39,7 +39,7 @@ This has a practical consequence for the rest of the guide. The AI can take care
 
 ## Reviewing after publication
 
-The review does not end on publication. The people who use the material find faults that its author has not seen, because they test it with other students, on other devices and with other questions. It is therefore advisable to make it known in a teaching community and to pay attention to what those who try it say. In the Telegram group [Vibe Coding Educativo](https://t.me/vceduca), the «¡Comparte tu App!» (Share your app) section is meant for presenting published programs, and the comments they receive help to correct and improve them.
+The review does not end on publication. The people who use the material find faults that its author has not seen, because they test it with other students, on other devices and with other questions. It is therefore advisable to make it known in a teaching community and to pay attention to the comments of the people who try it. In the Telegram group [Vibe Coding Educativo](https://t.me/vceduca), the «¡Comparte tu App!» (Share your app) section is meant for presenting published programs, and the comments they receive help to correct and improve them.
 
 ## The educational value of the material
 

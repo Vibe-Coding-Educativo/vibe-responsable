@@ -39,7 +39,7 @@ Esto tiene una consecuencia práctica para el resto de la guía. La IA puede enc
 
 ## La revisión después de publicar
 
-La revisión no termina al publicar. Las personas que utilizan el material encuentran fallos que su autor no ha visto, porque lo prueban con otro alumnado, en otros dispositivos y con otras preguntas. Por eso conviene darlo a conocer en una comunidad docente y atender a lo que comenten quienes lo prueban. En el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca), la sección «¡Comparte tu App!» está pensada para presentar los programas publicados, y los comentarios que reciben sirven para corregirlos y mejorarlos.
+La revisión no termina al publicar. Las personas que utilizan el material encuentran fallos que su autor no ha visto, porque lo prueban con otro alumnado, en otros dispositivos y con otras preguntas. Por eso conviene darlo a conocer en una comunidad docente y atender a los comentarios de las personas que lo prueban. En el grupo de Telegram [Vibe Coding Educativo](https://t.me/vceduca), la sección «¡Comparte tu App!» está pensada para presentar los programas publicados, y los comentarios que reciben sirven para corregirlos y mejorarlos.
 
 ## El valor didáctico del material
 

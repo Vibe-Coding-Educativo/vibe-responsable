@@ -39,7 +39,7 @@ Això té una conseqüència pràctica per a la resta de la guia. La IA es pot e
 
 ## La revisió després de publicar
 
-La revisió no acaba en publicar. Les persones que fan servir el material troben errors que el seu autor no ha vist, perquè el proven amb un altre alumnat, en altres dispositius i amb altres preguntes. Per això convé donar-lo a conèixer en una comunitat docent i atendre el que comentin els qui el proven. Al grup de Telegram [Vibe Coding Educativo](https://t.me/vceduca), la secció «¡Comparte tu App!» està pensada per presentar els programes publicats, i els comentaris que reben serveixen per corregir-los i millorar-los.
+La revisió no acaba en publicar. Les persones que fan servir el material troben errors que el seu autor no ha vist, perquè el proven amb un altre alumnat, en altres dispositius i amb altres preguntes. Per això convé donar-lo a conèixer en una comunitat docent i atendre els comentaris de les persones que el proven. Al grup de Telegram [Vibe Coding Educativo](https://t.me/vceduca), la secció «¡Comparte tu App!» està pensada per presentar els programes publicats, i els comentaris que reben serveixen per corregir-los i millorar-los.
 
 ## El valor didàctic del material
 

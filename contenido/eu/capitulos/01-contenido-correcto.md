@@ -39,7 +39,7 @@ Horrek ondorio praktiko bat du gidaren gainerakoarentzat. IA ia gomendio guztiez
 
 ## Argitaratu ondorengo berrikuspena
 
-Berrikuspena ez da argitaratzean amaitzen. Materiala erabiltzen duten pertsonek egileak ikusi ez dituen akatsak aurkitzen dituzte, beste ikasle batzuekin, beste gailu batzuetan eta beste galdera batzuekin probatzen baitute. Horregatik komeni da irakasle-komunitate batean ezagutaraztea eta probatzen dutenen iruzkinei arreta jartzea. [Vibe Coding Educativo](https://t.me/vceduca) Telegram taldean, «¡Comparte tu App!» atala argitaratutako programak aurkezteko pentsatuta dago, eta jasotzen dituzten iruzkinek haiek zuzentzeko eta hobetzeko balio dute.
+Berrikuspena ez da argitaratzean amaitzen. Materiala erabiltzen duten pertsonek egileak ikusi ez dituen akatsak aurkitzen dituzte, beste ikasle batzuekin, beste gailu batzuetan eta beste galdera batzuekin probatzen baitute. Horregatik komeni da irakasle-komunitate batean ezagutaraztea eta probatzen duten pertsonen iruzkinei arreta jartzea. [Vibe Coding Educativo](https://t.me/vceduca) Telegram taldean, «¡Comparte tu App!» atala argitaratutako programak aurkezteko pentsatuta dago, eta jasotzen dituzten iruzkinek haiek zuzentzeko eta hobetzeko balio dute.
 
 ## Materialaren balio didaktikoa
 
