@@ -1,10 +1,10 @@
 # Before publishing: ten recommendations
 
-## 1\. Review the content without delegating it to the AI
+## 1\. Review the content without delegating the review to the AI
 
 Artificial intelligence (AI) can make mistakes with complete naturalness, and an error in a simulation or a quiz ends up as mistaken learning. Before publishing, the material has to be used as students would use it, checking the concepts, the data and the answers it accepts as correct. This review cannot be delegated, since responsibility for what is taught lies with the person who publishes it.
 
-- **Minimum.** Go through the material from beginning to end, also with wrong answers, and check every result with subject knowledge. After each significant change, repeat the walkthrough with a checklist that the AI itself can draft, since a small modification can break something that already worked.
+- **Minimum.** Go through the material from beginning to end, also with wrong answers, and use subject expertise to check every result. After each significant change, repeat the walkthrough with a checklist that the AI itself can draft, since a small modification can break something that already worked.
 - **Recommended.** Ask the AI to turn that checklist into automated tests and run them after every change.
 
 ## 2\. Do not send personal data to services outside the school
@@ -16,7 +16,7 @@ Students' names, marks, voices or images are personal data. In Spain, the Spanis
 
 ## 3\. Understand what the material does
 
-If nobody understands how a material works, it cannot be fixed when it fails, and in practice it stops being open. Meeting this point does not require knowing how to program, since it is enough to be able to describe briefly what the application does, what it stores and whether it communicates with any external service.
+If nobody understands how a resource works, it cannot be fixed when it fails, and in practice it stops being open. Meeting this point does not require knowing how to program, since it is enough to be able to describe briefly what the application does, what it stores and whether it communicates with any external service.
 
 - **Minimum.** Ask the AI to explain in plain language what the application does and whether it stores or sends anything, and check that the explanation matches what can be observed when using it. Also ask for the material's own code to be commented and readable, since code compressed into endless lines is reason enough not to publish. Well-known libraries that are included are the exception, as they are usually distributed that way.
 - **Recommended.** Add a document explaining how the project is organised and what each file is for.
@@ -25,17 +25,17 @@ If nobody understands how a material works, it cannot be fixed when it fails, an
 
 A resource that embeds content from another website, or loads parts from third-party servers, stops working when those services change or close. The same happens with the platform where the material was created, since the shared link lasts as long as the company decides.
 
-- **Minimum.** Keep a copy of the material's code on your own computer, and update it when it changes.
-- **Recommended.** Ask the AI to load whatever the material needs from outside from well-known services and to record it in the decision log, and keep your own images, texts and data inside the project.
+- **Minimum.** Keep a copy of the material's code on the teacher's own computer, and update it when it changes.
+- **Recommended.** Ask the AI to load whatever the material needs from outside from well-known services and to record it in the decision log, and keep the project's own images, texts and data inside it.
 
 ## 5\. Make it accessible to everyone
 
-Materials generated with AI tend towards the showy, and decorative effects are often an obstacle for some students. An accessible material can be used without a mouse, can be understood without relying on colour and reads well on a small screen.
+Materials generated with AI tend towards the showy, and decorative effects are often an obstacle for some students. An accessible resource can be used without a mouse, can be understood without relying on colour and reads well on a small screen.
 
 - **Minimum.** Ask the AI from the start to follow the accessibility guidelines, and test the result with the keyboard only, with enlarged text and on a phone.
 - **Recommended.** Ask the AI to check accessibility with an automated tool and fix what it detects. Coding agents can do this unaided, since they install the tool, run it and apply the fixes.
 
-## 6\. Credit the authorship of what is taken from others
+## 6\. Credit the creators of material taken from others
 
 The images, texts, sounds and pieces of software that are incorporated have authors and licences, even if the AI placed them there. The attribution must go inside the material itself, so that it travels with it when it circulates out of context.
 
@@ -51,14 +51,14 @@ With AI, work moves very fast, and a few weeks later nobody remembers why each d
 
 ## 8\. Declare the use of AI and what has been checked
 
-In a material created with vibe coding, the code is the work of the AI, and usually nobody has reviewed it line by line. The people who reuse it need to know this in order to decide how far they can trust it. It is therefore advisable to state which tool was used to create it and, above all, what the person who publishes it has checked, such as the correctness of the content, how it works or how data are handled.
+In a resource created with vibe coding, the code is the work of the AI, and usually nobody has reviewed it line by line. The people who reuse it need to know this in order to decide how far they can trust it. It is therefore advisable to state which tool was used to create it and, above all, what the person who publishes it has checked, such as the correctness of the content, how it works or how data are handled.
 
 - **Minimum.** One or two sentences inside the material, next to the licence, with the tool used and what has been checked.
 - **Recommended.** The same statement in the project documentation, with a link to the decision log from point 7, which is what explains how the material was made.
 
 ## 9\. Publish with a visible free licence
 
-Works are protected by copyright automatically, so a material without a licence cannot be safely reused even if it has been published. A free licence tells other people that they may use it, adapt it and share it, and on what conditions. Code and content need different licences, and what the AI generates raises questions of authorship that are dealt with in its chapter.
+Works are protected by copyright automatically, so a resource without a licence cannot be safely reused even if it has been published. A free licence tells other people that they may use it, adapt it and share it, and on what conditions. Code and content need different licences, and what the AI generates raises questions of authorship that are dealt with in its chapter.
 
 - **Minimum.** Write the author and the licence inside the material itself, in a visible place, for example in the footer.
 - **Recommended.** Add the licence file to the project, with a free software licence for the code, such as AGPL v3 or MIT, and a free Creative Commons (CC) licence, such as CC BY-SA or CC BY, for the content.

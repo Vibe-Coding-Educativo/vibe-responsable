@@ -10,7 +10,7 @@ El codi del web es publica amb la llicència [GNU AGPL v3](https://www.gnu.org/l
 
 ## Com s'ha elaborat
 
-Aquesta guia s'ha elaborat en el nivell 4 del [Marc per a la integració de la IA generativa en les tasques educatives (MIAE)](https://jjdeharo.github.io/miae/?nivel=4), que correspon a la col·laboració avançada entre la persona i la IA. El text s'ha escrit en diàleg amb Claude Code, i l'autor n'ha dirigit i corregit el contingut, ha contrastat les afirmacions amb les seves fonts i n'ha revisat el resultat. Les traduccions al català, el gallec, el basc i l'anglès s'han fet de manera automàtica amb la mateixa IA, a partir de l'original en castellà, i no les ha revisat cap traductor professional.
+Aquesta guia s'ha elaborat en el nivell 4 del [Marc per a la integració de la IA generativa en les tasques educatives (MIAE)](https://jjdeharo.github.io/miae/?nivel=4), que correspon a la col·laboració avançada entre la persona i la IA. El text s'ha escrit en diàleg amb Claude Code, i l'autor n'ha dirigit i corregit el contingut, ha contrastat les afirmacions amb les seves fonts i n'ha revisat el resultat. Les traduccions al català, al gallec, al basc i a l'anglès s'han fet de manera automàtica amb la mateixa IA, a partir de l'original en castellà, i no les ha revisat cap traductor professional.
 
 ## Com citar
 
@@ -18,7 +18,7 @@ Aquesta guia s'ha elaborat en el nivell 4 del [Marc per a la integració de la I
 
 ## Materials d'altres persones
 
-Les icones procedeixen de [Lucide](https://lucide.dev/), de Lucide Icons and Contributors, que es distribueix amb la llicència ISC, que pren el nom de l'Internet Systems Consortium. Algunes deriven del projecte Feather, de Cole Bemis, amb llicència MIT: la lluna, la descàrrega, el codi, la marca de verificació, copiar, la fletxa i l'aspa de tancar. El logotip de la guia combina aquests dos últims. El [text de les dues llicències](https://github.com/Vibe-Coding-Educativo/vibe-responsable/blob/main/infografia/iconos/LICENSE) es conserva al repositori.
+Les icones procedeixen de [Lucide](https://lucide.dev/), de Lucide Icons and Contributors, que es distribueix amb la llicència ISC, que pren el nom de l'Internet Systems Consortium. Algunes deriven del projecte Feather, de Cole Bemis, amb llicència MIT: la lluna, la descàrrega, el codi, la marca de verificació, copiar, la fletxa i l'aspa de tancar. El logotip de la guia combina aquestes dues últimes. El [text de les dues llicències](https://github.com/Vibe-Coding-Educativo/vibe-responsable/blob/main/infografia/iconos/LICENSE) es conserva al repositori.
 
 La tipografia és [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/), dissenyada pel Braille Institute per facilitar la lectura, i es distribueix amb la llicència SIL Open Font License 1.1.
 

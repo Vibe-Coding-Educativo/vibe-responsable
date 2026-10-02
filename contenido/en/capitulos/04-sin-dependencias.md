@@ -1,8 +1,8 @@
 # Do not depend on services that may disappear
 
-## A material's dependencies
+## A resource's dependencies
 
-A material depends on an external service when it needs something that is not inside it in order to work. The most common forms are content embedded from another website, programming libraries and typefaces loaded from third-party servers, and connections with online services. The platform where the material was created is also a dependency, when the material only exists within it.
+A resource depends on an external service when it needs something that is not inside it in order to work. The most common forms are content embedded from another website, programming libraries and typefaces loaded from third-party servers, and connections with online services. The platform where the material was created is also a dependency, when the material only exists within it.
 
 These dependencies are not visible when using the material. They are discovered by reading the code or by asking the artificial intelligence (AI) to list them, which is what point 4 of the [VCER evaluation](para-la-ia.html#to-evaluate-an-existing-resource) asks for.
 
@@ -16,7 +16,7 @@ The risk is not only that the service disappears. In 2024, the polyfill.io domai
 
 When the material has been created on a chatbot's website or on an app-building platform, the shared link lasts as long as the company decides. A change in the service, in its terms or in the teacher's account can render that link useless, and with it all the pages that have embedded it.
 
-**The minimum is to keep a copy of the material's code on one's own computer** and update it when it changes. With that copy the material can be recovered, published elsewhere or further developed with another tool. For it to be useful, the material has to be a page that opens on its own in the browser. The most widely used chatbots, such as ChatGPT, Gemini or Claude, often generate the application as a React component, a very widespread programming library, which only works within their own website. That is why the [instructions file for the AI](para-la-ia.html) asks them for an HTML page.
+**The minimum is to keep a copy of the material's code on one's own computer** and update it when it changes. With that copy the material can be recovered, published elsewhere or further developed with another tool. For it to be useful, the material has to be a page that opens on its own in the browser. The most widely used chatbots, such as ChatGPT, Gemini or Claude, often generate the application as a component built with React, a widely used programming library. That component only works within the chatbot's own website. That is why the [instructions file for the AI](para-la-ia.html) asks them for an HTML page.
 
 ## What is loaded from outside
 
@@ -24,4 +24,4 @@ Programming from scratch what a well-known library already solves is not realist
 
 The recommended step is to ask the AI to load these resources from well-known services and to record them in the decision log of recommendation 7, with their licence. That list is not meant for the teacher, but for fixing or adapting the material later on, a task that will often be done by an AI again. What cannot be retrieved from elsewhere, such as one's own images, texts and data, should be inside the material, or at least kept in a copy, and not only embedded from another platform.
 
-What matters most to the teacher is a practical consequence: **whether the material will keep working when opened, downloaded, on a computer without internet**, for example in a classroom without a connection. The check requires no technical knowledge, since it consists of opening the material, disconnecting the device from the network and loading it again. One example is [Tantrix](https://felipsarroca.github.io/jocs/Tantrix/), a game by Felip Sarroca that can be installed as an application and works offline after the first visit. The VCER evaluation asks the AI to explain it in simple words, of the kind «if you open it without internet, the formulas will not display».
+What matters most to the teacher is a practical consequence: **whether the downloaded resource will keep working when opened on a computer without an internet connection**, for example in a classroom without a connection. The check requires no technical knowledge, since it consists of opening the material, disconnecting the device from the network and loading it again. One example is [Tantrix](https://felipsarroca.github.io/jocs/Tantrix/), a game by Felip Sarroca that can be installed as an application and works offline after the first visit. The VCER evaluation asks the AI to explain it in simple words, of the kind «if you open it without internet, the formulas will not display».

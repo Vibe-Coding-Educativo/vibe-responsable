@@ -69,7 +69,7 @@ Applications and materials cited as examples, most of them from the [catalogue](
 
 - De Haro, J. J. (2025). *Plantilla correctora digital para exámenes tipo test (PCD)* [Digital answer-sheet marker for multiple-choice exams]. <https://jjdeharo.github.io/pcd/>
 - De Haro, J. J. (2026). *OpenWorksheets: creación de fichas interactivas y autocorregibles* [creation of interactive, self-correcting worksheets]. <https://openworksheets.github.io/>
-- El profe de la bata. (2026). *IAGuar: implementación automatizada de guardias* [automated management of substitute-teacher duties]. <https://elprofedelabata.es/iaguar/>
+- El profe de la bata. (2026). *IAGuar: implementación automatizada de guardias* [automated management of teachers' cover duties]. <https://elprofedelabata.es/iaguar/>
 - expliCarlos. (2026). *Elige tu IA: guía interactiva para docentes* [Choose your AI: an interactive guide for teachers]. <https://explikarlos.github.io/elige-ia/>. Decision log: <https://github.com/explikarlos/elige-ia/blob/main/docs/decisions/ADR-001-static-pages.md>
 - González García, A. (2025). *Simulador interactivo: plano inclinado con rozamiento* [Interactive simulator: inclined plane with friction]. IES Majuelo. <https://onio72.github.io/iesmajuelo/bach/fq1/planoincroz/>
 - Guízar, P. G. (2025). *Generador SCORM de certificado de finalización* [SCORM completion certificate generator]. <https://github.com/PabloGGuizar/generador-scorm-de-certificado-de-finalizacion>

@@ -19,7 +19,7 @@ Cando o elemento se modificou, convén indicalo. Unha atribución completa terí
 
 ## O lugar da atribución
 
-**A atribución debe ir dentro do propio material**, e non na páxina que o ligazona nin nunha mensaxe á parte. Un material educativo descárgase, incrústase noutra páxina ou súbese á plataforma dun centro, e se a atribución non viaxa con el, pérdese no primeiro paso. O mínimo é unha sección de créditos ao pé ou nunha pantalla propia, cos catro datos de cada elemento. Esta guía faino na súa páxina de [créditos e licenzas](creditos.html), que recolle as iconas e a tipografía que utiliza, cos seus autores e as súas licenzas.
+**A atribución debe ir dentro do propio material**, e non na páxina que enlaza con el nin nunha mensaxe á parte. Un material educativo descárgase, incrústase noutra páxina ou súbese á plataforma dun centro, e se a atribución non viaxa con el, pérdese no primeiro paso. O mínimo é unha sección de créditos ao pé ou nunha pantalla propia, cos catro datos de cada elemento. Esta guía faino na súa páxina de [créditos e licenzas](creditos.html), que recolle as iconas e a tipografía que utiliza, cos seus autores e as súas licenzas.
 
 ## O que a IA engade pola súa conta
 

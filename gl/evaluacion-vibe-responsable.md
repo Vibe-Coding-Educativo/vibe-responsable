@@ -105,7 +105,7 @@ non seguindo a guía.
    2: Autoría e licenza libre visibles no material, con ligazón. Se é un
       proxecto de varios ficheiros, inclúe o ficheiro de licenza.
    1: Falta a autoría ou a licenza, a licenza non é libre (NC ou ND) ou non
-      ligazona ao seu texto.
+      enlaza co seu texto.
    0: Non indica nin autoría nin licenza.
 
 10. REUTILIZACIÓN

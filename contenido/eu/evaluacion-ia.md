@@ -71,7 +71,7 @@ pertsona batena, gidari jarraituz sortua izan ala ez.
       bat dator.
    1: Funtzionamendua ulertzen da, baina helburu argirik gabeko zatiak
       daude edo ez du azaltzen zer gordetzen duen.
-   0: Helburua azaldu ezin den funtzioak edo komunikazioak daude, edo
+   0: Azaldu ezin den helburua duten funtzioak edo komunikazioak daude, edo
       adierazten duena ez dator bat kodearekin.
 
 4. MENDEKOTASUNAK
@@ -145,7 +145,7 @@ pertsona batena, gidari jarraituz sortua izan ala ez.
   - Gomendagarria: gidaren funtsezkoa betetzen du eta erabil edo argitara
     daiteke; proposatutako hobekuntzek osatzen dute.
   - Hobetu beharrekoa: argitaratu edo gomendatu aurretik zuzentzea komeni
-    diren akatsak ditu, nahiz eta horietako batek ere ez duen baztertzen.
+    den hainbat akats ditu, nahiz eta horietako batek ere ez duen baztertzen.
   - Ez gomendagarria: akats nabarmenak ditu irakasten duenean edo ikasleen
     datuak ikastetxetik kanpoko zerbitzuetara bidaltzen ditu; ez da komeni
     erabiltzea ezta argitaratzea ere, zuzendu arte.

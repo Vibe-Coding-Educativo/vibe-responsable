@@ -29,9 +29,9 @@ Esan ez badizut, galdetu:
   hitz errazekin, adibidez: «interneterik gabe irekitzen baduzu, formulak ez
   dira ikusiko».
 - Datu pertsonalak: ez eskatu izena ezta pertsona bat identifikatzen duen
-  daturik ere, tresnak bere funtziorako behar ez badu, notak jasotzeko
-  koaderno batek adibidez. Kasu horretan, gorde gailuan bakarrik eta eskaini
-  izenik gabe esportatzeko edo inprimatzeko aukera. Programak ikasleen
+  daturik ere, salbu eta tresnak bere funtziorako behar badu, notak
+  jasotzeko koaderno batek adibidez. Kasu horretan, gorde gailuan
+  bakarrik eta eskaini izenik gabe esportatzeko edo inprimatzeko aukera. Programak ikasleen
   erantzunak biltzen baditu, erakutsi emaitza amaitzean edo utzi deskargatzen
   entregatzeko, eta identifikatu pertsona bakoitza kode batekin, izenaren
   ordez. Ez bidali ezer inongo zerbitzarira, eta ez gehitu analitikarik ezta

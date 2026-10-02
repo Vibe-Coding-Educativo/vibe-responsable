@@ -17,7 +17,7 @@ Adimen artifizialak (IA) ahaleginik gabe gehitzen ditu sarrera-animazioak, kurts
 Lau proba daude tresnarik eta ezagutza teknikorik behar ez dutenak:
 
 - **Teklatuarekin bakarrik.** Materiala tabulazio-teklarekin ibiltzen da eta kontrolak sartu teklarekin aktibatzen dira. Kontrol guztiak iristeko modukoak izan behar dute, ordena logiko batean, eta ikusi behar da zein kontroletan dagoen fokua.
-- **Testua handituta.** Orria bikoiztu egiten da nabigatzailetik. Edukiak irakurgarria izaten jarraitu behar du, testuak moztu edo gainjarri gabe.
+- **Testua handituta.** Nabigatzailean, orriaren zooma % 200ean ezartzen da. Edukiak irakurgarria izaten jarraitu behar du, testuak moztu edo gainjarri gabe.
 - **Telefono mugikor batean.** Materialak pantailaren zabaleran sartu behar du, eta botoiak hatzarekin sakatzeko modukoak izan behar dute.
 - **Kolorearen mende egon gabe.** Asmatze bat edo akats bat ezin dira kolorearen bidez bakarrik bereizi. Testu edo ikur batek lagundu behar die.
 

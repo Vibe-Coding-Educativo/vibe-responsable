@@ -18,7 +18,7 @@ Esta guía elaborouse no nivel 4 do [Marco para a integración da IA xerativa na
 
 ## Materiais doutras persoas
 
-As iconas proceden de [Lucide](https://lucide.dev/), de Lucide Icons and Contributors, que se distribúe coa licenza ISC, que toma o seu nome do Internet Systems Consortium. Algunhas derivan do proxecto Feather, de Cole Bemis, con licenza MIT: a lúa, a descarga, o código, a marca de verificación, copiar, a frecha e o aspa de pechar. O logotipo da guía combina estes dous últimos. O [texto das dúas licenzas](https://github.com/Vibe-Coding-Educativo/vibe-responsable/blob/main/infografia/iconos/LICENSE) consérvase no repositorio.
+As iconas proceden de [Lucide](https://lucide.dev/), de Lucide Icons and Contributors, que se distribúe coa licenza ISC, que toma o seu nome do Internet Systems Consortium. Algunhas derivan do proxecto Feather, de Cole Bemis, con licenza MIT: a lúa, a descarga, o código, a marca de verificación, copiar, a frecha e a aspa de pechar. O logotipo da guía combina estas dúas últimas. O [texto das dúas licenzas](https://github.com/Vibe-Coding-Educativo/vibe-responsable/blob/main/infografia/iconos/LICENSE) consérvase no repositorio.
 
 A tipografía é [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/), deseñada polo Braille Institute para facilitar a lectura, e distribúese coa licenza SIL Open Font License 1.1.
 

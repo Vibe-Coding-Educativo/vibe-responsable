@@ -1,6 +1,6 @@
 # Non enviar datos persoais a servizos alleos ao centro
 
-O que hai que facer depende do tipo de material. A táboa resume os catro casos que se explican neste capítulo, e cada un ligazona co seu apartado.
+O que hai que facer depende do tipo de material. A táboa resume os catro casos que se explican neste capítulo, e cada un enlaza co seu apartado.
 
 | Se o material… | Entón… |
 | --- | --- |
@@ -21,7 +21,7 @@ Aínda que non faga falta o consentimento, ou que o alumnado poida dalo por si m
 
 Publicar un material que envía datos do alumnado a un servidor **non é unha decisión que poida tomar cada docente pola súa conta**. En España, a mesma guía indica que as administracións e os centros deben dispoñer de instrucións para o uso das tecnoloxías polo profesorado, que deberá utilizar as que a administración ou o centro dispuxesen. Nun centro público, o responsable do tratamento dos datos do alumnado é, normalmente, a administración educativa. En cambio, do que un profesor publica á marxe da súa función docente no centro, o responsable é o propio profesor.
 
-As orientacións do INTEF van na mesma liña. Con carácter xeral, o profesorado non debe utilizar ferramentas distintas das que proporcionan a administración ou o centro, e calquera outra que trate datos persoais require unha avaliación previa, que o centro consulta coa súa delegación de protección de datos, e o permiso da administración ou do centro. O documento inclúe un modelo de avaliación que pode aplicarse tamén a un material propio. Outros países teñen normas distintas, pero a precaución é a mesma: antes de recoller datos do alumnado hai que contar co centro.
+A consecuencia é que un material creado por iniciativa propia non debe gardar datos do alumnado nun servizo que o centro non puxese á disposición. As orientacións do INTEF van na mesma liña. Con carácter xeral, o profesorado non debe utilizar ferramentas distintas das que proporcionan a administración ou o centro, e calquera outra que trate datos persoais require unha avaliación previa, que o centro consulta coa súa delegación de protección de datos, e o permiso da administración ou do centro. O documento inclúe un modelo de avaliación que pode aplicarse tamén a un material propio. Outros países teñen normas distintas, pero a precaución é a mesma: antes de recoller datos do alumnado hai que contar co centro.
 
 ## Materiais que non necesitan datos
 

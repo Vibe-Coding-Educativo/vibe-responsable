@@ -1,4 +1,4 @@
-# Instructions for creating an open educational material
+# Instructions for creating an open educational resource
 
 These instructions come from the guide «Responsible vibe coding», for
 publishing educational materials created with vibe coding
@@ -24,9 +24,10 @@ If I have not told you, ask me:
 - You may use libraries, typefaces and other external resources when they
   save work or improve the result. Load them from a well-known, stable
   service, and record them in the decision log, with their licence. If any
-  part of the material would stop working when opened, downloaded, on a
-  computer without internet, tell me in simple words, for example: «if you
-  open it without internet, the formulas will not display».
+  part of the material would stop working when the downloaded copy is
+  opened on a computer without an internet connection, tell me in simple
+  words, for example: «if you open it without internet, the formulas will
+  not display».
 - Personal data: do not ask for the name or any data that identifies a
   person, unless the tool needs it to do its job, such as a gradebook. In
   that case store it only on the device and offer the option to export or

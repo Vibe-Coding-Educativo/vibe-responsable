@@ -4,7 +4,7 @@
 
 With artificial intelligence (AI), programming moves very fast, and **a few weeks later nobody remembers why each decision was taken**. Ernesto Serrano, from the eXeLearning team, describes it in his talk [«Inteligencia artificial: programar, documentar y no acabar en un berenjenal»](https://erseco.github.io/talks/charlas/2026-07-06-selia-ia-programar-documentar/unit/index.html) (Artificial intelligence: programming, documenting and not ending up in a mess): the code is there, but the why is not, and nobody remembers which alternatives were discarded or on what grounds. AI does not cause that disorder, although it makes it arrive sooner.
 
-Keeping the record serves three purposes. It makes it possible to resume the work after some time without having to reconstruct it, to explain it to someone else who wants to continue it, and to avoid undoing in good faith a decision that had a reason. In an open educational material it has a fourth use, since it shows the people who reuse it how it was made, which is what completes the statement of recommendation 8.
+Keeping the record serves three purposes. It makes it possible to resume the work after some time without having to reconstruct it, to explain it to someone else who wants to continue it, and to avoid undoing in good faith a decision that had a reason. In an open educational resource it has a fourth use, since it shows the people who reuse it how it was made, which is what completes the statement of recommendation 8.
 
 ## The decision log
 
@@ -21,9 +21,9 @@ In that same project, each record also includes the evidence on which the decisi
 
 ## The work of the AI and the work of the person
 
-**The log is not an additional task for the teacher**, since the AI writes it from what is decided in the conversation, and the person checks that what is recorded matches what was decided. The talk sums it up by saying that the AI proposes and the person disposes.
+**The log is not an additional task for the teacher**, since the AI writes it from what is decided in the conversation, and the person checks that what is recorded matches what was decided. The talk sums it up by saying that the AI makes proposals and the person makes the decisions.
 
-Nor is the log reconstructed at the end, since a material usually comes out of many working sessions spread over different days, and putting those conversations back together afterwards is unfeasible. **The log is written at the moment the decision is taken**, and that is why it survives the passing of the sessions. Coding agents are told once in their instructions file, and they keep it up in all sessions. It is advisable to ask for it by name, for example «keep a decision log with ADRs», since the AI knows the format and applies it without further explanation. On a chatbot's website, the minimum is to ask the AI at the end of each session to record that day's decisions in a document that is kept and added to.
+Nor is the log reconstructed at the end, since a resource usually comes out of many working sessions spread over different days, and putting those conversations back together afterwards is unfeasible. **The log is written at the moment the decision is taken**, and that is why it is preserved from one session to the next. Coding agents are told once in their instructions file, and they keep it up in all sessions. It is advisable to ask for it by name, for example «keep a decision log with ADRs», since the AI knows the format and applies it without further explanation. On a chatbot's website, the minimum is to ask the AI at the end of each session to record that day's decisions in a document that is kept and added to.
 
 ## An example from the community
 

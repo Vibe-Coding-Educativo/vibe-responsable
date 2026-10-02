@@ -11,7 +11,7 @@ Adimen artifiziala (IA) erabateko naturaltasunez oker daiteke, eta simulazio edo
 
 Ikasleen izena, notak, ahotsa edo irudia datu pertsonalak dira. Espainian, Datuak Babesteko Espainiako Agentziak bere [ikastetxeentzako gidan](https://www.aepd.es/documento/guia-centros-educativos.pdf) adierazten du irakasleek ikastetxeak edo administrazioak xedatutako tresnak erabili behar dituztela, eta irakasle batek bere kabuz, ikastetxetik kanpo, argitaratzen duen edukia bere erantzukizuna dela. Beste herrialde batzuek arau desberdinak dituzte, baina zuhurtzia bera da. Betetzeko modurik errazena materialak daturik ez eskatzea da. Tresna batek ikasleak identifikatu behar dituenean, kalifikazio-koaderno batek adibidez, datuek irakaslearen gailuan edo ikastetxeak erabiltzea erabaki duen sistemetan geratu behar dute. Kontu berezia izan behar da erabiltzaile-kontuak eta datu-baseak erraz gehitzen dituzten plataformekin, orduan datuak kanpoko zerbitzarietan gordetzen baitira.
 
-- **Gutxienekoa.** Benetako izenik ez eskatzea, ezta pertsona bat identifikatzen duen ezer ere, tresnak bere funtziorako behar ez badu, eta kasu horretan gailuan bakarrik gordetzea. IAri galdetzea aplikazioak informaziorik bidaltzen duen zerbitzariren batera. Materiala plataforma baten barruan irekitzen bada, egiaztatu behar da erregistroa edo gutxieneko adina eskatzen duen, esteka ikasleei bidali aurretik, hirugarren baten zerbitzura eramaten baitira.
+- **Gutxienekoa.** Benetako izenik ez eskatzea, ezta pertsona bat identifikatzen duen ezer ere, salbu eta tresnak bere funtziorako behar badu; kasu horretan, gailuan bakarrik gordetzea. IAri galdetzea aplikazioak informaziorik bidaltzen duen zerbitzariren batera. Materiala plataforma baten barruan irekitzen bada, egiaztatu behar da erregistroa edo gutxieneko adina eskatzen duen, esteka ikasleei bidali aurretik, hirugarren baten zerbitzura eramaten baitira.
 - **Gomendatua.** Materiala ikasleek erregistratu gabe ireki dezaketen leku batean argitaratzea, eta egiaztatzea kodeak ez duela ezagutzen ez diren zerbitzuen web-helbiderik. Programak ikasleen datuak ikastetxeko sistemetan kudeatuko dituenean, erabakia ikastetxeari dagokio, eta komeni da berrikuspen tekniko bat egitea erabiltzen hasi aurretik.
 
 ## 3\. Materialak zer egiten duen ulertzea
@@ -42,7 +42,7 @@ Gehitzen diren irudiek, testuek, soinuek eta software-piezek egilea eta lizentzi
 - **Gutxienekoa.** Kanpoko elementu bakoitzaren egilea, jatorria eta lizentzia adieraztea, eta berrerabiltzea onartzen ez dutenak ordeztea.
 - **Gomendatua.** Gainera, barne hartutako software-liburutegien lizentziak berrikustea, horietako batzuek multzoaren lizentzia baldintzatzen baitute.
 
-## 7\. Nola egin zen arrastoa gordetzea
+## 7\. Nola egin zenaren arrastoa gordetzea
 
 IArekin oso azkar aurreratzen da, eta aste gutxiren buruan inork ez du gogoratzen zergatik hartu zen erabaki bakoitza. Arrasto hori gordetzeak aukera ematen du lana berriro hartzeko, beste pertsona bati azaltzeko eta arrazoi bat zuena oker ez desegiteko.
 

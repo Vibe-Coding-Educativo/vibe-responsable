@@ -25,7 +25,7 @@ Se non cho dixen, pregúntame:
   aforren traballo ou melloren o resultado. Cárgaos dun servizo coñecido e
   estable, e anótaos na nota de decisións, coa súa licenza. Se algo do
   material deixaría de funcionar ao abrilo descargado nun ordenador sen
-  internet, dímo con palabras sinxelas, por exemplo: «se o abres sen
+  internet, dimo con palabras sinxelas, por exemplo: «se o abres sen
   internet, as fórmulas non se verán».
 - Datos persoais: non pidas o nome nin ningún dato que identifique unha
   persoa, agás que a ferramenta o necesite para a súa función, como un

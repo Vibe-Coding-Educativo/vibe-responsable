@@ -1,10 +1,10 @@
 # Make it accessible to everyone
 
-## Accessibility in an educational material
+## Accessibility in an educational resource
 
-A material is accessible when people with disabilities can perceive it, understand it, navigate it and interact with it. The [Web Accessibility Initiative](https://www.w3.org/WAI/fundamentals/accessibility-intro/) of the *World Wide Web Consortium* (W3C), the consortium that develops web standards, points out that it covers visual, auditory, physical, cognitive, neurological and speech disabilities, and that it also benefits other people, such as those using a mobile phone, those with a slow connection or those with a temporary limitation.
+A resource is accessible when people with disabilities can perceive it, understand it, navigate it and interact with it. The [Web Accessibility Initiative](https://www.w3.org/WAI/fundamentals/accessibility-intro/) of the *World Wide Web Consortium* (W3C), the consortium that develops web standards, points out that it covers visual, auditory, physical, cognitive, neurological and speech disabilities, and that it also benefits other people, such as those using a mobile phone, those with a slow connection or those with a temporary limitation.
 
-**In education it is not an optional improvement**, since a material that some students cannot use leaves those people out of the activity. The [Recommendation on Open Educational Resources (OER)](https://www.unesco.org/en/legal-affairs/recommendation-open-educational-resources-oer) of the United Nations Educational, Scientific and Cultural Organization (UNESCO) places effective, equitable and inclusive access among its objectives, and in the European Union accessibility is a legal requirement for public sector websites, established by [Directive 2016/2102](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016L2102).
+**In education it is not an optional improvement**, since a resource that some students cannot use leaves those people out of the activity. The [Recommendation on Open Educational Resources (OER)](https://www.unesco.org/en/legal-affairs/recommendation-open-educational-resources-oer) of the United Nations Educational, Scientific and Cultural Organization (UNESCO) places effective, equitable and inclusive access among its objectives, and in the European Union accessibility is a legal requirement for public sector websites, established by [Directive 2016/2102](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016L2102).
 
 ## Decorative effects
 
@@ -19,7 +19,7 @@ There are four tests that require no tools or technical knowledge:
 - **With the keyboard only.** Go through the material with the Tab key and activate the controls with the Enter key. All controls must be reachable, in a logical order, and it must be visible which one has the focus.
 - **With enlarged text.** Zoom the page to double size from the browser. The content must still be readable without texts being cut off or overlapping.
 - **On a mobile phone.** The material must fit the width of the screen, and the buttons must be pressable with a finger.
-- **Without relying on colour.** A right or wrong answer must not be distinguishable only by colour. It must be accompanied by a text or a symbol.
+- **Without relying on colour.** A right or wrong answer must not be distinguishable only by colour. It must be accompanied by text or a symbol.
 
 ## Review with the help of AI
 

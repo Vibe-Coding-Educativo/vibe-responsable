@@ -2,7 +2,7 @@
 
 ## How to use them
 
-The guide's recommendations can be given directly to the artificial intelligence (AI), so that the work of following them does not fall on the person. There are two files for this, which can be downloaded and used with any tool: one for creating a material and another for evaluating an existing resource. Both contain only what the guide asks for; what the material must do is described separately, as always.
+The guide's recommendations can be given directly to the artificial intelligence (AI), so that the work of following them does not fall on the person. There are two files for this, which can be downloaded and used with any tool: one for creating a resource and another for evaluating an existing resource. Both contain only what the guide asks for; what the material must do is described separately, as always.
 
 The file for creating is handed over at the start:
 
@@ -10,11 +10,11 @@ The file for creating is handed over at the start:
 - **In a coding agent or a code editor with AI**, it is saved in the project folder as an instructions file, and the AI takes it into account in every session.
 - **On app-building platforms**, it is pasted into the project's permanent instructions, which many offer in their settings or as a file in the project itself.
 
-If the AI does not know the authorship or where the material will be published, the instructions themselves ask it to find out before starting. When finished, the [evaluation file](#to-evaluate-an-existing-resource) below is attached in the same conversation and the AI is asked to «evaluate the material according to the instructions». Afterwards, if asked to «fix it», the AI proposes the changes and waits for them to be approved. That review does not replace the person's own, since the model also makes mistakes when reviewing its own work.
+If the AI has not been told who the author is or where the resource will be published, the instructions require it to ask before starting. When finished, the [evaluation file](#to-evaluate-an-existing-resource) below is attached to the same conversation and the AI is asked to «evaluate the material according to the instructions». Afterwards, if asked to «fix it», the AI proposes the changes and waits for them to be approved. That review does not replace the person's own, since the model also makes mistakes when reviewing its own work.
 
-## To create a material
+## To create a resource
 
-This is the file given to the AI when starting to create a material. It can be downloaded to attach it or to save it in the project folder, or its text can be copied and pasted at the beginning of the conversation.
+This is the file given to the AI when starting to create a resource. It can be downloaded to attach it or to save it in the project folder, or its text can be copied and pasted at the beginning of the conversation.
 
 <!-- instrucciones -->
 
@@ -22,7 +22,7 @@ This is the file given to the AI when starting to create a material. It can be d
 
 The evaluation file, which applies the VCER evaluation (responsible educational vibe coding, from its Spanish initials), works for any resource that has already been published, one's own or someone else's, whether or not it was created with the guide. To evaluate a website:
 
-1. Download the evaluation file below and attach it in the conversation with the AI, or copy its text and paste it at the beginning.
+1. Download the evaluation file below and attach it to the conversation with the AI, or copy its text and paste it at the beginning.
 2. Provide the resource's code: attach the HTML file saved from the browser, or paste the code.
 3. Ask it to «evaluate this resource according to the instructions».
 

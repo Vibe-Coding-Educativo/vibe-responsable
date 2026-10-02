@@ -4,7 +4,7 @@
 
 An educational resource is open when someone else can download it, understand it, modify it and improve it. The article [«Mantener la "A" de abierto en los REA en tiempos de IA»](https://cedec.intef.es/mantener-la-a-de-abierto-en-los-rea-en-tiempos-de-ia/) (Keeping the "O" of open in OER in times of AI), which the National Centre for Curriculum Development in Non-Proprietary Systems (CEDEC) devotes to open educational resources (OER), warns that a resource with hundreds of lines of code that nobody understands, not even the person who inserted them, has stopped being open in essence, even if its licence says otherwise. In his talk [«Crear REA con eXeLearning en tiempos de IA»](https://descargas.intef.es/cedec/formacion/SL_REA_IA_julio26/html/la-ia-y-el-codigo.html) (Creating OER with eXeLearning in times of AI), Martín Núñez Calleja puts it this way: «We have the source code. But not the understanding».
 
-The problem is a practical one, since a material that works today may stop working after a browser update, and if nobody understands how it is made, it cannot be fixed either. The same article proposes a simple rule: **if what the code does cannot be explained in two sentences, the resource is not yet ready to be published**.
+The problem is a practical one, since a resource that works today may stop working after a browser update, and if nobody understands how it is made, it cannot be fixed either. The same article proposes a simple rule: **if what the code does cannot be explained in two sentences, the resource is not yet ready to be published**.
 
 ## A brief description of the material
 

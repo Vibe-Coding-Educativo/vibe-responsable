@@ -73,14 +73,14 @@
 <div class="textos">
 <section class="columna" aria-labelledby="h-what-educational-vibe-coding-is"><h2 id="h-what-educational-vibe-coding-is">What educational vibe coding is</h2><p>Vibe coding, <a href="https://x.com/karpathy/status/1886192184808149383" target="_blank" rel="noopener">a name proposed by Andrej Karpathy in February 2025</a>, consists of creating computer programs by explaining to an artificial intelligence (AI) model what one wants to obtain, without having to write the code.</p>
 <div class="definicion" data-titulo="Educational vibe coding">
-<p><strong>Educational vibe coding</strong>, as understood in this guide, is <strong>the creation of resources and applications for teaching and learning by talking in natural language with an artificial intelligence, which writes the code, while the person contributes the pedagogical intention and checks the result</strong>.</p>
+<p><strong>Educational vibe coding</strong>, as understood in this guide, is <strong>the creation of resources and applications for teaching and learning by talking in natural language with an AI system, which writes the code, while the person defines the educational purpose and checks the result</strong>.</p>
 </div></section>
 <section class="columna" aria-labelledby="h-why-this-guide"><h2 id="h-why-this-guide">Why this guide</h2><p>In the Telegram group <a href="https://t.me/vceduca" target="_blank" rel="noopener">Vibe Coding Educativo</a>, more and more materials created with AI are being shared, sometimes without a licence, sending students’ data to external services or without anyone else being able to make use of the code. The person who publishes them is accountable for them, even if the code was written by the AI, and the guide proposes, based on the <a href="https://conocimiento-abierto.github.io/" target="_blank" rel="noopener">Open Knowledge Decalogue</a>, a responsible way of doing it.</p>
 <div class="definicion" data-titulo="Responsible educational vibe coding">
 <p><strong>Responsible educational vibe coding</strong> (VCER, from its Spanish initials) is the kind that <strong>publishes materials that are safe for students, accessible, durable, transparent about how they were made and free for other people to reuse</strong>.</p>
 </div></section>
 <section class="utiliza" aria-labelledby="h-how-to-start"><h2 id="h-how-to-start">How to start</h2><ul>
-<li><strong>When creating a material.</strong> Give the AI the <a href="para-la-ia.html#to-create-a-material" class="abrir-ventana" data-ventana="ventana-instrucciones">instructions file</a>, which tells it how to follow the recommendations.</li>
+<li><strong>When creating a resource.</strong> Give the AI the <a href="para-la-ia.html#to-create-a-resource" class="abrir-ventana" data-ventana="ventana-instrucciones">instructions file</a>, which tells it how to follow the recommendations.</li>
 <li><strong>When it is finished.</strong> Ask it for the VCER evaluation with the <a href="para-la-ia.html#to-evaluate-an-existing-resource" class="abrir-ventana" data-ventana="ventana-evaluacion">evaluation file</a>, which points out what is missing.</li>
 <li><strong>To publish.</strong> With these two steps, the AI takes care of the minimum of each recommendation, except for reviewing the content, which is the person’s job.</li>
 </ul></section>
@@ -101,14 +101,14 @@
 <div class="ventana-cab"><h2 id="ventana-instrucciones-titulo">Instructions for creating a material</h2>
 <button type="button" class="ventana-cerrar" aria-label="Close" title="Close"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" />
   <path d="m6 6 12 12" /></svg></button></div>
-<p>When starting, attach the file in the conversation with the AI, or paste the text at the beginning, together with the description of the material you want to create.</p>
+<p>When starting, attach the file to the conversation with the AI, or paste the text at the beginning, together with the description of the material you want to create.</p>
 <div class="copiable ventana-botones">
 <button type="button" class="copiar" data-hecho="Text copied" title="Copy the text to paste it into the conversation with the AI"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
   <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" /></svg><span>Copy the text</span></button>
-<a class="boton" href="instrucciones-vibe-responsable.md" download title="Download the file to attach it in the conversation with the AI"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
+<a class="boton" href="instrucciones-vibe-responsable.md" download title="Download the file to attach it to the conversation with the AI"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
   <path d="m7 10 5 5 5-5" /></svg>Download the file</a>
-<pre hidden># Instructions for creating an open educational material
+<pre hidden># Instructions for creating an open educational resource
 
 These instructions come from the guide «Responsible vibe coding», for
 publishing educational materials created with vibe coding
@@ -134,9 +134,10 @@ If I have not told you, ask me:
 - You may use libraries, typefaces and other external resources when they
   save work or improve the result. Load them from a well-known, stable
   service, and record them in the decision log, with their licence. If any
-  part of the material would stop working when opened, downloaded, on a
-  computer without internet, tell me in simple words, for example: «if you
-  open it without internet, the formulas will not display».
+  part of the material would stop working when the downloaded copy is
+  opened on a computer without an internet connection, tell me in simple
+  words, for example: «if you open it without internet, the formulas will
+  not display».
 - Personal data: do not ask for the name or any data that identifies a
   person, unless the tool needs it to do its job, such as a gradebook. In
   that case store it only on the device and offer the option to export or
@@ -197,18 +198,18 @@ If I have not told you, ask me:
   content.
 </pre>
 </div>
-<p class="ventana-mas"><a href="para-la-ia.html#to-create-a-material" title="Go to the page of instructions for the AI, with the full text">More information<svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" />
+<p class="ventana-mas"><a href="para-la-ia.html#to-create-a-resource" title="Go to the page of instructions for the AI, with the full text">More information<svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" />
   <path d="m12 5 7 7-7 7" /></svg></a></p>
 </dialog>
 <dialog class="ventana-ia" id="ventana-evaluacion" aria-labelledby="ventana-evaluacion-titulo">
 <div class="ventana-cab"><h2 id="ventana-evaluacion-titulo">Instructions for evaluating the material</h2>
 <button type="button" class="ventana-cerrar" aria-label="Close" title="Close"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" />
   <path d="m6 6 12 12" /></svg></button></div>
-<p>When finished, attach the file in the same conversation, or paste the text, and ask it to «evaluate the material according to the instructions».</p>
+<p>When finished, attach the file to the same conversation, or paste the text, and ask it to «evaluate the material according to the instructions».</p>
 <div class="copiable ventana-botones">
 <button type="button" class="copiar" data-hecho="Text copied" title="Copy the text to paste it into the conversation with the AI"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
   <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" /></svg><span>Copy the text</span></button>
-<a class="boton" href="evaluacion-vibe-responsable.md" download title="Download the file to attach it in the conversation with the AI"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
+<a class="boton" href="evaluacion-vibe-responsable.md" download title="Download the file to attach it to the conversation with the AI"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
   <path d="m7 10 5 5 5-5" /></svg>Download the file</a>
 <pre hidden># Instructions for evaluating an open educational resource (VCER evaluation)
@@ -249,7 +250,7 @@ whether or not it was created following the guide.
 
 ## VCER rubric
 
-1. CONTENT (eliminatory)
+1. CONTENT (disqualifying)
    2: No errors are detected in what it teaches: the data, the definitions
       and the answers it accepts as correct.
    1: There is some minor inaccuracy in what it teaches.
@@ -258,7 +259,7 @@ whether or not it was created following the guide.
    point out what a person should check. Typos and formatting errors in the
    references do not count here: point them out separately.
 
-2. PERSONAL DATA (eliminatory)
+2. PERSONAL DATA (disqualifying)
    2: It does not ask for data that identifies anyone, or it stores them
       only on the device and allows exporting without names; or it sends
       them only to a school service, with no keys visible in the code and in
@@ -276,8 +277,8 @@ whether or not it was created following the guide.
    libraries) is assessed in point 4, not here.
 
 3. UNDERSTANDING WHAT IT DOES
-   2: It can be briefly described what it does, what it stores and what it
-      communicates with, and what the material declares matches the code.
+   2: What it does, what it stores and what it communicates with can be
+      described briefly, and the resource&#x27;s statements match its code.
    1: Its operation can be understood, but there are parts whose purpose is
       unclear or it does not explain what it stores.
    0: There are functions or communications whose purpose cannot be
@@ -288,7 +289,7 @@ whether or not it was created following the guide.
       and is recorded, and its own texts, images and data are inside the
       material.
    1: It loads or embeds external resources without recording them, or part
-      of its own content (a video, an audio, a map) is only on another
+      of its own content (a video, an audio recording, a map) is only on another
       platform.
    0: The main content depends on an external service, or it loads code from
       unknown addresses.
@@ -331,9 +332,9 @@ whether or not it was created following the guide.
 
 10. REUSE
    2: The code can be obtained in full, it is understandable when read, with
-      comments where needed, and there are indications for modifying it.
+      comments where needed, and there are instructions for modifying it.
    1: It can be obtained, but it is hard to understand without comments, it
-      is partly compressed or it has no indications.
+      is partly compressed or it has no instructions for modification.
    0: It cannot be obtained, or it is obfuscated or compressed.
 
 ## Result
@@ -358,9 +359,9 @@ whether or not it was created following the guide.
     published until it is fixed.
 - In the justification of point 3, include that brief description. In that
   of point 4, list the external addresses in the code and what each one is
-  for, and say in simple words what would stop working when opening it,
-  downloaded, on a computer without internet. In that of point 6, list the
-  third-party material.
+  for, and say in simple words what would stop working when opening the
+  downloaded copy on a computer without an internet connection. In that of
+  point 6, list the third-party material.
 - End with the three improvements that would raise the score the most.
 
 ## If I then ask you to fix it

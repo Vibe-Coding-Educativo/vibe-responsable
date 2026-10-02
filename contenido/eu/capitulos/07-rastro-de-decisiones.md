@@ -1,4 +1,4 @@
-# Nola egin zen arrastoa gordetzea
+# Nola egin zenaren arrastoa gordetzea
 
 ## Erabaki bakoitzaren arrazoia
 

@@ -5,7 +5,7 @@
 Vibe coding, [a name proposed by Andrej Karpathy in February 2025](https://x.com/karpathy/status/1886192184808149383), consists of creating computer programs by explaining to an artificial intelligence (AI) model what one wants to obtain, without having to write the code.
 
 ::: {.definicion titulo="Educational vibe coding"}
-**Educational vibe coding**, as understood in this guide, is **the creation of resources and applications for teaching and learning by talking in natural language with an artificial intelligence, which writes the code, while the person contributes the pedagogical intention and checks the result**.
+**Educational vibe coding**, as understood in this guide, is **the creation of resources and applications for teaching and learning by talking in natural language with an AI system, which writes the code, while the person defines the educational purpose and checks the result**.
 :::
 
 ## Why this guide
@@ -18,7 +18,7 @@ In the Telegram group [Vibe Coding Educativo](https://t.me/vceduca), more and mo
 
 ## How to start
 
-- **When creating a material.** Give the AI the [instructions file](para-la-ia.html#to-create-a-material){.abrir-ventana data-ventana="ventana-instrucciones"}, which tells it how to follow the recommendations.
+- **When creating a resource.** Give the AI the [instructions file](para-la-ia.html#to-create-a-resource){.abrir-ventana data-ventana="ventana-instrucciones"}, which tells it how to follow the recommendations.
 - **When it is finished.** Ask it for the VCER evaluation with the [evaluation file](para-la-ia.html#to-evaluate-an-existing-resource){.abrir-ventana data-ventana="ventana-evaluacion"}, which points out what is missing.
 - **To publish.** With these two steps, the AI takes care of the minimum of each recommendation, except for reviewing the content, which is the person's job.
 

@@ -7,7 +7,7 @@ As recomendacións da guía pódenselle dar directamente á intelixencia artific
 O ficheiro para crear entrégase ao comezar:
 
 - **Na web dun chatbot**, achégase á primeira mensaxe, xunto coa descrición do material que se quere crear e a indicación «segue as instrucións do ficheiro achegado».
-- **Nun axente de programación ou nun editor de código con IA**, gárdase no cartafol do proxecto como ficheiro de instrucións, e a IA tense en conta en todas as sesións.
+- **Nun axente de programación ou nun editor de código con IA**, gárdase no cartafol do proxecto como ficheiro de instrucións, e a IA teno en conta en todas as sesións.
 - **Nas plataformas para crear aplicacións**, pégase nas instrucións permanentes do proxecto, que moitas ofrecen na súa configuración ou como un ficheiro do propio proxecto.
 
 Se a IA non coñece a autoría ou o lugar onde se publicará o material, as propias instrucións pídenlle que o pregunte antes de comezar. Ao rematar, achégase na mesma conversa o [ficheiro de avaliación](#para-avaliar-un-recurso-xa-feito) que aparece máis abaixo e pídese «avalía o material segundo as instrucións». Despois, se se pide «corríxeo», a IA propón os cambios e agarda a que se aproben. Esa revisión non substitúe a da persoa, xa que o modelo tamén se equivoca ao revisar o seu propio traballo.

@@ -69,18 +69,18 @@
 </header>
 <main id="contenido" class="ancho">
 <h1>Instructions for the AI</h1>
-<section class="apartado" id="how-to-use-them" aria-labelledby="h-how-to-use-them"><h2 id="h-how-to-use-them">How to use them</h2><div class="texto"><p>The guide’s recommendations can be given directly to the artificial intelligence (AI), so that the work of following them does not fall on the person. There are two files for this, which can be downloaded and used with any tool: one for creating a material and another for evaluating an existing resource. Both contain only what the guide asks for; what the material must do is described separately, as always.</p>
+<section class="apartado" id="how-to-use-them" aria-labelledby="h-how-to-use-them"><h2 id="h-how-to-use-them">How to use them</h2><div class="texto"><p>The guide’s recommendations can be given directly to the artificial intelligence (AI), so that the work of following them does not fall on the person. There are two files for this, which can be downloaded and used with any tool: one for creating a resource and another for evaluating an existing resource. Both contain only what the guide asks for; what the material must do is described separately, as always.</p>
 <p>The file for creating is handed over at the start:</p>
 <ul>
 <li><strong>On a chatbot’s website</strong>, it is attached to the first message, together with the description of the material to be created and the instruction «follow the instructions in the attached file».</li>
 <li><strong>In a coding agent or a code editor with AI</strong>, it is saved in the project folder as an instructions file, and the AI takes it into account in every session.</li>
 <li><strong>On app-building platforms</strong>, it is pasted into the project’s permanent instructions, which many offer in their settings or as a file in the project itself.</li>
 </ul>
-<p>If the AI does not know the authorship or where the material will be published, the instructions themselves ask it to find out before starting. When finished, the <a href="#to-evaluate-an-existing-resource">evaluation file</a> below is attached in the same conversation and the AI is asked to «evaluate the material according to the instructions». Afterwards, if asked to «fix it», the AI proposes the changes and waits for them to be approved. That review does not replace the person’s own, since the model also makes mistakes when reviewing its own work.</p></div></section>
-<section class="apartado" id="to-create-a-material" aria-labelledby="h-to-create-a-material"><h2 id="h-to-create-a-material">To create a material</h2><div class="texto"><p>This is the file given to the AI when starting to create a material. It can be downloaded to attach it or to save it in the project folder, or its text can be copied and pasted at the beginning of the conversation.</p>
+<p>If the AI has not been told who the author is or where the resource will be published, the instructions require it to ask before starting. When finished, the <a href="#to-evaluate-an-existing-resource">evaluation file</a> below is attached to the same conversation and the AI is asked to «evaluate the material according to the instructions». Afterwards, if asked to «fix it», the AI proposes the changes and waits for them to be approved. That review does not replace the person’s own, since the model also makes mistakes when reviewing its own work.</p></div></section>
+<section class="apartado" id="to-create-a-resource" aria-labelledby="h-to-create-a-resource"><h2 id="h-to-create-a-resource">To create a resource</h2><div class="texto"><p>This is the file given to the AI when starting to create a resource. It can be downloaded to attach it or to save it in the project folder, or its text can be copied and pasted at the beginning of the conversation.</p>
 <div class="copiable"><p class="copiable-cab solo-js"><a class="descarga" href="instrucciones-vibe-responsable.md" download><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" />
   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-  <path d="m7 10 5 5 5-5" /></svg>Download the file</a><button type="button" class="copiar discreto" data-hecho="Text copied">Copy the text</button></p><details class="archivo-ia"><summary>View the instructions for creating</summary><pre><code># Instructions for creating an open educational material
+  <path d="m7 10 5 5 5-5" /></svg>Download the file</a><button type="button" class="copiar discreto" data-hecho="Text copied">Copy the text</button></p><details class="archivo-ia"><summary>View the instructions for creating</summary><pre><code># Instructions for creating an open educational resource
 
 These instructions come from the guide «Responsible vibe coding», for
 publishing educational materials created with vibe coding
@@ -106,9 +106,10 @@ If I have not told you, ask me:
 - You may use libraries, typefaces and other external resources when they
   save work or improve the result. Load them from a well-known, stable
   service, and record them in the decision log, with their licence. If any
-  part of the material would stop working when opened, downloaded, on a
-  computer without internet, tell me in simple words, for example: «if you
-  open it without internet, the formulas will not display».
+  part of the material would stop working when the downloaded copy is
+  opened on a computer without an internet connection, tell me in simple
+  words, for example: «if you open it without internet, the formulas will
+  not display».
 - Personal data: do not ask for the name or any data that identifies a
   person, unless the tool needs it to do its job, such as a gradebook. In
   that case store it only on the device and offer the option to export or
@@ -169,7 +170,7 @@ If I have not told you, ask me:
   content.</code></pre></details></div></div></section>
 <section class="apartado" id="to-evaluate-an-existing-resource" aria-labelledby="h-to-evaluate-an-existing-resource"><h2 id="h-to-evaluate-an-existing-resource">To evaluate an existing resource</h2><div class="texto"><p>The evaluation file, which applies the VCER evaluation (responsible educational vibe coding, from its Spanish initials), works for any resource that has already been published, one’s own or someone else’s, whether or not it was created with the guide. To evaluate a website:</p>
 <ol type="1">
-<li>Download the evaluation file below and attach it in the conversation with the AI, or copy its text and paste it at the beginning.</li>
+<li>Download the evaluation file below and attach it to the conversation with the AI, or copy its text and paste it at the beginning.</li>
 <li>Provide the resource’s code: attach the HTML file saved from the browser, or paste the code.</li>
 <li>Ask it to «evaluate this resource according to the instructions».</li>
 </ol>
@@ -213,7 +214,7 @@ whether or not it was created following the guide.
 
 ## VCER rubric
 
-1. CONTENT (eliminatory)
+1. CONTENT (disqualifying)
    2: No errors are detected in what it teaches: the data, the definitions
       and the answers it accepts as correct.
    1: There is some minor inaccuracy in what it teaches.
@@ -222,7 +223,7 @@ whether or not it was created following the guide.
    point out what a person should check. Typos and formatting errors in the
    references do not count here: point them out separately.
 
-2. PERSONAL DATA (eliminatory)
+2. PERSONAL DATA (disqualifying)
    2: It does not ask for data that identifies anyone, or it stores them
       only on the device and allows exporting without names; or it sends
       them only to a school service, with no keys visible in the code and in
@@ -240,8 +241,8 @@ whether or not it was created following the guide.
    libraries) is assessed in point 4, not here.
 
 3. UNDERSTANDING WHAT IT DOES
-   2: It can be briefly described what it does, what it stores and what it
-      communicates with, and what the material declares matches the code.
+   2: What it does, what it stores and what it communicates with can be
+      described briefly, and the resource&#39;s statements match its code.
    1: Its operation can be understood, but there are parts whose purpose is
       unclear or it does not explain what it stores.
    0: There are functions or communications whose purpose cannot be
@@ -252,7 +253,7 @@ whether or not it was created following the guide.
       and is recorded, and its own texts, images and data are inside the
       material.
    1: It loads or embeds external resources without recording them, or part
-      of its own content (a video, an audio, a map) is only on another
+      of its own content (a video, an audio recording, a map) is only on another
       platform.
    0: The main content depends on an external service, or it loads code from
       unknown addresses.
@@ -295,9 +296,9 @@ whether or not it was created following the guide.
 
 10. REUSE
    2: The code can be obtained in full, it is understandable when read, with
-      comments where needed, and there are indications for modifying it.
+      comments where needed, and there are instructions for modifying it.
    1: It can be obtained, but it is hard to understand without comments, it
-      is partly compressed or it has no indications.
+      is partly compressed or it has no instructions for modification.
    0: It cannot be obtained, or it is obfuscated or compressed.
 
 ## Result
@@ -322,9 +323,9 @@ whether or not it was created following the guide.
     published until it is fixed.
 - In the justification of point 3, include that brief description. In that
   of point 4, list the external addresses in the code and what each one is
-  for, and say in simple words what would stop working when opening it,
-  downloaded, on a computer without internet. In that of point 6, list the
-  third-party material.
+  for, and say in simple words what would stop working when opening the
+  downloaded copy on a computer without an internet connection. In that of
+  point 6, list the third-party material.
 - End with the three improvements that would raise the score the most.
 
 ## If I then ask you to fix it
@@ -338,7 +339,7 @@ whether or not it was created following the guide.
   text for me to add it.</code></pre></details></div>
 <p>The AI scores each recommendation with the VCER rubric, gives a final percentage and proposes the three improvements that would raise the score the most. If it is then asked to fix it, it first proposes the changes and waits for them to be approved; it is advisable to save a copy beforehand. The score is a guide, but it does not replace the person’s review, especially regarding the correctness of the content, where the AI only detects the errors it sees.</p>
 <p>This is the VCER rubric, the one used by the evaluation file above:</p>
-<div class="rubrica"><table><caption>VCER rubric: 2, met; 1, partly met; 0, not met</caption><thead><tr><th scope="col">Recommendation</th><th scope="col">2</th><th scope="col">1</th><th scope="col">0</th></tr></thead><tbody><tr><th scope="row"><span class="rub-n">1</span> Content <small>(eliminatory)</small></th><td data-nota="2">No errors are detected in what it teaches: the data, the definitions and the answers it accepts as correct.</td><td data-nota="1">There is some minor inaccuracy in what it teaches.</td><td data-nota="0">There are obvious errors in concepts, data or answers.</td></tr><tr><th scope="row"><span class="rub-n">2</span> Personal data <small>(eliminatory)</small></th><td data-nota="2">It does not ask for data that identifies anyone, or it stores them only on the device and allows exporting without names; or it sends them only to a school service, with no keys visible in the code and in such a way that only the teacher or the school can read them. It has no analytics.</td><td data-nota="1">It does not send students&#x27; data to outside services, but it stores names without an option to export without them, or the sending to the school&#x27;s service is not well protected (keys in the code, an address that allows what is collected to be read).</td><td data-nota="0">It sends students&#x27; data to a server outside the school, or it has analytics or tracking.</td></tr><tr><th scope="row"><span class="rub-n">3</span> Understanding what it does</th><td data-nota="2">It can be briefly described what it does, what it stores and what it communicates with, and what the material declares matches the code.</td><td data-nota="1">Its operation can be understood, but there are parts whose purpose is unclear or it does not explain what it stores.</td><td data-nota="0">There are functions or communications whose purpose cannot be explained, or what it declares does not match the code.</td></tr><tr><th scope="row"><span class="rub-n">4</span> Dependencies</th><td data-nota="2">What it loads or embeds from outside comes from well-known services and is recorded, and its own texts, images and data are inside the material.</td><td data-nota="1">It loads or embeds external resources without recording them, or part of its own content (a video, an audio, a map) is only on another platform.</td><td data-nota="0">The main content depends on an external service, or it loads code from unknown addresses.</td></tr><tr><th scope="row"><span class="rub-n">5</span> Accessibility</th><td data-nota="2">It can be used entirely with the keyboard, the controls have labels, the images alternative text, the contrast is sufficient, it does not rely on colour and it adapts to a narrow screen.</td><td data-nota="1">It fails in one or two of those aspects, without preventing its use.</td><td data-nota="0">It fails in three or more, or it cannot be used with the keyboard.</td></tr><tr><th scope="row"><span class="rub-n">6</span> Third-party material</th><td data-nota="2">Each third-party element states its author, source and licence, and the licence allows it to be reused; or there is no third-party material.</td><td data-nota="1">There is third-party material with a valid licence, but not fully credited.</td><td data-nota="0">There is third-party material without a licence that allows reuse or without any attribution.</td></tr><tr><th scope="row"><span class="rub-n">7</span> Record</th><td data-nota="2">There is a log or a note with the important decisions and their reasons.</td><td data-nota="1">There is documentation explaining how it is made, but not why.</td><td data-nota="0">There is nothing.</td></tr><tr><th scope="row"><span class="rub-n">8</span> Use of AI</th><td data-nota="2">It states that it was made with AI and what the person has checked.</td><td data-nota="1">It states that it was made with AI, without saying what has been checked.</td><td data-nota="0">It does not state it. If it is stated that no AI was used, it is not scored.</td></tr><tr><th scope="row"><span class="rub-n">9</span> Licence</th><td data-nota="2">Authorship and a free licence visible in the material, with a link. If it is a multi-file project, it includes the licence file.</td><td data-nota="1">The authorship or the licence is missing, the licence is not free (NC or ND) or it does not link to its text.</td><td data-nota="0">It states neither authorship nor licence.</td></tr><tr><th scope="row"><span class="rub-n">10</span> Reuse</th><td data-nota="2">The code can be obtained in full, it is understandable when read, with comments where needed, and there are indications for modifying it.</td><td data-nota="1">It can be obtained, but it is hard to understand without comments, it is partly compressed or it has no indications.</td><td data-nota="0">It cannot be obtained, or it is obfuscated or compressed.</td></tr></tbody></table></div>
+<div class="rubrica"><table><caption>VCER rubric: 2, met; 1, partly met; 0, not met</caption><thead><tr><th scope="col">Recommendation</th><th scope="col">2</th><th scope="col">1</th><th scope="col">0</th></tr></thead><tbody><tr><th scope="row"><span class="rub-n">1</span> Content <small>(disqualifying)</small></th><td data-nota="2">No errors are detected in what it teaches: the data, the definitions and the answers it accepts as correct.</td><td data-nota="1">There is some minor inaccuracy in what it teaches.</td><td data-nota="0">There are obvious errors in concepts, data or answers.</td></tr><tr><th scope="row"><span class="rub-n">2</span> Personal data <small>(disqualifying)</small></th><td data-nota="2">It does not ask for data that identifies anyone, or it stores them only on the device and allows exporting without names; or it sends them only to a school service, with no keys visible in the code and in such a way that only the teacher or the school can read them. It has no analytics.</td><td data-nota="1">It does not send students&#x27; data to outside services, but it stores names without an option to export without them, or the sending to the school&#x27;s service is not well protected (keys in the code, an address that allows what is collected to be read).</td><td data-nota="0">It sends students&#x27; data to a server outside the school, or it has analytics or tracking.</td></tr><tr><th scope="row"><span class="rub-n">3</span> Understanding what it does</th><td data-nota="2">What it does, what it stores and what it communicates with can be described briefly, and the resource&#x27;s statements match its code.</td><td data-nota="1">Its operation can be understood, but there are parts whose purpose is unclear or it does not explain what it stores.</td><td data-nota="0">There are functions or communications whose purpose cannot be explained, or what it declares does not match the code.</td></tr><tr><th scope="row"><span class="rub-n">4</span> Dependencies</th><td data-nota="2">What it loads or embeds from outside comes from well-known services and is recorded, and its own texts, images and data are inside the material.</td><td data-nota="1">It loads or embeds external resources without recording them, or part of its own content (a video, an audio recording, a map) is only on another platform.</td><td data-nota="0">The main content depends on an external service, or it loads code from unknown addresses.</td></tr><tr><th scope="row"><span class="rub-n">5</span> Accessibility</th><td data-nota="2">It can be used entirely with the keyboard, the controls have labels, the images alternative text, the contrast is sufficient, it does not rely on colour and it adapts to a narrow screen.</td><td data-nota="1">It fails in one or two of those aspects, without preventing its use.</td><td data-nota="0">It fails in three or more, or it cannot be used with the keyboard.</td></tr><tr><th scope="row"><span class="rub-n">6</span> Third-party material</th><td data-nota="2">Each third-party element states its author, source and licence, and the licence allows it to be reused; or there is no third-party material.</td><td data-nota="1">There is third-party material with a valid licence, but not fully credited.</td><td data-nota="0">There is third-party material without a licence that allows reuse or without any attribution.</td></tr><tr><th scope="row"><span class="rub-n">7</span> Record</th><td data-nota="2">There is a log or a note with the important decisions and their reasons.</td><td data-nota="1">There is documentation explaining how it is made, but not why.</td><td data-nota="0">There is nothing.</td></tr><tr><th scope="row"><span class="rub-n">8</span> Use of AI</th><td data-nota="2">It states that it was made with AI and what the person has checked.</td><td data-nota="1">It states that it was made with AI, without saying what has been checked.</td><td data-nota="0">It does not state it. If it is stated that no AI was used, it is not scored.</td></tr><tr><th scope="row"><span class="rub-n">9</span> Licence</th><td data-nota="2">Authorship and a free licence visible in the material, with a link. If it is a multi-file project, it includes the licence file.</td><td data-nota="1">The authorship or the licence is missing, the licence is not free (NC or ND) or it does not link to its text.</td><td data-nota="0">It states neither authorship nor licence.</td></tr><tr><th scope="row"><span class="rub-n">10</span> Reuse</th><td data-nota="2">The code can be obtained in full, it is understandable when read, with comments where needed, and there are instructions for modifying it.</td><td data-nota="1">It can be obtained, but it is hard to understand without comments, it is partly compressed or it has no instructions for modification.</td><td data-nota="0">It cannot be obtained, or it is obfuscated or compressed.</td></tr></tbody></table></div>
 <p>The final percentage is the sum of the scores divided by the maximum possible for the points the AI has been able to check. From it and from the essential points, one of these three results is obtained:</p>
 <table>
 <colgroup>

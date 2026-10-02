@@ -12,7 +12,7 @@
 <g transform="translate(300 388) scale(2.3333)" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
   <path d="m9 9.5 2 2 4-4" /></g>
 <text x="398" y="408" font-size="33" font-weight="400" fill="#16232b">Review the content without</text>
-<text x="398" y="450" font-size="33" font-weight="400" fill="#16232b">delegating it to the AI</text>
+<text x="398" y="450" font-size="33" font-weight="400" fill="#16232b">delegating the review to the AI</text>
 <rect x="172" y="488" width="838" height="112" rx="20" fill="#ffffff" stroke="#dde3df" stroke-width="2"/>
 <text x="230" y="564" font-size="58" font-weight="700" fill="#0f766e" text-anchor="middle">2</text>
 <rect x="288" y="504" width="80" height="80" rx="18" fill="#0f766e"/>
@@ -51,8 +51,8 @@
 <rect x="288" y="1068" width="80" height="80" rx="18" fill="#0f766e"/>
 <g transform="translate(300 1080) scale(2.3333)" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
   <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /></g>
-<text x="398" y="1100" font-size="33" font-weight="400" fill="#16232b">Credit the authorship</text>
-<text x="398" y="1142" font-size="33" font-weight="400" fill="#16232b">of what is taken from others</text>
+<text x="398" y="1100" font-size="33" font-weight="400" fill="#16232b">Credit the creators</text>
+<text x="398" y="1142" font-size="33" font-weight="400" fill="#16232b">of material taken from others</text>
 <rect x="172" y="1180" width="838" height="112" rx="20" fill="#ffffff" stroke="#dde3df" stroke-width="2"/>
 <text x="230" y="1256" font-size="58" font-weight="700" fill="#0f766e" text-anchor="middle">7</text>
 <rect x="288" y="1196" width="80" height="80" rx="18" fill="#0f766e"/>

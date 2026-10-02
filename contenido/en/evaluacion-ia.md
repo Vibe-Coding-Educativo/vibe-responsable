@@ -36,7 +36,7 @@ whether or not it was created following the guide.
 
 ## VCER rubric
 
-1. CONTENT (eliminatory)
+1. CONTENT (disqualifying)
    2: No errors are detected in what it teaches: the data, the definitions
       and the answers it accepts as correct.
    1: There is some minor inaccuracy in what it teaches.
@@ -45,7 +45,7 @@ whether or not it was created following the guide.
    point out what a person should check. Typos and formatting errors in the
    references do not count here: point them out separately.
 
-2. PERSONAL DATA (eliminatory)
+2. PERSONAL DATA (disqualifying)
    2: It does not ask for data that identifies anyone, or it stores them
       only on the device and allows exporting without names; or it sends
       them only to a school service, with no keys visible in the code and in
@@ -63,8 +63,8 @@ whether or not it was created following the guide.
    libraries) is assessed in point 4, not here.
 
 3. UNDERSTANDING WHAT IT DOES
-   2: It can be briefly described what it does, what it stores and what it
-      communicates with, and what the material declares matches the code.
+   2: What it does, what it stores and what it communicates with can be
+      described briefly, and the resource's statements match its code.
    1: Its operation can be understood, but there are parts whose purpose is
       unclear or it does not explain what it stores.
    0: There are functions or communications whose purpose cannot be
@@ -75,7 +75,7 @@ whether or not it was created following the guide.
       and is recorded, and its own texts, images and data are inside the
       material.
    1: It loads or embeds external resources without recording them, or part
-      of its own content (a video, an audio, a map) is only on another
+      of its own content (a video, an audio recording, a map) is only on another
       platform.
    0: The main content depends on an external service, or it loads code from
       unknown addresses.
@@ -118,9 +118,9 @@ whether or not it was created following the guide.
 
 10. REUSE
    2: The code can be obtained in full, it is understandable when read, with
-      comments where needed, and there are indications for modifying it.
+      comments where needed, and there are instructions for modifying it.
    1: It can be obtained, but it is hard to understand without comments, it
-      is partly compressed or it has no indications.
+      is partly compressed or it has no instructions for modification.
    0: It cannot be obtained, or it is obfuscated or compressed.
 
 ## Result
@@ -145,9 +145,9 @@ whether or not it was created following the guide.
     published until it is fixed.
 - In the justification of point 3, include that brief description. In that
   of point 4, list the external addresses in the code and what each one is
-  for, and say in simple words what would stop working when opening it,
-  downloaded, on a computer without internet. In that of point 6, list the
-  third-party material.
+  for, and say in simple words what would stop working when opening the
+  downloaded copy on a computer without an internet connection. In that of
+  point 6, list the third-party material.
 - End with the three improvements that would raise the score the most.
 
 ## If I then ask you to fix it

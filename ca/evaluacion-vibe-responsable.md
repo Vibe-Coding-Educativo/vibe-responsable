@@ -40,7 +40,7 @@ creat o no seguint la guia.
    1: Hi ha alguna imprecisió menor en el que ensenya.
    0: Hi ha errors evidents en conceptes, dades o respostes.
    Aquesta puntuació només reflecteix els errors que has detectat: enumera'ls
-   un per un i assenyala el que convé que comprovi una persona. Les errades i
+   un per un i assenyala el que convé que comprovi una persona. Les errates i
    els errors de format de les referències no resten aquí: assenyala'ls a
    part.
 

@@ -24,7 +24,15 @@ castellano escrito en el código.
   `hreflang`.
 - Las traducciones las hace la IA a partir del original en castellano, de forma
   automática y sin revisión de un traductor profesional; los créditos de cada
-  idioma y la descripción del depósito de Zenodo lo dicen.
+  idioma y la descripción del depósito de Zenodo lo dicen. El 02-10-2026 otra
+  IA cotejó las cuatro traducciones con el original y propuso 65 correcciones:
+  una frase del capítulo 2 que faltaba en las cuatro, una excepción invertida
+  en euskera, un cambio de sentido en gallego y calcos, sobre todo en inglés
+  (el uso contable de «material», que pasa a «resource» para una pieza
+  concreta). Se aplicaron con el criterio del autor, salvo una mejora catalana
+  que obligaba a regrabar el vídeo sin corregir ningún error. Esa revisión
+  también es automática, así que el aviso de los créditos se mantiene, y las
+  formulaciones vascas siguen pendientes de validar por un hablante.
 - Los títulos de las obras citadas se mantienen en su idioma original. Los
   enlaces apuntan a la versión en el idioma de la página cuando la fuente la
   tiene: las licencias Creative Commons en los cinco; la definición de obras
@@ -41,7 +49,7 @@ castellano escrito en el código.
   genera `zoom.<idioma>.html` a partir de `zoom.es.html`, el único que se edita,
   con una tabla de sustituciones que avisa si un texto ya no está en el
   original; luego `grabar.js` graba cada página. Si falta el vídeo de un idioma,
-  `video()` usa el castellano. Los cuatro vídeos traducidos se grabaron el 01-10-2026 y se comprimieron como el castellano (ADR 17): entre 6,4 y 6,5 MB, −16,1 LUFS y picos de −1,7 a −1,8 dBFS; el cartel de cada uno es su último fotograma.
+  `video()` usa el castellano. Los cuatro vídeos traducidos se grabaron el 01-10-2026 y se comprimieron como el castellano (ADR 17): entre 6,4 y 6,5 MB, −16,1 LUFS y picos de −1,7 a −1,8 dBFS; el cartel de cada uno es su último fotograma. El 02-10-2026 se volvieron a grabar el inglés y el euskera, porque la revisión de las traducciones cambió los títulos 1 y 6 en inglés y el 7 en euskera: 6,5 y 6,6 MB, −16,1 LUFS y picos de −1,5 y −1,6 dBFS; los carteles no cambian, porque la pantalla final no lleva esos títulos.
 - La infografía se genera en cada idioma con `infografia/generar.py`, y se
   convierte a PNG con `rsvg-convert` y la misma paleta reducida (64 colores).
 

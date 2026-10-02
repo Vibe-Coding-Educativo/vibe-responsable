@@ -2,7 +2,7 @@
 
 ## L'accessibilitat d'un material educatiu
 
-Un material és accessible quan les persones amb discapacitat el poden percebre, comprendre, recórrer i interactuar-hi. La [Iniciativa d'Accessibilitat Web](https://www.w3.org/WAI/fundamentals/accessibility-intro/es) del *World Wide Web Consortium* (W3C), el consorci que elabora els estàndards del web, recorda que abasta les discapacitats visuals, auditives, físiques, cognitives, neurològiques i de la parla, i que beneficia també altres persones, com les que fan servir un telèfon mòbil, les que tenen una connexió lenta o les que pateixen una limitació temporal.
+Un material és accessible quan les persones amb discapacitat poden percebre'l, comprendre'l, recórrer-lo i interactuar-hi. La [Iniciativa d'Accessibilitat Web](https://www.w3.org/WAI/fundamentals/accessibility-intro/es) del *World Wide Web Consortium* (W3C), el consorci que elabora els estàndards del web, recorda que abasta les discapacitats visuals, auditives, físiques, cognitives, neurològiques i de la parla, i que beneficia també altres persones, com les que fan servir un telèfon mòbil, les que tenen una connexió lenta o les que pateixen una limitació temporal.
 
 **En educació no és una millora opcional**, ja que un material que una part de l'alumnat no pot utilitzar deixa aquestes persones fora de l'activitat. La [Recomanació sobre els Recursos Educatius Oberts (REO)](https://www.unesco.org/es/legal-affairs/recommendation-open-educational-resources-oer) de l'Organització de les Nacions Unides per a l'Educació, la Ciència i la Cultura (UNESCO) situa l'accés efectiu, equitatiu i inclusiu entre els seus objectius, i a la Unió Europea l'accessibilitat és una exigència legal per als llocs web del sector públic, establerta per la [Directiva 2016/2102](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32016L2102).
 
@@ -16,7 +16,7 @@ La intel·ligència artificial (IA) permet afegir sense esforç animacions d'ent
 
 Hi ha quatre proves que no requereixen eines ni coneixements tècnics:
 
-- **Només amb el teclat.** Es recorre el material amb la tecla de tabulació i s'activen els controls amb la tecla de retorn. Tots els controls han de ser accessibles, en un ordre lògic, i s'ha de veure en quin és el focus.
+- **Només amb el teclat.** Es recorre el material amb la tecla de tabulació i s'activen els controls amb la tecla de retorn. Tots els controls han de ser accessibles, en un ordre lògic, i s'ha de veure quin control té el focus.
 - **Amb el text ampliat.** S'amplia la pàgina al doble des del navegador. El contingut s'ha de continuar llegint sense que els textos es tallin o se superposin.
 - **En un telèfon mòbil.** El material ha de cabre a l'amplada de la pantalla, i els botons s'han de poder prémer amb el dit.
 - **Sense dependre del color.** Un encert o un error no es poden distingir únicament pel color. Els ha d'acompanyar un text o un símbol.
