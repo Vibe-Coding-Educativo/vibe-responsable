@@ -16,6 +16,20 @@ This guide was produced at level 4 of the [Framework for integrating generative 
 
 <!-- cita -->
 
+## Versions
+
+The guide is numbered with two figures. The first changes when what the guide says changes, and the second when the wording or the translations are corrected without changing the content. Each version has its own DOI.
+
+- **2.0**, 2 October 2026. DOI: [10.5281/zenodo.23105801](https://doi.org/10.5281/zenodo.23105801).
+  - The VCER evaluation has its own page, with the evaluation file, the rubric and the explanation of the result.
+  - The instructions page is now called «Instructions for creating with AI» and deals only with creation.
+  - An evaluated resource can show in its footer a mention with the result, linked to the evaluation page.
+- **1.1**, 2 October 2026. DOI: [10.5281/zenodo.23097280](https://doi.org/10.5281/zenodo.23097280).
+  - Corrects the translations and the wording without changing what the guide says.
+  - States in the credits that the translations are automatic and have not been reviewed by a professional translator.
+- **1.0**, 1 October 2026. DOI: [10.5281/zenodo.23081518](https://doi.org/10.5281/zenodo.23081518).
+  - First published version.
+
 ## Third-party materials
 
 The icons come from [Lucide](https://lucide.dev/), by Lucide Icons and Contributors, distributed under the ISC licence, named after the Internet Systems Consortium. Some derive from the Feather project, by Cole Bemis, under the MIT licence: the moon, the download, the code, the check mark, copy, the arrow and the close cross. The guide's logo combines the last two. The [text of both licences](https://github.com/Vibe-Coding-Educativo/vibe-responsable/blob/main/infografia/iconos/LICENSE) is kept in the repository.

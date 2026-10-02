@@ -16,6 +16,20 @@ Aquesta guia s'ha elaborat en el nivell 4 del [Marc per a la integració de la I
 
 <!-- cita -->
 
+## Versions
+
+La guia es numera amb dues xifres. La primera canvia quan canvia el que diu la guia, i la segona, quan es corregeixen la redacció o les traduccions sense canviar el contingut. Cada versió té el seu propi DOI.
+
+- **2.0**, 2 d'octubre de 2026. DOI: [10.5281/zenodo.23105801](https://doi.org/10.5281/zenodo.23105801).
+  - L'avaluació VCER té pàgina pròpia, amb el fitxer d'avaluació, la rúbrica i l'explicació del resultat.
+  - La pàgina d'instruccions passa a dir-se «Instruccions per crear amb IA» i tracta només de la creació.
+  - Un recurs avaluat pot mostrar al peu una menció amb el resultat, enllaçada a la pàgina de l'avaluació.
+- **1.1**, 2 d'octubre de 2026. DOI: [10.5281/zenodo.23097280](https://doi.org/10.5281/zenodo.23097280).
+  - Corregeix les traduccions i la redacció sense canviar el que diu la guia.
+  - Indica als crèdits que les traduccions són automàtiques i que no les ha revisat cap traductor professional.
+- **1.0**, 1 d'octubre de 2026. DOI: [10.5281/zenodo.23081518](https://doi.org/10.5281/zenodo.23081518).
+  - Primera versió publicada.
+
 ## Materials d'altres persones
 
 Les icones procedeixen de [Lucide](https://lucide.dev/), de Lucide Icons and Contributors, que es distribueix amb la llicència ISC, que pren el nom de l'Internet Systems Consortium. Algunes deriven del projecte Feather, de Cole Bemis, amb llicència MIT: la lluna, la descàrrega, el codi, la marca de verificació, copiar, la fletxa i l'aspa de tancar. El logotip de la guia combina aquestes dues últimes. El [text de les dues llicències](https://github.com/Vibe-Coding-Educativo/vibe-responsable/blob/main/infografia/iconos/LICENSE) es conserva al repositori.

@@ -16,6 +16,20 @@ Esta guía se ha elaborado en el nivel 4 del [Marco para la integración de la I
 
 <!-- cita -->
 
+## Versiones
+
+La guía se numera con dos cifras. La primera cambia cuando cambia lo que dice la guía, y la segunda, cuando se corrigen la redacción o las traducciones sin cambiar el contenido. Cada versión tiene su propio DOI.
+
+- **2.0**, 2 de octubre de 2026. DOI: [10.5281/zenodo.23105801](https://doi.org/10.5281/zenodo.23105801).
+  - La evaluación VCER tiene página propia, con el archivo de evaluación, la rúbrica y la explicación del resultado.
+  - La página de instrucciones pasa a llamarse «Instrucciones para crear con IA» y trata solo de la creación.
+  - Un recurso evaluado puede mostrar en su pie una mención con el resultado, enlazada a la página de la evaluación.
+- **1.1**, 2 de octubre de 2026. DOI: [10.5281/zenodo.23097280](https://doi.org/10.5281/zenodo.23097280).
+  - Corrige las traducciones y la redacción sin cambiar lo que dice la guía.
+  - Indica en los créditos que las traducciones son automáticas y no las ha revisado ningún traductor profesional.
+- **1.0**, 1 de octubre de 2026. DOI: [10.5281/zenodo.23081518](https://doi.org/10.5281/zenodo.23081518).
+  - Primera versión publicada.
+
 ## Materiales de otras personas
 
 Los iconos proceden de [Lucide](https://lucide.dev/), de Lucide Icons and Contributors, que se distribuye con la licencia ISC, que toma su nombre del Internet Systems Consortium. Algunos derivan del proyecto Feather, de Cole Bemis, con licencia MIT: la luna, la descarga, el código, la marca de verificación, copiar, la flecha y el aspa de cerrar. El logotipo de la guía combina estos dos últimos. El [texto de las dos licencias](https://github.com/Vibe-Coding-Educativo/vibe-responsable/blob/main/infografia/iconos/LICENSE) se conserva en el repositorio.

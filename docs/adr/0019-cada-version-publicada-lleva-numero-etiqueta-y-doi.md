@@ -16,8 +16,14 @@ Zenodo para tener un DOI, como el MIAE.
 - La versión se define en un solo sitio, `construir.py` (`VERSION`,
   `FECHA_VERSION`, `DOI`, `DOI_CONCEPTO`), y de ahí sale a todas las páginas y a
   los PDF.
-- El pie de todas las páginas dice «Versión 1.0», con enlace a las notas de esa
-  versión en GitHub (`releases/tag/v1.0`).
+- El pie de todas las páginas dice «Versión 1.0». Hasta la 2.0 enlazaba a las
+  notas de esa versión en GitHub (`releases/tag/v1.0`); desde el 02-10-2026
+  enlaza al apartado «Versiones» de los créditos, que explica el criterio de
+  numeración y lo que cambia en cada versión, con su DOI. Juanjo lo pidió al
+  pasar de la 1.1 a la 2.0 en el mismo día: «es posible que alguno se pregunte
+  qué ha pasado». Es información para el visitante, no contenido de la guía, así
+  que añadirla no cambia la versión ni los PDF depositados; cada versión nueva
+  añade su entrada, con los cambios en viñetas, en los cinco idiomas.
 - La portada del PDF y su pie llevan la versión y su fecha, no la fecha en que
   se generó el archivo.
 - La cita lleva el número de versión y el DOI de esa versión; debajo, el DOI de

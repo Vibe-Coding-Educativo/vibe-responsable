@@ -42,7 +42,6 @@ VERSION = "2.0"
 FECHA_VERSION = date(2026, 10, 2)
 DOI = "10.5281/zenodo.23105801"            # el de esta versión
 DOI_CONCEPTO = "10.5281/zenodo.23081517"   # el de todas las versiones: lleva siempre a la última
-NOTAS_VERSION = f"{REPO}/releases/tag/v{VERSION}"
 CLAVE_TEMA = "vibe-responsable:tema"   # única entrada en localStorage; la misma en recursos/guia.js
 PDF = "vibe-responsable-{idioma}.pdf"  # la guía completa, generada con --pdf y publicada junto a las páginas
 # Los archivos para la IA: cada uno está en contenido/<idioma>/ y se publica con otro nombre para
@@ -127,7 +126,7 @@ UI = {
         "alejar": "Ajustar a la pantalla",
         "niveles": {"Lo mínimo.": "minimo", "Lo recomendado.": "recomendado", "En todos los casos.": "todos"},
         "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>.',
-        "pie_2": f'<a href="creditos.html">Créditos y licencias</a>. <a href="{NOTAS_VERSION}">Versión {VERSION}</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Sugerencias y correcciones</a>.',
+        "pie_2": f'<a href="creditos.html">Créditos y licencias</a>. <a href="creditos.html#versiones">Versión {VERSION}</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Sugerencias y correcciones</a>.',
     },
     "ca": {
         "nombre": "Vibe coding responsable",
@@ -190,7 +189,7 @@ UI = {
         "alejar": "Ajustar a la pantalla",
         "niveles": {"El mínim.": "minimo", "El recomanat.": "recomendado", "En tots els casos.": "todos"},
         "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Continguts amb llicència <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ca">CC BY-SA 4.0</a>.',
-        "pie_2": f'<a href="creditos.html">Crèdits i llicències</a>. <a href="{NOTAS_VERSION}">Versió {VERSION}</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Suggeriments i correccions</a>.',
+        "pie_2": f'<a href="creditos.html">Crèdits i llicències</a>. <a href="creditos.html#versions">Versió {VERSION}</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Suggeriments i correccions</a>.',
     },
     "gl": {
         "nombre": "Vibe coding responsable",
@@ -253,7 +252,7 @@ UI = {
         "alejar": "Axustar á pantalla",
         "niveles": {"O mínimo.": "minimo", "O recomendado.": "recomendado", "En todos os casos.": "todos"},
         "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Contidos baixo licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.gl">CC BY-SA 4.0</a>.',
-        "pie_2": f'<a href="creditos.html">Créditos e licenzas</a>. <a href="{NOTAS_VERSION}">Versión {VERSION}</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Suxestións e correccións</a>.',
+        "pie_2": f'<a href="creditos.html">Créditos e licenzas</a>. <a href="creditos.html#versions">Versión {VERSION}</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Suxestións e correccións</a>.',
     },
     "eu": {
         "nombre": "Vibe coding arduratsua",
@@ -317,7 +316,7 @@ UI = {
         "siglas": ["IAren", "IA"],
         "niveles": {"Gutxienekoa.": "minimo", "Gomendatua.": "recomendado", "Kasu guztietan.": "todos"},
         "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Edukiak <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.eu">CC BY-SA 4.0</a> lizentziarekin.',
-        "pie_2": f'<a href="creditos.html">Kredituak eta lizentziak</a>. <a href="{NOTAS_VERSION}">{VERSION} bertsioa</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Iradokizunak eta zuzenketak</a>.',
+        "pie_2": f'<a href="creditos.html">Kredituak eta lizentziak</a>. <a href="creditos.html#bertsioak">{VERSION} bertsioa</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Iradokizunak eta zuzenketak</a>.',
     },
     "en": {
         "nombre": "Responsible vibe coding",
@@ -381,7 +380,7 @@ UI = {
         "siglas": ["AI"],
         "niveles": {"Minimum.": "minimo", "Recommended.": "recomendado", "In all cases.": "todos"},
         "pie_1": '© 2026 <a href="https://bilateria.org">Juan José de Haro</a>. Content under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>.',
-        "pie_2": f'<a href="creditos.html">Credits and licences</a>. <a href="{NOTAS_VERSION}">Version {VERSION}</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Suggestions and corrections</a>.',
+        "pie_2": f'<a href="creditos.html">Credits and licences</a>. <a href="creditos.html#versions">Version {VERSION}</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Suggestions and corrections</a>.',
     },
 }
 # La página de la evaluación VCER (ADR 21) muestra arriba el resultado que trae el enlace de la mención

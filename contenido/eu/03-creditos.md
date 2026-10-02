@@ -16,6 +16,20 @@ Gida hau [Hezkuntza-zereginetan IA sortzailea integratzeko esparruaren (MIAE)](h
 
 <!-- cita -->
 
+## Bertsioak
+
+Gida bi zifrarekin zenbakitzen da. Lehenengoa gidak dioena aldatzen denean aldatzen da, eta bigarrena, idazkera edo itzulpenak zuzentzen direnean, edukia aldatu gabe. Bertsio bakoitzak bere DOIa du.
+
+- **2.0**, 2026ko urriaren 2a. DOI: [10.5281/zenodo.23105801](https://doi.org/10.5281/zenodo.23105801).
+  - VCER ebaluazioak bere orria du, ebaluazio-fitxategiarekin, errubrikarekin eta emaitzaren azalpenarekin.
+  - Jarraibideen orriak «IArekin sortzeko jarraibideak» izena du orain, eta sorkuntzaz bakarrik dihardu.
+  - Ebaluatutako baliabide batek emaitzaren aipamen bat erakuts dezake bere oinean, ebaluazioaren orrira estekatuta.
+- **1.1**, 2026ko urriaren 2a. DOI: [10.5281/zenodo.23097280](https://doi.org/10.5281/zenodo.23097280).
+  - Itzulpenak eta idazkera zuzentzen ditu, gidak dioena aldatu gabe.
+  - Kredituetan adierazten du itzulpenak automatikoak direla eta ez dituela itzultzaile profesional batek berrikusi.
+- **1.0**, 2026ko urriaren 1a. DOI: [10.5281/zenodo.23081518](https://doi.org/10.5281/zenodo.23081518).
+  - Argitaratutako lehen bertsioa.
+
 ## Beste pertsona batzuen materialak
 
 Ikonoak [Lucide](https://lucide.dev/) proiektukoak dira, Lucide Icons and Contributors-ena, eta ISC lizentziarekin banatzen da, Internet Systems Consortium-etik hartzen baitu izena. Batzuk Cole Bemisen Feather proiektutik eratorriak dira, MIT lizentziarekin: ilargia, deskarga, kodea, egiaztapen-marka, kopiatu, gezia eta ixteko gurutzea. Gidaren logotipoak azken biak konbinatzen ditu. [Bi lizentzien testua](https://github.com/Vibe-Coding-Educativo/vibe-responsable/blob/main/infografia/iconos/LICENSE) biltegian gordetzen da.
