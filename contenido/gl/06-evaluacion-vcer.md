@@ -18,7 +18,7 @@ A porcentaxe é a suma das puntuacións dividida entre o máximo posible dos pun
 
 ## Límites da avaliación
 
-A IA só detecta os erros que ve, sobre todo no contido, e o resultado pode variar segundo o modelo utilizado. Por iso a puntuación orienta, pero non substitúe a revisión dunha persoa. Ademais, o resultado corresponde á versión do recurso que se avaliou, na data da avaliación.
+A IA só detecta os erros que ve, sobre todo no contido, e o resultado pode variar segundo o modelo utilizado. Por iso a puntuación é orientativa e non substitúe a revisión dunha persoa. Ademais, o resultado corresponde á versión do recurso que se avaliou, na data da avaliación.
 
 ## Como avaliar un recurso
 

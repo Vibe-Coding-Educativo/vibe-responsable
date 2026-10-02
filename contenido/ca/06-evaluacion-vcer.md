@@ -18,7 +18,7 @@ El percentatge és la suma de les puntuacions dividida pel màxim possible dels 
 
 ## Límits de l'avaluació
 
-La IA només detecta els errors que veu, sobretot en el contingut, i el resultat pot variar segons el model utilitzat. Per això la puntuació orienta, però no substitueix la revisió d'una persona. A més, el resultat correspon a la versió del recurs que es va avaluar, en la data de l'avaluació.
+La IA només detecta els errors que veu, sobretot en el contingut, i el resultat pot variar segons el model utilitzat. Per això la puntuació és orientativa i no substitueix la revisió d'una persona. A més, el resultat correspon a la versió del recurs que es va avaluar, en la data de l'avaluació.
 
 ## Com avaluar un recurs
 

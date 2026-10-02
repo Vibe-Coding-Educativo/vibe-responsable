@@ -18,7 +18,7 @@ El porcentaje es la suma de las puntuaciones dividida entre el máximo posible d
 
 ## Límites de la evaluación
 
-La IA solo detecta los errores que ve, sobre todo en el contenido, y el resultado puede variar según el modelo utilizado. Por eso la puntuación orienta, pero no sustituye a la revisión de una persona. Además, el resultado corresponde a la versión del recurso que se evaluó, en la fecha de la evaluación.
+La IA solo detecta los errores que ve, sobre todo en el contenido, y el resultado puede variar según el modelo utilizado. Por eso la puntuación es orientativa y no sustituye a la revisión de una persona. Además, el resultado corresponde a la versión del recurso que se evaluó, en la fecha de la evaluación.
 
 ## Cómo evaluar un recurso
 

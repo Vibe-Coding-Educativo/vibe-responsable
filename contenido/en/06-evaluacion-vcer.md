@@ -18,7 +18,7 @@ The percentage is the sum of the scores divided by the maximum possible for the 
 
 ## Limits of the evaluation
 
-The AI only detects the errors it sees, especially in the content, and the result may vary depending on the model used. That is why the score is a guide, but it does not replace a review by a person. In addition, the result applies to the version of the resource that was evaluated, on the date of the evaluation.
+The AI only detects the errors it sees, especially in the content, and the result may vary depending on the model used. That is why the score is indicative and does not replace a review by a person. In addition, the result applies to the version of the resource that was evaluated, on the date of the evaluation.
 
 ## How to evaluate a resource
 

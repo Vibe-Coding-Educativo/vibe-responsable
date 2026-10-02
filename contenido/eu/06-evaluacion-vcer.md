@@ -18,7 +18,7 @@ Ehunekoa puntuazioen batura da, IAk egiaztatu ahal izan dituen puntuen gehienezk
 
 ## Ebaluazioaren mugak
 
-IAk ikusten dituen akatsak bakarrik antzematen ditu, batez ere edukian, eta emaitza alda daiteke erabilitako ereduaren arabera. Horregatik, puntuazioak orientatu egiten du, baina ez du pertsona baten berrikuspena ordezkatzen. Gainera, emaitza ebaluatu zen baliabidearen bertsioari dagokio, ebaluazioaren datan.
+IAk ikusten dituen akatsak bakarrik antzematen ditu, batez ere edukian, eta emaitza alda daiteke erabilitako ereduaren arabera. Horregatik, puntuazioa orientagarria da eta ez du pertsona baten berrikuspena ordezkatzen. Gainera, emaitza ebaluatu zen baliabidearen bertsioari dagokio, ebaluazioaren datan.
 
 ## Nola ebaluatu baliabide bat
 
