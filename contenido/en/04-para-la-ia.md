@@ -34,10 +34,4 @@ This is the VCER rubric, the one used by the evaluation file above:
 
 <!-- rubrica -->
 
-The final percentage is the sum of the scores divided by the maximum possible for the points the AI has been able to check. From it and from the essential points, one of these three results is obtained:
-
-| Result | When it applies | What it means |
-| --- | --- | --- |
-| **Recommended** | 70 % or more, with content and personal data scored and with no 0 in either of them or in accessibility | The resource meets the essentials of the guide and can be used or published. The proposed improvements complete it. |
-| **Needs improvement** | Less than 70 %, or when the content or the personal data could not be checked, or accessibility has a 0 | The resource has flaws that should be fixed before publishing or recommending it, although none of them rules it out. The report says what they are and what remains to be checked. |
-| **Not recommended** | A 0 in content or in personal data, whatever the percentage | The resource has obvious errors in what it teaches or sends students' data to services outside the school. It should not be used with students or published until it is fixed. |
+How the percentage is calculated and what each result means are explained on the page [The VCER evaluation](vcer.html). If the resource is one's own, the AI also offers to save the report in the project and to add to the footer of the material a mention with the result, linked to that page.

@@ -34,10 +34,4 @@ Aquesta és la rúbrica VCER, la que utilitza el fitxer d'avaluació anterior:
 
 <!-- rubrica -->
 
-El percentatge final és la suma de les puntuacions dividida pel màxim possible dels punts que la IA ha pogut comprovar. Amb aquest percentatge i amb els punts essencials s'obté un d'aquests tres resultats:
-
-| Resultat | Quan es dona | Què significa |
-| --- | --- | --- |
-| **Recomanable** | 70 % o més, amb el contingut i les dades personals puntuats i sense un 0 en cap d'ells ni en l'accessibilitat | El recurs compleix l'essencial de la guia i es pot utilitzar o publicar. Les millores proposades el completen. |
-| **Millorable** | Menys del 70 %, o quan no s'ha pogut comprovar el contingut o les dades personals, o l'accessibilitat té un 0 | El recurs té errors que convé corregir abans de publicar-lo o de recomanar-lo, encara que cap no el descarta. L'informe indica quins són i què falta per comprovar. |
-| **No recomanable** | Un 0 en el contingut o en les dades personals, sigui quin sigui el percentatge | El recurs té errors evidents en el que ensenya o envia dades de l'alumnat a serveis aliens al centre. No convé utilitzar-lo amb l'alumnat ni publicar-lo fins a corregir-lo. |
+El càlcul del percentatge i el significat de cada resultat s'expliquen a la pàgina [L'avaluació VCER](vcer.html). Si el recurs és propi, la IA ofereix a més desar l'informe al projecte i afegir al peu del material una menció amb el resultat, enllaçada a aquesta pàgina.

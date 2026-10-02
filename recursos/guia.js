@@ -314,4 +314,51 @@
     visor.addEventListener("cancel", function (ev) { ev.preventDefault(); cerrar(); });
     visor.addEventListener("close", function () { if (origen) { origen.focus(); } });
   }
+
+  /* ---------- Resultado de la evaluación VCER ---------- */
+  // La mención del pie de un recurso evaluado enlaza a vcer.html con su resultado
+  // en la dirección: r (recomendable, mejorable o no-recomendable), p (el
+  // porcentaje, opcional), f (año y mes, 2026-10), v (la versión), t (el título)
+  // y u (la dirección del recurso). Nada se envía ni se guarda: los datos solo
+  // se leen de la dirección y se escriben como texto. Si r no es válido, la
+  // página se muestra sin el recuadro; cualquier otro dato que no lo sea se omite.
+  var recuadro = document.querySelector(".resultado-vcer");
+  if (recuadro) {
+    var datos = new URLSearchParams(window.location.search);
+    var fila = /^(recomendable|mejorable|no-recomendable)$/.test(datos.get("r") || "") &&
+      document.querySelector('.resultados-vcer tr[data-resultado="' + datos.get("r") + '"]');
+    if (fila) {
+      var textos = JSON.parse(recuadro.querySelector(".rv-textos").textContent);
+      var limpio = function (nombre, max) {
+        var valor = (datos.get(nombre) || "").replace(/\s+/g, " ").trim();
+        return valor.length <= max ? valor : "";
+      };
+      var poner = function (plantilla, valores) {
+        return plantilla.replace(/\{([^}]+)\}/g, function (_, clave) { return valores[clave]; });
+      };
+      var titulo = limpio("t", 200);
+      var version = limpio("v", 30);
+      var direccion = limpio("u", 300);
+      if (!/^https?:\/\/[^\s]+$/i.test(direccion)) { direccion = ""; }
+      var porcentaje = /^\d{1,3}$/.test(datos.get("p") || "") && Number(datos.get("p")) <= 100 ? Number(datos.get("p")) : null;
+      var mes = /^(\d{4})-(\d{2})$/.exec(datos.get("f") || "");
+      var fecha = mes && Number(mes[2]) >= 1 && Number(mes[2]) <= 12 ?
+        poner(textos.fecha, { "mes": textos.meses[Number(mes[2]) - 1], "año": mes[1] }) : "";
+      var recurso = poner(textos.recurso[(titulo ? "t" : "") + (version ? "v" : "")], { t: titulo, v: version });
+      recuadro.querySelector(".rv-frase").textContent = poner(textos.frase, {
+        recurso: recurso, u: direccion ? " (" + direccion + ")" : "", fecha: fecha });
+      recuadro.querySelector(".rv-nombre").textContent = fila.cells[0].textContent.trim();
+      recuadro.querySelector(".rv-significado").textContent = fila.cells[2].textContent.trim();
+      recuadro.querySelector(".rv-nota").textContent = textos.nota;
+      recuadro.dataset.resultado = datos.get("r");
+      if (porcentaje !== null) {
+        recuadro.querySelector(".rv-pct").textContent = poner(textos.pct, { p: porcentaje });
+        recuadro.querySelector(".rv-relleno").style.width = porcentaje + "%";
+      } else {
+        recuadro.querySelector(".rv-barra").hidden = true;
+      }
+      fila.classList.add("actual");
+      recuadro.hidden = false;
+    }
+  }
 })();

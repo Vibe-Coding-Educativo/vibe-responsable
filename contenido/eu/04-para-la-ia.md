@@ -34,10 +34,4 @@ Hau da VCER errubrika, aurreko ebaluazio-fitxategiak erabiltzen duena:
 
 <!-- rubrica -->
 
-Azken ehunekoa puntuazioen batura da, IAk egiaztatu ahal izan dituen puntuen gehienezko balioaz zatituta. Ehuneko horrekin eta funtsezko puntuekin, hiru emaitza hauetako bat lortzen da:
-
-| Emaitza | Noiz gertatzen den | Zer esan nahi duen |
-| --- | --- | --- |
-| **Gomendagarria** | % 70 edo gehiago, edukia eta datu pertsonalak puntuatuta, eta 0rik gabe ez horietan ez irisgarritasunean | Baliabideak gidaren funtsezkoa betetzen du eta erabil edo argitara daiteke. Proposatutako hobekuntzek osatzen dute. |
-| **Hobetu beharrekoa** | % 70 baino gutxiago, edo edukia edo datu pertsonalak ezin izan direnean egiaztatu, edo irisgarritasunak 0 duenean | Baliabideak argitaratu edo gomendatu aurretik zuzentzea komeni den hainbat akats ditu, nahiz eta horietako batek ere ez duen baztertzen. Txostenak adierazten du zein diren eta zer falta den egiaztatzeko. |
-| **Ez gomendagarria** | 0 edukian edo datu pertsonaletan, ehunekoa edozein dela ere | Baliabideak akats nabarmenak ditu irakasten duenean edo ikasleen datuak ikastetxetik kanpoko zerbitzuetara bidaltzen ditu. Ez da komeni ikasleekin erabiltzea ezta argitaratzea ere, zuzendu arte. |
+Ehunekoaren kalkulua eta emaitza bakoitzaren esanahia [VCER ebaluazioa](vcer.html) orrian azaltzen dira. Baliabidea norberarena bada, IAk txostena proiektuan gordetzea eta materialaren oinean emaitzaren aipamen bat gehitzea ere eskaintzen du, orri horretara estekatuta.

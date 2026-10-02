@@ -92,6 +92,9 @@ guía, y no corrige nada:
   recurso cambie (25-09-2026);
 - si después se pide corregir, la IA propone los cambios antes de hacerlos y,
   si no hay nota de decisiones, describe el recurso tal como está.
+- si el recurso es de la persona y la IA puede modificar sus archivos, ofrece
+  añadir al pie una mención con el resultado, enlazada a la página que lo
+  explica, y guardar el informe en el proyecto (ADR 21, 02-10-2026).
 
 La rúbrica se ajustó tras probarla con el MIAE (23-09-2026), que sacó un 65 % por
 criterios que no medían lo que se buscaba: lo incrustado o cargado de otros
@@ -102,7 +105,8 @@ las erratas de las referencias.
 
 La página muestra además la rúbrica en una tabla a la vista, sin plegar, presentada como la rúbrica del archivo de evaluación (marca `<!-- rubrica -->`), que
 `construir.py` genera a partir del propio `evaluacion-ia.md`, para que la tabla y
-lo que lee la IA no puedan separarse. Por eso la rúbrica mantiene su formato:
+lo que lee la IA no puedan separarse. La tabla de los tres resultados, que seguía a la
+rúbrica, está desde el 02-10-2026 en la página de la evaluación VCER (ADR 21). Por eso la rúbrica mantiene su formato:
 `N. TÍTULO`, y debajo `2:`, `1:` y `0:` con su descripción, redactada en forma
 impersonal para que sirva igual a la IA y a quien lee la tabla.
 

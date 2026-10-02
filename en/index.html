@@ -20,9 +20,9 @@
 <link rel="icon" href="../recursos/logo/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="../recursos/logo/apple-touch-icon.png">
 <link rel="preload" href="../recursos/fuentes/atkinson-hyperlegible-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../recursos/estilos.css?v=bd8f57c8a2">
+<link rel="stylesheet" href="../recursos/estilos.css?v=281b1f5494">
 <script>(function(){try{var t=localStorage.getItem("vibe-responsable:tema");if(t!=="light"&&t!=="dark"){t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.dataset.theme=t;}catch(e){}})();</script>
-<script src="../recursos/guia.js?v=511747d9bd" defer></script>
+<script src="../recursos/guia.js?v=ab88be8747" defer></script>
 </head>
 <body class="pagina-presentacion">
 <a class="saltar" href="#contenido">Skip to content</a>
@@ -31,7 +31,7 @@
 <div class="sitio"><a class="sitio-guia" href="./"><img class="marca" src="../recursos/logo/logo.svg" alt="" width="30" height="30"><span>Responsible vibe coding</span></a>
 <span class="sitio-desc">A guide to publishing educational materials created with vibe coding</span>
 </div>
-<nav aria-label="Sections of the guide"><ul><li><a href="./" aria-current="page">Introduction</a></li><li><a href="guia.html">Guide</a></li><li><a href="herramientas.html">Tools and levels</a></li><li><a href="para-la-ia.html">Instructions for the AI</a></li><li><a href="referencias.html">References</a></li><li><a href="creditos.html">Credits</a></li></ul></nav>
+<nav aria-label="Sections of the guide"><ul><li><a href="./" aria-current="page">Introduction</a></li><li><a href="guia.html">Guide</a></li><li><a href="herramientas.html">Tools and levels</a></li><li><a href="para-la-ia.html">Instructions for the AI</a></li><li><a href="vcer.html">VCER evaluation</a></li><li><a href="referencias.html">References</a></li><li><a href="creditos.html">Credits</a></li></ul></nav>
 <div class="utiles">
 <div class="desplegable">
 <button type="button" class="idiomas" title="Language" aria-label="Language" aria-haspopup="menu" aria-expanded="false"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6" />
@@ -364,6 +364,32 @@ whether or not it was created following the guide.
   point 6, list the third-party material.
 - End with the three improvements that would raise the score the most.
 
+## If the resource is mine
+
+- Do this only if the resource is mine and you can modify its files. If you
+  do not know whether it is mine, ask me when you finish the report. If it
+  belongs to someone else or you cannot modify its files, do not mention it.
+- Offer me these two things and do only the ones I approve:
+  - If the project has its own folder, such as a repository, save the full
+    report in a file called evaluacion-vcer.md, which replaces the one from
+    a previous evaluation.
+  - Add to the footer of the material, in its language, a mention with the
+    result, such as «VCER evaluation of version 1.2: Recommended (85 %),
+    October 2026», linked to an address like this one:
+    https://vibe-coding-educativo.github.io/vibe-responsable/vcer/?r=recomendable&amp;p=85&amp;f=2026-10&amp;v=1.2&amp;t=Equivalent%20fractions&amp;u=https%3A%2F%2Fejemplo.github.io%2Ffracciones%2F
+- In the link, r is the result (recomendable, mejorable or no-recomendable,
+  always written this way); p, the percentage; f, the year and month of the
+  evaluation; v, the version evaluated; t, the title of the resource, the
+  same one that appears in its footer, and u, its address. Encode t and u as
+  is done in a web address.
+- If the resource has no version number, remove «of version 1.2» from the
+  mention and v from the link. If it is not published on the web, remove u
+  from the link.
+- The percentage is optional: offer me the mention with it and without it.
+  Without the percentage, remove «(85 %)» from the mention and p from the
+  link.
+- If there is already a mention, update it with the new result.
+
 ## If I then ask you to fix it
 
 - Before changing anything, tell me what you would change and wait for me
@@ -389,7 +415,7 @@ whether or not it was created following the guide.
 </main>
 <footer class="pie">
 <div class="ancho">
-<p>© 2026 <a href="https://bilateria.org" target="_blank" rel="noopener">Juan José de Haro</a>. Content under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" rel="noopener">CC BY-SA 4.0</a>. <a href="creditos.html">Credits and licences</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/releases/tag/v1.1" target="_blank" rel="noopener">Version 1.1</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues" target="_blank" rel="noopener">Suggestions and corrections</a>.</p>
+<p>© 2026 <a href="https://bilateria.org" target="_blank" rel="noopener">Juan José de Haro</a>. Content under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" rel="noopener">CC BY-SA 4.0</a>. <a href="creditos.html">Credits and licences</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/releases/tag/v2.0" target="_blank" rel="noopener">Version 2.0</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues" target="_blank" rel="noopener">Suggestions and corrections</a>.</p>
 </div>
 </footer>
 </body>

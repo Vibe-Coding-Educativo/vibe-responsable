@@ -429,6 +429,33 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   .familias { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 }
 
+/* La evaluación VCER: el resultado que trae el enlace de la mención (guia.js), los puntos de la
+   rúbrica con su capítulo y la fila de la tabla de resultados que corresponde al recurso. */
+.resultado-vcer { max-width: 46rem; margin: 0 0 1.4rem; padding: 1rem 1.3rem 0.9rem; background: var(--hoja); border: 1px solid var(--raya); border-left: 4px solid var(--verde); border-radius: 6px; box-shadow: var(--sombra); }
+.resultado-vcer h2 { margin: 0 0 0.5rem; font-size: 1.15rem; }
+.resultado-vcer p { margin: 0 0 0.7rem; }
+.resultado-vcer .rv-frase { overflow-wrap: anywhere; }
+.rv-resultado { font-size: 1.55rem; line-height: 1.2; color: var(--verde); }
+.rv-pct:not(:empty)::before { content: " · "; }
+.resultado-vcer[data-resultado="no-recomendable"] .rv-resultado { color: var(--tinta); }
+.rv-barra { position: relative; max-width: 24rem; height: 0.7rem; margin: 0 0 1.6rem; background: var(--marca); border: 1px solid var(--raya); border-radius: 4px; }
+.rv-relleno { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--verde); border-radius: 3px 0 0 3px; }
+.rv-umbral { position: absolute; left: 70%; top: -0.25rem; bottom: -0.25rem; border-left: 2px solid var(--tinta); }
+.rv-umbral::after { content: "70 %"; position: absolute; top: 100%; left: 0; transform: translateX(-50%); margin-top: 0.1rem; font-size: 0.75rem; color: var(--tinta-suave); white-space: nowrap; }
+:lang(eu) .rv-umbral::after { content: "% 70"; }
+.rv-nota { font-size: 0.9rem; color: var(--tinta-suave); }
+.resultado-vcer > :last-child { margin-bottom: 0; }
+.puntos-vcer { list-style: none; margin: 0.4rem 0 0.6rem; padding: 0; display: grid; gap: 0.2rem 2.4rem; }
+.puntos-vcer li { display: flex; flex-direction: column; border-top: 2px solid var(--verde); padding: 0.45rem 0 0.55rem; break-inside: avoid; }
+.pv-nombre { font-weight: 700; }
+.pv-nombre .rub-n { color: var(--verde); }
+.pv-nombre small { font-weight: 400; color: var(--tinta-suave); }
+.texto:has(.puntos-vcer) { columns: auto; }
+.resultados-vcer tr.actual > * { background: var(--marca); }
+.resultados-vcer tr.actual > :first-child { box-shadow: inset 4px 0 0 var(--verde); }
+.salidas-vcer { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.4rem 0 0; padding-top: 1rem; border-top: 1px solid var(--raya); }
+@media (min-width: 48rem) { .puntos-vcer { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+
 .pie { margin-top: 1.4rem; border-top: 1px solid var(--raya); padding: 0.8rem 0 1rem; font-size: 0.82rem; color: var(--tinta-suave); }
 .pie p { margin: 0 0 0.15rem; }
 .pie a { color: inherit; }
@@ -442,7 +469,7 @@ button.discreto:hover, .boton.discreto:hover, .paso:hover { background: transpar
   html { font-size: 10.5pt; }
   .pizarra { background: none; color: #000; border-bottom: 2px solid #000; position: static; transform: none; }
   /* En papel no hay navegación: ni el menú, ni volver, continuar, anterior o siguiente. */
-  .pizarra nav, .saltar, .migas, .entre-capitulos, .continuar, .copiable-cab, .detalle-pie, .visor, .utiles, .archivo-ia summary { display: none !important; }
+  .pizarra nav, .saltar, .migas, .entre-capitulos, .continuar, .salidas-vcer, .copiable-cab, .detalle-pie, .visor, .utiles, .archivo-ia summary { display: none !important; }
   .sitio a, .sitio .sitio-desc { color: #000; }
   .tablero, .panel { display: block; }
   .panel > *, .punto > .detalle { opacity: 1 !important; visibility: visible !important; transform: none !important; display: block !important; }

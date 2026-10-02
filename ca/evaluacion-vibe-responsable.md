@@ -145,6 +145,30 @@ creat o no seguint la guia.
   material aliè.
 - Acaba amb les tres millores que més pujarien la puntuació.
 
+## Si el recurs és meu
+
+- Fes això només si el recurs és meu i pots modificar-ne els fitxers. Si no
+  saps si és meu, pregunta-m'ho en acabar l'informe. Si és d'una altra
+  persona o no en pots modificar els fitxers, no ho mencionis.
+- Ofereix-me aquestes dues coses i fes només les que aprovi:
+  - Si el projecte té una carpeta pròpia, com ara un repositori, desar
+    l'informe complet en un fitxer anomenat evaluacion-vcer.md, que substitueix
+    el d'una avaluació anterior.
+  - Afegir al peu del material, en la seva llengua, una menció amb el
+    resultat, com ara «Avaluació VCER de la versió 1.2: Recomanable (85 %),
+    octubre de 2026», enllaçada a una adreça com aquesta:
+    https://vibe-coding-educativo.github.io/vibe-responsable/vcer/?r=recomendable&p=85&f=2026-10&v=1.2&t=Fraccions%20equivalents&u=https%3A%2F%2Fejemplo.github.io%2Ffracciones%2F
+- A l'enllaç, r és el resultat (recomendable, mejorable o no-recomendable,
+  sempre en aquesta forma); p, el percentatge; f, l'any i el mes de
+  l'avaluació; v, la versió avaluada; t, el títol del recurs, el mateix que
+  figura al peu, i u, la seva adreça. Codifica t i u com es fa en una adreça
+  web.
+- Si el recurs no té número de versió, treu «de la versió 1.2» de la menció
+  i v de l'enllaç. Si no està publicat al web, treu u de l'enllaç.
+- El percentatge és opcional: ofereix-me la menció amb ell i sense. Sense
+  percentatge, treu «(85 %)» de la menció i p de l'enllaç.
+- Si ja hi ha una menció, actualitza-la amb el resultat nou.
+
 ## Si després et demano corregir-lo
 
 - Abans de canviar res, digues-me què canviaries i espera que ho aprovi. No

@@ -20,9 +20,9 @@
 <link rel="icon" href="../recursos/logo/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="../recursos/logo/apple-touch-icon.png">
 <link rel="preload" href="../recursos/fuentes/atkinson-hyperlegible-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../recursos/estilos.css?v=bd8f57c8a2">
+<link rel="stylesheet" href="../recursos/estilos.css?v=281b1f5494">
 <script>(function(){try{var t=localStorage.getItem("vibe-responsable:tema");if(t!=="light"&&t!=="dark"){t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.dataset.theme=t;}catch(e){}})();</script>
-<script src="../recursos/guia.js?v=511747d9bd" defer></script>
+<script src="../recursos/guia.js?v=ab88be8747" defer></script>
 </head>
 <body class="pagina-texto">
 <a class="saltar" href="#contenido">Saltar ao contido</a>
@@ -31,7 +31,7 @@
 <div class="sitio"><a class="sitio-guia" href="./"><img class="marca" src="../recursos/logo/logo.svg" alt="" width="30" height="30"><span>Vibe coding responsable</span></a>
 <span class="sitio-desc">Guía para publicar materiais educativos creados con vibe coding</span>
 </div>
-<nav aria-label="Seccións da guía"><ul><li><a href="./">Presentación</a></li><li><a href="guia.html">Guía</a></li><li><a href="herramientas.html">Ferramentas e niveis</a></li><li><a href="para-la-ia.html" aria-current="page">Instrucións para a IA</a></li><li><a href="referencias.html">Referencias</a></li><li><a href="creditos.html">Créditos</a></li></ul></nav>
+<nav aria-label="Seccións da guía"><ul><li><a href="./">Presentación</a></li><li><a href="guia.html">Guía</a></li><li><a href="herramientas.html">Ferramentas e niveis</a></li><li><a href="para-la-ia.html" aria-current="page">Instrucións para a IA</a></li><li><a href="vcer.html">Avaliación VCER</a></li><li><a href="referencias.html">Referencias</a></li><li><a href="creditos.html">Créditos</a></li></ul></nav>
 <div class="utiles">
 <div class="desplegable">
 <button type="button" class="idiomas" title="Idioma" aria-label="Idioma" aria-haspopup="menu" aria-expanded="false"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6" />
@@ -319,6 +319,29 @@ non seguindo a guía.
   ordenador sen internet. Na do 6, enumera o material alleo.
 - Remata coas tres melloras que máis subirían a puntuación.
 
+## Se o recurso é meu
+
+- Fai isto só se o recurso é meu e podes modificar os seus ficheiros. Se non
+  sabes se é meu, pregúntamo ao rematar o informe. Se é doutra persoa ou non
+  podes modificar os seus ficheiros, non o menciones.
+- Ofréceme estas dúas cousas e fai só as que aprobe:
+  - Se o proxecto ten un cartafol propio, como un repositorio, gardar o
+    informe completo nun ficheiro chamado evaluacion-vcer.md, que substitúe o
+    dunha avaliación anterior.
+  - Engadir ao pé do material, no seu idioma, unha mención co resultado,
+    como «Avaliación VCER da versión 1.2: Recomendable (85 %), outubro de
+    2026», ligada a un enderezo coma este:
+    https://vibe-coding-educativo.github.io/vibe-responsable/vcer/?r=recomendable&amp;p=85&amp;f=2026-10&amp;v=1.2&amp;t=Fracci%C3%B3ns%20equivalentes&amp;u=https%3A%2F%2Fejemplo.github.io%2Ffracciones%2F
+- Na ligazón, r é o resultado (recomendable, mejorable ou no-recomendable,
+  sempre nesta forma); p, a porcentaxe; f, o ano e o mes da avaliación; v,
+  a versión avaliada; t, o título do recurso, o mesmo que figura no seu pé,
+  e u, o seu enderezo. Codifica t e u como se fai nun enderezo web.
+- Se o recurso non ten número de versión, quita «da versión 1.2» da mención
+  e v da ligazón. Se non está publicado na web, quita u da ligazón.
+- A porcentaxe é opcional: ofréceme a mención con ela e sen ela. Sen
+  porcentaxe, quita «(85 %)» da mención e p da ligazón.
+- Se xa hai unha mención, actualízaa co resultado novo.
+
 ## Se despois che pido corrixilo
 
 - Antes de cambiar nada, dime que cambiarías e agarda a que o aprobe. Non
@@ -330,42 +353,11 @@ non seguindo a guía.
 <p>A IA puntúa cada recomendación coa rúbrica VCER, dá unha porcentaxe final e propón as tres melloras que máis subirían a puntuación. Se despois se lle pide corrixilo, primeiro propón os cambios e agarda a que se aproben; antes convén gardar unha copia. A puntuación orienta, pero non substitúe a revisión da persoa, sobre todo na corrección do contido, onde a IA só detecta os erros que ve.</p>
 <p>Esta é a rúbrica VCER, a que utiliza o ficheiro de avaliación anterior:</p>
 <div class="rubrica"><table><caption>Rúbrica VCER: 2, cúmprese; 1, en parte; 0, non se cumpre</caption><thead><tr><th scope="col">Recomendación</th><th scope="col">2</th><th scope="col">1</th><th scope="col">0</th></tr></thead><tbody><tr><th scope="row"><span class="rub-n">1</span> Contido <small>(eliminatorio)</small></th><td data-nota="2">Non se detectan erros no que ensina: os datos, as definicións e as respostas que se dan por correctas.</td><td data-nota="1">Hai algunha imprecisión menor no que ensina.</td><td data-nota="0">Hai erros evidentes en conceptos, datos ou respostas.</td></tr><tr><th scope="row"><span class="rub-n">2</span> Datos persoais <small>(eliminatorio)</small></th><td data-nota="2">Non pide datos que identifiquen a ninguén, ou gárdaos só no dispositivo e permite exportar sen nomes; ou envíaos unicamente a un servizo do centro, sen claves visibles no código e de forma que só o docente ou o centro poidan lelos. Non leva analítica.</td><td data-nota="1">Non envía datos do alumnado a servizos alleos, pero garda nomes sen opción de exportar sen eles, ou o envío ao servizo do centro non está ben protexido (claves no código, un enderezo que permite ler o recollido).</td><td data-nota="0">Envía datos do alumnado a un servidor alleo ao centro, ou leva analítica ou seguimento.</td></tr><tr><th scope="row"><span class="rub-n">3</span> Entender que fai</th><td data-nota="2">Pode describirse brevemente que fai, que garda e con que se comunica, e o que declara o material coincide co código.</td><td data-nota="1">Enténdese o seu funcionamento, pero hai partes de propósito pouco claro ou non explica que garda.</td><td data-nota="0">Hai funcións ou comunicacións cuxo propósito non se pode explicar, ou o que declara non coincide co código.</td></tr><tr><th scope="row"><span class="rub-n">4</span> Dependencias</th><td data-nota="2">O que carga ou incrusta de fóra procede de servizos coñecidos e está anotado, e os textos, as imaxes e os datos propios están dentro do material.</td><td data-nota="1">Carga ou incrusta recursos externos sen anotalos, ou parte do contido propio (un vídeo, un audio, un mapa) só está noutra plataforma.</td><td data-nota="0">O contido principal depende dun servizo externo, ou carga código de enderezos descoñecidos.</td></tr><tr><th scope="row"><span class="rub-n">5</span> Accesibilidade</th><td data-nota="2">Manéxase enteiro co teclado, os controis teñen etiqueta, as imaxes texto alternativo, o contraste é suficiente, non depende da cor e adáptase a unha pantalla estreita.</td><td data-nota="1">Falla nun ou dous deses aspectos, sen impedir o seu uso.</td><td data-nota="0">Falla en tres ou máis, ou non se pode usar co teclado.</td></tr><tr><th scope="row"><span class="rub-n">6</span> Material alleo</th><td data-nota="2">Cada elemento alleo indica autoría, procedencia e licenza, e a licenza permite reutilizalo; ou non hai material alleo.</td><td data-nota="1">Hai material alleo con licenza válida, pero sen acreditar de todo.</td><td data-nota="0">Hai material alleo sen licenza que permita reutilizalo ou sen ningunha atribución.</td></tr><tr><th scope="row"><span class="rub-n">7</span> Rastro</th><td data-nota="2">Hai un rexistro ou unha nota coas decisións importantes e o seu motivo.</td><td data-nota="1">Hai documentación que explica como está feito, pero non por que.</td><td data-nota="0">Non hai nada.</td></tr><tr><th scope="row"><span class="rub-n">8</span> Uso de IA</th><td data-nota="2">Indica que se fixo con IA e que comprobou a persoa.</td><td data-nota="1">Indica que se fixo con IA, sen dicir que se comprobou.</td><td data-nota="0">Non o indica. Se consta que non se usou IA, non se puntúa.</td></tr><tr><th scope="row"><span class="rub-n">9</span> Licenza</th><td data-nota="2">Autoría e licenza libre visibles no material, con ligazón. Se é un proxecto de varios ficheiros, inclúe o ficheiro de licenza.</td><td data-nota="1">Falta a autoría ou a licenza, a licenza non é libre (NC ou ND) ou non enlaza co seu texto.</td><td data-nota="0">Non indica nin autoría nin licenza.</td></tr><tr><th scope="row"><span class="rub-n">10</span> Reutilización</th><td data-nota="2">O código pode obterse completo, enténdese ao lelo, con comentarios onde fan falta, e hai indicacións para modificalo.</td><td data-nota="1">Pode obterse, pero é difícil de entender sen comentarios, está en parte comprimido ou non ten indicacións.</td><td data-nota="0">Non pode obterse, ou está ofuscado ou comprimido.</td></tr></tbody></table></div>
-<p>A porcentaxe final é a suma das puntuacións dividida entre o máximo posible dos puntos que a IA puido comprobar. Con ela e cos puntos esenciais obtense un destes tres resultados:</p>
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr>
-<th>Resultado</th>
-<th>Cando se dá</th>
-<th>Que significa</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Recomendable</strong></td>
-<td>70 % ou máis, co contido e os datos persoais puntuados e sen un 0 en ningún deles nin na accesibilidade</td>
-<td>O recurso cumpre o esencial da guía e pode utilizarse ou publicarse. As melloras propostas complétano.</td>
-</tr>
-<tr>
-<td><strong>Mellorable</strong></td>
-<td>Menos do 70 %, ou cando non se puido comprobar o contido ou os datos persoais, ou a accesibilidade ten un 0</td>
-<td>O recurso ten fallos que convén corrixir antes de publicalo ou de recomendalo, aínda que ningún o descarta. O informe indica cales son e que falta por comprobar.</td>
-</tr>
-<tr>
-<td><strong>Non recomendable</strong></td>
-<td>Un 0 no contido ou nos datos persoais, sexa cal sexa a porcentaxe</td>
-<td>O recurso ten erros evidentes no que ensina ou envía datos do alumnado a servizos alleos ao centro. Non convén utilizalo co alumnado nin publicalo ata corrixilo.</td>
-</tr>
-</tbody>
-</table></div></section>
+<p>O cálculo da porcentaxe e o significado de cada resultado explícanse na páxina <a href="vcer.html">A avaliación VCER</a>. Se o recurso é propio, a IA ofrece ademais gardar o informe no proxecto e engadir ao pé do material unha mención co resultado, ligada a esa páxina.</p></div></section>
 </main>
 <footer class="pie">
 <div class="ancho">
-<p>© 2026 <a href="https://bilateria.org" target="_blank" rel="noopener">Juan José de Haro</a>. Contidos baixo licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.gl" target="_blank" rel="noopener">CC BY-SA 4.0</a>. <a href="creditos.html">Créditos e licenzas</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/releases/tag/v1.1" target="_blank" rel="noopener">Versión 1.1</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues" target="_blank" rel="noopener">Suxestións e correccións</a>.</p>
+<p>© 2026 <a href="https://bilateria.org" target="_blank" rel="noopener">Juan José de Haro</a>. Contidos baixo licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.gl" target="_blank" rel="noopener">CC BY-SA 4.0</a>. <a href="creditos.html">Créditos e licenzas</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/releases/tag/v2.0" target="_blank" rel="noopener">Versión 2.0</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues" target="_blank" rel="noopener">Suxestións e correccións</a>.</p>
 </div>
 </footer>
 </body>

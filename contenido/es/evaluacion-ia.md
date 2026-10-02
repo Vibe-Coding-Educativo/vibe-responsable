@@ -142,6 +142,31 @@ creado o no siguiendo la guía.
   ajeno.
 - Termina con las tres mejoras que más subirían la puntuación.
 
+## Si el recurso es mío
+
+- Haz esto solo si el recurso es mío y puedes modificar sus archivos. Si no
+  sabes si es mío, pregúntamelo al terminar el informe. Si es de otra persona
+  o no puedes modificar sus archivos, no lo menciones.
+- Ofréceme estas dos cosas y haz solo las que apruebe:
+  - Si el proyecto tiene una carpeta propia, como un repositorio, guardar el
+    informe completo en un archivo llamado evaluacion-vcer.md, que sustituye
+    al de una evaluación anterior.
+  - Añadir al pie del material, en su idioma, una mención con el resultado,
+    como «Evaluación VCER de la versión 1.2: Recomendable (85 %), octubre de
+    2026», enlazada a una dirección como esta:
+    https://vibe-coding-educativo.github.io/vibe-responsable/vcer/?r=recomendable&p=85&f=2026-10&v=1.2&t=Fracciones%20equivalentes&u=https%3A%2F%2Fejemplo.github.io%2Ffracciones%2F
+- En el enlace, r es el resultado (recomendable, mejorable o
+  no-recomendable); p, el porcentaje; f, el año y el mes de la evaluación;
+  v, la versión evaluada; t, el título del recurso, el mismo que figura en
+  su pie, y u, su dirección. Codifica t y u como se hace en una dirección
+  web.
+- Si el recurso no tiene número de versión, quita «de la versión 1.2» de la
+  mención y v del enlace. Si no está publicado en la web, quita u del
+  enlace.
+- El porcentaje es opcional: ofréceme la mención con él y sin él. Sin
+  porcentaje, quita «(85 %)» de la mención y p del enlace.
+- Si ya hay una mención, actualízala con el resultado nuevo.
+
 ## Si después te pido corregirlo
 
 - Antes de cambiar nada, dime qué cambiarías y espera a que lo apruebe. No

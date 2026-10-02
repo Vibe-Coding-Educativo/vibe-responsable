@@ -20,9 +20,9 @@
 <link rel="icon" href="../recursos/logo/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="../recursos/logo/apple-touch-icon.png">
 <link rel="preload" href="../recursos/fuentes/atkinson-hyperlegible-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../recursos/estilos.css?v=bd8f57c8a2">
+<link rel="stylesheet" href="../recursos/estilos.css?v=281b1f5494">
 <script>(function(){try{var t=localStorage.getItem("vibe-responsable:tema");if(t!=="light"&&t!=="dark"){t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.dataset.theme=t;}catch(e){}})();</script>
-<script src="../recursos/guia.js?v=511747d9bd" defer></script>
+<script src="../recursos/guia.js?v=ab88be8747" defer></script>
 </head>
 <body class="pagina-texto">
 <a class="saltar" href="#contenido">Salta al contingut</a>
@@ -31,7 +31,7 @@
 <div class="sitio"><a class="sitio-guia" href="./"><img class="marca" src="../recursos/logo/logo.svg" alt="" width="30" height="30"><span>Vibe coding responsable</span></a>
 <span class="sitio-desc">Guia per publicar materials educatius creats amb vibe coding</span>
 </div>
-<nav aria-label="Seccions de la guia"><ul><li><a href="./">Presentació</a></li><li><a href="guia.html">Guia</a></li><li><a href="herramientas.html">Eines i nivells</a></li><li><a href="para-la-ia.html" aria-current="page">Instruccions per a la IA</a></li><li><a href="referencias.html">Referències</a></li><li><a href="creditos.html">Crèdits</a></li></ul></nav>
+<nav aria-label="Seccions de la guia"><ul><li><a href="./">Presentació</a></li><li><a href="guia.html">Guia</a></li><li><a href="herramientas.html">Eines i nivells</a></li><li><a href="para-la-ia.html" aria-current="page">Instruccions per a la IA</a></li><li><a href="vcer.html">Avaluació VCER</a></li><li><a href="referencias.html">Referències</a></li><li><a href="creditos.html">Crèdits</a></li></ul></nav>
 <div class="utiles">
 <div class="desplegable">
 <button type="button" class="idiomas" title="Llengua" aria-label="Llengua" aria-haspopup="menu" aria-expanded="false"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6" />
@@ -322,6 +322,30 @@ creat o no seguint la guia.
   material aliè.
 - Acaba amb les tres millores que més pujarien la puntuació.
 
+## Si el recurs és meu
+
+- Fes això només si el recurs és meu i pots modificar-ne els fitxers. Si no
+  saps si és meu, pregunta-m&#39;ho en acabar l&#39;informe. Si és d&#39;una altra
+  persona o no en pots modificar els fitxers, no ho mencionis.
+- Ofereix-me aquestes dues coses i fes només les que aprovi:
+  - Si el projecte té una carpeta pròpia, com ara un repositori, desar
+    l&#39;informe complet en un fitxer anomenat evaluacion-vcer.md, que substitueix
+    el d&#39;una avaluació anterior.
+  - Afegir al peu del material, en la seva llengua, una menció amb el
+    resultat, com ara «Avaluació VCER de la versió 1.2: Recomanable (85 %),
+    octubre de 2026», enllaçada a una adreça com aquesta:
+    https://vibe-coding-educativo.github.io/vibe-responsable/vcer/?r=recomendable&amp;p=85&amp;f=2026-10&amp;v=1.2&amp;t=Fraccions%20equivalents&amp;u=https%3A%2F%2Fejemplo.github.io%2Ffracciones%2F
+- A l&#39;enllaç, r és el resultat (recomendable, mejorable o no-recomendable,
+  sempre en aquesta forma); p, el percentatge; f, l&#39;any i el mes de
+  l&#39;avaluació; v, la versió avaluada; t, el títol del recurs, el mateix que
+  figura al peu, i u, la seva adreça. Codifica t i u com es fa en una adreça
+  web.
+- Si el recurs no té número de versió, treu «de la versió 1.2» de la menció
+  i v de l&#39;enllaç. Si no està publicat al web, treu u de l&#39;enllaç.
+- El percentatge és opcional: ofereix-me la menció amb ell i sense. Sense
+  percentatge, treu «(85 %)» de la menció i p de l&#39;enllaç.
+- Si ja hi ha una menció, actualitza-la amb el resultat nou.
+
 ## Si després et demano corregir-lo
 
 - Abans de canviar res, digues-me què canviaries i espera que ho aprovi. No
@@ -333,42 +357,11 @@ creat o no seguint la guia.
 <p>La IA puntua cada recomanació amb la rúbrica VCER, dona un percentatge final i proposa les tres millores que més pujarien la puntuació. Si després se li demana corregir-lo, primer proposa els canvis i espera que s’aprovin; abans convé desar-ne una còpia. La puntuació orienta, però no substitueix la revisió de la persona, sobretot en la correcció del contingut, on la IA només detecta els errors que veu.</p>
 <p>Aquesta és la rúbrica VCER, la que utilitza el fitxer d’avaluació anterior:</p>
 <div class="rubrica"><table><caption>Rúbrica VCER: 2, es compleix; 1, en part; 0, no es compleix</caption><thead><tr><th scope="col">Recomanació</th><th scope="col">2</th><th scope="col">1</th><th scope="col">0</th></tr></thead><tbody><tr><th scope="row"><span class="rub-n">1</span> Contingut <small>(eliminatori)</small></th><td data-nota="2">No es detecten errors en el que ensenya: les dades, les definicions i les respostes que es donen per correctes.</td><td data-nota="1">Hi ha alguna imprecisió menor en el que ensenya.</td><td data-nota="0">Hi ha errors evidents en conceptes, dades o respostes.</td></tr><tr><th scope="row"><span class="rub-n">2</span> Dades personals <small>(eliminatori)</small></th><td data-nota="2">No demana dades que identifiquin ningú, o les guarda només al dispositiu i permet exportar sense noms; o les envia únicament a un servei del centre, sense claus visibles al codi i de manera que només el docent o el centre les puguin llegir. No porta analítica.</td><td data-nota="1">No envia dades de l&#x27;alumnat a serveis aliens, però guarda noms sense opció d&#x27;exportar sense ells, o l&#x27;enviament al servei del centre no està ben protegit (claus al codi, una adreça que permet llegir el que s&#x27;ha recollit).</td><td data-nota="0">Envia dades de l&#x27;alumnat a un servidor aliè al centre, o porta analítica o seguiment.</td></tr><tr><th scope="row"><span class="rub-n">3</span> Entendre què fa</th><td data-nota="2">Es pot descriure breument què fa, què guarda i amb què es comunica, i el que declara el material coincideix amb el codi.</td><td data-nota="1">S&#x27;entén el seu funcionament, però hi ha parts de propòsit poc clar o no explica què guarda.</td><td data-nota="0">Hi ha funcions o comunicacions el propòsit de les quals no es pot explicar, o el que declara no coincideix amb el codi.</td></tr><tr><th scope="row"><span class="rub-n">4</span> Dependències</th><td data-nota="2">El que carrega o incrusta de fora procedeix de serveis coneguts i està anotat, i els textos, les imatges i les dades pròpies són dins del material.</td><td data-nota="1">Carrega o incrusta recursos externs sense anotar-los, o una part del contingut propi (un vídeo, un àudio, un mapa) només és en una altra plataforma.</td><td data-nota="0">El contingut principal depèn d&#x27;un servei extern, o carrega codi d&#x27;adreces desconegudes.</td></tr><tr><th scope="row"><span class="rub-n">5</span> Accessibilitat</th><td data-nota="2">Es fa servir sencer amb el teclat, els controls tenen etiqueta, les imatges text alternatiu, el contrast és suficient, no depèn del color i s&#x27;adapta a una pantalla estreta.</td><td data-nota="1">Falla en un o dos d&#x27;aquests aspectes, sense impedir-ne l&#x27;ús.</td><td data-nota="0">Falla en tres o més, o no es pot fer servir amb el teclat.</td></tr><tr><th scope="row"><span class="rub-n">6</span> Material aliè</th><td data-nota="2">Cada element aliè indica autoria, procedència i llicència, i la llicència en permet la reutilització; o no hi ha material aliè.</td><td data-nota="1">Hi ha material aliè amb llicència vàlida, però sense acreditar del tot.</td><td data-nota="0">Hi ha material aliè sense llicència que en permeti la reutilització o sense cap atribució.</td></tr><tr><th scope="row"><span class="rub-n">7</span> Rastre</th><td data-nota="2">Hi ha un registre o una nota amb les decisions importants i el seu motiu.</td><td data-nota="1">Hi ha documentació que explica com està fet, però no per què.</td><td data-nota="0">No hi ha res.</td></tr><tr><th scope="row"><span class="rub-n">8</span> Ús d&#x27;IA</th><td data-nota="2">Indica que s&#x27;ha fet amb IA i què ha comprovat la persona.</td><td data-nota="1">Indica que s&#x27;ha fet amb IA, sense dir què s&#x27;ha comprovat.</td><td data-nota="0">No ho indica. Si consta que no es va fer servir IA, no es puntua.</td></tr><tr><th scope="row"><span class="rub-n">9</span> Llicència</th><td data-nota="2">Autoria i llicència lliure visibles al material, amb enllaç. Si és un projecte de diversos fitxers, inclou el fitxer de llicència.</td><td data-nota="1">Falta l&#x27;autoria o la llicència, la llicència no és lliure (NC o ND) o no enllaça al seu text.</td><td data-nota="0">No indica ni autoria ni llicència.</td></tr><tr><th scope="row"><span class="rub-n">10</span> Reutilització</th><td data-nota="2">El codi es pot obtenir sencer, s&#x27;entén en llegir-lo, amb comentaris on calen, i hi ha indicacions per modificar-lo.</td><td data-nota="1">Es pot obtenir, però és difícil d&#x27;entendre sense comentaris, està en part comprimit o no té indicacions.</td><td data-nota="0">No es pot obtenir, o està ofuscat o comprimit.</td></tr></tbody></table></div>
-<p>El percentatge final és la suma de les puntuacions dividida pel màxim possible dels punts que la IA ha pogut comprovar. Amb aquest percentatge i amb els punts essencials s’obté un d’aquests tres resultats:</p>
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr>
-<th>Resultat</th>
-<th>Quan es dona</th>
-<th>Què significa</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Recomanable</strong></td>
-<td>70 % o més, amb el contingut i les dades personals puntuats i sense un 0 en cap d’ells ni en l’accessibilitat</td>
-<td>El recurs compleix l’essencial de la guia i es pot utilitzar o publicar. Les millores proposades el completen.</td>
-</tr>
-<tr>
-<td><strong>Millorable</strong></td>
-<td>Menys del 70 %, o quan no s’ha pogut comprovar el contingut o les dades personals, o l’accessibilitat té un 0</td>
-<td>El recurs té errors que convé corregir abans de publicar-lo o de recomanar-lo, encara que cap no el descarta. L’informe indica quins són i què falta per comprovar.</td>
-</tr>
-<tr>
-<td><strong>No recomanable</strong></td>
-<td>Un 0 en el contingut o en les dades personals, sigui quin sigui el percentatge</td>
-<td>El recurs té errors evidents en el que ensenya o envia dades de l’alumnat a serveis aliens al centre. No convé utilitzar-lo amb l’alumnat ni publicar-lo fins a corregir-lo.</td>
-</tr>
-</tbody>
-</table></div></section>
+<p>El càlcul del percentatge i el significat de cada resultat s’expliquen a la pàgina <a href="vcer.html">L’avaluació VCER</a>. Si el recurs és propi, la IA ofereix a més desar l’informe al projecte i afegir al peu del material una menció amb el resultat, enllaçada a aquesta pàgina.</p></div></section>
 </main>
 <footer class="pie">
 <div class="ancho">
-<p>© 2026 <a href="https://bilateria.org" target="_blank" rel="noopener">Juan José de Haro</a>. Continguts amb llicència <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ca" target="_blank" rel="noopener">CC BY-SA 4.0</a>. <a href="creditos.html">Crèdits i llicències</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/releases/tag/v1.1" target="_blank" rel="noopener">Versió 1.1</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues" target="_blank" rel="noopener">Suggeriments i correccions</a>.</p>
+<p>© 2026 <a href="https://bilateria.org" target="_blank" rel="noopener">Juan José de Haro</a>. Continguts amb llicència <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ca" target="_blank" rel="noopener">CC BY-SA 4.0</a>. <a href="creditos.html">Crèdits i llicències</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/releases/tag/v2.0" target="_blank" rel="noopener">Versió 2.0</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues" target="_blank" rel="noopener">Suggeriments i correccions</a>.</p>
 </div>
 </footer>
 </body>

@@ -50,11 +50,15 @@ de los archivos de `contenido/<idioma>/` y el del menú:
 3. **Herramientas y niveles** (`02-herramientas.md`).
 4. **Instrucciones para la IA** (`04-para-la-ia.md`): cómo usar el archivo de instrucciones para la IA, que se muestra entero y se descarga (ADR 10).
 
-5. **Referencias** (`05-referencias.md`): todo lo que el texto cita, con una
+5. **Evaluación VCER** (`06-evaluacion-vcer.md`, `vcer.html`): qué es la
+   evaluación y cómo leer su resultado; es también el destino del enlace con el
+   resultado que muestra un recurso evaluado (ADR 21, 02-10-2026).
+
+6. **Referencias** (`05-referencias.md`): todo lo que el texto cita, con una
    comprobación en `construir.py` de que no falta ni sobra ninguna. Es material
    de apoyo y por eso va al final del menú.
 
-6. **Créditos** (`03-creditos.md`, «Créditos y licencias»): licencias,
+7. **Créditos** (`03-creditos.md`, «Créditos y licencias»): licencias,
    declaración de uso de IA, forma de citar, materiales ajenos y
    agradecimientos. Estaba fuera del menú, enlazada solo desde el pie; se añadió
    el 01-10-2026 porque Juanjo buscó la forma de citar en «Referencias» y no la

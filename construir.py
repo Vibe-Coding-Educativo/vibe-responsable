@@ -14,6 +14,9 @@ Páginas por idioma, en el orden en que se leen:
   herramientas.html   familias de herramientas y los dos niveles (02-herramientas.md)
   para-la-ia.html     cómo usar los archivos para la IA, uno para crear y otro para evaluar
                       (04-para-la-ia.md); se muestran en la página y se publican aparte
+  vcer.html           qué es la evaluación VCER y cómo leer su resultado (06-evaluacion-vcer.md);
+                      arriba muestra el resultado que trae el enlace de la mención, que llega
+                      a través de vcer/index.html (ADR 21)
   referencias.html    todo lo citado en el texto (05-referencias.md)
   creditos.html       créditos y licencias, enlazada desde el pie (03-creditos.md)
 
@@ -21,7 +24,7 @@ Los capítulos que desarrollan cada recomendación están en contenido/<idioma>/
 y se publican como capitulo-N.html. Se enlazan desde su recomendación en la guía; los
 que aún no están escritos no muestran enlace.
 """
-import hashlib, html, re, subprocess, sys, unicodedata
+import hashlib, html, json, re, subprocess, sys, unicodedata
 from datetime import date
 from pathlib import Path
 
@@ -34,9 +37,9 @@ URL_SITIO = "https://vibe-coding-educativo.github.io/vibe-responsable/"
 REPO = "https://github.com/Vibe-Coding-Educativo/vibe-responsable"
 # La versión publicada de la guía (ADR 19). Cambia con el texto, no con los ajustes de la web;
 # cada una lleva su etiqueta en el repositorio (v1.0) y su depósito en Zenodo, con su DOI.
-VERSION = "1.1"
+VERSION = "2.0"
 FECHA_VERSION = date(2026, 10, 2)
-DOI = "10.5281/zenodo.23097280"            # el de esta versión
+DOI = "10.5281/zenodo.23105801"            # el de esta versión
 DOI_CONCEPTO = "10.5281/zenodo.23081517"   # el de todas las versiones: lleva siempre a la última
 NOTAS_VERSION = f"{REPO}/releases/tag/v{VERSION}"
 CLAVE_TEMA = "vibe-responsable:tema"   # única entrada en localStorage; la misma en recursos/guia.js
@@ -65,7 +68,7 @@ UI = {
         "nav": "Secciones de la guía",
         "nav_capitulos": "Capítulo anterior y siguiente",
         # rótulos del menú más cortos que el título de su página
-        "nav_cortos": {"guia.html": "Guía", "referencias.html": "Referencias", "creditos.html": "Créditos"},
+        "nav_cortos": {"guia.html": "Guía", "vcer.html": "Evaluación VCER", "referencias.html": "Referencias", "creditos.html": "Créditos"},
         "imprimir": "Imprimir esta página",
         "imprimir_desc": "Solo lo que se ve en esta página",
         "imprimir_menu": "Imprimir o descargar",
@@ -131,7 +134,7 @@ UI = {
         "saltar": "Salta al contingut",
         "nav": "Seccions de la guia",
         "nav_capitulos": "Capítol anterior i següent",
-        "nav_cortos": {"guia.html": "Guia", "referencias.html": "Referències", "creditos.html": "Crèdits"},
+        "nav_cortos": {"guia.html": "Guia", "vcer.html": "Avaluació VCER", "referencias.html": "Referències", "creditos.html": "Crèdits"},
         "imprimir": "Imprimir aquesta pàgina",
         "imprimir_desc": "Només el que es veu en aquesta pàgina",
         "imprimir_menu": "Imprimir o descarregar",
@@ -193,7 +196,7 @@ UI = {
         "saltar": "Saltar ao contido",
         "nav": "Seccións da guía",
         "nav_capitulos": "Capítulo anterior e seguinte",
-        "nav_cortos": {"guia.html": "Guía", "referencias.html": "Referencias", "creditos.html": "Créditos"},
+        "nav_cortos": {"guia.html": "Guía", "vcer.html": "Avaliación VCER", "referencias.html": "Referencias", "creditos.html": "Créditos"},
         "imprimir": "Imprimir esta páxina",
         "imprimir_desc": "Só o que se ve nesta páxina",
         "imprimir_menu": "Imprimir ou descargar",
@@ -255,7 +258,7 @@ UI = {
         "saltar": "Joan edukira",
         "nav": "Gidaren atalak",
         "nav_capitulos": "Aurreko eta hurrengo kapitulua",
-        "nav_cortos": {"guia.html": "Gida", "referencias.html": "Erreferentziak", "creditos.html": "Kredituak"},
+        "nav_cortos": {"guia.html": "Gida", "vcer.html": "VCER ebaluazioa", "referencias.html": "Erreferentziak", "creditos.html": "Kredituak"},
         "imprimir": "Orri hau inprimatu",
         "imprimir_desc": "Orri honetan ikusten dena bakarrik",
         "imprimir_menu": "Inprimatu edo deskargatu",
@@ -318,7 +321,7 @@ UI = {
         "saltar": "Skip to content",
         "nav": "Sections of the guide",
         "nav_capitulos": "Previous and next chapter",
-        "nav_cortos": {"guia.html": "Guide", "referencias.html": "References", "creditos.html": "Credits"},
+        "nav_cortos": {"guia.html": "Guide", "vcer.html": "VCER evaluation", "referencias.html": "References", "creditos.html": "Credits"},
         "imprimir": "Print this page",
         "imprimir_desc": "Only what is shown on this page",
         "imprimir_menu": "Print or download",
@@ -375,6 +378,53 @@ UI = {
         "pie_2": f'<a href="creditos.html">Credits and licences</a>. <a href="{NOTAS_VERSION}">Version {VERSION}</a>. <a href="https://github.com/Vibe-Coding-Educativo/vibe-responsable/issues">Suggestions and corrections</a>.',
     },
 }
+# La página de la evaluación VCER (ADR 21) muestra arriba el resultado que trae el enlace de la mención
+# (?r=…&p=…&f=…&v=…&t=…&u=…). recursos/guia.js compone la frase con estas piezas: «recurso» lleva {t}
+# (título) y {v} (versión); «frase», {recurso}, {u} (la dirección, entre paréntesis) y {fecha}, que se
+# forma con «fecha» y el mes de «meses», ya con la preposición o el caso que pide cada idioma.
+VCER = {
+    "es": {"cab": "Evaluación VCER del recurso",
+           "recurso": {"t": "El recurso «{t}»", "tv": "La versión {v} del recurso «{t}»",
+                       "": "El recurso del que procede este enlace", "v": "La versión {v} del recurso del que procede este enlace"},
+           "frase": "{recurso}{u} se evaluó con la rúbrica VCER{fecha}. Este es el resultado que declara su autoría:",
+           "fecha": " en {mes} de {año}", "meses": MESES["es"], "pct": "{p} %",
+           "nota": "Se trata de una autoevaluación orientativa, que no ha comprobado nadie más, y el recurso puede haber cambiado desde entonces.",
+           "salidas": ("Evaluar un recurso", "Leer la guía")},
+    "ca": {"cab": "Avaluació VCER del recurs",
+           "recurso": {"t": "El recurs «{t}»", "tv": "La versió {v} del recurs «{t}»",
+                       "": "El recurs d'on prové aquest enllaç", "v": "La versió {v} del recurs d'on prové aquest enllaç"},
+           "frase": "{recurso}{u} es va avaluar amb la rúbrica VCER{fecha}. Aquest és el resultat que en declara l'autoria:",
+           "fecha": " {mes} de {año}", "meses": ["al gener", "al febrer", "al març", "a l'abril", "al maig", "al juny", "al juliol",
+                                                 "a l'agost", "al setembre", "a l'octubre", "al novembre", "al desembre"], "pct": "{p} %",
+           "nota": "Es tracta d'una autoavaluació orientativa, que ningú més no ha comprovat, i el recurs pot haver canviat des d'aleshores.",
+           "salidas": ("Avaluar un recurs", "Llegir la guia")},
+    "gl": {"cab": "Avaliación VCER do recurso",
+           "recurso": {"t": "O recurso «{t}»", "tv": "A versión {v} do recurso «{t}»",
+                       "": "O recurso do que procede esta ligazón", "v": "A versión {v} do recurso do que procede esta ligazón"},
+           "frase": "{recurso}{u} avaliouse coa rúbrica VCER{fecha}. Este é o resultado que declara a súa autoría:",
+           "fecha": " en {mes} de {año}", "meses": MESES["gl"], "pct": "{p} %",
+           "nota": "Trátase dunha autoavaliación orientativa, que ninguén máis comprobou, e o recurso pode ter cambiado desde entón.",
+           "salidas": ("Avaliar un recurso", "Ler a guía")},
+    "eu": {"cab": "Baliabidearen VCER ebaluazioa",
+           "recurso": {"t": "«{t}» baliabidea", "tv": "«{t}» baliabidearen {v} bertsioa",
+                       "": "Esteka honen jatorriko baliabidea", "v": "Esteka honen jatorriko baliabidearen {v} bertsioa"},
+           "frase": "{recurso}{u} VCER errubrikarekin ebaluatu zen{fecha}. Hau da egileek adierazten duten emaitza:",
+           "fecha": " {año}ko {mes}", "meses": ["urtarrilean", "otsailean", "martxoan", "apirilean", "maiatzean", "ekainean", "uztailean",
+                                                "abuztuan", "irailean", "urrian", "azaroan", "abenduan"], "pct": "% {p}",
+           "nota": "Autoebaluazio orientagarria da, beste inork egiaztatu ez duena, eta baliteke baliabidea ordutik aldatu izana.",
+           "salidas": ("Baliabide bat ebaluatu", "Gida irakurri")},
+    "en": {"cab": "VCER evaluation of the resource",
+           "recurso": {"t": "The resource «{t}»", "tv": "Version {v} of the resource «{t}»",
+                       "": "The resource this link comes from", "v": "Version {v} of the resource this link comes from"},
+           "frase": "{recurso}{u} was evaluated with the VCER rubric{fecha}. This is the result stated by its authors:",
+           "fecha": " in {mes} {año}", "meses": MESES["en"], "pct": "{p} %",
+           "nota": "This is an indicative self-assessment that nobody else has checked, and the resource may have changed since then.",
+           "salidas": ("Evaluate a resource", "Read the guide")},
+}
+# Los valores de r en el enlace, en el orden de las filas de la tabla de resultados de 06-evaluacion-vcer.md.
+# Son los mismos en todos los idiomas, porque el enlace no depende del idioma del recurso.
+RESULTADOS_VCER = ["recomendable", "mejorable", "no-recomendable"]
+
 # El vídeo de la animación que abre la portada (ADR 17) y su cartel, relativos a la carpeta del idioma.
 VIDEO = "../animacion/vibe-responsable-zoom.{idioma}.mp4"
 CARTEL_VIDEO = "../animacion/vibe-responsable-zoom.{idioma}.jpg"
@@ -389,7 +439,7 @@ def video(idioma):
 
 PAGINAS = [("index.html", "00-presentacion.md"), ("guia.html", "01-guia.md"),
            ("herramientas.html", "02-herramientas.md"), ("para-la-ia.html", "04-para-la-ia.md"),
-           ("referencias.html", "05-referencias.md")]
+           ("vcer.html", "06-evaluacion-vcer.md"), ("referencias.html", "05-referencias.md")]
 
 
 def version(ruta):
@@ -723,6 +773,34 @@ def tabla_rubrica(idioma):
             f'<tbody>{"".join(filas)}</tbody></table></div>')
 
 
+def puntos_vcer(idioma):
+    """Los puntos de la rúbrica, cada uno con el capítulo de su recomendación. Los nombres salen de la
+    tabla de la rúbrica, que a su vez sale del archivo de evaluación: una sola fuente para todo."""
+    caps = capitulos(idioma)
+    items = []
+    for fila in re.findall(r'<th scope="row">(.*?)</th>', tabla_rubrica(idioma)):
+        n = int(re.search(r'class="rub-n">(\d+)<', fila).group(1))
+        enlace = f'<a href="{caps[n][0]}">{html.escape(caps[n][1])}</a>' if n in caps else ""
+        items.append(f'<li><span class="pv-nombre">{fila}</span>{enlace}</li>')
+    return f'<ol class="puntos-vcer">{"".join(items)}</ol>'
+
+
+def resultado_vcer(idioma):
+    """El recuadro que muestra el resultado traído por el enlace de la mención. Va oculto: guia.js lo
+    rellena y lo muestra solo si el enlace trae un resultado válido. Sus textos viajan en un JSON."""
+    V = dict(VCER[idioma])
+    V.pop("salidas")
+    datos = json.dumps(V, ensure_ascii=False).replace("</", "<\\/")
+    return (f'<section class="resultado-vcer" aria-labelledby="h-resultado-vcer" hidden>'
+            f'<h2 id="h-resultado-vcer">{html.escape(VCER[idioma]["cab"])}</h2>'
+            f'<p class="rv-frase"></p>'
+            f'<p class="rv-resultado"><strong class="rv-nombre"></strong><span class="rv-pct"></span></p>'
+            f'<div class="rv-barra" aria-hidden="true"><span class="rv-relleno"></span><span class="rv-umbral"></span></div>'
+            f'<p class="rv-significado"></p>'
+            f'<p class="rv-nota"></p>'
+            f'<script type="application/json" class="rv-textos">{datos}</script></section>')
+
+
 def pagina_texto(idioma, archivo, fuente):
     T = UI[idioma]
     md = sin_notas((RAIZ / "contenido" / idioma / fuente).read_text(encoding="utf-8"))
@@ -732,7 +810,8 @@ def pagina_texto(idioma, archivo, fuente):
     for a in apartados:
         cab, resto = a.split("\n", 1)
         cab = cab.strip()
-        resto = resto.replace("<!-- rubrica -->", "ARCHIVO-IA-RUBRICA").replace("<!-- cita -->", "CITA-DE-LA-GUIA")
+        resto = (resto.replace("<!-- rubrica -->", "ARCHIVO-IA-RUBRICA").replace("<!-- cita -->", "CITA-DE-LA-GUIA")
+                 .replace("<!-- puntos -->", "PUNTOS-VCER"))
         for clave in ARCHIVOS_IA:
             resto = resto.replace(f"<!-- {clave} -->", f"ARCHIVO-IA-{clave}\n\n~~~~\n" + archivo_ia(idioma, clave) + "~~~~")
         h = pandoc(resto.strip())
@@ -743,6 +822,13 @@ def pagina_texto(idioma, archivo, fuente):
         # Un archivo para la IA lleva además su enlace de descarga, y su texto va plegado para no
         # ocupar la página; cualquier otro bloque lleva solo el botón de copiar
         h = h.replace("<p>ARCHIVO-IA-RUBRICA</p>", tabla_rubrica(idioma))
+        h = h.replace("<p>PUNTOS-VCER</p>", puntos_vcer(idioma))
+        if archivo == "vcer.html" and "<table>" in h:
+            # Cada fila de la tabla de resultados, con su valor de r, para resaltar la que trae el enlace
+            filas = iter(RESULTADOS_VCER)
+            cuerpo_tabla = h[h.index("<tbody>"):h.index("</tbody>")]
+            h = h.replace(cuerpo_tabla, re.sub(r"<tr(?: class=\"\w+\")?>", lambda m: f'<tr data-resultado="{next(filas)}">', cuerpo_tabla))
+            h = h.replace("<table>", '<table class="resultados-vcer">', 1)
         h = h.replace("<p>CITA-DE-LA-GUIA</p>", f'<p>{T["cita"]}</p>\n<p>{T["cita_nota"]}</p>')   # la misma que la portada del PDF
         h = re.sub(r"<p>ARCHIVO-IA-(\w+)</p>\s*<pre[^>]*>(.*?)</pre>",
                    lambda m: botones + f'<a class="descarga" href="{ARCHIVOS_IA[m.group(1)][1]}" download>'
@@ -756,6 +842,13 @@ def pagina_texto(idioma, archivo, fuente):
                          f'<h2 id="h-{ancla(cab)}">{html.escape(cab)}</h2>{cuerpo_apartado}</section>')
     cuerpo = f'<h1>{html.escape(titulo)}</h1>\n' + "\n".join(secciones)
     clase = "pagina-texto pagina-referencias" if archivo == "referencias.html" else "pagina-texto"
+    if archivo == "vcer.html":
+        # Arriba, el resultado que trae el enlace, si lo trae; al final, las salidas al resto de la guía
+        evaluar, leer = VCER[idioma]["salidas"]
+        salidas = (f'<p class="salidas-vcer"><a class="continuar" href="para-la-ia.html#{anclas_de(idioma, "04-para-la-ia.md")[2]}">'
+                   f'{html.escape(evaluar)}</a> <a class="continuar" href="guia.html">{html.escape(leer)}</a></p>')
+        cuerpo = cuerpo.replace("</h1>\n", "</h1>\n" + resultado_vcer(idioma) + "\n", 1) + salidas
+        clase += " pagina-vcer"
     return marco(idioma, archivo, titulo, cuerpo, clase)
 
 
@@ -841,7 +934,7 @@ def pagina_completa(idioma, paginas):
     titulos["referencias.html"] = titulo_de((RAIZ / "contenido" / idioma / "05-referencias.md").read_text(encoding="utf-8"))
     orden = [("index.html", titulos["index.html"]), ("guia.html", titulos["guia.html"])]
     orden += [(a, f"{T['capitulo'].format(n=n)}. {t}") for n, (a, t, _) in sorted(caps.items())]
-    orden += [(a, titulos[a]) for a in ("herramientas.html", "para-la-ia.html", "referencias.html", "creditos.html")]
+    orden += [(a, titulos[a]) for a in ("herramientas.html", "para-la-ia.html", "vcer.html", "referencias.html", "creditos.html")]
     partes, indice = [], []
     for archivo, titulo in orden:
         clave = archivo[:-5]
@@ -960,6 +1053,30 @@ var e=n.filter(function(x){{return d.indexOf(x)>-1;}})[0]||"es";location.replace
 """
 
 
+def entrada_vcer():
+    """vcer/index.html, la dirección del enlace de la mención (ADR 21). No lleva idioma, porque el
+    recurso evaluado puede estar en cualquiera: envía a la página del idioma del navegador, o a la
+    castellana, con los datos del enlace intactos."""
+    disponibles = ",".join(f'"{i}"' for i in IDIOMAS)
+    return f"""<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{html.escape(UI["es"]["nombre"])}</title>
+<link rel="icon" href="../recursos/logo/favicon.svg" type="image/svg+xml">
+<script>
+var d=[{disponibles}],n=(navigator.languages||[navigator.language||"es"]).map(function(x){{return x.slice(0,2);}});
+var e=n.filter(function(x){{return d.indexOf(x)>-1;}})[0]||"es";location.replace("../"+e+"/vcer.html"+location.search);
+</script>
+<meta http-equiv="refresh" content="0; url=../es/vcer.html">
+<link rel="canonical" href="{URL_SITIO}es/vcer.html">
+</head>
+<body><p><a href="../es/vcer.html">{html.escape(UI["es"]["nombre"])}</a></p></body>
+</html>
+"""
+
+
 def comprobar_referencias(idioma):
     """Cada enlace externo del texto debe estar en 05-referencias.md, y al revés.
 
@@ -1064,4 +1181,6 @@ if __name__ == "__main__":
                 print("   ya no se cita en el texto:", r)
             raise SystemExit(1)
     (RAIZ / "index.html").write_text(portada(), encoding="utf-8")
+    (RAIZ / "vcer").mkdir(exist_ok=True)
+    (RAIZ / "vcer" / "index.html").write_text(entrada_vcer(), encoding="utf-8")
     (RAIZ / ".nojekyll").write_text("", encoding="utf-8")

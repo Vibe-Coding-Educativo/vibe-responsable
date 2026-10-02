@@ -156,6 +156,30 @@ pertsona batena, gidari jarraituz sortua izan ala ez.
   materiala.
 - Amaitu puntuazioa gehien igoko luketen hiru hobekuntzekin.
 
+## Baliabidea nirea bada
+
+- Egin hau baliabidea nirea bada eta haren fitxategiak alda ditzakezun
+  kasuan bakarrik. Nirea den ez badakizu, galdetu txostena amaitzean. Beste
+  pertsona batena bada edo haren fitxategiak ezin badituzu aldatu, ez aipatu.
+- Eskaini bi gauza hauek, eta egin nik onartzen ditudanak bakarrik:
+  - Proiektuak bere karpeta badu, biltegi bat adibidez, txosten osoa
+    evaluacion-vcer.md izeneko fitxategi batean gorde, aurreko ebaluazio
+    batena ordezkatuz.
+  - Materialaren oinean, haren hizkuntzan, emaitzaren aipamen bat gehitu,
+    «1.2 bertsioaren VCER ebaluazioa: Gomendagarria (% 85), 2026ko urria»
+    bezalakoa, honelako helbide batera estekatuta:
+    https://vibe-coding-educativo.github.io/vibe-responsable/vcer/?r=recomendable&p=85&f=2026-10&v=1.2&t=Zatiki%20baliokideak&u=https%3A%2F%2Fejemplo.github.io%2Ffracciones%2F
+- Estekan, r emaitza da (recomendable, mejorable edo no-recomendable,
+  beti horrela idatzita); p, ehunekoa; f, ebaluazioaren urtea eta hilabetea;
+  v, ebaluatutako bertsioa; t, baliabidearen izenburua, oinean agertzen den
+  bera, eta u, haren helbidea. Kodetu t eta u web helbide batean egiten den
+  bezala.
+- Baliabideak bertsio-zenbakirik ez badu, kendu «1.2 bertsioaren» aipamenetik
+  eta v estekatik. Sarean argitaratuta ez badago, kendu u estekatik.
+- Ehunekoa aukerakoa da: eskaini aipamena harekin eta hura gabe. Ehunekorik
+  gabe, kendu «(% 85)» aipamenetik eta p estekatik.
+- Aipamen bat badago jada, eguneratu emaitza berriarekin.
+
 ## Gero zuzentzeko eskatzen badizut
 
 - Ezer aldatu aurretik, esan iezadazu zer aldatuko zenukeen eta itxaron nik

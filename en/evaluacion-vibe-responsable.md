@@ -150,6 +150,32 @@ whether or not it was created following the guide.
   point 6, list the third-party material.
 - End with the three improvements that would raise the score the most.
 
+## If the resource is mine
+
+- Do this only if the resource is mine and you can modify its files. If you
+  do not know whether it is mine, ask me when you finish the report. If it
+  belongs to someone else or you cannot modify its files, do not mention it.
+- Offer me these two things and do only the ones I approve:
+  - If the project has its own folder, such as a repository, save the full
+    report in a file called evaluacion-vcer.md, which replaces the one from
+    a previous evaluation.
+  - Add to the footer of the material, in its language, a mention with the
+    result, such as «VCER evaluation of version 1.2: Recommended (85 %),
+    October 2026», linked to an address like this one:
+    https://vibe-coding-educativo.github.io/vibe-responsable/vcer/?r=recomendable&p=85&f=2026-10&v=1.2&t=Equivalent%20fractions&u=https%3A%2F%2Fejemplo.github.io%2Ffracciones%2F
+- In the link, r is the result (recomendable, mejorable or no-recomendable,
+  always written this way); p, the percentage; f, the year and month of the
+  evaluation; v, the version evaluated; t, the title of the resource, the
+  same one that appears in its footer, and u, its address. Encode t and u as
+  is done in a web address.
+- If the resource has no version number, remove «of version 1.2» from the
+  mention and v from the link. If it is not published on the web, remove u
+  from the link.
+- The percentage is optional: offer me the mention with it and without it.
+  Without the percentage, remove «(85 %)» from the mention and p from the
+  link.
+- If there is already a mention, update it with the new result.
+
 ## If I then ask you to fix it
 
 - Before changing anything, tell me what you would change and wait for me

@@ -25,6 +25,7 @@ deshaga después de buena fe, ni siquiera nosotros dentro de un año.
 | [17](0017-la-portada-abre-en-video-una-animacion-de-zoom-infinito.md) | La portada abre en vídeo una segunda animación, un zoom infinito | propuesto |
 | [19](0019-cada-version-publicada-lleva-numero-etiqueta-y-doi.md) | Cada versión publicada lleva número, etiqueta y DOI | aceptado |
 | [20](0020-la-guia-se-publica-en-cinco-idiomas.md) | La guía se publica en cinco idiomas | aceptado |
+| [21](0021-el-resultado-vcer-se-enlaza-desde-el-recurso-evaluado.md) | El resultado VCER se enlaza desde el recurso evaluado a una página que lo explica | aceptado |
 
 Para añadir una, se copia [la plantilla](0000-plantilla.md) con el número
 siguiente y se anota aquí. Una decisión que deje de valer no se borra: se marca

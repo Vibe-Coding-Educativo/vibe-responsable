@@ -141,6 +141,29 @@ non seguindo a guía.
   ordenador sen internet. Na do 6, enumera o material alleo.
 - Remata coas tres melloras que máis subirían a puntuación.
 
+## Se o recurso é meu
+
+- Fai isto só se o recurso é meu e podes modificar os seus ficheiros. Se non
+  sabes se é meu, pregúntamo ao rematar o informe. Se é doutra persoa ou non
+  podes modificar os seus ficheiros, non o menciones.
+- Ofréceme estas dúas cousas e fai só as que aprobe:
+  - Se o proxecto ten un cartafol propio, como un repositorio, gardar o
+    informe completo nun ficheiro chamado evaluacion-vcer.md, que substitúe o
+    dunha avaliación anterior.
+  - Engadir ao pé do material, no seu idioma, unha mención co resultado,
+    como «Avaliación VCER da versión 1.2: Recomendable (85 %), outubro de
+    2026», ligada a un enderezo coma este:
+    https://vibe-coding-educativo.github.io/vibe-responsable/vcer/?r=recomendable&p=85&f=2026-10&v=1.2&t=Fracci%C3%B3ns%20equivalentes&u=https%3A%2F%2Fejemplo.github.io%2Ffracciones%2F
+- Na ligazón, r é o resultado (recomendable, mejorable ou no-recomendable,
+  sempre nesta forma); p, a porcentaxe; f, o ano e o mes da avaliación; v,
+  a versión avaliada; t, o título do recurso, o mesmo que figura no seu pé,
+  e u, o seu enderezo. Codifica t e u como se fai nun enderezo web.
+- Se o recurso non ten número de versión, quita «da versión 1.2» da mención
+  e v da ligazón. Se non está publicado na web, quita u da ligazón.
+- A porcentaxe é opcional: ofréceme a mención con ela e sen ela. Sen
+  porcentaxe, quita «(85 %)» da mención e p da ligazón.
+- Se xa hai unha mención, actualízaa co resultado novo.
+
 ## Se despois che pido corrixilo
 
 - Antes de cambiar nada, dime que cambiarías e agarda a que o aprobe. Non
