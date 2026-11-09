@@ -34,8 +34,11 @@ Esan ez badizut, galdetu:
   bakarrik eta eskaini izenik gabe esportatzeko edo inprimatzeko aukera. Programak ikasleen
   erantzunak biltzen baditu, erakutsi emaitza amaitzean edo utzi deskargatzen
   entregatzeko, eta identifikatu pertsona bakoitza kode batekin, izenaren
-  ordez. Ez bidali ezer inongo zerbitzarira, eta ez gehitu analitikarik ezta
-  bisita-kontagailurik ere.
+  ordez. Ez bidali ezer inongo zerbitzarira, eta ez gehitu analitikarik.
+  Bisita-kontagailu bat eskatzen badizut, nire zerbitzarian orrialde
+  bakoitzeko bisitak batu besterik ez dezala egin, irakurlea bereizten duen
+  ezer gorde gabe, ez haren IPa ez nondik datorren ere, eta webguneak azal
+  dezala.
 - Irisgarria, Web Edukiaren Irisgarritasun Jarraibideei (WCAG) jarraituz:
   teklatuarekin bakarrik erabiltzeko modukoa, tabulazio-ordena logikoarekin,
   kontroletan etiketekin, irudietan testu alternatiboekin, kontraste

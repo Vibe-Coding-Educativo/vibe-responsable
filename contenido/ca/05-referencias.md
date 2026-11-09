@@ -15,6 +15,7 @@
 ## Guies, informes i recomanacions
 
 - Agencia Española de Protección de Datos. (2018). *Guía para centros educativos*. <https://www.aepd.es/documento/guia-centros-educativos.pdf>
+- Agencia Española de Protección de Datos. (2024). *Uso de cookies para herramientas de medición de audiencia* (versió de gener de 2024). <https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf>
 - Creative Commons. (s. d.). Does my use violate the NonCommercial clause of the licenses? A *Frequently asked questions*. <https://creativecommons.org/faq/#does-my-use-violate-the-noncommercial-clause-of-the-licenses>
 - Creative Commons. (s. d.). If I derive or adapt material offered under a Creative Commons license, which CC license(s) can I use? A *Frequently asked questions*. <https://creativecommons.org/faq/#if-i-derive-or-adapt-material-offered-under-a-creative-commons-license-which-cc-license-s-can-i-use>
 - Creative Commons. (2013). *Understanding Free Cultural Works*. <https://creativecommons.org/public-domain/freeworks/>

@@ -48,13 +48,17 @@ creat o no seguint la guia.
    2: No demana dades que identifiquin ningú, o les guarda només al
       dispositiu i permet exportar sense noms; o les envia únicament a un
       servei del centre, sense claus visibles al codi i de manera que només
-      el docent o el centre les puguin llegir. No porta analítica.
+      el docent o el centre les puguin llegir. No porta analítica; com a
+      molt, un recompte de visites per pàgina, sumat, que fa qui publica al
+      seu propi servidor i explica al web, sense guardar res que distingeixi
+      qui llegeix, ni la seva IP ni d'on arriba.
    1: No envia dades de l'alumnat a serveis aliens, però guarda noms sense
       opció d'exportar sense ells, o l'enviament al servei del centre no
       està ben protegit (claus al codi, una adreça que permet llegir el que
       s'ha recollit).
    0: Envia dades de l'alumnat a un servidor aliè al centre, o porta
-      analítica o seguiment.
+      analítica o seguiment: un servei de tercers o un recompte que
+      distingeix qui llegeix, guarda la seva IP o la seva procedència.
    Si el recurs gestiona dades reals de l'alumnat, indica que convé la
    revisió d'una persona amb coneixements tècnics abans de fer-lo servir.
    El que es carrega o s'incrusta d'altres servidors (vídeos, àudios,

@@ -47,13 +47,17 @@ creado o no siguiendo la guía.
    2: No pide datos que identifiquen a nadie, o los guarda solo en el
       dispositivo y permite exportar sin nombres; o los envía únicamente a
       un servicio del centro, sin claves visibles en el código y de forma
-      que solo el docente o el centro puedan leerlos. No lleva analítica.
+      que solo el docente o el centro puedan leerlos. No lleva analítica;
+      como mucho, un recuento de visitas por página, sumado, que hace quien
+      publica en su propio servidor y explica en la web, sin guardar nada
+      que distinga a quien lee, ni su IP ni de dónde llega.
    1: No envía datos del alumnado a servicios ajenos, pero guarda nombres
       sin opción de exportar sin ellos, o el envío al servicio del centro no
       está bien protegido (claves en el código, una dirección que permite
       leer lo recogido).
    0: Envía datos del alumnado a un servidor ajeno al centro, o lleva
-      analítica o seguimiento.
+      analítica o seguimiento: un servicio de terceros o un recuento que
+      distingue a quien lee, guarda su IP o su procedencia.
    Si el recurso maneja datos reales del alumnado, indica que conviene la
    revisión de una persona con conocimientos técnicos antes de usarlo.
    Lo que se carga o se incrusta de otros servidores (vídeos, audios,

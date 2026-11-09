@@ -32,7 +32,7 @@ In a resource created with vibe coding, this translates into a few decisions tha
 - **No identification.** The material does not ask for the name. If several people need to be told apart, an alias that does not identify them is enough.
 - **Everything in the browser.** Answers and progress are stored on the device itself and are not sent to any server.
 - **No user accounts.** The material is used without registering with any service.
-- **No analytics.** The material includes no visit counters or tracking tools.
+- **No tracking.** The material includes no analytics or tracking tools. At most, a count of visits per page that does not tell readers apart, kept by the publisher and explained on the website, like the one the [Spanish Data Protection Agency (AEPD)](https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf) exempts from requiring consent (sections II and III.A).
 
 With a resource built this way, the person who publishes it receives no data from students, and the data do not leave the device on which it is used. If a teacher stores their students' marks in it, they are still processing personal data, but they do so within their educational function and without any outside service being involved.
 

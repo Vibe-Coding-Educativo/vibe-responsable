@@ -38,9 +38,9 @@ URL_SITIO = "https://vibe-coding-educativo.github.io/vibe-responsable/"
 REPO = "https://github.com/Vibe-Coding-Educativo/vibe-responsable"
 # La versión publicada de la guía (ADR 19). Cambia con el texto, no con los ajustes de la web;
 # cada una lleva su etiqueta en el repositorio (v1.0) y su depósito en Zenodo, con su DOI.
-VERSION = "2.0"
-FECHA_VERSION = date(2026, 10, 2)
-DOI = "10.5281/zenodo.23105801"            # el de esta versión
+VERSION = "3.0"
+FECHA_VERSION = date(2026, 11, 9)
+DOI = "10.5281/zenodo.24073199"            # el de esta versión
 DOI_CONCEPTO = "10.5281/zenodo.23081517"   # el de todas las versiones: lleva siempre a la última
 CLAVE_TEMA = "vibe-responsable:tema"   # única entrada en localStorage; la misma en recursos/guia.js
 PDF = "vibe-responsable-{idioma}.pdf"  # la guía completa, generada con --pdf y publicada junto a las páginas

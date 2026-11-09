@@ -50,13 +50,17 @@ whether or not it was created following the guide.
       only on the device and allows exporting without names; or it sends
       them only to a school service, with no keys visible in the code and in
       such a way that only the teacher or the school can read them. It has
-      no analytics.
+      no analytics; at most, an aggregated count of visits per page, kept by
+      the publisher on their own server and explained on the website,
+      storing nothing that tells readers apart, neither their IP address nor
+      where they came from.
    1: It does not send students' data to outside services, but it stores
       names without an option to export without them, or the sending to the
       school's service is not well protected (keys in the code, an address
       that allows what is collected to be read).
    0: It sends students' data to a server outside the school, or it has
-      analytics or tracking.
+      analytics or tracking: a third-party service, or a count that tells
+      readers apart or stores their IP address or where they came from.
    If the resource handles real students' data, state that a review by a
    person with technical knowledge is advisable before using it.
    What is loaded or embedded from other servers (videos, audio, typefaces,

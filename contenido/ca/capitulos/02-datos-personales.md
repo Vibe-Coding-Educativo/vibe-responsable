@@ -32,7 +32,7 @@ En un material creat amb vibe coding, això es tradueix en unes poques decisions
 - **Sense identificació.** El material no demana el nom. Si cal distingir diverses persones, n'hi ha prou amb un àlies que no les identifiqui.
 - **Tot al navegador.** Les respostes i el progrés es guarden al mateix dispositiu i no s'envien a cap servidor.
 - **Sense comptes d'usuari.** El material es fa servir sense registrar-se en cap servei.
-- **Sense analítica.** El material no inclou comptadors de visites ni eines de seguiment.
+- **Sense seguiment.** El material no inclou eines d'analítica ni de seguiment. Com a molt, un recompte de visites per pàgina que no distingeixi qui llegeix, fet per qui publica i explicat al web, com el que l'[Agència Espanyola de Protecció de Dades (AEPD)](https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf) eximeix de demanar consentiment (apartats II i III.A).
 
 Amb un material construït així, la persona que el publica no rep cap dada de l'alumnat, i les dades no surten del dispositiu en què es fa servir. Si un docent hi guarda les notes del seu alumnat, continua tractant dades personals, però ho fa dins de la seva funció educativa i sense que hi intervingui cap servei aliè.
 

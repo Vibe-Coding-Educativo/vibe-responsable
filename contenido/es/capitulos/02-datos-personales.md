@@ -32,7 +32,7 @@ En un material creado con vibe coding, esto se traduce en unas pocas decisiones 
 - **Sin identificación.** El material no pide el nombre. Si hace falta distinguir a varias personas, basta con un alias que no las identifique.
 - **Todo en el navegador.** Las respuestas y el progreso se guardan en el propio dispositivo y no se envían a ningún servidor.
 - **Sin cuentas de usuario.** El material se utiliza sin registrarse en ningún servicio.
-- **Sin analítica.** El material no incluye contadores de visitas ni herramientas de seguimiento.
+- **Sin seguimiento.** El material no incluye herramientas de analítica ni de seguimiento. Como mucho, un recuento de visitas por página que no distinga a quien lee, hecho por quien publica y explicado en la web, como el que la [Agencia Española de Protección de Datos (AEPD)](https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf) exime de pedir consentimiento (apartados II y III.A).
 
 Con un material construido así, la persona que lo publica no recibe ningún dato del alumnado, y los datos no salen del dispositivo en el que se utiliza. Si un docente guarda en él las notas de su alumnado, sigue tratando datos personales, pero lo hace dentro de su función educativa y sin que intervenga ningún servicio ajeno.
 

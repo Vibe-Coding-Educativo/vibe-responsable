@@ -34,7 +34,10 @@ If I have not told you, ask me:
   print without the names. If the program collects students' answers, show
   the result at the end or let it be downloaded for handing in, and identify
   each person with a code instead of their name. Do not send anything to any
-  server or add analytics or visit counters.
+  server or add analytics. If I ask you for a visit counter, it should only
+  add up the visits to each page on my own server, storing nothing that tells
+  readers apart, neither their IP address nor where they came from, and the
+  website should explain it.
 - Accessible, following the Web Content Accessibility Guidelines (WCAG):
   usable with the keyboard only, with a logical tab order, labels on the
   controls, alternative text on images, sufficient contrast, not relying on

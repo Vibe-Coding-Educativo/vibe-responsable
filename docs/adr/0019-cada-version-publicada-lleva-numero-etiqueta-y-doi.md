@@ -43,7 +43,7 @@ cita impresa ya lo lleve: versión `10.5281/zenodo.23081518`, concepto
 `10.5281/zenodo.23081517`. La 1.1 (02-10-2026), que corrige las traducciones y la redacción, se
 preparó igual: versión `10.5281/zenodo.23097280`, etiqueta `v1.1`. La 2.0 (02-10-2026), que añade la página de la
 evaluación VCER y la mención del resultado en el recurso evaluado (ADR 21), es
-un cambio de contenido: versión `10.5281/zenodo.23105801`, etiqueta `v2.0`.
+un cambio de contenido: versión `10.5281/zenodo.23105801`, etiqueta `v2.0`. La 3.0 (09-11-2026), que admite un recuento de visitas que no distinga a quien lee (ADR 22), es otro cambio de contenido: versión `10.5281/zenodo.24073199`, etiqueta `v3.0`.
 
 ## Alternativas descartadas
 

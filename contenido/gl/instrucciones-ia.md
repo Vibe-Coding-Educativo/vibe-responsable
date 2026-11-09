@@ -33,8 +33,10 @@ Se non cho dixen, pregúntame:
   exportar ou imprimir sen os nomes. Se o programa recolle respostas do
   alumnado, mostra o resultado ao rematar ou permite descargalo para
   entregalo, e identifica cada persoa cun código en lugar do seu nome. Non
-  envíes nada a ningún servidor nin engadas analítica ou contadores de
-  visitas.
+  envíes nada a ningún servidor nin engadas analítica. Se che pido un contador
+  de visitas, que só sume as visitas de cada páxina no meu propio servidor,
+  sen gardar nada que distinga a quen le, nin a súa IP nin de onde chega, e
+  que a web o explique.
 - Accesible, seguindo as Pautas de Accesibilidade para o Contido Web
   (WCAG): manexable só co teclado, cunha orde de tabulación lóxica,
   etiquetas nos controis, textos alternativos nas imaxes, contraste

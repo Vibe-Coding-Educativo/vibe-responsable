@@ -32,7 +32,7 @@ Vibe coding bidez sortutako material batean, hori hasieratik IAri eska dakizkiok
 - **Identifikaziorik gabe.** Materialak ez du izena eskatzen. Hainbat pertsona bereizi behar badira, nahikoa da identifikatzen ez dituen ezizen bat.
 - **Dena nabigatzailean.** Erantzunak eta aurrerapena gailuan bertan gordetzen dira eta ez dira inongo zerbitzarira bidaltzen.
 - **Erabiltzaile-konturik gabe.** Materiala inongo zerbitzutan erregistratu gabe erabiltzen da.
-- **Analitikarik gabe.** Materialak ez du bisita-kontagailurik ezta jarraipen-tresnarik ere.
+- **Jarraipenik gabe.** Materialak ez du analitika- edo jarraipen-tresnarik. Gehienez ere, irakurlea bereizten ez duen orrialde bakoitzeko bisiten zenbaketa bat, argitaratzen duenak egina eta webgunean azaldua, [Datuak Babesteko Espainiako Agentziak (AEPD)](https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf) baimena eskatzetik salbuesten duena bezalakoa (II. eta III.A atalak).
 
 Horrela eraikitako material batekin, argitaratzen duen pertsonak ez du ikasleen daturik jasotzen, eta datuak ez dira erabiltzen den gailutik ateratzen. Irakasle batek bertan bere ikasleen notak gordetzen baditu, datu pertsonalak tratatzen jarraitzen du, baina bere hezkuntza-funtzioaren barruan egiten du, kanpoko inongo zerbitzuk esku hartu gabe.
 

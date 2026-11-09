@@ -33,7 +33,10 @@ Si no t'ho he dit, pregunta'm:
   d'exportar o imprimir sense els noms. Si el programa recull respostes de
   l'alumnat, mostra el resultat en acabar o permet descarregar-lo per
   lliurar-lo, i identifica cada persona amb un codi en lloc del seu nom. No
-  enviïs res a cap servidor ni afegeixis analítica o comptadors de visites.
+  enviïs res a cap servidor ni afegeixis analítica. Si et demano un comptador
+  de visites, que només sumi les visites de cada pàgina al meu propi servidor,
+  sense guardar res que distingeixi qui llegeix, ni la seva IP ni d'on arriba,
+  i que el web ho expliqui.
 - Accessible, seguint les Pautes d'Accessibilitat per al Contingut Web
   (WCAG): utilitzable només amb el teclat, amb un ordre de tabulació lògic,
   etiquetes als controls, textos alternatius a les imatges, contrast

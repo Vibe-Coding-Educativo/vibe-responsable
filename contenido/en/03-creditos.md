@@ -20,6 +20,9 @@ This guide was produced at level 4 of the [Framework for integrating generative 
 
 The guide is numbered with two figures. The first changes when what the guide says changes, and the second when the wording or the translations are corrected without changing the content. Each version has its own DOI.
 
+- **3.0**, 9 November 2026. DOI: [10.5281/zenodo.24073199](https://doi.org/10.5281/zenodo.24073199).
+  - Data protection allows at most a count of visits per page that does not tell readers apart, kept by the publisher on their own server and explained on the website, like the one the AEPD exempts from requiring consent.
+  - The VCER rubric (point 2), chapter 2 and the instructions for creating with AI cover this case; any other analytics or tracking still scores 0.
 - **2.0**, 2 October 2026. DOI: [10.5281/zenodo.23105801](https://doi.org/10.5281/zenodo.23105801).
   - The VCER evaluation has its own page, with the evaluation file, the rubric and the explanation of the result.
   - The instructions page is now called «Instructions for creating with AI» and deals only with creation.

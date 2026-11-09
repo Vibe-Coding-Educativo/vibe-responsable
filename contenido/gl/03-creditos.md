@@ -20,6 +20,9 @@ Esta guía elaborouse no nivel 4 do [Marco para a integración da IA xerativa na
 
 A guía numérase con dúas cifras. A primeira cambia cando cambia o que di a guía, e a segunda, cando se corrixen a redacción ou as traducións sen cambiar o contido. Cada versión ten o seu propio DOI.
 
+- **3.0**, 9 de novembro de 2026. DOI: [10.5281/zenodo.24073199](https://doi.org/10.5281/zenodo.24073199).
+  - A protección de datos admite como moito un reconto de visitas por páxina que non distinga a quen le, feito por quen publica no seu propio servidor e explicado na web, como o que a AEPD exime de pedir consentimento.
+  - A rúbrica VCER (punto 2), o capítulo 2 e as instrucións para crear con IA recollen ese caso; calquera outra analítica ou seguimento segue dando un 0.
 - **2.0**, 2 de outubro de 2026. DOI: [10.5281/zenodo.23105801](https://doi.org/10.5281/zenodo.23105801).
   - A avaliación VCER ten páxina propia, co ficheiro de avaliación, a rúbrica e a explicación do resultado.
   - A páxina de instrucións pasa a chamarse «Instrucións para crear con IA» e trata só da creación.

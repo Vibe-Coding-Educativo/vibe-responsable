@@ -52,13 +52,18 @@ pertsona batena, gidari jarraituz sortua izan ala ez.
       gordetzen ditu eta izenik gabe esportatzeko aukera ematen du; edo
       ikastetxeko zerbitzu batera bakarrik bidaltzen ditu, kodean gako
       ikusgarririk gabe eta irakasleak edo ikastetxeak bakarrik irakurri
-      ahal izateko moduan. Ez du analitikarik.
+      ahal izateko moduan. Ez du analitikarik; gehienez ere, orrialde
+      bakoitzeko bisiten zenbaketa batua, argitaratzen duenak bere
+      zerbitzarian egiten duena eta webgunean azaltzen duena, irakurlea
+      bereizten duen ezer gorde gabe, ez haren IPa ez nondik datorren ere.
    1: Ez ditu ikasleen datuak kanpoko zerbitzuetara bidaltzen, baina izenak
       gordetzen ditu haiek gabe esportatzeko aukerarik gabe, edo
       ikastetxeko zerbitzurako bidalketa ez dago ondo babestuta (gakoak
       kodean, bildutakoa irakurtzeko aukera ematen duen helbide bat).
    0: Ikasleen datuak ikastetxetik kanpoko zerbitzari batera bidaltzen
-      ditu, edo analitika edo jarraipena du.
+      ditu, edo analitika edo jarraipena du: hirugarrenen zerbitzu bat, edo
+      irakurlea bereizten duen edo haren IPa edo jatorria gordetzen duen
+      zenbaketa bat.
    Baliabideak ikasleen benetako datuak kudeatzen baditu, adierazi komeni
    dela ezagutza teknikoak dituen pertsona batek berrikustea erabili
    aurretik.
