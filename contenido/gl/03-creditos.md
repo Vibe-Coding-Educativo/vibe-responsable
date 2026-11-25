@@ -20,6 +20,9 @@ Esta guía elaborouse no nivel 4 do [Marco para a integración da IA xerativa na
 
 A guía numérase con dúas cifras. A primeira cambia cando cambia o que di a guía, e a segunda, cando se corrixen a redacción ou as traducións sen cambiar o contido. Cada versión ten o seu propio DOI.
 
+- **4.0**, 25 de novembro de 2026. DOI: [10.5281/zenodo.24529702](https://doi.org/10.5281/zenodo.24529702).
+  - O capítulo 6 explica que a excepción educativa aos dereitos de autor non cobre un material publicado en aberto, segundo as directrices da Comisión Europea sobre contidos educativos dixitais.
+  - O capítulo 4 cita esas directrices, que aconsellan estándares abertos para non depender dun único provedor.
 - **3.0**, 9 de novembro de 2026. DOI: [10.5281/zenodo.24073199](https://doi.org/10.5281/zenodo.24073199).
   - A protección de datos admite como moito un reconto de visitas por páxina que non distinga a quen le, feito por quen publica no seu propio servidor e explicado na web, como o que a AEPD exime de pedir consentimento.
   - A rúbrica VCER (punto 2), o capítulo 2 e as instrucións para crear con IA recollen ese caso; calquera outra analítica ou seguimento segue dando un 0.

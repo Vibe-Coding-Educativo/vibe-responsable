@@ -1,0 +1,2412 @@
+Toma de decisiones fundamentadas
+    sobre contenidos educativos
+ digitales: Directrices de la UE para
+       docentes y educadores
+                  TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+      2               D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Manuscrito finalizado en octubre de 2025
+
+Luxemburgo: Oficina de Publicaciones de la Unión Europea, 2026
+
+© Unión Europea, 2026
+
+
+
+
+La política de reutilización de la Comisión se aplica con arreglo a la Decisión 2011/833/UE de la Comisión,
+de 12 de diciembre de 2011, relativa a la reutilización de los documentos de la Comisión (DO L 330 de
+14.12.2011, p. 39, ELI: http://data.europa.eu/eli/dec/2011/833/oj).
+
+Salvo que se indique lo contrario, la reutilización del presente documento está autorizada con arreglo a la
+licencia Creative Commons Attribution 4.0 International (CC BY 4.0) (https://creativecommons.org/licenses/
+by/4.0/). Esto significa que la reutilización está permitida, siempre que se cite adecuadamente la fuente y se
+indiquen los cambios realizados.
+
+Para cualquier uso o reproducción de elementos que no sean propiedad de la Unión Europea, puede ser
+necesario solicitar autorización directamente a los respectivos titulares de derechos.
+
+PDF                ISBN 978-92-68-32240-6        doi:10.2766/1574949           NC-01-25-180-ES-N
+Print              ISBN 978-92-68-32241-3        doi:10.2766/7075269           NC-01-25-180-ES-C
+                      TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                          D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    3
+
+
+
+
+  Contenido
+Agradecimientos4
+
+Prólogo5
+
+Introducción6
+  Profesorado/Equipos directivos                                                                                                   7
+  ¿Qué son los contenidos educativos digitales?                                                                                    9
+
+
+Apartado 1: ¿Qué pueden ofrecer los contenidos educativos
+digitales a los centros educativos?                                                                                               9
+  ¿Para qué se usan los contenidos educativos digitales?                                                                          10
+  Principales ventajas de utilizar contenidos educativos digitales                                                                12
+  Un amplia variedad de fuentes                                                                                                   13
+  Para empezar: Primeros pasos para profesores y directores                                                                       14
+
+
+Apartado 2: Criterios clave para contenidos educativos digitales
+de gran calidad                                                                                                                   16
+  Adecuación pedagógica y alineación curricular                                                                                   18
+  Experiencias de aprendizaje atractivas                                                                                          20
+  Diseño, accesibilidad e inclusión                                                                                               22
+  Fiabilidad24
+  Impacto y evaluación                                                                                                            26
+  Cumplimiento legal                                                                                                              28
+  Interoperabilidad técnica                                                                                                       30
+  Viabilidad financiera                                                                                                           32
+
+
+Apartado 3: Tomar decisiones diarias sobre contenidos educativos digitales 34
+  Selección36
+  Creación40
+  Acceso44
+  Uso y adaptación                                                                                                                47
+  Evaluación50
+
+
+Conclusiones53
+
+Glosario54
+                     TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+      4                  D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+    Agradecimientos
+La Comisión Europea ha desarrollado las presentes directrices con el apoyo del Grupo de Expertos en Contenidos Educativos
+Digitales, dirigido por consultores asociados al PPMI. A la Comisión le gustaría agradecer su colaboración a:
+
+
+Albena Spasova
+Andrej Novik
+Arjana Blazic
+Beth Havinga (European EdTech Alliance)
+Cristina Valdera-Lopez
+Daniela Hau
+Enrico Turrin (Federation of European Publishers, FEP)
+Eugenia Casariego (European Schoolnet, EUN)
+Fares Kayali
+Frida Karlsson
+Gabriel Lazar
+Kari Kivinen (European Union Intellectual Property Office, EUIPO)
+Keith Aquilina
+Martina Di Ridolfo (European Trade Union Committee for Education, ETUCE)
+Mirjam Oblak
+Peter Balkanyi
+Pierre Laborde (Association Française des Industriels du Numérique dans l’Education et la Formation, AFINEF)
+Rachel Forsyth (Lund University)
+Romuald Verrier
+Sandra Troia (All Digital)
+Seamus Barry
+Stamatis Papadakis
+Teresita Gravina
+Tessa Eysink (Twente University)
+                      TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                          D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S     5
+
+
+
+
+  Prólogo
+En Europa, lo primero son las personas, ya que el éxito de cada individuo en el aprendizaje, en el trabajo y en
+la vida es algo fundamental para una Unión Europea estable, próspera y resiliente. La Unión de Habilidades
+presenta nuestra visión sobre la educación, la formación y el aprendizaje permanente de gran calidad, que
+incluya una educación digital eficaz como elemento clave para desarrollar el capital humano de Europa. Su
+puesta en práctica podrá garantizar una formación adecuada de los ciudadanos europeos, que les permita
+navegar en una sociedad y una economía cada vez más digitales.
+                                      Los contenidos                     soluciones EdTech, investigadores) a fin de desarrollar un
+                                      educativos digitales               vocabulario común, unos criterios de calidad compartidos
+                                      nunca han sido tan                 y un enfoque estructurado para todas las fases de uso
+                                      accesibles para                    de los contenidos educativos digitales. Dichas directrices
+                                      profesores y alumnos,              permitirán tanto a profesores como a educadores tomar
+                                      convir tiéndose en                 decisiones con conocimiento de causa sobre la educación
+                                      un elemento central                digital y contribuirán a desarrollar la confianza de profesores
+                                      y crucial de sus                   y educadores en el uso de contenidos educativos digitales.
+                                      actividades y prácticas
+                                                                         Quiero expresar mi más sincero agradecimiento a todos los
+                                      cot idia na s . N o se
+                                                                         expertos que han trabajado incansablemente para hacer
+                                      trata simplemente de
+                                                                         realidad estas directrices. Cada uno de ellos, con su propia
+                                      cambiar el papel por los
+                                                                         experiencia, se ha asegurado de que estas directrices
+                                      píxeles. Los contenidos
+                                                                         proporcionen consejos concretos a su público, es decir,
+educativos digitales ofrecen nuevas formas de enriquecer
+                                                                         principalmente a profesores y educadores, aunque también a
+la experiencia de enseñanza y aprendizaje, que atrae a los
+                                                                         todas las demás partes interesadas en la educación.
+alumnos y permite personalizar los itinerarios de aprendizaje.
+Permiten acceder a un espectro más amplio de recursos                    A todos los que forman parte de la comunidad de la educación
+actualizados y utilizar herramientas de autor, incluyendo la             digital, sean educadores, proveedores de contenidos o
+IA, para crear ejercicios personalizados y a medida. También             responsables políticos, principiantes o pioneros digitales,
+permite a los alumnos adquirir las competencias necesarias               les invito a que lean, utilicen y experimenten con dichas
+para un mundo cada vez más centrado en lo digital.                       directrices. Tu participación y comentarios nos servirán de base
+                                                                         para elaborar la Hoja de ruta digital 2030 sobre el futuro de
+Tanto profesores como educadores se enfrentan a diario
+                                                                         la educación y las competencias digitales, que se pondrá en
+a decisiones sobre cómo elegir y utilizar de la mejor forma
+                                                                         marcha en el segundo semestre de 2026. La educación digital
+posible los contenidos educativos digitales. A menudo se
+                                                                         ofrece un enorme potencial para mejorar la enseñanza y el
+ven obligados a encontrar un equilibrio y combinar recursos
+                                                                         aprendizaje. ¡Y todo empieza contigo!
+analógicos y digitales en función de las necesidades de sus
+alumnos y del contexto escolar. En concreto, el hecho de
+identificar contenidos de gran calidad en un vasto mar de
+opciones no es una cuestión trivial. La gran calidad varía
+en función del contexto, las necesidades, los objetivos de
+aprendizaje y los enfoques pedagógicos específicos de
+cada profesor y alumno. Este es el motivo por el que la
+Recomendación del Consejo sobre los factores facilitadores
+clave para el éxito de la educación y la formación digitales
+(2023) acogía con satisfacción el compromiso de la Comisión
+de desarrollar directrices y normas de calidad para unos
+contenidos educativos digitales accesibles y bien diseñados.
+Para ayudar al profesorado a navegar por este complejo
+panorama, hemos reunido a un grupo de expertos de
+diversos ámbitos (profesores, directores de centros
+escolares, autoridades, proveedores de contenidos y
+                     TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+      6                  D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+           Introducción
+¡Bienvenidos! Las siguientes directrices han sido elaboradas para ayudar a los docentes y educadores, desde el
+personal docente y de apoyo hasta los equipos directivos de centros educativos, a tomar decisiones relativas
+al uso de contenidos educativos digitales (CED) en sus centros. En pocas palabras, un CED es cualquier recurso
+educativo en formato digital. Puede ser desde un vídeo o un cuestionario interactivo hasta un libro de texto
+digital estructurado que se utilice para apoyar las prácticas de enseñanza, aprendizaje y evaluación. Cabe
+señalar que las presentes directrices no abordan la definición de los currículos, es decir, qué debe enseñarse
+y cómo, puesto que es una responsabilidad exclusiva de cada Estado miembro de la UE. Nuestro objetivo es
+proporcionar al profesorado y a los responsables de los centros una serie de directrices que les ayuden a elegir,
+utilizar, crear y adaptar los CED, y a evaluar su impacto en el aprendizaje del alumnado.
+
+
+
+Los contenidos educativos son la columna vertebral de la                   Sin embargo, la tarea de elegir, crear o adaptar los CED, así
+enseñanza y el aprendizaje diarios. Tradicionalmente, han                  como de evaluar su impacto en la experiencia del alumnado, en
+incluido libros de texto, hojas de ejercicios y materiales                 ocasiones puede resultar frustrante. Estas directrices pretenden
+creados por los propios educadores o proporcionados por las                ofrecer algunos criterios, preguntas orientativas y consejos sobre
+editoriales, principalmente en formato papel. Sin embargo,                 cómo elegir o crear, acceder, utilizar y evaluar los CED para
+a la vez que el mundo se ha ido digitalizando, también lo                  mejorar los procesos de enseñanza en el aula, apoyar las distintas
+han hecho las aulas. Para no quedarse atrás en el proceso                  necesidades de aprendizaje e inspirar enfoques pedagógicos
+de digitalización, los distintos países han invertido en                   creativos. Pensemos en ellas como una información práctica que
+equipamiento digital, conectividad e infraestructuras, así como            nos permitirá tomar decisiones adecuadas y a responder a los
+en formación en competencia digital para el personal docente,              desafíos que pueden plantear los CED.
+incluyendo la creación y el uso de CED. Esta evolución no es
+                                                                           Aunque el presente documento va dirigido principalmente al
+un simple cambio del papel por los píxeles. Por el contrario, en
+                                                                           profesorado y a los equipos directivos de centros educativos,
+la actualidad los contenidos educativos tradicionales pueden
+                                                                           también puede ser muy útil para un público más amplio, tal
+combinarse de forma natural con los formatos digitales,
+                                                                           y como se indica a continuación. El objetivo de las presentes
+incluyendo los más recientes que aprovechan contenidos
+                                                                           directrices es fomentar una mayor colaboración entre todos
+generados por IA. En el contexto actual de aprendizaje mixto,
+                                                                           los actores en el ecosistema de los CED y ofrecer un lenguaje
+los CED tienen el potencial de transformar y mejorar las
+                                                                           común para apoyar los múltiples usos de los CED en los centros
+experiencias educativas. Ofrecen nuevas formas de implicar al
+                                                                           educativos de toda Europa. Entre dichos actores se encuentran:
+alumnado, personalizar los itinerarios de aprendizaje, atender
+distintas necesidades y acceder a un espectro más amplio de
+recursos actualizados. En última instancia, prepara mejor al
+alumnado para un futuro cada vez más digital.
+
+    ● Personas que crean CED (editores, docentes o proveedores de soluciones EdTech)
+    ● Personas que difunden CED (ministerios de educación, autoridades educativas regionales, equipos directivos de centros
+      escolares o redes de profesores)
+    ● Personas que adquieren CED (organismos de adquisición nacionales o regionales, ayuntamientos o directores de
+      centros escolares)
+    ● Personas que prestan apoyo técnico y pedagógico a los centros educativos (coordinadores TIC, servicios de desarrollo
+      profesional o campeones digitales)
+                      TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                          D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S            7
+
+
+
+
+   Público principal
+
+   Profesorado/Equipos directivos
+   Otros públicos
+   CRE ADORES: :             AC TORES                                AC TORES                              EQUIPO DE
+                             INVOLUCR ADOS                           INVOLUCR ADOS                         APOYO TÉCNICO Y
+                             EN EL PROCESO DE                        EN EL PROCESO DE                      PEDAGÓGICO:
+                             DIFUSIÓN:                               CONTR ATACIÓN:
+   como editores,            como los distintos                      como los organismos                   como los coordinadores
+   proveedores de soluciones Ministerios de Educación,               nacionales o regionales               TIC, centros de formación
+   edTech.                   las autoridades educativas              de contratación pública,              del profesorado o los
+                             regionales, etc.                        los ayuntamientos o                   campeones digitales
+                                                                     los directores/consejos
+                                                                     escolares
+
+
+Para facilitar la comprensión de las presentes directrices y el desarrollo de un vocabulario común, al final del documento se
+incluye un glosario de términos clave.
+
+
+
+
+1
+  Las directrices se organizan en tres apartados distintos:
+
+
+
+
+                                         2                                                    3
+                                                                                                              EL APARTADO 3 reconoce
+                                                        EL APARTADO 2 ofrece una                              q ue el profesorado y la
+         EL APARTADO 1 aborda                           lista de ocho criterios dirigidos                     dirección de los centros toman
+         el tema de cómo pueden                         a orientar tanto al profesorado                       a diario multitud de decisiones
+         utilizarse los CED en las                      como a los equipos directivos de                      sobre los CED. Por este motivo,
+         aulas.                                         centros educativos sobre cómo                         presenta una serie de pasos y
+                                                        elegir, utilizar y revisar los CED de                 consejos prácticos, así como
+                                                        forma crítica y eficaz.                               preguntas clave para facilitar
+                                                                                                              la toma de decisiones.
+A medida que leas estas directrices, observarás que la orientación es relevante para numerosas funciones de tu centro
+educativo. Dado que el profesorado, los equipos directivos de los centros escolares y otros puestos relacionados con los
+CED tienen necesidades, perspectivas y responsabilidades distintas, hemos incluido unos sencillos iconos que te ayudarán a
+identificar rápidamente qué partes de la guía pueden tener una mayor relevancia para tu puesto concreto o área de interés.
+                      TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+      8                   D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Busca estos iconos:
+
+
+
+
+                          Docente/educador
+                          estas directrices son especialmente importantes para el profesorado y el personal docente durante
+                          su práctica en el aula.
+
+
+
+
+                          Equipo directivo de centro
+                          estas directrices son especialmente importantes para los equipos directivos de centros y el personal
+                          de apoyo que supervisa la estrategia, la infraestructura, el desarrollo profesional y las adquisiciones.
+
+
+
+
+                          Todo el centro educativo
+                          estas directrices son importantes para las actuaciones que afectan a toda la comunidad
+                          educativa o institución.
+
+
+También debes tener en cuenta que estas directrices
+se han diseñado deliberadamente para ser modulares.
+                                                                             Descargo de responsabilidad
+Como tal, puedes:
+                                                                             Las presentes directrices no son vinculantes
+    leerlas por orden hasta el final;
+                                                                             y tienen por objeto ayudar al profesorado, la
+    consultar algo puntual para encontrar y utilizar                         dirección de los centros escolares y las autoridades
+    los apartados que te resulten de mayor utilidad;                         educativas a promover entornos educativos
+                                                                             digitales seguros, integradores y dignos de
+    e incluso modificarlas para adaptarlas a tu
+                                                                             confianza, en consonancia con los valores europeos
+    propio contexto.
+                                                                             y la legislación aplicable de la UE.
+                                                                             Este texto incluye ejemplos de herramientas,
+                                                                             recursos e iniciativas digitales, junto con los
+                                                                             nombres de las empresas u organizaciones que los
+                                                                             proporcionan. Estas referencias son meramente
+                                                                             ilustrativas y no implican aprobación alguna por
+                                                                             parte de la Comisión Europea. Los autores han
+                                                                             procurado incluir, siempre que ha sido posible,
+                                                                             ejemplos de acceso gratuito, ampliamente utilizados
+                                                                             y diversos, especialmente de origen europeo.
+                                TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                                    D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S                                      9
+
+
+
+
+       Apartado 1: ¿Qué pueden ofrecer
+       los contenidos educativos
+       digitales a los centros educativos?
+¿Qué son los contenidos educativos digitales?
+Cada vez hay más contenidos educativos digitales (CED) a disposición del profesorado y de los equipos
+directivos de los centros educativos. La creación y distribución de dichos contenidos pueden realizarla editoriales
+educativas, empresas de tecnología educativa (EdTech), organizaciones culturales y científicas, ministerios
+de educación o el propio profesorado/educadores. Estos contenidos pueden ser utilizados junto con recursos
+educativos no digitales para apoyar las actividades de enseñanza, aprendizaje y evaluación del aula. En los
+últimos años, los centros educativos han invertido en distintas tecnologías digitales que permiten tanto al
+profesorado como al alumnado hacer uso de los CED. Se trata de dispositivos digitales (como ordenadores
+portátiles y tabletas), herramientas digitales (como procesadores de texto, programas de creación musical,
+etc.) y plataformas digitales (como espacios en línea donde almacenar los contenidos y poder acceder a ellos).
+
+
+
+    Explicación
+
+    Los contenidos educativos digitales (CED) pueden definirse como materiales de aprendizaje, enseñanza y
+    evaluación destinados a abordar objetivos pedagógicos y disponibles en distintos formatos mediante herramientas
+    y plataformas digitales. La creación de los CED está cargo de editoriales educativas, empresas de EdTech,
+    organizaciones culturales y científicas, ministerios de educación o del propio profesorado y el alumnado.
+
+
+
+Se trata de una versión simplificada de la definición recogida en un reciente estudio titulado «Contenidos educativos digitales
+en la UE», que destacaba varias características clave de los CED:
+      ● Los CED suelen incluir una combinación de distintos formatos digitales, como texto, vídeo, audio y elementos interactivos.
+        Esto permite al creador poder utilizarlos de una forma innovadora para producir una amplia gama de materiales educativos.
+                       •
+                       Un ejemplo podría ser un libro de texto digital que contenga texto, imágenes, vídeos y evaluaciones/ejercicios
+                       interactivos.
+      ● Los CED tienen un objetivo fundamentalmente educativo. Esto incluye contenidos diseñados específicamente para
+        apoyar actividades educativas (por ejemplo, un juego educativo serio), o contenidos ya existentes que han sido
+        reutilizados o reaprovechados para apoyar una actividad educativa (por ejemplo, un vídeo en línea sobre el mundo
+        natural, utilizado por un docente para apoyar los objetivos de aprendizaje de una sesión concreta).
+      ● Los CED son distintos pero a la vez se interrelacionan con a) el entorno en el que se utiliza (es decir, los dispositivos y/o
+        plataformas en línea utilizados para acceder a ellos), y b) los enfoques pedagógicos a los que sirve.
+                       •     Por ejemplo, un docente podría aprovechar una simulación en línea de un laboratorio de ciencias en el que
+                             el alumnado trabaje en equipo o utilizar contenidos de realidad virtual para resolver una serie de problemas
+                             del mundo real. A este CED se accede a través de la plataforma digital educativa del centro.
+
+
+1   Comisión Europea: Dirección General de Educación, Juventud, Deporte y Cultura, ECORYS, EIESP, H2 Learning, Day, L. y otros, Digital education content in the EU - State of play and
+    policy options - Informe final, Oficina de Publicaciones de la Unión Europea, Luxemburgo, 2023, https://data.europa.eu/doi/10.2766/682645.
+                           TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+      10                       D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+¿Para qué se usan los contenidos educativos digitales?
+Los CED pueden apoyar y enriquecer distintos aspectos de la educación. Resultan especialmente útiles a
+la hora de diseñar y aplicar enfoques pedagógicos, actividades de aprendizaje y prácticas de evaluación.
+
+Como apoyo a los enfoques pedagógicos                                                            En concreto, puedes utilizar un CED para:
+
+Antes de introducir un tema, los docentes suelen planificar                                      REFORZ AR la enseñanza directa al conjunto del
+la mejor forma de abordarlo. Con frecuencia se suele ajustar                                     alumnado mediante un vídeo o una presentación, que
+a un planteamiento de planificación a nivel escolar. Puedes                                      sirva para introducir un tema nuevo a toda la clase.
+tener en cuenta los objetivos de aprendizaje, la edad y
+                                                                                                 UTILIZAR enfoques pedagógicos diferenciados con
+la capacidad de los estudiantes, los recursos didácticos
+                                                                                                 grupos reducidos de estudiantes, que interactúen con el
+disponibles y el entorno del aula. A continuación, puedes
+                                                                                                 CED de acuerdo con su nivel de lectura y sus capacidades.
+elegir el contenido disponible más adecuado para dicha tarea,
+que puede incluir un CED.                                                                        TRABALHAR INDIVIDUALMENTE con un estudiante
+                                                                                                 utilizando un lector interactivo para desarrollar sus
+                                                                                                 competencias en lectoescritura.
+Como apoyo al aprendizaje
+El profesorado y los educadores cuentan con numerosas opciones para utilizar un CED como apoyo al aprendizaje. Para ilustrarlo, nos
+hemos basado en el reconocido marco de Diana Laurillard para la categorización de los distintos tipos de actividades de aprendizaje.
+A continuación, mostramos algunos ejemplos de cómo pueden utilizarse distintas formas de CED para enriquecer diferentes tipos de
+experiencias de aprendizaje en el aula.
+
+    Actividad de                                Ejemplo de                                   Posible uso de contenidos
+    aprendizaje                                 actividad                                    educativos digitales
+    Adquisición                                 Aprender escuchando y/o                      Los alumnos ven un vídeo tutorial en línea que les guía a
+                                                viendo sobre un tema                         través de un experimento científico, antes de ir al laboratorio
+                                                                                             donde van a realizar un experimento físico.
+
+    Discusión                                   Aprender mediante                            Los alumnos trabajan en pequeños grupos para aprender sobre
+                                                preguntas y debates                          la vida cotidiana de un vikingo utilizando un juego digital. A
+                                                                                             continuación, en equipos, comparan y contrastan sus actividades
+                                                                                             cotidianas con las de los jóvenes vikingos, utilizando distintas
+                                                                                             fuentes, como libros, recursos históricos en línea, etc.
+
+    Práctica                                    Aprender practicando las                     Los alumnos utilizan un equipo de realidad virtual para practicar
+                                                destrezas por sí mismos y                    habilidades de soldadura en un entorno digital simulado.
+                                                adaptándolas en función de
+                                                la información recibida
+    Producción                                  Aprender creando                             El profesor proporciona acceso a una lista de páginas web
+                                                artefactos que consoliden                    relacionados con una novela clásica (por ejemplo, enlaces sobre
+                                                el aprendizaje                               el autor, los personajes y los lugares a los que se hace referencia
+                                                                                             en el libro). A continuación, los alumnos colaboran para crear un
+                                                                                             story map digital. Este artefacto visual traza la progresión de la
+                                                                                             narración junto con sus elementos temáticos clave.
+    Colaboración                                Aprender con otros para                      Los alumnos acceden a un archivo digital repleto de documentos
+                                                consolidar y profundizar su                  primarios escaneados, fotografías y líneas de tiempo interactivas
+                                                aprendizaje                                  sobre un acontecimiento histórico concreto. En grupos, discuten
+                                                                                             los temas, motivos y contextos culturales que ilustran los
+                                                                                             contenidos, antes de elaborar un informe de grupo.
+
+    Investigación                               Aprender explorando,                         Los alumnos interactúan con su libro de texto digital para
+                                                comparando y haciendo                        estudiar cómo afecta el cambio climático al medio ambiente
+                                                crítica de los recursos                      en distintas partes del mundo. A continuación, crean en
+                                                                                             grupos una infografía en la que resumen las pruebas que han
+                                                                                             encontrado y proponen posibles soluciones, citando su libro
+                                                                                             de texto como fuente.
+2    Abc-Ld.org, The 6 Learning types – ABC Learning Design, 2025. https://abc-ld.org/6-learning-types/
+                     TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                         D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    11
+
+
+
+
+Como apoyo a las prácticas de evaluación
+El profesorado también puede utilizar los CED para evaluar el aprendizaje durante una sesión (es decir, evaluación formativa)
+de distintas formas:
+    ● Pueden utilizar/crear un cuestionario en línea de opción múltiple sobre el tema que estén tratando y, a continuación,
+      pedir al alumnado que elija la respuesta correcta. Estas actividades de evaluación suelen presentarse en forma de
+      juego.
+    ● El alumnado puede crear sus propios porfolios digitales en los que reflexiona sobre sus experiencias de aprendizaje y
+      documenta el desarrollo de un proyecto digital desde la idea hasta el producto final.
+    ● El alumnado puede utilizar la realidad virtual para diseñar e interactuar con un modelo 3D de un edificio o estructura,
+      lo que proporciona una evaluación auténtica de su capacidad para aplicar conceptos teóricos en un contexto práctico.
+En los ejemplos anteriores, el alumnado utiliza un CED de distintas formas, participando a menudo en diferentes actividades
+de aprendizaje dentro de una misma sesión. Estos ejemplos representan solo algunas de las numerosas posibilidades de
+trabajo de educadores y estudiantes con contenidos educativos digitales.
+                     TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+     12                  D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Principales ventajas de utilizar contenidos educativos digitales
+Los CED ofrecen una serie de ventajas sobre los materiales didácticos tradicionales. Desde hacer más accesible el aprendizaje
+hasta permitir que sea más personalizado, un CED puede ayudar a los docentes a apoyar mejor a su alumnado y mejorar su
+práctica en el aula. Algunas de sus principales ventajas son:
+
+
+                                                                           DIFERENCIACIÓN: los centros educativos deben atender a
+                                                                           una amplia variedad de capacidades. El profesorado pueden
+ACCESIBILIDAD E INCLUSIÓN: el CED tiene el potencial                       utilizar los CED para proporcionar materiales de aprendizaje
+de hacer que las aulas sean más inclusivas al dar cabida a                 diferenciados para cada estudiante.
+todo el alumnado, especialmente a aquellos con necesidades                         Por ejemplo, el centro educativo podría suscribirse a un
+especiales de aprendizaje. Estos estudiantes pueden                                conjunto de libros electrónicos en los que el alumnado
+beneficiarse de funcionalidades como texto a voz, voz a texto,                     pueda leer un pasaje de texto sobre un tema concreto
+subtítulos y herramientas de traducción.                                           en su nivel específico de lectura. Para ello puede
+   Por ejemplo, el alumnado con dislexia puede acceder a                           utilizarse un sistema de etiquetado o componentes de
+   una versión adaptada de un texto utilizando una serie de                        IA que permitan un aprendizaje adaptativo. De esta
+   herramientas que simplifican la disposición de las palabras                     forma, todo el alumnado puede leer sobre el mismo
+   y las imágenes para hacer la tarea más accesible.                               tema, pero a un nivel de lectura y de la forma que
+                                                                                   mejor se adapte a sus necesidades.
+
+
+
+                                                                           ACTUALIZACIONES PERIÓDICAS: Los CED son flexibles y
+                                                                           permiten que sus creadores puedan actualizarlos fácilmente,
+CREACIÓN DE CONTENIDOS: los docentes siempre                               en función de su naturaleza y de las licencias asociadas. Esto
+han creado sus propios contenidos y las herramientas                       permite actualizaciones rápidas y rentables que permiten
+digitales les permiten, tanto a ellos como a su                            reflejar los conocimientos más actualizados y los últimos
+alumnado, crear una amplia variedad de contenidos.                         descubrimientos científicos, así como actualizaciones de los
+De este modo, los CED puedes complementar los                              currículos o nuevos enfoques pedagógicos que respondan
+contenidos de los libros de texto u otras fuentes para                     mejor a las necesidades del alumnado.
+responder mejor a las necesidades del alumnado.
+                                                                                   Por ejemplo, tra s una s elecciones europea s,
+   Por ejemplo, mediante el uso de herramientas                                    nacionales o locales, los contenidos digitales podrían
+   como software para hacer presentaciones,                                        actualizarse inmediatamente mediante el uso de
+   herramientas de creación de contenidos e                                        una fuente en línea actualizada y comprobada, que
+   inteligencia artificial generativa, los docentes                                permita reflejar el nuevo panorama político, lo que
+   pueden crear aplicaciones, vídeos, documentos                                   ayuda al alumnado a mantenerse informado con
+   interactivos, páginas web y mucho más.                                          información actualizada y relevante.
+
+
+                                                                           RECOGIDA Y ANÁLISIS DE DATOS: cuando el alumnado
+                                                                           interactúa con los contenidos educativos digitales (DEC) en
+                                                                           una plataforma de aprendizaje, el sistema puede proporcionar
+RETROALIMENTACIÓN Y EVALUACIÓN: el uso de
+                                                                           información o analíticas de aprendizaje a través de un panel de
+CED para las evaluaciones (formativas o sumativas)
+                                                                           control. Utilizados de forma adecuada, estos datos pueden ayudar
+puede proporcionar información inmediata tanto al
+                                                                           a tomar decisiones fundamentadas sobre la práctica docente y el
+profesorado como a su alumnado.
+                                                                           comportamiento del alumnado.
+   Por ejemplo, los docentes pueden crear cuestionarios                            Por ejemplo, el alumnado podría utilizar una
+   y pruebas interactivas que recopilen y proporcionen                             plataforma en línea de matemáticas y lectura.
+   información en tiempo real sobre el progreso o la                               Este sistema ofrecería datos sobre los niveles de
+   comprensión/participación de su alumnado.                                       participación del alumnado en las tareas propuestas,
+                                                                                   que el docente podría consultar mediante un panel
+                                                                                   de control. Estos datos pueden utilizarse, de forma
+                                                                                   cuidadosa, para identificar a aquellos estudiantes que
+                                                                                   necesitan apoyo adicional.
+                     TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                         D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    13
+
+
+
+
+Un amplia variedad de fuentes
+Existe una gran cantidad de creadores de CED, lo que ofrece tanto a los centros educativos como a los educadores más
+posibilidades de elección, aunque este hecho también puede dificultar la elección de CED adecuados para su contexto. Los
+centros educativos y los educadores suelen acceder y adquirir CED de las siguientes fuentes:
+
+
+
+                                              Editoriales educativas, organizaciones culturales y empresas de tecnología
+           Proveedores                        educativa especializadas en la creación de contenidos educativos digitales para
+           comerciales                        centros escolares. Estos contenidos suelen requerir una cuota de suscripción y
+                                              están sujetos a determinadas condiciones de licencia.
+                                              Según sus condiciones de licencia, los REA pueden utilizarse gratuitamente por
+     Recursos educativos                      parte de las escuelas. Estos recursos suelen ponerlos a disposición de los centros
+        abiertos (REA)                        escolares los ministerios, las autoridades regionales u otros proveedores (por
+                                              ejemplo, universidades y organizaciones culturales como Europeana).
+
+                                              Los educadores pueden utilizar CED culturales, históricos y/o científicos de páginas
+          Páginas web                         web públicas como las de bibliotecas, museos, archivos o galerías de arte, a menudo
+            públicas                          de forma gratuita conforme a las condiciones de licencia del contenido.
+
+                                              Algunas escuelas se suscriben a plataformas en línea que ofrecen recursos
+                                              digitales de enseñanza y aprendizaje creados por educadores para educadores.
+     Plataformas en línea                     Estas plataformas ofrecen CED, desde hojas de ejercicios hasta planes de
+                                              lecciones y recursos didácticos adaptados a los distintos currículos. El acceso a
+                                              estos recursos suele ser de pago.
+                                              Los profesores pueden desarrollar su propio CED, más adaptado a las
+                                              necesidades y contextos concretos de sus alumnos, en ocasiones utilizando
+       CED creado por el                      una serie de herramientas, que incluye la IA. Esto puede hacerse de forma
+                                              individual y/o en colaboración dentro de las escuelas, o a través de una
+          educador                            asociación profesional (por ejemplo, a través de una asociación de profesores de
+                                              historia). Normalmente, estos contenidos suelen compartirse libremente, aunque
+                                              requieren el uso de las licencias pertinentes.
+                     TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+     14                  D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Para empezar: Primeros pasos para profesores y directores
+Dar tus primeros pasos con un CED no implica tener todas las               Explora las oportunidades nacionales y
+respuestas desde el principio. Lo más importante es abordarlo
+con la mentalidad adecuada: aumentar la confianza en uno                   europeas ya existentes
+mismo, comprometerse con los demás y aprovechar el apoyo y                 Y lo que es aún más importante, no tienes que trabajar desde
+los recursos disponibles en el centro educativo y en toda Europa.          cero, ya que existen numerosas iniciativas y recursos que te
+                                                                           ayudarán a empezar. Así que, como primer paso, averigua
+Si se dan dichas condiciones, incluso una pequeña acción
+                                                                           qué materiales existen donde trabajas y consulta lo que te
+puede tener un impacto significativo en tu centro educativo
+                                                                           ofrecemos a continuación para inspirarte.
+y en tu alumnado. De esta forma, tanto si empiezas a
+explorar los CED como si quieres ampliar tus conocimientos,                •    Un buen lugar para empezar son las plataformas
+a continuación te ofrecemos algunas formas de ponerte en                        educativas digitales nacionales y regionales que
+marcha, sea cual sea tu punto de partida.                                       comparten CED creados por docentes y otros creadores.
+                                                                                Por ejemplo, Scoilnet en Irlanda e INTEF en España,
+Los CED pueden proporcionar recursos y datos valiosos,
+                                                                                ofrecen contenidos, orientaciones y formación adaptados
+aunque es tu criterio profesional el que da sentido al CED:
+                                                                                a las necesidades del aula en cada contexto.
+interpretar la información, adaptarla a las necesidades del
+alumnado y combinarla con otros enfoques y materiales.                     •    A escala europea, recursos como la Plataforma Europea de
+                                                                                Educación Escolar y el Centro Europeo de Educación Digital
+Desarrolla tu confianza a través de la                                          ofrecen unas excelentes oportunidades de colaboración
+acción                                                                          y aprendizaje compartido sobre multitud de temas
+                                                                                relacionados con los CED.
+Empezar a trabajar con CED no implica que salga todo bien a
+la primera. Se trata de probar, aprender, adaptar y volver a               •    Programas como Erasmus+ ofrecen financiación y apoyo
+intentarlo. Ya sea experimentando con nuevos tipos de CED o                     a proyectos de colaboración, intercambios de profesores y
+creando recursos junto con otros docentes, dar pequeños pasos                   asociaciones para la innovación. Muchas de ellas se centran
+                                                                                en los CED y la educación digital.
+reflexivos tendrá un impacto real en el aula.
+En este sentido, los equipos directivos de los centros
+educativos desempeñan un papel fundamental. Así
+pues, piensa en cómo puedes crear un espacio para la
+experimentación que anime a docentes y educadores a probar
+nuevos enfoques con CED. Y no olvides celebrar los logros
+alcanzados y los aprendizajes obtenidos.
+Con el auge de la IA, la educación digital evoluciona
+rápidamente y no existe un modelo único que todos debamos
+seguir. Lo más importante es mantener una actitud abierta
+a la exploración y centrarse en aprender durante el proceso,
+tanto a nivel individual como en equipo.
+                        TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                            D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S        15
+
+
+
+
+Utiliza los marcos para desarrollar tus                                    Aprender y liderar juntos
+competencias                                                               Las comunidades profesionales de aprendizaje pueden ser una
+Es importante seguir desarrollando experiencia en el uso de los            vía eficaz para aprender sobre los CED. Por ello, siempre que
+CED para mantenerse al día y conservar la confianza a medida               sea posible, busca o ayuda a crear comunidades de práctica
+que evolucionan la tecnología y la enseñanza. Muchas de las                que apoyen el uso de CED y fomenten la experimentación
+decisiones relacionadas con la selección y el uso de los CED en los        compartida y mejora continua.
+centros educativos requieren un enfoque global que va más allá                   Únete o crea redes de docentes/equipos directivos que
+de los propios docentes. Los Marcos Europeos pueden ayudarte                     compartan estrategias, éxitos y desafíos relacionados con
+a evaluar en qué punto te encuentras, así como a planificar tus                  los CED. Puede ser tanto en tu centro educativo, como en
+próximos pasos y promover un lenguaje compartido con tus                         tu región o cruzando las fronteras a través de plataformas
+compañeros y compañeras:                                                         como la Plataforma Europea de Educación Escolar, la
+•    DigCompEdu (Marco Europeo para la Competencia Digital                       comunidad eTwinning o la EU Code Week (Semana
+     de los Educadores) es un marco fundamental diseñado                         Europea del Código).
+     para ayudar tanto a docentes como a equipos directivos de                   Explora la colaboración a través de grupos informales
+     centros educativos a desarrollar sus competencias digitales.                dentro del centro educativo como los campeones digitales o
+     Describe 22 competencias claramente definidas y ofrece                      coordinadores de equipos de educadores. Modelos como los
+     herramientas de autoevaluación.                                             référents numériques franceses son un excelente ejemplo
+•    DigCompOrg (Marco Europeo para Organizaciones Educativas                    de lo que puede llegar a conseguirse.
+     Digitalmente Competentes) ayuda a los centros educativos                    Intenta encontrar tiempo y espacio para hablar con tus
+     a reflexionar sobre cómo integran estratégicamente las                      colegas y compañeros sobre lo que funciona, lo que no
+     tecnologías digitales para apoyar el aprendizaje.                           funciona y lo que podéis intentar a continuación.
+•    DigComp (Marco Europeo de Competencia Digital para la                       En el caso de los equipos directivos de los centros
+     Ciudadanía), ya en su quinta edición (DigComp 3.0), describe                educativos: apoyad y consolidad comunidades
+     los conocimientos, habilidades y actitudes necesarios en                    profesionales centradas en los CED asignándoles tiempo,
+     cinco áreas de competencia (búsqueda, evaluación y gestión                  reconociendo sus funciones de liderazgo y vinculando su
+     de la información; comunicación y colaboración; creación de                 trabajo a los objetivos de todo el centro.
+     contenidos digitales; seguridad, bienestar y uso responsable;
+     e identificación y resolución de problemas). Los nuevos               Ayuda a mejorar los contenidos
+     contenidos actualizados de DigComp 3.0, especialmente
+                                                                           Como docentes y educadores, no sólo sois usuarios de
+     en el área de competencia de creación de contenidos
+                                                                           CED, sino también cocreadores, evaluadores y defensores.
+     digitales (Área 3), pueden ayudar a mejorar la enseñanza
+                                                                           Existen numerosas iniciativas que ya lo reconocen, e invitan
+     y el aprendizaje de conocimientos, habilidades y actitudes
+                                                                           a los docentes y a los equipos directivos de los centros
+     relevantes en el uso de CED.
+                                                                           educativos a participar en los desarrollos de CED mediante la
+•    Un gran apoyo para ello es la herramienta de diagnóstico              retroalimentación y la colaboración.
+     SELFIE para centros educativos, que permite que los
+                                                                           •     Participa en proyectos piloto de CED o en bancos de
+     centros puedan evaluar su nivel actual de madurez digital
+                                                                                 pruebas como el Edtest sueco o el EdTech Testbed de
+     y determinar sus necesidades concretas para seguir
+                                                                                 Helsinki, que ponen en contacto a centros educativos con
+     avanzando en la educación digital.
+                                                                                 creadores para probar y mejorar nuevos contenidos.
+•    La herramienta SELFIE para profesores permite a docentes
+                                                                           •     Tome parte em projetos de investigação em contexto de
+     y educadores autoevaluar sus competencias digitales
+                                                                                 sala de aula ou em projetos de aprendizagem pela ação.
+     en seis áreas distintas. Esta herramienta permite la
+                                                                                 Estes são frequentemente realizados em parceria com
+     evaluación tanto de docentes concretos como de un grupo
+                                                                                 universidades ou centros de investigação locais/nacionais.
+     de docentes que trabajen juntos.
+                                                                           •     Participa en proyectos de investigación o de aprendizaje
+Algunos países también ofrecen microcredenciales o
+                                                                                 activo en el aula. Suelen organizarse en colaboración con
+certificaciones nacionales que se ajustan a estos marcos, como
+                                                                                 universidades o centros de investigación locales o nacionales.
+PIX en Francia o Edupass en Luxemburgo. Éstas pueden ayudarte
+a reconocer tus progresos y sirven de apoyo a la planificación del
+desarrollo de todo el centro
+                   TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+     16                D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+    Apartado 2: Criterios clave para
+    contenidos educativos digitales
+    de gran calidad
+Para diseñar experiencias de aprendizaje eficaces, equitativas y sostenibles en el tiempo, los docentes y
+equipos directivos de centros educativos requieren CED de alta calidad que se adapten tanto a sus objetivos
+pedagógicos como a la realidad de sus aulas. Pero con un volumen cada vez más ingente de CED de multitud
+de proveedores, en tantos formatos y opciones, que incluyen la posibilidad de crear o adaptar contenidos por
+sí mismos, ¿cómo pueden los docentes y educadores tomar decisiones más seguras e informadas?
+
+
+Este apartado de las directrices presenta ocho criterios de calidad para ayudar al profesorado y equipos directivos a
+tomar decisiones sobre los CED. Cuando dichas decisiones forman parte de la planificación de todo el centro y están
+vinculadas a objetivos globales como la inclusión o la transformación digital, los CED pueden tener un impacto duradero
+en las aulas de todo el centro.
+Cabe subrayar que no hace falta ser un experto para hacer una evaluación precisa de un CED. Las directrices que figuran a
+continuación pretenden ayudar a los docentes a realizar una selección que se adapte a sus necesidades.
+Los ocho criterios para una CED de alta calidad son:
+
+
+
+
+                                                                 Adecuación
+                                                                 pedagógica
+                                                                 y alineación
+                                              Viabilidad          curricular         Experiencias
+                                              financiera                            de aprendizaje
+                                                                                      atractivas
+
+
+                                                     Criterios
+                                                                                                 Diseño,
+                                 Interoperabilidad CLAVE para
+                                                                                             accesibilidad e
+                                      técnica
+                                                    un CED de                                   inclusión
+                                                   alta calidad
+
+                                           Cumplimiento                                    Fiabilidad
+                                              legal
+
+                                                                 Impacto y
+                                                                evaluaciones
+                      TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                          D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S     17
+
+
+
+
+Estos criterios pueden utilizarse para evaluar CED ya                    Para ayudarte a visualizar cómo combinar dichos criterios en
+elaborados, ya sean de pago o REA, aunque también son                    la práctica, te recomendamos utilizar un sencillo gráfico radial
+útiles a la hora de crear o adaptar tus propios materiales. Los          (ver Figura 2) para evaluar los puntos fuertes y débiles de
+criterios se basan en un análisis sistemático de 65 marcos de            un CED, su calidad y las áreas que pueden mejorarse. Los
+calidad y documentos académicos, que reúnen en un modelo                 resultados de este análisis pueden utilizarse para apoyar
+único y unificado normas hasta ahora dispersas.                          la reflexión, orientar la toma de decisiones institucionales y
+                                                                         fomentar un enfoque más integrado del CED en todo el centro.
+Aun así, no se trata de normas rígidas, sino de principios
+rectores. Ofrecen una gran adaptabilidad a los distintos                 No se trata de límites rígidos, sino de puntos de partida
+sistemas educativos, currículos y contextos de enseñanza.                para el diálogo. Criterios como «Impacto y evaluación» y
+En algunas situaciones, puede que necesites o quieras                    «Fiabilidad» ocupan un lugar central, lo que significa que
+consultar todos los criterios; en otras, uno o dos pueden ser            son una responsabilidad compartida. Al fin y al cabo, la
+especialmente relevantes.                                                implementación más eficaz de los CED se produce cuando
+                                                                         los equipos directivos de los centros comprenden las
+Por lo general, los docentes y educadores deben priorizar los
+                                                                         necesidades pedagógicas del aula y cuando los docentes
+criterios más directamente relacionados con la experiencia en
+                                                                         son conscientes de las consideraciones estratégicas e
+el aula (flecha negra). Por su parte, los responsables de los
+                                                                         infraestructurales del centro.
+centros educativos deben empezar por asegurarse de que
+la solución CED es económicamente viable, técnicamente
+sólida y segura, y cumple la normativa legal y de privacidad
+de datos (flecha marrón). No obstante, todos los agentes
+implicados deberán tener en cuenta los ocho criterios y decidir
+conjuntamente las opciones y prioridades que permitirán un
+uso seguro y eficaz del CED en todo el centro educativo.
+                    TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+     18                 D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Adecuación pedagógica y alineación curricular
+Un CED de alta calidad siempre debe apoyar y mejorar tus prácticas de enseñanza, aprendizaje y evaluación. No basta con que
+el CED se limite a presentar información: debe aportar un valor añadido real a la experiencia del aula. Esto implica ayudar al
+alumnado a comprender temas complejos con mayor claridad, haciéndoles participar de formas que los contenidos tradicionales
+no permiten y fomentando una comprensión más profunda a través de la interacción, la reflexión y el desarrollo de habilidades.
+Los mejores CED también ayudan al profesorado alineándose con los objetivos del currículo y reforzando el diseño de
+las sesiones. Lo ideal sería que comunicara claramente los principios pedagógicos que sigue, los objetivos específicos de
+aprendizaje que persigue y los tipos de interacción y adaptabilidad que ofrece. Esta transparencia facilita a los centros
+educativos la selección de materiales que se ajusten a sus necesidades.
+
+
+
+
+                           En qué hay que fijarse
+                           En tu aula:
+                       ● Un buen CED suele desarrollarse teniendo en cuenta objetivos pedagógicos y curriculares claros,
+                         y admite distintas formas de impartir las clases, como tareas para toda la clase o ejercicios de
+                         trabajo individual. (Consulta el Marco de Laurillard en el subapartado 1.2.)
+                       ● Busca CED que sigan un enfoque estructurado y progresivo de la enseñanza, que permita al
+                         alumnado aprender de forma lógica a medida que avanzan en el contenido del currículo.
+                       ● Los CED deben estar vinculados con los objetivos de aprendizaje previstos para el alumnado.
+                         Utiliza cuestionarios integrados o los analíticas de tu sistema de gestión del aprendizaje (LMS)
+                         para realizar un seguimiento del dominio de cada objetivo por parte de los estudiantes.
+                       ● Un CED de alta calidad suele ofrecer retroalimentación en tiempo real, instrucción diferenciada e itinerarios
+                         personalizables para permitir atender a la diversidad del alumnado. Por ejemplo, podría basarse en las
+                         diferencias entre los conocimientos previos y los actuales o en los niveles de competencia.
+
+
+
+                           Go-Lab, de los Países Bajos, ayuda al profesorado a crear clases interactivas de STEM basadas en
+                           consultas, utilizando plantillas y laboratorios virtuales ya preparados. Favorece el aprendizaje activo
+                           y puede adaptarse a diferentes contextos de aula. ¿En tu país existen herramientas parecidas?
+
+
+
+                            En qué hay que fijarse
+                            En tu centro educativo:
+                      ● ¿Dispones de una lista de recursos de CED aprobados que se ajusten a los objetivos del currículo? Si
+                        no es así, es hora de empezar a crear uno.
+                      ● Asegúrate de que el profesorado priorice aquellos contenidos que describan claramente sus objetivos
+                        de aprendizaje, su justificación pedagógica y el impacto esperado.
+                      ● Comprueba que este contenido se ajusta al enfoque pedagógico de tu centro y a las prioridades de
+                        formación del profesorado. También pueden establecerse hitos compartidos para el uso de los CED,
+                        haciendo que su adopción sea altamente estratégica.
+                      ● Elige un CED que apoye la misión global de tu centro de formar a un alumnado preparado para
+                        el futuro y que les ayude a aplicar sus conocimientos de forma significativa y relevante en
+                        contextos del mundo real.
+          TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+              D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    19
+
+
+
+
+Puesta en práctica
+
+
+                               ¿Este CED ayuda al alumnado a lograr sus resultados clave, o es tan solo una
+Comprobación rápida
+                               distracción?
+
+                               Prioriza contenidos que desarrollen el conocimiento de forma progresiva y ofrezcan
+Consejo
+                               distintas vías para alcanzar el éxito.
+
+
+                               Explora cómo las funciones integradas de evaluación o analíticas de aprendizaje
+Atajo
+                               pueden ayudarte a supervisar el aprendizaje y ajustar tu práctica docente.
+
+                                     ● ¿Este contenido se ajusta claramente a mis/nuestros objetivos
+                                       curriculares?
+                                     ● ¿Puede adaptarse al alumnado con necesidades o puntos de partida
+Hazte estas preguntas
+                                       distintos?
+                                     ● ¿Ayuda a desarrollar competencias básicas como el pensamiento crítico
+                                       y la creatividad?
+                 TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+    20               D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Experiencias de aprendizaje atractivas
+Un aprendizaje significativo y motivador no se produce por casualidad. Un CED de alta calidad ayuda al alumnado
+a conectar con sus aprendizajes de forma realmente atractiva y relevante. Cuando los contenidos captan el
+interés de los estudiantes y favorecen su participación, existe una mayor probabilidad de que comprendan ideas
+complejas y recuerden lo que han aprendido. Con el tiempo, este nivel de implicación puede contribuir a mejorar
+los resultados del aprendizaje y mantener la motivación del alumnado.
+
+
+
+                        En qué hay que fijarse
+                        En tu aula:
+                    ● Un CED de gran calidad puede dar vida al aprendizaje de una forma que los materiales tradicionales
+                      no pueden. Fíjate si ofrece oportunidades para colaborar, simular situaciones del mundo real o explorar
+                      entornos interactivos que profundicen la comprensión.
+                    ● De la misma forma, los mejores recursos digitales no se limitan a presentar hechos. Exigen a
+                      los estudiantes que piensen, hagan, discutan y reflexionen. Prioriza los CED que fomenten el
+                      cuestionamiento, la experimentación y el diálogo.
+                    ● Comprueba si tu CED permite que el alumnado pueda elegir temas y formatos de tareas o proponer
+                      distintas formas de demostrar su comprensión mediante la creación de productos multimedia, como
+                      videodiarios o pódcasts.
+                    ● Para algunos estudiantes, las insignias, los desafíos y clasificaciones pueden hacer que el aprendizaje
+                      con los CED resulte más motivador. Aun así, asegúrate de que las insignias complementen, y no
+                      sustituyan, la motivación intrínseca.
+                    ● Busca oportunidades que permita al alumnado convertirse en creadores de contenidos (por ejemplo,
+                      utilizando Luanti, un juego gratuito multijugador de código abierto, o a través de herramientas de IA
+                      generativa), y ofréceles la posibilidad de expresar sus propios puntos de vista y experiencias.
+                    ● Comprueba si el CED incluye la función de aprendizaje adaptativo. En este caso, los itinerarios
+                      inteligentes ajustan el nivel de dificultad del CED en función del rendimiento del estudiante. Esto
+                      ayuda a mantener al alumnado en su zona de desarrollo próximo.
+
+
+
+
+                        En qué hay que fijarse
+                        En tu centro educativo:
+
+                 ● Consulta las estadísticas de la plataforma o realiza encuestas rápidas al alumnado para
+                   comprobar si existe una participación sostenida y una mejora de los resultados del aprendizaje.
+                 ● Piensa en cómo las herramientas de mensajería y los sistemas digitales de retroalimentación
+                   podrían ayudar a fomentar la participación del alumnado y de sus familias y permite que los
+                   estudiantes puedan aprender de sus errores.
+          TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+              D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    21
+
+
+
+
+Puesta en práctica
+
+
+                               ¿El alumnado interactúa activamente con este contenido, o simplemente haz
+Comprobación rápida
+                               clic en él?
+
+                               Elige un CED que ofrezca una amplia variedad de formatos de contenido (como vídeo,
+Consejo
+                               juegos interactivos, etc.) que fomenten el debate e ilustren el progreso.
+
+
+                               La participación aumenta cuando los estudiantes aprenden juntos. ¿Por qué no priorizar
+Atajo
+                               un CED que favorece la interacción?
+
+
+                                     ● ¿Disfruta mi alumnado con este CED? Pídele su opinión.
+                                     ● ¿El contenido promueve la curiosidad y mantiene el interés?
+Hazte estas preguntas
+                                     ● ¿Apoya el aprendizaje social y colaborativo?
+                                     ● ¿Ayuda a mi alumnado a alcanzar sus objetivos de aprendizaje?
+                      TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+      22                  D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Diseño, accesibilidad e inclusión
+Cuando priorizas la inclusión a la hora de elegir y utilizar el CED, contribuyes a crear experiencias de aprendizaje equitativas que reflejan
+la diversidad de las aulas. Por ejemplo, algunos CED pueden diseñarse específicamente para alumnado con necesidades especiales. Por
+lo tanto, un CED de alta calidad debe ser accesible e integrador para que todos los estudiantes, independientemente de su capacidad,
+procedencia, ubicación o dispositivo, puedan participar en el aprendizaje.
+Hacer que un CED sea integrador también consiste en garantizar que todo el alumnado se vea representado y pueda participar
+plenamente. Los docentes, educadores y equipos directivos de centros educativos pueden desempeñar un papel fundamental a la
+hora de dar prioridad a un CED que apoye este objetivo y promueva un entorno de aprendizaje digital más justo e integrador.
+
+
+
+
+                              En qué hay que fijarse
+                             En tu aula:
+                        ● Todos los CED deben ser accesibles a todo el alumnado. ¿Tus estudiantes pueden acceder a
+                          él y utilizarlo? ¿Es útil para el aprendizaje?
+                        ● ¿El CED con el que trabajas está disponible en todos los dispositivos que utilizas (portátiles,
+                          tabletas, etc., y sus distintos sistemas operativos)? ¿Incluye funciones que respondan a las
+                          necesidades del alumnado con necesidades especiales, como la conversión de texto a voz, el
+                          ajuste de fuente/contraste y los subtítulos?
+                        ● ¿El CED permite que el alumnado pueda interactuar con el contenido de distintas formas? Por
+                          ejemplo, mediante vídeos, actividades interactivas o tareas basadas en texto.
+                        ● ¿Tu CED refuerza el aprendizaje multilingüe? Comprueba si incluye diferentes opciones
+                          lingüísticas o funciones de traducción integradas para el alumnado que las necesiten (como
+                          personas desplazadas por una crisis).
+                        ● En asignaturas como historia o política, es importante que el material didáctico evite estereotipos
+                          y represente la diversidad de contextos y culturas. Revisa cuidadosamente todas las imágenes,
+                          estudios de caso y los escenarios para asegurarte de que promueven la inclusión.
+
+
+
+
+                              En qué hay que fijarse
+                             En tu escuela:
+                        ● Ten en cuenta y respeta en todo momento las principales normas de accesibilidad. Comprueba
+                          que todos los CED cumplen las normas locales y europeas, como la EN 301 549, que exige
+                          que las herramientas digitales sean accesibles para todo el alumnado, incluyendo las personas
+                          en situación de discapacidad.
+                        ● Realiza auditorías periódicas para asegurarte de que tus recursos digitales siguen respondiendo a
+                          las distintas necesidades educativas del alumnado. No olvides preguntar al profesorado qué grado
+                          de accesibilidad tiene un CED y cómo podría mejorarse.
+                        ● Ofrece sesiones de desarrollo profesional sobre estrategias de enseñanza inclusiva y buenas
+                          prácticas para incorporar los principios del Diseño Universal para el Aprendizaje (DUA).
+          TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+              D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    23
+
+
+
+
+Puesta en práctica
+
+
+                               Si un recurso concreto sólo funciona con una conexión a Internet de alta velocidad,
+Comprobación rápida            considera alguna alternativa sin conexión o una versión que requiera una menor
+                               velocidad para maximizar el acceso.
+                               Pregúntate: «¿Le funciona a todo nuestro alumnado?» y «¿Qué estudiantes podrían
+Consejo                        tener dificultades para acceder a este contenido?» Modifica tus decisiones y planes
+                               en función de ello.
+
+
+Atajo                          Pregunta siempre al alumnado: «¿Este material te ayuda a aprender mejor?»
+
+
+                                     ● ¿Este contenido es adecuado para alumnado con capacidades o necesidades
+                                       diferentes? ¿Puede adaptarse para apoyar una enseñanza diferenciada?
+                                     ● ¿Es compatible con los dispositivos y el acceso a Internet con los que
+Hazte estas preguntas                  cuenta mi alumnado?
+                                     ● ¿El alumnado se ve reflejado en el contenido y pueden contribuir para
+                                       darle forma?
+                TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+    24              D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Fiabilidad
+La fiabilidad es un criterio fundamental a la hora de trabajar con un CED. El alumnado confía en que
+los CED proporcionen materiales de aprendizaje precisos, de alta calidad y actualizados. El profesorado
+también necesita recursos para el aula que funcionen siempre, sin errores ni fallos. La buena noticia es
+que no hace falta ser un experto en TIC para tomar decisiones informadas y seguras. La sencilla guía que
+te presentamos a continuación te indicará el camino correcto.
+
+
+                       En qué hay que fijarse
+                       En tu aula:
+                   ● Asegúrate de que todos los contenidos proceden de editoriales y proveedores de tecnología
+                     educativa de confianza, instituciones acreditadas, repositorios de REA revisados por otros
+                     docentes o portales nacionales de recursos educativos reconocidos.
+
+                   ● Un CED generado por IA puede ser de gran utilidad, aunque siempre debe etiquetarse claramente
+                     como tal y utilizarse con cuidado. Hay que saber de dónde proceden sus contenidos y cómo se han
+                     modelado. Además, comprueba si refleja los valores y objetivos de tu centro.
+
+
+
+
+                      Prueba a explorar portales nacionales reconocidos de recursos para educadores como el
+                      WirLernenOnline o el griego Photodentro. En algunos países, las editoriales han creado portales
+                      nacionales donde tanto educadores como estudiantes pueden encontrar fácilmente en un
+                      único lugar una amplia gama de recursos producidos por profesionales. Busca en Internet para
+                      comprobar si hay alguno en tu país.
+
+
+
+                       En qué hay que fijarse
+                       En tu centro educativo:
+                 ● Anima a tu equipo a compartir sus experiencias y opiniones sobre los CED con toda la
+                   comunidad educativa.
+                 ● Los centros educativos, agrupaciones de centros y los sistemas educativos nacionales podrían desarrollar
+                   sistemas para informar de problemas, sugerir mejoras y señalar los recursos poco fiables o inadecuados.
+                   Las revisiones podrían rastrearse fácilmente a través de un historial de versiones visible.
+                 ● Existen numerosas revisiones independientes de CED realizadas por educadores a través de páginas
+                   web institucionales, asociaciones profesionales u redes de docentes que comparten sus experiencias
+                   didácticas. Una nueva generación de plataformas digitales (como EdTech Impact, del Reino Unido)
+                   incluyen reseñas independientes realizadas por educadores sobre los CED que han utilizado. Utiliza
+                   esta información para fundamentar tus ideas y apoyar las decisiones de adquisición del centro.
+                 ● Evalúa de forma periódica si los materiales generados por IA ofrecen contenidos fiables e imparciales.
+                   Ten presentes en todo momento las normas basadas en el riesgo, establecidas en la Ley de IA de
+                   la UE, al utilizar la IA.
+          TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+              D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    25
+
+
+
+
+Puesta en práctica
+
+
+
+                               Si el CED que utilizas requiere la resolución constante de problemas o se bloquea
+Atajo
+                               continuamente, es probable que no merezca la inversión de tiempo ni de recursos.
+
+
+                               El uso de sandboxes de IA (es decir, zonas de pruebas aisladas), como el desarrollado
+Consejo                        por LIST en Luxemburgo, ayuda a mejorar la fiabilidad de los modelos de IA y reduce
+                               los riesgos derivados para los usuarios.
+
+
+                                     ● ¿Este contenido proviene de una fuente que conozco y en la que confío?
+                                     ● ¿Los contenidos que utilizo son precisos, actuales y apropiados?
+Hazte estas preguntas                ● ¿Funciona de forma fiable en la infraestructura informática de nuestro centro?
+                                     ● Si interviene la IA, ¿el proceso es transparente y fiable?
+                 TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+    26               D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Impacto y evaluación
+Los CED deben generar mejoras medibles en el aprendizaje, no sólo en la implicación del alumnado. Para
+garantizarlo, es necesario evaluar si una propuesta ofrece evidencias reales de impacto. Esto implica analizar
+cómo se realiza el seguimiento del progreso del alumnado, si proporciona información significativa sobre
+la comprensión y si contribuye al desarrollo de competencias más amplias, como el aprendizaje autónomo
+o la colaboración. Dar prioridad a un CED que demuestre un impacto contrastado ayuda a los centros a
+mejorar su práctica docente y a aprovechar mejor sus recursos.
+
+
+
+                         En qué hay que fijarse
+                         En tu aula:
+                    ● Busca CED respaldados por estudios o validados mediante experiencias piloto en el aula.
+                      Aprender de la experiencia de los demás puede ayudarte a determinar si un CED concreto
+                      tendrá un impacto positivo en tu aula.
+                    ● Reflexiona sobre qué hechos o conceptos clave deben ser capaces de recordar o explicar los
+                      estudiantes tras utilizar el contenido. Considera además si el alumnado puede utilizar el CED
+                      para demostrar un aprendizaje más profundo mediante proyectos de colaboración o tareas
+                      independientes que requieran transferir competencias y conocimientos.
+                    ● ¿Tu CED ofrece información sobre el rendimiento y la comprensión del alumnado? Podrían servir
+                      para orientar tu enseñanza y abordar lagunas de conocimiento tanto individuales como colectivas.
+                    ● Busca CED que animen al alumnado a reflexionar y planificar. De esta forma se fomenta la
+                      confianza y se favorece el aprendizaje autorregulado.
+                    ● ¿El CED facilita enfoques de evaluación formativa? Los cuestionarios digitales, las encuestas y los ejercicios
+                      interactivos pueden ayudarte a controlar la comprensión de los estudiantes en tiempo real.
+
+
+
+
+                                En Estonia, OpiqStat ofrece a los centros educativos datos sobre qué CED se utiliza, con qué
+                                frecuencia y quién lo utiliza. Esto permite orientar las decisiones sobre formación, currículo
+                                e inversión. Busca si existen herramientas similares en tu país.
+
+
+
+                         En qué hay que fijarse
+                         En tu centro educativo:
+                    ● Analiza los datos de progreso del alumnado a gran escala mediante CED que ofrezcan
+                      información conforme al RGPD, la legislación sobre privacidad de datos de la UE. Esto permite
+                      a los responsables de los centros educativos identificar tendencias en el aprendizaje, detectar
+                      posibles lagunas y respaldar las decisiones e intervenciones basadas en datos.
+                    ● Si tu CED incluye analíticas del aprendizaje, ve más allá de los resultados de los exámenes.
+                      Anima al profesorado a utilizar todos los datos disponibles para identificar dónde puede el
+                      alumnado necesitar más apoyo o encontrar más dificultad.
+          TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+              D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S     27
+
+
+
+
+Puesta en práctica
+
+
+
+                               Si un recurso afirma estar «basado en estudios», comprueba y revisa las referencias a
+Atajo
+                               estudios reales o ejemplos de su uso en otros centros.
+
+
+                               Antes de introducir un nuevo CED, ten claro cuáles son sus resultados de aprendizaje
+Consejo                        previstos. Hazte esta pregunta: «¿Qué deberían ser capaces de hacer los estudiantes
+                               y cómo podré comprobar si hay progresos significativos?»
+
+                                     ● ¿Tus compañeros han tenido éxito con este contenido en contextos similares?
+                                     ● ¿Cómo se definiría el éxito para el alumnado tras utilizar este contenido?
+                                     ● ¿Están claramente definidos los resultados y puedo medirlos de forma
+Hazte estas preguntas                  significativa?
+                                     ● ¿Me ayuda la evaluación integrada o las funciones de analítica de aprendizaje
+                                       del CED a adaptar mi enseñanza, o se limita a informar sobre las calificaciones?
+                  TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+    28                D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Cumplimiento legal
+Todos los CED que se utilicen en los centros educativos deben cumplir las respectivas leyes nacionales y de la UE,
+incluyendo el Reglamento General de Protección de Datos (RGPD), la Ley de IA y la legislación sobre derechos de
+autor y propiedad intelectual. Aunque los Delegados de Protección de Datos y los equipos directivos de los centros
+educativos tienen responsabilidades clave en este ámbito, como docente puedes contribuir a tomar decisiones
+con conocimiento de causa.
+Respetar la ley ayuda a mantener la seguridad del alumnado, protege sus datos personales y garantiza un uso
+justo y responsable del CED. Estos requisitos legales no son obstáculos, sino la base de un entorno de aprendizaje
+digital respetuoso. Un mejor conocimiento de los derechos de propiedad intelectual, por ejemplo, puede abrir la
+puerta a una amplia oferta de contenidos de alta calidad diseñados para un uso legal y creativo en los centros
+educativos. (Consulta también la guía sobre derechos de autor de los CED, en el subapartado 3.3 a continuación)
+
+
+                          En qué hay que fijarse
+                          En tu aula:
+                     ● Antes de utilizar cualquier CED nuevo, asegúrate junto a la persona responsable de tu centro
+                       educativo de que se ajusta a la política de privacidad y a las normas de protección de datos de tu
+                       centro. Exige un Acuerdo de Tratamiento de los Datos al proveedor.
+                     ● Asegúrate de que las herramientas de IA disponen de garantías para evitar reforzar el sesgo y de
+                       que ofrecen transparencia sobre los datos utilizados para entrenar el modelo. Para poder ayudarte
+                       a entender mejor lo que debes buscar, prueba ejemplos como el EduAI de Luxemburgo, un sitio
+                       web que, con el apoyo del ministerio, permite a docentes y alumnado mayor de 13 años crear
+                       imágenes en sus actividades de enseñanza y aprendizaje.
+                     ● Ten cuidado con los CED que requieran acceso a la cámara web y funciones de chat, o enlaces a
+                       páginas web de terceros desconocidos. Asegúrate en todo momento de que sus funciones sean
+                       seguras, necesarias y adecuadas a la edad del alumnado.
+                     ● Comprueba siempre detenidamente las condiciones de la licencia de cualquier CED. El hecho
+                       de que se utilice en un contexto educativo no implica necesariamente que pueda copiarse,
+                       adaptarse o redistribuirse libremente.
+                     ● Comprueba si el CED cumple la estrategia europea para una Internet mejor para los niños (Código
+                       BIK+). Esto garantiza que las funciones del CED sean apropiadas para la edad, apoyen los derechos
+                       de la infancia en línea e incluyan medidas de protección contra contenidos y contactos peligrosos.
+
+
+
+                           En qué hay que fijarse
+                          En tu centro educativo:
+                     ● No te olvides de los recursos proporcionados por la administración pública local o nacional. Por
+                       ejemplo, el Gestionnaire d'Accès aux Ressources (GAR) francés ayuda a agilizar y asegurar el
+                       acceso a los CED tanto al alumnado como al profesorado. ¿Cuál es el equivalente en tu contexto?
+                     ● La protección de los datos del alumnado es una prioridad. Define funciones y permisos claros
+                       para el personal y las familias, exige contraseñas seguras y programa actualizaciones periódicas
+                       de seguridad.
+                     ● Aclara los términos de la licencia para garantizar que cualquier CED que se haya creado siga siendo
+                       propiedad del profesorado y su alumnado. Las condiciones de uso, reutilización e intercambio de
+                       contenidos también deben ser fáciles de entender.
+                     ● Fomenta la revisión continua para garantizar que el CED sigue cumpliendo las normas de
+                       seguridad, conformidad y protección de datos. Capacita al personal mediante formación.
+          TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+              D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    29
+
+
+
+
+Puesta en práctica
+
+
+                             Si no estás seguro de dónde almacena el CED los datos del alumnado, o el
+Comprobación rápida          proveedor no puede darte una respuesta clara, detente y sigue investigando
+                             sobre el tema.
+
+                             No tienes por qué hacerlo en solitario. Si tienes dudas sobre la protección de
+Consejo                      datos, las licencias o los derechos de autor, habla con el delegado de protección
+                             de datos, el coordinador TIC o el equipo directivo del centro.
+
+                                   ● ¿Este CED se ajusta a las políticas de privacidad y protección de datos
+                                     de nuestro centro educativo?
+                                   ● ¿Los datos del alumnado están seguros, tanto durante su
+                                     almacenamiento como en tránsito?
+Hazte estas preguntas
+                                   ● ¿El personal utiliza o comparte los contenidos respetando los derechos
+                                     de autor?
+                                   ● ¿Todos confían en que el trabajo y la información personal del alumnado
+                                     están protegidos?
+                  TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+    30                D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Interoperabilidad técnica
+Un CED puede mejorar la enseñanza y el aprendizaje, pero sólo cuando es compatible y funciona bien con los
+sistemas informáticos del centro. Elegir un CED que siga unas normas comunes y se adapte a otros servicios te
+ayuda a mantener el control y a evitar la dependencia de un único proveedor.
+Así pues, tanto si eliges un nuevo CED como si revisas contenidos ya existentes, la tecnología siempre debe servir
+de apoyo a la enseñanza, no añadir complejidad. Los pasos que se indican a continuación te ayudarán a garantizar
+una experiencia digital segura y fluida tanto para el alumnado como para tus colegas.
+
+
+
+                          En qué hay que fijarse
+                          En tu aula:
+                     ● El CED debe integrarse fácilmente con cualquier otro sistema digital de que dispongas (por
+                       ejemplo, tus sistemas de gestión del aprendizaje y del alumnado).
+                     ● Prioriza los CED interoperables e independientes de la plataforma. Esto implica que debe
+                       funcionar en distintos dispositivos y sistemas operativos sin necesidad de complejas
+                       soluciones. Para ello, pide ayuda al coordinador TIC de tu centro o a otros compañeros
+                       con experiencia. Si creas un CED, asegúrate de que su contenido funciona en todos los
+                       dispositivos que utiliza tu alumnado.
+                     ● Elige soluciones CED que permitan exportar/importar datos fácilmente y sigan estándares abiertos.
+
+
+
+
+                          En qué hay que fijarse
+                          En tu centro educativo:
+                   ● Fomenta el debate periódico entre el profesorado, educadores y personal informático experto para
+                     ayudar a identificar los problemas de interoperabilidad al evaluar el nuevo CED.
+                   ● Inspírate en el ámbito de la enseñanza superior, en el que un reciente Marco de la Comisión Europea
+                     enfatizaba que un CED debe «presentarse de forma sencilla en distintas plataformas y ofrecer una
+                     información sobre su funcionamiento que pueda resultar útil».
+                   ● Busca CED que siga estándares abiertos e internacionalmente aceptados, como 1EdTech o xAPI,
+                     para garantizar la facilidad al compartir los contenidos.
+
+
+                            eTorba, de Eslovenia, es una plataforma nacional de REA que utiliza normas abiertas
+                            como xAPI para facilitar el flujo de contenidos entre sistemas. Todas sus herramientas
+                            de lectura y creación de libros de texto interactivos se han diseñado pensando en una
+                            integración técnica sencilla. Busca en Internet si tu país ofrece alguna solución parecida.
+          TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+              D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    31
+
+
+
+
+Puesta en práctica
+
+
+                               Si una herramienta te obliga a utilizar un sistema operativo concreto o requiere
+                               demasiados conocimientos técnicos o trabajo adicional, puede que no sea la más
+Comprobación rápida
+                               adecuada para tu centro. Piensa detenidamente en los pros y los contras antes
+                               de seguir adelante.
+                               Ya seas docente, informático o formes parte del equipo directivo del centro, tómate
+                               tu tiempo para comprobar la calidad de los proveedores en función de los elementos
+Consejo
+                               mencionados anteriormente. Si las respuestas no te parecen lo bastante claras o
+                               satisfactorias, ¡sigue buscando!
+                                     ● ¿Nuestras herramientas CED funcionan bien con nuestros sistemas actuales?
+Hazte estas preguntas                ● ¿Revisamos periódicamente los CED que utilizamos y comprobamos cómo se
+                                       ajustan a las estándares abiertos?
+                  TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+    32                D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Viabilidad financiera
+El CED puede marcar una diferencia real en los resultados del alumnado, pero no todos los recursos ofrecen el
+mismo valor a largo plazo. En un contexto de presupuestos ajustados y limitaciones de tiempo, es esencial pensar
+más allá del precio. La elección de CED sostenibles puede tener un impacto significativo sobre el aprendizaje
+durante varios cursos académicos, añadiendo valor a los recursos ya presentes en tu centro.
+Ten en cuenta que incluso los CED gratuitos pueden conllevar costes ocultos, ya sea en términos de carga de
+trabajo, datos del alumnado o necesidad de futuras actualizaciones. Piensa estratégicamente, ya que el mejor
+CED suele ser el que mantiene un equilibrio entre calidad, durabilidad e inversión responsable, ya sea en términos
+de tu tiempo o de tu presupuesto.
+
+
+
+                          En qué hay que fijarse
+                          En tu aula:
+                     ● Reflexiona sobre la vida útil del CED. Un recurso debería seguir siendo relevante más allá de
+                       un solo curso académico. Si no es así, ¿merece la pena invertir en él?
+                     ● Ten cuidado con los CED «gratuitos» que pretenden monetizar los datos de los usuarios,
+                       se basan en publicidad o exigen compras dentro de la aplicación para desbloquear toda
+                       su funcionalidad.
+                     ● Asegúrate de que el CED que utilices esté disponible a largo plazo. Los recursos gratuitos
+                       pueden desaparecer si se quedan sin financiación, así que infórmate bien antes de
+                       incluirlos en tu planificación.
+                     ● Pruébalos siempre antes de comprometerte. Las pruebas gratuitas, los proyectos piloto
+                       y las demostraciones pueden ayudarte a evaluar la facilidad de uso y el impacto de un
+                       CED antes de invertir en él.
+
+
+
+
+                          En qué hay que fijarse
+                          En tu escuela:
+                  ● Averigua qué incluye el precio del CED, teniendo en cuenta el proveedor y las múltiples
+                    competencias y conocimientos necesarios. Normalmente, el precio incluye el desarrollo inicial, el
+                    mantenimiento y las distintas actualizaciones.
+                  ● Confecciona una tabla de coste total de propiedad (CTP) que incluya el coste de la licencia, la
+                    formación, la asistencia y la hipotética retirada progresiva del CED.
+                  ● Ten en cuenta los gastos ocultos. Las funciones limitadas, los complementos de pago o las
+                    restricciones a la exportación del trabajo del alumnado pueden dar lugar a actualizaciones
+                    inesperadas y gastos adicionales.
+                  ● Busca unas estructuras de precios transparentes (normalmente por o por usuario) y evita los
+                    recursos con tarifas ocultas o condiciones de licencia poco claras. Exige a los proveedores que te
+                    proporcionen la claridad que necesitas.
+          TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+              D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    33
+
+
+
+
+Puesta en práctica
+
+
+                                Como parte del proceso de planificación de tu centro, comprueba qué CED se
+Comprobación rápida             utilizan ya y observa si tienen un impacto positivo sobre la carga de trabajo de
+                                tus colegas y en los resultados del alumnado.
+
+                                Busca RE A desarrollados por comunidades activas de educadores o
+Consejo
+                                autoridades nacionales.
+
+
+Atajo                           Si un recurso es gratuito, pregúntate: «¿Cómo se financia? ¿Qué exige a cambio?»
+
+
+                                     ● ¿Comprendo el coste total, incluyendo el tiempo, el soporte técnico, las
+Hazte estas preguntas                  licencias, etc.?
+                                     ● ¿Gastamos presupuesto (o tiempo) en herramientas que no se utilizan?
+                 TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+    34               D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+         Apartado 3: Tomar decisiones
+         diarias sobre contenidos
+         educativos digitales
+Los docentes y los equipos directivos de los centros educativos se implican con los CED de muchas formas
+distintas. En este apartado destacamos seis actividades clave, desde la «Elección» hasta la «Evaluación». En
+cada actividad, presentamos un ciclo típico de acciones que podrías seguir. A lo largo de cada una de ellas,
+animamos a la reflexión continua y al ajuste regular de su enfoque para maximizar el impacto.
+Este apartado se aplica principalmente a los CED estructurados o ya preparados que utiliza el alumnado,
+más que a fragmentos más pequeños de contenido, como imágenes o vídeos individuales. Dependiendo
+de cuál de las seis actividades quieras realizar, puedes consultar cada apartado de forma independiente.
+Los seis subapartados siguen una estructura similar: una breve introducción, una serie de pasos o
+consideraciones habituales, un escenario para ilustrar el proceso y, en su caso, preguntas clave para
+apoyar la toma de decisiones como docente, educador o equipo directivo.
+
+
+
+
+                                                                                   CREACIÓN
+                          ELECCIÓN
+
+
+
+
+                                                                                                       ACCESO
+            EVALUACIÓN
+
+
+                                                     REVISIÓN
+                                                     CONTINUA
+                                                                                      USO
+                           MODIFICACIÓN
+                       TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                           D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    35
+
+
+
+
+Antes de embarcarte en la búsqueda del CED adecuado,                      No tengas miedo a probar un CED con tus alumnos, sobre
+ten en cuenta las tecnologías digitales disponibles en tu                 todo si buscas un nuevo enfoque para impartir una lección.
+centro (dispositivos, red, CED existentes, etc.), así como las            Si las cosas no salen como esperabas, intenta reutilizar el
+políticas digitales existentes (que cubren el uso de Internet, la         CED de otra forma y comprueba si la próxima vez funciona
+recopilación y el uso de datos, los derechos de autor, etc.), así         mejor. Recuerda: no existe una forma correcta o incorrecta de
+como tus propias competencias digitales. Como mínimo, pide                utilizar un CED; lo importante es encontrar un enfoque que le
+a tu director escolar o a otro responsable digital de tu centro           funcione a tu alumnado. Así que insiste.
+información sobre las licencias de CED de las que ya disponga
+el centro y sobre la forma en que otras personas utilizan estos
+materiales con sus alumnos.
+                    TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+     36                 D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Selección
+Elegir el CED adecuado puede apoyar la enseñanza y el aprendizaje,
+haciendo que las clases sean más atractivas, accesibles y eficaces. Sin
+embargo, con tantos recursos disponibles, puede resultar difícil saber por
+dónde empezar. El enfoque estructurado que se describe a continuación
+te ayudará a estar seguro de que los contenidos que elijas respondan
+a las necesidades de tu alumnado y, al mismo tiempo, sean prácticos,
+de gran calidad y económicamente viables.
+
+¿Por dónde empezar?
+Paso 1: Buscar el contenido adecuado
+Define tus objetivos de aprendizaje y enseñanza y valora en qué
+y cómo los CED pueden apoyarlos mejor. Busca en repositorios
+de contenidos (por ejemplo, la Eskola de Malta), en páginas web              Consejo
+de asociaciones relacionadas con las asignaturas (por ejemplo,
+                                                                             Usa los filtros de búsqueda para acotar los
+Scientix para STEM, o el Centro Europeo de Lenguas Modernas)
+                                                                             resultados por materias, grupos de edad, funciones
+y en páginas web de proveedores de contenidos digitales para
+                                                                             de accesibilidad o tipo de recurso. Esto te permite
+encontrar recursos alineados con el currículo. Pregunta a tus
+                                                                             ahorrar tiempo y ayuda a encontrar las opciones
+compañeros y consulta repositorios nacionales, redes docentes
+                                                                             más relevantes.
+u orientaciones del ministerio.
+
+                                                                          Si no encuentras exactamente lo que necesitas, puedes
+                                                                          adaptar materiales ya existentes y/o considerar la
+                                                                          posibilidad de crear tus propios contenidos. Sea cual sea
+                                                                          la opción que elijas, deberás tener en cuenta los derechos
+                                                                          de autor y las licencias. (Para más información, consulta
+                                                                          el subapartado 3.3, «Creación»)
+
+
+
+
+Paso 2: Evaluación de la calidad y la utilidad
+
+Cuando hayas encontrado recursos que puedan adaptarse a
+tus necesidades, debes evaluar su valor educativo, su utilidad
+                                                                             Comprobación rápida:
+y su potencial impacto sobre el alumnado. Haz una selección
+preliminar de los CED que se ajusten a los criterios destacados              ¿Existe algún estudio de caso que puedas
+en el Apartado 2 de las presentes directrices.                               consultar sobre otras escuelas similares? ¿Tus
+                                                                             colegas han utilizado el mismo CED y han
+¡No te olvides de pensar en la evaluación! Piensa cómo                       publicado reseñas?
+podrías utilizar el CED para medir el progreso en una
+serie de resultados de aprendizaje. Esto no sólo incluye
+el conocimiento y la comprensión de los contenidos, sino
+también el desarrollo de competencias básicas como el
+pensamiento crítico, la creatividad, la colaboración y la
+resolución de problemas. Te ayudarán a medir la comprensión
+del alumnado, a seguir el desarrollo de sus capacidades y a
+ajustar tus estrategias pedagógicas.
+                      TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                          D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    37
+
+
+
+
+Paso 3: Fortalecimiento de la confianza y las competencias
+
+Elegir el CED adecuado resulta más sencillo con práctica y
+apoyo. El desarrollo de sus competencias digitales mediante                  ACCIÓN
+formación continua es clave para tomar decisiones más
+                                                                             Comparte tus experiencias con otros docentes.
+fundamentadas. Infórmate sobre cursos y ayudas ofrecidos
+                                                                             ¿Qué ha funcionado y qué no? Las asociaciones de
+por las administraciones educativas y otras entidades de
+                                                                             materias concretas, los servicios de asesoramiento
+formación del profesorado.
+                                                                             y los sindicatos también pueden ofrecerte apoyo
+Dentro del marco DigCompEdu también encontrarás más                          adicional que te ayude a tomar decisiones con
+consejos y guías, en concreto en la parte 2.1, dedicada a la                 mayor seguridad. Por ejemplo, Francia utiliza la
+selección de recursos digitales.                                             plataforma Elea y la red de diseñadores de los
+                                                                             educadores. ¿Existe algo parecido en tu país?
+                   TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+   38                  D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Escenario habitual
+                 Te presentamos a Emma.
+                 Emma es profesora de primaria y trabaja con una clase mixta de niños de 6
+                 años. Su centro educativo apuesta por una educación digital, que combina
+                 la enseñanza tradicional con herramientas digitales. Una de sus principales
+                 prioridades para este trimestre es reforzar las competencias aritméticas
+                 básicas. Sin embargo, tiene dificultades para localizar CED de gran calidad
+                 que pueda satisfacer las necesidades de sus alumnos y alumnas, muchos de
+                 los cuales son multilingües y necesitan un apoyo adicional con los conceptos
+                 matemáticos. Por tanto, la accesibilidad y la inclusión son factores decisivos
+                 en su toma de decisiones. Además, su presupuesto es ajustado, por lo que
+                 cualquier CED que elija debe ser rentable y aportar un valor real.
+                 Así es como Emma elige el CED adecuado para su alumnado.
+
+
+ 1) Búsqueda del contenido adecuado
+
+ Emma empieza por definir sus objetivos concretos de enseñanza de las matemáticas y estudia cómo el CED puede servirles de apoyo:
+     ● ¿Se ajusta este recurso a los objetivos de mi currículo de matemáticas?
+     ● ¿Es atractivo y adecuado para el desarrollo de niños de 6 años?
+     ● ¿Puede utilizarse de forma flexible? ¿Funcionará en la pizarra digital interactiva para la enseñanza en gran grupo y en
+       las tabletas para actividades en pequeños grupos?
+ También revisa los CED ya existentes en su centro para evitar duplicidades y mantener coherencia de
+ planteamiento y calidad.
+
+
+
+
+ 2) Evaluación de la calidad y la utilidad
+
+ Con los objetivos claros, Emma empieza a analizar posibles opciones de CED. Consulta plataformas de contenidos de confianza,
+ lee valoraciones y examina estudios de casos de proveedores y descripciones de productos. Descarta los recursos que:
+     ● son demasiado complejos o no han sido diseñados para la enseñanza de las matemáticas en los primeros años;
+     ● carecen de funciones de accesibilidad para alumnado con necesidades especiales;
+     ● no presentan evidencias de impacto educativo; o
+     ● son difíciles de integrar en los sistemas ya existentes en su centro educativo, u ofrezcan problemas de usabilidad.
+ En su lugar, se centra en CED de alta calidad, que vayan en consonancia con el currículo, que sean adecuado para el
+ desarrollo y estén respaldados por estudios sobre la mejora del aprendizaje de la aritmética en la infancia.
+                   TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                       D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    39
+
+
+
+
+3) Fortalecimiento de la confianza y las competencias
+
+Antes de aprovechar el nuevo CED que ha elegido, Emma se asegura de que ella, su alumnado y sus compañeros estén
+completamente preparados. Entre otras consideraciones, comprueba:
+    ● Si se integra sin problemas con la tecnología de que dispone el centro educativo
+    ● Si requiere formación adicional para ella, el resto de docentes y el alumnado
+    ● Si resulta sencillo obtener apoyo técnico o pedagógico por parte del proveedor del CED
+Cuando empieza a utilizar el recurso, supervisa la participación del alumnado, mide las mejoras en las competencias
+matemáticas y comparte sus conclusiones con sus colegas. Esto ayudará a su centro educativo a tomar decisiones
+informadas en el futuro.
+                                TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+          40                        D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+    Creación
+    Los docentes y educadores siempre han creado contenidos para su alumnado, normalmente
+    combinando varios formatos diferentes. Pueden ser desde una imagen o un vídeo hasta
+    contenidos más estructurados/desarrollados que recopilan múltiples elementos en una
+    unidad coherente de CED. A pesar de la disponibilidad de numerosos recursos en la
+    actualidad (como libros de texto electrónicos, productos de contenido EdTech y recursos
+    creados con fines educativos específicos por diversas partes interesadas), es posible
+    que sigas necesitando o queriendo crear, adaptar y personalizar CED para satisfacer las
+    necesidades específicas de tu alumnado.
+
+    ¿Por dónde empezar?
+Paso 1: ¿Necesitas crear CED?
+
+A la hora de decidir si crear o no contenidos, he aquí algunas preguntas clave que pueden plantearse.
+
+
+
+       ¿Por qué estoy creando este contenido y qué valor                                             ¿Qué formato debe tener el contenido?
+       añadido espero que aporte a mis alumnos?
+                                                                                                          ¿El contenido será estático, como un documento de
+           ¿Se utilizará para enseñar/introducir un tema a toda                                           texto para imprimir?
+           la clase?                                                                                      ¿Será multimedia (vídeos, screencasts, audio, etc.)
+           ¿Los alumnos utilizarán los contenidos por su cuenta                                           que se reproduzca en una pantalla en clase o en
+           (aprendizaje independiente), en grupos o como parte                                            dispositivos digitales?
+           de la enseñanza de toda la clase?                                                              ¿El alumnado interactuará con el contenido? En caso
+                                                                                                          afirmativo, ¿cómo?
+
+
+    Paso 2: Respetar los derechos de autor y la propiedad intelectual (PI)
+
+    Otra cuestión importante que debes plantearte es de                                            Conoce tus derechos de autor
+    dónde obtendrás los recursos (texto, imágenes, vídeos,
+    etc.) que vas a utilizar para crear el CED. En este contexto,
+                                                                                                     Las tecnologías digitales han cambiado radicalmente
+    debes asegurarte de que cumples la legislación sobre
+                                                                                                     la forma de producir, distribuir y acceder a los
+    derechos de autor y propiedad intelectual.
+                                                                                                     contenidos creativos. Los derechos de autor
+    Asegúrate de que ninguno de los textos, imágenes, audio                                          garantizan que autores, compositores, artistas,
+    o vídeo que quieres utilizar está protegido por derechos                                         cineastas y otros creadores reciban reconocimiento,
+    de autor. Si lo están, utilízalos respetando la normativa                                        remuneración y protección por sus obras. También
+    y asegúrate de que cuentas con los permisos necesarios.                                          recompensa la creatividad y estimula la inversión
+                                                                                                     en el sector creativo. Lee detenidamente las normas
+                                                                                                     sobre derechos de autor y piensa cómo se aplican al
+                                                                                                     CED que elijas y utilices con tu alumnado.
+
+
+
+
+3     Configurar el futuro digital de Europa «Normas de la UE sobre derechos de autor", 2025. https://digital-strategy.ec.europa.eu/es/policies/copyright
+                       TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                           D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S      41
+
+
+
+
+  Guía de derechos de autor de CED para docentes y                        establecidos por el creador. Existen seis tipos principales de
+  equipos directivos de centros educativos                                licencias CC, desde las más permisivas (que permiten el uso y
+  La UE establece una excepción a los derechos de autor                   la modificación libres) hasta las más restrictivas (que limitan
+  que permite a las instituciones educativas utilizar obras               el uso a fines no comerciales o prohíben la modificación). La
+  digitales protegidas con fines docentes no comerciales sin              EUIPO ha publicado una infografía sobre Creative Commons
+  necesidad de obtener permiso previo, siempre que el uso                 que los docentes pueden encontrar bastante útil.
+  sea responsabilidad de la institución. Esto incluye el uso de
+  materiales en enseñanza presencial, a distancia o a través              Consejos para docentes y educadores que crean
+  de plataformas en línea seguras a las que sólo pueden                   contenidos educativos digitales
+  acceder docentes y estudiantes.                                               ● Asegúrate siempre de que tu trabajo está
+  Ten en cuenta que la forma en que se aplica dicha excepción                     debidamente acreditado. Considera la posibilidad
+  difiere significativamente de un Estado miembro a otro.                         de utilizar licencias Creative Commons o similares
+  Para obtener información detallada sobre cómo se aplican                        para conservar tus derechos y permitir al mismo
+  dichas normas en tu país, consulta en primer lugar la                           tiempo que otros utilicen tus contenidos bajo
+  normativa nacional. La Oficina de Propiedad Intelectual de                      determinadas condiciones.
+  la Unión Europea (EUIPO) ofrece valiosos recursos para los                    ● Utiliza el símbolo © de copyright para indicar
+  centros educativos, entre ellos las "Preguntas frecuentes                       claramente que tu trabajo está protegido por
+  sobre derechos de autor para docentes", que te ayudarán a                       derechos de autor.
+  desenvolverte con soltura en este tipo de cuestiones.
+                                                                                ● Busca contenidos con licencia abierta en
+  Licencias Creative Commons y otros servicios                                    plataformas como Wikimedia Commons y
+  similares                                                                       Europeana, o utiliza recursos de dominio público
+  Las licencias Creative Commons (CC) ofrecen a los creadores                     de bibliotecas como el Proyecto Gutenberg.
+  una forma flexible de compartir su trabajo conservando ciertos                  Aunque el uso de estos recursos es gratuito,
+  derechos. Estas licencias permiten a otros utilizar, compartir                  sigue siendo una buena práctica agradecer el
+  y a veces modificar el material, en función de los permisos                     trabajo a quien lo merece.
+
+
+
+Paso 3: Comparte y reutiliza tu CED
+
+Crear tu propio CED requiere una inversión de tiempo y energía.
+Piensa en cómo puedes sacarle el máximo partido compartiéndolo                ACCIÓN
+con los demás y/o reutilizándolo para un uso futuro.
+                                                                              Piensa cómo puedes mejorar continuamente la
+    ● ¿Lo compartirás con tus compañeros o con otras
+                                                                              calidad de tu CED y el impacto que puede tener
+      personas? Si es así, asegúrate de que no incumple
+                                                                              sobre el alumnado a lo largo de todo el sistema
+      los derechos de autor.
+                                                                              educativo. No tengas miedo de compartir tus
+    ● ¿Vas a publicarlo en redes nacionales o regionales                      contenidos con los demás
+      donde docentes y educadores comparten CED?
+    ● ¿Vas a reutilizar el contenido?
+    ● ¿Vas a readaptar el contenido en función de los
+      comentarios del alumnado u otras sugerencias?
+    ● ¿Vas a crear materiales de apoyo para otros docentes,
+      como instrucciones escritas o vídeos interactivos, para
+      mostrarles cómo podrían utilizar los contenidos en sus
+      propios contextos?
+                   TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+   42                  D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Uso crítico de la IA generativa para crear                                ¿Qué normas de copyright se aplican al texto y las
+contenidos                                                                imágenes generados por IA?
+Muchos docentes y estudiantes utilizan herramientas de                         ● Las obras creadas íntegramente mediante IA, con una
+inteligencia artificial generativa para crear sus propios                        aportación humana limitada, normalmente no pueden
+contenidos. Estas herramientas ofrecen la posibilidad de crear                   acogerse a la protección de los derechos de autor.
+CED como texto, imágenes (incluyendo fotografías, pinturas
+                                                                               ● Asegúrate de no introducir contenidos protegidos por
+digitales y dibujos animados), vídeos y música, que luego
+                                                                                 derechos de autor en herramientas de IA generativa,
+pueden incorporarse a secuencias didácticas, actividades de
+                                                                                 ya que esto podría dar lugar a incumplimientos de
+aprendizaje, presentaciones, cuestionarios y otros recursos.
+                                                                                 los derechos de autor.
+También puedes utilizar las herramientas de inteligencia
+artificial para crear nuevos CED a partir de recursos ya                       ● Para evitar confusiones, cualquier contenido creado
+existentes, como unidades didácticas antiguas, redacciones                       o modificado por IA debe etiquetarse claramente
+u fichas de trabajo. Esto puede ser aún más útil para ti y tu                    como tal. Esto es importante en la educación, donde
+alumnado. No existe ningún límite en los tipos de CED que                        la transparencia sobre la fuente y la naturaleza
+las herramientas la inteligencia artificial pueden crear en                      del contenido es esencial para la confianza y un
+manos de docentes y estudiantes creativos, así que empieza                       uso responsable. Los proveedores de CED están
+a explorar su potencial. Aun así, debe tenerse en cuenta que                     obligados a ser transparentes y a proporcionar a
+el uso de herramientas la inteligencia artificial conlleva un                    los usuarios información que les permita identificar
+coste energético, debido a la gran cantidad de potencia de                       claramente cuándo están interactuando con un
+cálculo que requieren los centros de datos remotos.                              sistema de IA (Ley de IA, artículo 50 (2)).
+Comprobación rápida: aunque las herramientas de la                        Además, también deberás tener en cuenta los siguientes
+inteligencia artificial pueden crear o generar contenidos                 puntos:
+aparentemente buenos, no se puede confiar plenamente
+                                                                               ● Política del centro: analiza si tu centro permite el
+en que sean precisos.
+                                                                                 uso de la inteligencia artificial en la creación de
+Es probable que el uso de la inteligencia artificial te permita                  contenidos para el aula, como CED personalizado (es
+ahorrar tiempo y te proporcione nuevas ideas/recursos que                        decir, contenidos sobre un mismo tema adaptados
+podrás utilizar en tu práctica de enseñanza. En especial,                        a distintas capacidades de lectura y/o niveles de
+ten en cuenta que cada vez existen más herramientas de                           comprensión) y/o chatbots con los que el alumnado
+la inteligencia artificial creadas en Europa, como Mistral,                      pueden interactuar.
+Curipod o Humy, que pueden ayudarte a crear nuevos CED.
+                                                                               ● Herramientas aprobadas: comprueba qué
+Al hacerlo, asegúrate de que conoces las normas sobre
+                                                                                 herramientas la inteligencia artificial se recomiendan
+derechos de autor (ver más arriba) y no olvides la necesidad
+                                                                                 en tu centro educativo y si existen algunas directrices
+de comprobar, verificar y debatir la calidad del contenido
+                                                                                 para su uso. Asimismo, considera la posibilidad de
+con tu alumnado y compañeros.
+                                                                                 revisar las Directrices de la Comisión Europea sobre
+                                                                                 el uso ético de la inteligencia artificial y los datos
+                                                                                 en la enseñanza y el aprendizaje para educadores.
+
+
+
+
+                                                                             CONSEJO
+                                                                             Anima a tu alumnado a crear su propio CED
+                                                                             utilizando las herramientas la inteligencia artificial.
+                                                                             Estas herramientas pueden ayudar al alumnado, ya
+                                                                             sea de forma individual o colaborando entre ellos, a
+                                                                             producir contenidos que profundicen su aprendizaje.
+                                                                             Recuérdales que tengan en cuenta las licencias y los
+                                                                             derechos de uso de los contenidos.
+                 TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                     D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    43
+
+
+
+
+Escenario habitual
+           Te presento a Manuel.
+
+           Manuel es un profesor de primaria que lleva más de 10 años utilizando las
+           tecnologías digitales en su aula. Le interesa mucho cómo la tecnología puede
+           mejorar su enseñanza y ha empezado a explorar el uso de la inteligencia
+           artificial para mejorar la creatividad y la participación en sus clases. Enseña a
+           un grupo de niños de 10 a 12 años con distintas capacidades. Cuando Manuel
+           escribe mensajes para crear contenidos mediante IA, utiliza la nemotecnia
+           CARDS en la que cada letra representa una acción concreta:
+           C: Proporciona a la herramienta de inteligencia artificial una función CLARA.
+           A: Le dice a la herramienta cuál es la AUDIENCIA (su alumnado).
+           R: REVISA el contenido en busca de imprecisiones.
+           D: Utiliza un lenguaje DETALLADO y sin ambigüedades.
+           S: Se asegura de que el prompt es ESPECÍFICO y preciso.
+
+
+
+
+ 1) Definición de objetivos y                          Manuel utiliza CED para mejorar las habilidades de escritura de textos
+                                                       descriptivos del alumnado mientras leen el libro La telaraña de Carlota.
+ búsqueda de la herramienta
+                                                       Utiliza una herramienta de IA generativa (como DALL-E) para crear
+ adecuada                                              imágenes de un personaje de la novela, mediante la mnemotecnia
+                                                       CARDS para elaborar prompts precisos. A continuación, Manuel integra
+                                                       estos elementos visuales generados por IA en una actividad para toda
+                                                       la clase, que comparte a través de la pizarra interactiva para apoyar
+                                                       un enfoque de aprendizaje multimodal.
+
+
+
+
+ 2) Perfeccionamiento de los prompts Manuel y los niños discuten sobre la imagen que ha generado DALL-E,
+                                     basándose en su prompt inicial. No están demasiado satisfechos con
+ para obtener mejores resultados
+                                                       el resultado inicial. Se plantean si detallando más su prompt pueden
+                                                       crear una imagen más clara del personaje en la mente del lector.
+                                                       En grupos, el alumnado perfecciona sus indicaciones incorporando
+                                                       elementos más descriptivos, como la textura, el color y las emociones.
+
+
+
+
+ 3) Mejora de la participación                         A continuación, Manuel toma los prompts revisados y los introduce en
+                                                       DALL-E. El alumnado ve inmediatamente que las imágenes generadas
+ en clase
+                                                       han mejorado mucho y comprenden las ventajas de utilizar un lenguaje
+                                                       más descriptivo. La actividad genera mucho debate sobre los tipos
+                                                       de imágenes creadas y sobre cómo los distintos estímulos producen
+                                                       imágenes totalmente diferentes. Inspirados por esta actividad, el
+                                                       alumnado aplican sus habilidades descriptivas mejoradas en tareas
+                                                       de escritura independientes utilizando un procesador de textos.
+                            TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+       44                       D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Acceso
+Muchos centros educativos, ministerios y administraciones públicas ya ofrecen
+plataformas en línea para que tanto docentes como estudiantes puedan
+acceder a CED. Estas plataformas, que suelen denominarse «espacios en
+línea», son una especie de repositorios centralizados o pasarelas para CED
+aprobados de editoriales, empresas EdTech, organismos públicos y educadores.
+Estos espacios suelen facilitar el acceso a materiales sometidos a curación, a
+través de una ubicación segura y pueden integrarse en el sistema de gestión
+del aprendizaje (LMS) de un centro educativo o en entornos virtuales de
+aprendizaje (EVA). Estas plataformas pueden facilitar un acceso seguro a los
+CED en el centro educativo e incluso en casa.
+Para facilitar aún más el acceso a los CED, algunos centros educativos han
+adoptado plataformas que permiten a los usuarios iniciar sesión de forma
+segura utilizando su nombre de usuario (es decir, su dirección de correo
+electrónico) y una contraseña (es decir, la que utilizan para acceder a la red
+de el centro educativo), un proceso denominado «inicio de sesión único» (SSO).
+
+¿Por dónde empezar?
+No todas los centros educativos disponen de un espacio en línea desde el que acceder a CED. Si este es el caso de tu centro
+educativo, podría ser algo a tener en cuenta en el futuro. Los siguientes pasos pueden ayudarte si tu centro decide hacerlo o
+si las autoridades te lo recomiendan.
+
+Paso 1: ¿Debemos/podemos crear un espacio en línea para que nuestra centro educativo acceda al CED?
+
+
+
+
+         ● ¿Tu centro ha seleccionado o creado CED a partir de una serie de proveedores distintos, y sería más sencillo
+           poder contar con todo ese contenido en un único lugar para facilitar el acceso?
+         ● En caso afirmativo, piensa dónde podrías ubicarlo, o al menos dirigir al profesorado y alumnado hacia dicho contenido.
+
+                    ● ¿Puedes colocar este material en un espacio en línea seguro (por ejemplo, en el LMS o EVA del centro
+                      educativo)? En este caso, es posible que tengas que comprobar el acuerdo de licencia con el editor o
+                      creador de contenidos CED para ver si está permitido.
+                    ● Si no puedes cargar el contenido en tu LMS o EVA, ¿puedes crear un enlace desde este espacio escolar
+                      al CED externo (por ejemplo, materiales protegidos por derechos de autor) alojados en otras plataformas
+                      (es decir, por una editorial o EdTech)?
+                    ● Si esto es posible, ¿puedes utilizar un SSO para que tanto los docentes como el alumnado puedan
+                      acceder al contenido utilizando sus datos escolares de acceso? Esto proporcionará un portal que
+                      permitirá a todo el mundo encontrar y utilizar fácilmente la CED que su centro educativo ha adquirido
+                      o identificado como relevante.
+
+
+
+
+4 El inicio de sesión único (SSO) es un método de identificación que permite a los usuarios iniciar sesión en varias aplicaciones y páginas web utilizando un único conjunto de
+  credenciales. El SSO ofrece numerosas ventajas, como por ejemplo: (1) Facilitar el acceso a los CED a todo el profesorado y al alumnado; (2) Garantizar un mayor uso de los CED
+  elegidos y/o adquiridos por el centro educativo; (3) Menos contraseñas que recordar para el personal del centro educativo y el alumnado; y (4) Mejores medidas de ciberseguridad
+  dentro del centro educativo.
+                      TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                          D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S     45
+
+
+
+
+Paso 2: Facilitar al máximo el acceso a los contenidos
+
+
+
+
+  Una vez localizado o proporcionado el acceso a una                          ● ¿El alumnado pueden acceder y utilizar algunos o
+  serie de CED, es importante que todo el mundo pueda                           todos los CED desde su casa?
+  conectarse fácilmente para acceder a los contenidos. A
+                                                                         Los equipos directivos escolares deben esforzarse por
+  nivel de centro educativo, comprueba que:
+                                                                         establecer:
+      ● Todo el personal y el alumnado tienen acceso al
+                                                                              ● Políticas transparentes sobre cómo utilizar el LMS/SSO
+        espacio compartido en línea y pueden acceder
+                                                                                y cómo acceder y utilizar el contenido.
+        fácilmente al CED. Pruébalo y asegúrate de que
+        le funciona a todos.                                                  ● Una sólida infraestructura informática que permita un
+                                                                                acceso sin problemas al CED.
+      ● La red wi-fi de tu centro es lo suficientemente
+        robusta como para que todo el alumnado de                             ● Formación para el desarrollo profesional y apoyo a los
+        una clase puedan conectarse al mismo tiempo y                           docentes sobre cómo utilizar eficazmente el LMS.
+        utilizar los contenidos
+                                                                         El siguiente ejemplo muestra cómo un centro educativo
+  Además, comprueba:                                                     puede utilizar un LMS y SSO para permitir el acceso a CED
+                                                                         a docentes y alumnado.
+      ● ¿Es posible descargar o acceder a algunos de los
+        contenidos sin conexión? Por ejemplo, ¿es posible
+        descargar un libro de texto digital en el dispositivo del
+        estudiante? ¿Qué ocurre con otros recursos que pueda
+        utilizar frecuentemente el alumnado (por ejemplo,
+        vídeos complementarios o materiales interactivos)?
+                TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+  46                D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Escenario habitual
+
+                   Te presento a Tomaso.
+
+                   Tomaso es director de un gran centro de secundaria con más de 100
+                   docentes. El centro educativo proporciona tanto a los docentes como
+                   al alumnado su propia dirección de correo electrónico personal y un
+                   nombre de usuario para acceder al LMS del centro educativo. Cada
+                   estudiante tiene su propio espacio en el LMS para acceder al material
+                   que su docente ha compartido con él, y donde puede almacenar
+                   su trabajo de clase (apuntes, tareas, exámenes en línea, etc.). El
+                   centro acaba de adquirir un nuevo conjunto de recursos CED para el
+                   departamento de idiomas y Tomaso debe asegurarse de que todos los
+                   docentes y alumnos tengan acceso a dichos contenidos.
+
+
+
+
+ 1) Asegurarse de que el CED puede                        El primer paso de Tomaso es asegurarse de que todos los
+                                                          compañeros y el alumnado puedan acceder al LMS, tanto en el
+ almacenarse en tu LMS
+                                                          centro educativo como desde casa, para utilizar estos nuevos
+                                                          contenidos. Pide al jefe del departamento de idiomas que
+                                                          colabore con el coordinador TIC para crear un espacio en línea
+                                                          para los nuevos recursos. Aquí es donde el personal y el alumnado
+                                                          accederán al material.
+
+
+
+
+ 2) Almacenar el CED en un espacio                        Tras crear un espacio centralizado, Tomaso identifica qué contenido
+                                                          puede almacenarse en este LMS y qué contenido deberá ser accesible
+ centralizado                                             a través de este espacio mediante el SSO. Pide al coordinador TIC que
+                                                          hable con el editor sobre los acuerdos de licencia de su contenido para
+                                                          ver si se puede almacenar en el LMS del centro educativo. Si esto no
+                                                          es posible, el centro educativo tendrá que acceder al CED desde los
+                                                          servidores del editor, por lo que su coordinador TIC implementará un
+                                                          inicio de sesión SSO, que tenga en cuenta el cumplimiento del RGPD
+                                                          y las directrices nacionales en materia de protección de datos.
+
+
+
+
+ 3) Habilitar el inicio de sesión                        Una vez configurado el SSO (ya sea para el LMS del centro educativo
+ único (SSO)                                             o para los servidores de la editorial), el profesorado y el alumnado
+                                                         pueden acceder al nuevo CED en un único lugar, mediante un único
+                                                         conjunto de credenciales de inicio de sesión.
+                               TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                                   D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S                                   47
+
+
+
+
+Uso y adaptación
+Los docentes y estudiantes tienen muchas opciones a la hora de utilizar y adaptar CED. Usar
+implica emplear el CED sin modificarlo, conforme a los términos de uso definidos por una
+licencia; adaptar significa editarlo, remezclarlo o volver a contextualizarlo, siempre que los
+términos de la licencia lo permitan. De esta forma, usar un CED podría tratarse de utilizar
+un libro de texto digital con el alumnado tal cual, sin realizar ningún cambio en el contenido.
+Adaptar puede consistir en editar un recurso educativo abierto (REA) ya existente, o volver a
+elaborar el contenido de un libro de texto digital cuya licencia permita modificaciones, para
+que se adapte mejor a las necesidades del alumnado.
+Tanto el marco DigCompEdu como el DigCompOrg describen una serie de competencias
+útiles que los educadores y el alumnado deben desarrollar para utilizar y modificar/
+adaptar los materiales digitales existentes para su aula, y poder satisfacer de esa forma
+sus necesidades y las de su alumnado.
+
+     Uso de los contenidos educativos digitales
+Existen muchas formas de utilizar CED con tu alumnado. En el subapartado 1.2 de las presentes directrices se incluyen algunas
+de ellas, con una lista de posibles escenarios que puedes utilizar como apoyo a tus prácticas de enseñanza, aprendizaje y
+evaluación. Sobre la base del marco de Laurillard, este subapartado también esbozaba algunas formas en las que los CED
+podría apoyar la impartición de clases.
+Aprovecha la oportunidad para informar a las familias sobre el uso del CED en el aula. Es una buena práctica explicar por qué
+se ha elegido un CED concreto y por qué se utiliza en el centro educativo o en casa. La mejor forma de hacerlo es mediante una
+actividad para todo el centro educativo en la que se exponga la política del centro en materia de selección y uso de CED.
+Pero, sobre todo, ¡diviértete explorando formas de utilizar CED para diseñar experiencias de aprendizaje nuevas y atractivas
+para todos tu alumnado!
+
+Adaptación de contenidos educativos digitales
+Los docentes y estudiantes también pueden adaptar el CED                                              alumnado, incluyendo funciones de accesibilidad como
+para satisfacer mejor sus necesidades. En este aspecto cuentan                                        la conversión de texto a voz.
+con muchas opciones, dependiendo de sus propios niveles de
+                                                                                                 ● Adaptar sus presentaciones digitales utilizando nuevos
+competencia digital y de su contexto.
+                                                                                                   textos, imágenes y/u otros recursos
+Los docentes pueden:
+                                                                                                 ● Modificar y combinar los recursos digitales existentes para
+      ● Utilizar aplicaciones de productividad (como                                               crear actividades de aprendizaje adaptadas a un contexto
+        aplicaciones para hacer presentaciones o procesadores                                      y un objetivo de aprendizaje concretos.
+        de textos) para modificar una ficha de trabajo o
+                                                                                                 ● Adaptar un juego de ordenador existente con fines
+        cuestionarios ya existentes.
+                                                                                                   educativos (por ejemplo, crear un mundo en un juego
+      ● Adaptar los materiales existentes para satisfacer                                          en línea o un entorno virtual para que el alumnado
+        mejor las necesidades de aprendizaje especiales del                                        puedan explorarlo).
+
+                                                                                                  Llamada a la acción
+                                                                                                  El alumnado también pueden utilizar aplicaciones de
+                                                                                                  productividad, herramientas de autor o IA generativa,
+                                                                                                  siempre que esté permitido, para modificar y combinar
+                                                                                                  CED ya existentes para crear informes, presentaciones
+                                                                                                  y otros documentos.
+
+
+5 Punie, Y., editor(es), Redecker, C., Marco europeo para la competencia digital de los educadores: DigCompEdu, EUR 28775 ES, Oficina de Publicaciones de la Unión Europea, Lux-
+  emburgo, 2017, ISBN 978-92-79-73718-3 (impreso), 978-92-79-73494-6 (pdf), doi:10.2760/17838 (impreso),10.2760/159770 (en línea), JRC107466.
+6 Kampylis, P., Punie, Y. & Devine, J., Promoting Effective Digital-Age Learning - A European Framework for Digitally-Competent Educational Organisations, Oficina de Publicaciones
+  de la Unión Europea, Luxemburgo, 2015; doi:10.2791/54070
+                     TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+     48                  D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+¿Por dónde empezar?
+Paso 1: Adaptar el CED a tus necesidades
+
+Como siempre, debes tener en cuenta tu contexto y objetivos de aprendizaje y decidir si el CED estándar (es decir, el CED ya listo y
+disponible para su uso inmediato) satisface tus necesidades o requiere adaptaciones.
+
+
+
+
+   Si necesitas hacer cambios, ten en cuenta lo siguiente:
+       ● ¿Es posible adaptar el CED que he elegido? (Echa un vistazo al acuerdo de licencia para asegurarte)
+   En caso afirmativo, ¿qué puedo cambiar o modificar?
+       ● ¿Qué tipo de modificaciones debo realizar para que el CED se adapte mejor a mi contexto?
+       ● ¿Puedo hacer estas adaptaciones yo mismo, o necesito ayuda de mis compañeros o de un tercero? Si necesitas
+         ayuda, puedes hablar con el equipo directivo de tu centro o con otros colegas para ver si dichas adaptaciones
+         pueden subcontratarse.
+
+
+
+Paso 2: Pruébalo y analiza cómo funciona                                 Paso 3: Ayudar al alumnado a modificar y adaptar el CED
+
+
+
+
+   Como con cualquier contenido, pruébalo y reflexiona                      Incorpora las tecnologías digitales a tus prácticas en
+   sobre cómo funciona. Analiza si sus adaptaciones                         el aula y ayuda a tu alumnado a modificar y adaptar
+   han tenido éxito y si habría que introducir más                          los CED existentes siempre que esté permitido o sea
+   modificaciones en el futuro.                                             posible. El alumnado deberá saber cómo modificar y
+                                                                            combinar CED existentes (por ejemplo, texto, imágenes,
+                                                                            animaciones, audio, etc.) en sus propias creaciones
+                                                                            digitales (documentos, presentaciones, proyectos, etc.),
+                                                                            y lo que puede hacer dentro de su propia configuración.
+                                                                            El ejemplo siguiente muestra cómo un docente puede
+                                                                            adaptar un CED a su propio contexto.
+                TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                    D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S       49
+
+
+
+
+Escenario habitual
+           Te presento a Sylvia.
+
+           Sylvia, que es profesora de historia en un instituto de secundaria, planea
+           introducir un nuevo tema sobre un personaje histórico importante. Va a utilizar
+           una presentación multimedia que incluirá imágenes, vídeo y archivos de audio.
+           Su objetivo es que la introducción resulte atractiva y proporcione un contexto
+           para el alumnado, que posteriormente utilizará una combinación de recursos,
+           como libros de texto, fuentes primarias en línea y material de biblioteca, para un
+           estudio en profundidad.
+
+
+
+ 1) Búsqueda de contenidos                 Sylvia comienza por visitar el portal nacional en línea para centro educativos,
+                                           que contiene un amplio abanico de REA seleccionados por el ministerio para
+ atractivos
+                                           su uso en los centros educativos. Esta colección incluye ideas para las clases,
+                                           fichas de trabajo y materiales de fuentes primarias como documentos, vídeos
+                                           y archivos de audio.
+                                                ● Busca materiales relevantes sobre el personaje histórico y los revisa para
+                                                  ver si son apropiados para su clase.
+                                                ● Encuentra distintas secuencias didácticas que incluyen una serie de
+                                                  actividades de aprendizaje ya preparadas.
+                                                ● Dentro de dichas secuencias, encuentra enlaces a los archivos de vídeo
+                                                  originales de los discursos y las entrevistas de televisión.
+
+
+
+
+ 2) Adaptar el CED a tu                    Gran parte de los contenidos que Sylvia ha encontrado fueron creados por
+                                           organismos públicos de radiodifusión. Son especialmente útiles y pueden
+ propio contexto
+                                           adaptarse bajo su licencia de REA (Creative Commons). Al principio, Sylvia intenta
+                                           utilizar en clase los vídeos completos, sin editar, pero algunos duran más de 15
+                                           minutos. Se da cuenta de que el alumnado se aburre y empieza a charlar entre
+                                           ellos. La segunda vez que imparte esta lección, aprende de su experiencia anterior
+                                           y decide adaptar los vídeos:
+                                                ● En esta ocasión Sylvia crea tres vídeos más cortos para su presentación en
+                                                  clase. Cada uno de ellos tendrá una duración máxima de 3 minutos.
+                                                ● Una vez identificados los vídeos que quiere utilizar, los descarga, los recorta
+                                                  a la longitud adecuada y los incorpora a su presentación.
+                                                ● También coloca estos materiales adaptados en la carpeta compartida del
+                                                  departamento de historia en el LMS del centro para que sus colegas puedan
+                                                  reutilizar estos recursos en el futuro.
+
+
+
+
+ 3) Utilizar los contenidos con            En clase, Sylvia utiliza su presentación multimedia junto con una hoja
+                                           de ejercicios. El alumnado trabaja en pequeños grupos y discuten sus
+ el alumnado
+                                           observaciones para considerar críticamente el impacto de la figura histórica.
+                                           A continuación, repasan los vídeos digitales en sus dispositivos a su propio
+                                           ritmo, según sea necesario.
+                              TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+        50                        D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Evaluación
+La idea de los docentes y educadores como profesionales reflexivos no
+es nueva. Se remonta a los trabajos de Donald Schon a principios de los
+años ochenta del siglo veinte. El profesorado utiliza numerosos modelos
+de práctica reflexiva durante el transcurso de la enseñanza o tras haber
+terminado de impartir una sesión. En el caso de los CED, también es
+importante reflexionar críticamente sobre su impacto en el progreso del
+alumnado y considerar si es necesario introducir cambios en su uso futuro.
+Los docentes deben realizar una reflexión continua sobre el impacto que el
+CED que han elegido y utilizado tiene sobre el alumnado. Esto se aplica a
+las seis actividades destacadas en este apartado.
+
+¿Por dónde empezar?
+Al igual que ocurre con otros materiales didácticos, deberías considerar distintos métodos para valorar el impacto
+real del CED elegido en tu práctica docente.
+
+Paso 1: Algunas preguntas para considerar
+
+
+
+
+     En general, cuando reflexiones sobre el uso del CED,                                               ● ¿El contenido era accesible/comprensible/fácil de
+     conviene volver a examinar por qué elegiste este CED                                                 utilizar con y por todo mi alumnado?
+     concretamente. Como mínimo, plantéate las siguientes
+                                                                                                        ● ¿El material consiguió captar la atención del
+     preguntas:
+                                                                                                          alumnado?
+           ● ¿Me ha ayudado el CED a alcanzar los objetivos de
+                                                                                                        ● ¿Qué otras mejoras o adaptaciones podría requerir
+             aprendizaje previstos?
+                                                                                                          en el futuro?
+           ● ¿El CED aportó valor a cambio del tiempo/esfuerzo
+                                                                                                        ● ¿Debería seguir utilizando este CED de esta misma
+             invertido?
+                                                                                                          forma en el futuro?
+
+
+
+
+Paso 2: Compartir las experiencias de forma más amplia
+
+
+
+
+     Después de utilizar el CED con tu alumnado y reflexionar sobre                                     ● Comentar tu experiencia en línea con otros docentes
+     su impacto, es importante que compartas tus reflexiones con                                          escribiendo una reseña sobre tu experiencia con el
+     los demás. Esto podría incluir:                                                                      contenido.
+           ● Comentar tu experiencia con otros miembros del                                             ● Proporcionar información al creador del contenido para
+             personal de tu centro o de tu departamento.                                                  que pueda seguir mejorando su CED.
+
+
+
+
+7 Slesser, S., Morago, P., Bruce. L. & Macmillan, M. “The reflective practitioner”. In: Reflective Practice, 2025. https://content.iriss.org.uk/reflectivepractice/index.html
+8 University College Dublin, Teaching & Learning, Reflective Practice Models, (guía), University College Dublin, n.d.
+                     TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                         D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    51
+
+
+
+
+Cuando se comparten en el ámbito escolar, las reflexiones sobre los CED pueden respaldar decisiones fundamentadas sobre
+el uso futuro o la inversión en recursos digitales.
+
+
+
+
+  Consejo
+  ¿Por qué no compartes con tus compañeros una
+  reseña sobre cómo has utilizado un determinado
+  CED en una reunión de departamento, o incluso
+  en tu propio blog? Podrías exponer los pros y los
+  contras de utilizar ese CED concreto.
+                    TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+     52                 D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+Escenario habitual
+Un departamento de ciencias introduce simulaciones digitales de física para ayudar al
+alumnado que tienen dificultades con conceptos como las ondas y la electricidad. Eligen
+las simulaciones en función de su adecuación al currículo y su precisión. Al principio,
+algunos docentes no confían en el uso de estas simulaciones y prefieren las actividades
+de laboratorio tradicionales.
+
+
+
+
+   1) Reflexiones compartidas                          Tras utilizar las simulaciones durante varias semanas, los docentes de ciencias
+                                                       se reúnen para reflexionar colectivamente sobre sus experiencias. Antes de
+                                                       la reunión, crean una sencilla rúbrica que recoge algunas áreas clave que
+                                                       consideran relevantes:
+                                                            ● Niveles de participación
+                                                            ● Adecuación a todo el alumnado
+                                                            ● Objetivos de aprendizaje
+
+
+Los docentes que han utilizado las herramientas digitales están muy satisfechos con el rendimiento del CED en sus aulas. Para
+respaldar dichas observaciones, aportan los comentarios de su alumnado, que han recopilado mediante controles informales. Tras
+escuchar a los demás y debatir sobre sus experiencias, los menos confiados se muestran más abiertos a utilizar las simulaciones.
+Obtienen nuevas ideas sobre cómo podrían utilizarlas en el futuro y entienden la reunión como una conversación educativa con
+sus compañeros. Como resultado, el Departamento de Ciencias decide añadir este CED a su base de materiales aprobados,
+creando un protocolo de uso y organizando cursos de formación para garantizar que todos los docentes se sientan seguros a la
+hora de utilizarlo con el alumnado.
+
+
+
+
+   2) Compartir más                                    Debido al éxito del programa, los docentes también deciden compartir el uso
+                                                       que hacen de las simulaciones de forma más amplia:
+   ampliamente sus
+   reflexiones                                              ● mediante un proyecto eTwinning a STEM que se centre en el uso de
+                                                              CED en la enseñanza de la física;
+                                                            ● compartiendo su uso de las simulaciones con una red nacional de
+                                                              educadores científicos;
+                                                            ● participando en una campaña STEM Discovery, compartiendo su
+                                                              experiencia a escala regional, nacional e internacional; y
+                                                            ● compartiendo sus observaciones con los creadores de las
+                                                              simulaciones, junto con algunas sugerencias de nuevas funciones y
+                                                              material de formación extra.
+                      TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                          D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S    53
+
+
+
+
+    Conclusiones
+Estas directrices ofrecen un marco para apoyar la toma de decisiones relativas a los contenidos educativos
+digitales (CED). Sin embargo, su verdadero valor sólo se materializa plenamente cuando se utilizan en la
+práctica. Esperamos que este documento te ayude a dar los siguientes pasos con confianza.
+
+En este contexto, te animamos a:
+    ● A medida que vayas ganando confianza y adquieras experiencia con los CED, estarás en una posición privilegiada
+      para influir en el sistema educativo en su conjunto. Lo que aprendes (por ejemplo, lo que funciona, lo que no, y cómo
+      responde el alumnado) es exactamente el tipo de información que ayuda a definir cómo deben desarrollarse y apoyarse
+      los CED en el futuro.
+    ● Si diriges un centro educativo, aprovecha las experiencias de tu equipo con los CED para alinear la práctica diaria en el
+      aula con la estrategia a largo plazo de tu centro y los planes de inversión y desarrollo profesional.
+    ● Aunque, independientemente de tu experiencia o puesto, ¿por qué no trabajas para convertirte en un agente de cambio?
+      Tus reflexiones pueden servir para promover unas condiciones que potencien el impacto de la enseñanza, mediante la
+      priorización de la inversión en CED, así como en personal, tiempo, formación y apoyo continuo.
+En última instancia, el futuro de un CED de alta calidad, fiable y con impacto en el aprendizaje depende de la colaboración
+entre todas las partes del ecosistema. Con las estructuras y el apoyo adecuados, tus ideas pueden contribuir a garantizar que
+el CED se convierta, no solo en una herramienta pedagógica, sino en un catalizador de la mejora y el cambio en la educación
+de toda Europa.
+
+
+
+
+             ¡Así que participa, implícate y ayuda a dar forma
+            al futuro de los CED! Tu opinión es importante y tu
+                   liderazgo puede marcar la diferencia.
+                               TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+         54                        D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S
+
+
+
+
+         Glosario
+     PL A ZO                                                 DEFINICIÓN
+                                                            El diseño y desarrollo de materiales, plataformas y sistemas educativos para que puedan ser
+     Accesibilidad                                          percibidos, comprendidos, navegados e interactuados eficazmente por todos los alumnos,
+                                                            incluyendo aquellos con distintas discapacidades.
+                                                            El aprendizaje adaptativo utiliza la tecnología para crear un itinerario educativo personalizado para
+                                                            cada alumno. Al analizar las respuestas e interacciones del alumno en tiempo real, los algoritmos
+    Aprendizaje adaptativo                                  del sistema pueden utilizar la IA para ajustar automáticamente la dificultad, el ritmo y el tipo de
+                                                            contenido presentado. Esto garantiza que cada alumno pueda progresar a su propio ritmo óptimo
+                                                            dentro de una misma aula.
+                                                            Sistema basado en máquinas diseñado para funcionar con distintos niveles de autonomía, que puede
+     Inteligencia artificial (IA)                           mostrar capacidad de adaptación tras su despliegue y que, por objetivos explícitos o implícitos, infiere, a
+                                                            partir de la entrada que recibe, cómo generar salidas como predicciones, contenidos, recomendaciones o
+                                                            decisiones que pueden influir en entornos físicos o virtuales.
+                                                            La privacidad de los datos implica los derechos y expectativas de las personas (alumnos, educadores
+     D er e c h o s d e a u t o r y                         y otros usuarios) para controlar cómo se recogen, tratan, utilizan, comparten y almacenan sus datos
+     propiedad intelectual (PI)                             personales en el entorno de aprendizaje digital. Los datos personales, tal y como se definen en
+                                                            normativas como el Reglamento General de Protección de Datos (RGPD) de la UE, son cualquier
+                                                            información relacionada con una persona física identificada o identificable.
+                                                            A privacidade de dados refere-se aos direitos e expectativas dos indivíduos (alunos, educadores e
+     Protección de datos y el RGPD                          outros utilizadores) de controlar como os seus dados pessoais são recolhidos, tratados, utilizados,
+                                                            partilhados e armazenados no ambiente de aprendizagem digital. Os dados pessoais, tal como
+                                                            definidos por regulamentos como o Regulamento Geral sobre a Proteção de Dados (RGPD) da UE,
+                                                            são qualquer informação relacionada com um indivíduo identificado ou identificável.
+                                                            El ecosistema de los Contenidos Educativos Digitales (CED) describe la compleja red interconectada
+     Ecosistema CED                                         de todas las partes implicadas en el ciclo de vida de los materiales educativos digitales. Esto incluye
+                                                            al sector público (incluyendo los ministerios de educación), al sector privado (por ejemplo, editoriales y
+                                                            empresas de EdTech) y a los usuarios finales (profesores, directores de centros escolares y alumnos).
+                                                            Las decisiones que toma un actor del ecosistema, como la política de financiación de un gobierno o el
+                                                            diseño de un producto de una empresa, repercuten directamente sobre las opciones y herramientas
+                                                            de que pueden disponer los profesores en el aula.
+                                                            «El uso seguro, crítico y responsable de las tecnologías digitales y la participación en ellas para
+    Competencias digitales                                  el aprendizaje, el trabajo y la implicación en la sociedad». Incluye la alfabetización informacional
+                                                            y de datos, la comunicación y la colaboración, la creación de contenidos digitales (incluyendo la
+                                                            programación), la seguridad (incluido el bienestar digital y las competencias relacionadas con
+                                                            la ciberseguridad) y la resolución de problemas.»
+                                                            Material de aprendizaje, enseñanza y evaluación diseñado o creado por editoriales educativas,
+    C o n t e n id o s e d u c at i vo s
+                                                            empresas de EdTech, organizaciones culturales y científicas, ministerios de educación, o por
+    digitales (CED)
+                                                            profesores y alumnos, para abordar objetivos pedagógicos, y disponible en varios formatos
+                                                            mediante herramientas y plataformas digitales.
+
+9     Comisión Europea, Dirección General de Educación, Juventud, Deporte y Cultura, Digital Transformation in Blended Learning Environments - Informe analítico de la EENEE.
+      Oficina de Publicaciones de la Unión Europea, (Luxemburgo, 2024. https://doi.org/10.2766/061693.)
+10    «Artículo 3: Definiciones», Ley de Inteligencia Artificial de la UE. Consultado el 17 de octubre de 2023, https://artificialintelligenceact.eu/article/3/.
+11    Organización Mundial de la Propiedad Intelectual, «¿Qué es el derecho de autor?», Organización Mundial de la Propiedad Intelectual, 2020, https://www.wipo.int/es/web/copyright.
+      Organización Mundial de la Propiedad Intelectual, «¿Qué es la propiedad intelectual (PI)?», Organización Mundial de la Propiedad Intelectual, 2020, https://www.wipo.int/es/web/about-ip/.
+12    Comisión Europea, «Explicación de la protección de datos». Consultado el 17 de octubre de 2023, https://commission.europa.eu/law/law-topic/data-protection/data-
+      protection-explained_en.
+13    Comisión Europea, Dirección General de Educación, Juventud, Deporte y Cultura, Digital Education Content in the EU - State of Play and Policy Options - Informe final
+      Oficina de Publicaciones de la Unión Europea, Luxemburgo, 2023). https://doi.org/10.2766/682645.
+14    Vuorikari, R., Kluzer, S., & Punie, Y., DigComp 2.2: The Digital Competence Framework for Citizens – With New Examples of Knowledge, Skills and Attitudes, Oficina de
+      Publicaciones de la Unión Europea, Luxemburgo, 2022. https://doi.org/10.2760/115376.
+15    Roberts, K., Benson, A., & Mills, J, E-textbook technology: Are instructors using it and what is the impact on student learning?. Journal of Research in Innovative Teaching &
+      Learning 26 de noviembre de 2021; 14 (3): 329–344. https://doi.org/10.1108/JRIT-04-2021-0028
+16    Comisión Europea, Digital Education Content in the EU – State of Play and Policy Options - Informe final.
+                                 TO M A D E D E C I S I O N E S F U N D A M E N TA D A S S O B R E CO N T E N I D O S E D U C AT I VO S
+                                     D I G I TA L E S : D I R E C T R I C E S D E L A U E PA R A D O C E N T E S Y E D U C A D O R E S                                    55
+
+
+
+
+ PL A ZO                                                  DEFINICIÓN
+
+
+                                                         Espacio web o portal de contenidos y recursos educativos que ofrece a educadores y alumnos
+     P l at afo r m a d ig i t a l d e                   acceso a diversas herramientas digitales y CED, como libros de texto digitales, vídeos,
+     aprendizaje                                         documentos, etc. Estas plataformas suelen alojar los contenidos de forma sencilla para que los
+                                                         centros escolares puedan acceder a ellos fácilmente, en un único lugar.
+                                                         Las herramientas digitales, como los procesadores de texto, las hojas de cálculo, los paquetes
+ Herramienta digital                                     para hacer presentaciones, las herramientas de autor, las herramientas de elaboración de
+                                                         cuestionarios, las tecnologías de asistencia y la IA generativa, no tienen contenido, es decir,
+                                                         no vienen precargadas con CED, sino que permiten a los usuarios crear o utilizar contenidos.
+                                                         Versión electrónica de un libro diseñada para uso educativo en dispositivos como tabletas u
+     Libro de texto digital                              ordenadores portátiles. Los libros de texto electrónicos modernos han evolucionado mucho más allá
+                                                         de simples copias en PDF de libros impresos. Son cada vez más interactivos e integran elementos
+                                                         multimedia como vídeos incrustados, clips de audio, animaciones y cuestionarios de autoevaluación.
+                                                         «EdTech, abreviatura de tecnología educativa, indica la industria que combina educación y avances
+     EdTech                                              tecnológicos, así como el campo científico que implica el conocimiento interdisciplinar que informa del
+                                                         uso de herramientas y dispositivos tecnológicos, procesos y procedimientos, recursos y estrategias para
+                                                         mejorar las experiencias de aprendizaje en una variedad de entornos de aprendizaje».
+                                                         Categoría específica de herramientas y sistemas de inteligencia artificial diseñados, además de
+     IA Generativa (GenAI)                               para analizar datos, para generar nuevos contenidos como texto, imágenes, código o música. Estos
+                                                         sistemas, que incluyen grandes modelos lingüísticos (GML), modelos de difusión para la generación
+                                                         de imágenes y herramientas de IA multimodal, se entrenan en vastos conjuntos de datos y pueden
+                                                         producir resultados «parecidos a los humanos» a partir de indicaciones o instrucciones.
+                                                         La capacidad de distintos sistemas digitales, plataformas y aplicaciones para conectarse
+ Interoperabilidad                                       y compartir datos entre sí de forma sencilla. En el contexto escolar, un grado elevado de
+                                                         interoperabilidad implica que un nuevo recurso o herramienta digital puede «comunicarse» de
+                                                         forma sencilla con los sistemas existentes en el centro, como el sistema de gestión del aprendizaje
+                                                         (SGA) o el sistema de información de los alumnos, sin necesidad de complejas integraciones
+                                                         personalizadas. La Ley sobre la interoperabilidad de Europa establece un marco de cooperación
+                                                         para apoyar este objetivo en toda la Unión.
+                                                         Medición, recogida, análisis y comunicación de datos sobre los alumnos y sus contextos con el fin de
+     Análisis del aprendizaje
+                                                         comprender y optimizar el aprendizaje y los entornos en los que se produce.
+                                                         Solución o aplicación informática basada en Internet que permite a profesores y alumnos
+     Sistema de gestión del
+                                                         compartir materiales didácticos, enviar trabajos del curso, comunicarse entre sí y realizar
+     aprendizaje (SGA)
+                                                         anuncios importantes de clase en línea.
+                                                          Materiales de aprendizaje, enseñanza e investigación en cualquier formato o soporte que, o bien
+ Recursos educativos
+                                                          son de dominio público, o bien están sujetos a derechos de autor, pero han sido liberados bajo
+ abiertos (REA)
+                                                          una licencia abierta, lo que permite el acceso gratuito, la reutilización, el cambio de objetivo, la
+                                                          adaptación y la redistribución por parte de terceros.
+                                                          «La medida en que un sistema, producto o servicio puede ser utilizado por usuarios específicos para
+     Usabilidad
+                                                          alcanzar objetivos específicos con eficacia, eficiencia y satisfacción en un contexto de uso específico.»
+                                                         Sistema o plataforma en línea diseñado para apoyar y mejorar la enseñanza y el aprendizaje
+ Entorno virtual de
+                                                         proporcionando un espacio digital para la interacción, la entrega de contenidos y la gestión
+ aprendizaje (EVA)
+                                                         de actividades.
+
+17     Reglamento (UE) 2024/903 del Parlamento Europeo y del Consejo, de 13 de marzo de 2024, por el que se establecen medidas para un alto nivel de interoperabilidad del
+       sector público en la Unión (Ley sobre la interoperabilidad de Europa), Diario Oficial de la Unión Europea L, 2024/903, 22 de marzo de 2024.
+18     Karaoglan Yilmaz, F.G., & Yilmaz, R., ‘Learning Analytics as a Metacognitive Tool to Influence Learner Transactional Distance and Motivation in Online Learning Environments’,
+       Innovations in Education and Teaching International, 58, nº. 5 (2020): 575-85, https://doi.org/10.1080/14703297.2020.1794928
+19     Lonn, S., & Teasley, S.D., „‘Saving Time or Innovating Practice: Investigating Perceptions and Uses of Learning Management Systems’, Computers & Education, 53, nº. 3
+       (Noviembre 2009): 686-94, https://doi.org/10.1016/j.compedu.2009.04.008
+20     Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura, Recomendación sobre recursos educativos abiertos (REA), UNESCO, París, 2019). https://
+       unesdoc.unesco.org/ark:/48223/pf0000373755.
+21     Organización Internacional de Normalización, Ergonomics of Human-System Interaction – Part 11: Usability: Definitions and Concepts, ISO 9241-11:2018, ISO, Ginebra, 2018).
+                         NC-01-25-180-ES-N
+
+
+
+
+ISBN 978-92-68-32240-6
+

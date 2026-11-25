@@ -6,6 +6,10 @@ Un material creado con inteligencia artificial (IA) rara vez es enteramente nuev
 
 El reconocimiento de la autoría es una cuestión de respeto hacia el trabajo de otras personas, y también un derecho. En España, la [Ley de Propiedad Intelectual](https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930) incluye entre los derechos morales del autor, en su artículo 14, el de exigir que se reconozca su condición de autor de la obra. Las licencias libres mantienen esa condición. La licencia [Creative Commons Reconocimiento-CompartirIgual](https://creativecommons.org/licenses/by-sa/4.0/deed.es), que se abrevia CC BY-SA, permite por ejemplo copiar y adaptar la obra siempre que se dé crédito de manera adecuada, se enlace la licencia y se indique si se han hecho cambios.
 
+## El uso educativo no permite publicarlo todo
+
+Que un material sea para enseñar no basta para incluir en él obras ajenas protegidas. La Unión Europea tiene una excepción a los derechos de autor para la enseñanza, pero, como explican las [directrices de la Comisión Europea sobre contenidos educativos digitales](https://data.europa.eu/doi/10.2766/1574949), solo cubre el uso bajo la responsabilidad del centro, en el aula o en plataformas seguras a las que únicamente acceden su profesorado y su alumnado, y cada Estado la aplica de forma distinta. Un material publicado en abierto en internet queda fuera de ella, de modo que todo lo que incorpore tiene que permitir su reutilización.
+
 ## Los datos de una atribución
 
 Creative Commons recomienda en sus [prácticas recomendadas de atribución](https://wiki.creativecommons.org/wiki/Recommended_practices_for_attribution) que cada elemento ajeno vaya acompañado de cuatro datos:

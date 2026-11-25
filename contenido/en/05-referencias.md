@@ -23,6 +23,7 @@
 - Freedom Defined. (2015). *Definition of Free Cultural Works* (version 1.1). <https://freedomdefined.org/Definition>
 - Wikimedia Commons. (n.d.). *Commons:Licensing*. <https://commons.wikimedia.org/wiki/Commons:Licensing>
 - De Haro, J. J. (2026). *Decálogo del conocimiento abierto* [Open Knowledge Decalogue] (version 2.2). <https://conocimiento-abierto.github.io/>
+- European Commission, Directorate-General for Education, Youth, Sport and Culture. (2026). *Making informed choices on digital education content: EU guidelines for teachers and educators*. Publications Office of the European Union. <https://data.europa.eu/doi/10.2766/6984929>
 - Free Knowledge Foundation. (2007). *Declaration on libre knowledge*. WikiEducator. <https://wikieducator.org/Declaration_on_libre_knowledge>
 - Free Software Foundation. (2026, 10 June). *What is Free Software?* GNU Project. <https://www.gnu.org/philosophy/free-sw.en.html>
 - Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado. (2026). *Guía sobre el uso de la inteligencia artificial en el ámbito educativo* [Guide on the use of artificial intelligence in education] (version 2.0). Ministerio de Educación, Formación Profesional y Deportes. <https://code.intef.es/wp-content/uploads/2026/09/ACTUALIZACI%C3%93N-GU%C3%8DA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5.pdf>

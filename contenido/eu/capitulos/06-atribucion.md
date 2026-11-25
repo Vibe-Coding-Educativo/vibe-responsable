@@ -6,6 +6,10 @@ Adimen artifizialarekin (IA) sortutako material bat oso gutxitan da guztiz berri
 
 Egiletza aitortzea beste pertsona batzuen lanarekiko errespetu kontua da, eta eskubide bat ere bai. Espainian, [Jabetza Intelektualaren Legeak](https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930), 14. artikuluan, egilearen eskubide moralen artean jasotzen du lanaren egile gisa aitortua izatea eskatzeko eskubidea. Lizentzia libreek baldintza hori mantentzen dute. [Creative Commons Aitortu-PartekatuBerdin](https://creativecommons.org/licenses/by-sa/4.0/deed.eu) lizentziak, CC BY-SA laburdurarekin ezagutzen denak, adibidez, lana kopiatzeko eta egokitzeko aukera ematen du, betiere aitortza egokia egiten bada, lizentziaren esteka ematen bada eta aldaketarik egin den adierazten bada.
 
+## Hezkuntza-erabilerak ez du dena argitaratzeko baimenik ematen
+
+Material bat irakasteko izateak ez du esan nahi babestutako beste batzuen lanak bertan sar daitezkeenik. Europar Batasunak egile-eskubideen salbuespen bat du irakaskuntzarako, baina, [Europako Batzordeak eduki digital hezitzaileei buruz emandako jarraibideek](https://data.europa.eu/doi/10.2766/1574949) azaltzen dutenez, ikastetxearen ardurapeko erabilera baino ez du hartzen, ikasgelan edo ikastetxeko irakasleek eta ikasleek soilik sar daitezkeen plataforma seguruetan, eta estatu bakoitzak modu desberdinean aplikatzen du. Interneten irekian argitaratutako material bat salbuespen horretatik kanpo geratzen da; beraz, txertatzen duen guztiak berrerabiltzea ahalbidetu behar du.
+
 ## Aipamen baten datuak
 
 Creative Commons-ek bere [aitortzarako jardunbide gomendatuetan](https://wiki.creativecommons.org/wiki/Recommended_practices_for_attribution) gomendatzen du kanpoko elementu bakoitzak lau datu izatea:

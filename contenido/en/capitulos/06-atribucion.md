@@ -6,6 +6,10 @@ A resource created with artificial intelligence (AI) is rarely entirely new. It 
 
 Recognising authorship is a matter of respect for other people's work, and also a right. In Spain, the [Intellectual Property Law](https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930), in its article 14, includes among the author's moral rights that of demanding recognition as the author of the work. Free licences maintain that condition. The [Creative Commons Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/deed.en) licence, abbreviated CC BY-SA, for example allows the work to be copied and adapted as long as appropriate credit is given, a link to the licence is provided and any changes are indicated.
 
+## Educational use does not allow publishing everything
+
+Being intended for teaching is not enough to include protected third-party works in a resource. The European Union has a copyright exception for teaching, but, as the [European Commission's guidelines on digital education content](https://data.europa.eu/doi/10.2766/6984929) explain, it only covers use under the responsibility of the school, in the classroom or on secure platforms that only its teachers and students can access, and each Member State applies it differently. A resource published openly on the internet falls outside it, so everything it includes must allow reuse.
+
 ## Information to include in an attribution
 
 Creative Commons recommends in its [recommended practices for attribution](https://wiki.creativecommons.org/wiki/Recommended_practices_for_attribution) that each third-party element be accompanied by four pieces of information:

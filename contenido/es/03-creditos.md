@@ -20,6 +20,9 @@ Esta guía se ha elaborado en el nivel 4 del [Marco para la integración de la I
 
 La guía se numera con dos cifras. La primera cambia cuando cambia lo que dice la guía, y la segunda, cuando se corrigen la redacción o las traducciones sin cambiar el contenido. Cada versión tiene su propio DOI.
 
+- **4.0**, 25 de noviembre de 2026. DOI: [10.5281/zenodo.24529702](https://doi.org/10.5281/zenodo.24529702).
+  - El capítulo 6 explica que la excepción educativa a los derechos de autor no cubre un material publicado en abierto, según las directrices de la Comisión Europea sobre contenidos educativos digitales.
+  - El capítulo 4 cita esas directrices, que aconsejan estándares abiertos para no depender de un único proveedor.
 - **3.0**, 9 de noviembre de 2026. DOI: [10.5281/zenodo.24073199](https://doi.org/10.5281/zenodo.24073199).
   - La protección de datos admite como mucho un recuento de visitas por página que no distinga a quien lee, hecho por quien publica en su propio servidor y explicado en la web, como el que la AEPD exime de pedir consentimiento.
   - La rúbrica VCER (punto 2), el capítulo 2 y las instrucciones para crear con IA recogen ese caso; cualquier otra analítica o seguimiento sigue dando un 0.

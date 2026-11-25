@@ -20,6 +20,9 @@ Aquesta guia s'ha elaborat en el nivell 4 del [Marc per a la integració de la I
 
 La guia es numera amb dues xifres. La primera canvia quan canvia el que diu la guia, i la segona, quan es corregeixen la redacció o les traduccions sense canviar el contingut. Cada versió té el seu propi DOI.
 
+- **4.0**, 25 de novembre de 2026. DOI: [10.5281/zenodo.24529702](https://doi.org/10.5281/zenodo.24529702).
+  - El capítol 6 explica que l'excepció educativa als drets d'autor no cobreix un material publicat en obert, segons les directrius de la Comissió Europea sobre continguts educatius digitals.
+  - El capítol 4 cita aquestes directrius, que aconsellen estàndards oberts per no dependre d'un únic proveïdor.
 - **3.0**, 9 de novembre de 2026. DOI: [10.5281/zenodo.24073199](https://doi.org/10.5281/zenodo.24073199).
   - La protecció de dades admet com a molt un recompte de visites per pàgina que no distingeixi qui llegeix, fet per qui publica al seu propi servidor i explicat al web, com el que l'AEPD eximeix de demanar consentiment.
   - La rúbrica VCER (punt 2), el capítol 2 i les instruccions per crear amb IA recullen aquest cas; qualsevol altra analítica o seguiment continua donant un 0.

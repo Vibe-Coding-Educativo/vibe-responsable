@@ -20,6 +20,9 @@ Gida hau [Hezkuntza-zereginetan IA sortzailea integratzeko esparruaren (MIAE)](h
 
 Gida bi zifrarekin zenbakitzen da. Lehenengoa gidak dioena aldatzen denean aldatzen da, eta bigarrena, idazkera edo itzulpenak zuzentzen direnean, edukia aldatu gabe. Bertsio bakoitzak bere DOIa du.
 
+- **4.0**, 2026ko azaroaren 25a. DOI: [10.5281/zenodo.24529702](https://doi.org/10.5281/zenodo.24529702).
+  - 6. kapituluak azaltzen du egile-eskubideen hezkuntza-salbuespenak ez duela irekian argitaratutako material bat hartzen, Europako Batzordeak eduki digital hezitzaileei buruz emandako jarraibideen arabera.
+  - 4. kapituluak jarraibide horiek aipatzen ditu, hornitzaile bakar baten mende ez egoteko estandar irekiak gomendatzen baitituzte.
 - **3.0**, 2026ko azaroaren 9a. DOI: [10.5281/zenodo.24073199](https://doi.org/10.5281/zenodo.24073199).
   - Datuen babesak, gehienez ere, irakurlea bereizten ez duen orrialde bakoitzeko bisiten zenbaketa bat onartzen du, argitaratzen duenak bere zerbitzarian egina eta webgunean azaldua, AEPDk baimena eskatzetik salbuesten duena bezalakoa.
   - VCER errubrikak (2. puntua), 2. kapituluak eta IArekin sortzeko jarraibideek kasu hori jasotzen dute; beste edozein analitikak edo jarraipenek 0 ematen jarraitzen du.

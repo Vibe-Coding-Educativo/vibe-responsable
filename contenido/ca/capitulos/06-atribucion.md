@@ -6,6 +6,10 @@ Un material creat amb intel·ligència artificial (IA) poques vegades és del to
 
 El reconeixement de l'autoria és una qüestió de respecte cap a la feina d'altres persones, i també un dret. A Espanya, la [Llei de propietat intel·lectual](https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930) inclou entre els drets morals de l'autor, al seu article 14, el d'exigir que es reconegui la seva condició d'autor de l'obra. Les llicències lliures mantenen aquesta condició. La llicència [Creative Commons Reconeixement-CompartirIgual](https://creativecommons.org/licenses/by-sa/4.0/deed.ca), que s'abreuja CC BY-SA, permet per exemple copiar i adaptar l'obra sempre que se'n doni el crèdit de manera adequada, s'enllaci la llicència i s'indiqui si s'hi han fet canvis.
 
+## L'ús educatiu no permet publicar-ho tot
+
+Que un material sigui per ensenyar no n'hi ha prou per incloure-hi obres alienes protegides. La Unió Europea té una excepció als drets d'autor per a l'ensenyament, però, com expliquen les [directrius de la Comissió Europea sobre continguts educatius digitals](https://data.europa.eu/doi/10.2766/1574949), només cobreix l'ús sota la responsabilitat del centre, a l'aula o en plataformes segures a les quals només accedeixen el seu professorat i el seu alumnat, i cada Estat l'aplica de manera diferent. Un material publicat en obert a internet en queda fora, de manera que tot el que incorpori ha de permetre que es reutilitzi.
+
 ## Les dades d'una atribució
 
 Creative Commons recomana a les seves [pràctiques recomanades d'atribució](https://wiki.creativecommons.org/wiki/Recommended_practices_for_attribution) que cada element aliè vagi acompanyat de quatre dades:

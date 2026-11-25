@@ -16,6 +16,7 @@
 
 - Agencia Española de Protección de Datos. (2018). *Guía para centros educativos*. <https://www.aepd.es/documento/guia-centros-educativos.pdf>
 - Agencia Española de Protección de Datos. (2024). *Uso de cookies para herramientas de medición de audiencia* (versión de enero de 2024). <https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf>
+- Comisión Europea, Dirección General de Educación, Juventud, Deporte y Cultura. (2026). *Toma de decisiones fundamentadas sobre contenidos educativos digitales: Directrices de la UE para docentes y educadores*. Oficina de Publicaciones de la Unión Europea. <https://data.europa.eu/doi/10.2766/1574949>
 - Creative Commons. (s. f.). Does my use violate the NonCommercial clause of the licenses? En *Frequently asked questions*. <https://creativecommons.org/faq/#does-my-use-violate-the-noncommercial-clause-of-the-licenses>
 - Creative Commons. (s. f.). If I derive or adapt material offered under a Creative Commons license, which CC license(s) can I use? En *Frequently asked questions*. <https://creativecommons.org/faq/#if-i-derive-or-adapt-material-offered-under-a-creative-commons-license-which-cc-license-s-can-i-use>
 - Creative Commons. (2013). *Understanding Free Cultural Works*. <https://creativecommons.org/public-domain/freeworks/>
